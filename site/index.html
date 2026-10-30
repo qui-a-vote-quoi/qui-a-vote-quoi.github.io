@@ -839,7 +839,7 @@ const views = {
   sujet(th) {
     filtre.sujet = th; nbVisibles = 30;
     const options = (liste, valeur, tous) => `<option value="">${tous}</option>` + liste.map(([v, l]) => `<option value="${v}"${valeur === v ? " selected" : ""}>${l}</option>`).join("");
-    return `<a class="back" href="#juger">← Changer de sujet</a>
+    return `${retour("#juger", "Changer de sujet")}
       <h1>${th}</h1>
       <p class="lead">Les textes votés depuis 2017 sur ce sujet : ce qu'ils changent, qui les a proposés, et qui a voté pour ou contre.</p>
       ${(() => { const r = repartitionAuteurs(TEXTES.filter(t => t.theme === th));
@@ -866,7 +866,7 @@ const views = {
   },
   niche(date) {
     const n = NICHES.find(x => x.date === date), b = bilanNiche(n);
-    return `<a class="back" href="#groupe/${n.groupe}">← ${G(n.groupe).nom}</a>
+    return `${retour(`#groupe/${n.groupe}`, G(n.groupe).nom)}
       <div class="row">${badge(n.groupe, "lg")}<span class="eyebrow">Journée réservée du ${fdate(n.date)}</span></div>
       <h1 style="margin-top:12px">${G(n.groupe).nom}</h1>
       <p class="lead">Une fois par mois, l'Assemblée réserve une journée à l'un des groupes d'opposition ou minoritaires : c'est lui qui choisit les textes discutés. On l'appelle sa « niche ». Ce jour-là, ce groupe a mis ${pluriel(b.total, "texte")} au programme. La journée s'arrête à minuit : les députés ont voté ${n.scrutins} fois (amendements compris), et ${b.votes > 1 ? `${b.votes} textes ont été votés` : `${b.votes} texte a été voté`} jusqu'au bout.</p>
@@ -886,7 +886,7 @@ const views = {
     const t = byId(id), s = totals(t);
     const rows = ORDRE.map(g => t.groupes.find(r => r.g === g)).filter(Boolean);
     const exprimes = s.pour + s.contre || 1;
-    return `<a class="back" href="#sujet/${encodeURIComponent(t.theme)}">← ${t.theme}</a>
+    return `${retour(`#sujet/${encodeURIComponent(t.theme)}`, t.theme)}
       <div class="row"><span class="eyebrow">${t.theme}</span></div>
       <h1 style="margin-top:8px">${t.titre}</h1>
       <p class="lead">${t.type === "solennel"
@@ -953,7 +953,7 @@ const views = {
       return { o, pct: n ? Math.round(100 * same / n) : null, n };
     }).filter(x => x.pct !== null).sort((x, y) => y.pct - x.pct);
     const niches = NICHES.filter(n => n.groupe === g).sort((a, b) => b.date.localeCompare(a.date));
-    return `<a class="back" href="#groupes">← Les groupes</a>
+    return `${retour("#groupes", "Les groupes")}
       <div class="party-head" style="--pc:${Gx.c}">
         <div class="row" style="gap:14px">${badge(g, "lg")}<h1>${Gx.nom}</h1></div>
         ${(() => {
@@ -1363,6 +1363,14 @@ function majBilan() {
     <div class="tablewrap"><table><thead><tr><th>Votre vote</th><th>Texte</th><th>Proposé par</th><th>Résultat</th></tr></thead><tbody>${answered.map(t => `<tr><td class="pos ${rep[t.id] === 1 ? "soutien" : "opposition"}">Vous : ${rep[t.id] === 1 ? "pour" : "contre"}</td><td><a href="#texte/${t.id}">${t.titre}</a></td><td>${auteurCourt(t)}</td><td>${issueTag(t)}</td></tr>`).join("")}</tbody></table></div>` : "";
 }
 
+// Lien retour : vers la page d'où l'on vient (comme le bouton précédent du navigateur), sinon vers la page parente.
+// pile : les pages visitées avant celle-ci ; une page et ses sections (#…/debat) comptent pour une seule.
+const page = h => h.replace(/^#/, "").replace(/\/(debat|qui-decide|ce-qui-manque)$/, "") || "accueil";
+let pile = [], ici = { hash: location.hash, titre: "" };
+const retour = (href, label) => {
+  const p = pile[pile.length - 1];
+  return p ? `<a class="back" href="${p.hash || "#accueil"}">← ${p.titre}</a>` : `<a class="back" href="${href}">← ${label}</a>`;
+};
 function render() {
   const [view, arg] = (location.hash.slice(1) || "accueil").split("/");   // #texte/<id>/debat : voir le gestionnaire hashchange
   if (view === "jouer") {   // #jouer/<sujet> : une séance sur ce sujet, lancée tout de suite
@@ -1467,6 +1475,11 @@ function surligner(e) {
 }
 ["mouseover", "mouseout", "focusin", "focusout"].forEach(t => app.addEventListener(t, surligner));
 addEventListener("hashchange", () => {
+  if (page(location.hash) !== page(ici.hash)) {
+    if (pile.length && page(pile[pile.length - 1].hash) === page(location.hash)) pile.pop();
+    else pile.push({ hash: ici.hash, titre: page(ici.hash) === "accueil" ? "Accueil" : app.querySelector("h1")?.textContent || "Retour" });
+    ici = { hash: location.hash };
+  }
   if (!location.hash.startsWith("#bilan")) seance = null;
   // Liens vers une section d'une page : #accueil/qui-decide, #methode/ce-qui-manque
   const ancre = { "#accueil/qui-decide": "#qui-decide", "#methode/ce-qui-manque": "#ce-qui-manque" }[location.hash];
