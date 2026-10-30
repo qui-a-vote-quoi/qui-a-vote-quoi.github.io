@@ -162,7 +162,10 @@ a.chip:hover { border-color: var(--encre); }
 .replique.pour { justify-self: start; border-bottom-left-radius: 4px; }
 .replique.contre { justify-self: end; border-bottom-right-radius: 4px; }
 .replique.presentation, .replique.gouvernement { max-width: 100%; }
-.replique .orateur { font-size: 13px; font-weight: 700; color: var(--muted); display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.replique .orateur { font-size: 13px; font-weight: 700; color: var(--muted); display: flex; align-items: center; gap: 6px 8px; flex-wrap: wrap; }
+.role-debat { font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: var(--fg); background: var(--line); border-radius: 999px; padding: 2px 9px; }
+.replique.pour .role-debat::before { content: "+ "; } .replique.contre .role-debat::before { content: "− "; }
+.legende-debat { margin: 0 0 8px; }
 .replique q { quotes: "« " " »"; font-size: 16px; }
 .vivre { display: grid; gap: 10px; }
 .lien-debat { font-weight: 700; font-size: 14px; text-decoration: none; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; }
@@ -963,10 +966,13 @@ function qui(r, nomme) {
     contre: feminin(o) ? "Une députée opposée au texte" : "Un député opposé au texte" }[r.role];
 }
 const urlCompteRendu = (ref, leg) => `https://www.assemblee-nationale.fr/dyn/${leg}/comptes-rendus/seance/${ref}`;
+// Le rôle de chaque réplique est toujours écrit en clair : la position à gauche ou à droite ne suffit pas
+const ROLES_DEBAT = { presentation: "Présente le texte", gouvernement: "Avis du gouvernement", pour: "Pour le texte", contre: "Contre le texte" };
 function repliques(t, { visibles = Infinity, nomme = false } = {}) {
   const rs = t.debat.repliques.slice(0, visibles);
-  return `<ol class="debat">${rs.map((r, i) => `<li class="replique ${r.role}"${i === rs.length - 1 && !nomme ? ' tabindex="-1" id="derniere-replique"' : ""}>
-    <span class="orateur">${qui(r, nomme)}</span><q>${r.citation}</q></li>`).join("")}</ol>`;
+  return `<p class="meta legende-debat">D'abord la présentation du texte et l'avis du gouvernement, puis un orateur pour et un orateur contre, à tour de rôle.</p>
+    <ol class="debat">${rs.map((r, i) => `<li class="replique ${r.role}"${i === rs.length - 1 && !nomme ? ' tabindex="-1" id="derniere-replique"' : ""}>
+    <span class="orateur"><span class="role-debat">${ROLES_DEBAT[r.role]}</span>${nomme ? qui(r, true) : ""}</span><q>${r.citation.replace(/([.!?;])(?=[A-ZÀ-ÖØ-Ý«])/g, "$1 ")}</q></li>`).join("")}</ol>`;   // le compte rendu colle parfois deux phrases
 }
 // « Je ne sais pas » : les éléments pour se faire un avis, sans dévoiler l'auteur ni le résultat
 function elementsPourChoisir(t) {

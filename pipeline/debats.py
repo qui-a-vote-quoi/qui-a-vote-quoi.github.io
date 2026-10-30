@@ -42,7 +42,7 @@ def interventions(chemin, titre, jour, mandats):
             orateur = para.find(f"{NS}orateurs/{NS}orateur")
             nom = texte_de(orateur.find(f"{NS}nom")) if orateur is not None else ""
             # La présidence de séance (président ou vice-président) ne débat pas : elle donne la parole
-            if para.get("roledebat") == "president" or nom.startswith(("M. le président", "Mme la présidente")) or not para.get("id_acteur"):
+            if para.get("roledebat") == "president" or nom.startswith(("M. le président", "Mme la présidente")) or orateur is None or not para.get("id_acteur"):
                 continue
             texte = texte_de(para.find(f"{NS}texte"))
             if len(texte) < 40:
