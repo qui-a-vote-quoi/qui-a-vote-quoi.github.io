@@ -78,7 +78,6 @@ footer.pied a { display: inline-block; padding-block: 2px; }
   .choix-sujets input { flex: none; }
   .choix-sujets input { width: 16px; height: 16px; }
 }
-.lien-tout { font-weight: 600; }
 .lien-bouton { font: inherit; color: var(--accent); background: none; border: 0; padding: 4px 0; text-decoration: underline; cursor: pointer; }
 .plus { font: 700 16px var(--body); color: var(--fg); background: var(--surface); border: var(--bord-encre); border-radius: 999px; padding: 10px 20px; min-height: 44px; cursor: pointer; }
 .plus:hover { box-shadow: var(--ombre); }
@@ -238,20 +237,19 @@ a.chip:hover { border-color: var(--encre); }
 .principal { background: var(--fg); color: var(--bg); }
 .principal:hover { box-shadow: 3px 3px 0 var(--accent); }
 @keyframes apparait { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
-/* Accueil : une question, la recherche, les sujets en pastilles, et l'hémicycle d'un vrai vote serré */
+/* Accueil : une promesse, le bouton du jeu, la recherche, et un vote serré en exemple */
 .hero { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 28px; align-items: center; }
 .hero .lead { margin-bottom: 22px; }
 .hero-recherche input[type=search] { display: block; width: 100%; height: 54px; font: 18px var(--body); color: var(--fg); background: var(--surface); }
 .hero-recherche input[type=search]:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
-.pastilles { list-style: none; padding: 0; margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
-.pastilles a { display: inline-flex; align-items: center; min-height: 36px; padding: 4px 14px; border-radius: 999px; background: var(--accent-soft); color: var(--fg); font-weight: 600; text-decoration: none; }
-.pastilles a:hover { background: var(--accent); color: var(--on-accent); }
-.pastilles a.tous { background: none; border: 1.5px dashed var(--trait); }
-.hero-hemi { margin: 0; }
-.hero-hemi .hemi { margin: 0; border: 0; background: none; padding: 0; }
-.hero-hemi .hemi > p { display: none; }
-.hero-hemi figcaption { font-size: 15px; color: var(--muted); text-align: center; margin-top: 8px; }
-.hero-hemi figcaption b { color: var(--fg); }
+a.plus { text-decoration: none; display: inline-flex; align-items: center; }
+.plus.grand { font-size: 18px; padding: 14px 24px; }
+.hero-recherche { margin-top: 20px; }
+.hero-recherche label { display: block; font-weight: 600; margin-bottom: 6px; color: var(--muted); }
+.exemple { background: var(--surface); border: var(--bord-encre); border-radius: var(--rayon); box-shadow: var(--ombre); padding: 22px; display: grid; gap: 10px; justify-items: start; }
+.exemple h2 { margin: 0; font-size: 22px; }
+.exemple p { margin: 0; }
+.exemple-ecart b { color: var(--corail); }
 
 
 /* Fiche texte */
@@ -368,10 +366,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   .filtres { grid-template-columns: minmax(0, 1fr); }
   body { font-size: 16px; }
   .proto .long { display: none; } .proto .court { display: inline; }
-  /* Sur téléphone, le menu devient un sélecteur à trois cases égales sous le nom du site */
+  /* Sur téléphone, le menu passe sous le nom du site, séparé par un trait, en trois cases égales */
   header.top .wrap { flex-wrap: wrap; gap: 8px; padding-block: 8px 10px; }
   .logo { font-size: 17px; flex-basis: 100%; }
-  nav { flex-basis: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; padding: 3px; background: var(--surface); border: var(--bord); border-radius: 999px; }
+  nav { flex-basis: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; padding-top: 8px; border-top: var(--bord); }
   nav a { font-size: 14px; line-height: 1.1; white-space: normal; text-align: center; padding: 6px 4px; min-height: 40px; display: flex; align-items: center; justify-content: center; }
   nav a:hover { border-color: transparent; background: var(--accent-soft); }
   nav a.on, nav a.on:hover { background: var(--fg); }
@@ -676,33 +674,29 @@ function bilanNiche(n) {
 
 const views = {
   accueil() {
-    const derniers = [...TEXTES].sort((x, y) => y.date.localeCompare(x.date)).slice(0, 3);
-    const serre = voteSerre(), sujetsFrequents = SUJETS.filter(th => th !== "Autres sujets")
-      .map(th => [th, TEXTES.filter(t => t.theme === th).length]).sort((a, b) => b[1] - a[1]).slice(0, 5).map(x => x[0]);
+    // Un exemple pour donner envie : le dernier vote serré parmi les textes du jeu. On ne dévoile ni l'auteur ni le résultat.
+    const ex = BILAN.find(t => totals(t).ecart > 0 && totals(t).ecart <= ECART_SERRE);
     return `<section class="hero">
         <div>
           <h1>Qu'ont voté vos députés&nbsp;?</h1>
-          <p class="lead">${TEXTES.length} votes depuis 2017, expliqués simplement : qui a proposé quoi, ce que ça change, et ce que chaque groupe a voté. À vous de juger.</p>
-          <form id="cherche-accueil" role="search" class="hero-recherche"><label class="sr-only" for="q-accueil">Chercher un texte</label>${champRecherche("q-accueil")}</form>
-          <ul class="pastilles" aria-label="Sujets les plus fréquents">${sujetsFrequents.map(th => `<li><a href="#sujet/${encodeURIComponent(th)}">${th}</a></li>`).join("")}<li><a class="tous" href="#sujets">Tous les sujets</a></li></ul>
+          <p class="lead">Et vous, qu'auriez-vous voté à leur place&nbsp;? ${TEXTES.length} votes de l'Assemblée depuis 2017, expliqués simplement. Votez, puis découvrez quels groupes ont voté comme vous.</p>
+          <p><a class="plus principal grand" href="#bilan">Essayer : à vous de voter →</a></p>
+          <form id="cherche-accueil" role="search" class="hero-recherche"><label for="q-accueil">Ou cherchez un texte</label>${champRecherche("q-accueil")}</form>
         </div>
-        ${serre ? `<figure class="hero-hemi">${hemicycle(serre)}<figcaption>Le ${fdate(serre.date)}, « <a href="#texte/${serre.id}">${serre.titre}</a> » a été ${totals(serre).adopte ? "adopté" : "rejeté"} <b>à ${totals(serre).ecart} voix près</b>. Chaque siège compte.</figcaption></figure>` : ""}
+        ${ex ? `<article class="exemple" aria-labelledby="exemple-titre">
+          <span class="eyebrow">Un vote serré · ${fdate(ex.date)}</span>
+          <h2 id="exemple-titre">${ex.titre}</h2>
+          <p>${ex.enClair}</p>
+          <p class="exemple-ecart">Il s'est joué à <b>${totals(ex).ecart} voix près</b>.</p>
+          <a class="plus principal" href="#bilan/${encodeURIComponent(ex.id)}">Qu'auriez-vous voté&nbsp;?</a>
+        </article>` : ""}
       </section>
+      <h2 class="sr-only">Trois façons d'explorer</h2>
       <div class="doors trio">
-        <a class="door" href="#groupes"><b>Les groupes</b><span>Ce que chaque groupe de députés a proposé, et comment il a voté.</span></a>
-        <a class="door" href="#sujets"><b>Les textes</b><span>Tout ce qui a été voté, par sujet, par auteur ou par mot : retraites, impôts, logement, santé…</span></a>
-        <a class="door" href="#bilan"><b>À vous de voter</b><span>Votez comme un député${BILAN.length ? ` sur ${BILAN.length} textes` : ""}, voyez quels groupes ont voté comme vous.</span></a>
-      </div>
-      <h2>Derniers votes</h2>
-      ${listeTextes(derniers)}
-      <p><a class="lien-tout" href="#sujets">Tous les textes : par sujet, par auteur ou par recherche →</a></p>
-      <h2>Comment une loi est votée</h2>
-      <ol class="steps">
-        <li><b>Un texte est proposé</b><span>Par des députés, des sénateurs ou le gouvernement.</span></li>
-        <li><b>Les députés votent</b><span>Pour, contre ou abstention. Certains ne viennent pas.</span></li>
-        <li><b>Le Sénat vote aussi</b><span>Le texte devient une loi si les deux l'adoptent, ou si l'Assemblée a le dernier mot.</span></li>
-      </ol>
-      <p class="note">Version de test : ${TEXTES.length} votes de 2017 à aujourd'hui, lors des grands votes de l'Assemblée (votes solennels) et des journées réservées aux groupes d'opposition et minoritaires.</p>`;
+        <a class="door" href="#groupes"><b>Qu'a voté chaque groupe&nbsp;?</b><span>Ce que chaque groupe a proposé, et quand ses voix ont fait la différence.</span></a>
+        <a class="door" href="#sujets"><b>Qu'a-t-on voté sur ma retraite, mon loyer…&nbsp;?</b><span>Tous les textes, par sujet, par auteur ou par mot.</span></a>
+        <a class="door" href="#bilan"><b>Et vous, qu'auriez-vous voté&nbsp;?</b><span>Revivez le débat, votez, et découvrez qui pense comme vous.</span></a>
+      </div>`;
   },
   groupes() {
     // Une liste par période, chaque groupe dans l'ordre de l'hémicycle
@@ -896,6 +890,13 @@ const views = {
         <li>Il ne note pas les arguments et ne dit pas ce qui est vrai ou faux.</li>
         <li>Il reprend les faits, pas les accusations d'un camp : quand un texte n'est pas voté, il écrit « faute de temps avant minuit », pas « à cause de l'obstruction ».</li>
       </ul>
+      <h2>Comment une loi est votée</h2>
+      <ol class="steps">
+        <li><b>Un texte est proposé</b><span>Par des députés, des sénateurs ou le gouvernement.</span></li>
+        <li><b>Les députés votent</b><span>Pour, contre ou abstention. Certains ne viennent pas.</span></li>
+        <li><b>Le Sénat vote aussi</b><span>Le texte devient une loi si les deux l'adoptent, ou si l'Assemblée a le dernier mot.</span></li>
+      </ol>
+      <p>Le site couvre les grands votes de l'Assemblée (votes solennels) et les journées réservées aux groupes d'opposition et minoritaires, depuis 2017.</p>
       <h2>Les votes</h2>
       <ul>
         <li>Ils viennent directement des ${ext("https://data.assemblee-nationale.fr", "données officielles de l'Assemblée nationale")}, mises à jour une fois par mois. Ils ne sont jamais rédigés ni retouchés.</li>
@@ -1006,7 +1007,7 @@ function afficherSeance() {
   app.classList.add("en-seance");
   app.classList.toggle("en-cours", seance.i < n);
   dispositionBilan();
-  $("#seance-sujets").innerHTML = `<span>${sujets.length > 3 ? `${sujets.slice(0, 2).join(", ")} et ${sujets.length - 2} autres sujets` : sujets.join(", ")} · ${leg ? PERIODES[leg].lib : "de 2017 à aujourd'hui"}</span>
+  $("#seance-sujets").innerHTML = `<span>${seance.tous ? "Tous les sujets" : !sujets.length ? "Tous les sujets" : sujets.length > 3 ? `${sujets.slice(0, 2).join(", ")} et ${sujets.length - 2} autres sujets` : sujets.join(", ")} · ${leg && !seance.tous ? PERIODES[leg].lib : "de 2017 à aujourd'hui"}</span>
     <button type="button" class="lien-bouton" id="changer-sujets">Changer de sujets</button>`;
   const precedent = seance.i > 0 ? `<button type="button" class="lien-bouton" id="precedent">← Texte précédent</button>` : "";
   if (seance.i >= n) {   // fin de séance : le récit de la journée
@@ -1175,7 +1176,12 @@ function render() {
   document.title = view === "accueil" || !h1 ? "Qui a voté quoi (version de test)" : `${h1.textContent} – Qui a voté quoi`;
   app.classList.toggle("has-panel", view === "bilan");
   app.classList.remove("en-seance", "en-cours");
-  if (view === "bilan") majQuestions();
+  // #bilan/<id> : une séance qui commence par ce texte, puis des textes au hasard
+  if (view === "bilan" && arg && !seance && byId(decodeURIComponent(arg))) {
+    const id = decodeURIComponent(arg), rep = load();
+    seance = { tous: true, ids: [id, ...melanger(BILAN.filter(t => t.id !== id && !(t.id in rep))).slice(0, TAILLE_SEANCE - 1).map(t => t.id)] };
+    allerA(0);
+  } else if (view === "bilan") majQuestions();
   if (view === "sujets" || view === "sujet") majSujets();
   // Une fiche texte n'appartient à aucune rubrique du menu
   const rubrique = { groupes: "groupes", niche: "groupes", groupe: "groupes", sujets: "sujets", sujet: "sujets", bilan: "bilan" }[view];
