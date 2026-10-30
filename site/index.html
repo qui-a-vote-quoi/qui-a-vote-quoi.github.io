@@ -175,6 +175,11 @@ a.chip:hover { border-color: var(--encre); }
 .seance { padding: 22px; gap: 14px; border: var(--bord-encre); box-shadow: var(--ombre); }
 .seance h2 { margin: 0; font-size: clamp(22px, 3.5vw, 30px); }
 .seance-haut { display: grid; gap: 6px; }
+/* En séance : les sujets se réduisent à une ligne, pour laisser toute la place au texte */
+#app.en-seance .lead, .en-seance .bilan .filtres { display: none; }
+.seance-sujets { display: none; }
+.en-seance .seance-sujets { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0 0 14px; font-size: 15px; color: var(--muted); }
+.seance-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
 .seance-resume { font-size: 18px; margin: 0; }
 .debat { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .replique { max-width: 88%; background: var(--bg); border: var(--bord); border-radius: 16px; padding: 10px 14px; display: grid; gap: 4px; animation: apparait .3s ease-out; }
@@ -904,6 +909,7 @@ const views = {
             </fieldset>
             ${choixPeriode("periode-bilan", prefBilan().leg)}
           </form>
+          <p class="seance-sujets" id="seance-sujets"></p>
           <h2 class="sr-only">Les textes à voter</h2>
           <p class="meta" id="nb-bilan" aria-live="polite"></p>
           <div class="list" id="questions"></div>
@@ -945,6 +951,7 @@ const VOTES = [[1, "Pour"], [-1, "Contre"], [0, "Je m'abstiens"]];
 const libVote = v => ({ 1: "pour", "-1": "contre", 0: "abstention" })[v];
 function majQuestions() {
   if (seance) { afficherSeance(); majBilan(); return; }
+  app.classList.remove("en-seance");
   const ts = selectionBilan(), choisis = prefBilan().sujets.length, rep = load();
   const restants = ts.filter(t => !(t.id in rep));
   $("#nb-bilan").textContent = choisis ? `${pluriel(ts.length, "texte")} sur ces sujets, dont ${restants.length} pas encore voté${restants.length > 1 ? "s" : ""}.` : "";
@@ -957,20 +964,24 @@ function majQuestions() {
   majBilan();
 }
 function afficherSeance() {
-  const n = seance.ids.length;
+  const n = seance.ids.length, { sujets, leg } = prefBilan();
+  app.classList.add("en-seance");
+  $("#seance-sujets").innerHTML = `<span>${sujets.length > 3 ? `${sujets.slice(0, 2).join(", ")} et ${sujets.length - 2} autres sujets` : sujets.join(", ")} · ${leg ? PERIODES[leg].lib : "de 2017 à aujourd'hui"}</span>
+    <button type="button" class="lien-bouton" id="changer-sujets">Changer de sujets</button>`;
+  const precedent = seance.i > 0 ? `<button type="button" class="lien-bouton" id="precedent">← Texte précédent</button>` : "";
   if (seance.i >= n) {   // fin de séance : le récit de la journée
     const rep = load(), ts = seance.ids.filter(id => id in rep).map(byId), passes = n - ts.length, adoptes = ts.filter(t => totals(t).adopte).length, serres = ts.filter(t => totals(t).ecart <= ECART_SERRE).length;
     $("#nb-bilan").textContent = "";
     $("#questions").innerHTML = `<div class="siege"><h2 tabindex="-1" id="fin-seance">Séance terminée</h2>
       <p>Vous avez voté sur ${pluriel(ts.length, "texte")}${passes ? ` (et passé ${passes})` : ""}. Les députés en ont adopté ${adoptes} et rejeté ${ts.length - adoptes}.${serres ? ` ${serres > 1 ? `${serres} votes se sont joués` : "Un vote s'est joué"} à ${ECART_SERRE} voix près ou moins : quelques sièges ont fait la différence.` : ""}</p>
       <p>Les groupes qui ont voté comme vous sont dans le panneau « Ont voté comme vous ». Le détail de vos votes est plus bas.</p>
-      <p class="row"><button type="button" class="plus principal" id="autre-seance">Une autre séance →</button></p></div>`;
+      <p class="row"><button type="button" class="plus principal" id="autre-seance">Une autre séance →</button>${precedent}</p></div>`;
     return;
   }
   const t = byId(seance.ids[seance.i]), v = load()[t.id];
   $("#nb-bilan").textContent = "";
   $("#questions").innerHTML = `<article class="q seance">
-    <div class="seance-haut"><span class="eyebrow">Texte ${seance.i + 1} sur ${n} · ${t.theme}</span><div class="progress" aria-hidden="true"><i style="width:${(100 * seance.i / n).toFixed(1)}%"></i></div></div>
+    <div class="seance-haut"><div class="seance-nav"><span class="eyebrow">Texte ${seance.i + 1} sur ${n} · ${t.theme}</span>${precedent}</div><div class="progress" aria-hidden="true"><i style="width:${(100 * seance.i / n).toFixed(1)}%"></i></div></div>
     <h2 tabindex="-1" id="q-titre">${t.titre}</h2>
     <p class="seance-resume">${t.enClair}${t.niveau === "ia" ? ` ${badgeIA(t)}` : ""}</p>
     ${t.debat && !seance.revele ? (seance.repl
@@ -1100,6 +1111,7 @@ function render() {
   const h1 = app.querySelector("h1");
   document.title = view === "accueil" || !h1 ? "Qui a voté quoi (version de test)" : `${h1.textContent} – Qui a voté quoi`;
   app.classList.toggle("has-panel", view === "bilan");
+  app.classList.remove("en-seance");
   if (view === "bilan") majQuestions();
   if (view === "sujets" || view === "sujet") majSujets();
   // Une fiche texte n'appartient à aucune rubrique du menu
@@ -1127,6 +1139,9 @@ app.addEventListener("click", e => {
   if (e.target.id === "replique-suivante") { seance.repl++; afficherSeance(); $("#derniere-replique")?.focus(); return; }
   if (e.target.id === "tout-le-debat") { seance.repl = Infinity; afficherSeance(); $("#derniere-replique")?.focus(); return; }
   if (e.target.id === "en-savoir-plus") { seance.details = true; afficherSeance(); $("#details-titre")?.focus(); return; }
+  // Revenir au texte d'avant : s'il a été voté, on revoit son résultat ; s'il a été passé, on peut voter
+  if (e.target.id === "precedent") { seance.i--; seance.revele = seance.ids[seance.i] in load(); seance.details = false; seance.repl = 0; afficherSeance(); ($("#revelation") || $("#q-titre"))?.focus(); return; }
+  if (e.target.id === "changer-sujets") { seance = null; majQuestions(); app.querySelector("input[name=sujet]")?.focus(); return; }
   if (e.target.id === "autre-seance") { seance = null; commencerSeance(); if (!seance.ids.length) { seance = null; majQuestions(); } return; }
   if (e.target.id === "voir-plus") {
     // Les textes ajoutés arrivent sous le bouton : le focus va au premier d'entre eux
