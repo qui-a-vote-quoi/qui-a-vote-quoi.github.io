@@ -113,7 +113,7 @@ a.auteur:hover { text-decoration: underline; }
 .carte-bas { display: flex; align-items: center; gap: 4px 16px; flex-wrap: wrap; font-size: 15px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .serre { background: var(--serre-soft); color: var(--serre-fg); font-weight: 600; border-radius: 999px; padding: 1px 9px; margin-left: 6px; }
 /* Mini-jauge : la proportion pour / contre d'un coup d'œil, à la taille d'un badge (la grande jauge est sur la fiche) */
-.decompte { display: inline-flex; align-items: center; gap: 8px; }
+.decompte { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
 .minijauge .bar { width: 52px; height: 8px; border-radius: 4px; }
 .mesures { margin-top: 20px; display: grid; gap: 6px; }
 .mesures ul { margin: 0; padding-left: 20px; display: grid; gap: 2px; font-size: 18px; }
@@ -282,6 +282,7 @@ a.plus { text-decoration: none; display: inline-flex; align-items: center; }
 .grp .pct { text-align: right; font-weight: 700; }
 .grp .chip, .score .chip { justify-self: start; }
 .pos { font-weight: 700; }
+.vote-groupe { color: var(--fg); }
 .pos.soutien { color: var(--soutien); } .pos.opposition { color: var(--opposition); } .pos.abstention { color: var(--abst); } .pos.absent { color: var(--muted); font-weight: 400; }
 .bar { display: flex; height: 12px; border-radius: 6px; overflow: hidden; background: var(--line); }
 .bar i { display: block; height: 100%; }
@@ -582,11 +583,12 @@ const badgeIA = t => t.niveau === "ia"
 const auteurLigne = t => t.groupe
   ? `<a class="auteur" href="#groupe/${t.groupe}"><span class="sr-only">Proposé par </span><i class="dot" style="background:${G(t.groupe).c}"></i>${t.groupe}<span class="sr-only">, ${G(t.groupe).nom}</span></a>`
   : `<span class="auteur"><span class="sr-only">Proposé par </span>${t.auteurCourt}</span>`;
-function ligneTexte(t, { avecAuteur = true, datee = false } = {}) {
-  const s = totals(t), serre = s.ecart <= ECART_SERRE;
+// Options : avecAuteur (pastille de l'auteur), datee (date sur la carte), voteDe (le vote d'un groupe sur ce texte)
+function ligneTexte(t, { avecAuteur = true, datee = false, voteDe = null } = {}) {
+  const s = totals(t), serre = s.ecart <= ECART_SERRE, st = voteDe && stance(t, t.groupes.find(r => r.g === voteDe));
   return `<li class="ligne">
     <div class="ligne-haut"><h3><a href="#texte/${t.id}">${t.titre}</a>${t.niveau === "relu" ? ` <span class="badge-relu">relu</span>` : ""}</h3>${issueTag(t)}</div>
-    <div class="ligne-bas">${avecAuteur ? auteurLigne(t) : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, s.abst, 0)}</span>${s.pour} pour · ${s.contre} contre${s.abst ? ` · ${s.abst} <span aria-hidden="true">abst.</span><span class="sr-only">abstentions</span>` : ""}${serre ? `<span class="serre">à ${s.ecart} voix près</span>` : ""}</span>${lecture(t) ? `<span>${lecture(t)}</span>` : ""}${t.debat ? `<a class="lien-debat" href="#texte/${t.id}/debat">Le débat<span class="sr-only"> : ${t.titre.replace(/"/g, "&quot;")}</span></a>` : ""}${datee ? `<span class="carte-date">${fdateCourte(t.date)}</span>` : ""}</div>
+    <div class="ligne-bas">${voteDe ? `<span class="vote-groupe">Son vote : <b class="pos ${st}">${LIB[st]}</b></span>` : ""}${avecAuteur ? auteurLigne(t) : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, s.abst, 0)}</span><span>${s.pour} pour · ${s.contre} contre${s.abst ? ` · ${s.abst}&nbsp;<span aria-hidden="true">abst.</span><span class="sr-only">abstentions</span>` : ""}</span>${serre ? `<span class="serre">à ${s.ecart} voix près</span>` : ""}</span>${lecture(t) ? `<span>${lecture(t)}</span>` : ""}${t.debat ? `<a class="lien-debat" href="#texte/${t.id}/debat">Le débat<span class="sr-only"> : ${t.titre.replace(/"/g, "&quot;")}</span></a>` : ""}${datee ? `<span class="carte-date">${fdateCourte(t.date)}</span>` : ""}</div>
   </li>`;
 }
 const MOIS_LONG = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { month: "long", year: "numeric" });
@@ -838,12 +840,10 @@ const views = {
       ${(() => {   // filtres : qui a proposé le texte, et ce que ce groupe a voté
         const auteurs = [...ORDRE, "Gouvernement", "Sénat"].filter(a => autres.some(t => auteurDe(t) === a));
         const opt = (id, lib, tous, liste) => `<div><label for="${id}">${lib}</label><select id="${id}"><option value="">${tous}</option>${liste.map(([v, l]) => `<option value="${v}">${l}</option>`).join("")}</select></div>`;
-        return `<form class="filtres filtres-vote" onsubmit="return false">${opt("fg-auteur", "Proposé par", "Tous les auteurs", auteurs.map(a => [a, a]))}${opt("fg-vote", "Son vote", "Tous les votes", Object.entries(LIB))}</form>
-          <p class="meta" id="fg-nb" aria-live="polite">${pluriel(autres.length, "texte")}.</p>`;
+        return `<form class="filtres filtres-vote" onsubmit="return false">${opt("fg-auteur", "Proposé par", "Tous les auteurs", auteurs.map(a => [a, a]))}${opt("fg-vote", "Son vote", "Tous les votes", Object.entries(LIB))}</form>`;
       })()}
-      <div class="tablewrap"><table id="votes-groupe"><thead><tr><th>Texte</th><th>Proposé par</th><th>Son vote</th></tr></thead><tbody>
-        ${autres.map(t => { const st = stance(t, t.groupes.find(r => r.g === g)); return `<tr data-auteur="${auteurDe(t)}" data-vote="${st}"><td><a href="#texte/${t.id}">${t.titre}</a></td><td>${auteurCourt(t)}</td><td class="pos ${st}">${LIB[st]}</td></tr>`; }).join("")}
-      </tbody></table></div>
+      <p class="meta" id="fg-nb" aria-live="polite"></p>
+      <div id="votes-groupe"></div>
       <h2>Avec qui vote-t-il ?</h2>
       <p class="meta">Part des textes du site où les deux groupes ont pris la même position, parmi ceux où les deux ont voté.</p>
       <div>${accords.map(a => `<div class="score">${chip(a.o)}<div class="bar"><i style="width:${a.pct}%;background:${G(a.o).c}"></i></div><b>${a.pct} %</b></div>`).join("")}</div>`;
@@ -957,6 +957,16 @@ const views = {
       </div>`;
   },
 };
+// Fiche groupe : ses votes sur les textes des autres, avec la même carte que partout, filtrés et par paquets de 30
+let nbVotesGroupe = 30;
+function majVotesGroupe() {
+  const g = decodeURIComponent(location.hash.split("/")[1] || ""), a = $("#fg-auteur").value, v = $("#fg-vote").value;
+  const ts = TEXTES.filter(t => t.groupe !== g && t.groupes.some(r => r.g === g)).sort((x, y) => y.date.localeCompare(x.date))
+    .filter(t => (!a || auteurDe(t) === a) && (!v || stance(t, t.groupes.find(r => r.g === g)) === v));
+  $("#fg-nb").textContent = ts.length ? `${pluriel(ts.length, "texte")}.` : "Aucun texte pour ces filtres.";
+  $("#votes-groupe").innerHTML = listeTextes(ts.slice(0, nbVotesGroupe), { voteDe: g })
+    + (ts.length > nbVotesGroupe ? `<p><button type="button" class="plus" id="voir-plus-groupe">Afficher ${Math.min(30, ts.length - nbVotesGroupe)} textes de plus</button> <span class="meta">(${nbVotesGroupe} sur ${ts.length})</span></p>` : "");
+}
 // Les textes : la liste filtrée, sans redessiner le formulaire (le focus reste dans le champ)
 function majSujets() {
   const q = filtre.q.trim();
@@ -1200,6 +1210,7 @@ function render() {
     allerA(0);
   } else if (view === "bilan") majQuestions();
   if (view === "sujets" || view === "sujet") majSujets();
+  if (view === "groupe" && $("#votes-groupe")) { nbVotesGroupe = 30; majVotesGroupe(); }
   // Une fiche texte n'appartient à aucune rubrique du menu
   const rubrique = { groupes: "groupes", niche: "groupes", groupe: "groupes", sujets: "sujets", sujet: "sujets", bilan: "bilan" }[view];
   document.querySelectorAll("nav a").forEach(a => a.classList.toggle("on", a.dataset.nav === rubrique));
@@ -1235,6 +1246,10 @@ app.addEventListener("click", e => {
   }
   if (e.target.id === "changer-sujets") { seance = null; majQuestions(); app.querySelector("input[name=sujet]")?.focus(); return; }
   if (e.target.id === "autre-seance") { seance = null; commencerSeance(); if (!seance.ids.length) { seance = null; majQuestions(); } return; }
+  if (e.target.id === "voir-plus-groupe") {
+    const avant = nbVotesGroupe; nbVotesGroupe += 30; majVotesGroupe();
+    document.querySelectorAll("#votes-groupe .ligne h3 a")[avant]?.focus(); return;
+  }
   if (e.target.id === "voir-plus") {
     // Les textes ajoutés arrivent sous le bouton : le focus va au premier d'entre eux
     const avant = nbVisibles; nbVisibles += 30; majSujets();
@@ -1259,12 +1274,7 @@ app.addEventListener("input", e => {
 app.addEventListener("change", e => {
   const champ = { periode: "leg", "f-sujet": "sujet", "f-auteur": "auteur" }[e.target.id];
   if (champ) { filtre[champ] = e.target.value; nbVisibles = 30; majSujets(); }
-  if (e.target.id === "fg-auteur" || e.target.id === "fg-vote") {
-    const a = $("#fg-auteur").value, v = $("#fg-vote").value;
-    let n = 0;
-    document.querySelectorAll("#votes-groupe tbody tr").forEach(tr => { const ok = (!a || tr.dataset.auteur === a) && (!v || tr.dataset.vote === v); tr.hidden = !ok; n += ok; });
-    $("#fg-nb").textContent = n ? `${pluriel(n, "texte")}.` : "Aucun texte pour ces filtres.";
-  }
+  if (e.target.id === "fg-auteur" || e.target.id === "fg-vote") { nbVotesGroupe = 30; majVotesGroupe(); }
   if (e.target.name === "sujet" || e.target.id === "periode-bilan") {
     const f = e.target.form;
     ecrirePref("bilanChoix", { sujets: [...f.querySelectorAll("input[name=sujet]:checked")].map(x => x.value), leg: f.querySelector("#periode-bilan").value });
