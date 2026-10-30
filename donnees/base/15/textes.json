@@ -50,31 +50,6 @@
   "relu": false
  },
  {
-  "id": "DLR5L15N44536@2017-07-28",
-  "dossier": "DLR5L15N44536",
-  "origine": "solennel",
-  "date": "2017-07-28",
-  "titre": "Évaluation de l’impact de la loi organique et de la loi du 15 septembre 2017 pour la confiance dans la vie politique",
-  "lecture": "première lecture",
-  "procedure": "Rapport d'information sans mission",
-  "auteur": {
-   "type": "inconnu"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L15V103",
-  "inverse": false,
-  "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "AN20-RAPPORT",
-   "dateDerniereEtape": "2021-12-15"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
   "id": "DLR5L15N35824@2017-07-28",
   "dossier": "DLR5L15N35824",
   "origine": "solennel",
@@ -119,31 +94,6 @@
    "conseilConstitutionnel": "Conforme",
    "derniereEtape": "PROM-PUB",
    "dateDerniereEtape": "2017-09-15"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
-  "id": "DLR5L15N44536@2017-08-03",
-  "dossier": "DLR5L15N44536",
-  "origine": "solennel",
-  "date": "2017-08-03",
-  "titre": "Évaluation de l’impact de la loi organique et de la loi du 15 septembre 2017 pour la confiance dans la vie politique",
-  "lecture": "texte de la commission mixte paritaire",
-  "procedure": "Rapport d'information sans mission",
-  "auteur": {
-   "type": "inconnu"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L15V107",
-  "inverse": false,
-  "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "AN20-RAPPORT",
-   "dateDerniereEtape": "2021-12-15"
   },
   "resume": null,
   "arguments": null,
@@ -244,6 +194,31 @@
    "conseilConstitutionnel": null,
    "derniereEtape": "AN-APPLI-RAPPORT",
    "dateDerniereEtape": "2019-04-11"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L15N35895",
+  "origine": "niche",
+  "date": "2017-10-12",
+  "titre": "Compétitivité de l'agriculture française",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LR",
+   "acteur": "PA709315"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L15V143",
+  "inverse": true,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2017-10-12"
   },
   "resume": null,
   "arguments": null,
@@ -1073,24 +1048,24 @@
   "relu": false
  },
  {
-  "id": "DLR5L15N37409@2018-06-13",
-  "dossier": "DLR5L15N37409",
+  "id": "DLR5L15N36460@2018-06-13",
+  "dossier": "DLR5L15N36460",
   "origine": "solennel",
   "date": "2018-06-13",
-  "titre": "Application de la loi pour un nouveau pacte ferroviaire",
+  "titre": "Nouveau pacte ferroviaire",
   "lecture": "texte de la commission mixte paritaire",
-  "procedure": "Rapport d'information sans mission",
+  "procedure": "Projet de loi ordinaire",
   "auteur": {
-   "type": "inconnu"
+   "type": "gouvernement"
   },
   "statut": "adopte",
   "scrutin": "VTANR5L15V942",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
+   "promulgation": "2018-06-27",
+   "numeroLoi": "2018-515",
    "conseilConstitutionnel": null,
-   "derniereEtape": "AN20-RAPPORT",
+   "derniereEtape": "AN-APPLI-RAPPORT",
    "dateDerniereEtape": "2019-04-11"
   },
   "resume": null,
@@ -1971,6 +1946,31 @@
   "relu": false
  },
  {
+  "id": "DLR5L15N36532",
+  "origine": "niche",
+  "date": "2019-05-09",
+  "titre": "Engagement associatif",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA720746"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L15V1851",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2021-07-01",
+   "numeroLoi": "2021-874",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2021-07-01"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
   "id": "DLR5L15N36917",
   "origine": "niche",
   "date": "2019-05-09",
@@ -2115,24 +2115,24 @@
   "relu": false
  },
  {
-  "id": "DLR5L15N39025@2019-05-21",
-  "dossier": "DLR5L15N39025",
+  "id": "DLR5L15N36915@2019-05-21",
+  "dossier": "DLR5L15N36915",
   "origine": "solennel",
   "date": "2019-05-21",
-  "titre": "Application de la loi portant création de l'Agence nationale de la cohésion des territoires",
+  "titre": "Agence nationale de la cohésion des territoires",
   "lecture": "nouvelle lecture",
-  "procedure": "Rapport d'information sans mission",
+  "procedure": "Proposition de loi ordinaire",
   "auteur": {
-   "type": "inconnu"
+   "type": "senat"
   },
   "statut": "adopte",
   "scrutin": "VTANR5L15V1912",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
+   "promulgation": "2019-07-22",
+   "numeroLoi": "2019-753",
    "conseilConstitutionnel": null,
-   "derniereEtape": "AN20-RAPPORT",
+   "derniereEtape": "AN-APPLI-RAPPORT",
    "dateDerniereEtape": "2020-03-04"
   },
   "resume": null,
@@ -2598,11 +2598,11 @@
   "relu": false
  },
  {
-  "id": "DLR5L15N41252@2019-11-26",
-  "dossier": "DLR5L15N41252",
+  "id": "DLR5L15N37659@2019-11-26",
+  "dossier": "DLR5L15N37659",
   "origine": "solennel",
   "date": "2019-11-26",
-  "titre": "Projet de loi ratifiant l'ordonnance n° 2020-1256 du 14 octobre 2020 étendant et adaptant en Polynésie française et en Nouvelle-Calédonie les dispositions de la loi n° 2019-1461 du 27 décembre 2019 relative à l'engagement dans la vie locale et à la proximité de l'action publique",
+  "titre": "Engagement dans la vie locale et action publique",
   "lecture": "première lecture",
   "procedure": "Projet de loi ordinaire",
   "auteur": {
@@ -2612,11 +2612,11 @@
   "scrutin": "VTANR5L15V2329",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
+   "promulgation": "2019-12-27",
+   "numeroLoi": "2019-1461",
    "conseilConstitutionnel": null,
-   "derniereEtape": "SN1-DEPOT",
-   "dateDerniereEtape": "2021-01-06"
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2019-12-27"
   },
   "resume": null,
   "arguments": null,
@@ -2665,6 +2665,31 @@
    "conseilConstitutionnel": null,
    "derniereEtape": "PROM-PUB",
    "dateDerniereEtape": "2019-12-11"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L15N36916",
+  "origine": "niche",
+  "date": "2019-11-28",
+  "titre": "Amélioration de la trésorerie des associations",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA720002"
+  },
+  "statut": "adopte",
+  "scrutin": null,
+  "inverse": false,
+  "suite": {
+   "promulgation": "2021-07-01",
+   "numeroLoi": "2021-875",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2021-07-01"
   },
   "resume": null,
   "arguments": null,
@@ -3144,31 +3169,6 @@
   "relu": false
  },
  {
-  "id": "DLR5L15N38412",
-  "origine": "niche",
-  "date": "2020-02-13",
-  "titre": "Protection et promotion des langues régionales",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "LT",
-   "acteur": "PA607619"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L15V2459",
-  "inverse": false,
-  "suite": {
-   "promulgation": "2021-05-21",
-   "numeroLoi": "2021-641",
-   "conseilConstitutionnel": "Partiellement conforme",
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2021-05-21"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
   "id": "DLR5L15N39144@2020-03-19",
   "dossier": "DLR5L15N39144",
   "origine": "solennel",
@@ -3244,27 +3244,25 @@
   "relu": false
  },
  {
-  "id": "DLR5L15N39209@2020-03-22",
-  "dossier": "DLR5L15N39209",
+  "id": "DLR5L15N39206@2020-03-22",
+  "dossier": "DLR5L15N39206",
   "origine": "solennel",
   "date": "2020-03-22",
-  "titre": "Loi d'urgence",
+  "titre": "Loi organique d'urgence pour faire face à l'épidémie de covid-19",
   "lecture": "texte de la commission mixte paritaire",
-  "procedure": "Proposition de loi ordinaire",
+  "procedure": "Projet ou proposition de loi organique",
   "auteur": {
-   "type": "depute",
-   "groupe": "LR",
-   "acteur": "PA2960"
+   "type": "gouvernement"
   },
   "statut": "adopte",
   "scrutin": "VTANR5L15V2736",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "AN1-DEPOT",
-   "dateDerniereEtape": "2020-03-24"
+   "promulgation": "2020-03-30",
+   "numeroLoi": "2020-365",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2020-03-30"
   },
   "resume": null,
   "arguments": null,
@@ -3296,11 +3294,11 @@
   "relu": false
  },
  {
-  "id": "DLR5L15N40849@2020-04-23",
-  "dossier": "DLR5L15N40849",
+  "id": "DLR5L15N39427@2020-04-23",
+  "dossier": "DLR5L15N39427",
   "origine": "solennel",
   "date": "2020-04-23",
-  "titre": "Loi de finances rectificative 2020 (4)",
+  "titre": "Loi de finances rectificative 2020 (2)",
   "lecture": "texte de la commission mixte paritaire",
   "procedure": "Projet de loi de finances rectificative",
   "auteur": {
@@ -3310,11 +3308,11 @@
   "scrutin": "VTANR5L15V2738",
   "inverse": false,
   "suite": {
-   "promulgation": "2020-11-30",
-   "numeroLoi": "2020-1473",
+   "promulgation": "2020-04-25",
+   "numeroLoi": "2020-473",
    "conseilConstitutionnel": null,
    "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2020-11-30"
+   "dateDerniereEtape": "2020-04-25"
   },
   "resume": null,
   "arguments": null,
@@ -4370,75 +4368,6 @@
   "relu": false
  },
  {
-  "id": "DLR5L15N39596",
-  "origine": "niche",
-  "date": "2020-07-16",
-  "titre": "Règlement du budget 2019",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "gouvernement"
-  },
-  "statut": "adopte",
-  "scrutin": null,
-  "inverse": false,
-  "suite": {
-   "promulgation": "2020-07-30",
-   "numeroLoi": "2020-937",
-   "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2020-07-30"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
-  "id": "DLR5L15N39812",
-  "origine": "niche",
-  "date": "2020-07-16",
-  "titre": "Dette sociale et autonomie (loi organique)",
-  "procedure": "Projet ou proposition de loi organique",
-  "auteur": {
-   "type": "gouvernement"
-  },
-  "statut": "adopte",
-  "scrutin": null,
-  "inverse": false,
-  "suite": {
-   "promulgation": "2020-08-07",
-   "numeroLoi": "2020-991",
-   "conseilConstitutionnel": "Conforme",
-   "derniereEtape": "CC-CONCLUSION",
-   "dateDerniereEtape": "2020-08-07"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
-  "id": "DLR5L15N39813",
-  "origine": "niche",
-  "date": "2020-07-16",
-  "titre": "Dette sociale et autonomie",
-  "procedure": "Projet de loi ordinaire",
-  "auteur": {
-   "type": "gouvernement"
-  },
-  "statut": "adopte",
-  "scrutin": null,
-  "inverse": false,
-  "suite": {
-   "promulgation": "2020-08-07",
-   "numeroLoi": "2020-992",
-   "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2020-08-07"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
   "id": "DLR5L15N39812@2020-07-23",
   "dossier": "DLR5L15N39812",
   "origine": "solennel",
@@ -5289,56 +5218,6 @@
   "relu": false
  },
  {
-  "id": "DLR5L15N41447",
-  "origine": "niche",
-  "date": "2021-03-18",
-  "titre": "Droits à protection sociale des assistants maternels et des salariés des particuliers employeurs",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "LAREM",
-   "acteur": "PA722102"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L15V3489",
-  "inverse": false,
-  "suite": {
-   "promulgation": "2021-06-08",
-   "numeroLoi": "2021-725",
-   "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2021-06-08"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
-  "id": "DLR5L15N40764",
-  "origine": "niche",
-  "date": "2021-03-18",
-  "titre": "Améliorer le système de santé par la confiance et la simplification",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "LAREM",
-   "acteur": "PA720066"
-  },
-  "statut": "adopte",
-  "scrutin": null,
-  "inverse": false,
-  "suite": {
-   "promulgation": "2021-04-26",
-   "numeroLoi": "2021-502",
-   "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2021-04-26"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
   "id": "DLR5L15N37978",
   "origine": "niche",
   "date": "2021-03-25",
@@ -5456,6 +5335,31 @@
    "conseilConstitutionnel": null,
    "derniereEtape": "AN1-DEBATS-SEANCE",
    "dateDerniereEtape": "2021-03-25"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L15N38412",
+  "origine": "niche",
+  "date": "2021-04-08",
+  "titre": "Protection et promotion des langues régionales",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LT",
+   "acteur": "PA607619"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L15V3569",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2021-05-21",
+   "numeroLoi": "2021-641",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2021-05-21"
   },
   "resume": null,
   "arguments": null,
@@ -5787,81 +5691,6 @@
   "relu": false
  },
  {
-  "id": "DLR5L15N36532",
-  "origine": "niche",
-  "date": "2021-06-24",
-  "titre": "Engagement associatif",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "DEM",
-   "acteur": "PA720746"
-  },
-  "statut": "adopte",
-  "scrutin": null,
-  "inverse": false,
-  "suite": {
-   "promulgation": "2021-07-01",
-   "numeroLoi": "2021-874",
-   "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2021-07-01"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
-  "id": "DLR5L15N36916",
-  "origine": "niche",
-  "date": "2021-06-24",
-  "titre": "Amélioration de la trésorerie des associations",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "DEM",
-   "acteur": "PA720002"
-  },
-  "statut": "adopte",
-  "scrutin": null,
-  "inverse": false,
-  "suite": {
-   "promulgation": "2021-07-01",
-   "numeroLoi": "2021-875",
-   "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2021-07-01"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
-  "id": "DLR5L15N42333",
-  "origine": "niche",
-  "date": "2021-06-24",
-  "titre": "Protéger la rémunération des agriculteurs",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "LAREM",
-   "acteur": "PA718876"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L15V3852",
-  "inverse": false,
-  "suite": {
-   "promulgation": "2021-10-18",
-   "numeroLoi": "2021-1357",
-   "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2021-10-18"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
   "id": "DLR5L15N43265",
   "origine": "niche",
   "date": "2021-10-07",
@@ -5985,13 +5814,13 @@
   "relu": false
  },
  {
-  "id": "DLR5L15N44007@2021-10-19",
-  "dossier": "DLR5L15N44007",
+  "id": "DLR5L15N42785@2021-10-19",
+  "dossier": "DLR5L15N42785",
   "origine": "solennel",
   "date": "2021-10-19",
   "titre": "Projet de loi de finances pour 2022",
   "lecture": "première lecture",
-  "procedure": "Rapport d'information sans mission",
+  "procedure": "Projet de loi de finances de l'année",
   "auteur": {
    "type": "gouvernement"
   },
@@ -5999,11 +5828,11 @@
   "scrutin": "VTANR5L15V4008",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "AN20-RAPPORT",
-   "dateDerniereEtape": "2021-10-27"
+   "promulgation": "2021-12-30",
+   "numeroLoi": "2021-1900",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2021-12-30"
   },
   "resume": null,
   "arguments": null,
@@ -6229,6 +6058,175 @@
    "conseilConstitutionnel": null,
    "derniereEtape": "ANLUNI-DEBATS-SEANCE",
    "dateDerniereEtape": "2021-11-25"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L15N41067",
+  "origine": "niche",
+  "date": "2021-11-26",
+  "titre": "Nommer les enfants nés sans vie",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": null,
+  "inverse": false,
+  "suite": {
+   "promulgation": "2021-12-06",
+   "numeroLoi": "2021-1576",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2021-12-06"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L15N40131",
+  "origine": "niche",
+  "date": "2021-11-26",
+  "titre": "Proposition de loi pour la mise en place d'une certification de cybersécurité des plateformes numériques destinée au grand public",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L15V4186",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2022-03-03",
+   "numeroLoi": "2022-309",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2022-03-03"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L15N43108",
+  "origine": "niche",
+  "date": "2021-11-26",
+  "titre": "Proposition de loi organique favorisant l'implantation locale des parlementaires",
+  "procedure": "Projet ou proposition de loi organique",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "rejete",
+  "scrutin": null,
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2021-11-26"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L15N43705",
+  "origine": "niche",
+  "date": "2021-11-26",
+  "titre": "Diverses dispositions relatives aux fonctionnaires et militaires originaires d’outre-mer",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "UDI-I",
+   "acteur": "PA721110"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L15V4187",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2021-11-26"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L15N40619",
+  "origine": "niche",
+  "date": "2021-11-26",
+  "titre": "Création d'une plateforme de référencement et de prise en charge des malades chroniques de la covid-19",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "UDI-I",
+   "acteur": "PA267330"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L15V4191",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2022-01-24",
+   "numeroLoi": "2022-53",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2022-01-24"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L15N43590",
+  "origine": "niche",
+  "date": "2021-11-26",
+  "titre": "Emploi des travailleurs expérimentés jusqu’à la retraite",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "UDI-I",
+   "acteur": "PA720488"
+  },
+  "statut": "adopte",
+  "scrutin": null,
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2021-11-29"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L15N44067",
+  "origine": "niche",
+  "date": "2021-11-26",
+  "titre": "Reconnaissance du génocide des Kurdes en Irak",
+  "procedure": "Résolution Article 34-1",
+  "auteur": {
+   "type": "depute",
+   "groupe": "UDI-I",
+   "acteur": "PA268019"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L15V4195",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
+   "dateDerniereEtape": "2021-11-26"
   },
   "resume": null,
   "arguments": null,
@@ -6933,75 +6931,125 @@
   "relu": false
  },
  {
-  "id": "DLR5L15N41449",
+  "id": "DLR5L15N41769",
   "origine": "niche",
-  "date": "2022-02-24",
-  "titre": "Démocratiser le sport en France",
+  "date": "2022-02-04",
+  "titre": "Evolution statutaire de la collectivité de Corse",
   "procedure": "Proposition de loi ordinaire",
   "auteur": {
    "type": "depute",
-   "groupe": "LAREM",
-   "acteur": "PA721750"
+   "groupe": "LT",
+   "acteur": "PA719146"
   },
   "statut": "adopte",
-  "scrutin": "VTANR5L15V4417",
+  "scrutin": null,
   "inverse": false,
   "suite": {
-   "promulgation": "2022-03-02",
-   "numeroLoi": "2022-296",
+   "promulgation": null,
+   "numeroLoi": null,
    "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2022-03-02"
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2022-02-04"
   },
   "resume": null,
   "arguments": null,
   "relu": false
  },
  {
-  "id": "DLR5L15N44129",
+  "id": "DLR5L15N40429",
   "origine": "niche",
-  "date": "2022-02-24",
-  "titre": "Combattre le harcèlement scolaire",
+  "date": "2022-02-04",
+  "titre": "Respect éthique du don d'organes par partenaires non européens",
   "procedure": "Proposition de loi ordinaire",
   "auteur": {
    "type": "depute",
-   "groupe": "DEM",
-   "acteur": "PA719558"
+   "groupe": "LT",
+   "acteur": "PA721194"
   },
-  "statut": "adopte",
-  "scrutin": "VTANR5L15V4418",
-  "inverse": false,
+  "statut": "rejete",
+  "scrutin": "VTANR5L15V4363",
+  "inverse": true,
   "suite": {
-   "promulgation": "2022-03-02",
-   "numeroLoi": "2022-299",
+   "promulgation": null,
+   "numeroLoi": null,
    "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2022-03-02"
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2022-02-04"
   },
   "resume": null,
   "arguments": null,
   "relu": false
  },
  {
-  "id": "DLR5L15N44585",
+  "id": "DLR5L15N44558",
   "origine": "niche",
-  "date": "2022-02-24",
-  "titre": "Garantir l’égalité et la liberté dans l’attribution et le choix du nom",
+  "date": "2022-02-04",
+  "titre": "Lutte contre l’exclusion financière et plafonnement des frais bancaires",
   "procedure": "Proposition de loi ordinaire",
   "auteur": {
    "type": "depute",
-   "groupe": "LAREM",
-   "acteur": "PA606639"
+   "groupe": "LT",
+   "acteur": "PA333421"
   },
-  "statut": "adopte",
-  "scrutin": "VTANR5L15V4419",
+  "statut": "rejete",
+  "scrutin": "VTANR5L15V4377",
   "inverse": false,
   "suite": {
-   "promulgation": "2022-03-02",
-   "numeroLoi": "2022-301",
+   "promulgation": null,
+   "numeroLoi": null,
    "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2022-03-02"
+   "derniereEtape": "AN1-COM-FOND-REUNION",
+   "dateDerniereEtape": "2022-02-04"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L15N44666",
+  "origine": "niche",
+  "date": "2022-02-04",
+  "titre": "Accorder l’asile politique à Julian Assange et faciliter l’accès au statut de réfugié pour les lanceurs d’alerte étrangers",
+  "procedure": "Résolution Article 34-1",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LT",
+   "acteur": "PA720538"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L15V4381",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
+   "dateDerniereEtape": "2022-02-04"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L15N44507",
+  "origine": "niche",
+  "date": "2022-02-04",
+  "titre": "Instruments nécessaires pour lutter contre la pollution plastique",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LT",
+   "acteur": "PA605518"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L15V4371",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2022-02-04"
   },
   "resume": null,
   "arguments": null,

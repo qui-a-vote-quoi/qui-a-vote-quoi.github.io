@@ -1,0 +1,1245 @@
+{
+ "DLR5L15N43846": {
+  "theme": "Institutions et État",
+  "titreClair": "Étendre la parité aux petites communes",
+  "enClair": "Prévoit un vote par listes alternant femmes et hommes dans toutes les communes de moins de 1 000 habitants (500 aujourd'hui), et une répartition des vice-présidents des intercommunalités selon la part de chaque sexe dans l'assemblée.",
+  "concerne": "Électeurs et élus des communes de moins de 1 000 habitants et des intercommunalités.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L15B4587",
+  "remarque": "Extrait = texte initial déposé en 2021 (15e législature) ; le texte adopté en 2e lecture en 2025 a pu être modifié."
+ },
+ "DLR5L16N46650": {
+  "theme": "Santé",
+  "titreClair": "Fixer un nombre minimum de soignants par patient hospitalisé",
+  "enClair": "Prévoit que l'État fixe, pour chaque spécialité hospitalière, un nombre minimum de soignants par lit ou par passage. Si une unité ne peut pas le respecter plus de 3 jours, l'agence régionale de santé serait informée.",
+  "concerne": "Patients hospitalisés, personnels soignants, hôpitaux et cliniques.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L16B0813",
+  "remarque": "Texte de la 16e législature, adopté par le Sénat. Les ratios seraient fixés plus tard par décret (valeurs non précisées dans la loi) ; entrée en vigueur au plus tard fin 2024 pour le I et en 2027 pour le reste."
+ },
+ "DLR5L16N49176": {
+  "theme": "Sécurité",
+  "titreClair": "Renforcer la sûreté dans les transports",
+  "enClair": "Les agents de sécurité de la SNCF et de la RATP pourraient palper (avec accord) et fouiller les bagages dans certains cas, refuser l'accès aux gares et utiliser des caméras-piétons. Des essais de caméras pour les conducteurs de bus sont aussi prévus.",
+  "concerne": "Voyageurs des trains, métros et bus, agents de sécurité des transports.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L16B2223",
+  "remarque": "Texte de la 16e législature. Extrait coupé après l'article 8 ter : la fin du texte n'est pas résumée."
+ },
+ "DLR5L16N49364": {
+  "theme": "Environnement et énergie",
+  "titreClair": "Encadrer la mode à renouvellement très rapide",
+  "enClair": "Définir par décret un seuil de nouveaux modèles au-delà duquel une marque relève de la mode à renouvellement très rapide. Elle devrait afficher des messages sur le réemploi, payer des pénalités allant jusqu'à 10 euros par produit en 2030, et ne plus faire de publicité.",
+  "concerne": "Marques de vêtements et vendeurs en ligne, acheteurs de vêtements.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L16B2129",
+  "remarque": "Résumé du texte déposé en 2024 (16e législature) ; la version adoptée en commission mixte paritaire en 2026 peut différer."
+ },
+ "DLR5L16N49455": {
+  "theme": "Santé",
+  "titreClair": "Interdire les « polluants éternels » dans les produits du quotidien",
+  "enClair": "Les PFAS sont des produits chimiques qui ne se dégradent presque jamais et s'accumulent dans l'eau et dans le corps. Le texte les interdit dans les cosmétiques, le fart des skis et les vêtements, et fait payer les usines qui en rejettent.",
+  "concerne": "Tout le monde, en particulier les habitants proches de sites industriels.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia"
+ },
+ "DLR5L16N49472": {
+  "theme": "Agriculture",
+  "titreClair": "Lutter contre le frelon asiatique à pattes jaunes",
+  "enClair": "Créer un plan national et des plans départementaux contre le frelon asiatique : surveillance, piégeage, destruction des nids. Les pertes économiques des apiculteurs seraient indemnisées comme d'autres pertes agricoles.",
+  "concerne": "Apiculteurs, communes et services de l'État dans les départements.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L16B2473",
+  "remarque": "L'extrait est le texte adopté par le Sénat (16e législature), pas forcément la version votée à l'Assemblée."
+ },
+ "DLR5L16N49726": {
+  "theme": "Agriculture",
+  "sujetNiveau": "ia",
+  "titreClair": "Fixer les objectifs de la politique agricole",
+  "enClair": "Ce projet de loi d'orientation fixe des objectifs publics pour l'agriculture : souveraineté alimentaire, installation et transmission des exploitations, formation et recherche. Il prévoit un rapport annuel au Parlement et au moins une action de découverte de l'agriculture pour chaque élève du primaire.",
+  "concerne": "Agriculteurs, futurs installés, élèves, établissements de formation agricole.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PRJLANR5L16B2436",
+  "remarque": "Extrait coupé : seuls l'exposé et la description des articles 1 et 2 sont visibles, pas le texte complet des articles. Résumé partiel."
+ },
+ "DLR5L16N49849": {
+  "theme": "Environnement et énergie",
+  "titreClair": "Fixer de nouveaux objectifs pour l'énergie en France",
+  "enClair": "Prévoit des objectifs chiffrés : plus de 60 % de nucléaire dans l'électricité en 2030, jusqu'à 27 GW de nouveaux réacteurs d'ici 2050, 50 GW de solaire en 2030, et l'arrêt de l'électricité au charbon en 2027.",
+  "concerne": "Tous les consommateurs d'énergie, producteurs d'électricité et collectivités.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0463",
+  "remarque": "Texte long (programmation énergétique et simplification) ; extrait lu limité aux 9 premiers articles, volet simplification non vu. Texte transmis par le Sénat."
+ },
+ "DLR5L16N49868": {
+  "theme": "Entreprises et économie",
+  "titreClair": "Simplifier les démarches des entreprises",
+  "enClair": "Texte très large qui supprime ou allège de nombreuses règles : suppression d'organismes consultatifs, silence de l'administration valant accord dans plus de cas, plateforme d'État gratuite pour les marchés publics, travaux publics de moins de 100 000 € sans mise en concurrence.",
+  "concerne": "Entreprises, administrations et collectivités qui passent des marchés publics.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B0481",
+  "remarque": "Texte très long : l'extrait s'arrête à l'article 4 bis (version du Sénat), les titres suivants ne sont pas résumés. Dossier de la 16e législature, texte déposé en 17e. À compléter par le relecteur."
+ },
+ "DLR5L17N50169": {
+  "theme": "Sécurité",
+  "titreClair": "Lutter contre le narcotrafic",
+  "enClair": "Créer un procureur national chargé de la criminalité organisée, avec compétence sur tout le territoire pour les affaires les plus complexes de trafic de drogue, et mieux coordonner police, justice et renseignement.",
+  "concerne": "Police, magistrats, personnes poursuivies pour trafic ou crime organisé.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0907",
+  "remarque": "Extrait coupé : seul le début du titre I est résumé ; le texte final compte d'autres mesures (non vues)."
+ },
+ "DLR5L17N50198": {
+  "theme": "Impôts et budget",
+  "titreClair": "Voter le budget de l'État pour 2025",
+  "enClair": "Budget de l'État pour 2025 : il fixerait les crédits des ministères. Il prévoit des mesures fiscales : barème de l'impôt sur le revenu indexé sur l'inflation, contributions exceptionnelles sur hauts revenus et grandes entreprises, report de la baisse de la CVAE.",
+  "concerne": "Toute la population, les entreprises, les collectivités.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B0324",
+  "remarque": "Extrait limité à l'exposé général et au sommaire des articles ; chiffres globaux et détail des crédits non vus. Résumé à compléter par le relecteur."
+ },
+ "DLR5L17N50413": {
+  "theme": "Sécurité",
+  "titreClair": "Créer une croix de la valeur des sapeurs-pompiers",
+  "enClair": "Créer une décoration, la croix de la valeur des sapeurs-pompiers volontaires et professionnels, pour récompenser la bravoure et l'engagement exceptionnel en intervention. Les règles d'attribution seraient fixées par arrêté du ministre de l'Intérieur.",
+  "concerne": "Sapeurs-pompiers volontaires et professionnels.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0255"
+ },
+ "DLR5L17N50434": {
+  "theme": "Logement",
+  "titreClair": null,
+  "enClair": null,
+  "concerne": null,
+  "arguments": null,
+  "niveau": "a_venir",
+  "sujetNiveau": "ia"
+ },
+ "DLR5L17N50450": {
+  "theme": "Outre-mer",
+  "titreClair": "Reporter les élections en Nouvelle-Calédonie à fin 2025",
+  "enClair": "Les élections du congrès et des assemblées de province de Nouvelle-Calédonie, prévues au plus tard le 15 décembre 2024, auraient lieu au plus tard le 30 novembre 2025. Les mandats actuels seraient prolongés jusque-là.",
+  "concerne": "Électeurs et élus de Nouvelle-Calédonie.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0483"
+ },
+ "DLR5L17N50453": {
+  "theme": "Retraites",
+  "titreClair": "Revenir à la retraite à 62 ans",
+  "enClair": "Annuler la réforme de 2023 : l'âge légal de départ serait repassé de 64 à 62 ans, et il aurait fallu cotiser moins de trimestres pour toucher une retraite complète.",
+  "concerne": "Toutes les personnes qui travaillent, surtout celles nées après 1961.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia"
+ },
+ "DLR5L17N50579": {
+  "theme": "Institutions et État",
+  "titreClair": "Adapter le code électoral à un même scrutin municipal",
+  "enClair": "Adapter les règles électorales organiques à un mode de scrutin municipal unifié : règles d'éligibilité fixées pour les communes de 1 000 habitants et plus, suppression de dispositions propres aux petites communes, application au prochain renouvellement des conseils.",
+  "concerne": "Élus et candidats aux élections municipales.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1106",
+  "remarque": "Texte organique très technique, qui accompagne une loi ordinaire non incluse ; le changement de mode de scrutin lui-même est déduit du titre."
+ },
+ "DLR5L17N50627": {
+  "theme": "Justice",
+  "titreClair": "Punir aussi les contacts avec un faux mineur",
+  "enClair": "Appliquer les infractions du code pénal contre la corruption de mineurs, les propositions sexuelles et la pédopornographie aussi quand l'auteur s'adresse à une personne qui se présente comme mineure, notamment un enquêteur qui joue ce rôle en ligne.",
+  "concerne": "Enquêteurs, auteurs d'infractions sexuelles visant des mineurs, enfants.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0369"
+ },
+ "DLR5L17N50631": {
+  "theme": "Justice",
+  "titreClair": "Moins d'aménagements pour les courtes peines de prison",
+  "enClair": "Aujourd'hui, une courte peine de prison ferme est le plus souvent transformée en bracelet électronique ou en semi-liberté. Le texte supprime cette règle automatique : le juge peut encore aménager la peine, mais ce n'est plus le principe.",
+  "concerne": "Les personnes condamnées à 2 ans de prison ou moins.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia"
+ },
+ "DLR5L17N50690": {
+  "theme": "Justice",
+  "titreClair": "Durcir les sanctions des mineurs délinquants et parents",
+  "enClair": "Punir de 3 ans de prison et 45 000 € d'amende des parents dont la carence a conduit leur enfant à commettre plusieurs délits ; créer une comparution immédiate pour les mineurs de 16 ans et plus ; limiter l'atténuation des peines des mineurs.",
+  "concerne": "Mineurs auteurs d'infractions, leurs parents, juges et victimes.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0448",
+  "remarque": "L'extrait est le texte déposé en 2024 ; la version votée (accord entre les deux chambres) peut différer. Fin de l'article 5 coupée."
+ },
+ "DLR5L17N50724": {
+  "theme": "Éducation et jeunesse",
+  "sujetNiveau": "ia",
+  "titreClair": "Former et signaler les actes antisémites à l'université",
+  "enClair": "Les établissements d'enseignement supérieur devraient former à la lutte contre l'antisémitisme et le racisme, créer une mission « Égalité et diversité » avec un référent, et ouvrir un signalement anonyme. Les victimes seraient informées des poursuites disciplinaires.",
+  "concerne": "Étudiants, enseignants, chercheurs et personnels des établissements d'enseignement supérieur.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PIONANR5L17B1009",
+  "remarque": "Texte adopté par le Sénat puis transmis à l'Assemblée ; l'extrait est coupé après l'article 4, la fin du texte n'a pas été lue."
+ },
+ "DLR5L17N50775": {
+  "theme": "Enfance et famille",
+  "titreClair": "Encadrer les crèches privées à but lucratif",
+  "enClair": "Interdirait aux fonds d'investissement de détenir des parts d'entreprises gérant des crèches, relèverait le plancher et le plafond des sanctions financières (jusqu'à 10 millions d'euros), et interdirait la formation à distance pour la formation obligatoire des professionnels.",
+  "concerne": "Parents, enfants en crèche, gestionnaires de crèches et leurs salariés.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0517"
+ },
+ "DLR5L17N50777": {
+  "theme": "Logement",
+  "titreClair": "Obliger à réparer vite les ascenseurs en panne",
+  "enClair": "Les sociétés d'entretien devraient intervenir sous 2 jours ouvrés après une panne et réparer sous un délai limité, sous peine de 1 000 € par jour de retard. Elles devraient aussi constituer un stock de pièces, sous peine d'amende.",
+  "concerne": "Habitants d'immeubles avec ascenseur, copropriétés, bailleurs, sociétés d'ascenseurs.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0518",
+  "remarque": "Le délai maximal de réparation après la 1re intervention est tronqué dans l'extrait (« huit… ») ; à vérifier dans le texte."
+ },
+ "DLR5L17N50778": {
+  "theme": "Éducation et jeunesse",
+  "titreClair": "Ouvrir le repas à 1 euro à tous les étudiants",
+  "enClair": "Obliger les restaurants universitaires (Crous) à proposer au moins une offre de repas à 1 euro maximum dans tous leurs sites de restauration, sans condition de ressources ou de bourse.",
+  "concerne": "Tous les étudiants.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0519"
+ },
+ "DLR5L17N50779": {
+  "theme": "Outre-mer",
+  "titreClair": "Réguler les prix et la concentration en outre-mer",
+  "enClair": "Viser des prix de première nécessité équivalents à la moyenne de l'Hexagone, avec prix fixés par le préfet sans accord. Renforcer les sanctions pour comptes non publiés, contrôler les rachats dès 5 millions d'euros et les grands magasins de plus de 300 m².",
+  "concerne": "Habitants et commerces des territoires d'outre-mer, grandes entreprises de distribution.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0522",
+  "remarque": "Extrait coupé dans l'exposé des motifs : articles au-delà du 3 non vus ; résumé fondé sur la description des articles 1 à 3."
+ },
+ "DLR5L17N50819": {
+  "theme": "Agriculture",
+  "sujetNiveau": "ia",
+  "titreClair": "Alléger les règles pesticides pour les agriculteurs",
+  "enClair": "Le texte modifierait les règles sur les produits phytosanitaires : pulvérisation par drone autorisée sous conditions (pentes d'au moins 30 %, essais de 3 ans), règles de production et de vente assouplies, conseil stratégique global facultatif.",
+  "concerne": "Exploitants agricoles, vendeurs et conseillers de produits phytosanitaires, agence sanitaire.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PIONANR5L17B0856",
+  "remarque": "Extrait coupé après l'article 2 : le texte comporte d'autres titres non lus. Résumé partiel."
+ },
+ "DLR5L17N51014": {
+  "theme": "Santé",
+  "titreClair": "Augmenter le nombre d'orthophonistes formés",
+  "enClair": "Faire passer de 975 à 1 463 le nombre de places en formation d'orthophonie d'ici 2030, créer des maîtres de stage et une allocation pour les étudiants qui s'engagent à exercer dans un territoire donné.",
+  "concerne": "Étudiants en orthophonie, patients, territoires manquant de soignants.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0666"
+ },
+ "DLR5L17N51037": {
+  "theme": "Sécurité",
+  "titreClair": "Présumer en légitime défense les policiers et gendarmes",
+  "enClair": "Les policiers nationaux ou municipaux et les gendarmes qui utilisent leur arme dans le cadre fixé par la loi seraient présumés en légitime défense. Cette présomption tomberait si l'enquête montre un usage manifestement disproportionné.",
+  "concerne": "Policiers, gendarmes et personnes visées par un tir.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0691"
+ },
+ "DLR5L17N51039": {
+  "theme": "Immigration",
+  "titreClair": "Durcir l'accès à la nationalité française à Mayotte",
+  "enClair": "À Mayotte, un enfant né de parents étrangers pourrait devenir français à 18 ans seulement si ses deux parents (et non un seul) y vivaient depuis au moins un an (au lieu de plus de trois mois) avant sa naissance.",
+  "concerne": "Enfants nés à Mayotte de parents étrangers et leurs familles.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0693"
+ },
+ "DLR5L17N51078": {
+  "theme": "Justice",
+  "titreClair": "Aligner le statut du procureur anti-criminalité organisée",
+  "enClair": "Ajouter le procureur national anti-criminalité organisée à la règle de statut de la magistrature qui, aujourd'hui, ne cite que d'autres fonctions (dont celles de Paris), afin de lui appliquer le même régime.",
+  "concerne": "Magistrats, notamment le futur procureur national.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0908",
+  "remarque": "Texte très bref et technique ; l'article modifié (art. 38-2 de l'ordonnance de 1958) n'est pas détaillé dans l'extrait."
+ },
+ "DLR5L17N51079": {
+  "theme": "Impôts et budget",
+  "titreClair": "Continuer à percevoir les impôts sans budget 2025",
+  "enClair": "Loi d'attente sans budget voté : elle autorise l'État à continuer de percevoir les impôts existants, à emprunter pour sa trésorerie, et certains organismes de sécurité sociale à recourir à des ressources de court terme, jusqu'à l'adoption du budget 2025.",
+  "concerne": "L'État, les collectivités, les organismes de sécurité sociale.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B0711",
+  "remarque": "Le texte reprend aussi les prélèvements au profit des collectivités (non détaillé ici)."
+ },
+ "DLR5L17N51115": {
+  "theme": "Outre-mer",
+  "titreClair": "Expérimenter l'encadrement des loyers en outre-mer",
+  "enClair": "Permettre pendant 5 ans l'encadrement des loyers (plafonds fixés) dans les territoires d'outre-mer concernés, sans supplément de loyer pour un logement non décent, et organiser des comités locaux pour adapter les normes de construction.",
+  "concerne": "Locataires et propriétaires dans les outre-mer, collectivités locales.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1034",
+  "remarque": "Extrait = texte adopté par le Sénat ; les articles 2 et 3 y sont supprimés."
+ },
+ "DLR5L17N51175": {
+  "theme": "Environnement et énergie",
+  "titreClair": "Faciliter la prévention et la gestion des inondations",
+  "enClair": "Prévoit d'alléger les procédures pour entretenir les cours d'eau et réparer après une inondation, de créer des programmes locaux de prévention avec guichet unique, et de permettre aux collectivités de mutualiser des agents pour aider les communes sinistrées.",
+  "concerne": "Communes et intercommunalités exposées aux inondations, et leurs habitants.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1041",
+  "remarque": "Texte adopté par le Sénat ; extrait lu limité aux articles 1 à 3, la suite n'a pas été vue."
+ },
+ "DLR5L17N51215": {
+  "theme": "Impôts et budget",
+  "titreClair": "Faire payer au moins 2 % par an aux plus grandes fortunes",
+  "enClair": "Les personnes qui possèdent plus de 100 millions d'euros devraient payer chaque année au moins 2 % de leur fortune en impôts. Tous les autres contribuables ne sont pas concernés.",
+  "concerne": "Environ 0,01 % des contribuables, les plus riches.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia"
+ },
+ "DLR5L17N51222": {
+  "theme": "Outre-mer",
+  "titreClair": "Aider Mayotte à se reconstruire après le cyclone Chido",
+  "enClair": "Prévoit un organisme chargé de la reconstruction, des règles d'urbanisme et de marchés publics assouplies pendant 24 mois, des constructions provisoires sans formalités, des dons facilités et des délais de paiement d'impôts et cotisations jusqu'au 31 mars 2025.",
+  "concerne": "Habitants, entreprises et collectivités de Mayotte.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B0772",
+  "remarque": "Extrait limité à l'exposé des motifs (articles 1 à 22 décrits par le gouvernement) ; le détail des articles n'a pas été lu."
+ },
+ "DLR5L17N51328": {
+  "theme": "Agriculture",
+  "titreClair": "Sanctionner les vignes laissées à l'abandon",
+  "enClair": "Punir d'une contravention de 5e classe le propriétaire qui ne traite pas ni n'arrache une vigne non cultivée dans une zone de lutte obligatoire contre la flavescence dorée, une maladie de la vigne.",
+  "concerne": "Propriétaires de vignes, viticulteurs, services de contrôle.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0822"
+ },
+ "DLR5L17N51329": {
+  "theme": "Logement",
+  "titreClair": "Faciliter la vente des biens en indivision",
+  "enClair": "Permettre à l'administration du domaine de vendre des biens indivis dont des propriétaires sont introuvables, et à ceux qui détiennent plus de la moitié des droits de vendre ou partager un bien après dix ans de succession, avec garde-fous.",
+  "concerne": "Héritiers d'un bien en indivision, propriétaires introuvables, notaires.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0823",
+  "remarque": "Extrait coupé avant la fin de l'article 3."
+ },
+ "DLR5L17N51330": {
+  "theme": "Culture et sport",
+  "titreClair": "Faire respecter les droits voisins de la presse",
+  "enClair": "Obliger les plateformes en ligne à fournir aux éditeurs de presse les données pour calculer leur rémunération, sous peine d'une amende allant jusqu'à 2 % du chiffre d'affaires mondial, et prévoir l'intervention de l'Autorité de la concurrence après un an sans accord.",
+  "concerne": "Éditeurs et agences de presse, grandes plateformes numériques.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0824"
+ },
+ "DLR5L17N51346": {
+  "theme": "Sécurité",
+  "titreClair": "Créer un statut unique pour les soignants des pompiers",
+  "enClair": "Réunirait médecins, infirmiers, pharmaciens, psychologues et vétérinaires de sapeurs-pompiers dans un cadre d'emploi unique, préciserait leurs missions, et ouvrirait aux soignants des armées en fin de contrat une intégration directe.",
+  "concerne": "Personnels de santé des services d'incendie et de secours.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0841"
+ },
+ "DLR5L17N51362": {
+  "theme": "Environnement et énergie",
+  "titreClair": "Ratifier un accord sur l'immersion de déchets en mer",
+  "enClair": "Autorise la France à ratifier une modification de 2009 du Protocole de Londres (1996) sur la pollution des mers, convention de 1972 sur l'immersion de déchets.",
+  "concerne": "L'État ; activités maritimes concernées par l'immersion de déchets.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B0942",
+  "remarque": "Le contenu de la modification (annexée) n'apparaît pas dans l'extrait : résumé limité à l'objet du texte."
+ },
+ "DLR5L17N51429": {
+  "theme": "Immigration",
+  "sujetNiveau": "ia",
+  "titreClair": "Allonger la rétention des étrangers condamnés pour des faits graves",
+  "enClair": "Prévoit que le juge puisse prolonger le maintien en rétention d'étrangers condamnés à des crimes ou délits graves, ou sous interdiction du territoire. La durée maximale passerait à 90 jours, et à 210 jours à titre exceptionnel.",
+  "concerne": "Étrangers placés en rétention avant leur éloignement, juges, administration.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PIONANR5L17B1148"
+ },
+ "DLR5L17N51457": {
+  "theme": "Travail et emploi",
+  "titreClair": "Mieux protéger la santé des agents territoriaux",
+  "enClair": "Rendre obligatoire une couverture collective (arrêt maladie, invalidité, décès) pour les agents des collectivités, avec un financement employeur d'au moins la moitié, sans refus pour maladie antérieure. Application en 2029 si aucune convention n'existe.",
+  "concerne": "Agents des communes, départements et régions, et leurs employeurs.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1670",
+  "remarque": "Extrait coupé après l'article 6."
+ },
+ "DLR5L17N51467": {
+  "theme": "Défense et international",
+  "titreClair": "Condamner la guerre en Ukraine et la soutenir",
+  "enClair": "Résolution non contraignante : l'Assemblée condamnerait la guerre menée par la Russie contre l'Ukraine, ses annexions et les crimes commis, demanderait l'arrêt des combats et le retrait russe, et appellerait à une coopération renforcée avec l'Ukraine.",
+  "concerne": "Gouvernement, Ukraine, Russie, partenaires européens.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PNREANR5L17B0916",
+  "remarque": "Texte de résolution (position de l'Assemblée, pas de loi). Extrait coupé : demandes finales non lues."
+ },
+ "DLR5L17N51504": {
+  "theme": "Agriculture",
+  "titreClair": "Prolonger le prix minimum de revente des aliments",
+  "enClair": "Prolonger jusqu'en avril 2028 l'obligation de vendre certains produits alimentaires au moins 10 % au-dessus de leur prix d'achat, ainsi que l'encadrement des promotions alimentaires ; l'encadrement des promotions serait supprimé pour les produits d'hygiène.",
+  "concerne": "Distributeurs, industriels, agriculteurs, consommateurs.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0954",
+  "remarque": "Le texte étend aussi le dispositif aux aliments pour animaux de compagnie et le restreint aux denrées alimentaires."
+ },
+ "DLR5L17N51518": {
+  "theme": "Sécurité",
+  "titreClair": "Valoriser l'engagement dans la réserve communale de sécurité civile",
+  "enClair": "En cas de danger grave, l'employeur devrait notifier un refus de libérer un réserviste sous 24 heures (une semaine aujourd'hui). Élèves et étudiants réservistes pourraient faire valider leurs compétences dans leur formation.",
+  "concerne": "Bénévoles de la réserve communale, leurs employeurs, élèves et étudiants.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0948"
+ },
+ "DLR5L17N51563": {
+  "theme": "Consommation et alimentation",
+  "titreClair": "Exiger l'accord préalable pour le démarchage téléphonique",
+  "enClair": "Le démarchage téléphonique serait interdit sauf accord préalable du consommateur, à partir du 11 août 2026. Il limiterait aussi les appels à 2 en 60 jours par entreprise et alourdirait les peines pour abus de faiblesse (5 ans de prison, 500 000 € d'amende).",
+  "concerne": "Toute personne appelée par des démarcheurs, entreprises de démarchage.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B0561"
+ },
+ "DLR5L17N51619": {
+  "theme": "Outre-mer",
+  "titreClair": "Enquêter sur l'accès à la justice outre-mer",
+  "enClair": "Créer une commission d'enquête parlementaire sur les obstacles à l'accès à la justice des habitants d'outre-mer : éloignement des tribunaux, audiences foraines, visioconférence, manque de moyens et de magistrats.",
+  "concerne": "Habitants et juridictions d'outre-mer.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PNREANR5L17B1050",
+  "remarque": "Proposition de résolution (création d'une commission d'enquête), pas une loi ; l'extrait ne montre que l'exposé des motifs."
+ },
+ "DLR5L17N51670": {
+  "theme": "Santé",
+  "titreClair": "Autoriser l'aide à mourir sous conditions",
+  "enClair": "Créer une aide à mourir : une personne majeure, atteinte d'une maladie grave et incurable en phase avancée ou terminale, avec souffrance, pourrait demander à un médecin une substance létale. Le médecin répondrait sous 15 jours, avec 2 jours de réflexion minimum.",
+  "concerne": "Personnes gravement malades, médecins, infirmiers, soignants.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1100",
+  "remarque": "Texte de loi complet sur la fin de vie ; extrait coupé après l'article 7 (volet soins palliatifs non vu)."
+ },
+ "DLR5L17N51672": {
+  "theme": "Santé",
+  "titreClair": "Renforcer les soins palliatifs et d'accompagnement",
+  "enClair": "Garantir l'accès aux soins palliatifs partout en France, avec un droit opposable devant le juge administratif, une loi de programmation, de nouvelles « maisons d'accompagnement », plus de formation et des directives anticipées facilitées.",
+  "concerne": "Personnes gravement malades ou en fin de vie, leurs proches, soignants.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1102",
+  "remarque": "Texte long ; extrait coupé après l'article 1. Résumé fondé surtout sur l'exposé des motifs, qui présente les 21 articles."
+ },
+ "DLR5L17N51711": {
+  "theme": "Sécurité",
+  "titreClair": "Punir plus durement l'organisation de rave-parties",
+  "enClair": "Punirait de six mois de prison et 5 000 euros d'amende l'organisation d'un rassemblement festif non déclaré ou interdit par le préfet, avec confiscation du matériel, et d'une amende la simple participation.",
+  "concerne": "Organisateurs et participants de rave-parties, riverains, préfets.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1133"
+ },
+ "DLR5L17N51732": {
+  "theme": "Culture et sport",
+  "titreClair": "Réorganiser le sport professionnel",
+  "enClair": "Prévoit des règles pour les fédérations et ligues professionnelles : plafond de rémunération des dirigeants, ligues masculine et féminine distinctes, retrait possible de la délégation, exclusion des condamnés, licence d'agent sportif plus encadrée.",
+  "concerne": "Fédérations, ligues, clubs professionnels, sportifs et agents sportifs.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1560",
+  "remarque": "Texte long : l'extrait s'arrête vers l'article 2 bis, le volet financement n'est pas résumé."
+ },
+ "DLR5L17N51791": {
+  "theme": "Travail et emploi",
+  "titreClair": "Rendre durable le contrat de professionnalisation expérimental",
+  "enClair": "Permettre durablement que le contrat de professionnalisation (formation en alternance) vise un ou plusieurs blocs de compétences d'une certification, et non seulement un diplôme entier.",
+  "concerne": "Salariés en alternance, entreprises, organismes de formation.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1674"
+ },
+ "DLR5L17N51849": {
+  "theme": "Santé",
+  "titreClair": "Lutter contre la mort des bébés",
+  "enClair": "Créer un registre national des naissances pour comprendre pourquoi des nourrissons meurent, et interdire pendant 3 ans de fermer des maternités, sauf danger pour les patientes.",
+  "concerne": "Futurs parents, surtout loin des grandes villes.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia"
+ },
+ "DLR5L17N51852": {
+  "theme": "Logement",
+  "titreClair": "Construire des logements plus facilement",
+  "enClair": "Alléger les démarches pour modifier les plans d'urbanisme des communes et obtenir un permis de construire, afin de construire plus vite.",
+  "concerne": "Communes, constructeurs, et ceux qui cherchent un logement.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia"
+ },
+ "DLR5L17N51900": {
+  "theme": "Société et mémoire",
+  "titreClair": "Reconnaître la « double dette » imposée à Haïti",
+  "enClair": "Résolution non contraignante invitant le Gouvernement à reconnaître l'injustice de l'ordonnance de 1825 imposée à Haïti, à étudier le remboursement de la « double dette » et à créer une commission indépendante, ainsi que des initiatives de mémoire.",
+  "concerne": "Gouvernement, Haïti, descendants, public intéressé par l'histoire coloniale.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PNREANR5L17B1267",
+  "remarque": "Texte de résolution, sans effet de loi."
+ },
+ "DLR5L17N51968": {
+  "theme": "Logement",
+  "titreClair": "Faciliter le logement des agents des services publics",
+  "enClair": "Faciliter l'attribution de logements sociaux aux agents publics, notamment en élargissant les droits de réservation des administrations qui cèdent un terrain, et simplifier la construction de logements sur des terrains publics.",
+  "concerne": "Agents de la fonction publique, bailleurs sociaux, collectivités.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1332",
+  "remarque": "L'extrait est le texte déposé ; la version finale (accord entre les deux chambres) peut différer. Articles 5 à 7 coupés."
+ },
+ "DLR5L17N51979": {
+  "theme": "Enfance et famille",
+  "titreClair": "Verser les allocations familiales dès le premier enfant",
+  "enClair": "Les allocations familiales, aujourd'hui versées à partir du deuxième enfant, seraient versées dès le premier enfant. Le texte prévoit de financer la dépense par une hausse de la taxe sur le tabac.",
+  "concerne": "Familles avec un seul enfant.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1342"
+ },
+ "DLR5L17N51981": {
+  "theme": "Retraites",
+  "titreClair": "Protéger le logement des retraités qui touchent le minimum vieillesse",
+  "enClair": "Le logement principal d'un bénéficiaire de l'allocation de solidarité aux personnes âgées (minimum vieillesse) ne compterait plus dans l'héritage pris en compte pour réclamer le remboursement de l'aide aux héritiers.",
+  "concerne": "Retraités à faibles revenus propriétaires de leur logement, et leurs héritiers.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1344"
+ },
+ "DLR5L17N51984": {
+  "theme": "Outre-mer",
+  "titreClair": "Créer le Département-Région de Mayotte",
+  "enClair": "Adapter le code des collectivités et le code électoral au futur Département-Région de Mayotte, doté d'une assemblée. Entrée en vigueur au plus tard le 1er janvier 2026 ; élections au prochain renouvellement des conseils départementaux.",
+  "concerne": "Habitants et élus de Mayotte.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B1471",
+  "remarque": "Loi organique de coordination : les compétences exactes de la nouvelle collectivité ne figurent pas dans cet extrait."
+ },
+ "DLR5L17N51985": {
+  "theme": "Outre-mer",
+  "titreClair": "Refonder Mayotte : programme de l'État et immigration",
+  "enClair": "Fixer les objectifs de l'État pour Mayotte jusqu'en 2030 et durcir les conditions de séjour et de reconnaissance d'enfant. Amende pour reconnaissance frauduleuse relevée de 15 000 à 75 000 euros, démolition possible d'habitats informels dangereux.",
+  "concerne": "Habitants de Mayotte, étrangers en séjour ou en situation irrégulière, élus locaux.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B1470",
+  "remarque": "Texte transmis par le Sénat. Extrait coupé, rapport annexé et volets économie, logement, services publics non vus. Retenir surtout le volet immigration."
+ },
+ "DLR5L17N51999": {
+  "theme": "Retraites",
+  "titreClair": "Demander l'abrogation de la réforme des retraites de 2023",
+  "enClair": "Résolution (texte sans effet juridique direct) invitant l'Assemblée à affirmer la nécessité d'abroger la loi de 2023 qui a relevé l'âge légal de départ de 62 à 64 ans et allongé la durée de cotisation.",
+  "concerne": "Toutes les personnes qui travaillent, surtout celles nées après 1961.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PNREANR5L17B1352",
+  "remarque": "Proposition de résolution : n'abroge pas elle-même la loi. Fin du texte coupée dans l'extrait."
+ },
+ "DLR5L17N52087": {
+  "theme": "Institutions et État",
+  "sujetNiveau": "ia",
+  "titreClair": null,
+  "enClair": null,
+  "concerne": null,
+  "arguments": null,
+  "niveau": "a_venir",
+  "source": "PIONANR5L17B1415",
+  "remarque": "L’extrait ne contient que la page de garde : aucun article ni exposé, résumé impossible."
+ },
+ "DLR5L17N52100": {
+  "theme": "Culture et sport",
+  "titreClair": "Organiser les Jeux olympiques d'hiver de 2030",
+  "enClair": "Fixe le cadre légal des Jeux de 2030 : organisateurs reconnus, protection des marques olympiques, publicité autorisée autour des sites, contrôle des comptes par la Cour des comptes, charte des volontaires et rapport annuel sur les plus hautes rémunérations du comité.",
+  "concerne": "Organisateurs, communes et régions hôtes, annonceurs, volontaires.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B1641",
+  "remarque": "Extrait lu limité aux articles 1 à 8 bis (version du Sénat) ; la suite n'a pas été vue."
+ },
+ "DLR5L17N52104": {
+  "theme": "Outre-mer",
+  "titreClair": "Permettre aux natifs de voter aux provinciales calédoniennes",
+  "enClair": "Ajoute une catégorie d'électeurs pour les élections du congrès et des provinces de Nouvelle-Calédonie : les personnes nées en Nouvelle-Calédonie et inscrites sur la liste électorale générale.",
+  "concerne": "Électeurs de Nouvelle-Calédonie nés sur place.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2804"
+ },
+ "DLR5L17N52132": {
+  "theme": "Sécurité",
+  "titreClair": "Classer les Frères musulmans comme organisation terroriste",
+  "enClair": "Appeler l'Union européenne à inscrire la mouvance des Frères musulmans sur sa liste des organisations terroristes. Ce texte est une résolution : il exprime une position, sans effet juridique direct.",
+  "concerne": "Gouvernement, institutions européennes, personnes liées à ce mouvement.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PNREANR5L17B1455",
+  "remarque": "Proposition de résolution européenne ; partie finale (demandes précises) coupée dans l'extrait. Sujet sensible : vérifier la neutralité."
+ },
+ "DLR5L17N52428": {
+  "theme": "Impôts et budget",
+  "titreClair": "Voter le budget de l'État pour 2026",
+  "enClair": "Budget de l'État pour 2026 : autorise les impôts, fixe les crédits des ministères et les dotations aux collectivités. Mesures fiscales prévues : prorogation de la contribution sur hauts revenus, abattement pour retraités, taxe sur petits colis, impôt sur les holdings patrimoniales.",
+  "concerne": "Toute la population, les entreprises, les collectivités.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B1906",
+  "remarque": "Extrait limité à l'exposé général et au sommaire ; montants globaux et détail des crédits non vus."
+ },
+ "DLR5L17N52719": {
+  "theme": "Immigration",
+  "titreClair": "Demander de dénoncer les accords franco-algériens de 1968",
+  "enClair": "Résolution (texte sans effet juridique direct) appelant le gouvernement à mettre fin aux accords de 1968, qui donnent aux Algériens des règles d'entrée et de séjour en France différentes du droit commun.",
+  "concerne": "Ressortissants algériens, administration française de l'immigration.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PNREANR5L17B1778",
+  "remarque": "Proposition de résolution : non contraignante."
+ },
+ "DLR5L17N52746": {
+  "theme": "Institutions et État",
+  "titreClair": "Créer un établissement public pour les biens immobiliers de l'État",
+  "enClair": "Transformerait l'Agence de gestion de l'immobilier de l'État (une société) en établissement public, auquel l'État pourrait transférer gratuitement des bâtiments. Il les gérerait, rénoverait, louerait ou vendrait, et pourrait créer des filiales.",
+  "concerne": "L'État, ses services et les organismes qui occupent ses bâtiments.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1796",
+  "remarque": "Extrait = texte initial ; le texte final (commission mixte paritaire) a pu changer."
+ },
+ "DLR5L17N52749": {
+  "theme": "Immigration",
+  "titreClair": "Renouveler automatiquement les titres de séjour de longue durée",
+  "enClair": "Les cartes de séjour pluriannuelles et les cartes de résident seraient renouvelées automatiquement par l'administration, sans démarche de la personne.",
+  "concerne": "Étrangers titulaires d'une carte de séjour pluriannuelle ou de résident, préfectures.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1799"
+ },
+ "DLR5L17N52767": {
+  "theme": "Société et mémoire",
+  "titreClair": "Abroger le Code noir",
+  "enClair": "Abroger formellement le Code noir de 1685 (texte colonial sur l'esclavage) et ses textes d'application, et demander au Gouvernement, sous un an, un rapport sur le droit colonial encore en vigueur outre-mer.",
+  "concerne": "Territoires et habitants d'outre-mer, Parlement.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1817"
+ },
+ "DLR5L17N52781": {
+  "theme": "Enfance et famille",
+  "titreClair": "Garantir un avocat à chaque enfant protégé",
+  "enClair": "Chaque mineur concerné par une mesure de protection judiciaire serait assisté d'un avocat, désigné d'office sous 8 jours s'il n'en choisit pas. L'État paierait cet avocat par l'aide juridictionnelle, sans condition de ressources.",
+  "concerne": "Enfants suivis par un juge des enfants ou l'aide sociale à l'enfance.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B1831"
+ },
+ "DLR5L17N52787": {
+  "theme": "Consommation et alimentation",
+  "titreClair": "Afficher le pays d'origine de tous les aliments",
+  "enClair": "L'étiquette devrait indiquer le pays d'origine de tous les aliments, bruts ou transformés, et de chaque ingrédient qui fait au moins 10 % du produit.",
+  "concerne": "Tous les consommateurs, et les agriculteurs français.",
+  "arguments": {
+   "pour": [
+    "Les consommateurs ont le droit de savoir d'où vient ce qu'ils mangent.",
+    "Afficher l'origine rétablirait une concurrence loyale avec les produits importés, fabriqués selon d'autres normes, et aiderait à choisir des produits français.",
+    "Le texte enverrait un signal à l'Union européenne pour qu'elle change ses règles, alors que les mesures françaises déjà votées n'ont jamais été appliquées."
+   ],
+   "contre": [
+    "Le texte va contre les règles européennes d'étiquetage : il serait inapplicable et exposerait la France à des recours en justice.",
+    "Ces règles se décident au niveau européen : c'est là qu'il faut agir pour changer l'étiquetage, plutôt que par une loi française.",
+    "L'origine ne suffit pas : il faudrait aussi informer sur la façon de produire, la qualité nutritionnelle et l'impact sur l'environnement."
+   ],
+   "sources": [
+    {
+     "label": "le texte de la proposition de loi",
+     "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52787"
+    },
+    {
+     "label": "le rapport de la commission des affaires économiques",
+     "url": "https://www.assemblee-nationale.fr/dyn/opendata/RAPPANR5L17B1985.html"
+    },
+    {
+     "label": "le compte rendu de la séance du 30 octobre 2025",
+     "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/deuxieme-seance-du-jeudi-30-octobre-2025"
+    }
+   ]
+  },
+  "niveau": "ia",
+  "sujetNiveau": "ia"
+ },
+ "DLR5L17N52801": {
+  "theme": "Immigration",
+  "titreClair": "Une amende pour les étrangers sans papiers",
+  "enClair": "Un étranger majeur resté en France sans titre de séjour, ou après la fin de son visa, pourrait être condamné à 3 750 € d'amende et à 3 ans d'interdiction du territoire. Ce délit avait été supprimé en 2012.",
+  "concerne": "Les étrangers en situation irrégulière.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia"
+ },
+ "DLR5L17N52922": {
+  "theme": "Sécurité sociale",
+  "titreClair": "Fixer le budget de la Sécurité sociale pour 2026",
+  "enClair": "Budget annuel de la Sécurité sociale : il corrige les comptes 2025 (déficit prévu de 23 milliards d'euros) et fixe les recettes et objectifs de dépenses de 2026 (maladie, retraites, famille, autonomie), avec diverses mesures de recouvrement et de gestion.",
+  "concerne": "Assurés, patients, retraités, familles, employeurs.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B1907",
+  "remarque": "Texte très long ; extrait coupé après l'article 5. Texte déposé par le gouvernement en octobre 2025, version finale différente. À compléter avec les mesures principales."
+ },
+ "DLR5L17N52976": {
+  "theme": "Outre-mer",
+  "titreClair": "Le même prix du timbre en outre-mer qu'en métropole",
+  "enClair": "Une lettre envoyée vers ou depuis l'outre-mer coûterait le même prix qu'en métropole, quel que soit son poids.",
+  "concerne": "Les habitants d'outre-mer et leurs proches.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia"
+ },
+ "DLR5L17N52977": {
+  "theme": "Travail et emploi",
+  "titreClair": "Nationaliser ArcelorMittal France",
+  "enClair": "L'État prendrait le contrôle du premier producteur d'acier en France (environ 15 400 salariés, dont les hauts-fourneaux de Dunkerque et Fos-sur-Mer) pour empêcher de nouvelles fermetures de sites.",
+  "concerne": "Les salariés de la sidérurgie et leurs régions.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia"
+ },
+ "DLR5L17N52985": {
+  "theme": "Impôts et budget",
+  "titreClair": "Renforcer la lutte contre les fraudes sociales et fiscales",
+  "enClair": "Facilite l'échange d'informations entre administrations (impôts, douanes, organismes sociaux, départements) pour détecter les fraudes, crée un répertoire des fraudeurs sanctionnés et renforce les programmes de contrôle des caisses de sécurité sociale.",
+  "concerne": "Particuliers, entreprises, administrations fiscales et organismes sociaux.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B2115",
+  "remarque": "Texte long : l'extrait s'arrête vers l'article 5 ; les mesures suivantes ne sont pas résumées."
+ },
+ "DLR5L17N53051": {
+  "theme": "Enfance et famille",
+  "titreClair": "Protéger les mineurs isolés sans abri",
+  "enClair": "Suspendre le refus de reconnaître un jeune comme mineur tant qu'un juge n'a pas tranché, avec maintien de l'accueil d'urgence, et créer un Observatoire national du sans-abrisme qui publierait un rapport annuel.",
+  "concerne": "Jeunes isolés se déclarant mineurs, départements, personnes sans domicile.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2021"
+ },
+ "DLR5L17N53058": {
+  "theme": "Outre-mer",
+  "titreClair": "Baisser les prix des services en outre-mer",
+  "enClair": "Plafonner les tarifs des billets d'avion pour les résidents, avec reste à charge limité à 50 % du prix moyen pour les bénéficiaires d'aides. Aligner les frais bancaires de base sur ceux de l'Hexagone et étendre les tarifs postaux.",
+  "concerne": "Habitants de l'outre-mer, compagnies aériennes, banques, La Poste.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2028"
+ },
+ "DLR5L17N53069": {
+  "theme": "Logement",
+  "titreClair": "Rendre durable l'encadrement des loyers",
+  "enClair": "Rendre permanent l'encadrement des loyers, aujourd'hui expérimental, l'ouvrir à davantage de communes, limiter le complément de loyer à 20 % du loyer de référence majoré et doubler les amendes maximales (10 000 € et 30 000 €).",
+  "concerne": "Locataires, propriétaires bailleurs, communes des zones tendues.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2039",
+  "remarque": "Extrait coupé avant la fin de l'article 1 et l'article 2."
+ },
+ "DLR5L17N53073": {
+  "theme": "Agriculture",
+  "titreClair": "Demander de s'opposer à l'accord UE-Mercosur",
+  "enClair": "Résolution, sans force de loi, invitant le Gouvernement à s'opposer à l'accord de libre-échange entre l'Union européenne et le Mercosur (pays d'Amérique du Sud) et à saisir la Cour de justice de l'Union européenne pour en vérifier la conformité.",
+  "concerne": "Agriculteurs, consommateurs et entreprises qui échangent avec l'Amérique du Sud.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PNREANR5L17B2044"
+ },
+ "DLR5L17N53135": {
+  "theme": "Impôts et budget",
+  "titreClair": "Ajuster le budget de l'État pour 2025 en fin d'année",
+  "enClair": "Budget rectificatif de fin d'année : ouvre et annule des crédits de l'État pour 2025 et ajuste quelques ressources. Il prévoit un déficit public de 5,4 % du PIB et un solde de l'État de -131 milliards d'euros.",
+  "concerne": "L'État et l'ensemble des administrations publiques.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B2068",
+  "remarque": "Les montants par mission (états B, C, D) ne sont pas détaillés dans le résumé."
+ },
+ "DLR5L17N53187": {
+  "theme": "Enfance et famille",
+  "titreClair": "Interdire les réseaux sociaux aux moins de 15 ans",
+  "enClair": "Interdire l'accès aux réseaux sociaux avant 15 ans avec contrôle d'âge, créer un couvre-feu numérique de 15 à 18 ans, lutter contre les contenus incitant au suicide et ajouter des avertissements sur les écrans.",
+  "concerne": "Mineurs, parents, plateformes de réseaux sociaux.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2107",
+  "remarque": "Extrait réduit à l'exposé des motifs : résumé fait à partir de la présentation des articles, pas de leur texte. Horaires du couvre-feu non précisés."
+ },
+ "DLR5L17N53284": {
+  "theme": "Sécurité",
+  "titreClair": "Renforcer la lutte contre le terrorisme et la rétention",
+  "enClair": "Permettre au préfet d'imposer un examen psychiatrique à une personne jugée menaçante pour des raisons terroristes, étendre la rétention de sûreté aux condamnés pour terrorisme et durcir la rétention administrative et le changement de nom.",
+  "concerne": "Personnes soupçonnées de menace terroriste, condamnés, étrangers retenus, préfets.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2180",
+  "remarque": "Extrait coupé après le début de l'article 1 : résumé fondé surtout sur la description des articles dans l'exposé. Mesures de rétention (articles 7-8) non lues."
+ },
+ "DLR5L17N53300": {
+  "theme": "Institutions et État",
+  "titreClair": "Demander de suspendre la création de nouvelles agences de l'État",
+  "enClair": "Résolution (texte sans effet juridique direct) invitant le gouvernement à suspendre toute création de comité, d'agence, d'opérateur ou d'autorité administrative indépendante, et à réduire le nombre de ceux qui existent.",
+  "concerne": "Administration de l'État et ses agences.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PNREANR5L17B2206",
+  "remarque": "Proposition de résolution : non contraignante."
+ },
+ "DLR5L17N53304": {
+  "theme": "Outre-mer",
+  "titreClair": "Autoriser à nouveau la recherche d'hydrocarbures en outre-mer",
+  "enClair": "Les règles de la loi de 2017 qui mettent fin à la recherche et à l'exploitation de pétrole et de gaz ne s'appliqueraient plus aux demandes déposées à Saint-Pierre-et-Miquelon et dans les régions d'outre-mer.",
+  "concerne": "Saint-Pierre-et-Miquelon, régions d'outre-mer, entreprises de l'énergie.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2415",
+  "remarque": "Texte adopté par le Sénat."
+ },
+ "DLR5L17N53331": {
+  "theme": "Outre-mer",
+  "titreClair": "Rétablir la prescription acquisitive dans les outre-mer",
+  "enClair": "Abroge une dérogation de la loi de 2024 et applique pleinement les règles du code civil sur l'acquisition d'un bien par possession prolongée dans les territoires de l'article 73, à Saint-Martin et Saint-Barthélemy.",
+  "concerne": "Occupants et propriétaires de terrains, surtout outre-mer.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2218",
+  "remarque": "Texte très technique ; durées exactes de possession non indiquées dans le texte lu."
+ },
+ "DLR5L17N53357": {
+  "theme": "Institutions et État",
+  "titreClair": "Aider toutes les communes pour la petite enfance",
+  "enClair": "Étendre à toutes les communes, ainsi qu'aux intercommunalités et syndicats concernés, la compensation financière pour l'organisation du service public de la petite enfance, jusqu'ici limitée aux plus de 3 500 habitants. Début le 1er janvier 2027.",
+  "concerne": "Communes et intercommunalités, familles avec jeunes enfants.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2637",
+  "remarque": "Texte déjà modifié par le Sénat ; montants de la compensation non précisés."
+ },
+ "DLR5L17N53386": {
+  "theme": "Impôts et budget",
+  "titreClair": "Continuer à percevoir les impôts sans budget 2026",
+  "enClair": "Loi d'attente sans budget voté : elle autorise l'État à continuer de percevoir les impôts, reconduit les dotations aux collectivités (45,2 milliards d'euros) et l'autorise à emprunter, jusqu'à l'adoption du budget 2026.",
+  "concerne": "L'État, les collectivités, les organismes de sécurité sociale.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B2269"
+ },
+ "DLR5L17N53401": {
+  "theme": "Outre-mer",
+  "titreClair": "Donner la carte Vitale aux ultramarins en séjour en métropole",
+  "enClair": "Permettre aux personnes affiliées aux régimes de sécurité sociale de Polynésie, Nouvelle-Calédonie, Wallis-et-Futuna et autres collectivités d'outre-mer de recevoir une carte Vitale pour leurs séjours en France hexagonale et dans les départements d'outre-mer.",
+  "concerne": "Ultramarins de passage ou étudiant en métropole, assurés des régimes locaux.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2284"
+ },
+ "DLR5L17N53427": {
+  "theme": "Sécurité",
+  "titreClair": "Protéger les personnes menacées par le crime organisé",
+  "enClair": "Créerait une commission nationale pouvant accorder protection (dont une identité d'emprunt) et aide à la réinsertion aux personnes menacées pour avoir dénoncé le crime organisé ou aidé ses victimes, et à leurs proches.",
+  "concerne": "Lanceurs d'alerte, militants, victimes du crime organisé et leurs proches.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2310"
+ },
+ "DLR5L17N53530": {
+  "theme": "Environnement et énergie",
+  "titreClair": "Passer l'hydroélectricité d'un régime de concession à un régime d'autorisation",
+  "enClair": "Mettrait fin aux concessions des grands barrages (plus de 4 500 kW) et accorderait aux exploitants actuels un droit d'exploitation de 70 ans, l'État restant propriétaire. Le Rhône et les accords internationaux sont exclus.",
+  "concerne": "Exploitants de barrages, collectivités locales concernées, consommateurs d'électricité.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2334",
+  "remarque": "Extrait limité à l'exposé des motifs et ses premiers articles ; indemnités et mise à disposition de capacités par EDF non détaillées."
+ },
+ "DLR5L17N53672": {
+  "theme": "Défense et international",
+  "titreClair": "Enseigner la défense nationale au collège et au lycée",
+  "enClair": "Créer un enseignement à la défense nationale et à la sécurité dans le second degré, pouvant associer des réservistes. Le ministre de l'Éducation et celui des Armées en fixeraient les programmes par arrêté.",
+  "concerne": "Élèves du collège et du lycée, enseignants, armées.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2385"
+ },
+ "DLR5L17N53715": {
+  "theme": "Agriculture",
+  "titreClair": "Associer les appellations à l'urbanisme et sécuriser les horaires agricoles",
+  "enClair": "Les organismes de défense des appellations seraient consultés sur les documents d'urbanisme. Les agriculteurs ne seraient plus responsables des troubles de voisinage causés par des horaires décalés à cause du climat.",
+  "concerne": "Agriculteurs, viticulteurs, riverains, communes en zone d'appellation.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2440"
+ },
+ "DLR5L17N53717": {
+  "theme": "Santé",
+  "titreClair": "Interdire les sucres ajoutés dans les aliments pour bébés",
+  "enClair": "Interdirait de fabriquer et de vendre des préparations alimentaires avec sucres ajoutés destinées aux enfants de moins de 3 ans. Les laits infantiles et laits de croissance en seraient exclus.",
+  "concerne": "Parents de jeunes enfants, fabricants et vendeurs d'aliments pour bébés.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2442"
+ },
+ "DLR5L17N53720": {
+  "theme": "Institutions et État",
+  "titreClair": "Mieux contrôler les agences et opérateurs de l'État",
+  "enClair": "Faire contrôler chaque année par les commissions des finances les plus hauts salaires des agences de l'État (les 3 % les mieux payés), exiger des contrats d'objectifs de 5 ans et donner à l'État la majorité des voix quand il finance surtout l'organisme.",
+  "concerne": "Agences et opérateurs de l'État, Parlement.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2445",
+  "remarque": "Liste des organismes concernés renvoyée à un décret."
+ },
+ "DLR5L17N53770": {
+  "theme": "Entreprises et économie",
+  "titreClair": "Simplifier les marchés publics pour les PME",
+  "enClair": "Permettre un accord-cadre avec clause de non-exclusivité (recours à d'autres entreprises possible), imposer une avance d'au moins 30 % aux PME et sous-traitants, et créer un label « achat public local et responsable ».",
+  "concerne": "Acheteurs publics et entreprises, surtout les PME.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2491"
+ },
+ "DLR5L17N53775": {
+  "theme": "Éducation et jeunesse",
+  "titreClair": "Encadrer les regroupements d'écoles rurales entre communes",
+  "enClair": "Reconnaître dans la loi les regroupements pédagogiques intercommunaux : convention obligatoire entre communes, capacité d'accueil appréciée pour l'ensemble du regroupement, représentation des communes au conseil d'école, dissolution possible seulement après 3 ans.",
+  "concerne": "Communes rurales, parents, élèves et enseignants du primaire.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2496"
+ },
+ "DLR5L17N53940": {
+  "theme": "Justice",
+  "titreClair": "Réformer la justice criminelle et l'accueil des victimes",
+  "enClair": "Créerait une procédure de « jugement des crimes reconnus » : si l'accusé avoue, jugement sans jury par trois magistrats, sauf opposition de la victime. Certaines victimes seraient informées de leur droit à un avocat dès la plainte.",
+  "concerne": "Accusés, victimes de crimes, magistrats.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B2681",
+  "remarque": "Gros texte ; l'extrait ne couvre que le début (article 1 et sa suite). Résumé partiel : les autres titres n'ont pas été vus. Version du Sénat."
+ },
+ "DLR5L17N53942": {
+  "theme": "Justice",
+  "titreClair": "Créer des assesseurs non magistrats dans les cours criminelles",
+  "enClair": "Permettrait de nommer des avocats honoraires et des « citoyens assesseurs » comme juges dans les cours criminelles départementales, pour 5 ou 4 ans, après formation. Il prévoit aussi une formation sur les violences sexuelles.",
+  "concerne": "Magistrats, avocats honoraires, citoyens, personnes jugées pour crimes.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B2682"
+ },
+ "DLR5L17N53980": {
+  "theme": "Sécurité",
+  "titreClair": "Durcir les règles sur explosifs, feux d'artifice et rave-parties",
+  "enClair": "Autoriser la fermeture des commerces d'explosifs et de pyrotechnie, la saisie de ces produits, et alourdir les peines. Prévoit aussi des sanctions pour les rassemblements festifs non déclarés (jusqu'à 2 ans de prison, 30 000 euros).",
+  "concerne": "Vendeurs et détenteurs d'artifices, organisateurs et participants de fêtes non déclarées.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B2850",
+  "remarque": "Projet de loi plus large : extrait coupé après les articles 1 et 2 ; autres mesures non résumées."
+ },
+ "DLR5L17N53981": {
+  "theme": "Travail et emploi",
+  "titreClair": "Appliquer l'avenant sur l'assurance chômage",
+  "enClair": "Reprendre dans la loi un avenant de février 2026 à l'accord sur l'assurance chômage, par une modification d'une phrase du code du travail sur l'allocation de retour à l'emploi.",
+  "concerne": "Personnes au chômage et employeurs.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B2619",
+  "remarque": "Texte transmis par le Sénat, article unique très technique ; la portée précise n'est pas expliquée dans l'extrait."
+ },
+ "DLR5L17N54006": {
+  "theme": "Institutions et État",
+  "titreClair": "Adapter les politiques publiques aux territoires de montagne",
+  "enClair": "Adapter aux zones de montagne les règles de fermeture de classes, d'accès aux soins, d'urbanisme, de stockage de l'eau, de bornes de recharge, d'agriculture et de forêt, et reconnaître leur rôle économique pour le pays.",
+  "concerne": "Habitants, élus, agriculteurs et professionnels des territoires de montagne.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2595",
+  "remarque": "Extrait coupé avant les articles : résumé fondé sur l'exposé des motifs (douze articles). Texte déposé en mars 2026, version finale (accord entre les deux chambres) à comparer."
+ },
+ "DLR5L17N54083": {
+  "theme": "Défense et international",
+  "titreClair": "Actualiser la programmation militaire 2024-2030",
+  "enClair": "Ajoute 36 milliards d'euros sur 2026-2030 (436 milliards sur 2024-2030) et vise 275 000 postes en 2030. Permet aussi d'imposer des stocks aux entreprises, autorise le brouillage de drones et encadre les livres d'anciens agents du renseignement.",
+  "concerne": "Armées, industriels de la défense, opérateurs d'infrastructures vitales.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B2630",
+  "remarque": "Gros texte ; résumé fondé sur l'exposé des motifs (les articles ne sont pas dans l'extrait). Mesures principales seulement."
+ },
+ "DLR5L17N54085": {
+  "theme": "Agriculture",
+  "titreClair": "Protéger les agriculteurs français et leur souveraineté alimentaire",
+  "enClair": "Prévoit des « projets d'avenir agricole » reconnus par l'État, une brigade de contrôle des denrées importées, l'interdiction d'importer des aliments traités avec des substances interdites dans l'UE, et plus de produits européens en cantines publiques.",
+  "concerne": "Agriculteurs, restaurants collectifs, distributeurs et consommateurs.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B2632",
+  "remarque": "Extrait limité à l'exposé des motifs ; les articles sur l'eau, le foncier, la prédation et les revenus ne sont pas détaillés."
+ },
+ "DLR5L17N54144": {
+  "theme": "Logement",
+  "titreClair": "Faciliter la remise sur le marché de logements anciens",
+  "enClair": "Étendre l'avantage fiscal du bailleur privé aux maisons individuelles et abaisser de 30 % à 20 % du prix d'achat le seuil de travaux. Il prévoit aussi un essai de 2 ans sur les chantiers à plusieurs entreprises et assouplit les prêts de copropriété.",
+  "concerne": "Propriétaires bailleurs, copropriétés, artisans et entreprises du bâtiment.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2674",
+  "remarque": "Article 1 résumé à partir de l'exposé des motifs et du texte modifié ; vérifier la précision fiscale."
+ },
+ "DLR5L17N54218": {
+  "theme": "Institutions et État",
+  "titreClair": "Donner à la Corse un statut d'autonomie",
+  "enClair": "Réforme de la Constitution : inscrire que la Corse a un statut d'autonomie. La collectivité pourrait adapter ou fixer des normes dans des matières définies par loi organique, sauf libertés publiques, avec contrôle du Conseil d'État.",
+  "concerne": "Habitants et élus de Corse, Parlement.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B2697",
+  "remarque": "Extrait coupé en fin d'article unique."
+ },
+ "DLR5L17N54229": {
+  "theme": "Éducation et jeunesse",
+  "titreClair": "Indexer les bourses étudiantes et les verser sur douze mois",
+  "enClair": "Revaloriser chaque année les montants et plafonds de ressources des bourses sur critères sociaux au moins comme les prix, et verser ces bourses sur douze mois au lieu de dix.",
+  "concerne": "Étudiants boursiers (environ 677 000) et leurs familles.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B2710"
+ },
+ "DLR5L17N54372": {
+  "theme": "Enfance et famille",
+  "titreClair": "Réformer la protection de l'enfance",
+  "enClair": "Prévoit de réévaluer les placements d'enfants, de privilégier l'accueil chez un proche, de vérifier les antécédents judiciaires des adultes en contact avec des enfants (écoles, loisirs) et de créer une « ordonnance de sûreté de l'enfant ».",
+  "concerne": "Enfants protégés, familles, départements, professionnels de l'enfance.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PRJLANR5L17B2841",
+  "remarque": "Résumé fondé sur l'exposé des motifs (articles non inclus dans l'extrait)."
+ },
+ "DLR5L17N54776": {
+  "theme": "Justice",
+  "titreClair": "Agir contre les violences sexuelles et sexistes",
+  "enClair": "Texte global visant les violences sexuelles et sexistes faites aux femmes et aux enfants, avec des mesures de prévention, de protection des victimes, de formation des professionnels et de réponse judiciaire.",
+  "concerne": "Victimes de violences sexuelles et sexistes, professionnels de justice et de santé.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B3106",
+  "remarque": "Extrait réduit à l'exposé des motifs, sans les articles : mesures précises non vérifiées. Résumé volontairement général ; à compléter."
+ },
+ "DLR5L17N54777": {
+  "theme": "Justice",
+  "titreClair": "Former les juges aux violences sexuelles et familiales",
+  "enClair": "Imposer une formation spécifique aux magistrats des futures juridictions spécialisées dans les violences sexuelles et intrafamiliales, avant leur prise de poste puis tous les 3 ans pour les juges et procureurs de ces fonctions.",
+  "concerne": "Magistrats, victimes de violences sexuelles et intrafamiliales.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B3107",
+  "remarque": "Les juridictions spécialisées elles-mêmes ne sont pas créées dans cet extrait."
+ },
+ "DLR5L17N54841": {
+  "theme": "Entreprises et économie",
+  "titreClair": "Privilégier les entreprises locales dans les marchés publics",
+  "enClair": "Résolution non contraignante invitant à permettre aux acheteurs publics de prendre en compte la localisation en France des moyens d'exécution d'un marché, comme l'emploi, la production et l'innovation.",
+  "concerne": "Acheteurs publics, entreprises candidates aux marchés publics.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PNREANR5L17B3115",
+  "remarque": "Texte de résolution ; extrait coupé avant les demandes finales, résumé fondé sur l'exposé."
+ },
+ "DLR5L17N54844": {
+  "theme": "Outre-mer",
+  "titreClair": "Demander l'accès continu à l'eau potable en outre-mer",
+  "enClair": "Résolution (texte sans effet juridique direct) invitant le gouvernement à utiliser tous les moyens de l'État, y compris en remplaçant les collectivités défaillantes, pour garantir l'accès à l'eau potable à Mayotte, en Guyane, aux Antilles, à La Réunion et à Saint-Martin.",
+  "concerne": "Habitants de l'outre-mer privés d'eau courante, collectivités gestionnaires de l'eau.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PNREANR5L17B3116",
+  "remarque": "Proposition de résolution : non contraignante."
+ },
+ "DLR5L17N54847": {
+  "theme": "Immigration",
+  "titreClair": "Demander une double frontière pour l'espace Schengen",
+  "enClair": "Résolution, sans force de loi, demandant de réviser les règles de l'espace Schengen (libre circulation en Europe) pour permettre des contrôles ciblés des ressortissants de pays tiers aux frontières nationales, en plus de la frontière européenne.",
+  "concerne": "Voyageurs de pays tiers, personnes qui circulent en Europe, services de contrôle.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PNREANR5L17B3119",
+  "remarque": "Dispositif (articles) non inclus dans l'extrait : résumé fondé sur l'exposé des motifs ; à vérifier."
+ },
+ "DLR5L17N54898": {
+  "theme": "Santé",
+  "titreClair": "Prendre en charge à 100 % les soins après des violences sexuelles",
+  "enClair": "Les soins liés aux violences sexuelles seraient pris en charge à 100 % par la Sécurité sociale, sans avance de frais. Il prévoit aussi une formation des soignants et un entretien médical annuel obligatoire pour les enfants dès la maternelle.",
+  "concerne": "Victimes de violences sexuelles, enfants, soignants.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B3168",
+  "remarque": "Résumé fondé sur l'exposé des motifs (articles 1 à 3) ; articles non lus en détail. Sujet attribué : Santé (conservé)."
+ },
+ "DLR5L17N54901": {
+  "theme": "Éducation et jeunesse",
+  "titreClair": "Créer un corps de fonctionnaires pour les AESH",
+  "enClair": "Créer un corps de fonctionnaires de catégorie B pour les accompagnants d'élèves en situation de handicap (AESH), aujourd'hui sous contrat.",
+  "concerne": "Accompagnants d'élèves en situation de handicap et élèves accompagnés.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PIONANR5L17B3171",
+  "remarque": "Articles absents de l'extrait : résumé fait à partir du titre et de l'exposé ; modalités (titularisation, rémunération) à vérifier."
+ },
+ "DLR5L17N54916": {
+  "theme": "Société et mémoire",
+  "titreClair": "Entrée au Panthéon de trois personnalités",
+  "enClair": "Résolution non contraignante saluant Olympe de Gouges, l'abbé de l'Épée et Zéna M'Déré, et invitant le Gouvernement à transmettre au Président le souhait de l'Assemblée de les voir entrer au Panthéon.",
+  "concerne": "Gouvernement, Président de la République.",
+  "arguments": null,
+  "niveau": "ia",
+  "sujetNiveau": "ia",
+  "source": "PNREANR5L17B3183"
+ }
+}

@@ -72,9 +72,10 @@
    {
     "titre": "Augmenter le salaire minimum interprofessionnel de croissance à 1600 euros net",
     "dossier": "DLR5L16N46434",
-    "statut": "pas_examine",
+    "statut": "retire",
     "scrutin": null,
-    "inverse": false
+    "inverse": false,
+    "corrige": true
    },
    {
     "titre": "Abolir la corrida : un petit pas pour l’animal, un grand pas pour l’humanité",
@@ -86,9 +87,10 @@
    {
     "titre": "Réintégrer le personnel des établissements de santé et de secours non-vacciné grâce à un protocole sanitaire renforcé",
     "dossier": "DLR5L16N46428",
-    "statut": "retire",
+    "statut": "commence",
     "scrutin": null,
-    "inverse": false
+    "inverse": false,
+    "corrige": true
    },
    {
     "titre": "Instaurer une allocation d'autonomie pour les jeunes en formation",
@@ -263,77 +265,6 @@
   ]
  },
  {
-  "date": "2023-01-19",
-  "groupe": "RE",
-  "validee": false,
-  "votesDuJour": 9,
-  "programme": [
-   {
-    "titre": "Interdire la maltraitance sur les animaux de compagnie par l'utilisation de colliers étrangleurs et électriques",
-    "dossier": "DLR5L16N46749",
-    "statut": "pas_examine",
-    "scrutin": null,
-    "inverse": false
-   },
-   {
-    "titre": "Sécuriser l’approvisionnement des Français en produits de grande consommation et assurer l’avenir du fabriqué en France",
-    "dossier": "DLR5L16N46687",
-    "statut": "pas_examine",
-    "scrutin": null,
-    "inverse": false
-   },
-   {
-    "titre": "Amélioration de l’accès aux soins par la confiance aux professionnels de santé",
-    "dossier": "DLR5L16N46486",
-    "statut": "adopte",
-    "scrutin": "VTANR5L16V875",
-    "inverse": false
-   },
-   {
-    "titre": "Ouvrir le tiers financement à l’État, à ses établissements publics et aux collectivités territoriales pour favoriser les travaux de rénovation énergétique",
-    "dossier": "DLR5L16N46753",
-    "statut": "adopte",
-    "scrutin": "VTANR5L16V876",
-    "inverse": false
-   },
-   {
-    "titre": "Proposition de loi créant une aide universelle d'urgence pour les victimes de violences conjugales",
-    "dossier": "DLR5L16N46270",
-    "statut": "pas_examine",
-    "scrutin": null,
-    "inverse": false
-   },
-   {
-    "titre": "Faire évoluer la formation de sage-femme",
-    "dossier": "DLR5L15N43746",
-    "statut": "pas_examine",
-    "scrutin": null,
-    "inverse": false
-   },
-   {
-    "titre": "Mise en place d'un protocole relatif à l'accompagnement psychologique des femmes victimes de fausses couches",
-    "dossier": "DLR5L16N46126",
-    "statut": "pas_examine",
-    "scrutin": null,
-    "inverse": false
-   },
-   {
-    "titre": "Faciliter la mobilité internationale des alternants pour un « Erasmus de l’apprentissage »",
-    "dossier": "DLR5L16N46767",
-    "statut": "pas_examine",
-    "scrutin": null,
-    "inverse": false
-   },
-   {
-    "titre": "Réintégrer le personnel des établissements de santé et de secours non-vacciné grâce à un protocole sanitaire renforcé",
-    "dossier": "DLR5L16N46428",
-    "statut": "pas_examine",
-    "scrutin": null,
-    "inverse": false
-   }
-  ]
- },
- {
   "date": "2023-02-09",
   "groupe": "SOC",
   "validee": false,
@@ -449,9 +380,10 @@
    {
     "titre": "Reconnaissance de la répression des Algériens du 17 octobre 1961 à Paris et commémoration pour la mémoire des victimes",
     "dossier": "DLR5L16N46881",
-    "statut": "pas_examine",
+    "statut": "retire",
     "scrutin": null,
-    "inverse": false
+    "inverse": false,
+    "corrige": true
    },
    {
     "titre": "Mieux manger en soutenant les Français face à l'inflation et en favorisant l'accès à une alimentation saine",
@@ -463,9 +395,10 @@
    {
     "titre": "Interdiction de toute forme de publicité numérique et lumineuse dans l’espace public",
     "dossier": "DLR5L16N47227",
-    "statut": "pas_examine",
+    "statut": "retire",
     "scrutin": null,
-    "inverse": false
+    "inverse": false,
+    "corrige": true
    },
    {
     "titre": "Mieux indemniser les dégâts sur les biens immobiliers causés par le retrait-gonflement de l’argile",
@@ -477,9 +410,10 @@
    {
     "titre": "Interdire les vols en jets privés",
     "dossier": "DLR5L16N47215",
-    "statut": "commence",
+    "statut": "rejete",
     "scrutin": null,
-    "inverse": false
+    "inverse": false,
+    "corrige": true
    },
    {
     "titre": "Protéger la jeunesse de la précarité par la solidarité intergénérationnelle",
@@ -562,49 +496,6 @@
   ]
  },
  {
-  "date": "2023-05-11",
-  "groupe": "RE",
-  "validee": false,
-  "votesDuJour": 3,
-  "programme": [
-   {
-    "titre": "Lutter contre les sur-transpositions en matière agricole",
-    "dossier": "DLR5L16N47291",
-    "statut": "adopte",
-    "scrutin": "VTANR5L16V1504",
-    "inverse": false
-   },
-   {
-    "titre": "Faciliter la mobilité internationale des alternants pour un « Erasmus de l’apprentissage »",
-    "dossier": "DLR5L16N46767",
-    "statut": "adopte",
-    "scrutin": "VTANR5L16V1503",
-    "inverse": false
-   },
-   {
-    "titre": "Rendre obligatoire le pavoisement des drapeaux français et européen sur le fronton des mairies",
-    "dossier": "DLR5L16N47443",
-    "statut": "pas_examine",
-    "scrutin": null,
-    "inverse": false
-   },
-   {
-    "titre": "Amélioration de l’accès aux soins par la confiance aux professionnels de santé",
-    "dossier": "DLR5L16N46486",
-    "statut": "pas_examine",
-    "scrutin": null,
-    "inverse": false
-   },
-   {
-    "titre": "Soutenir les petites entreprises et les collectivités territoriales en cas de crise énergétique",
-    "dossier": "DLR5L16N47034",
-    "statut": "pas_examine",
-    "scrutin": null,
-    "inverse": false
-   }
-  ]
- },
- {
   "date": "2023-06-08",
   "groupe": "LIOT",
   "validee": false,
@@ -627,9 +518,10 @@
    {
     "titre": "Renforcer l’engagement et la participation des citoyens à la vie démocratique",
     "dossier": "DLR5L16N47620",
-    "statut": "pas_examine",
+    "statut": "retire",
     "scrutin": null,
-    "inverse": false
+    "inverse": false,
+    "corrige": true
    },
    {
     "titre": "Renforcer le principe de la continuité territoriale en Outre-Mer",
@@ -670,16 +562,18 @@
    {
     "titre": "Soutenir les femmes qui souffrent d'endométriose",
     "dossier": "DLR5L16N47806",
-    "statut": "commence",
+    "statut": "retire",
     "scrutin": null,
-    "inverse": false
+    "inverse": false,
+    "corrige": true
    },
    {
     "titre": "Proposition de loi visant à supprimer ou à suspendre les allocations familiales pour les parents d’enfants criminels ou délinquants",
     "dossier": "DLR5L16N48484",
-    "statut": "commence",
+    "statut": "retire",
     "scrutin": null,
-    "inverse": false
+    "inverse": false,
+    "corrige": true
    },
    {
     "titre": "Proposition de loi visant à baisser la facture énergétique des Français et des entreprises sur le territoire",
@@ -713,56 +607,6 @@
     "titre": "Renforcer le contrôle des déclarations de minorité des étrangers",
     "dossier": "DLR5L16N47938",
     "statut": "pas_examine",
-    "scrutin": null,
-    "inverse": false
-   }
-  ]
- },
- {
-  "date": "2023-11-23",
-  "groupe": "RE",
-  "validee": false,
-  "votesDuJour": 15,
-  "programme": [
-   {
-    "titre": "Approbation de l’accord entre la France et Andorre concernant la démarcation et l’entretien de la frontière",
-    "dossier": "DLR5L16N48255",
-    "statut": "adopte",
-    "scrutin": null,
-    "inverse": false
-   },
-   {
-    "titre": "Approbation de la convention d’entraide judiciaire en matière pénale entre la France et la République de Maurice et de la convention d’extradition entre la France et la République de Maurice",
-    "dossier": "DLR5L16N48541",
-    "statut": "adopte",
-    "scrutin": null,
-    "inverse": false
-   },
-   {
-    "titre": "Mesures pour bâtir la société du bien vieillir en France",
-    "dossier": "DLR5L16N46868",
-    "statut": "adopte",
-    "scrutin": "VTANR5L16V3045",
-    "inverse": false
-   },
-   {
-    "titre": "Proposition de loi relative à l'ouverture à la concurrence du réseau de bus francilien de la RATP",
-    "dossier": "DLR5L16N48696",
-    "statut": "pas_examine",
-    "scrutin": null,
-    "inverse": false
-   },
-   {
-    "titre": "Prolonger en 2024 l'utilisation des titres-restaurant pour des achats de produits alimentaires non directement consommables",
-    "dossier": "DLR5L16N48925",
-    "statut": "adopte",
-    "scrutin": "VTANR5L16V3035",
-    "inverse": false
-   },
-   {
-    "titre": "Projet de loi de financement de la sécurité sociale pour 2024",
-    "dossier": "DLR5L16N48683",
-    "statut": "commence",
     "scrutin": null,
     "inverse": false
    }
@@ -1077,13 +921,6 @@
     "dossier": "DLR5L16N49258",
     "statut": "adopte",
     "scrutin": "VTANR5L16V3385",
-    "inverse": false
-   },
-   {
-    "titre": "Proposition de loi visant à lutter contre les pénuries de médicaments et de vaccins",
-    "dossier": "DLR5L16N46114",
-    "statut": "commence",
-    "scrutin": null,
     "inverse": false
    },
    {

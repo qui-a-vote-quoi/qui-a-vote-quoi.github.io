@@ -13,7 +13,9 @@ Produit dans donnees/base/<législature>/ :
 - scrutins.json : les votes utilisés, avec les positions des groupes recalculées ;
 - rapport.md    : les chiffres clés et tout ce qui doit être vérifié à la main.
 
-La liste des niches validées à la main se trouve dans donnees/validation/niches-<législature>.json.
+Les niches vérifiées se trouvent dans donnees/validation/niches-<législature>.json : « valide » (vérifiée par un humain),
+« verifie_ia » (vérifiée par IA dans les comptes rendus), « a_valider », ou « rejete ». Une entrée peut porter des
+« corrections » du programme (statut rectifié, ou ligne à exclure).
 """
 import collections
 import datetime
@@ -151,6 +153,11 @@ def suite_donnee(dossier):
         "derniereEtape": dernier["codeActe"] if dernier else None,
         "dateDerniereEtape": dernier["dateActe"][:10] if dernier else None,
     }
+
+
+def premier_depot(dossier):
+    """Date du premier dépôt du texte (« 9999 » si inconnue)."""
+    return min((a["dateActe"][:10] for a in actes(dossier) if a["codeActe"].endswith("DEPOT") and a.get("dateActe")), default="9999")
 
 
 def decisions_assemblee(dossier):
@@ -452,6 +459,15 @@ def main():
                     doublon.update({k: ligne[k] for k in ("titre", "dossier", "statut", "scrutin", "inverse")})
                 continue
             programme.append({k: ligne[k] for k in ("titre", "dossier", "statut", "scrutin", "inverse")})
+        # Corrections faites lors de la vérification (donnees/validation) : statut rectifié, ou ligne qui n'appartient pas à la niche
+        for c in v.get("corrections", []):
+            cible = next((l for l in programme if normaliser(l["titre"]).startswith(normaliser(c["titre"]))), None)
+            if not cible:
+                a_verifier.append(f"Niche du {jour} : correction sans ligne correspondante « {c['titre'][:60]} »")
+            elif c.get("exclure"):
+                programme.remove(cible)
+            else:
+                cible.update(statut=c["statut"], corrige=True)
         nb_votes = sum(1 for s in scrutins.values() if s["date"] == jour)
         niches.append({"date": jour, "groupe": v["groupe"], "validee": v["statut"] == "valide", "votesDuJour": nb_votes, "programme": programme})
 
@@ -471,9 +487,10 @@ def main():
             continue
         nb_solennels += 1
         uid = vote_vers_dossier.get(vuid)
-        if not uid:   # secours : le dossier dont le titre correspond le mieux à l'intitulé du vote
+        if not uid:   # secours : le dossier dont le titre correspond le mieux à l'intitulé du vote, déposé avant le vote
             vise = titre_vise(s["titre"])
-            score, uid = max(((proximite(vise, d["titreDossier"]["titre"]), u) for u, d in dossiers.items()), default=(0, None))
+            score, uid = max(((proximite(vise, d["titreDossier"]["titre"]), u) for u, d in dossiers.items()
+                              if premier_depot(d) <= s["date"]), default=(0, None))
             uid = uid if score >= 0.75 else None
         if not uid:
             a_verifier.append(f"Vote solennel n° {s['numero']} du {s['date']} sans dossier relié : « {s['titre'][:90]} »")
@@ -504,7 +521,9 @@ def main():
               f"Construite le {datetime.date.today().isoformat()} à partir de l'open data de l'Assemblée nationale.", "",
               "## Chiffres", "",
               f"- Groupes : {len(liste_groupes)}",
-              f"- Niches : {len(niches)} ({sum(n['validee'] for n in niches)} validées à la main, {sum(not n['validee'] for n in niches)} à valider)",
+              f"- Niches : {len(niches)} ({sum(validation[n['date']]['statut'] == 'valide' for n in niches)} validées à la main, "
+              f"{sum(validation[n['date']]['statut'] == 'verifie_ia' for n in niches)} vérifiées par IA, "
+              f"{sum(validation[n['date']]['statut'] == 'a_valider' for n in niches)} à valider)",
               f"- Textes au programme des niches : {sum(statuts.values())} — " + ", ".join(f"{k} : {v}" for k, v in statuts.most_common()),
               f"- Votes solennels sur des textes : {nb_solennels} (écartés : " + ", ".join(f"{k} : {v}" for k, v in ignores.items()) + ")",
               f"- Textes dans la base : {len(textes)}",

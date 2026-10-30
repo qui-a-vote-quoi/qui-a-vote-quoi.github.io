@@ -103,7 +103,7 @@ Coût mensuel ensuite : **1 à 2 $.** Ces chiffres sont à confirmer par un essa
 3. ~~Commande de mise à jour mensuelle.~~ Faite : `pipeline/mettre_a_jour.py`, qui écrit la liste des nouveautés à vérifier.
 4. ~~Étendre la chaîne à 2022-2024 puis 2017-2022.~~ Fait : bases dans `donnees/base/16/` et `donnees/base/15/`, avec leurs rapports.
 5. Valider à la main les niches détectées (14 pour 2024-2026, 21 pour 2022-2024, 45 pour 2017-2022, dans `donnees/validation/`) et les points listés dans chaque rapport. Les jours attribués au groupe majoritaire (LAREM, RE) sont probablement de faux positifs : la Constitution réserve ces journées à l'opposition et aux groupes minoritaires.
-6. Tester la maquette sur 2 ou 3 personnes qui ne votent pas.
+6. ~~Version de test sur les vraies données.~~ Faite pour 2017-2026 : `site/`, produit par `pipeline/publier.py`. Contenu publié au maximum, avec son niveau affiché (voir CHARTE-NEUTRALITE.md) : niches vérifiées par IA dans les comptes rendus (83 publiées, 7 niches manquées retrouvées, 7 faux positifs écartés, 3 à valider), 453 textes dont 425 résumés rédigés par IA à partir des textes officiels (`pipeline/extraits.py`), 28 « à venir ». Reste : relire en priorité les résumés portant une `remarque`, un moyen de recueillir l'avis des testeurs, puis la tester sur 2 ou 3 personnes qui ne votent pas.
 7. Phase 2 : brouillons des résumés et arguments avec Claude Code, puis relecture.
 8. Phase 3 : brancher le site sur la base JSON, puis publier.
 

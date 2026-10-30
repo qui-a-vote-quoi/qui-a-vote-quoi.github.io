@@ -4558,6 +4558,103 @@
    }
   ]
  },
+ "VTANR5L17V2708": {
+  "numero": 2708,
+  "date": "2025-06-26",
+  "type": "SPO",
+  "titre": "l'amendement de suppression n° 2 de M. Saulignac et les amendements identiques suivants à l'article unique de la proposition de loi visant à  protéger l'effectivité du droit fondamental d'éligibilité (première lecture).",
+  "sort": "adopté",
+  "pour": 185,
+  "contre": 120,
+  "abst": 8,
+  "seance": "RUANR5L17S2025IDS29584",
+  "groupes": [
+   {
+    "g": "RN",
+    "m": 123,
+    "pour": 0,
+    "contre": 102,
+    "abst": 0
+   },
+   {
+    "g": "EPR",
+    "m": 93,
+    "pour": 46,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "LFI-NFP",
+    "m": 71,
+    "pour": 42,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 66,
+    "pour": 35,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DR",
+    "m": 49,
+    "pour": 0,
+    "contre": 2,
+    "abst": 0
+   },
+   {
+    "g": "ECOS",
+    "m": 38,
+    "pour": 28,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 36,
+    "pour": 13,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 34,
+    "pour": 7,
+    "contre": 0,
+    "abst": 6
+   },
+   {
+    "g": "LIOT",
+    "m": 23,
+    "pour": 4,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "GDR",
+    "m": 17,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "UDR",
+    "m": 16,
+    "pour": 0,
+    "contre": 15,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 11,
+    "pour": 3,
+    "contre": 1,
+    "abst": 0
+   }
+  ]
+ },
  "VTANR5L17V2874": {
   "numero": 2874,
   "date": "2025-07-01",

@@ -6,14 +6,26 @@
   "note": "vérifiée dans les comptes rendus pour la maquette"
  },
  {
+  "date": "2024-11-28",
+  "groupe": "LFI-NFP",
+  "statut": "verifie_ia",
+  "preuve": "Le groupe La France insoumise a choisi d’inscrire ce texte dans sa niche parlementaire (abrogation de la retraite à 64 ans, journée entière consacrée à ce seul texte à cause de l'obstruction)",
+  "cr": "CRSANR5L17S2025O1N055",
+  "note": "niche manquée par la détection, retrouvée dans les comptes rendus"
+ },
+ {
   "date": "2025-01-23",
   "groupe": "SOC",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "Le premier texte de la niche parlementaire du Parti socialiste a pour ambition de « prendre des mesures d’urgence contre la vie chère",
+  "cr": "CRSANR5L17S2025O1N079"
  },
  {
   "date": "2025-02-06",
   "groupe": "DR",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "cette journée est consacrée à la niche du groupe Droite républicaine",
+  "cr": "CRSANR5L17S2025O1N095"
  },
  {
   "date": "2025-02-20",
@@ -24,7 +36,9 @@
  {
   "date": "2025-03-06",
   "groupe": "DEM",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "inscrite par le groupe Les Démocrates à l’occasion de sa niche parlementaire",
+  "cr": "CRSANR5L17S2025O1N120"
  },
  {
   "date": "2025-04-03",
@@ -41,7 +55,17 @@
  {
   "date": "2025-06-05",
   "groupe": "GDR",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "Je remercie le groupe GDR et son rapporteur Frédéric Maillot pour l’inscription de ce texte à l’ordre du jour de leur niche parlementaire",
+  "cr": "CRSANR5L17S2025O1N227"
+ },
+ {
+  "date": "2025-06-26",
+  "groupe": "UDR",
+  "statut": "verifie_ia",
+  "preuve": "je ne suis évidemment pas surprise de retrouver un texte comme celui-là dans la niche du groupe UDR",
+  "cr": "CRSANR5L17S2025O1N258",
+  "note": "niche manquée par la détection, retrouvée dans les comptes rendus"
  },
  {
   "date": "2025-10-30",
@@ -58,47 +82,91 @@
  {
   "date": "2025-12-11",
   "groupe": "SOC",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "Si le groupe Socialistes et apparentés a fait le choix d’inscrire ce texte en tête de sa niche parlementaire",
+  "cr": "CRSANR5L17S2026O1N090"
  },
  {
   "date": "2026-01-22",
   "groupe": "DR",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "Il s’agit du premier texte déposé dans le cadre de la niche parlementaire du groupe Droite républicaine",
+  "cr": "CRSANR5L17S2026O1N121",
+  "corrections": [
+   {
+    "titre": "Projet de loi de finances pour 2026",
+    "exclure": true
+   }
+  ]
  },
  {
   "date": "2026-02-12",
   "groupe": "ECOS",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "l’inscription de ce texte à l’ordre du jour de ce jeudi qui est leur journée réservée",
+  "cr": "CRSANR5L17S2026O1N147"
  },
  {
   "date": "2026-03-26",
   "groupe": "DEM",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "l’inscription de ce texte à l’ordre du jour de la journée réservée au groupe Les Démocrates, pour la deuxième année consécutive",
+  "cr": "CRSANR5L17S2026O1N181",
+  "corrections": [
+   {
+    "titre": "proposition de loi, modifiée par le Sénat, relative aux missions",
+    "exclure": true
+   }
+  ]
  },
  {
   "date": "2026-04-09",
   "groupe": "HOR",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "Dans le cadre de sa journée réservée, le groupe Horizons & indépendants a souhaité inscrire à l’ordre du jour",
+  "cr": "CRSANR5L17S2026O1N197"
  },
  {
   "date": "2026-05-28",
   "groupe": "LIOT",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "À l’occasion de sa niche parlementaire, le groupe LIOT a fait le choix fort d’inscrire en tête de l’ordre du jour",
+  "cr": "CRSANR5L17S2026O1N250"
  },
  {
   "date": "2026-06-11",
   "groupe": "GDR",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "son examen intervient dans le cadre de la journée réservée au groupe de la Gauche démocrate et républicaine",
+  "cr": "CRSANR5L17S2026O1N268",
+  "corrections": [
+   {
+    "titre": "Adaptation du régime des intermittents",
+    "statut": "pas_examine"
+   }
+  ]
+ },
+ {
+  "date": "2026-06-25",
+  "groupe": "UDR",
+  "statut": "verifie_ia",
+  "preuve": "le groupe UDR bordélise sa propre niche et annonce qu’il quitte l’hémicycle",
+  "cr": "CRSANR5L17S2026O1N285",
+  "note": "niche manquée par la détection, retrouvée dans les comptes rendus"
  },
  {
   "date": "2026-10-08",
   "groupe": "RN",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "dernière journée de niche parlementaire du Rassemblement national de la législature",
+  "cr": "CRSANR5L17S2027O1N013"
  },
  {
   "date": "2026-10-29",
   "groupe": "LFI-NFP",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "cette proposition de loi du groupe La France insoumise ; et, adressé aux LFI : « une niche parlementaire transformée en plateau de tournage »",
+  "cr": "CRSANR5L17S2027O1N045"
  },
  {
   "date": "2026-11-19",

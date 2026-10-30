@@ -758,6 +758,144 @@
    }
   ]
  },
+ "VTANR5L15V143": {
+  "numero": 143,
+  "date": "2017-10-12",
+  "type": "SPO",
+  "titre": "la motion de rejet préalable, déposée par M. Richard Ferrand, de la proposition de loi visant à restaurer la compétitivité de l'agriculture française et sa place centrale dans l'aménagement du territoire par l'allègement des charges administratives et fiscales indues et l'équité des conditions de la concurrence (première lecture).",
+  "sort": "adopté",
+  "pour": 103,
+  "contre": 49,
+  "abst": 1,
+  "seance": "RUANR5L15S2018IDS20688",
+  "groupes": [
+   {
+    "g": "LAREM",
+    "m": 313,
+    "pour": 94,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 100,
+    "pour": 0,
+    "contre": 34,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 47,
+    "pour": 7,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "UDI-I",
+    "m": 35,
+    "pour": 0,
+    "contre": 3,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 2,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 18,
+    "pour": 0,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "FI",
+    "m": 17,
+    "pour": 0,
+    "contre": 8,
+    "abst": 0
+   },
+   {
+    "g": "GDR",
+    "m": 16,
+    "pour": 0,
+    "contre": 1,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L15V144": {
+  "numero": 144,
+  "date": "2017-10-12",
+  "type": "SPO",
+  "titre": "la motion de renvoi en commission, déposée par M. Richard Ferrand, de la proposition de loi pour le maintien des compétences \"eau\" et \"assainissement\" dans les compétences des communautés de communes et des communautés d'agglomération (première lecture).",
+  "sort": "adopté",
+  "pour": 62,
+  "contre": 34,
+  "abst": 2,
+  "seance": "RUANR5L15S2018IDS20689",
+  "groupes": [
+   {
+    "g": "LAREM",
+    "m": 313,
+    "pour": 55,
+    "contre": 0,
+    "abst": 2
+   },
+   {
+    "g": "LR",
+    "m": 100,
+    "pour": 0,
+    "contre": 14,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 47,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "UDI-I",
+    "m": 35,
+    "pour": 0,
+    "contre": 3,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 6,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 18,
+    "pour": 0,
+    "contre": 3,
+    "abst": 0
+   },
+   {
+    "g": "FI",
+    "m": 17,
+    "pour": 0,
+    "contre": 6,
+    "abst": 0
+   },
+   {
+    "g": "GDR",
+    "m": 16,
+    "pour": 0,
+    "contre": 2,
+    "abst": 0
+   }
+  ]
+ },
  "VTANR5L15V183": {
   "numero": 183,
   "date": "2017-10-24",
@@ -14157,89 +14295,6 @@
    }
   ]
  },
- "VTANR5L15V3489": {
-  "numero": 3489,
-  "date": "2021-03-18",
-  "type": "SPO",
-  "titre": "l'ensemble de la proposition de loi visant à sécuriser les droits à protection sociale des assistants maternels et des salariés des particuliers employeurs (première lecture).",
-  "sort": "adopté",
-  "pour": 65,
-  "contre": 10,
-  "abst": 0,
-  "seance": "RUANR5L15S2021IDS23936",
-  "groupes": [
-   {
-    "g": "LAREM",
-    "m": 269,
-    "pour": 34,
-    "contre": 8,
-    "abst": 0
-   },
-   {
-    "g": "LR",
-    "m": 104,
-    "pour": 14,
-    "contre": 2,
-    "abst": 0
-   },
-   {
-    "g": "DEM",
-    "m": 58,
-    "pour": 5,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "SOC",
-    "m": 29,
-    "pour": 2,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "NI",
-    "m": 23,
-    "pour": 1,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "AGIR-E",
-    "m": 21,
-    "pour": 1,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "LT",
-    "m": 18,
-    "pour": 3,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "UDI-I",
-    "m": 18,
-    "pour": 2,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "FI",
-    "m": 17,
-    "pour": 2,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "GDR",
-    "m": 16,
-    "pour": 1,
-    "contre": 0,
-    "abst": 0
-   }
-  ]
- },
  "VTANR5L15V3507": {
   "numero": 3507,
   "date": "2021-03-25",
@@ -14484,6 +14539,89 @@
     "g": "GDR",
     "m": 16,
     "pour": 2,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L15V3569": {
+  "numero": 3569,
+  "date": "2021-04-08",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi relative à la protection des langues régionales et à leur promotion (deuxième lecture).",
+  "sort": "adopté",
+  "pour": 247,
+  "contre": 76,
+  "abst": 19,
+  "seance": "RUANR5L15S2021IDS24048",
+  "groupes": [
+   {
+    "g": "LAREM",
+    "m": 269,
+    "pour": 100,
+    "contre": 57,
+    "abst": 12
+   },
+   {
+    "g": "LR",
+    "m": 104,
+    "pour": 54,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 58,
+    "pour": 17,
+    "contre": 6,
+    "abst": 5
+   },
+   {
+    "g": "SOC",
+    "m": 29,
+    "pour": 21,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 23,
+    "pour": 6,
+    "contre": 1,
+    "abst": 2
+   },
+   {
+    "g": "AGIR-E",
+    "m": 21,
+    "pour": 20,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LT",
+    "m": 18,
+    "pour": 17,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "UDI-I",
+    "m": 18,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "FI",
+    "m": 17,
+    "pour": 1,
+    "contre": 12,
+    "abst": 0
+   },
+   {
+    "g": "GDR",
+    "m": 16,
+    "pour": 6,
     "contre": 0,
     "abst": 0
    }
@@ -15565,89 +15703,6 @@
     "pour": 9,
     "contre": 0,
     "abst": 1
-   }
-  ]
- },
- "VTANR5L15V3852": {
-  "numero": 3852,
-  "date": "2021-06-24",
-  "type": "SPO",
-  "titre": "l'ensemble de la proposition de loi visant à protéger la rémunération des agriculteurs (première lecture).",
-  "sort": "adopté",
-  "pour": 56,
-  "contre": 0,
-  "abst": 4,
-  "seance": "RUANR5L15S2021IDS24455",
-  "groupes": [
-   {
-    "g": "LAREM",
-    "m": 269,
-    "pour": 32,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "LR",
-    "m": 105,
-    "pour": 8,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "DEM",
-    "m": 58,
-    "pour": 8,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "SOC",
-    "m": 30,
-    "pour": 2,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "NI",
-    "m": 23,
-    "pour": 1,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "AGIR-E",
-    "m": 21,
-    "pour": 4,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "UDI-I",
-    "m": 19,
-    "pour": 1,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "LT",
-    "m": 18,
-    "pour": 0,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "FI",
-    "m": 17,
-    "pour": 0,
-    "contre": 0,
-    "abst": 2
-   },
-   {
-    "g": "GDR",
-    "m": 16,
-    "pour": 0,
-    "contre": 0,
-    "abst": 2
    }
   ]
  },
@@ -16810,6 +16865,338 @@
     "pour": 0,
     "contre": 1,
     "abst": 0
+   }
+  ]
+ },
+ "VTANR5L15V4186": {
+  "numero": 4186,
+  "date": "2021-11-26",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi pour la mise en place d'une certification de cybersécurité des plateformes numériques destinée au grand public (première lecture).",
+  "sort": "adopté",
+  "pour": 49,
+  "contre": 1,
+  "abst": 0,
+  "seance": "RUANR5L15S2022IDS25326",
+  "groupes": [
+   {
+    "g": "LAREM",
+    "m": 268,
+    "pour": 16,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 103,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 57,
+    "pour": 15,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 29,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "AGIR-E",
+    "m": 22,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "UDI-I",
+    "m": 19,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LT",
+    "m": 18,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "FI",
+    "m": 17,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR",
+    "m": 15,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L15V4187": {
+  "numero": 4187,
+  "date": "2021-11-26",
+  "type": "SPO",
+  "titre": "l'article premier de la proposition de loi instaurant diverses dispositions relatives aux fonctionnaires et militaires originaires d'outre-mer (première lecture).",
+  "sort": "rejeté",
+  "pour": 14,
+  "contre": 26,
+  "abst": 0,
+  "seance": "RUANR5L15S2022IDS25327",
+  "groupes": [
+   {
+    "g": "LAREM",
+    "m": 268,
+    "pour": 0,
+    "contre": 17,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 103,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 57,
+    "pour": 0,
+    "contre": 9,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 29,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "AGIR-E",
+    "m": 22,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "UDI-I",
+    "m": 19,
+    "pour": 10,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LT",
+    "m": 18,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "FI",
+    "m": 17,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR",
+    "m": 15,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L15V4191": {
+  "numero": 4191,
+  "date": "2021-11-26",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à la création d'une plateforme de référencement et de prise en charge des malades chroniques de la covid-19 (première lecture).",
+  "sort": "adopté",
+  "pour": 46,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L15S2022IDS25327",
+  "groupes": [
+   {
+    "g": "LAREM",
+    "m": 268,
+    "pour": 18,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 103,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 57,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 29,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "AGIR-E",
+    "m": 22,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "UDI-I",
+    "m": 19,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LT",
+    "m": 18,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "FI",
+    "m": 17,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR",
+    "m": 15,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L15V4195": {
+  "numero": 4195,
+  "date": "2021-11-26",
+  "type": "SPO",
+  "titre": "la proposition de résolution visant à reconnaître le génocide des Kurdes en Irak (art. 34-1 de la Constitution).",
+  "sort": "rejeté",
+  "pour": 9,
+  "contre": 17,
+  "abst": 1,
+  "seance": "RUANR5L15S2022IDS25328",
+  "groupes": [
+   {
+    "g": "LAREM",
+    "m": 268,
+    "pour": 0,
+    "contre": 10,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 103,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 57,
+    "pour": 0,
+    "contre": 7,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 29,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "AGIR-E",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "UDI-I",
+    "m": 19,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LT",
+    "m": 18,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "FI",
+    "m": 17,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR",
+    "m": 15,
+    "pour": 0,
+    "contre": 0,
+    "abst": 1
    }
   ]
  },
@@ -18722,208 +19109,208 @@
    }
   ]
  },
- "VTANR5L15V4417": {
-  "numero": 4417,
-  "date": "2022-02-24",
+ "VTANR5L15V4363": {
+  "numero": 4363,
+  "date": "2022-02-04",
   "type": "SPO",
-  "titre": "l'ensemble de la proposition de loi visant à démocratiser le sport en France (lecture définitive).",
+  "titre": "l'amendement de suppression n° 1 de M. Mbaye à l'article premier de la proposition de loi visant à garantir le respect éthique du don d'organes par nos partenaires non européens (première lecture).",
   "sort": "adopté",
-  "pour": 67,
-  "contre": 6,
-  "abst": 7,
-  "seance": "RUANR5L15S2022IDS26000",
+  "pour": 36,
+  "contre": 28,
+  "abst": 0,
+  "seance": "RUANR5L15S2022IDS25748",
   "groupes": [
    {
     "g": "LAREM",
-    "m": 268,
-    "pour": 58,
-    "contre": 0,
+    "m": 267,
+    "pour": 31,
+    "contre": 3,
     "abst": 0
    },
    {
     "g": "LR",
-    "m": 101,
-    "pour": 0,
-    "contre": 4,
-    "abst": 0
-   },
-   {
-    "g": "DEM",
-    "m": 57,
-    "pour": 6,
-    "contre": 0,
-    "abst": 1
-   },
-   {
-    "g": "SOC",
-    "m": 28,
-    "pour": 0,
-    "contre": 0,
-    "abst": 3
-   },
-   {
-    "g": "NI",
-    "m": 23,
+    "m": 102,
     "pour": 0,
     "contre": 2,
     "abst": 0
    },
    {
-    "g": "AGIR-E",
-    "m": 22,
-    "pour": 2,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "UDI-I",
-    "m": 19,
-    "pour": 1,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "LT",
-    "m": 18,
-    "pour": 0,
-    "contre": 0,
-    "abst": 1
-   },
-   {
-    "g": "FI",
-    "m": 17,
-    "pour": 0,
-    "contre": 0,
-    "abst": 1
-   },
-   {
-    "g": "GDR",
-    "m": 15,
-    "pour": 0,
-    "contre": 0,
-    "abst": 1
-   }
-  ]
- },
- "VTANR5L15V4418": {
-  "numero": 4418,
-  "date": "2022-02-24",
-  "type": "SPO",
-  "titre": "l'ensemble de la proposition de loi visant à combattre le harcèlement scolaire et le cyberharcèlement (lecture définitive).",
-  "sort": "adopté",
-  "pour": 86,
-  "contre": 0,
-  "abst": 2,
-  "seance": "RUANR5L15S2022IDS26000",
-  "groupes": [
-   {
-    "g": "LAREM",
-    "m": 268,
-    "pour": 61,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "LR",
-    "m": 101,
-    "pour": 5,
-    "contre": 0,
-    "abst": 0
-   },
-   {
     "g": "DEM",
     "m": 57,
-    "pour": 10,
-    "contre": 0,
+    "pour": 5,
+    "contre": 1,
     "abst": 0
    },
    {
     "g": "SOC",
     "m": 28,
-    "pour": 3,
-    "contre": 0,
+    "pour": 0,
+    "contre": 1,
     "abst": 0
    },
    {
     "g": "NI",
     "m": 23,
-    "pour": 2,
-    "contre": 0,
+    "pour": 0,
+    "contre": 1,
     "abst": 0
    },
    {
     "g": "AGIR-E",
     "m": 22,
-    "pour": 2,
-    "contre": 0,
+    "pour": 0,
+    "contre": 2,
     "abst": 0
    },
    {
     "g": "UDI-I",
     "m": 19,
-    "pour": 1,
-    "contre": 0,
+    "pour": 0,
+    "contre": 1,
     "abst": 0
    },
    {
     "g": "LT",
     "m": 18,
-    "pour": 2,
-    "contre": 0,
+    "pour": 0,
+    "contre": 14,
     "abst": 0
    },
    {
     "g": "FI",
     "m": 17,
     "pour": 0,
-    "contre": 0,
-    "abst": 1
+    "contre": 2,
+    "abst": 0
    },
    {
     "g": "GDR",
     "m": 15,
     "pour": 0,
-    "contre": 0,
-    "abst": 1
+    "contre": 1,
+    "abst": 0
    }
   ]
  },
- "VTANR5L15V4419": {
-  "numero": 4419,
-  "date": "2022-02-24",
+ "VTANR5L15V4371": {
+  "numero": 4371,
+  "date": "2022-02-04",
   "type": "SPO",
-  "titre": "l'ensemble de la proposition de loi relative au choix du nom issu de la filiation (lecture définitive).",
-  "sort": "adopté",
-  "pour": 69,
-  "contre": 1,
-  "abst": 2,
-  "seance": "RUANR5L15S2022IDS26000",
+  "titre": "l'article premier de la proposition de loi visant à doter la France des instruments nécessaires pour lutter contre la pollution plastique (première lecture).",
+  "sort": "rejeté",
+  "pour": 10,
+  "contre": 37,
+  "abst": 1,
+  "seance": "RUANR5L15S2022IDS25748",
   "groupes": [
    {
     "g": "LAREM",
-    "m": 268,
-    "pour": 55,
-    "contre": 0,
+    "m": 267,
+    "pour": 0,
+    "contre": 28,
     "abst": 0
    },
    {
     "g": "LR",
-    "m": 101,
-    "pour": 3,
+    "m": 102,
+    "pour": 0,
     "contre": 1,
     "abst": 0
    },
    {
     "g": "DEM",
     "m": 57,
-    "pour": 4,
-    "contre": 0,
+    "pour": 0,
+    "contre": 7,
     "abst": 0
    },
    {
     "g": "SOC",
     "m": 28,
+    "pour": 0,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 23,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "AGIR-E",
+    "m": 22,
     "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "UDI-I",
+    "m": 19,
+    "pour": 0,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "LT",
+    "m": 18,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "FI",
+    "m": 17,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR",
+    "m": 15,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L15V4377": {
+  "numero": 4377,
+  "date": "2022-02-04",
+  "type": "SPO",
+  "titre": "l'article premier de la proposition de loi portant lutte contre l'exclusion financière et plafonnement des frais bancaires (première lecture).",
+  "sort": "rejeté",
+  "pour": 11,
+  "contre": 25,
+  "abst": 0,
+  "seance": "RUANR5L15S2022IDS25748",
+  "groupes": [
+   {
+    "g": "LAREM",
+    "m": 267,
+    "pour": 0,
+    "contre": 19,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 102,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 57,
+    "pour": 0,
+    "contre": 4,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 28,
+    "pour": 1,
     "contre": 0,
     "abst": 0
    },
@@ -18932,13 +19319,13 @@
     "m": 23,
     "pour": 1,
     "contre": 0,
-    "abst": 2
+    "abst": 0
    },
    {
     "g": "AGIR-E",
     "m": 22,
-    "pour": 1,
-    "contre": 0,
+    "pour": 0,
+    "contre": 2,
     "abst": 0
    },
    {
@@ -18951,14 +19338,97 @@
    {
     "g": "LT",
     "m": 18,
-    "pour": 1,
+    "pour": 6,
     "contre": 0,
     "abst": 0
    },
    {
     "g": "FI",
     "m": 17,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR",
+    "m": 15,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L15V4381": {
+  "numero": 4381,
+  "date": "2022-02-04",
+  "type": "SPO",
+  "titre": "la proposition de résolution invitant le Gouvernement à accorder l'asile politique à Julian Assange et à faciliter l'accès au statut de réfugié pour les lanceurs d'alerte étrangers (article 34-1 de la Constitution).",
+  "sort": "rejeté",
+  "pour": 17,
+  "contre": 31,
+  "abst": 2,
+  "seance": "RUANR5L15S2022IDS25749",
+  "groupes": [
+   {
+    "g": "LAREM",
+    "m": 267,
+    "pour": 1,
+    "contre": 29,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 102,
     "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 57,
+    "pour": 0,
+    "contre": 0,
+    "abst": 2
+   },
+   {
+    "g": "SOC",
+    "m": 28,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 23,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "AGIR-E",
+    "m": 22,
+    "pour": 1,
+    "contre": 2,
+    "abst": 0
+   },
+   {
+    "g": "UDI-I",
+    "m": 19,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LT",
+    "m": 18,
+    "pour": 10,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "FI",
+    "m": 17,
+    "pour": 2,
     "contre": 0,
     "abst": 0
    },

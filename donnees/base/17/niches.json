@@ -57,6 +57,77 @@
   ]
  },
  {
+  "date": "2024-11-28",
+  "groupe": "LFI-NFP",
+  "validee": false,
+  "votesDuJour": 32,
+  "programme": [
+   {
+    "titre": "Refuser la ratification de l'accord commercial entre l'Union européenne et le Mercosur",
+    "dossier": "DLR5L17N50581",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Abrogation de la retraite à 64 ans",
+    "dossier": "DLR5L17N50684",
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "La définition pénale du viol",
+    "dossier": "DLR5L17N51298",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Bloquer les prix de l’énergie dans l’hexagone et les outre-mer",
+    "dossier": "DLR5L17N50667",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Instaurer un moratoire sur les projets routiers et autoroutiers",
+    "dossier": "DLR5L17N50668",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Régulariser les praticiens et pharmaciens à diplôme hors Union européenne",
+    "dossier": "DLR5L17N50681",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Reconnaître la pénibilité des métiers féminisés",
+    "dossier": "DLR5L17N50666",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Instaurer une rémunération maximale dans les entreprises",
+    "dossier": "DLR5L17N50662",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Refonder le modèle de financement public des établissements privés sous contrat afin de garantir la mixité sociale en leur sein",
+    "dossier": "DLR5L17N50664",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
   "date": "2025-01-23",
   "groupe": "SOC",
   "validee": false,
@@ -498,6 +569,77 @@
   ]
  },
  {
+  "date": "2025-06-26",
+  "groupe": "UDR",
+  "validee": false,
+  "votesDuJour": 38,
+  "programme": [
+   {
+    "titre": "Dénoncer les accords franco-algériens du 27 décembre 1968",
+    "dossier": "DLR5L17N52719",
+    "statut": "retire",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "protéger l’effectivité du droit fondamental d’éligibilité",
+    "dossier": "DLR5L17N52087",
+    "statut": "rejete",
+    "scrutin": "VTANR5L17V2708",
+    "inverse": true
+   },
+   {
+    "titre": "Proposition de loi visant à renforcer les prérogatives des officiers de l’état civil et du ministère public pour lutter contre les mariages simulés ou arrangés",
+    "dossier": "DLR5L16N49075",
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Reconnaître certaines pathologies comme maladies professionnelles chez les sapeurs-pompiers",
+    "dossier": "DLR5L17N52007",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Instaurer une participation des détenus aux frais d'incarcération",
+    "dossier": "DLR5L17N52081",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Instaurer des peines planchers pour les crimes et délits commis contre les membres de la force publique et les pompiers",
+    "dossier": "DLR5L17N52082",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Moratoire des zones à faibles émissions",
+    "dossier": "DLR5L17N52088",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Relancer le secteur du logement",
+    "dossier": "DLR5L17N52083",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "La relance d'une politique nataliste",
+    "dossier": "DLR5L17N52084",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
   "date": "2025-10-30",
   "groupe": "RN",
   "validee": true,
@@ -724,13 +866,6 @@
     "inverse": false
    },
    {
-    "titre": "Projet de loi de finances pour 2026",
-    "dossier": "DLR5L17N53195",
-    "statut": "pas_examine",
-    "scrutin": null,
-    "inverse": false
-   },
-   {
     "titre": "Suspendre toute nouvelle création d’instances administratives pour lutter contre le phénomène d’agencification de l’État et rendre plus lisible le fonctionnement de l’administration française",
     "dossier": "DLR5L17N53300",
     "statut": "adopte",
@@ -941,13 +1076,6 @@
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
-   },
-   {
-    "titre": "proposition de loi, modifiée par le Sénat, relative aux missions des professionnels de santé, vétérinaires, psychothérapeutes et psychologues des services d’incendie et de secours",
-    "dossier": null,
-    "statut": "commence",
-    "scrutin": null,
-    "inverse": false
    }
   ]
  },
@@ -1144,13 +1272,92 @@
    {
     "titre": "Adaptation du régime des intermittents du spectacle dans les départements et régions d'outre-mer et les collectivités d'outre-mer",
     "dossier": "DLR5L17N54248",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false,
+    "corrige": true
+   },
+   {
+    "titre": "Proposition de loi relative à l’instauration d’une présomption d’utilisation des contenus culturels par les fournisseurs d’intelligence artificielle",
+    "dossier": "DLR5L17N53359",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2026-06-25",
+  "groupe": "UDR",
+  "validee": false,
+  "votesDuJour": 6,
+  "programme": [
+   {
+    "titre": "Proposition de loi visant à renforcer les prérogatives des officiers de l’état civil et du ministère public pour lutter contre les mariages simulés ou arrangés",
+    "dossier": "DLR5L16N49075",
     "statut": "commence",
     "scrutin": null,
     "inverse": false
    },
    {
-    "titre": "Proposition de loi relative à l’instauration d’une présomption d’utilisation des contenus culturels par les fournisseurs d’intelligence artificielle",
-    "dossier": "DLR5L17N53359",
+    "titre": "Refonder le modèle d’intégration français pour bâtir le Grand Rassemblement et garantir l’unité de la Nation",
+    "dossier": "DLR5L17N54283",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Protéger les petits porteurs et les entreprises des fonds vautours",
+    "dossier": "DLR5L17N54313",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Prévenir les occupations sans droit ni titre en encadrant la souscription des contrats essentiels",
+    "dossier": "DLR5L17N54311",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Garantir la transparence du calcul des contributions des collectivités territoriales au financement des établissements d’enseignement privés sous contrat d’association",
+    "dossier": "DLR5L17N54310",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Prévenir les conflits d'intérêts dans les sociétés nationales de programme",
+    "dossier": "DLR5L17N54315",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Assurer l’autonomie stratégique de la France pour la production décarbonée d’engrais azotés",
+    "dossier": "DLR5L17N54312",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Renforcer la souveraineté alimentaire par le développement des circuits de proximité dans la restauration collective publique",
+    "dossier": "DLR5L17N54308",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Rétablir l’exemption d’impôt pour les primes accordées par l’obtention de la médaille honorifique du travail",
+    "dossier": "DLR5L17N54314",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Suspendre le regroupement familial et la réunification familiale des étrangers bénéficiaires de la protection subsidiaire",
+    "dossier": "DLR5L17N54309",
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false

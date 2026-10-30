@@ -2,106 +2,190 @@
  {
   "date": "2022-10-06",
   "groupe": "DEM",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "Le groupe Démocrate et indépendants est heureux de voir figurer ce texte à l’ordre du jour de sa niche parlementaire.",
+  "cr": "CRSANR5L16S2023O1N007"
  },
  {
   "date": "2022-11-24",
   "groupe": "LFI-NUPES",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "nous débattons aujourd’hui dans le cadre de la niche parlementaire du groupe La France insoumise-Nouvelle Union populaire, écologique et sociale.",
+  "cr": "CRSANR5L16S2023O1N068",
+  "corrections": [
+   {
+    "titre": "Réintégrer le personnel des établissements de santé",
+    "statut": "commence"
+   },
+   {
+    "titre": "Augmenter le salaire minimum",
+    "statut": "retire"
+   }
+  ]
  },
  {
   "date": "2022-12-01",
   "groupe": "LR",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "les députés du groupe Les Républicains d’avoir, dans le cadre de leur niche parlementaire, appelé l’attention de la représentation nationale",
+  "cr": "CRSANR5L16S2023O1N077"
  },
  {
   "date": "2023-01-12",
   "groupe": "RN",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "Dans le cadre de sa niche parlementaire, le groupe RN a choisi d’en demander la suspension illimitée",
+  "cr": "CRSANR5L16S2023O1N113"
  },
  {
   "date": "2023-01-19",
   "groupe": "RE",
-  "statut": "a_valider"
+  "statut": "rejete",
+  "note": "Le matin du 19 janvier 2023 poursuit la PPL Rist (accès aux soins, RE) commencée le mercredi 18 ; l'après-midi (CRSANR5L16S2023O1N124) examine la PPL Bergé/Abad sur le tiers financement (adoptée 56-0, séance levée à 16h25). Une journée réservée dure toute la journée jusqu'à minuit, et ne peut pas re"
  },
  {
   "date": "2023-02-09",
   "groupe": "SOC",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "Socialistes et apparentés, qui ont décidé d’inscrire ce texte à l’ordre du jour de leur journée de niche parlementaire",
+  "cr": "CRSANR5L16S2023O1N138"
  },
  {
   "date": "2023-03-02",
   "groupe": "HOR",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "Pour sa première niche parlementaire depuis sa création, le groupe Horizons a fait le choix de rouvrir un débat",
+  "cr": "CRSANR5L16S2023O1N163"
  },
  {
   "date": "2023-04-06",
   "groupe": "ECOLO",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "Le groupe Écologiste a donc bien fait d’inscrire ce débat dans sa niche parlementaire.",
+  "cr": "CRSANR5L16S2023O1N206",
+  "corrections": [
+   {
+    "titre": "Interdire les vols en jets privés",
+    "statut": "rejete"
+   },
+   {
+    "titre": "Reconnaissance de la répression des Algériens",
+    "statut": "retire"
+   },
+   {
+    "titre": "Interdiction de toute forme de publicité numérique",
+    "statut": "retire"
+   }
+  ]
  },
  {
   "date": "2023-05-04",
   "groupe": "GDR-NUPES",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "Dans le cadre de sa niche parlementaire, le groupe communiste a retiré deux textes",
+  "cr": "CRSANR5L16S2023O1N222"
  },
  {
   "date": "2023-05-11",
   "groupe": "RE",
-  "statut": "a_valider"
+  "statut": "rejete",
+  "note": "Une seule séance (matin, levée à 13h05) : PPL Maillard/Bergé/Marcangeli « Erasmus de l'apprentissage » + résolution art. 34-1 sur les surtranspositions agricoles (RE). Les textes suivants listés au programme de la base (pavoisement, accès aux soins…) avaient été examinés les 9-10 mai. Le prochain or"
  },
  {
   "date": "2023-06-08",
   "groupe": "LIOT",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "le texte proposé aujourd’hui par le groupe LIOT, dans le cadre de sa niche parlementaire",
+  "cr": "CRSANR5L16S2023O1N261",
+  "corrections": [
+   {
+    "titre": "Renforcer l’engagement et la participation des citoyens",
+    "statut": "retire"
+   }
+  ]
  },
  {
   "date": "2023-10-12",
   "groupe": "RN",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "Nous débattons dans le cadre de la niche attribuée au groupe Rassemblement national.",
+  "cr": "CRSANR5L16S2024O1N017",
+  "corrections": [
+   {
+    "titre": "Soutenir les femmes qui souffrent d'endométriose",
+    "statut": "retire"
+   },
+   {
+    "titre": "Proposition de loi visant à supprimer ou à suspendre les allocations familiales",
+    "statut": "retire"
+   }
+  ]
  },
  {
   "date": "2023-11-23",
   "groupe": "RE",
-  "statut": "a_valider"
+  "statut": "rejete",
+  "note": "Matin : deux accords internationaux en procédure simplifiée + PPL Kasbarian titres-restaurant (adoptée 117-1) ; après-midi/soir : nouvelle lecture du PLFSS 2024 (levée à 20h35) puis suite du « bien vieillir », commencé les 21-22 novembre. Le même jour, des orateurs LFI annoncent leur niche pour « je"
  },
  {
   "date": "2023-11-30",
   "groupe": "LFI-NUPES",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "J’ai l’immense honneur d’ouvrir cette riche niche parlementaire dédiée au groupe La France insoumise-Nouvelle Union populaire",
+  "cr": "CRSANR5L16S2024O1N068"
  },
  {
   "date": "2023-12-07",
   "groupe": "LR",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "je suis heureuse d’ouvrir cette niche parlementaire au nom du groupe Les Républicains",
+  "cr": "CRSANR5L16S2024O1N078"
  },
  {
   "date": "2024-01-18",
   "groupe": "DEM",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "Je remercie le groupe Démocrate d’avoir inscrit cette proposition de loi dans sa niche",
+  "cr": "CRSANR5L16S2024O1N096"
  },
  {
   "date": "2024-02-01",
   "groupe": "LR",
-  "statut": "a_valider"
+  "statut": "a_valider",
+  "note": "Aucune occurrence de « niche » ou « journée réservée » dans les 3 comptes rendus du 1er février. Le jeudi matin et l'après-midi poursuivent le texte Dem/GDR (cabinets de conseil, commencé la veille) ; les textes LR (Bonnivard classes de découverte adoptée 47-0 ; Tabarot jardins d'enfants adoptée 38-"
  },
  {
   "date": "2024-02-29",
   "groupe": "SOC",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "du groupe Socialistes, en particulier la rapporteure Claudia Rouaux, d’avoir choisi d’utiliser leur niche",
+  "cr": "CRSANR5L16S2024O1N131",
+  "corrections": [
+   {
+    "titre": "Proposition de loi visant à lutter contre les pénuries de médicaments et de vacc",
+    "exclure": true
+   }
+  ]
  },
  {
   "date": "2024-03-14",
   "groupe": "HOR",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "Le groupe Horizons et apparentés a donc inscrit à l’ordre du jour de l’Assemblée nationale, dans le cadre de sa journée réservée",
+  "cr": "CRSANR5L16S2024O1N148"
  },
  {
   "date": "2024-04-04",
   "groupe": "ECOLO",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "Nous avons décidé – et je remercie mon groupe pour cela – de consacrer notre niche",
+  "cr": "CRSANR5L16S2024O1N169"
  },
  {
   "date": "2024-05-30",
   "groupe": "GDR-NUPES",
-  "statut": "a_valider"
+  "statut": "verifie_ia",
+  "preuve": "en ouverture de la niche du groupe Gauche démocrate et républicaine, le groupe GDR",
+  "cr": "CRSANR5L16S2024O1N218"
  }
 ]

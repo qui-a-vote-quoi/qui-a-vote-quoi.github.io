@@ -1,0 +1,7 @@
+Polices de caractères
+
+- Public Sans (https://github.com/uswds/public-sans)
+- Source Sans 3 (https://github.com/adobe-fonts/source-sans)
+
+Toutes deux sous licence SIL Open Font License 1.1 : https://openfontlicense.org
+Fichiers récupérés depuis Google Fonts (sous-ensemble latin), hébergés ici pour ne transmettre aucune donnée de visite à un tiers.

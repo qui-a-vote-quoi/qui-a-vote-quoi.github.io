@@ -28,3 +28,20 @@ Affichage : toujours visibles sur la fiche texte, sous « En clair ». Dans Mon 
 - **Le même gabarit pour tous les groupes** : mêmes blocs, mêmes chiffres, même mise en forme.
 - **Les positions des groupes sont recalculées à partir du décompte des voix**, parce que le champ `positionMajoritaire` de l'open data est parfois faux.
 - **Les résumés « En clair » sont rédigés à partir des articles officiels** du texte, pas de son seul titre. Quand ce n'est pas possible, la fiche le signale.
+
+## Rédaction par IA et vérification humaine
+
+Pour publier le plus de contenu possible, une partie du travail est faite par IA puis relue. Le niveau est toujours affiché au lecteur :
+
+| Contenu | Niveaux | Où c'est enregistré |
+|---|---|---|
+| Résumé, titre court, « qui est concerné » | **à venir** (titre officiel et lien vers l'Assemblée), **rédigé par IA, non vérifié**, **relu par un humain** | `donnees/redaction/<législature>.json`, champ `niveau` (`a_venir`, `ia`, `relu`) |
+| Sujet du texte | **attribué par IA**, **relu** | même fichier, champ `sujetNiveau` |
+| Journée réservée (niche) | **vérifiée par IA dans les comptes rendus**, **vérifiée par un humain** ; non publiée tant qu'elle n'est pas vérifiée | `donnees/validation/niches-<législature>.json`, champ `statut` (`verifie_ia`, `valide`, `a_valider`, `rejete`) |
+
+Règles pour l'IA :
+- elle résume à partir de l'extrait du texte officiel déposé (`pipeline/extraits.py`), jamais de mémoire. Quand l'extrait ne suffit pas (texte coupé, articles absents), elle le signale dans le champ `remarque`, à regarder en priorité à la relecture ; un résumé qui ne pourrait s'appuyer que sur le titre n'est pas publié ;
+- elle décrit ce que le texte fait, pas ce que ses auteurs en disent : pas de qualificatifs repris de l'exposé des motifs, aucun nom de groupe, de parti ni de personne ;
+- pour vérifier une niche, elle cite le compte rendu (champ `preuve`) ; sans preuve, la niche reste « à valider ».
+
+Les votes eux-mêmes ne sont jamais rédigés : ils viennent des décomptes officiels.

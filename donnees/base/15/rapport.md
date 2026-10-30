@@ -5,16 +5,17 @@ Construite le 2026-10-30 à partir de l'open data de l'Assemblée nationale.
 ## Chiffres
 
 - Groupes : 11
-- Niches : 45 (0 validées à la main, 45 à valider)
-- Textes au programme des niches : 295 — adopte : 102, rejete : 75, pas_examine : 52, commence : 51, renvoye : 14, retire : 1
+- Niches : 45 (0 validées à la main, 44 vérifiées par IA, 1 à valider)
+- Textes au programme des niches : 286 — adopte : 101, rejete : 85, pas_examine : 54, commence : 26, renvoye : 17, retire : 3
 - Votes solennels sur des textes : 113 (écartés : déclarations du gouvernement : 11)
-- Textes dans la base : 280
-- Votes enregistrés dans la base : 243
+- Textes dans la base : 282
+- Votes enregistrés dans la base : 249
 
 ## Niches à valider
 
 Dans `donnees/validation/niches-15.json`, passer chaque niche à `valide` ou `rejete` après vérification.
 
+- 2017-10-12 : LR
 - 2017-11-30 : DEM
 - 2017-12-07 : UDI-I
 - 2018-01-18 : SOC
@@ -42,24 +43,23 @@ Dans `donnees/validation/niches-15.json`, passer chaque niche à `valide` ou `re
 - 2020-06-11 : LR
 - 2020-06-18 : GDR
 - 2020-06-25 : LR
-- 2020-07-16 : LAREM
 - 2020-10-08 : EDS
 - 2020-11-26 : AGIR-E
 - 2020-12-03 : LR
 - 2021-01-28 : DEM
 - 2021-02-18 : SOC
-- 2021-03-18 : LAREM
 - 2021-03-25 : UDI-I
+- 2021-04-08 : LT
 - 2021-05-06 : FI
 - 2021-06-17 : GDR
-- 2021-06-24 : DEM
 - 2021-10-07 : LR
 - 2021-11-25 : AGIR-E
+- 2021-11-26 : UDI-I
 - 2021-12-02 : GDR
 - 2022-01-13 : FI
 - 2022-01-20 : SOC
 - 2022-02-03 : DEM
-- 2022-02-24 : LAREM
+- 2022-02-04 : LT
 
 ## Points à vérifier
 
@@ -91,6 +91,7 @@ Dans `donnees/validation/niches-15.json`, passer chaque niche à `valide` ou `re
 - Niche du 2019-11-28 : « Réduction du coût du foncier » adopte sans vote public retrouvé (main levée ?)
 - Niche du 2019-11-28 : pas de dossier trouvé pour « la proposition de loi, en deuxième lecture, visant à améliorer la trésorerie des associati »
 - Niche du 2019-11-28 : pas de dossier trouvé pour « proposition de loi  visant à réduire le coût du foncier et à augmenter l'offre de logement »
+- Niche du 2019-11-28 : correction sans ligne correspondante « proposition de loi, en deuxième lecture, visa »
 - Niche du 2019-12-12 : pas de dossier trouvé pour « projet de loi autorisant l’approbation de l’accord entre le Gouvernement de la République  »
 - Niche du 2019-12-12 : pas de dossier trouvé pour « projet de loi, adopté par le Sénat, relatif à la lutte contre le gaspillage et à l'économi »
 - Niche du 2019-12-12 : « Reconnaissance du crime d'écocide (2) » rejete sans vote public retrouvé (main levée ?)
@@ -109,14 +110,10 @@ Dans `donnees/validation/niches-15.json`, passer chaque niche à `valide` ou `re
 - Niche du 2020-06-11 : « Annulation des charges des entreprises le temps de la crise » rejete sans vote public retrouvé (main levée ?)
 - Niche du 2020-06-11 : « Covid-19 : subventions aux PME et artisans du tourisme » rejete sans vote public retrouvé (main levée ?)
 - Niche du 2020-06-11 : « Covid-19 : exonération de TVA des masques de protection et des gels hydro-alcool » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2020-06-11 : correction sans ligne correspondante « proposition de loi visant à exonérer de TVA l »
 - Niche du 2020-06-18 : « Contribution des hauts revenus et patrimoines à l'effort de solidarité » rejete sans vote public retrouvé (main levée ?)
 - Niche du 2020-06-18 : « Garantie salaire-formation au service de la transition de l’économie » rejete sans vote public retrouvé (main levée ?)
 - Niche du 2020-06-25 : pas de dossier trouvé pour « proposition de loi visant à exonérer de taxe sur la valeur ajoutée les masques de protecti »
-- Niche du 2020-07-16 : « Règlement du budget 2019 » adopte sans vote public retrouvé (main levée ?)
-- Niche du 2020-07-16 : « Dette sociale et autonomie (loi organique) » adopte sans vote public retrouvé (main levée ?)
-- Niche du 2020-07-16 : pas de dossier trouvé pour « sur le rapport de la commission mixte paritaire, de la proposition de loi permettant d'off »
-- Niche du 2020-07-16 : « Dette sociale et autonomie » adopte sans vote public retrouvé (main levée ?)
-- Niche du 2020-07-16 : pas de dossier trouvé pour « Discussion »
 - Niche du 2020-10-08 : pas de dossier trouvé pour « proposition de loi visant à renforcer le droit à l’avortement »
 - Niche du 2020-11-26 : pas de dossier trouvé pour « proposition de loi visant à promouvoir la France des accents »
 - Niche du 2020-12-03 : « Exclusion des étrangers en situation irrégulière de la tarification sociale dans » rejete sans vote public retrouvé (main levée ?)
@@ -130,24 +127,23 @@ Dans `donnees/validation/niches-15.json`, passer chaque niche à `valide` ou `re
 - Niche du 2021-02-18 : pas de dossier trouvé pour « proposition de loi organique visant à modifier le régime indemnitaire des membres du Conse »
 - Niche du 2021-02-18 : pas de dossier trouvé pour « proposition de loi visant à établir un meilleur équilibre entre pouvoirs constitutionnels »
 - Niche du 2021-02-18 : pas de dossier trouvé pour « proposition de loi visant à modifier le régime indemnitaire des membres du Conseil constit »
-- Niche du 2021-03-18 : « Améliorer le système de santé par la confiance et la simplification » adopte sans vote public retrouvé (main levée ?)
 - Niche du 2021-03-25 : « Lutte fraude à l’identité dans le cadre des mineurs non accompagnés » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2021-04-08 : pas de dossier trouvé pour « proposition de loi organique limitant le recours aux dispositions fiscales de portée rétro »
 - Niche du 2021-05-06 : « Parrainages citoyens pour la candidature à l'élection présidentielle » rejete sans vote public retrouvé (main levée ?)
 - Niche du 2021-05-06 : « Revenu de solidarité active pour les jeunes de 18 à 25 ans » rejete sans vote public retrouvé (main levée ?)
 - Niche du 2021-05-06 : pas de dossier trouvé pour « proposition de loi organique instaurant une procédure de parrainages citoyens pour la cand »
-- Niche du 2021-06-24 : « Amélioration de la trésorerie des associations » adopte sans vote public retrouvé (main levée ?)
-- Niche du 2021-06-24 : « Engagement associatif » adopte sans vote public retrouvé (main levée ?)
-- Niche du 2021-06-24 : pas de dossier trouvé pour « proposition de loi, modifiée par le Sénat, visant à améliorer la trésorerie des associatio »
 - Niche du 2021-10-07 : pas de dossier trouvé pour « proposition de loi visant à raisonner le développement de l'éolien »
 - Niche du 2021-10-07 : « Développement raisonnable de l'éolien » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2021-11-26 : « Nommer les enfants nés sans vie » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2021-11-26 : pas de dossier trouvé pour « proposition de loi organique, adoptée par le Sénat, favorisant l’implantation locale des p »
+- Niche du 2021-11-26 : « Proposition de loi organique favorisant l'implantation locale des parlementaires » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2021-11-26 : « Emploi des travailleurs expérimentés jusqu’à la retraite » adopte sans vote public retrouvé (main levée ?)
 - Niche du 2021-12-02 : « Financement de la transition écologique » rejete sans vote public retrouvé (main levée ?)
 - Niche du 2022-01-20 : « Réformer la fiscalité des droits de succession et de donation : protéger les cla » rejete sans vote public retrouvé (main levée ?)
 - Niche du 2022-02-03 : « Proposition de loi tendant à abroger des lois obsolètes pour une meilleure lisib » adopte sans vote public retrouvé (main levée ?)
 - Niche du 2022-02-03 : « Mieux allier l'actionnariat salarié et la transmission d'entreprise » adopte sans vote public retrouvé (main levée ?)
 - Niche du 2022-02-03 : « Vote par correspondance » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2022-02-04 : « Evolution statutaire de la collectivité de Corse » adopte sans vote public retrouvé (main levée ?)
 - Vote solennel n° 1 du 2017-07-04 sans dossier relié : « la declaration de politique generale du Gouvernement de M. Edouard Philippe (application d »
 - Vote solennel n° 53 du 2017-07-24 sans dossier relié : « la motion de rejet préalable, déposée par M. Jean-Luc Mélenchon, du projet de loi pour la  »
 - Vote solennel n° 55 du 2017-07-24 sans dossier relié : « la motion de renvoi en commission, déposée par M. Olivier Faure, du projet de loi pour la  »
-- Auteur non identifié : « Évaluation de l’impact de la loi organique et de la loi du 15 septembre 2017 pou » (DLR5L15N44536)
-- Auteur non identifié : « Application de la loi pour un nouveau pacte ferroviaire » (DLR5L15N37409)
-- Auteur non identifié : « Application de la loi portant création de l'Agence nationale de la cohésion des  » (DLR5L15N39025)

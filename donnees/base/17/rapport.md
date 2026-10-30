@@ -5,20 +5,22 @@ Construite le 2026-10-30 à partir de l'open data de l'Assemblée nationale.
 ## Chiffres
 
 - Groupes : 13
-- Niches : 20 (6 validées à la main, 14 à valider)
-- Textes au programme des niches : 175 — pas_examine : 82, adopte : 60, commence : 16, rejete : 9, retire : 8
+- Niches : 23 (6 validées à la main, 16 vérifiées par IA, 1 à valider)
+- Textes au programme des niches : 201 — pas_examine : 105, adopte : 60, commence : 17, rejete : 10, retire : 9
 - Votes solennels sur des textes : 70 (écartés : déclarations du gouvernement : 4)
-- Textes dans la base : 134
-- Votes enregistrés dans la base : 135
+- Textes dans la base : 135
+- Votes enregistrés dans la base : 136
 
 ## Niches à valider
 
 Dans `donnees/validation/niches-17.json`, passer chaque niche à `valide` ou `rejete` après vérification.
 
+- 2024-11-28 : LFI-NFP
 - 2025-01-23 : SOC
 - 2025-02-06 : DR
 - 2025-03-06 : DEM
 - 2025-06-05 : GDR
+- 2025-06-26 : UDR
 - 2025-12-11 : SOC
 - 2026-01-22 : DR
 - 2026-02-12 : ECOS
@@ -26,6 +28,7 @@ Dans `donnees/validation/niches-17.json`, passer chaque niche à `valide` ou `re
 - 2026-04-09 : HOR
 - 2026-05-28 : LIOT
 - 2026-06-11 : GDR
+- 2026-06-25 : UDR
 - 2026-10-08 : RN
 - 2026-10-29 : LFI-NFP
 - 2026-11-19 : SOC

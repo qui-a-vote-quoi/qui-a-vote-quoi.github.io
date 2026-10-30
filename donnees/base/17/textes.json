@@ -298,27 +298,25 @@
   "relu": false
  },
  {
-  "id": "DLR5L17N53702@2025-02-19",
-  "dossier": "DLR5L17N53702",
+  "id": "DLR5L16N49726@2025-02-19",
+  "dossier": "DLR5L16N49726",
   "origine": "solennel",
   "date": "2025-02-19",
-  "titre": "La souveraineté alimentaire et agricole",
+  "titre": "Souveraineté en matière agricole et renouvellement des générations en agriculture",
   "lecture": "texte de la commission mixte paritaire",
-  "procedure": "Projet ou proposition de loi constitutionnelle",
+  "procedure": "Projet de loi ordinaire",
   "auteur": {
-   "type": "depute",
-   "groupe": "RN",
-   "acteur": "PA642988"
+   "type": "gouvernement"
   },
   "statut": "adopte",
   "scrutin": "VTANR5L17V844",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "AN1-DEPOT",
-   "dateDerniereEtape": "2026-02-03"
+   "promulgation": "2025-03-24",
+   "numeroLoi": "2025-268",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-03-24"
   },
   "resume": null,
   "arguments": null,
@@ -1133,6 +1131,31 @@
   "relu": false
  },
  {
+  "id": "DLR5L17N52087",
+  "origine": "niche",
+  "date": "2025-06-26",
+  "titre": "protéger l’effectivité du droit fondamental d’éligibilité",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "UDR",
+   "acteur": "PA330240"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L17V2708",
+  "inverse": true,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2025-06-26"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
   "id": "DLR5L17N51985@2025-07-01",
   "dossier": "DLR5L17N51985",
   "origine": "solennel",
@@ -1183,79 +1206,75 @@
   "relu": false
  },
  {
-  "id": "DLR5L17N53669@2025-07-02",
-  "dossier": "DLR5L17N53669",
+  "id": "DLR5L17N50724@2025-07-02",
+  "dossier": "DLR5L17N50724",
   "origine": "solennel",
   "date": "2025-07-02",
-  "titre": "Renforcer la prévention et la lutte contre l’antisémitisme et le racisme dans l’enseignement supérieur par des actions de sensibilisation et de formation ciblées",
+  "titre": "Proposition de loi relative à la lutte contre l'antisémitisme dans l'enseignement supérieur",
   "lecture": "texte de la commission mixte paritaire",
   "procedure": "Proposition de loi ordinaire",
   "auteur": {
-   "type": "depute",
-   "groupe": "UDR",
-   "acteur": "PA840889"
+   "type": "senat"
   },
   "statut": "adopte",
   "scrutin": "VTANR5L17V2880",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "AN1-DEPOT",
-   "dateDerniereEtape": "2026-01-27"
+   "promulgation": "2025-07-31",
+   "numeroLoi": "2025-732",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-07-31"
   },
   "resume": null,
   "arguments": null,
   "relu": false
  },
  {
-  "id": "DLR5L17N52973@2025-07-08",
-  "dossier": "DLR5L17N52973",
+  "id": "DLR5L17N50819@2025-07-08",
+  "dossier": "DLR5L17N50819",
   "origine": "solennel",
   "date": "2025-07-08",
-  "titre": "Interdire l’importation en France de produits agricoles et denrées alimentaires contenant de l’acétamipride et à abroger la loi visant à lever les contraintes à l’exercice du métier d’agriculteur",
+  "titre": "Proposition de loi visant à lever les contraintes à l’exercice du métier d’agriculteur",
   "lecture": "texte de la commission mixte paritaire",
   "procedure": "Proposition de loi ordinaire",
   "auteur": {
-   "type": "depute",
-   "groupe": "LFI-NFP",
-   "acteur": "PA719578"
+   "type": "senat"
   },
   "statut": "adopte",
   "scrutin": "VTANR5L17V2957",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "AN1-COM-FOND-REUNION",
-   "dateDerniereEtape": "2025-11-26"
+   "promulgation": "2025-08-11",
+   "numeroLoi": "2025-794",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-08-11"
   },
   "resume": null,
   "arguments": null,
   "relu": false
  },
  {
-  "id": "DLR5L17N53496@2025-07-08",
-  "dossier": "DLR5L17N53496",
+  "id": "DLR5L17N51429@2025-07-08",
+  "dossier": "DLR5L17N51429",
   "origine": "solennel",
   "date": "2025-07-08",
-  "titre": "Projet de loi ratifiant l’ordonnance n°2025-1073 du 10 novembre 2025 portant extension et adaptation des dispositions de la loi n° 2025-796 du 11 août 2025 visant à faciliter le maintien en rétention des personnes condamnées pour des faits d’une particulière gravité et présentant de forts risques de récidive à Saint-Barthélemy, à Saint-Martin, dans les îles Wallis et Futuna, en Polynésie française et en Nouvelle-Calédonie",
+  "titre": "Proposition de loi visant à faciliter le maintien en rétention des personnes condamnées pour des faits d’une particulière gravité et présentant de forts risques de récidive",
   "lecture": "première lecture",
-  "procedure": "Projet de loi ordinaire",
+  "procedure": "Proposition de loi ordinaire",
   "auteur": {
-   "type": "gouvernement"
+   "type": "senat"
   },
   "statut": "adopte",
   "scrutin": "VTANR5L17V2958",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "SN1-DEPOT",
-   "dateDerniereEtape": "2026-01-05"
+   "promulgation": "2025-08-11",
+   "numeroLoi": "2025-796",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-08-11"
   },
   "resume": null,
   "arguments": null,

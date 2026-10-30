@@ -4,7 +4,7 @@ Usage : python3 pipeline/mettre_a_jour.py [17]
 
 1. re-télécharge les fichiers de l'open data (l'Assemblée ne publie que des fichiers complets) ;
 2. re-télécharge les comptes rendus des 45 derniers jours (ils peuvent être corrigés après publication) ;
-3. reconstruit toute la base ;
+3. reconstruit toute la base, puis les données du site (site/donnees.js) ;
 4. compare avec la base précédente et écrit donnees/base/<législature>/nouveautes.md :
    ce qui est nouveau ou a changé, donc ce qui est à vérifier à la main.
 
@@ -44,6 +44,7 @@ def main():
     depuis = (datetime.date.today() - datetime.timedelta(days=JOURS_A_RAFRAICHIR)).isoformat()
     lancer("telecharger.py", leg, "--forcer")
     lancer("construire.py", leg, "--rafraichir-cr", depuis)
+    lancer("publier.py")   # le site regroupe toutes les législatures
     apres = photo(leg)
 
     (textes_av, lignes_av, valider_av), (textes_ap, lignes_ap, valider_ap) = avant, apres

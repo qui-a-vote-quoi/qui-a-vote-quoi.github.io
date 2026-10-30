@@ -25,11 +25,11 @@
   "relu": false
  },
  {
-  "id": "DLR5L16N46617@2022-07-26",
-  "dossier": "DLR5L16N46617",
+  "id": "DLR5L16N45943@2022-07-26",
+  "dossier": "DLR5L16N45943",
   "origine": "solennel",
   "date": "2022-07-26",
-  "titre": "Projet de loi de finances rectificative pour 2022",
+  "titre": "Loi de finances rectificative pour 2022",
   "lecture": "première lecture",
   "procedure": "Projet de loi de finances rectificative",
   "auteur": {
@@ -39,11 +39,11 @@
   "scrutin": "VTANR5L16V180",
   "inverse": false,
   "suite": {
-   "promulgation": "2022-12-01",
-   "numeroLoi": "2022-1499",
-   "conseilConstitutionnel": null,
+   "promulgation": "2022-08-16",
+   "numeroLoi": "2022-1157",
+   "conseilConstitutionnel": "Conforme avec réserve",
    "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2022-12-01"
+   "dateDerniereEtape": "2022-08-16"
   },
   "resume": null,
   "arguments": null,
@@ -75,11 +75,11 @@
   "relu": false
  },
  {
-  "id": "DLR5L16N46617@2022-08-04",
-  "dossier": "DLR5L16N46617",
+  "id": "DLR5L16N45943@2022-08-04",
+  "dossier": "DLR5L16N45943",
   "origine": "solennel",
   "date": "2022-08-04",
-  "titre": "Projet de loi de finances rectificative pour 2022",
+  "titre": "Loi de finances rectificative pour 2022",
   "lecture": "texte de la commission mixte paritaire",
   "procedure": "Projet de loi de finances rectificative",
   "auteur": {
@@ -89,11 +89,11 @@
   "scrutin": "VTANR5L16V191",
   "inverse": false,
   "suite": {
-   "promulgation": "2022-12-01",
-   "numeroLoi": "2022-1499",
-   "conseilConstitutionnel": null,
+   "promulgation": "2022-08-16",
+   "numeroLoi": "2022-1157",
+   "conseilConstitutionnel": "Conforme avec réserve",
    "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2022-12-01"
+   "dateDerniereEtape": "2022-08-16"
   },
   "resume": null,
   "arguments": null,
@@ -198,11 +198,11 @@
   "relu": false
  },
  {
-  "id": "DLR5L16N48163@2022-10-11",
-  "dossier": "DLR5L16N48163",
+  "id": "DLR5L16N46266@2022-10-11",
+  "dossier": "DLR5L16N46266",
   "origine": "solennel",
   "date": "2022-10-11",
-  "titre": "Pour le plein emploi",
+  "titre": "Mesures d’urgence relatives au fonctionnement du marché du travail en vue du plein emploi",
   "lecture": "première lecture",
   "procedure": "Projet de loi ordinaire",
   "auteur": {
@@ -212,24 +212,24 @@
   "scrutin": "VTANR5L16V236",
   "inverse": false,
   "suite": {
-   "promulgation": "2023-12-18",
-   "numeroLoi": "2023-1196",
-   "conseilConstitutionnel": "Partiellement conforme",
+   "promulgation": "2022-12-21",
+   "numeroLoi": "2022-1598",
+   "conseilConstitutionnel": "Conforme",
    "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2023-12-18"
+   "dateDerniereEtape": "2022-12-21"
   },
   "resume": null,
   "arguments": null,
   "relu": false
  },
  {
-  "id": "DLR5L16N48895@2022-10-25",
-  "dossier": "DLR5L16N48895",
+  "id": "DLR5L16N46346@2022-10-25",
+  "dossier": "DLR5L16N46346",
   "origine": "solennel",
   "date": "2022-10-25",
-  "titre": "Engagement de la responsabilité du Gouvernement sur la lecture définitive du projet de loi de programmation des finances publiques pour les années 2023 à 2027 de Mme la Première ministre",
+  "titre": "Programmation des finances publiques pour les années 2023 à 2027",
   "lecture": "première lecture",
-  "procedure": "Engagement de la responsabilité gouvernementale",
+  "procedure": "Projet de loi ordinaire",
   "auteur": {
    "type": "gouvernement"
   },
@@ -237,11 +237,11 @@
   "scrutin": "VTANR5L16V361",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "AN21-MOTION-VOTE",
-   "dateDerniereEtape": "2023-11-15"
+   "promulgation": "2023-12-18",
+   "numeroLoi": "2023-1195",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2023-12-18"
   },
   "resume": null,
   "arguments": null,
@@ -625,56 +625,6 @@
   "relu": false
  },
  {
-  "id": "DLR5L16N46486",
-  "origine": "niche",
-  "date": "2023-01-19",
-  "titre": "Amélioration de l’accès aux soins par la confiance aux professionnels de santé",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "RE",
-   "acteur": "PA720066"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L16V875",
-  "inverse": false,
-  "suite": {
-   "promulgation": "2023-05-19",
-   "numeroLoi": "2023-379",
-   "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2023-05-19"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
-  "id": "DLR5L16N46753",
-  "origine": "niche",
-  "date": "2023-01-19",
-  "titre": "Ouvrir le tiers financement à l’État, à ses établissements publics et aux collectivités territoriales pour favoriser les travaux de rénovation énergétique",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "RE",
-   "acteur": "PA722046"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L16V876",
-  "inverse": false,
-  "suite": {
-   "promulgation": "2023-03-30",
-   "numeroLoi": "2023-222",
-   "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2023-03-30"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
   "id": "DLR5L16N46900",
   "origine": "niche",
   "date": "2023-02-09",
@@ -1002,75 +952,25 @@
   "relu": false
  },
  {
-  "id": "DLR5L16N47291",
-  "origine": "niche",
-  "date": "2023-05-11",
-  "titre": "Lutter contre les sur-transpositions en matière agricole",
-  "procedure": "Résolution Article 34-1",
-  "auteur": {
-   "type": "depute",
-   "groupe": "RE",
-   "acteur": "PA607395"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L16V1504",
-  "inverse": false,
-  "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
-   "dateDerniereEtape": "2023-05-11"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
-  "id": "DLR5L16N46767",
-  "origine": "niche",
-  "date": "2023-05-11",
-  "titre": "Faciliter la mobilité internationale des alternants pour un « Erasmus de l’apprentissage »",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "RE",
-   "acteur": "PA717379"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L16V1503",
-  "inverse": false,
-  "suite": {
-   "promulgation": "2023-12-27",
-   "numeroLoi": "2023-1267",
-   "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2023-12-27"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
-  "id": "DLR5L16N48942@2023-05-16",
-  "dossier": "DLR5L16N48942",
+  "id": "DLR5L16N46622@2023-05-16",
+  "dossier": "DLR5L16N46622",
   "origine": "solennel",
   "date": "2023-05-16",
-  "titre": "Mission d'application de la loi n° 2023-491 du 22 juin 2023 relative à l'accélération des procédures liées à la construction de nouvelles installations nucléaires à proximité de sites nucléaires existants et au fonctionnement des installations existantes",
+  "titre": "Projet de loi  relatif à l’accélération des procédures liées à la construction de nouvelles installations nucléaires à proximité de sites nucléaires existants et au fonctionnement des installations existantes",
   "lecture": "texte de la commission mixte paritaire",
-  "procedure": "Mission d'information",
+  "procedure": "Projet de loi ordinaire",
   "auteur": {
-   "type": "inconnu"
+   "type": "gouvernement"
   },
   "statut": "adopte",
   "scrutin": "VTANR5L16V1533",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "AN20-MISINF-CREA",
-   "dateDerniereEtape": "2023-11-21"
+   "promulgation": "2023-06-22",
+   "numeroLoi": "2023-491",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "AN-APPLI-RAPPORT",
+   "dateDerniereEtape": "2024-02-13"
   },
   "resume": null,
   "arguments": null,
@@ -1404,102 +1304,6 @@
   "relu": false
  },
  {
-  "id": "DLR5L16N48255",
-  "origine": "niche",
-  "date": "2023-11-23",
-  "titre": "Approbation de l’accord entre la France et Andorre concernant la démarcation et l’entretien de la frontière",
-  "procedure": "Projet de ratification des traités et conventions",
-  "auteur": {
-   "type": "gouvernement"
-  },
-  "statut": "adopte",
-  "scrutin": null,
-  "inverse": false,
-  "suite": {
-   "promulgation": "2024-03-06",
-   "numeroLoi": "2024-174",
-   "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2024-03-06"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
-  "id": "DLR5L16N48541",
-  "origine": "niche",
-  "date": "2023-11-23",
-  "titre": "Approbation de la convention d’entraide judiciaire en matière pénale entre la France et la République de Maurice et de la convention d’extradition entre la France et la République de Maurice",
-  "procedure": "Projet de ratification des traités et conventions",
-  "auteur": {
-   "type": "gouvernement"
-  },
-  "statut": "adopte",
-  "scrutin": null,
-  "inverse": false,
-  "suite": {
-   "promulgation": "2024-02-06",
-   "numeroLoi": "2024-84",
-   "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2024-02-06"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
-  "id": "DLR5L16N46868",
-  "origine": "niche",
-  "date": "2023-11-23",
-  "titre": "Mesures pour bâtir la société du bien vieillir en France",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "RE",
-   "acteur": "PA722046"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L16V3045",
-  "inverse": false,
-  "suite": {
-   "promulgation": "2024-04-08",
-   "numeroLoi": "2024-317",
-   "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2024-04-08"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
-  "id": "DLR5L16N48925",
-  "origine": "niche",
-  "date": "2023-11-23",
-  "titre": "Prolonger en 2024 l'utilisation des titres-restaurant pour des achats de produits alimentaires non directement consommables",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "RE",
-   "acteur": "PA719372"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L16V3035",
-  "inverse": false,
-  "suite": {
-   "promulgation": "2023-12-26",
-   "numeroLoi": "2023-1252",
-   "conseilConstitutionnel": null,
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2023-12-26"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
   "id": "DLR5L16N46868@2023-11-23",
   "dossier": "DLR5L16N46868",
   "origine": "solennel",
@@ -1702,27 +1506,25 @@
   "relu": false
  },
  {
-  "id": "DLR5L16N49545@2023-12-19",
-  "dossier": "DLR5L16N49545",
+  "id": "DLR5L16N47118@2023-12-19",
+  "dossier": "DLR5L16N47118",
   "origine": "solennel",
   "date": "2023-12-19",
-  "titre": "Abroger les articles 39 et 44 de la loi n°2024-42 du 26 janvier 2024 pour contrôler l'immigration, améliorer l'intégration",
+  "titre": "Projet de loi pour contrôler l’immigration, améliorer l’intégration",
   "lecture": "texte de la commission mixte paritaire",
-  "procedure": "Proposition de loi ordinaire",
+  "procedure": "Projet de loi ordinaire",
   "auteur": {
-   "type": "depute",
-   "groupe": "LFI-NUPES",
-   "acteur": "PA794686"
+   "type": "gouvernement"
   },
   "statut": "adopte",
   "scrutin": "VTANR5L16V3213",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "AN1-DEPOT",
-   "dateDerniereEtape": "2024-03-08"
+   "promulgation": "2024-01-26",
+   "numeroLoi": "2024-42",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2024-01-26"
   },
   "resume": null,
   "arguments": null,
