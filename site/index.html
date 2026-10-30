@@ -274,7 +274,7 @@ a.plus { text-decoration: none; display: inline-flex; align-items: center; }
 .fact span { color: var(--muted); font-size: 15px; }
 .hemi { margin-top: 24px; background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 16px; }
 .hemi svg { display: block; width: 100%; max-width: 620px; height: auto; margin: 0 auto; }
-.hemi .s-p { fill: var(--jauge-pour); } .hemi .s-c { fill: var(--jauge-contre); } .hemi .s-a { fill: var(--jauge-abst); } .hemi .s-n { fill: none; stroke: var(--seat-absent); stroke-width: 1.4; }
+.hemi .s-p { fill: var(--jauge-pour); } .hemi .s-c { fill: var(--jauge-contre); } .hemi .s-a { fill: var(--jauge-abst); } .hemi .s-n { fill: var(--seat-absent); }
 .hemi text { fill: var(--muted); font: 700 11px var(--body); }
 .hemi .centre { fill: var(--fg); font: 700 22px var(--display); }
 .hemi .sous { fill: var(--muted); font: 400 14px var(--body); }
@@ -573,7 +573,7 @@ function bar(p, c, a, n) {
   return `<div class="bar"><i style="width:${w(p)};background:var(--jauge-pour)"></i><i style="width:${w(c)};background:var(--jauge-contre)"></i><i style="width:${w(a)};background:var(--jauge-abst)"></i><i style="width:${w(n)};background:var(--absent)"></i></div>`;
 }
 // Légende des positions : mêmes libellés (LIB) que partout ailleurs
-const PASTILLE = { soutien: "background:var(--jauge-pour)", opposition: "background:var(--jauge-contre)", abstention: "background:var(--jauge-abst)", absent: "border:1.5px solid var(--seat-absent);background:none" };
+const PASTILLE = { soutien: "background:var(--jauge-pour)", opposition: "background:var(--jauge-contre)", abstention: "background:var(--jauge-abst)", absent: "background:var(--seat-absent)" };
 const legende = `<div class="legend">${Object.entries(LIB).filter(([k]) => k in PASTILLE).map(([k, l]) => `<span><i class="dot" style="${PASTILLE[k]}"></i>${l}</span>`).join("")}</div>`;
 
 // Hémicycle : un point par député, rangés de la gauche vers la droite par groupe, en rangées concentriques.
