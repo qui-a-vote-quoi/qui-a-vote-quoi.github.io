@@ -1,0 +1,1749 @@
+{
+ "Égalité femmes-hommes et violences faites aux femmes": {
+  "n": 16,
+  "sujets": {
+   "Santé": 5,
+   "Justice": 6,
+   "Enfance et famille": 1,
+   "Impôts et budget": 1,
+   "Institutions et État": 2,
+   "Sécurité sociale": 1
+  },
+  "textes": [
+   {
+    "dossier": "DLR5L15N37672",
+    "titre": "Réviser les lois de bioéthique",
+    "sujet": "Santé",
+    "enjeux": [
+     "bioéthique",
+     "procréation médicalement assistée",
+     "recherche sur l'embryon"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N37702",
+    "titre": "Protéger les victimes de violences conjugales avec le bracelet électronique",
+    "sujet": "Justice",
+    "enjeux": [
+     "violences conjugales",
+     "bracelet anti-rapprochement"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N40346",
+    "titre": "Allonger le délai de l'IVG de 12 à 14 semaines",
+    "sujet": "Santé",
+    "enjeux": [
+     "accès à l'IVG",
+     "délai légal de l'IVG",
+     "clause de conscience"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N41193",
+    "titre": "Punir plus sévèrement les atteintes sexuelles sur mineurs",
+    "sujet": "Justice",
+    "enjeux": [
+     "atteintes sexuelles sur mineurs",
+     "âge du consentement",
+     "violences sexuelles"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N44446",
+    "titre": "Inviter à classer l'endométriose en affection de longue durée",
+    "sujet": "Santé",
+    "enjeux": [
+     "endométriose",
+     "affection de longue durée"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N46412",
+    "titre": "Inscrire l'IVG et la contraception dans la Constitution",
+    "sujet": "Santé",
+    "enjeux": [
+     "accès à l'IVG",
+     "contraception",
+     "Constitution"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N46466",
+    "titre": "Créer un tribunal spécialisé dans les violences familiales",
+    "sujet": "Justice",
+    "enjeux": [
+     "violences intrafamiliales",
+     "tribunal spécialisé",
+     "organisation de la justice"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N46864",
+    "titre": "Suspendre l'autorité parentale d'un parent poursuivi pour violences",
+    "sujet": "Enfance et famille",
+    "enjeux": [
+     "autorité parentale",
+     "violences familiales",
+     "protection de l'enfant"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N46890",
+    "titre": "Prolonger l'ordonnance de protection à 12 mois",
+    "sujet": "Justice",
+    "enjeux": [
+     "ordonnance de protection",
+     "violences conjugales",
+     "violences intrafamiliales"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N49023",
+    "titre": "Protéger un ex-conjoint des dettes fiscales du couple",
+    "sujet": "Impôts et budget",
+    "enjeux": [
+     "dettes fiscales du couple",
+     "séparation",
+     "protection de l'ex-conjoint"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N49095",
+    "titre": "Inscrire la liberté de recourir à l'IVG dans la Constitution",
+    "sujet": "Institutions et État",
+    "enjeux": [
+     "accès à l'IVG",
+     "Constitution"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N49801",
+    "titre": "Rembourser intégralement les soins du cancer du sein",
+    "sujet": "Sécurité sociale",
+    "enjeux": [
+     "cancer du sein",
+     "remboursement des soins",
+     "Assurance maladie"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N43846",
+    "titre": "Étendre la parité aux petites communes",
+    "sujet": "Institutions et État",
+    "enjeux": [
+     "parité",
+     "élections municipales",
+     "mode de scrutin communal"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N54776",
+    "titre": "Agir contre les violences sexuelles et sexistes",
+    "sujet": "Justice",
+    "enjeux": [
+     "violences sexuelles",
+     "violences sexistes",
+     "protection des victimes"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N54777",
+    "titre": "Former les juges aux violences sexuelles et familiales",
+    "sujet": "Justice",
+    "enjeux": [
+     "formation des magistrats",
+     "violences sexuelles",
+     "violences familiales"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N54898",
+    "titre": "Prendre en charge à 100 % les soins après des violences sexuelles",
+    "sujet": "Santé",
+    "enjeux": [
+     "soins après violences sexuelles",
+     "remboursement des soins",
+     "Assurance maladie"
+    ]
+   }
+  ]
+ },
+ "Protection de l'enfance": {
+  "n": 15,
+  "sujets": {
+   "Enfance et famille": 7,
+   "Société et mémoire": 2,
+   "Justice": 2,
+   "Santé": 2,
+   "Sécurité": 1,
+   "Culture et sport": 1
+  },
+  "textes": [
+   {
+    "dossier": "DLR5L15N36918",
+    "titre": "Inscrire dans la loi l'éducation sans violence",
+    "sujet": "Enfance et famille",
+    "enjeux": [
+     "éducation sans violence",
+     "violences éducatives",
+     "autorité parentale"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N37621",
+    "titre": "Reconnaître pupilles de la Nation les enfants de sauveteurs en mer",
+    "sujet": "Société et mémoire",
+    "enjeux": [
+     "pupilles de la Nation",
+     "sauveteurs en mer",
+     "reconnaissance par la Nation"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N41193",
+    "titre": "Punir plus sévèrement les atteintes sexuelles sur mineurs",
+    "sujet": "Justice",
+    "enjeux": [
+     "atteintes sexuelles sur mineurs",
+     "âge du consentement",
+     "violences sexuelles"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N37978",
+    "titre": "Interdire la vente de protoxyde d'azote aux mineurs",
+    "sujet": "Santé",
+    "enjeux": [
+     "protoxyde d'azote",
+     "vente aux mineurs",
+     "consommation de drogues"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N46778",
+    "titre": "Autoriser les parlementaires à visiter les établissements sociaux et médico-sociaux",
+    "sujet": "Société et mémoire",
+    "enjeux": [
+     "visite des établissements sociaux et médico-sociaux",
+     "contrôle parlementaire",
+     "maltraitance"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N46864",
+    "titre": "Suspendre l'autorité parentale d'un parent poursuivi pour violences",
+    "sujet": "Enfance et famille",
+    "enjeux": [
+     "autorité parentale",
+     "violences familiales",
+     "protection de l'enfant"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N47035",
+    "titre": "Limiter les réseaux sociaux avant 15 ans",
+    "sujet": "Enfance et famille",
+    "enjeux": [
+     "réseaux sociaux",
+     "protection des mineurs en ligne",
+     "majorité numérique"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N47884",
+    "titre": "Vérifier l’âge sur les sites pornographiques et encadrer le numérique",
+    "sujet": "Sécurité",
+    "enjeux": [
+     "vérification de l'âge",
+     "sites pornographiques",
+     "protection des mineurs en ligne"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N47026",
+    "titre": "Contrôler l'honorabilité des encadrants sportifs auprès des mineurs",
+    "sujet": "Culture et sport",
+    "enjeux": [
+     "honorabilité des encadrants sportifs",
+     "protection des mineurs",
+     "violences sexuelles dans le sport"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N51849",
+    "titre": "Lutter contre la mort des bébés",
+    "sujet": "Santé",
+    "enjeux": [
+     "mort inattendue du nourrisson",
+     "registre des naissances",
+     "santé des nourrissons"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N50627",
+    "titre": "Punir aussi les contacts avec un faux mineur",
+    "sujet": "Justice",
+    "enjeux": [
+     "infractions sexuelles contre mineurs",
+     "faux mineurs en ligne",
+     "protection des mineurs en ligne"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N52781",
+    "titre": "Garantir un avocat à chaque enfant protégé",
+    "sujet": "Enfance et famille",
+    "enjeux": [
+     "avocat pour les enfants protégés",
+     "protection de l'enfance",
+     "aide juridictionnelle"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N53051",
+    "titre": "Protéger les mineurs isolés sans abri",
+    "sujet": "Enfance et famille",
+    "enjeux": [
+     "mineurs isolés",
+     "reconnaissance de minorité",
+     "hébergement d'urgence"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N54372",
+    "titre": "Réformer la protection de l'enfance",
+    "sujet": "Enfance et famille",
+    "enjeux": [
+     "protection de l'enfance",
+     "placement des enfants",
+     "accueil chez un proche"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N53187",
+    "titre": "Interdire les réseaux sociaux aux moins de 15 ans",
+    "sujet": "Enfance et famille",
+    "enjeux": [
+     "réseaux sociaux",
+     "protection des mineurs en ligne",
+     "couvre-feu numérique"
+    ]
+   }
+  ]
+ },
+ "Handicap, grand âge et autonomie": {
+  "n": 17,
+  "sujets": {
+   "Travail et emploi": 3,
+   "Outre-mer": 2,
+   "Éducation et jeunesse": 4,
+   "Sécurité sociale": 4,
+   "Santé": 1,
+   "Société et mémoire": 2,
+   "Logement": 1
+  },
+  "textes": [
+   {
+    "dossier": "DLR5L15N35967",
+    "titre": "Permettre de donner des jours de repos aux aidants",
+    "sujet": "Travail et emploi",
+    "enjeux": [
+     "dons de jours de repos",
+     "proches aidants",
+     "congés des salariés"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N36333",
+    "titre": "Fixer les règles du vote sur l'indépendance de la Nouvelle-Calédonie",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "référendum en Nouvelle-Calédonie",
+     "listes électorales spéciales",
+     "indépendance"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N36833",
+    "titre": "Créer un métier d'aidant à l'inclusion scolaire",
+    "sujet": "Éducation et jeunesse",
+    "enjeux": [
+     "accompagnement des élèves handicapés",
+     "métier d'aidant à l'inclusion scolaire",
+     "inclusion scolaire"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N36913",
+    "titre": "Mieux soutenir les proches aidants",
+    "sujet": "Travail et emploi",
+    "enjeux": [
+     "congé de proche aidant",
+     "indemnisation des aidants",
+     "financement de la dépendance"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N37092",
+    "titre": "Garantir un accompagnant aux élèves handicapés dès la rentrée",
+    "sujet": "Éducation et jeunesse",
+    "enjeux": [
+     "accompagnants d'élèves handicapés",
+     "rentrée scolaire",
+     "inclusion scolaire"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N36497",
+    "titre": "Ne plus compter les revenus du conjoint pour l'AAH",
+    "sujet": "Sécurité sociale",
+    "enjeux": [
+     "allocation aux adultes handicapés",
+     "revenus du conjoint",
+     "autonomie financière"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39726",
+    "titre": "Permettre de donner des jours de repos au secteur médico-social",
+    "sujet": "Travail et emploi",
+    "enjeux": [
+     "dons de jours de repos",
+     "secteur médico-social",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39813",
+    "titre": "Financer la dette sociale et l'autonomie",
+    "sujet": "Sécurité sociale",
+    "enjeux": [
+     "dette sociale",
+     "financement de l'autonomie",
+     "Sécurité sociale"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39756",
+    "titre": "Programmer les moyens de l'hôpital public et des Ehpad",
+    "sujet": "Santé",
+    "enjeux": [
+     "moyens de l'hôpital public",
+     "Ehpad",
+     "personnel soignant"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N41103",
+    "titre": "Créer une heure silencieuse dans les grands magasins",
+    "sujet": "Société et mémoire",
+    "enjeux": [
+     "heure silencieuse en magasin",
+     "autisme",
+     "troubles sensoriels"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N43265",
+    "titre": "Changer les règles de l'allocation aux adultes handicapés",
+    "sujet": "Société et mémoire",
+    "enjeux": [
+     "allocation aux adultes handicapés",
+     "revenus du conjoint",
+     "autonomie financière"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N38414",
+    "titre": "Mesures sociales : handicap, services à la personne, stages",
+    "sujet": "Sécurité sociale",
+    "enjeux": [
+     "handicap",
+     "crédit d'impôt services à la personne",
+     "stages"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39164",
+    "titre": "Demander un plan pour le vieillissement accéléré de la Martinique",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "vieillissement de la population en Martinique",
+     "perte d'autonomie",
+     "agence de l'autonomie"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N44426",
+    "titre": "Améliorer le statut des accompagnants d’élèves en situation de handicap",
+    "sujet": "Éducation et jeunesse",
+    "enjeux": [
+     "accompagnants d'élèves handicapés",
+     "statut des accompagnants",
+     "inclusion scolaire"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N46868",
+    "titre": "Créer une politique de prévention de la perte d'autonomie",
+    "sujet": "Sécurité sociale",
+    "enjeux": [
+     "perte d'autonomie",
+     "prévention du vieillissement",
+     "maltraitance des personnes âgées"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N50777",
+    "titre": "Obliger à réparer vite les ascenseurs en panne",
+    "sujet": "Logement",
+    "enjeux": [
+     "ascenseurs en panne",
+     "entretien des immeubles",
+     "réparation des ascenseurs"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N54901",
+    "titre": "Créer un corps de fonctionnaires pour les AESH",
+    "sujet": "Éducation et jeunesse",
+    "enjeux": [
+     "accompagnants d'élèves handicapés",
+     "statut des accompagnants",
+     "fonction publique"
+    ]
+   }
+  ]
+ },
+ "Numérique": {
+  "n": 13,
+  "sujets": {
+   "Institutions et État": 1,
+   "Autres sujets": 2,
+   "Santé": 1,
+   "Culture et sport": 2,
+   "Entreprises et économie": 1,
+   "Justice": 2,
+   "Consommation et alimentation": 1,
+   "Enfance et famille": 2,
+   "Sécurité": 1
+  },
+  "textes": [
+   {
+    "dossier": "DLR5L15N36220",
+    "titre": "Adapter la loi sur les données personnelles au droit européen",
+    "sujet": "Institutions et État",
+    "enjeux": [
+     "données personnelles",
+     "protection de la vie privée",
+     "droit européen du numérique"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N36468",
+    "titre": "Lutte contre la manipulation des informations",
+    "sujet": "Autres sujets",
+    "enjeux": [
+     "fausses informations",
+     "élections",
+     "régulation des médias en ligne"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N37234",
+    "titre": "Réformer les études de médecine et l'organisation des soins",
+    "sujet": "Santé",
+    "enjeux": [
+     "études de médecine",
+     "organisation des soins",
+     "télésanté"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N37127",
+    "titre": "Créer un droit voisin pour la presse en ligne",
+    "sujet": "Culture et sport",
+    "enjeux": [
+     "droits voisins de la presse",
+     "presse en ligne",
+     "droits d'auteur"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N38413",
+    "titre": "Associer les collectivités au déploiement de la 4G",
+    "sujet": "Entreprises et économie",
+    "enjeux": [
+     "couverture mobile 4G",
+     "collectivités et opérateurs",
+     "antennes-relais"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N37327",
+    "titre": "Obliger les plateformes à retirer vite les contenus haineux",
+    "sujet": "Justice",
+    "enjeux": [
+     "contenus haineux en ligne",
+     "modération des plateformes",
+     "réseaux sociaux"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N42038",
+    "titre": "Interdire plusieurs formes de publicité",
+    "sujet": "Consommation et alimentation",
+    "enjeux": [
+     "publicité",
+     "consommation",
+     "publicité numérique et lumineuse"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N40131",
+    "titre": "La mise en place d'une certification de cybersécurité des plateformes numériques destinée au grand public",
+    "sujet": "Autres sujets",
+    "enjeux": [
+     "cybersécurité",
+     "plateformes numériques",
+     "protection des utilisateurs en ligne"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N47035",
+    "titre": "Limiter les réseaux sociaux avant 15 ans",
+    "sujet": "Enfance et famille",
+    "enjeux": [
+     "réseaux sociaux",
+     "protection des mineurs en ligne",
+     "majorité numérique"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N47884",
+    "titre": "Vérifier l’âge sur les sites pornographiques et encadrer le numérique",
+    "sujet": "Sécurité",
+    "enjeux": [
+     "vérification de l'âge",
+     "sites pornographiques",
+     "protection des mineurs en ligne"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N50627",
+    "titre": "Punir aussi les contacts avec un faux mineur",
+    "sujet": "Justice",
+    "enjeux": [
+     "infractions sexuelles contre mineurs",
+     "faux mineurs en ligne",
+     "protection des mineurs en ligne"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N51330",
+    "titre": "Faire respecter les droits voisins de la presse",
+    "sujet": "Culture et sport",
+    "enjeux": [
+     "droits voisins de la presse",
+     "plateformes en ligne",
+     "rémunération des éditeurs"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N53187",
+    "titre": "Interdire les réseaux sociaux aux moins de 15 ans",
+    "sujet": "Enfance et famille",
+    "enjeux": [
+     "réseaux sociaux",
+     "protection des mineurs en ligne",
+     "couvre-feu numérique"
+    ]
+   }
+  ]
+ },
+ "Pouvoir d'achat et prix": {
+  "n": 25,
+  "sujets": {
+   "Travail et emploi": 3,
+   "Agriculture": 3,
+   "Impôts et budget": 2,
+   "Consommation et alimentation": 4,
+   "Autres sujets": 2,
+   "Outre-mer": 5,
+   "Éducation et jeunesse": 1,
+   "Logement": 3,
+   "Environnement et énergie": 1,
+   "Santé": 1
+  },
+  "textes": [
+   {
+    "dossier": "DLR5L15N36400",
+    "titre": "Créer un ticket-carburant pour les salariés",
+    "sujet": "Travail et emploi",
+    "enjeux": [
+     "ticket-carburant",
+     "pouvoir d'achat des salariés",
+     "prix des carburants"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N36336",
+    "titre": "Rééquilibrer les relations commerciales agricoles et alimentaires",
+    "sujet": "Agriculture",
+    "enjeux": [
+     "relations commerciales agricoles",
+     "prix des produits agricoles",
+     "contrats de vente agricoles"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39427",
+    "titre": "Adapter le budget 2020 à la crise du Covid-19",
+    "sujet": "Impôts et budget",
+    "enjeux": [
+     "budget de l'État rectificatif",
+     "crise du covid-19",
+     "prime exceptionnelle"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N44349",
+    "titre": "Permettre de bloquer les prix en cas de crise",
+    "sujet": "Consommation et alimentation",
+    "enjeux": [
+     "blocage des prix",
+     "pouvoir d'achat",
+     "encadrement des prix"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N44420",
+    "titre": "Fixer le Smic à 1 827,89 euros brut",
+    "sujet": "Travail et emploi",
+    "enjeux": [
+     "salaire minimum",
+     "Smic",
+     "pouvoir d'achat"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N44558",
+    "titre": "Lutte contre l’exclusion financière et plafonnement des frais bancaires",
+    "sujet": "Autres sujets",
+    "enjeux": [
+     "exclusion bancaire",
+     "frais bancaires",
+     "plafonnement des frais"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N45942",
+    "titre": "Prendre des mesures d'urgence pour le pouvoir d'achat",
+    "sujet": "Impôts et budget",
+    "enjeux": [
+     "pouvoir d'achat",
+     "prime de partage de la valeur",
+     "revalorisation des prestations"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N45943",
+    "titre": "Loi de finances rectificative pour 2022",
+    "sujet": "Autres sujets",
+    "enjeux": [
+     "budget de l'État rectificatif",
+     "pouvoir d'achat",
+     "prix de l'énergie"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N46760",
+    "titre": "Exonérer de cotisations les hausses de salaire de 10 %",
+    "sujet": "Travail et emploi",
+    "enjeux": [
+     "salaires",
+     "exonération de cotisations",
+     "pouvoir d'achat"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N46900",
+    "titre": "Créer une commission d'enquête sur la vie chère en outre-mer",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "vie chère en outre-mer",
+     "prix des produits",
+     "commission d'enquête"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N46858",
+    "titre": "Plafonner à 1 euro le repas des restaurants universitaires",
+    "sujet": "Éducation et jeunesse",
+    "enjeux": [
+     "restauration universitaire",
+     "prix des repas étudiants",
+     "précarité étudiante"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N47218",
+    "titre": "Verser une prime alimentation, encadrer cantines et charcuterie",
+    "sujet": "Consommation et alimentation",
+    "enjeux": [
+     "prime alimentation",
+     "cantines scolaires",
+     "charcuterie et additifs"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N47975",
+    "titre": "Prolonger le plafonnement des hausses de loyers jusqu'en 2024",
+    "sujet": "Logement",
+    "enjeux": [
+     "plafonnement des loyers",
+     "hausse des loyers",
+     "indice de référence des loyers"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N48766",
+    "titre": "Lutter contre l’inflation par l’encadrement des marges des industries agroalimentaires, du raffinage et de la grande distribution et établissant un prix d’achat plancher des matières premières agricoles",
+    "sujet": "Consommation et alimentation",
+    "enjeux": [
+     "inflation",
+     "marges de la grande distribution",
+     "prix d'achat des produits agricoles"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N49175",
+    "titre": "Demander au gouvernement des mesures pour faciliter l'accès au logement",
+    "sujet": "Logement",
+    "enjeux": [
+     "accès au logement",
+     "logement social",
+     "encadrement des loyers"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N46921",
+    "titre": "Nationaliser EDF",
+    "sujet": "Environnement et énergie",
+    "enjeux": [
+     "nationalisation d'EDF",
+     "service public de l'énergie",
+     "prix de l'électricité"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N49258",
+    "titre": "Encadrer les frais bancaires après un décès",
+    "sujet": "Consommation et alimentation",
+    "enjeux": [
+     "frais bancaires après décès",
+     "succession",
+     "protection des consommateurs"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N49457",
+    "titre": "Garantir un prix minimal aux agriculteurs et financer l'agroécologie",
+    "sujet": "Agriculture",
+    "enjeux": [
+     "prix minimal agricole",
+     "agroécologie",
+     "revenus agricoles"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N50779",
+    "titre": "Réguler les prix et la concentration en outre-mer",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "prix en outre-mer",
+     "vie chère",
+     "concentration de la distribution"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N49455",
+    "titre": "Interdire les « polluants éternels » dans les produits du quotidien",
+    "sujet": "Santé",
+    "enjeux": [
+     "PFAS",
+     "polluants éternels",
+     "produits du quotidien"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N51504",
+    "titre": "Prolonger le prix minimum de revente des aliments",
+    "sujet": "Agriculture",
+    "enjeux": [
+     "prix minimum de revente des aliments",
+     "relations commerciales agricoles",
+     "grande distribution"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N51115",
+    "titre": "Expérimenter l'encadrement des loyers en outre-mer",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "encadrement des loyers en outre-mer",
+     "loyers",
+     "logement"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N52976",
+    "titre": "Le même prix du timbre en outre-mer qu'en métropole",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "prix du timbre",
+     "service postal",
+     "outre-mer"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N53069",
+    "titre": "Rendre durable l'encadrement des loyers",
+    "sujet": "Logement",
+    "enjeux": [
+     "encadrement des loyers",
+     "hausse des loyers",
+     "logement"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N53058",
+    "titre": "Baisser les prix des services en outre-mer",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "prix des billets d'avion",
+     "vie chère en outre-mer",
+     "continuité territoriale"
+    ]
+   }
+  ]
+ },
+ "Crise du Covid-19": {
+  "n": 22,
+  "sujets": {
+   "Impôts et budget": 4,
+   "Institutions et État": 2,
+   "Santé": 12,
+   "Société et mémoire": 1,
+   "Travail et emploi": 1,
+   "Entreprises et économie": 1,
+   "Autres sujets": 1
+  },
+  "textes": [
+   {
+    "dossier": "DLR5L15N39144",
+    "titre": "Garantir 300 milliards de prêts aux entreprises face au covid-19",
+    "sujet": "Impôts et budget",
+    "enjeux": [
+     "garantie de l'État aux prêts",
+     "aide aux entreprises",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39206",
+    "titre": "Suspendre des délais de justice constitutionnelle pendant l’épidémie",
+    "sujet": "Institutions et État",
+    "enjeux": [
+     "délais de justice constitutionnelle",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39205",
+    "titre": "Répondre à l'épidémie de covid-19 par une loi d'urgence",
+    "sujet": "Santé",
+    "enjeux": [
+     "état d'urgence sanitaire",
+     "report des élections municipales",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39427",
+    "titre": "Adapter le budget 2020 à la crise du Covid-19",
+    "sujet": "Impôts et budget",
+    "enjeux": [
+     "budget de l'État rectificatif",
+     "crise du covid-19",
+     "prime exceptionnelle"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39597",
+    "titre": "Prolonger l'état d'urgence sanitaire jusqu'au 10 juillet 2020",
+    "sujet": "Santé",
+    "enjeux": [
+     "état d'urgence sanitaire",
+     "restrictions et quarantaine",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39712",
+    "titre": "Rendre hommage aux soignants victimes du covid-19",
+    "sujet": "Société et mémoire",
+    "enjeux": [
+     "hommage aux soignants",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39726",
+    "titre": "Permettre de donner des jours de repos au secteur médico-social",
+    "sujet": "Travail et emploi",
+    "enjeux": [
+     "dons de jours de repos",
+     "secteur médico-social",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39644",
+    "titre": "Habiliter le gouvernement à agir par ordonnances face au covid-19",
+    "sujet": "Santé",
+    "enjeux": [
+     "ordonnances covid-19",
+     "crise du covid-19",
+     "mesures d'urgence"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39670",
+    "titre": "Demander à la Banque centrale européenne de racheter les dettes publiques",
+    "sujet": "Impôts et budget",
+    "enjeux": [
+     "dette publique",
+     "Banque centrale européenne",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39814",
+    "titre": "Annuler et refaire le second tour des municipales 2020",
+    "sujet": "Institutions et État",
+    "enjeux": [
+     "second tour des municipales",
+     "organisation des élections",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39896",
+    "titre": "Encadrer la sortie de l’état d’urgence sanitaire",
+    "sujet": "Santé",
+    "enjeux": [
+     "sortie de l'état d'urgence sanitaire",
+     "restrictions de déplacement",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39749",
+    "titre": "Rendre les masques accessibles gratuitement",
+    "sujet": "Santé",
+    "enjeux": [
+     "masques gratuits",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39905",
+    "titre": "Demander le gel des fermetures de lits d'hôpital",
+    "sujet": "Santé",
+    "enjeux": [
+     "fermetures de lits d'hôpital",
+     "hôpital public",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39825",
+    "titre": "Libérer les directeurs d'hôpitaux en cas de crise sanitaire",
+    "sujet": "Santé",
+    "enjeux": [
+     "organisation des hôpitaux",
+     "pouvoirs des directeurs d'hôpital",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39819",
+    "titre": "Demander l'avis du comité d'éthique en cas d'état d'urgence sanitaire",
+    "sujet": "Santé",
+    "enjeux": [
+     "état d'urgence sanitaire",
+     "comité d'éthique",
+     "contrôle des mesures sanitaires"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N40769",
+    "titre": "Demander un vaccin contre le covid-19 accessible à tous",
+    "sujet": "Santé",
+    "enjeux": [
+     "vaccin contre le covid-19",
+     "accès aux vaccins",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N40892",
+    "titre": "Généraliser le dépistage du covid-19",
+    "sujet": "Santé",
+    "enjeux": [
+     "dépistage du covid-19",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N41308",
+    "titre": "Prolonger l’état d’urgence sanitaire et ses mesures",
+    "sujet": "Santé",
+    "enjeux": [
+     "état d'urgence sanitaire",
+     "crise du covid-19",
+     "passe sanitaire"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N42045",
+    "titre": "Taxer à 50 % les profits de crise",
+    "sujet": "Impôts et budget",
+    "enjeux": [
+     "taxation des profits exceptionnels",
+     "crise du covid-19",
+     "fiscalité des entreprises"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N43488",
+    "titre": "Demander de créer une filière française de masques de protection",
+    "sujet": "Entreprises et économie",
+    "enjeux": [
+     "filière de masques",
+     "relocalisation industrielle",
+     "crise du covid-19"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N40619",
+    "titre": "Création d'une plateforme de référencement et de prise en charge des malades chroniques de la covid-19",
+    "sujet": "Autres sujets",
+    "enjeux": [
+     "malades chroniques du covid-19",
+     "covid long",
+     "prise en charge des malades"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N47411",
+    "titre": "Mettre fin à l'obligation de vaccination covid des soignants",
+    "sujet": "Santé",
+    "enjeux": [
+     "vaccination des soignants contre le covid-19",
+     "obligation vaccinale"
+    ]
+   }
+  ]
+ },
+ "Eau": {
+  "n": 7,
+  "sujets": {
+   "Environnement et énergie": 4,
+   "Outre-mer": 2,
+   "Logement": 1
+  },
+  "textes": [
+   {
+    "dossier": "DLR5L15N36047",
+    "titre": "Assouplir la gestion des cours d'eau et des inondations",
+    "sujet": "Environnement et énergie",
+    "enjeux": [
+     "gestion des cours d'eau",
+     "prévention des inondations",
+     "compétences des collectivités"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N36226",
+    "titre": "Inscrire le droit à l'eau dans la Constitution",
+    "sujet": "Environnement et énergie",
+    "enjeux": [
+     "droit à l'eau",
+     "accès à l'eau potable",
+     "Constitution"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N41089",
+    "titre": "Créer un syndicat unique de l'eau en Guadeloupe",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "gestion de l'eau en Guadeloupe",
+     "eau potable et assainissement",
+     "collectivités d'outre-mer"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N47217",
+    "titre": "Mieux indemniser les dégâts causés par l'argile",
+    "sujet": "Logement",
+    "enjeux": [
+     "sécheresse et argile",
+     "indemnisation des sinistrés",
+     "catastrophes naturelles"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N48755",
+    "titre": "Instaurer un moratoire sur le déploiement des méga-bassines",
+    "sujet": "Environnement et énergie",
+    "enjeux": [
+     "méga-bassines",
+     "stockage de l'eau",
+     "gestion de l'eau agricole"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N51175",
+    "titre": "Faciliter la prévention et la gestion des inondations",
+    "sujet": "Environnement et énergie",
+    "enjeux": [
+     "prévention des inondations",
+     "entretien des cours d'eau",
+     "gestion de l'eau"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N54844",
+    "titre": "Demander l'accès continu à l'eau potable en outre-mer",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "accès à l'eau potable en outre-mer",
+     "eau potable"
+    ]
+   }
+  ]
+ },
+ "Discriminations": {
+  "n": 7,
+  "sujets": {
+   "Sécurité": 1,
+   "Justice": 2,
+   "Société et mémoire": 2,
+   "Travail et emploi": 1,
+   "Éducation et jeunesse": 1
+  },
+  "textes": [
+   {
+    "dossier": "DLR5L15N36231",
+    "titre": "Remettre un récépissé lors des contrôles d'identité",
+    "sujet": "Sécurité",
+    "enjeux": [
+     "contrôles d'identité",
+     "récépissé de contrôle",
+     "discrimination policière"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N37327",
+    "titre": "Obliger les plateformes à retirer vite les contenus haineux",
+    "sujet": "Justice",
+    "enjeux": [
+     "contenus haineux en ligne",
+     "modération des plateformes",
+     "réseaux sociaux"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N38325",
+    "titre": "Interdire la discrimination à cause de l'accent",
+    "sujet": "Société et mémoire",
+    "enjeux": [
+     "discrimination à l'accent",
+     "lutte contre les discriminations"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N37007",
+    "titre": "Ouvrir plus de métiers aux personnes atteintes de diabète",
+    "sujet": "Travail et emploi",
+    "enjeux": [
+     "diabète",
+     "accès à certains métiers",
+     "discrimination à l'embauche"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N44165",
+    "titre": "Inviter à sanctionner les discours de haine de responsables publics",
+    "sujet": "Justice",
+    "enjeux": [
+     "discours de haine",
+     "responsables publics",
+     "réponse pénale"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N46127",
+    "titre": "Reconnaître la responsabilité de l'État pour condamnations d'homosexualité",
+    "sujet": "Société et mémoire",
+    "enjeux": [
+     "condamnations pour homosexualité",
+     "reconnaissance par l'État",
+     "mémoire"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N50724",
+    "titre": "Former et signaler les actes antisémites à l'université",
+    "sujet": "Éducation et jeunesse",
+    "enjeux": [
+     "antisémitisme",
+     "enseignement supérieur",
+     "formation et signalement"
+    ]
+   }
+  ]
+ },
+ "Fin de vie": {
+  "n": 3,
+  "sujets": {
+   "Santé": 3
+  },
+  "textes": [
+   {
+    "dossier": "DLR5L16N48777",
+    "titre": "Demander de rendre effectifs les soins palliatifs partout",
+    "sujet": "Santé",
+    "enjeux": [
+     "soins palliatifs",
+     "fin de vie",
+     "accès aux soins"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N51672",
+    "titre": "Renforcer les soins palliatifs et d'accompagnement",
+    "sujet": "Santé",
+    "enjeux": [
+     "soins palliatifs",
+     "accompagnement de fin de vie",
+     "droit opposable"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N51670",
+    "titre": "Autoriser l'aide à mourir sous conditions",
+    "sujet": "Santé",
+    "enjeux": [
+     "aide à mourir",
+     "fin de vie",
+     "maladie grave et incurable"
+    ]
+   }
+  ]
+ },
+ "Laïcité et principes républicains": {
+  "n": 3,
+  "sujets": {
+   "Institutions et État": 2,
+   "Sécurité": 1
+  },
+  "textes": [
+   {
+    "dossier": "DLR5L15N38644",
+    "titre": "Inscrire la laïcité et la règle commune dans la Constitution",
+    "sujet": "Institutions et État",
+    "enjeux": [
+     "laïcité",
+     "Constitution",
+     "principes républicains"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N41074",
+    "titre": "Renforcer le respect des principes de la République",
+    "sujet": "Institutions et État",
+    "enjeux": [
+     "principes de la République",
+     "laïcité",
+     "contrat d'engagement républicain"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N52132",
+    "titre": "Classer les Frères musulmans comme organisation terroriste",
+    "sujet": "Sécurité",
+    "enjeux": [
+     "Frères musulmans",
+     "terrorisme",
+     "islamisme"
+    ]
+   }
+  ]
+ },
+ "Étudiants": {
+  "n": 8,
+  "sujets": {
+   "Éducation et jeunesse": 8
+  },
+  "textes": [
+   {
+    "dossier": "DLR5L15N36143",
+    "titre": "Réformer l’entrée dans l’enseignement supérieur",
+    "sujet": "Éducation et jeunesse",
+    "enjeux": [
+     "accès à l'enseignement supérieur",
+     "orientation des lycéens",
+     "sélection à l'université"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39045",
+    "titre": "Demander un revenu pour tous les étudiants",
+    "sujet": "Éducation et jeunesse",
+    "enjeux": [
+     "revenu étudiant",
+     "précarité étudiante"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N41895",
+    "titre": "Créer un ticket restaurant étudiant",
+    "sujet": "Éducation et jeunesse",
+    "enjeux": [
+     "ticket restaurant étudiant",
+     "précarité étudiante",
+     "restauration universitaire"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N43830",
+    "titre": "Ouvrir plus de places en IUT et BTS (Parcoursup)",
+    "sujet": "Éducation et jeunesse",
+    "enjeux": [
+     "places en IUT et BTS",
+     "Parcoursup",
+     "orientation des lycéens"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N46858",
+    "titre": "Plafonner à 1 euro le repas des restaurants universitaires",
+    "sujet": "Éducation et jeunesse",
+    "enjeux": [
+     "restauration universitaire",
+     "prix des repas étudiants",
+     "précarité étudiante"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N50778",
+    "titre": "Ouvrir le repas à 1 euro à tous les étudiants",
+    "sujet": "Éducation et jeunesse",
+    "enjeux": [
+     "repas universitaire à 1 euro",
+     "précarité étudiante",
+     "Crous"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N50724",
+    "titre": "Former et signaler les actes antisémites à l'université",
+    "sujet": "Éducation et jeunesse",
+    "enjeux": [
+     "antisémitisme",
+     "enseignement supérieur",
+     "formation et signalement"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N54229",
+    "titre": "Indexer les bourses étudiantes et les verser sur douze mois",
+    "sujet": "Éducation et jeunesse",
+    "enjeux": [
+     "bourses étudiantes",
+     "aides aux étudiants",
+     "revalorisation annuelle"
+    ]
+   }
+  ]
+ },
+ "Outre-mer (hors sujet Outre-mer)": {
+  "n": 26,
+  "sujets": {
+   "Outre-mer": 23,
+   "Autres sujets": 2,
+   "Immigration": 1
+  },
+  "textes": [
+   {
+    "dossier": "DLR5L15N36333",
+    "titre": "Fixer les règles du vote sur l'indépendance de la Nouvelle-Calédonie",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "référendum en Nouvelle-Calédonie",
+     "listes électorales spéciales",
+     "indépendance"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N37443",
+    "titre": "Programmer le rattrapage de Mayotte sur dix ans",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "rattrapage de Mayotte",
+     "infrastructures en outre-mer"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N38369",
+    "titre": "Inscrire d'office des natifs sur la liste du référendum calédonien",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "référendum en Nouvelle-Calédonie",
+     "listes électorales spéciales"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N41089",
+    "titre": "Créer un syndicat unique de l'eau en Guadeloupe",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "gestion de l'eau en Guadeloupe",
+     "eau potable et assainissement",
+     "collectivités d'outre-mer"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N43705",
+    "titre": "Diverses dispositions relatives aux fonctionnaires et militaires originaires d’outre-mer",
+    "sujet": "Autres sujets",
+    "enjeux": [
+     "fonctionnaires originaires d'outre-mer",
+     "affectations en outre-mer",
+     "mobilité des agents"
+    ]
+   },
+   {
+    "dossier": "DLR5L15N39164",
+    "titre": "Demander un plan pour le vieillissement accéléré de la Martinique",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "vieillissement de la population en Martinique",
+     "perte d'autonomie",
+     "agence de l'autonomie"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N46900",
+    "titre": "Créer une commission d'enquête sur la vie chère en outre-mer",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "vie chère en outre-mer",
+     "prix des produits",
+     "commission d'enquête"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N47622",
+    "titre": "Aider les actifs à voyager entre l'Outre-mer et l'Hexagone",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "billets d'avion outre-mer",
+     "continuité territoriale",
+     "aides au transport"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N48718",
+    "titre": "Créer une commission d'enquête sur les risques naturels en Outre-mer",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "risques naturels en outre-mer",
+     "gestion des catastrophes"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N49263",
+    "titre": "Reconnaître la responsabilité de l'État pour le chlordécone",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "chlordécone",
+     "responsabilité de l'État",
+     "pollution aux pesticides"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N49373",
+    "titre": "Restreindre le corps électoral en Nouvelle-Calédonie",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "corps électoral en Nouvelle-Calédonie",
+     "révision constitutionnelle",
+     "statut de la Nouvelle-Calédonie"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N49799",
+    "titre": "Enseigner les langues régionales dans les écoles d'outre-mer",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "langues régionales en outre-mer",
+     "enseignement des langues régionales"
+    ]
+   },
+   {
+    "dossier": "DLR5L16N49740",
+    "titre": "Enquêter sur l'indécence du logement social en outre-mer",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "logement social en outre-mer",
+     "logements indignes",
+     "commission d'enquête"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N50779",
+    "titre": "Réguler les prix et la concentration en outre-mer",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "prix en outre-mer",
+     "vie chère",
+     "concentration de la distribution"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N51222",
+    "titre": "Aider Mayotte à se reconstruire après le cyclone Chido",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "reconstruction de Mayotte",
+     "cyclone Chido",
+     "urbanisme d'urgence"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N51039",
+    "titre": "Durcir l'accès à la nationalité française à Mayotte",
+    "sujet": "Immigration",
+    "enjeux": [
+     "nationalité française à Mayotte",
+     "droit du sol",
+     "immigration"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N51115",
+    "titre": "Expérimenter l'encadrement des loyers en outre-mer",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "encadrement des loyers en outre-mer",
+     "loyers",
+     "logement"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N51619",
+    "titre": "Enquêter sur l'accès à la justice outre-mer",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "accès à la justice en outre-mer",
+     "commission d'enquête"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N51985",
+    "titre": "Refonder Mayotte : programme de l'État et immigration",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "programme pour Mayotte",
+     "conditions de séjour",
+     "immigration à Mayotte"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N51984",
+    "titre": "Créer le Département-Région de Mayotte",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "Département-Région de Mayotte",
+     "organisation territoriale",
+     "code électoral"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N52655",
+    "titre": "Reporter le renouvellement général des membres du congrès et des assemblées de province de la Nouvelle-Calédonie pour permettre la mise en oeuvre de l'accord du 12 juillet 2025",
+    "sujet": "Autres sujets",
+    "enjeux": [
+     "report des élections en Nouvelle-Calédonie",
+     "accord du 12 juillet 2025",
+     "statut de la Nouvelle-Calédonie"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N52976",
+    "titre": "Le même prix du timbre en outre-mer qu'en métropole",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "prix du timbre",
+     "service postal",
+     "outre-mer"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N53058",
+    "titre": "Baisser les prix des services en outre-mer",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "prix des billets d'avion",
+     "vie chère en outre-mer",
+     "continuité territoriale"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N52104",
+    "titre": "Permettre aux natifs de voter aux provinciales calédoniennes",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "élections provinciales en Nouvelle-Calédonie",
+     "corps électoral",
+     "électeurs natifs"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N53304",
+    "titre": "Autoriser à nouveau la recherche d'hydrocarbures en outre-mer",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "hydrocarbures en outre-mer",
+     "recherche pétrolière",
+     "exploitation de gaz"
+    ]
+   },
+   {
+    "dossier": "DLR5L17N54844",
+    "titre": "Demander l'accès continu à l'eau potable en outre-mer",
+    "sujet": "Outre-mer",
+    "enjeux": [
+     "accès à l'eau potable en outre-mer",
+     "eau potable"
+    ]
+   }
+  ]
+ }
+}

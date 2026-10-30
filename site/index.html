@@ -222,7 +222,7 @@ a.chip:hover { border-color: var(--encre); }
 .consensus { margin: 10px 0 0; font-weight: 700; background: var(--ok-soft); color: var(--ok-fg); border-radius: var(--rayon-s); padding: 8px 14px; }
 .replique q { quotes: "« " " »"; font-size: 16px; }
 .vivre { display: grid; gap: 10px; }
-.lien-debat { font-weight: 700; font-size: 14px; text-decoration: none; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; }
+.lien-debat, .lien-theme { font-weight: 700; font-size: 14px; text-decoration: none; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; }
 .lien-debat::before { content: "▶ "; font-size: 11px; }
 .lien-debat:hover { background: var(--accent); color: var(--on-accent); }
 .details-choix { display: grid; gap: 14px; background: var(--bg); border-radius: var(--rayon-s); padding: 16px; animation: apparait .35s ease-out; }
@@ -456,7 +456,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   <span id="maj"></span>
 </div></footer>
 
-<script src="donnees.js?v=93ab4e781d"></script>
+<script src="donnees.js?v=ccce09e723"></script>
 <script>
 // Groupes de toutes les législatures (GROUPES vient de donnees.js), dans l'ordre de l'hémicycle, de la gauche vers la droite.
 // Un même sigle d'une législature à l'autre désigne le même groupe (SOC, LR, RN…).
@@ -499,6 +499,8 @@ const urlVote = (n, leg) => `https://www.assemblee-nationale.fr/dyn/${leg}/scrut
 const sansAccents = x => (x || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 const correspond = (t, q) => sansAccents([t.titre, t.titreOfficiel, t.enClair, t.theme].join(" ")).includes(sansAccents(q));
 const parPeriode = (ts, leg) => leg ? ts.filter(t => t.leg === leg) : ts;
+// Un texte appartient à un sujet par son sujet principal, ou par un thème transversal (TRANSVERSAUX vient de donnees.js)
+const dansSujet = (t, s) => t.theme === s || t.transversaux.includes(s);
 const SUJETS = [...new Set(TEXTES.map(t => t.theme))].sort((a, b) => a === "Autres sujets" ? 1 : b === "Autres sujets" ? -1 : a.localeCompare(b, "fr"));
 const choixPeriode = (id, valeur) => `<div><label for="${id}">Période</label><select id="${id}">
   <option value="">De 2017 à aujourd'hui</option>${[...INFOS.legislatures].sort().reverse().map(l => `<option value="${l}"${valeur === l ? " selected" : ""}>${PERIODES[l].lib}</option>`).join("")}</select></div>`;
@@ -828,7 +830,7 @@ const views = {
       <p class="lead">Tous les textes votés, des plus récents aux plus anciens. Filtrez par sujet, par auteur ou par période, ou cherchez un mot : on vous montre ce qui a été proposé, et qui a voté pour ou contre.</p>
       <form class="filtres" role="search" onsubmit="return false">
         <div class="champ"><label for="q">Chercher un texte</label>${champRecherche("q", filtre.q)}</div>
-        <div><label for="f-sujet">Sujet</label><select id="f-sujet">${options(SUJETS.map(th => [th, th]), filtre.sujet, "Tous les sujets")}</select></div>
+        <div><label for="f-sujet">Sujet</label><select id="f-sujet">${options(SUJETS.map(th => [th, th]), filtre.sujet, "Tous les sujets")}<optgroup label="À travers plusieurs sujets">${Object.keys(TRANSVERSAUX).map(th => `<option value="${th}"${filtre.sujet === th ? " selected" : ""}>${th}</option>`).join("")}</optgroup></select></div>
         <div><label for="f-auteur">Auteur</label><select id="f-auteur">${options(AUTEURS.map(a => [a, GROUPES[a] ? `${a} – ${G(a).nom}` : a]), filtre.auteur, "Tous les auteurs")}</select></div>
         ${choixPeriode("periode", filtre.leg)}
       </form>
@@ -841,8 +843,9 @@ const views = {
     const options = (liste, valeur, tous) => `<option value="">${tous}</option>` + liste.map(([v, l]) => `<option value="${v}"${valeur === v ? " selected" : ""}>${l}</option>`).join("");
     return `${retour("#juger", "Changer de sujet")}
       <h1>${th}</h1>
-      <p class="lead">Les textes votés depuis 2017 sur ce sujet : ce qu'ils changent, qui les a proposés, et qui a voté pour ou contre.</p>
-      ${(() => { const r = repartitionAuteurs(TEXTES.filter(t => t.theme === th));
+      <p class="lead">${th in TRANSVERSAUX ? TRANSVERSAUX[th] : "Les textes votés depuis 2017 sur ce sujet : ce qu'ils changent, qui les a proposés, et qui a voté pour ou contre."}</p>
+      ${th in TRANSVERSAUX ? `<p class="meta">Un thème qui traverse plusieurs sujets : chaque texte garde aussi son sujet principal. <a href="#methode/sujets">Comment ces thèmes sont choisis</a></p>` : ""}
+      ${(() => { const r = repartitionAuteurs(TEXTES.filter(t => dansSujet(t, th)));
         return `<p class="meta">Sur ce sujet : ${[[r.gouv, "proposé", "par le gouvernement"], [r.groupes, "proposé", "par des groupes de députés"], [r.senat, "venu", "du Sénat"]].filter(x => x[0]).map(([n, v, qui]) => `${pluriel(n, "texte")} ${v}${n > 1 ? "s" : ""} ${qui}`).join(", ")}. <a href="#accueil/qui-decide">Qui décide de ce qui est voté&nbsp;?</a></p>`; })()}
       <details class="depli"><summary>Affiner : par auteur, par période ou par mot</summary>
         <form class="filtres" role="search" onsubmit="return false">
@@ -857,11 +860,12 @@ const views = {
   // Après « À vous de juger » : partir de ce qui compte pour le lecteur. Les sujets du quotidien d'abord.
   juger() {
     const QUOTIDIEN = ["Logement", "Retraites", "Santé", "Impôts et budget", "Travail et emploi", "Éducation et jeunesse"];
-    const tuiles = liste => `<ul class="tuiles">${liste.filter(th => TEXTES.some(t => t.theme === th)).map(th => `<li><a href="#sujet/${encodeURIComponent(th)}">${th}<span>${pluriel(parDossier(TEXTES.filter(t => t.theme === th)).length, "texte")}</span></a></li>`).join("")}</ul>`;
+    const tuiles = liste => `<ul class="tuiles">${liste.filter(th => TEXTES.some(t => dansSujet(t, th))).map(th => `<li><a href="#sujet/${encodeURIComponent(th)}">${th}<span>${pluriel(parDossier(TEXTES.filter(t => dansSujet(t, th))).length, "texte")}</span></a></li>`).join("")}</ul>`;
     return `<h1>Qu'est-ce qui compte pour vous&nbsp;?</h1>
       <p class="lead">Choisissez un sujet. Vous verrez les textes votés, ce qu'ils changent, et qui a voté pour ou contre.</p>
       <h2 class="eyebrow tuiles-titre">Votre quotidien</h2>${tuiles(QUOTIDIEN)}
       <h2 class="eyebrow tuiles-titre">Les autres sujets</h2>${tuiles(SUJETS.filter(th => !QUOTIDIEN.includes(th)))}
+      <h2 class="eyebrow tuiles-titre">À travers plusieurs sujets</h2>${tuiles(Object.keys(TRANSVERSAUX))}
       <p class="hero-fait"><a href="#bilan">Ou mettez-vous à leur place : qu'auriez-vous voté&nbsp;?</a></p>`;
   },
   niche(date) {
@@ -887,7 +891,7 @@ const views = {
     const rows = ORDRE.map(g => t.groupes.find(r => r.g === g)).filter(Boolean);
     const exprimes = s.pour + s.contre || 1;
     return `${retour(`#sujet/${encodeURIComponent(t.theme)}`, t.theme)}
-      <div class="row"><span class="eyebrow">${t.theme}</span></div>
+      <div class="row"><span class="eyebrow">${t.theme}</span>${t.transversaux.map(th => `<a class="lien-theme" href="#sujet/${encodeURIComponent(th)}">${th}</a>`).join("")}</div>
       <h1 style="margin-top:8px">${t.titre}</h1>
       <p class="lead">${t.type === "solennel"
         ? `Proposé par ${auteurNom(t)}. L'Assemblée en a fait l'un de ses grands votes (vote solennel), le ${fdate(t.date)}${(l => !l ? "" : l.startsWith("accord") ? `, sur l'${l}` : `, en ${l}`)(lecture(t))}.`
@@ -1067,6 +1071,8 @@ const views = {
       <p>Sur la fiche de chaque groupe, on montre les textes des autres où ses voix ont été décisives : sans elles, le résultat aurait été inverse. Pour un texte adopté, ses voix « pour » étaient décisives si, en les retirant, il n'y avait plus de majorité. Pour un texte rejeté, ses voix « contre » l'étaient si, en les retirant, le texte serait passé. Les abstentions et les absents ne sont pas comptés. Un texte voté en plusieurs lectures compte une fois. Ces chiffres ne servent pas à classer les groupes : ils montrent que le nombre de sièges décide.</p>
       <h2>Ce que fait un texte</h2>
       <p>Chaque texte est classé selon le mécanisme qu'il utilise, lu dans ses articles : il crée ou réduit une aide, crée ou allège une sanction, crée ou lève une obligation, augmente ou baisse un impôt, organise les institutions, fixe un budget, approuve un accord international, ou exprime une reconnaissance sans effet juridique. Chaque mécanisme a son contraire, pour voir aussi ce qui se retire ou se simplifie. Ce classement décrit ; il ne juge pas : une même sanction sera vue comme protectrice par les uns, répressive par les autres. La grille complète est ${ext("https://github.com/qui-a-vote-quoi/qui-a-vote-quoi.github.io/blob/main/GRILLE-MESURES.md", "publique")}.</p>
+      <h2 id="sujets" tabindex="-1">Les sujets</h2>
+      <p>Chaque texte est rangé dans un seul sujet principal (Santé, Logement…), attribué par IA à partir du texte. Certains thèmes traversent plusieurs sujets : un texte sur l'IVG est rangé dans Santé, mais il compte aussi pour l'égalité entre les femmes et les hommes. Pour ces thèmes, la liste n'a pas été fixée à l'avance. Une IA a d'abord noté, texte par texte, les enjeux de chacun ; ces enjeux ont ensuite été regroupés, et un thème n'a été retenu que s'il réunit assez de textes répartis dans au moins trois sujets principaux. Enfin, chaque texte a été relu avec la liste retenue : il n'y est rangé que si c'est son objet principal, et les cas en doute ont été tranchés par un humain. Les thèmes retenus : ${Object.keys(TRANSVERSAUX).join(", ")}.</p>
       <h2>Les journées réservées (« niches »)</h2>
       <p>Une fois par mois, un groupe d'opposition ou minoritaire choisit seul les textes discutés. Les données officielles ne signalent pas ces journées : elles sont repérées automatiquement, puis vérifiées une à une dans les comptes rendus de séance, avec une citation à l'appui. Chaque journée indique si elle a été vérifiée par IA ou par un humain. Une journée qui n'a pas pu être vérifiée n'est pas publiée.</p>
       <h2>Les résumés « en clair »</h2>
@@ -1127,7 +1133,7 @@ function majSujets() {
   const q = filtre.q.trim();
   // Une carte par texte : son dernier vote (ses lectures précédentes sont sur sa fiche)
   const ts = parDossier(parPeriode(TEXTES, filtre.leg)
-    .filter(t => (!filtre.sujet || t.theme === filtre.sujet) && (!filtre.auteur || auteurDe(t) === filtre.auteur) && (q.length < 2 || correspond(t, q))));
+    .filter(t => (!filtre.sujet || dansSujet(t, filtre.sujet)) && (!filtre.auteur || auteurDe(t) === filtre.auteur) && (q.length < 2 || correspond(t, q))));
   const surSujet = location.hash.startsWith("#sujet/");   // sur la page d'un sujet, le sujet n'est pas un filtre à effacer
   const actifs = [!surSujet && filtre.sujet, filtre.auteur, filtre.leg, q.length >= 2].some(Boolean);
   $("#nb").innerHTML = (ts.length ? `${pluriel(ts.length, "vote")}${actifs ? ` correspond${ts.length > 1 ? "ent" : ""} à vos filtres` : ""}.` : "Aucun texte ne correspond. Essayez un autre mot ou un autre filtre.")
@@ -1136,13 +1142,13 @@ function majSujets() {
     ? `<div class="callout" style="margin-top:0"><b>Simulateur ${filtre.sujet === "Impôts et budget" ? "impôts et héritage" : "retraite"} : bientôt.</b> Vous pourrez calculer ce que chaque proposition changerait pour vous.</div>` : "";
   $("#resultats").innerHTML = simu + listeTextes(ts.slice(0, nbVisibles), { avecResume: !!filtre.sujet })
     + (ts.length > nbVisibles ? `<p><button type="button" class="plus" id="voir-plus">Afficher ${Math.min(30, ts.length - nbVisibles)} textes de plus</button> <span class="meta">(${nbVisibles} sur ${ts.length})</span></p>` : "")
-    + `<p class="note">Chaque texte est rangé dans un seul sujet.${TEXTES.some(t => t.sujetNiveau !== "relu") ? " Les sujets ont été attribués par IA et ne sont pas encore tous vérifiés par un humain." : ""}</p>`;
+    + `<p class="note">Chaque texte est rangé dans un seul sujet principal ; certains comptent aussi pour un thème qui traverse plusieurs sujets.${TEXTES.some(t => t.sujetNiveau !== "relu") ? " Les sujets ont été attribués par IA et ne sont pas encore tous vérifiés par un humain." : ""}</p>`;
 }
 // À vous de voter : les sujets et la période choisis, gardés sur l'appareil
 const prefBilan = () => lirePref("bilanChoix", { sujets: [], leg: "" });
 function selectionBilan() {
   const { sujets, leg } = prefBilan();
-  return parPeriode(BILAN.filter(t => sujets.includes(t.theme)), leg);
+  return parPeriode(BILAN.filter(t => sujets.some(s => dansSujet(t, s))), leg);
 }
 // Durée estimée d'une séance : environ 1 min 30 pour un texte avec son débat, 40 secondes sans
 function estimation(restants) {
@@ -1151,7 +1157,7 @@ function estimation(restants) {
 }
 // « À vous de jouer » : après avoir exploré un sujet (sa page, la fiche d'un texte), siéger sur ses textes
 function appelJeu(th, { collant = false } = {}) {
-  const rep = load(), restants = BILAN.filter(t => t.theme === th && !(t.id in rep));
+  const rep = load(), restants = BILAN.filter(t => dansSujet(t, th) && !(t.id in rep));
   if (!restants.length) return "";
   const { k, min } = estimation(restants);
   return `<div class="${collant ? "barre-jouer" : "appel-jeu"}"><div class="siege pret"><p><b>Et vous, qu'auriez-vous voté&nbsp;?</b><br><span class="meta">${pluriel(k, "texte")} sur ce sujet, environ ${min} min</span></p>
@@ -1170,7 +1176,7 @@ function majQuestions() {
   const restants = ts.filter(t => !(t.id in rep));
   // Combien de textes à voter par sujet, sur la période choisie
   const aVoter = parPeriode(BILAN, prefBilan().leg).filter(t => !(t.id in rep));
-  document.querySelectorAll(".nb-sujet").forEach(x => { const k = aVoter.filter(t => t.theme === x.dataset.sujet).length; x.textContent = `· ${k}`; x.title = `${pluriel(k, "texte")} à voter`; });
+  document.querySelectorAll(".nb-sujet").forEach(x => { const k = aVoter.filter(t => dansSujet(t, x.dataset.sujet)).length; x.textContent = `· ${k}`; x.title = `${pluriel(k, "texte")} à voter`; });
   const tous = $("#tous-sujets"); if (tous) tous.textContent = document.querySelectorAll("input[name=sujet]:not(:checked)").length ? "Tout cocher" : "Tout décocher";
   const { k, min } = estimation(restants);
   $("#historique").innerHTML = historique();
@@ -1365,7 +1371,7 @@ function majBilan() {
 
 // Lien retour : vers la page d'où l'on vient (comme le bouton précédent du navigateur), sinon vers la page parente.
 // pile : les pages visitées avant celle-ci ; une page et ses sections (#…/debat) comptent pour une seule.
-const page = h => h.replace(/^#/, "").replace(/\/(debat|qui-decide|ce-qui-manque)$/, "") || "accueil";
+const page = h => h.replace(/^#/, "").replace(/\/(debat|qui-decide|ce-qui-manque|sujets)$/, "") || "accueil";
 let pile = [], ici = { hash: location.hash, titre: "" };
 const retour = (href, label) => {
   const p = pile[pile.length - 1];
@@ -1482,7 +1488,7 @@ addEventListener("hashchange", () => {
   }
   if (!location.hash.startsWith("#bilan")) seance = null;
   // Liens vers une section d'une page : #accueil/qui-decide, #methode/ce-qui-manque
-  const ancre = { "#accueil/qui-decide": "#qui-decide", "#methode/ce-qui-manque": "#ce-qui-manque" }[location.hash];
+  const ancre = { "#accueil/qui-decide": "#qui-decide", "#methode/ce-qui-manque": "#ce-qui-manque", "#methode/sujets": "#sujets" }[location.hash];
   if (ancre) { render(); const h = $(ancre); h.scrollIntoView(); h.focus({ preventScroll: true }); return; }
   if (location.hash.endsWith("/debat")) {
     render(); const h = $("#le-debat");

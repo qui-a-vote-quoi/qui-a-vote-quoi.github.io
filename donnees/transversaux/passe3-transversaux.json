@@ -1,0 +1,3344 @@
+[
+ {
+  "dossier": "DLR5L15N35836",
+  "titre": "Autoriser des ordonnances pour réformer le droit du travail",
+  "sujet": "Travail et emploi",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N35824",
+  "titre": "Renforcer la transparence de la vie politique (loi organique)",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N35857",
+  "titre": "Renforcer la sécurité intérieure et la lutte contre le terrorisme",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N35929",
+  "titre": "Arrêter la recherche et l'exploitation des hydrocarbures en France",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N35895",
+  "titre": "Compétitivité de l'agriculture française",
+  "sujet": "Autres sujets",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N35984",
+  "titre": "Fixer la trajectoire des finances publiques 2018-2022",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36030",
+  "titre": "Fixer le budget de la Sécurité sociale pour 2018",
+  "sujet": "Sécurité sociale",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N35854",
+  "titre": "Fixer le budget de l'État pour 2018",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N35986",
+  "titre": "Ratifier les cinq ordonnances de 2017 sur le droit du travail",
+  "sujet": "Travail et emploi",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36047",
+  "titre": "Assouplir la gestion des cours d'eau et des inondations",
+  "sujet": "Environnement et énergie",
+  "transversaux": [
+   "Eau"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N35967",
+  "titre": "Permettre de donner des jours de repos aux aidants",
+  "sujet": "Travail et emploi",
+  "transversaux": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36071",
+  "titre": "Encadrer la rétention des demandeurs d'asile relevant du règlement Dublin",
+  "sujet": "Immigration",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N35987",
+  "titre": "Taxer de 5 % les transferts de sportifs professionnels",
+  "sujet": "Culture et sport",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36131",
+  "titre": "Corriger le budget de l'État 2017",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36143",
+  "titre": "Réformer l’entrée dans l’enseignement supérieur",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36159",
+  "titre": "Simplifier les relations avec l'administration (droit à l'erreur)",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36226",
+  "titre": "Inscrire le droit à l'eau dans la Constitution",
+  "sujet": "Environnement et énergie",
+  "transversaux": [
+   "Eau"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36231",
+  "titre": "Remettre un récépissé lors des contrôles d'identité",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36225",
+  "titre": "Demander un référendum pour ratifier le CETA",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36220",
+  "titre": "Adapter la loi sur les données personnelles au droit européen",
+  "sujet": "Institutions et État",
+  "transversaux": [
+   "Numérique"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36254",
+  "titre": "Election des représentants au Parlement européen",
+  "sujet": "Autres sujets",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36295",
+  "titre": "Rendre gratuits les transports scolaires",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36333",
+  "titre": "Fixer les règles du vote sur l'indépendance de la Nouvelle-Calédonie",
+  "sujet": "Outre-mer",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36362",
+  "titre": "Programmer les moyens des armées de 2019 à 2025",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36400",
+  "titre": "Créer un ticket-carburant pour les salariés",
+  "sujet": "Travail et emploi",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36410",
+  "titre": "Réformer l'asile et le séjour des étrangers",
+  "sujet": "Immigration",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36336",
+  "titre": "Rééquilibrer les relations commerciales agricoles et alimentaires",
+  "sujet": "Agriculture",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36537",
+  "titre": "Faciliter la construction et réformer le logement social",
+  "sujet": "Logement",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36460",
+  "titre": "Réformer la SNCF et ouvrir le rail à la concurrence",
+  "sujet": "Entreprises et économie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36601",
+  "titre": "Réformer la formation professionnelle, l'apprentissage et le chômage",
+  "sujet": "Travail et emploi",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36612",
+  "titre": "Permettre de relever la vitesse maximale sur certaines routes",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36656",
+  "titre": "Créer une commission d'enquête sur les groupuscules violents",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36530",
+  "titre": "Renforcer la lutte contre la fraude fiscale et sociale",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36728",
+  "titre": "Simplifier la vie des entreprises et favoriser leur croissance (PACTE)",
+  "sujet": "Entreprises et économie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36832",
+  "titre": "Réorienter le système de santé vers la prévention",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36833",
+  "titre": "Créer un métier d'aidant à l'inclusion scolaire",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36348",
+  "titre": "Faciliter l'expulsion des occupants sans droit d'un logement",
+  "sujet": "Logement",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36892",
+  "titre": "Fixer le budget de la Sécurité sociale pour 2019",
+  "sujet": "Sécurité sociale",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36733",
+  "titre": "Budget de l'État pour 2019",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36468",
+  "titre": "Lutte contre la manipulation des informations",
+  "sujet": "Autres sujets",
+  "transversaux": [
+   "Numérique"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36917",
+  "titre": "Faciliter les activités agricoles et conchylicoles sur le littoral",
+  "sujet": "Agriculture",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36918",
+  "titre": "Inscrire dans la loi l'éducation sans violence",
+  "sujet": "Enfance et famille",
+  "transversaux": [
+   "Protection de l'enfance"
+  ],
+  "doute": true,
+  "note": "Violences éducatives des parents sur leurs enfants : proche de la protection de l'enfance mais texte de droit civil de l'autorité parentale."
+ },
+ {
+  "dossier": "DLR5L15N36927",
+  "titre": "Mieux prendre en charge les cancers des enfants",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36913",
+  "titre": "Mieux soutenir les proches aidants",
+  "sujet": "Travail et emploi",
+  "transversaux": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36940",
+  "titre": "Créer un fonds pour la recherche sur les cancers des enfants",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36626",
+  "titre": "Programmer les moyens de la justice de 2018 à 2022",
+  "sujet": "Justice",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37092",
+  "titre": "Garantir un accompagnant aux élèves handicapés dès la rentrée",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37093",
+  "titre": "Tester un revenu de base dans des départements volontaires",
+  "sujet": "Sécurité sociale",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37094",
+  "titre": "Limiter les installations de médecins dans les zones bien dotées",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36884",
+  "titre": "Encadrer les manifestations et sanctionner les violences",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37055",
+  "titre": "Abaisser l'obligation d'instruction à 3 ans et réformer l'école",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36627",
+  "titre": "Réorganiser les juridictions et le statut des magistrats",
+  "sujet": "Justice",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36497",
+  "titre": "Ne plus compter les revenus du conjoint pour l'AAH",
+  "sujet": "Sécurité sociale",
+  "transversaux": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37168",
+  "titre": "Informer sur l'usage de l'épargne populaire dans les énergies fossiles",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37170",
+  "titre": "Rétablissement de l'ISF et renforcement de la progressivité de l’IR",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37234",
+  "titre": "Réformer les études de médecine et l'organisation des soins",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36520",
+  "titre": "Créer un répertoire des maladies rares ou orphelines",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36532",
+  "titre": "Alléger la responsabilité des dirigeants bénévoles d'association",
+  "sujet": "Société et mémoire",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37344",
+  "titre": "Interdire la pêche électrique jusqu'à la mer territoriale",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37127",
+  "titre": "Créer un droit voisin pour la presse en ligne",
+  "sujet": "Culture et sport",
+  "transversaux": [
+   "Numérique"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36915",
+  "titre": "Agence nationale de la cohésion des territoires",
+  "sujet": "Autres sujets",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37357",
+  "titre": "Réformer le dialogue social dans la fonction publique",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37446",
+  "titre": "Modifier le Règlement de l'Assemblée nationale",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37454",
+  "titre": "Programmer des moyens pour la police et la gendarmerie",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37443",
+  "titre": "Programmer le rattrapage de Mayotte sur dix ans",
+  "sujet": "Outre-mer",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37289",
+  "titre": "Créer la Collectivité européenne d'Alsace",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37607",
+  "titre": "Autoriser la ratification de l'accord de libre-échange avec le Canada",
+  "sujet": "Entreprises et économie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37029",
+  "titre": "Programmer les investissements dans les transports (LOM)",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37385",
+  "titre": "Clarifier les règles de financement des campagnes électorales",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37390",
+  "titre": "Clarifier les règles d'inéligibilité et de droit électoral",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37597",
+  "titre": "Ratifier le traité d'Aix-la-Chapelle avec l'Allemagne",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37764",
+  "titre": "Soutenir la coopération franco-allemande du traité d'Aix-la-Chapelle",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37672",
+  "titre": "Réviser les lois de bioéthique",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37702",
+  "titre": "Protéger les victimes de violences conjugales avec le bracelet électronique",
+  "sujet": "Justice",
+  "transversaux": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37615",
+  "titre": "Fixer le budget de l'État pour 2020",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37659",
+  "titre": "Engagement dans la vie locale et action publique",
+  "sujet": "Autres sujets",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37831",
+  "titre": "Fixer le budget de la Sécurité sociale pour 2020",
+  "sujet": "Sécurité sociale",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37884",
+  "titre": "Rendre obligatoire le code de la route au lycée",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37621",
+  "titre": "Reconnaître pupilles de la Nation les enfants de sauveteurs en mer",
+  "sujet": "Société et mémoire",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37880",
+  "titre": "Créer une prime pour rénover les logements énergivores",
+  "sujet": "Logement",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37883",
+  "titre": "Créer un label public de performance sociale des entreprises",
+  "sujet": "Entreprises et économie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37763",
+  "titre": "Créer une commission d'enquête sur les moustiques Aedes",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N38369",
+  "titre": "Inscrire d'office des natifs sur la liste du référendum calédonien",
+  "sujet": "Outre-mer",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N38380",
+  "titre": "Lutter contre les retraites supplémentaires en déshérence",
+  "sujet": "Retraites",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37846",
+  "titre": "Élargir les missions de la Fondation du patrimoine",
+  "sujet": "Culture et sport",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37637",
+  "titre": "Protéger les sons et odeurs de la campagne",
+  "sujet": "Culture et sport",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37330",
+  "titre": "Interdire le cumul retraite et indemnité au Conseil constitutionnel",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N38411",
+  "titre": "Suspendre les matchs de football professionnels le 5 mai",
+  "sujet": "Culture et sport",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N38413",
+  "titre": "Associer les collectivités au déploiement de la 4G",
+  "sujet": "Entreprises et économie",
+  "transversaux": [
+   "Numérique"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37904",
+  "titre": "Modifier le délai pour demander réparation aux victimes d'infractions",
+  "sujet": "Justice",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39144",
+  "titre": "Garantir 300 milliards de prêts aux entreprises face au covid-19",
+  "sujet": "Impôts et budget",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39206",
+  "titre": "Suspendre des délais de justice constitutionnelle pendant l’épidémie",
+  "sujet": "Institutions et État",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39205",
+  "titre": "Répondre à l'épidémie de covid-19 par une loi d'urgence",
+  "sujet": "Santé",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39427",
+  "titre": "Adapter le budget 2020 à la crise du Covid-19",
+  "sujet": "Impôts et budget",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39597",
+  "titre": "Prolonger l'état d'urgence sanitaire jusqu'au 10 juillet 2020",
+  "sujet": "Santé",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37327",
+  "titre": "Obliger les plateformes à retirer vite les contenus haineux",
+  "sujet": "Justice",
+  "transversaux": [
+   "Numérique"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39712",
+  "titre": "Rendre hommage aux soignants victimes du covid-19",
+  "sujet": "Société et mémoire",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N36748",
+  "titre": "Porter à 12 jours le congé pour décès d'un enfant",
+  "sujet": "Enfance et famille",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37328",
+  "titre": "Mieux informer sur l'origine et la qualité des aliments",
+  "sujet": "Consommation et alimentation",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37977",
+  "titre": "Approuver l'accord France-Inde contre le trafic de drogue",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39726",
+  "titre": "Permettre de donner des jours de repos au secteur médico-social",
+  "sujet": "Travail et emploi",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39644",
+  "titre": "Habiliter le gouvernement à agir par ordonnances face au covid-19",
+  "sujet": "Santé",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39670",
+  "titre": "Demander à la Banque centrale européenne de racheter les dettes publiques",
+  "sujet": "Impôts et budget",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": true,
+  "note": "Résolution sur la dette publique motivée par la crise du Covid-19 mais portant sur la politique monétaire européenne."
+ },
+ {
+  "dossier": "DLR5L15N39669",
+  "titre": "Déclarer la nécessité d'une bifurcation écologique et solidaire",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39596",
+  "titre": "Approuver les comptes du budget 2019 de l'État",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39813",
+  "titre": "Financer la dette sociale et l'autonomie",
+  "sujet": "Sécurité sociale",
+  "transversaux": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "doute": true,
+  "note": "Loi qui transfère la dette sociale et crée la branche autonomie : le volet autonomie est-il central ?"
+ },
+ {
+  "dossier": "DLR5L15N39814",
+  "titre": "Annuler et refaire le second tour des municipales 2020",
+  "sujet": "Institutions et État",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39896",
+  "titre": "Encadrer la sortie de l’état d’urgence sanitaire",
+  "sujet": "Santé",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39045",
+  "titre": "Demander un revenu pour tous les étudiants",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39756",
+  "titre": "Programmer les moyens de l'hôpital public et des Ehpad",
+  "sujet": "Santé",
+  "transversaux": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "doute": true,
+  "note": "Hôpital public et Ehpad : l'hôpital est l'objet principal, les Ehpad une part centrale ; lien au Covid possible (2020)."
+ },
+ {
+  "dossier": "DLR5L15N39749",
+  "titre": "Rendre les masques accessibles gratuitement",
+  "sujet": "Santé",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39905",
+  "titre": "Demander le gel des fermetures de lits d'hôpital",
+  "sujet": "Santé",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39825",
+  "titre": "Libérer les directeurs d'hôpitaux en cas de crise sanitaire",
+  "sujet": "Santé",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39819",
+  "titre": "Demander l'avis du comité d'éthique en cas d'état d'urgence sanitaire",
+  "sujet": "Santé",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39812",
+  "titre": "Repousser à 2033 le remboursement de la dette sociale",
+  "sujet": "Sécurité sociale",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40450",
+  "titre": "Autoriser temporairement les semences traitées aux néonicotinoïdes",
+  "sujet": "Agriculture",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N38690",
+  "titre": "Simplifier l’action publique",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40346",
+  "titre": "Allonger le délai de l'IVG de 12 à 14 semaines",
+  "sujet": "Santé",
+  "transversaux": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40633",
+  "titre": "Fixer le budget de la Sécurité sociale pour 2021",
+  "sujet": "Sécurité sociale",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40245",
+  "titre": "Fixer le budget de l'État pour 2021",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40712",
+  "titre": "Clarifier le rôle des polices et de la sécurité privée",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40770",
+  "titre": "Lancer un débat sur un revenu universel, le « socle citoyen »",
+  "sujet": "Société et mémoire",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N38325",
+  "titre": "Interdire la discrimination à cause de l'accent",
+  "sujet": "Société et mémoire",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40769",
+  "titre": "Demander un vaccin contre le covid-19 accessible à tous",
+  "sujet": "Santé",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40629",
+  "titre": "Prolonger le congé de présence parentale pour enfant malade",
+  "sujet": "Enfance et famille",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40640",
+  "titre": "Renforcer les réponses pénales aux petits délits du quotidien",
+  "sujet": "Justice",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40771",
+  "titre": "Intégrer les objectifs de développement durable dans la Constitution",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40749",
+  "titre": "Demander une communauté méditerranéenne des énergies renouvelables",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40892",
+  "titre": "Généraliser le dépistage du covid-19",
+  "sujet": "Santé",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N38644",
+  "titre": "Inscrire la laïcité et la règle commune dans la Constitution",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37897",
+  "titre": "Expérimenter une carte Vitale biométrique",
+  "sujet": "Sécurité sociale",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40891",
+  "titre": "Défendre les Arméniens et chrétiens d'Orient",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40764",
+  "titre": "Simplifier le système de santé et créer une profession médicale intermédiaire",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40073",
+  "titre": "Réformer le Conseil économique, social et environnemental",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37698",
+  "titre": "Créer des points d'accueil pour soins immédiats",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N41089",
+  "titre": "Créer un syndicat unique de l'eau en Guadeloupe",
+  "sujet": "Outre-mer",
+  "transversaux": [
+   "Eau"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N41111",
+  "titre": "Réformer l'indemnisation des catastrophes naturelles",
+  "sujet": "Entreprises et économie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N41103",
+  "titre": "Créer une heure silencieuse dans les grands magasins",
+  "sujet": "Société et mémoire",
+  "transversaux": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "doute": true,
+  "note": "Heure silencieuse pour les personnes autistes ou sensibles au bruit : accessibilité, mais pas de mention explicite du handicap dans le titre."
+ },
+ {
+  "dossier": "DLR5L15N41308",
+  "titre": "Prolonger l’état d’urgence sanitaire et ses mesures",
+  "sujet": "Santé",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N41074",
+  "titre": "Renforcer le respect des principes de la République",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37919",
+  "titre": "Code de la justice pénale des mineurs",
+  "sujet": "Justice",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N41193",
+  "titre": "Punir plus sévèrement les atteintes sexuelles sur mineurs",
+  "sujet": "Justice",
+  "transversaux": [
+   "Protection de l'enfance"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N41162",
+  "titre": "Programmer l'aide au développement de 2020 à 2025",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37978",
+  "titre": "Interdire la vente de protoxyde d'azote aux mineurs",
+  "sujet": "Santé",
+  "transversaux": [
+   "Protection de l'enfance"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N41064",
+  "titre": "Ajouter le nom de Valéry Giscard d'Estaing au musée d'Orsay",
+  "sujet": "Culture et sport",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N41631",
+  "titre": "Interdire de manifester aux personnes violentes",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N41644",
+  "titre": "Mieux accompagner les enfants atteints de maladie chronique ou cancer",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N38412",
+  "titre": "Protéger et promouvoir les langues régionales",
+  "sujet": "Culture et sport",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N41668",
+  "titre": "Agir contre le dérèglement climatique",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N42038",
+  "titre": "Interdire plusieurs formes de publicité",
+  "sujet": "Consommation et alimentation",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N42036",
+  "titre": "Garantir un emploi à tous les chômeurs de longue durée",
+  "sujet": "Travail et emploi",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N42045",
+  "titre": "Taxer à 50 % les profits de crise",
+  "sujet": "Impôts et budget",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N42027",
+  "titre": "Élire les députés à la proportionnelle intégrale",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N42236",
+  "titre": "Enregistrer les audiences et renforcer la confiance dans la justice",
+  "sujet": "Justice",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N42237",
+  "titre": "Élargir les fonctions des magistrats non professionnels (loi organique)",
+  "sujet": "Justice",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N42337",
+  "titre": "Revaloriser les petites retraites agricoles",
+  "sujet": "Retraites",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40198",
+  "titre": "Étendre les plans de risques aux sites de matières dangereuses",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N41916",
+  "titre": "Réparer les conséquences des essais nucléaires français",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N41425",
+  "titre": "Inscrire l'environnement et le climat dans la Constitution",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N41895",
+  "titre": "Créer un ticket restaurant étudiant",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N43265",
+  "titre": "Changer les règles de l'allocation aux adultes handicapés",
+  "sujet": "Société et mémoire",
+  "transversaux": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N43508",
+  "titre": "Faire de la sauvegarde des abeilles une grande cause nationale",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N43488",
+  "titre": "Demander de créer une filière française de masques de protection",
+  "sujet": "Entreprises et économie",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N43709",
+  "titre": "Fixer le budget de la Sécurité sociale pour 2022",
+  "sujet": "Sécurité sociale",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N42785",
+  "titre": "Fixer le budget de l'État pour 2022",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N43785",
+  "titre": "Soutenir un accord international pour protéger la haute mer",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N37007",
+  "titre": "Ouvrir plus de métiers aux personnes atteintes de diabète",
+  "sujet": "Travail et emploi",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N43745",
+  "titre": "Moderniser la lutte contre la contrefaçon",
+  "sujet": "Entreprises et économie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N43746",
+  "titre": "Faire des sages-femmes des docteurs en maïeutique",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44085",
+  "titre": "Faciliter le changement d'assurance de prêt",
+  "sujet": "Consommation et alimentation",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N43811",
+  "titre": "Demander plus de coopération hospitalière transfrontalière",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N43826",
+  "titre": "Reconnaître et prévenir l'épuisement administratif",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40131",
+  "titre": "La mise en place d'une certification de cybersécurité des plateformes numériques destinée au grand public",
+  "sujet": "Autres sujets",
+  "transversaux": [
+   "Numérique"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N43705",
+  "titre": "Diverses dispositions relatives aux fonctionnaires et militaires originaires d’outre-mer",
+  "sujet": "Autres sujets",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40619",
+  "titre": "Création d'une plateforme de référencement et de prise en charge des malades chroniques de la covid-19",
+  "sujet": "Autres sujets",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44067",
+  "titre": "Reconnaissance du génocide des Kurdes en Irak",
+  "sujet": "Autres sujets",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N38414",
+  "titre": "Mesures sociales : handicap, services à la personne, stages",
+  "sujet": "Sécurité sociale",
+  "transversaux": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "doute": true,
+  "note": "Texte mixte (AAH, services à la personne, stages) : le volet handicap est-il central ?"
+ },
+ {
+  "dossier": "DLR5L15N44165",
+  "titre": "Inviter à sanctionner les discours de haine de responsables publics",
+  "sujet": "Justice",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N43834",
+  "titre": "Lutter contre les déserts médicaux",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N39164",
+  "titre": "Demander un plan pour le vieillissement accéléré de la Martinique",
+  "sujet": "Outre-mer",
+  "transversaux": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N43830",
+  "titre": "Ouvrir plus de places en IUT et BTS (Parcoursup)",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N42412",
+  "titre": "Donner plus de souplesse aux collectivités locales",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44446",
+  "titre": "Inviter à classer l'endométriose en affection de longue durée",
+  "sujet": "Santé",
+  "transversaux": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44349",
+  "titre": "Permettre de bloquer les prix en cas de crise",
+  "sujet": "Consommation et alimentation",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44390",
+  "titre": "Permettre de révoquer les élus par référendum",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44355",
+  "titre": "Nationaliser les sociétés d'autoroutes",
+  "sujet": "Entreprises et économie",
+  "transversaux": [],
+  "doute": true,
+  "note": "Nationalisation des autoroutes et tarifs des péages : prix payés par les usagers, mais objet principal = propriété des sociétés."
+ },
+ {
+  "dossier": "DLR5L15N44345",
+  "titre": "Interdire le glyphosate",
+  "sujet": "Agriculture",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44350",
+  "titre": "Légaliser le cannabis sous contrôle de l'État",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44107",
+  "titre": "Réhabiliter les soldats fusillés pour l'exemple en 1914-1918",
+  "sujet": "Société et mémoire",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N42842",
+  "titre": "Demander une loi européenne de vigilance des multinationales",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44411",
+  "titre": "Reconnaître et condamner un génocide des Ouïghours par la Chine",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44420",
+  "titre": "Fixer le Smic à 1 827,89 euros brut",
+  "sujet": "Travail et emploi",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44426",
+  "titre": "Améliorer le statut des accompagnants d’élèves en situation de handicap",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44416",
+  "titre": "Encadrer l'installation des médecins dans les zones bien dotées",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44511",
+  "titre": "Interdire progressivement les nitrites dans la charcuterie",
+  "sujet": "Consommation et alimentation",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44687",
+  "titre": "Réfléchir à un mode de scrutin plus représentatif aux législatives",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44686",
+  "titre": "Créer un conseiller territorial pour les régions et départements",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44688",
+  "titre": "Développer la participation citoyenne",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44507",
+  "titre": "Instruments nécessaires pour lutter contre la pollution plastique",
+  "sujet": "Autres sujets",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44558",
+  "titre": "Lutte contre l’exclusion financière et plafonnement des frais bancaires",
+  "sujet": "Autres sujets",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N44666",
+  "titre": "Accorder l’asile politique à Julian Assange et faciliter l’accès au statut de réfugié pour les lanceurs d’alerte étrangers",
+  "sujet": "Autres sujets",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N40429",
+  "titre": "Respect éthique du don d'organes par partenaires non européens",
+  "sujet": "Autres sujets",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N45942",
+  "titre": "Prendre des mesures d'urgence pour le pouvoir d'achat",
+  "sujet": "Impôts et budget",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N45943",
+  "titre": "Loi de finances rectificative pour 2022",
+  "sujet": "Autres sujets",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": true,
+  "note": "Loi de finances rectificative 2022 : budget, mais porte le paquet pouvoir d'achat (énergie, prestations) ; enjeux de la passe 1 allant en ce sens."
+ },
+ {
+  "dossier": "DLR5L16N46116",
+  "titre": "Encadrer les plastiques à usage unique et les composés perfluorés",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N43849",
+  "titre": "Limiter les clôtures qui bloquent la faune sauvage",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46185",
+  "titre": "Alléger l'impôt sur les pensions alimentaires reçues",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46266",
+  "titre": "Mesures d’urgence relatives au fonctionnement du marché du travail en vue du plein emploi",
+  "sujet": "Autres sujets",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46346",
+  "titre": "Programmation des finances publiques pour les années 2023 à 2027",
+  "sujet": "Autres sujets",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46617",
+  "titre": "Ajuster le budget de l'État pour 2022",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46412",
+  "titre": "Inscrire l'IVG et la contraception dans la Constitution",
+  "sujet": "Santé",
+  "transversaux": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46580",
+  "titre": "Soutenir l’Ukraine et condamner la guerre menée par la Russie",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46472",
+  "titre": "Calculer la retraite agricole sur les 25 meilleures années",
+  "sujet": "Retraites",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46471",
+  "titre": "Créer une cour spéciale pour les recours contre les expulsions",
+  "sujet": "Immigration",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46466",
+  "titre": "Créer un tribunal spécialisé dans les violences familiales",
+  "sujet": "Justice",
+  "transversaux": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "doute": true,
+  "note": "Tribunal des violences intrafamiliales : violences conjugales (adultes) mais aussi sur enfants."
+ },
+ {
+  "dossier": "DLR5L16N46269",
+  "titre": "Programmer le budget et les moyens du ministère de l'Intérieur",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46539",
+  "titre": "Accélérer l'installation d'énergies renouvelables",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46760",
+  "titre": "Exonérer de cotisations les hausses de salaire de 10 %",
+  "sujet": "Travail et emploi",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46275",
+  "titre": "Supprimer les zones à faibles émissions",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46778",
+  "titre": "Autoriser les parlementaires à visiter les établissements sociaux et médico-sociaux",
+  "sujet": "Société et mémoire",
+  "transversaux": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "doute": true,
+  "note": "Visites des établissements sociaux et médico-sociaux (Ehpad, structures pour handicapés) pour lutter contre la maltraitance."
+ },
+ {
+  "dossier": "DLR5L16N46249",
+  "titre": "Imposer l'uniforme dans les écoles et collèges publics",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46900",
+  "titre": "Créer une commission d'enquête sur la vie chère en outre-mer",
+  "sujet": "Outre-mer",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46858",
+  "titre": "Plafonner à 1 euro le repas des restaurants universitaires",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": true,
+  "note": "Prix du repas étudiant : prix d'un service payé par des ménages (étudiants), lien avec le pouvoir d'achat discutable."
+ },
+ {
+  "dossier": "DLR5L16N46864",
+  "titre": "Suspendre l'autorité parentale d'un parent poursuivi pour violences",
+  "sujet": "Enfance et famille",
+  "transversaux": [
+   "Protection de l'enfance",
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "doute": true,
+  "note": "Suspension de l'autorité parentale en cas de violences : protège enfants et conjoints ; les deux sujets sont plausibles."
+ },
+ {
+  "dossier": "DLR5L16N46890",
+  "titre": "Prolonger l'ordonnance de protection à 12 mois",
+  "sujet": "Justice",
+  "transversaux": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47035",
+  "titre": "Limiter les réseaux sociaux avant 15 ans",
+  "sujet": "Enfance et famille",
+  "transversaux": [
+   "Numérique",
+   "Protection de l'enfance"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47037",
+  "titre": "Protéger les parents d'un enfant gravement malade",
+  "sujet": "Enfance et famille",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46918",
+  "titre": "Adapter les règles pour les Jeux de Paris 2024",
+  "sujet": "Culture et sport",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46484",
+  "titre": "Renforcer les sanctions contre l'occupation illicite de logements",
+  "sujet": "Logement",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47217",
+  "titre": "Mieux indemniser les dégâts causés par l'argile",
+  "sujet": "Logement",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47218",
+  "titre": "Verser une prime alimentation, encadrer cantines et charcuterie",
+  "sujet": "Consommation et alimentation",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": true,
+  "note": "Prime alimentation (aide aux ménages) mêlée à des mesures sur cantines et charcuterie."
+ },
+ {
+  "dossier": "DLR5L16N47549",
+  "titre": "Condamner la politique d'Israël et réaffirmer deux États",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47411",
+  "titre": "Mettre fin à l'obligation de vaccination covid des soignants",
+  "sujet": "Santé",
+  "transversaux": [
+   "Crise du Covid-19"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46622",
+  "titre": "Accélérer la construction de nouveaux réacteurs nucléaires",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47006",
+  "titre": "Renforcer la prévention des incendies de forêt",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47975",
+  "titre": "Prolonger le plafonnement des hausses de loyers jusqu'en 2024",
+  "sujet": "Logement",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47509",
+  "titre": "Fixer le budget et les effectifs des armées jusqu'en 2030",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47622",
+  "titre": "Aider les actifs à voyager entre l'Outre-mer et l'Hexagone",
+  "sujet": "Outre-mer",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47571",
+  "titre": "Renforcer les pouvoirs de contrôle de la douane",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46880",
+  "titre": "Assouplir les règles du « zéro artificialisation nette »",
+  "sujet": "Logement",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47779",
+  "titre": "Programmer le budget et les effectifs de la justice 2023-2027",
+  "sujet": "Justice",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47780",
+  "titre": "Modifier le recrutement et le statut des magistrats",
+  "sujet": "Justice",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N48392",
+  "titre": "Accélérer la reconstruction après les violences urbaines de 2023",
+  "sujet": "Logement",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47917",
+  "titre": "Accélérer l'implantation d'usines pour l'industrie verte",
+  "sujet": "Entreprises et économie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N48163",
+  "titre": "Réorganiser l'accompagnement des chômeurs et des allocataires du RSA",
+  "sujet": "Travail et emploi",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47051",
+  "titre": "Interdire l'écriture inclusive à l'école et dans les actes officiels",
+  "sujet": "Culture et sport",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47884",
+  "titre": "Vérifier l’âge sur les sites pornographiques et encadrer le numérique",
+  "sujet": "Sécurité",
+  "transversaux": [
+   "Numérique",
+   "Protection de l'enfance"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46868",
+  "titre": "Créer une politique de prévention de la perte d'autonomie",
+  "sujet": "Sécurité sociale",
+  "transversaux": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N48718",
+  "titre": "Créer une commission d'enquête sur les risques naturels en Outre-mer",
+  "sujet": "Outre-mer",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N48755",
+  "titre": "Instaurer un moratoire sur le déploiement des méga-bassines",
+  "sujet": "Environnement et énergie",
+  "transversaux": [
+   "Eau"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N48763",
+  "titre": "Réouverture des accueils physiques dans les services publics",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N48766",
+  "titre": "Lutter contre l’inflation par l’encadrement des marges des industries agroalimentaires, du raffinage et de la grande distribution et établissant un prix d’achat plancher des matières premières agricoles",
+  "sujet": "Consommation et alimentation",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N48140",
+  "titre": "Appeler à mettre fin à l'accord franco-algérien de 1968",
+  "sujet": "Immigration",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N48758",
+  "titre": "Former plus de médecins selon les besoins des territoires",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N48777",
+  "titre": "Demander de rendre effectifs les soins palliatifs partout",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47118",
+  "titre": "Projet de loi pour contrôler l’immigration, améliorer l’intégration",
+  "sujet": "Autres sujets",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49175",
+  "titre": "Demander au gouvernement des mesures pour faciliter l'accès au logement",
+  "sujet": "Logement",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47695",
+  "titre": "Transférer la commission d'évaluation de l'aide au développement",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49033",
+  "titre": "Pérenniser le CDI en temps partagé pour l'employabilité",
+  "sujet": "Travail et emploi",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49023",
+  "titre": "Protéger un ex-conjoint des dettes fiscales du couple",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49095",
+  "titre": "Inscrire la liberté de recourir à l'IVG dans la Constitution",
+  "sujet": "Institutions et État",
+  "transversaux": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46921",
+  "titre": "Nationaliser EDF",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N47026",
+  "titre": "Contrôler l'honorabilité des encadrants sportifs auprès des mineurs",
+  "sujet": "Culture et sport",
+  "transversaux": [
+   "Protection de l'enfance"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49258",
+  "titre": "Encadrer les frais bancaires après un décès",
+  "sujet": "Consommation et alimentation",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49261",
+  "titre": "Renforcer la lutte contre les pénuries de médicaments",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49263",
+  "titre": "Reconnaître la responsabilité de l'État pour le chlordécone",
+  "sujet": "Outre-mer",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46127",
+  "titre": "Reconnaître la responsabilité de l'État pour condamnations d'homosexualité",
+  "sujet": "Société et mémoire",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49363",
+  "titre": "Garantir le versement des pensions alimentaires aux enfants majeurs",
+  "sujet": "Enfance et famille",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49299",
+  "titre": "Renforcer la protection des soignants contre les violences",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49457",
+  "titre": "Garantir un prix minimal aux agriculteurs et financer l'agroécologie",
+  "sujet": "Agriculture",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49124",
+  "titre": "Fusionner l'autorité de sûreté nucléaire et l'institut de radioprotection",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49123",
+  "titre": "Modifier la liste des postes nommés avec avis du Parlement",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49373",
+  "titre": "Restreindre le corps électoral en Nouvelle-Calédonie",
+  "sujet": "Outre-mer",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49923",
+  "titre": "Poursuivre la ratification de l'accord de commerce UE-Canada (CETA)",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49004",
+  "titre": "Mieux préparer villes côtières et îles au changement climatique",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49799",
+  "titre": "Enseigner les langues régionales dans les écoles d'outre-mer",
+  "sujet": "Outre-mer",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49740",
+  "titre": "Enquêter sur l'indécence du logement social en outre-mer",
+  "sujet": "Outre-mer",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49801",
+  "titre": "Rembourser intégralement les soins du cancer du sein",
+  "sujet": "Sécurité sociale",
+  "transversaux": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N50453",
+  "titre": "Revenir à la retraite à 62 ans",
+  "sujet": "Retraites",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N50434",
+  "titre": "Réduire les contraintes énergétiques pesant sur l’offre locative et juguler leurs effets sur la crise du logement",
+  "sujet": "Logement",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N50198",
+  "titre": "Voter le budget de l'État pour 2025",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51079",
+  "titre": "Continuer à percevoir les impôts sans budget 2025",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N50779",
+  "titre": "Réguler les prix et la concentration en outre-mer",
+  "sujet": "Outre-mer",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N50778",
+  "titre": "Ouvrir le repas à 1 euro à tous les étudiants",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": true,
+  "note": "Prix du repas étudiant : prix d'un service payé par des ménages (étudiants), lien avec le pouvoir d'achat discutable."
+ },
+ {
+  "dossier": "DLR5L17N50777",
+  "titre": "Obliger à réparer vite les ascenseurs en panne",
+  "sujet": "Logement",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N46650",
+  "titre": "Fixer un nombre minimum de soignants par patient hospitalisé",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N50775",
+  "titre": "Encadrer les crèches privées à but lucratif",
+  "sujet": "Enfance et famille",
+  "transversaux": [],
+  "doute": true,
+  "note": "Crèches privées lucratives : accueil de la petite enfance, pas clairement de la protection contre des dangers."
+ },
+ {
+  "dossier": "DLR5L17N51222",
+  "titre": "Aider Mayotte à se reconstruire après le cyclone Chido",
+  "sujet": "Outre-mer",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49726",
+  "titre": "Fixer les objectifs de la politique agricole",
+  "sujet": "Agriculture",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49455",
+  "titre": "Interdire les « polluants éternels » dans les produits du quotidien",
+  "sujet": "Santé",
+  "transversaux": [
+   "Eau"
+  ],
+  "doute": true,
+  "note": "PFAS : texte de santé/produits du quotidien, mais la pollution de l'eau est mise en avant."
+ },
+ {
+  "dossier": "DLR5L17N51215",
+  "titre": "Faire payer au moins 2 % par an aux plus grandes fortunes",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51563",
+  "titre": "Exiger l'accord préalable pour le démarchage téléphonique",
+  "sujet": "Consommation et alimentation",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49472",
+  "titre": "Lutter contre le frelon asiatique à pattes jaunes",
+  "sujet": "Agriculture",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51328",
+  "titre": "Sanctionner les vignes laissées à l'abandon",
+  "sujet": "Agriculture",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51467",
+  "titre": "Condamner la guerre en Ukraine et la soutenir",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49176",
+  "titre": "Renforcer la sûreté dans les transports",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51518",
+  "titre": "Valoriser l'engagement dans la réserve communale de sécurité civile",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N50631",
+  "titre": "Moins d'aménagements pour les courtes peines de prison",
+  "sujet": "Justice",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51014",
+  "titre": "Augmenter le nombre d'orthophonistes formés",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L15N43846",
+  "titre": "Étendre la parité aux petites communes",
+  "sujet": "Institutions et État",
+  "transversaux": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N50579",
+  "titre": "Adapter le code électoral à un même scrutin municipal",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51039",
+  "titre": "Durcir l'accès à la nationalité française à Mayotte",
+  "sujet": "Immigration",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51504",
+  "titre": "Prolonger le prix minimum de revente des aliments",
+  "sujet": "Agriculture",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": true,
+  "note": "Prix minimum de revente des aliments : vise le prix en rayon, mais aussi la rémunération des producteurs."
+ },
+ {
+  "dossier": "DLR5L17N50169",
+  "titre": "Lutter contre le narcotrafic",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51078",
+  "titre": "Aligner le statut du procureur anti-criminalité organisée",
+  "sujet": "Justice",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N50690",
+  "titre": "Durcir les sanctions des mineurs délinquants et parents",
+  "sujet": "Justice",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51849",
+  "titre": "Lutter contre la mort des bébés",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51852",
+  "titre": "Construire des logements plus facilement",
+  "sujet": "Logement",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N50413",
+  "titre": "Créer une croix de la valeur des sapeurs-pompiers",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N50627",
+  "titre": "Punir aussi les contacts avec un faux mineur",
+  "sujet": "Justice",
+  "transversaux": [
+   "Protection de l'enfance",
+   "Numérique"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51999",
+  "titre": "Demander l'abrogation de la réforme des retraites de 2023",
+  "sujet": "Retraites",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51979",
+  "titre": "Verser les allocations familiales dès le premier enfant",
+  "sujet": "Enfance et famille",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51115",
+  "titre": "Expérimenter l'encadrement des loyers en outre-mer",
+  "sujet": "Outre-mer",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51619",
+  "titre": "Enquêter sur l'accès à la justice outre-mer",
+  "sujet": "Outre-mer",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51900",
+  "titre": "Reconnaître la « double dette » imposée à Haïti",
+  "sujet": "Société et mémoire",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51362",
+  "titre": "Ratifier un accord sur l'immersion de déchets en mer",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": true,
+  "note": "Pollution des mers par immersion de déchets : relève peut-être de la pollution de l'eau."
+ },
+ {
+  "dossier": "DLR5L16N49849",
+  "titre": "Fixer de nouveaux objectifs pour l'énergie en France",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52087",
+  "titre": "Protéger l’effectivité du droit fondamental d’éligibilité",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N50724",
+  "titre": "Former et signaler les actes antisémites à l'université",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N50819",
+  "titre": "Alléger les règles pesticides pour les agriculteurs",
+  "sujet": "Agriculture",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51429",
+  "titre": "Allonger la rétention des étrangers condamnés pour des faits graves",
+  "sujet": "Immigration",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51985",
+  "titre": "Refonder Mayotte : programme de l'État et immigration",
+  "sujet": "Outre-mer",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51984",
+  "titre": "Créer le Département-Région de Mayotte",
+  "sujet": "Outre-mer",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52655",
+  "titre": "Reporter le renouvellement général des membres du congrès et des assemblées de province de la Nouvelle-Calédonie pour permettre la mise en oeuvre de l'accord du 12 juillet 2025",
+  "sujet": "Autres sujets",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52719",
+  "titre": "Demander de dénoncer les accords franco-algériens de 1968",
+  "sujet": "Immigration",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52801",
+  "titre": "Une amende pour les étrangers sans papiers",
+  "sujet": "Immigration",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52787",
+  "titre": "Afficher le pays d'origine de tous les aliments",
+  "sujet": "Consommation et alimentation",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52428",
+  "titre": "Voter le budget de l'État pour 2026",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53073",
+  "titre": "Demander de s'opposer à l'accord UE-Mercosur",
+  "sujet": "Agriculture",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52976",
+  "titre": "Le même prix du timbre en outre-mer qu'en métropole",
+  "sujet": "Outre-mer",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": true,
+  "note": "Prix du timbre en outre-mer : prix d'un service pour les ménages."
+ },
+ {
+  "dossier": "DLR5L17N53135",
+  "titre": "Ajuster le budget de l'État pour 2025 en fin d'année",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51457",
+  "titre": "Mieux protéger la santé des agents territoriaux",
+  "sujet": "Travail et emploi",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52781",
+  "titre": "Garantir un avocat à chaque enfant protégé",
+  "sujet": "Enfance et famille",
+  "transversaux": [
+   "Protection de l'enfance"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53051",
+  "titre": "Protéger les mineurs isolés sans abri",
+  "sujet": "Enfance et famille",
+  "transversaux": [
+   "Protection de l'enfance"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53069",
+  "titre": "Rendre durable l'encadrement des loyers",
+  "sujet": "Logement",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52749",
+  "titre": "Renouveler automatiquement les titres de séjour de longue durée",
+  "sujet": "Immigration",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53058",
+  "titre": "Baisser les prix des services en outre-mer",
+  "sujet": "Outre-mer",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52922",
+  "titre": "Fixer le budget de la Sécurité sociale pour 2026",
+  "sujet": "Sécurité sociale",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53386",
+  "titre": "Continuer à percevoir les impôts sans budget 2026",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52132",
+  "titre": "Classer les Frères musulmans comme organisation terroriste",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53300",
+  "titre": "Demander de suspendre la création de nouvelles agences de l'État",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52100",
+  "titre": "Organiser les Jeux olympiques d'hiver de 2030",
+  "sujet": "Culture et sport",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53427",
+  "titre": "Protéger les personnes menacées par le crime organisé",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51672",
+  "titre": "Renforcer les soins palliatifs et d'accompagnement",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51346",
+  "titre": "Créer un statut unique pour les soignants des pompiers",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51329",
+  "titre": "Faciliter la vente des biens en indivision",
+  "sujet": "Logement",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51330",
+  "titre": "Faire respecter les droits voisins de la presse",
+  "sujet": "Culture et sport",
+  "transversaux": [
+   "Numérique"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51175",
+  "titre": "Faciliter la prévention et la gestion des inondations",
+  "sujet": "Environnement et énergie",
+  "transversaux": [
+   "Eau"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53672",
+  "titre": "Enseigner la défense nationale au collège et au lycée",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53720",
+  "titre": "Mieux contrôler les agences et opérateurs de l'État",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53717",
+  "titre": "Interdire les sucres ajoutés dans les aliments pour bébés",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53715",
+  "titre": "Associer les appellations à l'urbanisme et sécuriser les horaires agricoles",
+  "sujet": "Agriculture",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51711",
+  "titre": "Punir plus durement l'organisation de rave-parties",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53775",
+  "titre": "Encadrer les regroupements d'écoles rurales entre communes",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53770",
+  "titre": "Simplifier les marchés publics pour les PME",
+  "sujet": "Entreprises et économie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49868",
+  "titre": "Simplifier les démarches des entreprises",
+  "sujet": "Entreprises et économie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52985",
+  "titre": "Renforcer la lutte contre les fraudes sociales et fiscales",
+  "sujet": "Impôts et budget",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52104",
+  "titre": "Permettre aux natifs de voter aux provinciales calédoniennes",
+  "sujet": "Outre-mer",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52767",
+  "titre": "Abroger le Code noir",
+  "sujet": "Société et mémoire",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N54144",
+  "titre": "Faciliter la remise sur le marché de logements anciens",
+  "sujet": "Logement",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51791",
+  "titre": "Rendre durable le contrat de professionnalisation expérimental",
+  "sujet": "Travail et emploi",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53357",
+  "titre": "Aider toutes les communes pour la petite enfance",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53981",
+  "titre": "Appliquer l'avenant sur l'assurance chômage",
+  "sujet": "Travail et emploi",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52977",
+  "titre": "Nationaliser ArcelorMittal France",
+  "sujet": "Travail et emploi",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51981",
+  "titre": "Protéger le logement des retraités qui touchent le minimum vieillesse",
+  "sujet": "Retraites",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53304",
+  "titre": "Autoriser à nouveau la recherche d'hydrocarbures en outre-mer",
+  "sujet": "Outre-mer",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N54229",
+  "titre": "Indexer les bourses étudiantes et les verser sur douze mois",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [
+   "Pouvoir d'achat et prix"
+  ],
+  "doute": true,
+  "note": "Indexation des bourses étudiantes sur les prix : revalorisation d'aides aux ménages, rattachement au pouvoir d'achat discutable."
+ },
+ {
+  "dossier": "DLR5L17N53284",
+  "titre": "Renforcer la lutte contre le terrorisme et la rétention",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51968",
+  "titre": "Faciliter le logement des agents des services publics",
+  "sujet": "Logement",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53530",
+  "titre": "Passer l'hydroélectricité d'un régime de concession à un régime d'autorisation",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N54218",
+  "titre": "Donner à la Corse un statut d'autonomie",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L16N49364",
+  "titre": "Encadrer la mode à renouvellement très rapide",
+  "sujet": "Environnement et énergie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N54083",
+  "titre": "Actualiser la programmation militaire 2024-2030",
+  "sujet": "Défense et international",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51037",
+  "titre": "Présumer en légitime défense les policiers et gendarmes",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53940",
+  "titre": "Réformer la justice criminelle et l'accueil des victimes",
+  "sujet": "Justice",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53942",
+  "titre": "Créer des assesseurs non magistrats dans les cours criminelles",
+  "sujet": "Justice",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51670",
+  "titre": "Autoriser l'aide à mourir sous conditions",
+  "sujet": "Santé",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N54085",
+  "titre": "Protéger les agriculteurs français et leur souveraineté alimentaire",
+  "sujet": "Agriculture",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N51732",
+  "titre": "Réorganiser le sport professionnel",
+  "sujet": "Culture et sport",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53426",
+  "titre": "Accélérer la prévention cardio-neuro-vasculaire et anticiper un risque sanitaire et social majeur",
+  "sujet": "Autres sujets",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N54006",
+  "titre": "Adapter les politiques publiques aux territoires de montagne",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53980",
+  "titre": "Durcir les règles sur explosifs, feux d'artifice et rave-parties",
+  "sujet": "Sécurité",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N54372",
+  "titre": "Réformer la protection de l'enfance",
+  "sujet": "Enfance et famille",
+  "transversaux": [
+   "Protection de l'enfance"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N53187",
+  "titre": "Interdire les réseaux sociaux aux moins de 15 ans",
+  "sujet": "Enfance et famille",
+  "transversaux": [
+   "Numérique",
+   "Protection de l'enfance"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N52746",
+  "titre": "Créer un établissement public pour les biens immobiliers de l'État",
+  "sujet": "Institutions et État",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N54844",
+  "titre": "Demander l'accès continu à l'eau potable en outre-mer",
+  "sujet": "Outre-mer",
+  "transversaux": [
+   "Eau"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N54841",
+  "titre": "Privilégier les entreprises locales dans les marchés publics",
+  "sujet": "Entreprises et économie",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N54847",
+  "titre": "Demander une double frontière pour l'espace Schengen",
+  "sujet": "Immigration",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N54916",
+  "titre": "Entrée au Panthéon de trois personnalités",
+  "sujet": "Société et mémoire",
+  "transversaux": [],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N54776",
+  "titre": "Agir contre les violences sexuelles et sexistes",
+  "sujet": "Justice",
+  "transversaux": [
+   "Égalité femmes-hommes et violences faites aux femmes",
+   "Protection de l'enfance"
+  ],
+  "doute": true,
+  "note": "Violences sexistes et sexuelles faites aux femmes et aux enfants : deux sujets, part de chaque."
+ },
+ {
+  "dossier": "DLR5L17N54777",
+  "titre": "Former les juges aux violences sexuelles et familiales",
+  "sujet": "Justice",
+  "transversaux": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "doute": true,
+  "note": "Formation des juges aux violences sexuelles et familiales : concerne aussi les mineurs."
+ },
+ {
+  "dossier": "DLR5L17N54901",
+  "titre": "Créer un corps de fonctionnaires pour les AESH",
+  "sujet": "Éducation et jeunesse",
+  "transversaux": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "doute": false,
+  "note": ""
+ },
+ {
+  "dossier": "DLR5L17N54898",
+  "titre": "Prendre en charge à 100 % les soins après des violences sexuelles",
+  "sujet": "Santé",
+  "transversaux": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "doute": true,
+  "note": "Soins après violences sexuelles : victimes adultes et mineures."
+ }
+]
