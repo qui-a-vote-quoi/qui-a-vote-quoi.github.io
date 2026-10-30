@@ -196,8 +196,17 @@ a.chip:hover { border-color: var(--encre); }
 .bilan.sans-panel { grid-template-columns: minmax(0, 1fr); }
 .bilan.sans-panel .panel, .en-cours .bilan > div > .note, .en-cours #revel { display: none; }
 .en-cours .bilan { grid-template-columns: minmax(0, 760px); justify-content: center; }
-.en-cours h1 { font-size: clamp(22px, 3vw, 28px); text-align: center; }
-.en-cours .seance-sujets { justify-content: center; }
+/* En séance, le titre de la page reste lu par les lecteurs d'écran mais laisse sa place au texte */
+.en-cours h1 { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.en-cours .seance-sujets { flex-wrap: nowrap; justify-content: space-between; font-size: 14px; margin-top: -8px; }
+.en-cours .seance-sujets > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.en-cours .seance-sujets .lien-bouton { flex: none; }
+/* Les étapes d'un texte : le texte, le débat, le vote, le résultat */
+.etapes { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; font: 600 13px var(--body); color: var(--muted); }
+.etapes li { flex: 1; border-top: 4px solid var(--line); padding-top: 6px; }
+.etapes li.fait { border-color: var(--accent-soft); }
+.etapes li[aria-current] { border-color: var(--accent); color: var(--fg); }
+.seance-suite { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
 .scrutin { display: grid; gap: 10px; border-top: var(--bord); padding-top: 14px; }
 .scrutin h3 { margin: 0; }
 .seance .btns button { flex: 1 1 120px; min-height: 52px; font-size: 17px; }
@@ -1011,27 +1020,37 @@ function afficherSeance() {
   }
   const t = byId(seance.ids[seance.i]), v = load()[t.id];
   $("#nb-bilan").textContent = "";
+  // Un texte se joue en étapes, une à l'écran : le texte, le débat (s'il existe), le vote, puis le résultat
+  const etape = seance.revele ? "resultat" : seance.etape, fini = t.debat && seance.repl >= t.debat.repliques.length;
+  const ETAPES = [["texte", "Le texte"], ...(t.debat ? [["debat", "Le débat"]] : []), ["vote", "Votre vote"], ["resultat", "Le résultat"]];
+  const rang = ETAPES.findIndex(([k]) => k === etape);
   $("#questions").innerHTML = `<article class="q seance">
-    <div class="seance-haut"><div class="seance-nav"><span class="eyebrow">Texte ${seance.i + 1} sur ${n} · ${t.theme}</span>${precedent}</div><div class="progress" aria-hidden="true"><i style="width:${(100 * seance.i / n).toFixed(1)}%"></i></div></div>
+    <div class="seance-haut"><div class="seance-nav"><span class="eyebrow">Texte ${seance.i + 1} sur ${n} · ${t.theme}</span>${precedent}</div>
+      <ol class="etapes" aria-label="Étapes">${ETAPES.map(([k, l], j) => `<li${j === rang ? ' aria-current="step"' : j < rang ? ' class="fait"' : ""}>${l}</li>`).join("")}</ol></div>
     <h2 tabindex="-1" id="q-titre">${t.titre}</h2>
-    <p class="seance-resume">${t.enClair}${t.niveau === "ia" ? ` ${badgeIA(t)}` : ""}</p>
-    ${t.debat && !seance.revele ? `<section class="vivre" aria-labelledby="titre-debat"><h3 class="eyebrow" id="titre-debat">Le débat dans l'hémicycle</h3>${repliques(t, { visibles: seance.repl })}
-          <p class="row">${seance.repl < t.debat.repliques.length ? `<button type="button" class="plus" id="replique-suivante">Réplique suivante ↓</button>
-            <button type="button" class="lien-bouton" id="tout-le-debat">Tout afficher</button><span class="meta">${seance.repl} / ${t.debat.repliques.length}</span>` : `<span class="meta">Fin du débat.</span>`}</p></section>` : ""}
-    ${seance.details && !seance.revele ? elementsPourChoisir(t) : ""}
-    ${!seance.revele ? `<div class="scrutin"><h3 class="eyebrow" id="titre-scrutin">Le scrutin est ouvert</h3>
+    ${etape === "texte" ? `<p class="seance-resume">${t.enClair}${t.niveau === "ia" ? ` ${badgeIA(t)}` : ""}</p>
+      <div class="seance-suite">${t.debat ? `<button type="button" class="plus principal" id="vers-debat">Écouter le débat →</button><button type="button" class="lien-bouton" id="vers-vote">Passer directement au vote</button>`
+        : `<button type="button" class="plus principal" id="vers-vote">Passer au vote →</button>`}</div>` : ""}
+    ${etape === "debat" ? `<section class="vivre" aria-labelledby="titre-debat"><h3 class="eyebrow" id="titre-debat" tabindex="-1">Le débat dans l'hémicycle</h3>${repliques(t, { visibles: seance.repl })}
+      <div class="seance-suite">${fini ? "" : `<button type="button" class="plus" id="replique-suivante">Réplique suivante ↓</button>
+        <button type="button" class="lien-bouton" id="tout-le-debat">Tout afficher</button><span class="meta">${seance.repl} / ${t.debat.repliques.length}</span>`}</div>
+      <div class="seance-suite"><button type="button" class="${fini ? "plus principal" : "lien-bouton"}" id="vers-vote">${fini ? "Passer au vote →" : "Passer au vote"}</button></div></section>` : ""}
+    ${etape === "vote" ? `<details class="args-mini"><summary>Relire le résumé</summary><p>${t.enClair}${t.niveau === "ia" ? ` ${badgeIA(t)}` : ""}</p></details>
+      ${seance.details ? elementsPourChoisir(t) : ""}
+      <div class="scrutin"><h3 class="eyebrow" id="titre-scrutin" tabindex="-1">Le scrutin est ouvert</h3>
       <div class="btns" data-id="${t.id}" role="group" aria-labelledby="titre-scrutin q-titre">
         ${VOTES.map(([val, l]) => `<button type="button" data-v="${val}">${l}</button>`).join("")}</div>
       <div class="row">${seance.details ? "" : `<button type="button" class="lien-bouton" id="en-savoir-plus">Je ne sais pas : j'ai besoin d'en savoir plus</button>`}
-        <button type="button" class="lien-bouton" id="passer">Passer ce texte</button></div></div>`
-      : (() => { const s = totals(t), serre = s.ecart <= ECART_SERRE;
+        ${t.debat ? `<button type="button" class="lien-bouton" id="vers-debat">Revoir le débat</button>` : ""}
+        <button type="button" class="lien-bouton" id="passer">Passer ce texte</button></div></div>` : ""}
+    ${etape !== "resultat" ? "" : (() => { const s = totals(t), serre = s.ecart <= ECART_SERRE;
         return `<div class="revelation">
           <h3 tabindex="-1" id="revelation">${issueTag(t)} Les députés l'ont ${s.adopte ? "adopté" : "rejeté"}</h3>
           <p>Vous : <b>${libVote(v)}</b>. L'Assemblée : ${s.pour} pour, ${s.contre} contre${serre ? `, <span class="serre">à ${s.ecart} voix près</span>. Quelques sièges ont fait la différence.` : "."}</p>
           ${hemicycle(t)}
           <p>Ce texte avait été proposé par ${auteurNom(t)}${t.groupe ? ` ${chip(t.groupe)}` : ""}.</p>
           <div class="camps">${camps(t)}</div>
-          ${t.debat && seance.repl ? `<details class="args-mini"><summary>Qui parlait dans le débat</summary>${repliques(t, { visibles: seance.repl, nomme: true })}</details>` : ""}
+          ${t.debat ? `<details class="args-mini"><summary>Qui parlait dans le débat</summary>${repliques(t, { nomme: true })}</details>` : ""}
           <p class="row"><button type="button" class="plus principal" id="suivant">${seance.i + 1 < n ? "Texte suivant →" : "Voir ma séance →"}</button><a href="#texte/${t.id}">La fiche du texte</a></p>
         </div>`; })()}
   </article>`;
@@ -1079,11 +1098,10 @@ function commencerSeance() {
   seance = { ids: melanger(selectionBilan().filter(t => !(t.id in rep))).slice(0, TAILLE_SEANCE).map(t => t.id) };
   allerA(0);
 }
-// Aller à un texte de la séance. Le débat démarre d'office (première réplique) ; un texte déjà voté montre son résultat.
+// Aller à un texte de la séance : il commence par sa présentation ; un texte déjà voté montre son résultat.
 function allerA(i) {
   const t = byId(seance.ids[i]);
-  Object.assign(seance, { i, revele: !!t && t.id in load(), details: false, repl: t?.debat ? 1 : 0 });
-  if (seance.revele && t.debat) seance.repl = Infinity;
+  Object.assign(seance, { i, revele: !!t && t.id in load(), etape: "texte", details: false, repl: 0 });
   majQuestions();
   ($("#revelation") || $("#q-titre") || $("#fin-seance"))?.focus();
 }
@@ -1180,6 +1198,8 @@ app.addEventListener("click", e => {
   if (e.target.closest(".panel-toggle")) { panelOpen = !panelOpen; majBilan(); return; }
   if (e.target.id === "sieger") { commencerSeance(); return; }
   if (e.target.id === "suivant" || e.target.id === "passer") { allerA(seance.i + 1); return; }
+  if (e.target.id === "vers-debat") { seance.etape = "debat"; seance.repl ||= 1; afficherSeance(); $("#titre-debat")?.focus(); return; }
+  if (e.target.id === "vers-vote") { seance.etape = "vote"; afficherSeance(); $("#titre-scrutin")?.focus(); return; }
   if (e.target.id === "replique-suivante") { seance.repl++; afficherSeance(); $("#derniere-replique")?.focus(); return; }
   if (e.target.id === "tout-le-debat") { seance.repl = Infinity; afficherSeance(); $("#derniere-replique")?.focus(); return; }
   if (e.target.id === "en-savoir-plus") { seance.details = true; afficherSeance(); $("#details-titre")?.focus(); return; }
