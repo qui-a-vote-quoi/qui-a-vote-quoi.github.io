@@ -301,7 +301,7 @@ a.plus { text-decoration: none; display: inline-flex; align-items: center; }
 .grp .chip, .score .chip { justify-self: start; }
 .pos { font-weight: 700; }
 .vote-groupe { color: var(--fg); }
-.pos.soutien { color: var(--soutien); } .pos.opposition { color: var(--opposition); } .pos.abstention { color: var(--abst); } .pos.absent { color: var(--muted); font-weight: 400; }
+.pos.soutien { color: var(--soutien); } .pos.opposition { color: var(--opposition); } .pos.abstention { color: var(--abst); } .pos.absent, .pos.divise { color: var(--muted); font-weight: 400; }
 .bar { display: flex; height: 12px; border-radius: 6px; overflow: hidden; background: var(--line); }
 .bar i { display: block; height: 100%; }
 
@@ -460,7 +460,7 @@ const PERIODES = {
 const POSITIONS = { Opposition: "groupe d'opposition", Minoritaire: "groupe minoritaire", Majoritaire: "groupe majoritaire" };
 // Niveau de vérification des résumés et des sujets (voir CHARTE-NEUTRALITE.md)
 const NIVEAUX = { ia: "Résumé rédigé par IA, pas encore vérifié par un humain.", relu: "Résumé relu par un humain." };
-const LIB = { soutien: "Pour", opposition: "Contre", abstention: "Abstention", absent: "N'a pas voté" };
+const LIB = { soutien: "Pour", opposition: "Contre", abstention: "Abstention", divise: "Divisé", absent: "N'a pas voté" };
 const $ = s => document.querySelector(s);
 const app = $("#app");
 const fdate = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
@@ -519,6 +519,7 @@ function stance(t, row) {
   const { p, c, a } = votesGroupe(t, row);
   if (!(p + c + a)) return "absent";
   const m = Math.max(p, c, a);
+  if ([p, c, a].filter(x => x === m).length > 1) return "divise";   // égalité : pas de position majoritaire
   return m === p ? "soutien" : m === c ? "opposition" : "abstention";
 }
 function totals(t) {
@@ -558,7 +559,7 @@ function bar(p, c, a, n) {
 }
 // Légende des positions : mêmes libellés (LIB) que partout ailleurs
 const PASTILLE = { soutien: "background:var(--jauge-pour)", opposition: "background:var(--jauge-contre)", abstention: "background:var(--jauge-abst)", absent: "border:1.5px solid var(--seat-absent);background:none" };
-const legende = `<div class="legend">${Object.entries(LIB).map(([k, l]) => `<span><i class="dot" style="${PASTILLE[k]}"></i>${l}</span>`).join("")}</div>`;
+const legende = `<div class="legend">${Object.entries(LIB).filter(([k]) => k in PASTILLE).map(([k, l]) => `<span><i class="dot" style="${PASTILLE[k]}"></i>${l}</span>`).join("")}</div>`;
 
 // Hémicycle : un point par député, rangés de la gauche vers la droite par groupe, en rangées concentriques.
 // blocs : pour chaque groupe, ses points par lots [attributs du cercle, nombre] ; il est placé dans l'ordre de l'hémicycle.
@@ -650,9 +651,9 @@ function argsGrid(t) {
 }
 // Groupes rangés par position sur un vote, dans l'ordre de l'hémicycle
 function camps(t) {
-  return ["soutien", "opposition", "abstention"].map(st => {
+  return ["soutien", "opposition", "abstention", "divise"].map(st => {
     const gs = GROUPES_VOTE.filter(g => { const r = t.groupes.find(x => x.g === g); return r && stance(t, r) === st; });
-    if (st === "abstention" && !gs.length) return "";
+    if ((st === "abstention" || st === "divise") && !gs.length) return "";
     return `<div class="row camp"><span class="pos ${st}">${LIB[st]}</span>${gs.map(g => chip(g)).join("") || `<span class="meta">aucun groupe</span>`}</div>`;
   }).join("");
 }
@@ -698,7 +699,7 @@ function listeTextes(ts, opts) {
 }
 // L'étape du parcours du texte, en mots simples (l'intitulé officiel est sur la fiche)
 const LECTURES = { "texte de la commission mixte paritaire": "accord députés-sénateurs", "texte de la commission paritaire": "accord députés-sénateurs",
-  "article 34-1 de la Constitution": "" };
+  "article 34-1 de la Constitution": "", "art. 34-1 de la Constitution": "" };
 const lecture = t => t.lecture in LECTURES ? LECTURES[t.lecture] : t.lecture;
 // Vote décisif : sans les voix de ce groupe, le résultat aurait été inverse.
 // Adopté : sans ses « pour », il n'y aurait plus eu de majorité. Rejeté : sans ses « contre », le texte serait passé.
@@ -750,7 +751,6 @@ function repartitionMesures(ts) {
 }
 const champRecherche = (id, valeur = "") => `<div class="recherche"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="${id}" type="search" autocomplete="off" placeholder="Retraite, loyer, police…" value="${valeur.replace(/"/g, "&quot;")}"></div>`;
 // Le dernier vote serré : l'illustration de l'accueil, tirée des vraies données (chaque siège compte)
-const voteSerre = () => [...TEXTES].sort((a, b) => b.date.localeCompare(a.date)).find(t => totals(t).ecart > 0 && totals(t).ecart <= ECART_SERRE);
 
 // Programme d'une niche : chaque ligne est soit un texte avec fiche (id), soit un titre + statut
 const STATUTS = {
@@ -779,7 +779,7 @@ function bilanNiche(n) {
 const views = {
   accueil() {
     // Une question au lecteur, puis de quoi y répondre lui-même : voir ce qu'ils ont voté, ou se mettre à leur place
-    const serres = TEXTES.filter(t => totals(t).ecart <= ECART_SERRE).length;
+    const serres = new Set(TEXTES.filter(t => totals(t).ecart <= ECART_SERRE).map(t => `${t.leg}|${t.scrutin}`)).size;
     return `<section class="hero">
         <h1>Est-ce que voter change vraiment votre quotidien&nbsp;?</h1>
         <p class="lead">Loyers, retraites, santé, impôts : voyez qui a proposé quoi à l'Assemblée depuis 2017, et qui a voté pour ou contre. ${serres} votes se sont joués à ${ECART_SERRE} voix près ou moins.</p>
@@ -829,7 +829,7 @@ const views = {
   // Après « À vous de juger » : partir de ce qui compte pour le lecteur. Les sujets du quotidien d'abord.
   juger() {
     const QUOTIDIEN = ["Logement", "Retraites", "Santé", "Impôts et budget", "Travail et emploi", "Éducation et jeunesse"];
-    const tuiles = liste => `<ul class="tuiles">${liste.filter(th => TEXTES.some(t => t.theme === th)).map(th => `<li><a href="#sujet/${encodeURIComponent(th)}">${th}<span>${pluriel(TEXTES.filter(t => t.theme === th).length, "texte")}</span></a></li>`).join("")}</ul>`;
+    const tuiles = liste => `<ul class="tuiles">${liste.filter(th => TEXTES.some(t => t.theme === th)).map(th => `<li><a href="#sujet/${encodeURIComponent(th)}">${th}<span>${pluriel(parDossier(TEXTES.filter(t => t.theme === th)).length, "texte")}</span></a></li>`).join("")}</ul>`;
     return `<h1>Qu'est-ce qui compte pour vous&nbsp;?</h1>
       <p class="lead">Choisissez un sujet. Vous verrez les textes votés, ce qu'ils changent, et qui a voté pour ou contre.</p>
       <h2 class="eyebrow tuiles-titre">Votre quotidien</h2>${tuiles(QUOTIDIEN)}
@@ -841,7 +841,7 @@ const views = {
     return `<a class="back" href="#groupe/${n.groupe}">← ${G(n.groupe).nom}</a>
       <div class="row">${badge(n.groupe, "lg")}<span class="eyebrow">Journée réservée du ${fdate(n.date)}</span></div>
       <h1 style="margin-top:12px">${G(n.groupe).nom}</h1>
-      <p class="lead">Une fois par mois, l'Assemblée réserve une journée à l'un des groupes d'opposition ou minoritaires : c'est lui qui choisit les textes discutés. On l'appelle sa « niche ». Ce jour-là, ce groupe a mis ${b.total} textes au programme. La journée s'arrête à minuit : les députés ont voté ${n.scrutins} fois, et ${b.votes} textes ont été votés jusqu'au bout.</p>
+      <p class="lead">Une fois par mois, l'Assemblée réserve une journée à l'un des groupes d'opposition ou minoritaires : c'est lui qui choisit les textes discutés. On l'appelle sa « niche ». Ce jour-là, ce groupe a mis ${pluriel(b.total, "texte")} au programme. La journée s'arrête à minuit : les députés ont voté ${n.scrutins} fois (amendements compris), et ${b.votes > 1 ? `${b.votes} textes ont été votés` : `${b.votes} texte a été voté`} jusqu'au bout.</p>
       <div class="facts">
         <div class="fact"><b>${b.votes} / ${b.total}</b><span>textes votés, dont ${b.adoptes} adopté${b.adoptes > 1 ? "s" : ""}</span></div>
         <div class="fact"><b>${b.sansVote}</b><span>texte${b.sansVote > 1 ? "s" : ""} sans vote, faute de temps</span></div>
@@ -862,8 +862,8 @@ const views = {
       <div class="row"><span class="eyebrow">${t.theme}</span></div>
       <h1 style="margin-top:8px">${t.titre}</h1>
       <p class="lead">${t.type === "solennel"
-        ? `Proposé par ${auteurNom(t)}. L'Assemblée en a fait l'un de ses grands votes (vote solennel), le ${fdate(t.date)}${t.lecture ? `, en ${t.lecture}` : ""}.`
-        : `Proposé par le groupe ${badge(t.groupe)} ${G(t.groupe).nom}, qui l'a mis au programme pendant <a href="#niche/${t.date}">sa journée réservée (niche) du ${fdate(t.date)}</a>.`}</p>
+        ? `Proposé par ${auteurNom(t)}. L'Assemblée en a fait l'un de ses grands votes (vote solennel), le ${fdate(t.date)}${(l => !l ? "" : l.startsWith("accord") ? `, sur l'${l}` : `, en ${l}`)(lecture(t))}.`
+        : (n => `Proposé par ${t.groupe ? `le groupe ${badge(t.groupe)} ${G(t.groupe).nom}` : t.auteur}${n ? `, mis au programme ${n.groupe === t.groupe ? "par ce groupe" : `par le groupe ${G(n.groupe).nom}`} pendant <a href="#niche/${n.date}">sa journée réservée (niche) du ${fdate(n.date)}</a>` : `, voté le ${fdate(t.date)}`}.`)(NICHES.find(x => x.date === t.date))}</p>
       ${t.titreOfficiel !== t.titre ? `<p class="meta">Titre officiel : ${t.titreOfficiel}</p>` : ""}
       ${verdict(t)}
       <div class="clair">
@@ -931,18 +931,18 @@ const views = {
           const legs = Object.keys(Gx.periodes).sort().reverse();
           return legs.map(leg => { const p = Gx.periodes[leg];
             return `<p class="contexte"><b>${PERIODES[leg].lib} : ${p.deputes} députés sur 577</b>, soit ${Math.round(100 * p.deputes / 577)} % des sièges${POSITIONS[p.position] ? `, ${POSITIONS[p.position]}` : ""}. ${PERIODES[leg].contexte}</p>`; }).join("")
-            + `<p class="contexte">Les textes mis au programme pendant les journées réservées (niches), qui reviennent aux groupes d'opposition et minoritaires, sont rarement adoptés.</p>`;
+            + (ni ? "" : `<p class="contexte">Les textes mis au programme pendant les journées réservées (niches), qui reviennent aux groupes d'opposition et minoritaires, sont rarement adoptés.</p>`);
         })()}
         <div class="stats">
-          <div class="stat"><div class="meta">Ses textes mis au vote, adoptés par l'Assemblée</div><span class="big">${adoptes.length} / ${sesTextes.length}</span><div class="meta">dont ${pluriel(lois, "devenu")} loi</div></div>
+          ${ni && !sesTextes.length ? "" : `<div class="stat"><div class="meta">Ses textes mis au vote, adoptés par l'Assemblée</div><span class="big">${adoptes.length} / ${sesTextes.length}</span><div class="meta">dont ${pluriel(lois, "devenu")} loi</div></div>`}
           ${ni ? "" : `<div class="stat"><div class="meta">Textes des autres adoptés : ses voix ont été décisives</div><span class="big">${aide.length}</span></div>
           <div class="stat"><div class="meta">Textes des autres rejetés : ses voix ont été décisives</div><span class="big">${bloque.length}</span></div>`}
           <div class="stat"><div class="meta">Participation moyenne aux votes</div><span class="big">${presMoy ?? "–"} %</span></div>
         </div>
         ${ni ? `<p class="contexte">Les non-inscrits ne forment pas un groupe : ce sont des députés qui n'ont rejoint aucun groupe, souvent de bords très différents. Chacun vote librement. Le site ne leur attribue donc pas de position commune et ne les compare pas aux groupes : il montre le détail de leurs voix sur chaque texte.</p>` : ""}
       </div>
-      <h2>1. Ce qu'il a proposé</h2>
-      ${sesTextes.length ? `<p class="meta">${pluriel(sesTextes.length, "texte")} mis au vote, lors de ses journées réservées ou d'un vote solennel, dont ${adoptes.length} adopté${adoptes.length > 1 ? "s" : ""} par l'Assemblée et ${pluriel(lois, "devenu")} loi. Les textes de ses journées réservées qui n'ont pas pu être votés, faute de temps, sont dans le programme de chaque journée, plus bas.</p>${listeTextes(portes, { avecAuteur: false })}` : `<p class="meta">Aucun texte de ce groupe sur le site pour l'instant.</p>`}
+      ${ni && !sesTextes.length ? "" : `<h2>1. Ce qu'il a proposé</h2>
+      ${sesTextes.length ? `<p class="meta">${pluriel(sesTextes.length, "texte")} mis au vote, lors de ses journées réservées ou d'un vote solennel, dont ${adoptes.length} adopté${adoptes.length > 1 ? "s" : ""} par l'Assemblée et ${pluriel(lois, "devenu")} loi. Les textes de ses journées réservées qui n'ont pas pu être votés, faute de temps, sont dans le programme de chaque journée, plus bas.</p>${listeTextes(portes, { avecAuteur: false })}` : `<p class="meta">Aucun texte de ce groupe sur le site pour l'instant.</p>`}`}
       ${ni ? "" : `<h2>2. Les textes des autres où ses voix ont fait la différence</h2>
       <p class="meta">Sans les voix de ce groupe, le résultat aurait été inverse. Plus un groupe a de sièges, plus souvent ses voix décident : c'est le nombre de députés qui compte. <a href="#methode">Comment c'est calculé</a></p>
       <details class="depli"><summary>Adoptés grâce à ses voix « pour » <span>· ${pluriel(aide.length, "texte")}</span></summary>${aide.length ? listeTextes(aide) : `<p class="meta">Aucun.</p>`}</details>
@@ -952,7 +952,7 @@ const views = {
         <div class="repartition">${r.lignes.map(l => `<div><b>${l.n}</b><span>${MESURES[l.m]}</span></div>`).join("")}</div>
         ${sesTextes.some(t => t.mesuresNiveau === "ia") ? `<p class="note">Classement attribué par IA, pas encore vérifié par un humain.</p>` : ""}` : ""; })()}
       ${niches.length ? `<h2>Ses journées réservées</h2><p class="meta">Les jours où ce groupe a choisi seul les textes discutés (sa « niche »), avec tout son programme.</p>
-        <div class="list">${niches.map(n => { const b = bilanNiche(n); return `<a class="card" href="#niche/${n.date}"><b style="font:700 17px var(--display)">${fdate(n.date)}</b><span class="meta">${b.total} textes au programme · ${b.votes} votés · ${b.sansVote} sans vote faute de temps</span></a>`; }).join("")}</div>` : ""}
+        <div class="list">${niches.map(n => { const b = bilanNiche(n); return `<a class="card" href="#niche/${n.date}"><b style="font:700 17px var(--display)">${fdate(n.date)}</b><span class="meta">${pluriel(b.total, "texte")} au programme · ${b.votes} voté${b.votes > 1 ? "s" : ""} · ${b.sansVote} sans vote faute de temps</span></a>`; }).join("")}</div>` : ""}
       <h2>${ni ? "Comment les non-inscrits ont voté sur les autres textes" : "Comment il a voté sur tous les autres textes"}</h2>
       ${(() => {   // filtres : qui a proposé le texte, et ce que ce groupe a voté
         const auteurs = [...ORDRE, "Gouvernement", "Sénat"].filter(a => autres.some(t => auteurDe(t) === a));
@@ -1088,7 +1088,7 @@ function majVotesGroupe() {
   const g = decodeURIComponent(location.hash.split("/")[1] || ""), a = $("#fg-auteur").value, v = $("#fg-vote")?.value;
   const ts = TEXTES.filter(t => t.groupe !== g && t.groupes.some(r => r.g === g)).sort((x, y) => y.date.localeCompare(x.date))
     .filter(t => (!a || auteurDe(t) === a) && (!v || stance(t, t.groupes.find(r => r.g === g)) === v));
-  $("#fg-nb").textContent = ts.length ? `${pluriel(ts.length, "texte")}.` : "Aucun texte pour ces filtres.";
+  $("#fg-nb").textContent = ts.length ? `${pluriel(ts.length, "vote")}.` : "Aucun vote pour ces filtres.";
   $("#votes-groupe").innerHTML = listeTextes(ts.slice(0, nbVotesGroupe), { voteDe: g })
     + (ts.length > nbVotesGroupe ? `<p><button type="button" class="plus" id="voir-plus-groupe">Afficher ${Math.min(30, ts.length - nbVotesGroupe)} textes de plus</button> <span class="meta">(${nbVotesGroupe} sur ${ts.length})</span></p>` : "");
 }
@@ -1100,7 +1100,7 @@ function majSujets() {
     .filter(t => (!filtre.sujet || t.theme === filtre.sujet) && (!filtre.auteur || auteurDe(t) === filtre.auteur) && (q.length < 2 || correspond(t, q))));
   const surSujet = location.hash.startsWith("#sujet/");   // sur la page d'un sujet, le sujet n'est pas un filtre à effacer
   const actifs = [!surSujet && filtre.sujet, filtre.auteur, filtre.leg, q.length >= 2].some(Boolean);
-  $("#nb").innerHTML = (ts.length ? `${pluriel(ts.length, "texte")}${actifs ? ` correspond${ts.length > 1 ? "ent" : ""} à vos filtres` : ""}.` : "Aucun texte ne correspond. Essayez un autre mot ou un autre filtre.")
+  $("#nb").innerHTML = (ts.length ? `${pluriel(ts.length, "vote")}${actifs ? ` correspond${ts.length > 1 ? "ent" : ""} à vos filtres` : ""}.` : "Aucun texte ne correspond. Essayez un autre mot ou un autre filtre.")
     + (actifs ? ` <button type="button" class="lien-bouton" id="effacer-filtres">Effacer les filtres</button>` : "");
   const simu = ["Impôts et budget", "Retraites"].includes(filtre.sujet)
     ? `<div class="callout" style="margin-top:0"><b>Simulateur ${filtre.sujet === "Impôts et budget" ? "impôts et héritage" : "retraite"} : bientôt.</b> Vous pourrez calculer ce que chaque proposition changerait pour vous.</div>` : "";
@@ -1285,7 +1285,7 @@ function scoresBilan(rep) {
     answered.forEach(t => {
       const r = t.groupes.find(x => x.g === g); if (!r) return;
       const st = stance(t, r); if (st === "absent") return;
-      if (st === "abstention") abs++;
+      if (st === "abstention" || st === "divise") abs++;   // ni comme vous, ni contre vous
       else if ((st === "soutien") === (rep[t.id] === 1)) acc++; else des++;
     });
     const n = acc + des + abs;
