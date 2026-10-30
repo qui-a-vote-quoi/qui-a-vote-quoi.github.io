@@ -3,8 +3,9 @@
 Usage : python3 pipeline/publier.py [15 16 17] [--sans-page]   (par défaut, les trois législatures ;
 --sans-page : ne pas reporter l'empreinte de donnees.js dans site/index.html)
 
-Lit donnees/base/<législature>/, donnees/validation/niches-<législature>.json et donnees/redaction/*.json
-(sujet, titre clair, résumé, arguments de chaque texte), et écrit site/donnees.js.
+Lit donnees/base/<législature>/, donnees/validation/niches-<législature>.json, donnees/redaction/*.json
+(sujet, titre clair, résumé, arguments de chaque texte) et donnees/transversaux/transversaux.json (sujets transversaux),
+et écrit site/donnees.js.
 
 Niveaux affichés sur le site :
 - une niche est publiée si elle a été vérifiée, par un humain (« valide ») ou par IA dans les comptes rendus (« verifie_ia ») ;
@@ -117,7 +118,7 @@ def groupes(legs):
     return resultat
 
 
-def publier_legislature(leg, redaction, sigles, ids_pris):
+def publier_legislature(leg, redaction, transversaux, sigles, ids_pris):
     validation = {v["date"]: v["statut"] for v in lire_json(VALIDATION / f"niches-{leg}.json", [])}
     niches = [n for n in lire_json(BASE / leg / "niches.json") if validation.get(n["date"]) in NICHES_PUBLIEES]
     dates_niches = {n["date"] for n in niches}
@@ -138,6 +139,7 @@ def publier_legislature(leg, redaction, sigles, ids_pris):
                   "legDossier": re.search(r"L(\d+)N", dossier).group(1),
                   "date": t["date"], "titre": r.get("titreClair") or titre_lisible(t["titre"]), "titreOfficiel": t["titre"],
                   "lecture": t.get("lecture"), "theme": r.get("theme") or "Autres sujets", "sujetNiveau": r.get("sujetNiveau"),
+                  "transversaux": transversaux.get(dossier, []),
                   "enClair": r.get("enClair"), "concerne": r.get("concerne"), "arguments": r.get("arguments"),
                   "niveau": r.get("niveau") or "a_venir",
                   "mesures": r.get("mesures") or [], "mesuresNiveau": r.get("mesuresNiveau"),
@@ -181,10 +183,12 @@ def main():
     redaction = {}
     for fichier in sorted((RACINE / "donnees" / "redaction").glob("*.json")):
         redaction.update(lire_json(fichier))
+    # Sujets transversaux : leurs définitions, et ceux de chaque texte (voir la méthode dans le fichier)
+    transversaux = lire_json(RACINE / "donnees" / "transversaux" / "transversaux.json", {"definitions": {}, "textes": {}})
     sigles = groupes(legs)
     niches, textes, ids_pris = [], [], set()
     for leg in sorted(legs):
-        n, t = publier_legislature(leg, redaction, {g for g, x in sigles.items() if leg in x["periodes"]}, ids_pris)
+        n, t = publier_legislature(leg, redaction, transversaux["textes"], {g for g, x in sigles.items() if leg in x["periodes"]}, ids_pris)
         niches += n
         textes += t
         print(f"{leg}e législature : {len(n)} niches publiées, {len(t)} textes.")
@@ -193,7 +197,8 @@ def main():
     SITE.mkdir(exist_ok=True)
     with open(SITE / "donnees.js", "w", encoding="utf-8") as f:
         f.write("// Fichier produit par pipeline/publier.py à partir de l'open data de l'Assemblée nationale. Ne pas modifier à la main.\n")
-        for nom, valeur in (("INFOS", infos), ("GROUPES", sigles), ("NICHES", niches), ("TEXTES", textes)):
+        for nom, valeur in (("INFOS", infos), ("GROUPES", sigles), ("NICHES", niches), ("TEXTES", textes),
+                            ("TRANSVERSAUX", transversaux["definitions"])):
             f.write(f"window.{nom} = {json.dumps(valeur, ensure_ascii=False, separators=(',', ':'))};\n")
     # La page charge donnees.js?v=<empreinte> : un navigateur ne garde pas en cache d'anciennes données
     empreinte = hashlib.sha1((SITE / "donnees.js").read_bytes()).hexdigest()[:10]

@@ -1,0 +1,293 @@
+{
+ "methode": "Trois passes : enjeux notés texte par texte sans liste imposée (IA), regroupement en familles gardées si elles comptent assez de textes répartis dans au moins trois sujets principaux, puis attribution texte par texte avec la liste fixée (IA) ; cas en doute tranchés par un humain.",
+ "definitions": {
+  "Pouvoir d'achat et prix": "Les prix payés par les ménages (énergie, carburant, alimentation, services), les loyers, les salaires, les primes et les frais bancaires des particuliers.",
+  "Crise du Covid-19": "Les textes faits à cause de l'épidémie de Covid-19 ou portant sur ses conséquences : état d'urgence sanitaire, vaccins, masques, aides de crise.",
+  "Handicap, grand âge et autonomie": "Le handicap, la perte d'autonomie, le grand âge, les proches aidants, les Ehpad et établissements médico-sociaux, l'AAH, les accompagnants d'élèves handicapés.",
+  "Égalité femmes-hommes et violences faites aux femmes": "Les droits des femmes (IVG, contraception), l'égalité professionnelle et la parité, la santé des femmes, les violences conjugales, sexistes et sexuelles.",
+  "Protection de l'enfance": "La protection des mineurs contre les violences, les abus, les dangers en ligne ou certains produits, l'aide sociale à l'enfance et les mineurs isolés.",
+  "Numérique": "La régulation d'internet et du numérique : plateformes, réseaux sociaux, contenus en ligne, données personnelles, cybersécurité, couverture mobile.",
+  "Eau": "L'eau potable et l'assainissement, le partage et la gestion de l'eau, les cours d'eau, les inondations et la pollution de l'eau."
+ },
+ "textes": {
+  "DLR5L15N36047": [
+   "Eau"
+  ],
+  "DLR5L15N35967": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "DLR5L15N36226": [
+   "Eau"
+  ],
+  "DLR5L15N36220": [
+   "Numérique"
+  ],
+  "DLR5L15N36400": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L15N36833": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "DLR5L15N36468": [
+   "Numérique"
+  ],
+  "DLR5L15N36918": [
+   "Protection de l'enfance"
+  ],
+  "DLR5L15N36913": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "DLR5L15N37092": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "DLR5L15N36497": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "DLR5L15N37127": [
+   "Numérique"
+  ],
+  "DLR5L15N37702": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "DLR5L15N38413": [
+   "Numérique"
+  ],
+  "DLR5L15N39144": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N39206": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N39205": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N39427": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N39597": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N37327": [
+   "Numérique"
+  ],
+  "DLR5L15N39712": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N39726": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N39644": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N39813": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "DLR5L15N39814": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N39896": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N39756": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "DLR5L15N39749": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N39905": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N39825": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N39819": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N40346": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "DLR5L15N40769": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N40892": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N41089": [
+   "Eau"
+  ],
+  "DLR5L15N41103": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "DLR5L15N41308": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N41193": [
+   "Protection de l'enfance"
+  ],
+  "DLR5L15N37978": [
+   "Protection de l'enfance"
+  ],
+  "DLR5L15N42045": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N43265": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "DLR5L15N43488": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N40131": [
+   "Numérique"
+  ],
+  "DLR5L15N40619": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L15N39164": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "DLR5L15N44446": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "DLR5L15N44349": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L15N44420": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L15N44426": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "DLR5L15N44558": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L16N45942": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L16N45943": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L16N46412": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "DLR5L16N46466": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "DLR5L16N46760": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L16N46778": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "DLR5L16N46900": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L16N46864": [
+   "Protection de l'enfance",
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "DLR5L16N46890": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "DLR5L16N47035": [
+   "Numérique",
+   "Protection de l'enfance"
+  ],
+  "DLR5L16N47218": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L16N47411": [
+   "Crise du Covid-19"
+  ],
+  "DLR5L16N47975": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L16N47884": [
+   "Numérique",
+   "Protection de l'enfance"
+  ],
+  "DLR5L16N46868": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "DLR5L16N48755": [
+   "Eau"
+  ],
+  "DLR5L16N48766": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L16N49095": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "DLR5L16N47026": [
+   "Protection de l'enfance"
+  ],
+  "DLR5L16N49258": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L16N49801": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "DLR5L17N50779": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L15N43846": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "DLR5L17N51504": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L17N50627": [
+   "Protection de l'enfance",
+   "Numérique"
+  ],
+  "DLR5L17N51115": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L17N51362": [
+   "Eau"
+  ],
+  "DLR5L17N52976": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L17N52781": [
+   "Protection de l'enfance"
+  ],
+  "DLR5L17N53051": [
+   "Protection de l'enfance"
+  ],
+  "DLR5L17N53069": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L17N53058": [
+   "Pouvoir d'achat et prix"
+  ],
+  "DLR5L17N51330": [
+   "Numérique"
+  ],
+  "DLR5L17N51175": [
+   "Eau"
+  ],
+  "DLR5L17N54372": [
+   "Protection de l'enfance"
+  ],
+  "DLR5L17N53187": [
+   "Numérique",
+   "Protection de l'enfance"
+  ],
+  "DLR5L17N54844": [
+   "Eau"
+  ],
+  "DLR5L17N54776": [
+   "Égalité femmes-hommes et violences faites aux femmes",
+   "Protection de l'enfance"
+  ],
+  "DLR5L17N54777": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ],
+  "DLR5L17N54901": [
+   "Handicap, grand âge et autonomie"
+  ],
+  "DLR5L17N54898": [
+   "Égalité femmes-hommes et violences faites aux femmes"
+  ]
+ }
+}

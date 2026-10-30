@@ -1,0 +1,4877 @@
+[
+ {
+  "dossier": "DLR5L15N35836",
+  "titre": "Autoriser des ordonnances pour réformer le droit du travail",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "ordonnances sur le droit du travail",
+   "accords d'entreprise",
+   "prud'hommes"
+  ],
+  "publics": [
+   "salariés",
+   "employeurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N35824",
+  "titre": "Renforcer la transparence de la vie politique (loi organique)",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "transparence de la vie politique",
+   "financement de la vie politique",
+   "déclaration d'intérêts des élus"
+  ],
+  "publics": [
+   "élus"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N35857",
+  "titre": "Renforcer la sécurité intérieure et la lutte contre le terrorisme",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "lutte contre le terrorisme",
+   "périmètres de protection",
+   "sécurité intérieure"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N35929",
+  "titre": "Arrêter la recherche et l'exploitation des hydrocarbures en France",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "fin des hydrocarbures",
+   "permis d'exploration pétrolière",
+   "transition énergétique"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N35895",
+  "titre": "Compétitivité de l'agriculture française",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "compétitivité de l'agriculture",
+   "revenus agricoles"
+  ],
+  "publics": [
+   "agriculteurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N35984",
+  "titre": "Fixer la trajectoire des finances publiques 2018-2022",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "trajectoire des finances publiques",
+   "dépense publique",
+   "prélèvements obligatoires"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N36030",
+  "titre": "Fixer le budget de la Sécurité sociale pour 2018",
+  "sujet": "Sécurité sociale",
+  "enjeux": [
+   "finances de la Sécurité sociale"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N35854",
+  "titre": "Fixer le budget de l'État pour 2018",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "budget de l'État",
+   "fiscalité du capital",
+   "impôt sur la fortune immobilière"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N35986",
+  "titre": "Ratifier les cinq ordonnances de 2017 sur le droit du travail",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "ratification d'ordonnances travail",
+   "négociation collective",
+   "dialogue social en entreprise"
+  ],
+  "publics": [
+   "salariés"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36047",
+  "titre": "Assouplir la gestion des cours d'eau et des inondations",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "gestion des cours d'eau",
+   "prévention des inondations",
+   "compétences des collectivités"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N35967",
+  "titre": "Permettre de donner des jours de repos aux aidants",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "dons de jours de repos",
+   "proches aidants",
+   "congés des salariés"
+  ],
+  "publics": [
+   "salariés",
+   "aidants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36071",
+  "titre": "Encadrer la rétention des demandeurs d'asile relevant du règlement Dublin",
+  "sujet": "Immigration",
+  "enjeux": [
+   "rétention des demandeurs d'asile",
+   "procédure Dublin",
+   "droit d'asile"
+  ],
+  "publics": [
+   "demandeurs d'asile"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N35987",
+  "titre": "Taxer de 5 % les transferts de sportifs professionnels",
+  "sujet": "Culture et sport",
+  "enjeux": [
+   "taxe sur les transferts de sportifs",
+   "financement du sport"
+  ],
+  "publics": [
+   "sportifs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36131",
+  "titre": "Corriger le budget de l'État 2017",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "budget de l'État rectificatif",
+   "ouverture et annulation de crédits",
+   "prélèvement à la source"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N36143",
+  "titre": "Réformer l’entrée dans l’enseignement supérieur",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "accès à l'enseignement supérieur",
+   "orientation des lycéens",
+   "sélection à l'université"
+  ],
+  "publics": [
+   "lycéens",
+   "étudiants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36159",
+  "titre": "Simplifier les relations avec l'administration (droit à l'erreur)",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "droit à l'erreur",
+   "relations avec l'administration",
+   "simplification administrative"
+  ],
+  "publics": [
+   "usagers de l'administration",
+   "entreprises"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36226",
+  "titre": "Inscrire le droit à l'eau dans la Constitution",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "droit à l'eau",
+   "accès à l'eau potable",
+   "Constitution"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N36231",
+  "titre": "Remettre un récépissé lors des contrôles d'identité",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "contrôles d'identité",
+   "récépissé de contrôle",
+   "discrimination policière"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N36225",
+  "titre": "Demander un référendum pour ratifier le CETA",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "référendum sur le CETA",
+   "accord de libre-échange avec le Canada"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N36220",
+  "titre": "Adapter la loi sur les données personnelles au droit européen",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "données personnelles",
+   "protection de la vie privée",
+   "droit européen du numérique"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N36254",
+  "titre": "Election des représentants au Parlement européen",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "élections européennes",
+   "mode de scrutin européen"
+  ],
+  "publics": [
+   "électeurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36295",
+  "titre": "Rendre gratuits les transports scolaires",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "transports scolaires gratuits",
+   "compétences des régions"
+  ],
+  "publics": [
+   "familles",
+   "élèves"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36333",
+  "titre": "Fixer les règles du vote sur l'indépendance de la Nouvelle-Calédonie",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "référendum en Nouvelle-Calédonie",
+   "listes électorales spéciales",
+   "indépendance"
+  ],
+  "publics": [
+   "électeurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36362",
+  "titre": "Programmer les moyens des armées de 2019 à 2025",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "programmation militaire",
+   "budget de la défense",
+   "équipement des armées"
+  ],
+  "publics": [
+   "militaires"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36400",
+  "titre": "Créer un ticket-carburant pour les salariés",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "ticket-carburant",
+   "pouvoir d'achat des salariés",
+   "prix des carburants"
+  ],
+  "publics": [
+   "salariés"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36410",
+  "titre": "Réformer l'asile et le séjour des étrangers",
+  "sujet": "Immigration",
+  "enjeux": [
+   "droit d'asile",
+   "titre de séjour",
+   "immigration"
+  ],
+  "publics": [
+   "demandeurs d'asile",
+   "étrangers"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36336",
+  "titre": "Rééquilibrer les relations commerciales agricoles et alimentaires",
+  "sujet": "Agriculture",
+  "enjeux": [
+   "relations commerciales agricoles",
+   "prix des produits agricoles",
+   "contrats de vente agricoles"
+  ],
+  "publics": [
+   "agriculteurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36537",
+  "titre": "Faciliter la construction et réformer le logement social",
+  "sujet": "Logement",
+  "enjeux": [
+   "construction de logements",
+   "logement social",
+   "normes de construction"
+  ],
+  "publics": [
+   "locataires"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36460",
+  "titre": "Réformer la SNCF et ouvrir le rail à la concurrence",
+  "sujet": "Entreprises et économie",
+  "enjeux": [
+   "réforme de la SNCF",
+   "ouverture du rail à la concurrence",
+   "statut des cheminots"
+  ],
+  "publics": [
+   "cheminots"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36601",
+  "titre": "Réformer la formation professionnelle, l'apprentissage et le chômage",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "formation professionnelle",
+   "apprentissage",
+   "assurance chômage"
+  ],
+  "publics": [
+   "salariés",
+   "demandeurs d'emploi"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36612",
+  "titre": "Permettre de relever la vitesse maximale sur certaines routes",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "limitation de vitesse sur route",
+   "sécurité routière"
+  ],
+  "publics": [
+   "automobilistes"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36656",
+  "titre": "Créer une commission d'enquête sur les groupuscules violents",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "commission d'enquête sur les groupuscules violents",
+   "violences politiques"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N36530",
+  "titre": "Renforcer la lutte contre la fraude fiscale et sociale",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "fraude fiscale",
+   "fraude sociale",
+   "contrôle fiscal"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N36728",
+  "titre": "Simplifier la vie des entreprises et favoriser leur croissance (PACTE)",
+  "sujet": "Entreprises et économie",
+  "enjeux": [
+   "création d'entreprise",
+   "simplification pour les entreprises",
+   "croissance des entreprises"
+  ],
+  "publics": [
+   "entreprises"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36832",
+  "titre": "Réorienter le système de santé vers la prévention",
+  "sujet": "Santé",
+  "enjeux": [
+   "prévention en santé",
+   "éducation à la santé",
+   "études de santé"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N36833",
+  "titre": "Créer un métier d'aidant à l'inclusion scolaire",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "accompagnement des élèves handicapés",
+   "métier d'aidant à l'inclusion scolaire",
+   "inclusion scolaire"
+  ],
+  "publics": [
+   "élèves handicapés"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36348",
+  "titre": "Faciliter l'expulsion des occupants sans droit d'un logement",
+  "sujet": "Logement",
+  "enjeux": [
+   "expulsion des squatteurs",
+   "occupation illégale de logement"
+  ],
+  "publics": [
+   "propriétaires"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36892",
+  "titre": "Fixer le budget de la Sécurité sociale pour 2019",
+  "sujet": "Sécurité sociale",
+  "enjeux": [
+   "finances de la Sécurité sociale"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N36733",
+  "titre": "Budget de l'État pour 2019",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "budget de l'État",
+   "suppression de petites taxes",
+   "fiscalité des entreprises"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N36468",
+  "titre": "Lutte contre la manipulation des informations",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "fausses informations",
+   "élections",
+   "régulation des médias en ligne"
+  ],
+  "publics": [
+   "électeurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36917",
+  "titre": "Faciliter les activités agricoles et conchylicoles sur le littoral",
+  "sujet": "Agriculture",
+  "enjeux": [
+   "activités agricoles littorales",
+   "conchyliculture",
+   "droit de préemption agricole"
+  ],
+  "publics": [
+   "conchyliculteurs",
+   "agriculteurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36918",
+  "titre": "Inscrire dans la loi l'éducation sans violence",
+  "sujet": "Enfance et famille",
+  "enjeux": [
+   "éducation sans violence",
+   "violences éducatives",
+   "autorité parentale"
+  ],
+  "publics": [
+   "enfants",
+   "parents"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36927",
+  "titre": "Mieux prendre en charge les cancers des enfants",
+  "sujet": "Santé",
+  "enjeux": [
+   "cancers pédiatriques",
+   "recherche médicale"
+  ],
+  "publics": [
+   "enfants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36913",
+  "titre": "Mieux soutenir les proches aidants",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "congé de proche aidant",
+   "indemnisation des aidants",
+   "financement de la dépendance"
+  ],
+  "publics": [
+   "aidants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36940",
+  "titre": "Créer un fonds pour la recherche sur les cancers des enfants",
+  "sujet": "Santé",
+  "enjeux": [
+   "cancers pédiatriques",
+   "financement de la recherche médicale"
+  ],
+  "publics": [
+   "enfants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36626",
+  "titre": "Programmer les moyens de la justice de 2018 à 2022",
+  "sujet": "Justice",
+  "enjeux": [
+   "moyens de la justice",
+   "programmation budgétaire de la justice",
+   "réforme de la procédure pénale"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N37092",
+  "titre": "Garantir un accompagnant aux élèves handicapés dès la rentrée",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "accompagnants d'élèves handicapés",
+   "rentrée scolaire",
+   "inclusion scolaire"
+  ],
+  "publics": [
+   "élèves handicapés",
+   "familles"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37093",
+  "titre": "Tester un revenu de base dans des départements volontaires",
+  "sujet": "Sécurité sociale",
+  "enjeux": [
+   "revenu de base",
+   "minima sociaux",
+   "expérimentation dans les départements"
+  ],
+  "publics": [
+   "personnes en précarité"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37094",
+  "titre": "Limiter les installations de médecins dans les zones bien dotées",
+  "sujet": "Santé",
+  "enjeux": [
+   "accès aux soins",
+   "installation des médecins",
+   "déserts médicaux"
+  ],
+  "publics": [
+   "patients",
+   "médecins"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36884",
+  "titre": "Encadrer les manifestations et sanctionner les violences",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "maintien de l'ordre",
+   "manifestations",
+   "violences en manifestation"
+  ],
+  "publics": [
+   "manifestants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37055",
+  "titre": "Abaisser l'obligation d'instruction à 3 ans et réformer l'école",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "instruction obligatoire dès 3 ans",
+   "instruction en famille",
+   "organisation de l'école"
+  ],
+  "publics": [
+   "enfants",
+   "familles"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36627",
+  "titre": "Réorganiser les juridictions et le statut des magistrats",
+  "sujet": "Justice",
+  "enjeux": [
+   "organisation de la justice",
+   "statut des magistrats"
+  ],
+  "publics": [
+   "magistrats"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36497",
+  "titre": "Ne plus compter les revenus du conjoint pour l'AAH",
+  "sujet": "Sécurité sociale",
+  "enjeux": [
+   "allocation aux adultes handicapés",
+   "revenus du conjoint",
+   "autonomie financière"
+  ],
+  "publics": [
+   "personnes handicapées"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37168",
+  "titre": "Informer sur l'usage de l'épargne populaire dans les énergies fossiles",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "épargne populaire",
+   "énergies fossiles",
+   "information sur les placements"
+  ],
+  "publics": [
+   "épargnants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37170",
+  "titre": "Rétablissement de l'ISF et renforcement de la progressivité de l’IR",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "impôt sur la fortune",
+   "progressivité de l'impôt sur le revenu"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N37234",
+  "titre": "Réformer les études de médecine et l'organisation des soins",
+  "sujet": "Santé",
+  "enjeux": [
+   "études de médecine",
+   "organisation des soins",
+   "télésanté"
+  ],
+  "publics": [
+   "étudiants en médecine",
+   "patients"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36520",
+  "titre": "Créer un répertoire des maladies rares ou orphelines",
+  "sujet": "Santé",
+  "enjeux": [
+   "maladies rares",
+   "dérogations médicales"
+  ],
+  "publics": [
+   "malades"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36532",
+  "titre": "Alléger la responsabilité des dirigeants bénévoles d'association",
+  "sujet": "Société et mémoire",
+  "enjeux": [
+   "responsabilité des dirigeants d'association",
+   "bénévolat"
+  ],
+  "publics": [
+   "bénévoles"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37344",
+  "titre": "Interdire la pêche électrique jusqu'à la mer territoriale",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "pêche électrique",
+   "pêche en mer",
+   "protection des fonds marins"
+  ],
+  "publics": [
+   "pêcheurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37127",
+  "titre": "Créer un droit voisin pour la presse en ligne",
+  "sujet": "Culture et sport",
+  "enjeux": [
+   "droits voisins de la presse",
+   "presse en ligne",
+   "droits d'auteur"
+  ],
+  "publics": [
+   "éditeurs de presse"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36915",
+  "titre": "Agence nationale de la cohésion des territoires",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "aménagement du territoire",
+   "cohésion des territoires",
+   "appui aux collectivités"
+  ],
+  "publics": [
+   "collectivités"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37357",
+  "titre": "Réformer le dialogue social dans la fonction publique",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "dialogue social dans la fonction publique",
+   "instances de représentation des agents"
+  ],
+  "publics": [
+   "fonctionnaires"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37446",
+  "titre": "Modifier le Règlement de l'Assemblée nationale",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "règlement de l'Assemblée nationale",
+   "fonctionnement du Parlement"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N37454",
+  "titre": "Programmer des moyens pour la police et la gendarmerie",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "moyens de la police et de la gendarmerie",
+   "sécurité intérieure",
+   "heures supplémentaires"
+  ],
+  "publics": [
+   "policiers",
+   "gendarmes"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37443",
+  "titre": "Programmer le rattrapage de Mayotte sur dix ans",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "rattrapage de Mayotte",
+   "infrastructures en outre-mer"
+  ],
+  "publics": [
+   "habitants de Mayotte"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37289",
+  "titre": "Créer la Collectivité européenne d'Alsace",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "Collectivité européenne d'Alsace",
+   "organisation territoriale",
+   "coopération transfrontalière"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N37607",
+  "titre": "Autoriser la ratification de l'accord de libre-échange avec le Canada",
+  "sujet": "Entreprises et économie",
+  "enjeux": [
+   "ratification du CETA",
+   "commerce international",
+   "accords de libre-échange"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N37029",
+  "titre": "Programmer les investissements dans les transports (LOM)",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "transports du quotidien",
+   "investissements dans les transports",
+   "mobilités"
+  ],
+  "publics": [
+   "usagers des transports"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37385",
+  "titre": "Clarifier les règles de financement des campagnes électorales",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "financement des campagnes électorales",
+   "comptes de campagne"
+  ],
+  "publics": [
+   "candidats"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37390",
+  "titre": "Clarifier les règles d'inéligibilité et de droit électoral",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "inéligibilité",
+   "droit électoral",
+   "contentieux électoral"
+  ],
+  "publics": [
+   "candidats"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37597",
+  "titre": "Ratifier le traité d'Aix-la-Chapelle avec l'Allemagne",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "coopération franco-allemande",
+   "traité international"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N37764",
+  "titre": "Soutenir la coopération franco-allemande du traité d'Aix-la-Chapelle",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "coopération franco-allemande",
+   "traité international"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N37672",
+  "titre": "Réviser les lois de bioéthique",
+  "sujet": "Santé",
+  "enjeux": [
+   "bioéthique",
+   "procréation médicalement assistée",
+   "recherche sur l'embryon"
+  ],
+  "publics": [
+   "couples de femmes",
+   "femmes seules"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37702",
+  "titre": "Protéger les victimes de violences conjugales avec le bracelet électronique",
+  "sujet": "Justice",
+  "enjeux": [
+   "violences conjugales",
+   "bracelet anti-rapprochement"
+  ],
+  "publics": [
+   "victimes de violences conjugales",
+   "femmes"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37615",
+  "titre": "Fixer le budget de l'État pour 2020",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "budget de l'État",
+   "baisse de l'impôt sur le revenu",
+   "fiscalité des entreprises"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N37659",
+  "titre": "Engagement dans la vie locale et action publique",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "engagement des élus locaux",
+   "statut de l'élu local",
+   "action publique locale"
+  ],
+  "publics": [
+   "élus locaux"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37831",
+  "titre": "Fixer le budget de la Sécurité sociale pour 2020",
+  "sujet": "Sécurité sociale",
+  "enjeux": [
+   "finances de la Sécurité sociale"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N37884",
+  "titre": "Rendre obligatoire le code de la route au lycée",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "code de la route au lycée",
+   "sécurité routière"
+  ],
+  "publics": [
+   "lycéens"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37621",
+  "titre": "Reconnaître pupilles de la Nation les enfants de sauveteurs en mer",
+  "sujet": "Société et mémoire",
+  "enjeux": [
+   "pupilles de la Nation",
+   "sauveteurs en mer",
+   "reconnaissance par la Nation"
+  ],
+  "publics": [
+   "enfants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37880",
+  "titre": "Créer une prime pour rénover les logements énergivores",
+  "sujet": "Logement",
+  "enjeux": [
+   "rénovation énergétique des logements",
+   "passoires thermiques",
+   "aide aux travaux"
+  ],
+  "publics": [
+   "propriétaires"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37883",
+  "titre": "Créer un label public de performance sociale des entreprises",
+  "sujet": "Entreprises et économie",
+  "enjeux": [
+   "responsabilité sociale des entreprises",
+   "label des entreprises"
+  ],
+  "publics": [
+   "entreprises"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37763",
+  "titre": "Créer une commission d'enquête sur les moustiques Aedes",
+  "sujet": "Santé",
+  "enjeux": [
+   "moustiques",
+   "maladies transmises par les insectes",
+   "commission d'enquête"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N38369",
+  "titre": "Inscrire d'office des natifs sur la liste du référendum calédonien",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "référendum en Nouvelle-Calédonie",
+   "listes électorales spéciales"
+  ],
+  "publics": [
+   "électeurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N38380",
+  "titre": "Lutter contre les retraites supplémentaires en déshérence",
+  "sujet": "Retraites",
+  "enjeux": [
+   "retraites supplémentaires en déshérence",
+   "épargne retraite"
+  ],
+  "publics": [
+   "retraités"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37846",
+  "titre": "Élargir les missions de la Fondation du patrimoine",
+  "sujet": "Culture et sport",
+  "enjeux": [
+   "patrimoine bâti",
+   "Fondation du patrimoine",
+   "communes rurales"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N37637",
+  "titre": "Protéger les sons et odeurs de la campagne",
+  "sujet": "Culture et sport",
+  "enjeux": [
+   "patrimoine sensoriel des campagnes",
+   "ruralité",
+   "nuisances sonores et olfactives"
+  ],
+  "publics": [
+   "habitants des campagnes"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37330",
+  "titre": "Interdire le cumul retraite et indemnité au Conseil constitutionnel",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "cumul emploi-retraite",
+   "Conseil constitutionnel",
+   "autorités indépendantes"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N38411",
+  "titre": "Suspendre les matchs de football professionnels le 5 mai",
+  "sujet": "Culture et sport",
+  "enjeux": [
+   "hommage aux victimes",
+   "football professionnel",
+   "calendrier sportif"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N38413",
+  "titre": "Associer les collectivités au déploiement de la 4G",
+  "sujet": "Entreprises et économie",
+  "enjeux": [
+   "couverture mobile 4G",
+   "collectivités et opérateurs",
+   "antennes-relais"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N37904",
+  "titre": "Modifier le délai pour demander réparation aux victimes d'infractions",
+  "sujet": "Justice",
+  "enjeux": [
+   "indemnisation des victimes d'infractions",
+   "délais de recours"
+  ],
+  "publics": [
+   "victimes"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N39144",
+  "titre": "Garantir 300 milliards de prêts aux entreprises face au covid-19",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "garantie de l'État aux prêts",
+   "aide aux entreprises",
+   "crise du covid-19"
+  ],
+  "publics": [
+   "entreprises"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N39206",
+  "titre": "Suspendre des délais de justice constitutionnelle pendant l’épidémie",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "délais de justice constitutionnelle",
+   "crise du covid-19"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N39205",
+  "titre": "Répondre à l'épidémie de covid-19 par une loi d'urgence",
+  "sujet": "Santé",
+  "enjeux": [
+   "état d'urgence sanitaire",
+   "report des élections municipales",
+   "crise du covid-19"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N39427",
+  "titre": "Adapter le budget 2020 à la crise du Covid-19",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "budget de l'État rectificatif",
+   "crise du covid-19",
+   "prime exceptionnelle"
+  ],
+  "publics": [
+   "salariés"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N39597",
+  "titre": "Prolonger l'état d'urgence sanitaire jusqu'au 10 juillet 2020",
+  "sujet": "Santé",
+  "enjeux": [
+   "état d'urgence sanitaire",
+   "restrictions et quarantaine",
+   "crise du covid-19"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N37327",
+  "titre": "Obliger les plateformes à retirer vite les contenus haineux",
+  "sujet": "Justice",
+  "enjeux": [
+   "contenus haineux en ligne",
+   "modération des plateformes",
+   "réseaux sociaux"
+  ],
+  "publics": [
+   "utilisateurs de réseaux sociaux"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N39712",
+  "titre": "Rendre hommage aux soignants victimes du covid-19",
+  "sujet": "Société et mémoire",
+  "enjeux": [
+   "hommage aux soignants",
+   "crise du covid-19"
+  ],
+  "publics": [
+   "soignants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N36748",
+  "titre": "Porter à 12 jours le congé pour décès d'un enfant",
+  "sujet": "Enfance et famille",
+  "enjeux": [
+   "congé pour décès d'un enfant",
+   "deuil"
+  ],
+  "publics": [
+   "parents",
+   "salariés"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37328",
+  "titre": "Mieux informer sur l'origine et la qualité des aliments",
+  "sujet": "Consommation et alimentation",
+  "enjeux": [
+   "étiquetage de l'origine des aliments",
+   "information des consommateurs",
+   "qualité des aliments"
+  ],
+  "publics": [
+   "consommateurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37977",
+  "titre": "Approuver l'accord France-Inde contre le trafic de drogue",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "trafic de drogue",
+   "coopération France-Inde",
+   "accord international"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N39726",
+  "titre": "Permettre de donner des jours de repos au secteur médico-social",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "dons de jours de repos",
+   "secteur médico-social",
+   "crise du covid-19"
+  ],
+  "publics": [
+   "salariés",
+   "soignants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N39644",
+  "titre": "Habiliter le gouvernement à agir par ordonnances face au covid-19",
+  "sujet": "Santé",
+  "enjeux": [
+   "ordonnances covid-19",
+   "crise du covid-19",
+   "mesures d'urgence"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N39670",
+  "titre": "Demander à la Banque centrale européenne de racheter les dettes publiques",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "dette publique",
+   "Banque centrale européenne",
+   "crise du covid-19"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N39669",
+  "titre": "Déclarer la nécessité d'une bifurcation écologique et solidaire",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "bifurcation écologique",
+   "transition écologique",
+   "justice sociale"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N39596",
+  "titre": "Approuver les comptes du budget 2019 de l'État",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "comptes de l'État",
+   "règlement du budget 2019"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N39813",
+  "titre": "Financer la dette sociale et l'autonomie",
+  "sujet": "Sécurité sociale",
+  "enjeux": [
+   "dette sociale",
+   "financement de l'autonomie",
+   "Sécurité sociale"
+  ],
+  "publics": [
+   "personnes âgées"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N39814",
+  "titre": "Annuler et refaire le second tour des municipales 2020",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "second tour des municipales",
+   "organisation des élections",
+   "crise du covid-19"
+  ],
+  "publics": [
+   "électeurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N39896",
+  "titre": "Encadrer la sortie de l’état d’urgence sanitaire",
+  "sujet": "Santé",
+  "enjeux": [
+   "sortie de l'état d'urgence sanitaire",
+   "restrictions de déplacement",
+   "crise du covid-19"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N39045",
+  "titre": "Demander un revenu pour tous les étudiants",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "revenu étudiant",
+   "précarité étudiante"
+  ],
+  "publics": [
+   "étudiants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N39756",
+  "titre": "Programmer les moyens de l'hôpital public et des Ehpad",
+  "sujet": "Santé",
+  "enjeux": [
+   "moyens de l'hôpital public",
+   "Ehpad",
+   "personnel soignant"
+  ],
+  "publics": [
+   "soignants",
+   "patients"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N39749",
+  "titre": "Rendre les masques accessibles gratuitement",
+  "sujet": "Santé",
+  "enjeux": [
+   "masques gratuits",
+   "crise du covid-19"
+  ],
+  "publics": [
+   "population"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N39905",
+  "titre": "Demander le gel des fermetures de lits d'hôpital",
+  "sujet": "Santé",
+  "enjeux": [
+   "fermetures de lits d'hôpital",
+   "hôpital public",
+   "crise du covid-19"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N39825",
+  "titre": "Libérer les directeurs d'hôpitaux en cas de crise sanitaire",
+  "sujet": "Santé",
+  "enjeux": [
+   "organisation des hôpitaux",
+   "pouvoirs des directeurs d'hôpital",
+   "crise du covid-19"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N39819",
+  "titre": "Demander l'avis du comité d'éthique en cas d'état d'urgence sanitaire",
+  "sujet": "Santé",
+  "enjeux": [
+   "état d'urgence sanitaire",
+   "comité d'éthique",
+   "contrôle des mesures sanitaires"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N39812",
+  "titre": "Repousser à 2033 le remboursement de la dette sociale",
+  "sujet": "Sécurité sociale",
+  "enjeux": [
+   "dette sociale",
+   "Caisse d'amortissement de la dette sociale"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N40450",
+  "titre": "Autoriser temporairement les semences traitées aux néonicotinoïdes",
+  "sujet": "Agriculture",
+  "enjeux": [
+   "néonicotinoïdes",
+   "semences traitées",
+   "filière betterave"
+  ],
+  "publics": [
+   "agriculteurs",
+   "betteraviers"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N38690",
+  "titre": "Simplifier l’action publique",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "simplification de l'action publique",
+   "suppression de commissions administratives"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N40346",
+  "titre": "Allonger le délai de l'IVG de 12 à 14 semaines",
+  "sujet": "Santé",
+  "enjeux": [
+   "accès à l'IVG",
+   "délai légal de l'IVG",
+   "clause de conscience"
+  ],
+  "publics": [
+   "femmes"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N40633",
+  "titre": "Fixer le budget de la Sécurité sociale pour 2021",
+  "sujet": "Sécurité sociale",
+  "enjeux": [
+   "finances de la Sécurité sociale"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N40245",
+  "titre": "Fixer le budget de l'État pour 2021",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "budget de l'État",
+   "baisse des impôts de production",
+   "plan de relance"
+  ],
+  "publics": [
+   "entreprises"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N40712",
+  "titre": "Clarifier le rôle des polices et de la sécurité privée",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "polices municipales",
+   "sécurité privée",
+   "sécurité intérieure"
+  ],
+  "publics": [
+   "policiers municipaux",
+   "agents de sécurité"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N40770",
+  "titre": "Lancer un débat sur un revenu universel, le « socle citoyen »",
+  "sujet": "Société et mémoire",
+  "enjeux": [
+   "revenu universel",
+   "revenu de base"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N38325",
+  "titre": "Interdire la discrimination à cause de l'accent",
+  "sujet": "Société et mémoire",
+  "enjeux": [
+   "discrimination à l'accent",
+   "lutte contre les discriminations"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N40769",
+  "titre": "Demander un vaccin contre le covid-19 accessible à tous",
+  "sujet": "Santé",
+  "enjeux": [
+   "vaccin contre le covid-19",
+   "accès aux vaccins",
+   "crise du covid-19"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N40629",
+  "titre": "Prolonger le congé de présence parentale pour enfant malade",
+  "sujet": "Enfance et famille",
+  "enjeux": [
+   "congé de présence parentale",
+   "enfants malades",
+   "allocation journalière"
+  ],
+  "publics": [
+   "parents",
+   "enfants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N40640",
+  "titre": "Renforcer les réponses pénales aux petits délits du quotidien",
+  "sujet": "Justice",
+  "enjeux": [
+   "petits délits",
+   "réponse pénale",
+   "indemnisation des victimes"
+  ],
+  "publics": [
+   "victimes"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N40771",
+  "titre": "Intégrer les objectifs de développement durable dans la Constitution",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "objectifs de développement durable",
+   "Constitution",
+   "transition écologique"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N40749",
+  "titre": "Demander une communauté méditerranéenne des énergies renouvelables",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "énergies renouvelables",
+   "coopération méditerranéenne"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N40892",
+  "titre": "Généraliser le dépistage du covid-19",
+  "sujet": "Santé",
+  "enjeux": [
+   "dépistage du covid-19",
+   "crise du covid-19"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N38644",
+  "titre": "Inscrire la laïcité et la règle commune dans la Constitution",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "laïcité",
+   "Constitution",
+   "principes républicains"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N37897",
+  "titre": "Expérimenter une carte Vitale biométrique",
+  "sujet": "Sécurité sociale",
+  "enjeux": [
+   "carte Vitale biométrique",
+   "fraude sociale"
+  ],
+  "publics": [
+   "assurés sociaux"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N40891",
+  "titre": "Défendre les Arméniens et chrétiens d'Orient",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "Haut-Karabakh",
+   "chrétiens d'Orient",
+   "relations internationales"
+  ],
+  "publics": [
+   "Arméniens",
+   "chrétiens d'Orient"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N40764",
+  "titre": "Simplifier le système de santé et créer une profession médicale intermédiaire",
+  "sujet": "Santé",
+  "enjeux": [
+   "profession médicale intermédiaire",
+   "organisation du système de santé",
+   "simplification en santé"
+  ],
+  "publics": [
+   "auxiliaires médicaux",
+   "patients"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N40073",
+  "titre": "Réformer le Conseil économique, social et environnemental",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "Conseil économique, social et environnemental",
+   "pétition citoyenne",
+   "participation citoyenne"
+  ],
+  "publics": [
+   "citoyens"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37698",
+  "titre": "Créer des points d'accueil pour soins immédiats",
+  "sujet": "Santé",
+  "enjeux": [
+   "soins immédiats",
+   "urgences hospitalières",
+   "accès aux soins"
+  ],
+  "publics": [
+   "patients"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N41089",
+  "titre": "Créer un syndicat unique de l'eau en Guadeloupe",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "gestion de l'eau en Guadeloupe",
+   "eau potable et assainissement",
+   "collectivités d'outre-mer"
+  ],
+  "publics": [
+   "habitants de Guadeloupe"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N41111",
+  "titre": "Réformer l'indemnisation des catastrophes naturelles",
+  "sujet": "Entreprises et économie",
+  "enjeux": [
+   "catastrophes naturelles",
+   "indemnisation des sinistrés",
+   "assurance"
+  ],
+  "publics": [
+   "sinistrés"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N41103",
+  "titre": "Créer une heure silencieuse dans les grands magasins",
+  "sujet": "Société et mémoire",
+  "enjeux": [
+   "heure silencieuse en magasin",
+   "autisme",
+   "troubles sensoriels"
+  ],
+  "publics": [
+   "personnes autistes"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N41308",
+  "titre": "Prolonger l’état d’urgence sanitaire et ses mesures",
+  "sujet": "Santé",
+  "enjeux": [
+   "état d'urgence sanitaire",
+   "crise du covid-19",
+   "passe sanitaire"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N41074",
+  "titre": "Renforcer le respect des principes de la République",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "principes de la République",
+   "laïcité",
+   "contrat d'engagement républicain"
+  ],
+  "publics": [
+   "associations",
+   "agents publics"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37919",
+  "titre": "Code de la justice pénale des mineurs",
+  "sujet": "Justice",
+  "enjeux": [
+   "justice des mineurs",
+   "code de la justice pénale des mineurs"
+  ],
+  "publics": [
+   "mineurs délinquants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N41193",
+  "titre": "Punir plus sévèrement les atteintes sexuelles sur mineurs",
+  "sujet": "Justice",
+  "enjeux": [
+   "atteintes sexuelles sur mineurs",
+   "âge du consentement",
+   "violences sexuelles"
+  ],
+  "publics": [
+   "enfants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N41162",
+  "titre": "Programmer l'aide au développement de 2020 à 2025",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "aide publique au développement",
+   "solidarité internationale"
+  ],
+  "publics": [
+   "pays en développement"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N37978",
+  "titre": "Interdire la vente de protoxyde d'azote aux mineurs",
+  "sujet": "Santé",
+  "enjeux": [
+   "protoxyde d'azote",
+   "vente aux mineurs",
+   "consommation de drogues"
+  ],
+  "publics": [
+   "mineurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N41064",
+  "titre": "Ajouter le nom de Valéry Giscard d'Estaing au musée d'Orsay",
+  "sujet": "Culture et sport",
+  "enjeux": [
+   "hommage à Valéry Giscard d'Estaing",
+   "musée d'Orsay"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N41631",
+  "titre": "Interdire de manifester aux personnes violentes",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "interdiction de manifester",
+   "maintien de l'ordre",
+   "violences en manifestation"
+  ],
+  "publics": [
+   "manifestants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N41644",
+  "titre": "Mieux accompagner les enfants atteints de maladie chronique ou cancer",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "enfants malades",
+   "congé parental pour maladie",
+   "scolarité des enfants malades"
+  ],
+  "publics": [
+   "enfants",
+   "parents"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N38412",
+  "titre": "Protéger et promouvoir les langues régionales",
+  "sujet": "Culture et sport",
+  "enjeux": [
+   "langues régionales",
+   "enseignement des langues régionales",
+   "patrimoine linguistique"
+  ],
+  "publics": [
+   "élèves"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N41668",
+  "titre": "Agir contre le dérèglement climatique",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "dérèglement climatique",
+   "transition écologique",
+   "consommation responsable"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N42038",
+  "titre": "Interdire plusieurs formes de publicité",
+  "sujet": "Consommation et alimentation",
+  "enjeux": [
+   "publicité",
+   "consommation",
+   "publicité numérique et lumineuse"
+  ],
+  "publics": [
+   "consommateurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N42036",
+  "titre": "Garantir un emploi à tous les chômeurs de longue durée",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "garantie d'emploi",
+   "chômage de longue durée"
+  ],
+  "publics": [
+   "chômeurs de longue durée"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N42045",
+  "titre": "Taxer à 50 % les profits de crise",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "taxation des profits exceptionnels",
+   "crise du covid-19",
+   "fiscalité des entreprises"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N42027",
+  "titre": "Élire les députés à la proportionnelle intégrale",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "mode de scrutin législatif",
+   "proportionnelle",
+   "représentation des courants politiques"
+  ],
+  "publics": [
+   "électeurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N42236",
+  "titre": "Enregistrer les audiences et renforcer la confiance dans la justice",
+  "sujet": "Justice",
+  "enjeux": [
+   "enregistrement des audiences",
+   "confiance dans la justice",
+   "publicité de la justice"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N42237",
+  "titre": "Élargir les fonctions des magistrats non professionnels (loi organique)",
+  "sujet": "Justice",
+  "enjeux": [
+   "magistrats non professionnels",
+   "organisation de la justice"
+  ],
+  "publics": [
+   "magistrats"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N42337",
+  "titre": "Revaloriser les petites retraites agricoles",
+  "sujet": "Retraites",
+  "enjeux": [
+   "retraites agricoles",
+   "petites pensions",
+   "minimum contributif"
+  ],
+  "publics": [
+   "retraités agricoles"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N40198",
+  "titre": "Étendre les plans de risques aux sites de matières dangereuses",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "risques technologiques",
+   "transport de matières dangereuses",
+   "prévention des risques"
+  ],
+  "publics": [
+   "riverains"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N41916",
+  "titre": "Réparer les conséquences des essais nucléaires français",
+  "sujet": "Santé",
+  "enjeux": [
+   "essais nucléaires",
+   "indemnisation des victimes",
+   "dépollution des sites"
+  ],
+  "publics": [
+   "victimes des essais nucléaires",
+   "Polynésiens"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N41425",
+  "titre": "Inscrire l'environnement et le climat dans la Constitution",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "environnement et climat dans la Constitution",
+   "préservation de l'environnement"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N41895",
+  "titre": "Créer un ticket restaurant étudiant",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "ticket restaurant étudiant",
+   "précarité étudiante",
+   "restauration universitaire"
+  ],
+  "publics": [
+   "étudiants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N43265",
+  "titre": "Changer les règles de l'allocation aux adultes handicapés",
+  "sujet": "Société et mémoire",
+  "enjeux": [
+   "allocation aux adultes handicapés",
+   "revenus du conjoint",
+   "autonomie financière"
+  ],
+  "publics": [
+   "personnes handicapées"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N43508",
+  "titre": "Faire de la sauvegarde des abeilles une grande cause nationale",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "sauvegarde des abeilles",
+   "biodiversité",
+   "pollinisateurs"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N43488",
+  "titre": "Demander de créer une filière française de masques de protection",
+  "sujet": "Entreprises et économie",
+  "enjeux": [
+   "filière de masques",
+   "relocalisation industrielle",
+   "crise du covid-19"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N43709",
+  "titre": "Fixer le budget de la Sécurité sociale pour 2022",
+  "sujet": "Sécurité sociale",
+  "enjeux": [
+   "finances de la Sécurité sociale"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N42785",
+  "titre": "Fixer le budget de l'État pour 2022",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "budget de l'État",
+   "indexation de l'impôt sur le revenu",
+   "plan de relance"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N43785",
+  "titre": "Soutenir un accord international pour protéger la haute mer",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "protection de la haute mer",
+   "diplomatie environnementale",
+   "biodiversité marine"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N37007",
+  "titre": "Ouvrir plus de métiers aux personnes atteintes de diabète",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "diabète",
+   "accès à certains métiers",
+   "discrimination à l'embauche"
+  ],
+  "publics": [
+   "personnes diabétiques"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N43745",
+  "titre": "Moderniser la lutte contre la contrefaçon",
+  "sujet": "Entreprises et économie",
+  "enjeux": [
+   "contrefaçon",
+   "propriété intellectuelle",
+   "sanctions économiques"
+  ],
+  "publics": [
+   "entreprises"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N43746",
+  "titre": "Faire des sages-femmes des docteurs en maïeutique",
+  "sujet": "Santé",
+  "enjeux": [
+   "formation des sages-femmes",
+   "maïeutique",
+   "professions de santé"
+  ],
+  "publics": [
+   "sages-femmes"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44085",
+  "titre": "Faciliter le changement d'assurance de prêt",
+  "sujet": "Consommation et alimentation",
+  "enjeux": [
+   "assurance emprunteur",
+   "résiliation d'assurance de prêt",
+   "prêts immobiliers"
+  ],
+  "publics": [
+   "emprunteurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N43811",
+  "titre": "Demander plus de coopération hospitalière transfrontalière",
+  "sujet": "Santé",
+  "enjeux": [
+   "coopération hospitalière transfrontalière",
+   "accès aux soins"
+  ],
+  "publics": [
+   "patients frontaliers"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N43826",
+  "titre": "Reconnaître et prévenir l'épuisement administratif",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "épuisement administratif",
+   "relations avec l'administration",
+   "démarches administratives"
+  ],
+  "publics": [
+   "usagers de l'administration"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N40131",
+  "titre": "La mise en place d'une certification de cybersécurité des plateformes numériques destinée au grand public",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "cybersécurité",
+   "plateformes numériques",
+   "protection des utilisateurs en ligne"
+  ],
+  "publics": [
+   "utilisateurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N43705",
+  "titre": "Diverses dispositions relatives aux fonctionnaires et militaires originaires d’outre-mer",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "fonctionnaires originaires d'outre-mer",
+   "affectations en outre-mer",
+   "mobilité des agents"
+  ],
+  "publics": [
+   "fonctionnaires",
+   "militaires"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N40619",
+  "titre": "Création d'une plateforme de référencement et de prise en charge des malades chroniques de la covid-19",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "malades chroniques du covid-19",
+   "covid long",
+   "prise en charge des malades"
+  ],
+  "publics": [
+   "malades"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44067",
+  "titre": "Reconnaissance du génocide des Kurdes en Irak",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "reconnaissance de génocide",
+   "Kurdes d'Irak",
+   "mémoire"
+  ],
+  "publics": [
+   "Kurdes"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N38414",
+  "titre": "Mesures sociales : handicap, services à la personne, stages",
+  "sujet": "Sécurité sociale",
+  "enjeux": [
+   "handicap",
+   "crédit d'impôt services à la personne",
+   "stages"
+  ],
+  "publics": [
+   "personnes handicapées"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44165",
+  "titre": "Inviter à sanctionner les discours de haine de responsables publics",
+  "sujet": "Justice",
+  "enjeux": [
+   "discours de haine",
+   "responsables publics",
+   "réponse pénale"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N43834",
+  "titre": "Lutter contre les déserts médicaux",
+  "sujet": "Santé",
+  "enjeux": [
+   "déserts médicaux",
+   "accès aux soins",
+   "installation des médecins"
+  ],
+  "publics": [
+   "patients",
+   "médecins"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N39164",
+  "titre": "Demander un plan pour le vieillissement accéléré de la Martinique",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "vieillissement de la population en Martinique",
+   "perte d'autonomie",
+   "agence de l'autonomie"
+  ],
+  "publics": [
+   "personnes âgées"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N43830",
+  "titre": "Ouvrir plus de places en IUT et BTS (Parcoursup)",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "places en IUT et BTS",
+   "Parcoursup",
+   "orientation des lycéens"
+  ],
+  "publics": [
+   "bacheliers",
+   "lycéens"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N42412",
+  "titre": "Donner plus de souplesse aux collectivités locales",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "compétences des collectivités",
+   "différenciation territoriale",
+   "décentralisation"
+  ],
+  "publics": [
+   "collectivités"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44446",
+  "titre": "Inviter à classer l'endométriose en affection de longue durée",
+  "sujet": "Santé",
+  "enjeux": [
+   "endométriose",
+   "affection de longue durée"
+  ],
+  "publics": [
+   "femmes"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44349",
+  "titre": "Permettre de bloquer les prix en cas de crise",
+  "sujet": "Consommation et alimentation",
+  "enjeux": [
+   "blocage des prix",
+   "pouvoir d'achat",
+   "encadrement des prix"
+  ],
+  "publics": [
+   "consommateurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44390",
+  "titre": "Permettre de révoquer les élus par référendum",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "révocation des élus par référendum",
+   "référendum d'initiative citoyenne",
+   "participation citoyenne"
+  ],
+  "publics": [
+   "citoyens"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44355",
+  "titre": "Nationaliser les sociétés d'autoroutes",
+  "sujet": "Entreprises et économie",
+  "enjeux": [
+   "nationalisation des autoroutes",
+   "sociétés concessionnaires",
+   "tarifs des péages"
+  ],
+  "publics": [
+   "automobilistes"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44345",
+  "titre": "Interdire le glyphosate",
+  "sujet": "Agriculture",
+  "enjeux": [
+   "glyphosate",
+   "produits phytopharmaceutiques",
+   "pesticides"
+  ],
+  "publics": [
+   "agriculteurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44350",
+  "titre": "Légaliser le cannabis sous contrôle de l'État",
+  "sujet": "Santé",
+  "enjeux": [
+   "légalisation du cannabis",
+   "consommation de drogues",
+   "santé publique"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N44107",
+  "titre": "Réhabiliter les soldats fusillés pour l'exemple en 1914-1918",
+  "sujet": "Société et mémoire",
+  "enjeux": [
+   "soldats fusillés de 1914-1918",
+   "réhabilitation",
+   "mémoire de la Première Guerre mondiale"
+  ],
+  "publics": [
+   "soldats"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N42842",
+  "titre": "Demander une loi européenne de vigilance des multinationales",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "devoir de vigilance des multinationales",
+   "droits humains",
+   "droit européen"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N44411",
+  "titre": "Reconnaître et condamner un génocide des Ouïghours par la Chine",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "génocide des Ouïghours",
+   "droits humains",
+   "relations avec la Chine"
+  ],
+  "publics": [
+   "Ouïghours"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44420",
+  "titre": "Fixer le Smic à 1 827,89 euros brut",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "salaire minimum",
+   "Smic",
+   "pouvoir d'achat"
+  ],
+  "publics": [
+   "salariés"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44426",
+  "titre": "Améliorer le statut des accompagnants d’élèves en situation de handicap",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "accompagnants d'élèves handicapés",
+   "statut des accompagnants",
+   "inclusion scolaire"
+  ],
+  "publics": [
+   "élèves handicapés",
+   "accompagnants"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44416",
+  "titre": "Encadrer l'installation des médecins dans les zones bien dotées",
+  "sujet": "Santé",
+  "enjeux": [
+   "installation des médecins",
+   "déserts médicaux",
+   "accès aux soins"
+  ],
+  "publics": [
+   "médecins",
+   "patients"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44511",
+  "titre": "Interdire progressivement les nitrites dans la charcuterie",
+  "sujet": "Consommation et alimentation",
+  "enjeux": [
+   "nitrites dans la charcuterie",
+   "additifs alimentaires",
+   "santé publique"
+  ],
+  "publics": [
+   "consommateurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44687",
+  "titre": "Réfléchir à un mode de scrutin plus représentatif aux législatives",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "mode de scrutin législatif",
+   "représentativité des élus"
+  ],
+  "publics": [
+   "électeurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44686",
+  "titre": "Créer un conseiller territorial pour les régions et départements",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "conseiller territorial",
+   "organisation territoriale",
+   "modes de scrutin locaux"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N44688",
+  "titre": "Développer la participation citoyenne",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "participation citoyenne",
+   "décisions publiques"
+  ],
+  "publics": [
+   "citoyens"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44507",
+  "titre": "Instruments nécessaires pour lutter contre la pollution plastique",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "pollution plastique",
+   "traité international",
+   "environnement"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N44558",
+  "titre": "Lutte contre l’exclusion financière et plafonnement des frais bancaires",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "exclusion bancaire",
+   "frais bancaires",
+   "plafonnement des frais"
+  ],
+  "publics": [
+   "clients des banques",
+   "personnes en précarité"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N44666",
+  "titre": "Accorder l’asile politique à Julian Assange et faciliter l’accès au statut de réfugié pour les lanceurs d’alerte étrangers",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "asile politique",
+   "lanceurs d'alerte",
+   "liberté de la presse"
+  ],
+  "publics": [
+   "lanceurs d'alerte",
+   "réfugiés"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N40429",
+  "titre": "Respect éthique du don d'organes par partenaires non européens",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "don d'organes",
+   "éthique médicale",
+   "coopération internationale"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N45942",
+  "titre": "Prendre des mesures d'urgence pour le pouvoir d'achat",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "pouvoir d'achat",
+   "prime de partage de la valeur",
+   "revalorisation des prestations"
+  ],
+  "publics": [
+   "salariés",
+   "retraités"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N45943",
+  "titre": "Loi de finances rectificative pour 2022",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "budget de l'État rectificatif",
+   "pouvoir d'achat",
+   "prix de l'énergie"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N46116",
+  "titre": "Encadrer les plastiques à usage unique et les composés perfluorés",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "plastiques à usage unique",
+   "composés perfluorés",
+   "emballages alimentaires"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L15N43849",
+  "titre": "Limiter les clôtures qui bloquent la faune sauvage",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "clôtures en espaces naturels",
+   "faune sauvage",
+   "biodiversité"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N46185",
+  "titre": "Alléger l'impôt sur les pensions alimentaires reçues",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "pensions alimentaires",
+   "fiscalité des familles",
+   "impôt sur le revenu"
+  ],
+  "publics": [
+   "parents séparés",
+   "enfants"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46266",
+  "titre": "Mesures d’urgence relatives au fonctionnement du marché du travail en vue du plein emploi",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "plein emploi",
+   "marché du travail",
+   "assurance chômage"
+  ],
+  "publics": [
+   "demandeurs d'emploi"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46346",
+  "titre": "Programmation des finances publiques pour les années 2023 à 2027",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "finances publiques",
+   "programmation pluriannuelle",
+   "dette publique"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N46617",
+  "titre": "Ajuster le budget de l'État pour 2022",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "budget de l'État rectificatif",
+   "ouverture et annulation de crédits"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N46412",
+  "titre": "Inscrire l'IVG et la contraception dans la Constitution",
+  "sujet": "Santé",
+  "enjeux": [
+   "accès à l'IVG",
+   "contraception",
+   "Constitution"
+  ],
+  "publics": [
+   "femmes"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46580",
+  "titre": "Soutenir l’Ukraine et condamner la guerre menée par la Russie",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "guerre en Ukraine",
+   "soutien à l'Ukraine",
+   "relations avec la Russie"
+  ],
+  "publics": [
+   "Ukrainiens"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46472",
+  "titre": "Calculer la retraite agricole sur les 25 meilleures années",
+  "sujet": "Retraites",
+  "enjeux": [
+   "retraites agricoles",
+   "calcul de la pension",
+   "25 meilleures années"
+  ],
+  "publics": [
+   "retraités agricoles"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46471",
+  "titre": "Créer une cour spéciale pour les recours contre les expulsions",
+  "sujet": "Immigration",
+  "enjeux": [
+   "expulsion d'étrangers",
+   "juridiction spéciale",
+   "immigration"
+  ],
+  "publics": [
+   "étrangers"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46466",
+  "titre": "Créer un tribunal spécialisé dans les violences familiales",
+  "sujet": "Justice",
+  "enjeux": [
+   "violences intrafamiliales",
+   "tribunal spécialisé",
+   "organisation de la justice"
+  ],
+  "publics": [
+   "victimes de violences familiales"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46269",
+  "titre": "Programmer le budget et les moyens du ministère de l'Intérieur",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "programmation du ministère de l'Intérieur",
+   "moyens de la police",
+   "sécurité intérieure"
+  ],
+  "publics": [
+   "policiers",
+   "gendarmes"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46539",
+  "titre": "Accélérer l'installation d'énergies renouvelables",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "énergies renouvelables",
+   "zones d'accélération",
+   "implantation d'éoliennes et de panneaux solaires"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N46760",
+  "titre": "Exonérer de cotisations les hausses de salaire de 10 %",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "salaires",
+   "exonération de cotisations",
+   "pouvoir d'achat"
+  ],
+  "publics": [
+   "salariés"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46275",
+  "titre": "Supprimer les zones à faibles émissions",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "zones à faibles émissions",
+   "pollution de l'air",
+   "circulation automobile"
+  ],
+  "publics": [
+   "automobilistes"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46778",
+  "titre": "Autoriser les parlementaires à visiter les établissements sociaux et médico-sociaux",
+  "sujet": "Société et mémoire",
+  "enjeux": [
+   "visite des établissements sociaux et médico-sociaux",
+   "contrôle parlementaire",
+   "maltraitance"
+  ],
+  "publics": [
+   "résidents d'établissements"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46249",
+  "titre": "Imposer l'uniforme dans les écoles et collèges publics",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "uniforme scolaire",
+   "règles de vie à l'école"
+  ],
+  "publics": [
+   "élèves"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46900",
+  "titre": "Créer une commission d'enquête sur la vie chère en outre-mer",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "vie chère en outre-mer",
+   "prix des produits",
+   "commission d'enquête"
+  ],
+  "publics": [
+   "habitants d'outre-mer"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46858",
+  "titre": "Plafonner à 1 euro le repas des restaurants universitaires",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "restauration universitaire",
+   "prix des repas étudiants",
+   "précarité étudiante"
+  ],
+  "publics": [
+   "étudiants"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46864",
+  "titre": "Suspendre l'autorité parentale d'un parent poursuivi pour violences",
+  "sujet": "Enfance et famille",
+  "enjeux": [
+   "autorité parentale",
+   "violences familiales",
+   "protection de l'enfant"
+  ],
+  "publics": [
+   "enfants",
+   "parents"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46890",
+  "titre": "Prolonger l'ordonnance de protection à 12 mois",
+  "sujet": "Justice",
+  "enjeux": [
+   "ordonnance de protection",
+   "violences conjugales",
+   "violences intrafamiliales"
+  ],
+  "publics": [
+   "victimes de violences conjugales",
+   "femmes"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N47035",
+  "titre": "Limiter les réseaux sociaux avant 15 ans",
+  "sujet": "Enfance et famille",
+  "enjeux": [
+   "réseaux sociaux",
+   "protection des mineurs en ligne",
+   "majorité numérique"
+  ],
+  "publics": [
+   "enfants",
+   "parents"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N47037",
+  "titre": "Protéger les parents d'un enfant gravement malade",
+  "sujet": "Enfance et famille",
+  "enjeux": [
+   "maladie grave d'un enfant",
+   "protection de l'emploi des parents",
+   "congés parentaux"
+  ],
+  "publics": [
+   "parents",
+   "enfants"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46918",
+  "titre": "Adapter les règles pour les Jeux de Paris 2024",
+  "sujet": "Culture et sport",
+  "enjeux": [
+   "Jeux olympiques de Paris 2024",
+   "accueil des athlètes",
+   "sécurité des Jeux"
+  ],
+  "publics": [
+   "sportifs"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46484",
+  "titre": "Renforcer les sanctions contre l'occupation illicite de logements",
+  "sujet": "Logement",
+  "enjeux": [
+   "occupation illicite de logements",
+   "violation de domicile",
+   "expulsion"
+  ],
+  "publics": [
+   "propriétaires"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N47217",
+  "titre": "Mieux indemniser les dégâts causés par l'argile",
+  "sujet": "Logement",
+  "enjeux": [
+   "sécheresse et argile",
+   "indemnisation des sinistrés",
+   "catastrophes naturelles"
+  ],
+  "publics": [
+   "propriétaires",
+   "sinistrés"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N47218",
+  "titre": "Verser une prime alimentation, encadrer cantines et charcuterie",
+  "sujet": "Consommation et alimentation",
+  "enjeux": [
+   "prime alimentation",
+   "cantines scolaires",
+   "charcuterie et additifs"
+  ],
+  "publics": [
+   "ménages modestes"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N47549",
+  "titre": "Condamner la politique d'Israël et réaffirmer deux États",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "conflit israélo-palestinien",
+   "solution à deux États",
+   "politique d'Israël"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N47411",
+  "titre": "Mettre fin à l'obligation de vaccination covid des soignants",
+  "sujet": "Santé",
+  "enjeux": [
+   "vaccination des soignants contre le covid-19",
+   "obligation vaccinale"
+  ],
+  "publics": [
+   "soignants"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46622",
+  "titre": "Accélérer la construction de nouveaux réacteurs nucléaires",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "nouveaux réacteurs nucléaires",
+   "procédures de construction nucléaire",
+   "production d'électricité"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N47006",
+  "titre": "Renforcer la prévention des incendies de forêt",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "incendies de forêt",
+   "prévention des feux",
+   "protection des forêts"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N47975",
+  "titre": "Prolonger le plafonnement des hausses de loyers jusqu'en 2024",
+  "sujet": "Logement",
+  "enjeux": [
+   "plafonnement des loyers",
+   "hausse des loyers",
+   "indice de référence des loyers"
+  ],
+  "publics": [
+   "locataires"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N47509",
+  "titre": "Fixer le budget et les effectifs des armées jusqu'en 2030",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "programmation militaire",
+   "budget de la défense",
+   "effectifs des armées"
+  ],
+  "publics": [
+   "militaires"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N47622",
+  "titre": "Aider les actifs à voyager entre l'Outre-mer et l'Hexagone",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "billets d'avion outre-mer",
+   "continuité territoriale",
+   "aides au transport"
+  ],
+  "publics": [
+   "actifs d'outre-mer"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N47571",
+  "titre": "Renforcer les pouvoirs de contrôle de la douane",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "pouvoirs de la douane",
+   "contrôle douanier",
+   "lutte contre les trafics"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N46880",
+  "titre": "Assouplir les règles du « zéro artificialisation nette »",
+  "sujet": "Logement",
+  "enjeux": [
+   "zéro artificialisation nette",
+   "urbanisme",
+   "consommation d'espaces"
+  ],
+  "publics": [
+   "communes"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N47779",
+  "titre": "Programmer le budget et les effectifs de la justice 2023-2027",
+  "sujet": "Justice",
+  "enjeux": [
+   "moyens de la justice",
+   "programmation budgétaire de la justice",
+   "effectifs de la justice"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N47780",
+  "titre": "Modifier le recrutement et le statut des magistrats",
+  "sujet": "Justice",
+  "enjeux": [
+   "statut des magistrats",
+   "recrutement des magistrats",
+   "organisation de la justice"
+  ],
+  "publics": [
+   "magistrats"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N48392",
+  "titre": "Accélérer la reconstruction après les violences urbaines de 2023",
+  "sujet": "Logement",
+  "enjeux": [
+   "reconstruction après les émeutes",
+   "violences urbaines de 2023",
+   "ordonnances"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N47917",
+  "titre": "Accélérer l'implantation d'usines pour l'industrie verte",
+  "sujet": "Entreprises et économie",
+  "enjeux": [
+   "industrie verte",
+   "implantation d'usines",
+   "transition écologique"
+  ],
+  "publics": [
+   "entreprises"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N48163",
+  "titre": "Réorganiser l'accompagnement des chômeurs et des allocataires du RSA",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "accompagnement des chômeurs",
+   "RSA",
+   "France Travail"
+  ],
+  "publics": [
+   "demandeurs d'emploi",
+   "allocataires du RSA"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N47051",
+  "titre": "Interdire l'écriture inclusive à l'école et dans les actes officiels",
+  "sujet": "Culture et sport",
+  "enjeux": [
+   "écriture inclusive",
+   "langue française",
+   "actes officiels"
+  ],
+  "publics": [
+   "élèves"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N47884",
+  "titre": "Vérifier l’âge sur les sites pornographiques et encadrer le numérique",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "vérification de l'âge",
+   "sites pornographiques",
+   "protection des mineurs en ligne"
+  ],
+  "publics": [
+   "enfants"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46868",
+  "titre": "Créer une politique de prévention de la perte d'autonomie",
+  "sujet": "Sécurité sociale",
+  "enjeux": [
+   "perte d'autonomie",
+   "prévention du vieillissement",
+   "maltraitance des personnes âgées"
+  ],
+  "publics": [
+   "personnes âgées"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N48718",
+  "titre": "Créer une commission d'enquête sur les risques naturels en Outre-mer",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "risques naturels en outre-mer",
+   "gestion des catastrophes"
+  ],
+  "publics": [
+   "habitants d'outre-mer"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N48755",
+  "titre": "Instaurer un moratoire sur le déploiement des méga-bassines",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "méga-bassines",
+   "stockage de l'eau",
+   "gestion de l'eau agricole"
+  ],
+  "publics": [
+   "agriculteurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N48763",
+  "titre": "Réouverture des accueils physiques dans les services publics",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "accueil physique dans les services publics",
+   "accès aux services publics"
+  ],
+  "publics": [
+   "usagers des services publics"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N48766",
+  "titre": "Lutter contre l’inflation par l’encadrement des marges des industries agroalimentaires, du raffinage et de la grande distribution et établissant un prix d’achat plancher des matières premières agricoles",
+  "sujet": "Consommation et alimentation",
+  "enjeux": [
+   "inflation",
+   "marges de la grande distribution",
+   "prix d'achat des produits agricoles"
+  ],
+  "publics": [
+   "consommateurs",
+   "agriculteurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N48140",
+  "titre": "Appeler à mettre fin à l'accord franco-algérien de 1968",
+  "sujet": "Immigration",
+  "enjeux": [
+   "accord franco-algérien de 1968",
+   "immigration algérienne",
+   "titres de séjour"
+  ],
+  "publics": [
+   "ressortissants algériens"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N48758",
+  "titre": "Former plus de médecins selon les besoins des territoires",
+  "sujet": "Santé",
+  "enjeux": [
+   "formation des médecins",
+   "études de médecine",
+   "besoins de santé locaux"
+  ],
+  "publics": [
+   "étudiants en médecine"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N48777",
+  "titre": "Demander de rendre effectifs les soins palliatifs partout",
+  "sujet": "Santé",
+  "enjeux": [
+   "soins palliatifs",
+   "fin de vie",
+   "accès aux soins"
+  ],
+  "publics": [
+   "malades en fin de vie"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N47118",
+  "titre": "Projet de loi pour contrôler l’immigration, améliorer l’intégration",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "contrôle de l'immigration",
+   "intégration des étrangers",
+   "titres de séjour"
+  ],
+  "publics": [
+   "étrangers"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49175",
+  "titre": "Demander au gouvernement des mesures pour faciliter l'accès au logement",
+  "sujet": "Logement",
+  "enjeux": [
+   "accès au logement",
+   "logement social",
+   "encadrement des loyers"
+  ],
+  "publics": [
+   "locataires"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N47695",
+  "titre": "Transférer la commission d'évaluation de l'aide au développement",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "évaluation de l'aide publique au développement",
+   "solidarité internationale"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N49033",
+  "titre": "Pérenniser le CDI en temps partagé pour l'employabilité",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "CDI en temps partagé",
+   "employabilité",
+   "contrats de travail"
+  ],
+  "publics": [
+   "salariés"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49023",
+  "titre": "Protéger un ex-conjoint des dettes fiscales du couple",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "dettes fiscales du couple",
+   "séparation",
+   "protection de l'ex-conjoint"
+  ],
+  "publics": [
+   "ex-conjoints"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49095",
+  "titre": "Inscrire la liberté de recourir à l'IVG dans la Constitution",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "accès à l'IVG",
+   "Constitution"
+  ],
+  "publics": [
+   "femmes"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46921",
+  "titre": "Nationaliser EDF",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "nationalisation d'EDF",
+   "service public de l'énergie",
+   "prix de l'électricité"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N47026",
+  "titre": "Contrôler l'honorabilité des encadrants sportifs auprès des mineurs",
+  "sujet": "Culture et sport",
+  "enjeux": [
+   "honorabilité des encadrants sportifs",
+   "protection des mineurs",
+   "violences sexuelles dans le sport"
+  ],
+  "publics": [
+   "enfants",
+   "sportifs mineurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49258",
+  "titre": "Encadrer les frais bancaires après un décès",
+  "sujet": "Consommation et alimentation",
+  "enjeux": [
+   "frais bancaires après décès",
+   "succession",
+   "protection des consommateurs"
+  ],
+  "publics": [
+   "familles endeuillées"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49261",
+  "titre": "Renforcer la lutte contre les pénuries de médicaments",
+  "sujet": "Santé",
+  "enjeux": [
+   "pénuries de médicaments",
+   "stocks de sécurité",
+   "industrie pharmaceutique"
+  ],
+  "publics": [
+   "patients"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49263",
+  "titre": "Reconnaître la responsabilité de l'État pour le chlordécone",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "chlordécone",
+   "responsabilité de l'État",
+   "pollution aux pesticides"
+  ],
+  "publics": [
+   "habitants des Antilles"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46127",
+  "titre": "Reconnaître la responsabilité de l'État pour condamnations d'homosexualité",
+  "sujet": "Société et mémoire",
+  "enjeux": [
+   "condamnations pour homosexualité",
+   "reconnaissance par l'État",
+   "mémoire"
+  ],
+  "publics": [
+   "personnes homosexuelles"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49363",
+  "titre": "Garantir le versement des pensions alimentaires aux enfants majeurs",
+  "sujet": "Enfance et famille",
+  "enjeux": [
+   "pensions alimentaires",
+   "intermédiation financière",
+   "enfants majeurs"
+  ],
+  "publics": [
+   "parents séparés",
+   "enfants majeurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49299",
+  "titre": "Renforcer la protection des soignants contre les violences",
+  "sujet": "Santé",
+  "enjeux": [
+   "violences contre les soignants",
+   "sanctions pénales",
+   "sécurité à l'hôpital"
+  ],
+  "publics": [
+   "soignants"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49457",
+  "titre": "Garantir un prix minimal aux agriculteurs et financer l'agroécologie",
+  "sujet": "Agriculture",
+  "enjeux": [
+   "prix minimal agricole",
+   "agroécologie",
+   "revenus agricoles"
+  ],
+  "publics": [
+   "agriculteurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49124",
+  "titre": "Fusionner l'autorité de sûreté nucléaire et l'institut de radioprotection",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "sûreté nucléaire",
+   "radioprotection",
+   "fusion d'autorités"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N49123",
+  "titre": "Modifier la liste des postes nommés avec avis du Parlement",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "nominations soumises à l'avis du Parlement",
+   "radioprotection",
+   "contrôle parlementaire"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N49373",
+  "titre": "Restreindre le corps électoral en Nouvelle-Calédonie",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "corps électoral en Nouvelle-Calédonie",
+   "révision constitutionnelle",
+   "statut de la Nouvelle-Calédonie"
+  ],
+  "publics": [
+   "électeurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49923",
+  "titre": "Poursuivre la ratification de l'accord de commerce UE-Canada (CETA)",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "ratification du CETA",
+   "accords de libre-échange",
+   "commerce avec le Canada"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N49004",
+  "titre": "Mieux préparer villes côtières et îles au changement climatique",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "adaptation au changement climatique",
+   "villes côtières",
+   "îles"
+  ],
+  "publics": [
+   "habitants du littoral"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49799",
+  "titre": "Enseigner les langues régionales dans les écoles d'outre-mer",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "langues régionales en outre-mer",
+   "enseignement des langues régionales"
+  ],
+  "publics": [
+   "élèves d'outre-mer"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49740",
+  "titre": "Enquêter sur l'indécence du logement social en outre-mer",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "logement social en outre-mer",
+   "logements indignes",
+   "commission d'enquête"
+  ],
+  "publics": [
+   "habitants d'outre-mer"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49801",
+  "titre": "Rembourser intégralement les soins du cancer du sein",
+  "sujet": "Sécurité sociale",
+  "enjeux": [
+   "cancer du sein",
+   "remboursement des soins",
+   "Assurance maladie"
+  ],
+  "publics": [
+   "femmes",
+   "patientes"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N50453",
+  "titre": "Revenir à la retraite à 62 ans",
+  "sujet": "Retraites",
+  "enjeux": [
+   "âge de départ à la retraite",
+   "réforme des retraites de 2023",
+   "durée de cotisation"
+  ],
+  "publics": [
+   "actifs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N50434",
+  "titre": "Réduire les contraintes énergétiques pesant sur l’offre locative et juguler leurs effets sur la crise du logement",
+  "sujet": "Logement",
+  "enjeux": [
+   "performance énergétique des logements",
+   "offre locative",
+   "crise du logement"
+  ],
+  "publics": [
+   "propriétaires bailleurs",
+   "locataires"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N50198",
+  "titre": "Voter le budget de l'État pour 2025",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "budget de l'État",
+   "mesures fiscales"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N51079",
+  "titre": "Continuer à percevoir les impôts sans budget 2025",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "loi spéciale",
+   "continuité de la perception des impôts",
+   "budget de l'État"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N50779",
+  "titre": "Réguler les prix et la concentration en outre-mer",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "prix en outre-mer",
+   "vie chère",
+   "concentration de la distribution"
+  ],
+  "publics": [
+   "habitants d'outre-mer",
+   "consommateurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N50778",
+  "titre": "Ouvrir le repas à 1 euro à tous les étudiants",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "repas universitaire à 1 euro",
+   "précarité étudiante",
+   "Crous"
+  ],
+  "publics": [
+   "étudiants"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N50777",
+  "titre": "Obliger à réparer vite les ascenseurs en panne",
+  "sujet": "Logement",
+  "enjeux": [
+   "ascenseurs en panne",
+   "entretien des immeubles",
+   "réparation des ascenseurs"
+  ],
+  "publics": [
+   "locataires",
+   "personnes handicapées"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N46650",
+  "titre": "Fixer un nombre minimum de soignants par patient hospitalisé",
+  "sujet": "Santé",
+  "enjeux": [
+   "nombre de soignants par patient",
+   "personnel hospitalier",
+   "hôpital public"
+  ],
+  "publics": [
+   "soignants",
+   "patients"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N50775",
+  "titre": "Encadrer les crèches privées à but lucratif",
+  "sujet": "Enfance et famille",
+  "enjeux": [
+   "crèches privées",
+   "accueil de la petite enfance",
+   "fonds d'investissement"
+  ],
+  "publics": [
+   "enfants",
+   "parents"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51222",
+  "titre": "Aider Mayotte à se reconstruire après le cyclone Chido",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "reconstruction de Mayotte",
+   "cyclone Chido",
+   "urbanisme d'urgence"
+  ],
+  "publics": [
+   "habitants de Mayotte"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49726",
+  "titre": "Fixer les objectifs de la politique agricole",
+  "sujet": "Agriculture",
+  "enjeux": [
+   "orientation agricole",
+   "souveraineté alimentaire",
+   "renouvellement des générations agricoles"
+  ],
+  "publics": [
+   "agriculteurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49455",
+  "titre": "Interdire les « polluants éternels » dans les produits du quotidien",
+  "sujet": "Santé",
+  "enjeux": [
+   "PFAS",
+   "polluants éternels",
+   "produits du quotidien"
+  ],
+  "publics": [
+   "consommateurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51215",
+  "titre": "Faire payer au moins 2 % par an aux plus grandes fortunes",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "taxation des grandes fortunes",
+   "impôt minimum",
+   "justice fiscale"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N51563",
+  "titre": "Exiger l'accord préalable pour le démarchage téléphonique",
+  "sujet": "Consommation et alimentation",
+  "enjeux": [
+   "démarchage téléphonique",
+   "consentement du consommateur",
+   "protection des consommateurs"
+  ],
+  "publics": [
+   "consommateurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49472",
+  "titre": "Lutter contre le frelon asiatique à pattes jaunes",
+  "sujet": "Agriculture",
+  "enjeux": [
+   "frelon asiatique",
+   "plan de lutte",
+   "apiculture"
+  ],
+  "publics": [
+   "apiculteurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51328",
+  "titre": "Sanctionner les vignes laissées à l'abandon",
+  "sujet": "Agriculture",
+  "enjeux": [
+   "vignes abandonnées",
+   "maladies de la vigne",
+   "viticulture"
+  ],
+  "publics": [
+   "viticulteurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51467",
+  "titre": "Condamner la guerre en Ukraine et la soutenir",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "guerre en Ukraine",
+   "soutien à l'Ukraine",
+   "relations avec la Russie"
+  ],
+  "publics": [
+   "Ukrainiens"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49176",
+  "titre": "Renforcer la sûreté dans les transports",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "sûreté dans les transports",
+   "agents de sécurité SNCF et RATP",
+   "fouilles de bagages"
+  ],
+  "publics": [
+   "usagers des transports"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51518",
+  "titre": "Valoriser l'engagement dans la réserve communale de sécurité civile",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "réserve communale de sécurité civile",
+   "engagement bénévole",
+   "protection civile"
+  ],
+  "publics": [
+   "réservistes",
+   "employeurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N50631",
+  "titre": "Moins d'aménagements pour les courtes peines de prison",
+  "sujet": "Justice",
+  "enjeux": [
+   "courtes peines de prison",
+   "aménagement des peines",
+   "exécution des peines"
+  ],
+  "publics": [
+   "condamnés"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51014",
+  "titre": "Augmenter le nombre d'orthophonistes formés",
+  "sujet": "Santé",
+  "enjeux": [
+   "formation des orthophonistes",
+   "accès aux soins",
+   "professions de santé"
+  ],
+  "publics": [
+   "orthophonistes",
+   "patients"
+  ]
+ },
+ {
+  "dossier": "DLR5L15N43846",
+  "titre": "Étendre la parité aux petites communes",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "parité",
+   "élections municipales",
+   "mode de scrutin communal"
+  ],
+  "publics": [
+   "femmes",
+   "candidats"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N50579",
+  "titre": "Adapter le code électoral à un même scrutin municipal",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "élections municipales",
+   "code électoral",
+   "mode de scrutin communal"
+  ],
+  "publics": [
+   "candidats"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51039",
+  "titre": "Durcir l'accès à la nationalité française à Mayotte",
+  "sujet": "Immigration",
+  "enjeux": [
+   "nationalité française à Mayotte",
+   "droit du sol",
+   "immigration"
+  ],
+  "publics": [
+   "enfants nés de parents étrangers"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51504",
+  "titre": "Prolonger le prix minimum de revente des aliments",
+  "sujet": "Agriculture",
+  "enjeux": [
+   "prix minimum de revente des aliments",
+   "relations commerciales agricoles",
+   "grande distribution"
+  ],
+  "publics": [
+   "agriculteurs",
+   "consommateurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N50169",
+  "titre": "Lutter contre le narcotrafic",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "narcotrafic",
+   "criminalité organisée",
+   "procureur national"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N51078",
+  "titre": "Aligner le statut du procureur anti-criminalité organisée",
+  "sujet": "Justice",
+  "enjeux": [
+   "procureur anti-criminalité organisée",
+   "statut des magistrats"
+  ],
+  "publics": [
+   "magistrats"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N50690",
+  "titre": "Durcir les sanctions des mineurs délinquants et parents",
+  "sujet": "Justice",
+  "enjeux": [
+   "délinquance des mineurs",
+   "sanctions des parents",
+   "justice des mineurs"
+  ],
+  "publics": [
+   "mineurs",
+   "parents"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51849",
+  "titre": "Lutter contre la mort des bébés",
+  "sujet": "Santé",
+  "enjeux": [
+   "mort inattendue du nourrisson",
+   "registre des naissances",
+   "santé des nourrissons"
+  ],
+  "publics": [
+   "nourrissons",
+   "parents"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51852",
+  "titre": "Construire des logements plus facilement",
+  "sujet": "Logement",
+  "enjeux": [
+   "permis de construire",
+   "plans d'urbanisme",
+   "construction de logements"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N50413",
+  "titre": "Créer une croix de la valeur des sapeurs-pompiers",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "décoration des sapeurs-pompiers",
+   "reconnaissance de l'engagement"
+  ],
+  "publics": [
+   "sapeurs-pompiers"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N50627",
+  "titre": "Punir aussi les contacts avec un faux mineur",
+  "sujet": "Justice",
+  "enjeux": [
+   "infractions sexuelles contre mineurs",
+   "faux mineurs en ligne",
+   "protection des mineurs en ligne"
+  ],
+  "publics": [
+   "enfants"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51999",
+  "titre": "Demander l'abrogation de la réforme des retraites de 2023",
+  "sujet": "Retraites",
+  "enjeux": [
+   "abrogation de la réforme des retraites",
+   "âge de départ à la retraite"
+  ],
+  "publics": [
+   "actifs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51979",
+  "titre": "Verser les allocations familiales dès le premier enfant",
+  "sujet": "Enfance et famille",
+  "enjeux": [
+   "allocations familiales",
+   "politique familiale",
+   "premier enfant"
+  ],
+  "publics": [
+   "familles"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51115",
+  "titre": "Expérimenter l'encadrement des loyers en outre-mer",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "encadrement des loyers en outre-mer",
+   "loyers",
+   "logement"
+  ],
+  "publics": [
+   "locataires"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51619",
+  "titre": "Enquêter sur l'accès à la justice outre-mer",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "accès à la justice en outre-mer",
+   "commission d'enquête"
+  ],
+  "publics": [
+   "habitants d'outre-mer"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51900",
+  "titre": "Reconnaître la « double dette » imposée à Haïti",
+  "sujet": "Société et mémoire",
+  "enjeux": [
+   "dette d'Haïti",
+   "mémoire de l'esclavage",
+   "reconnaissance historique"
+  ],
+  "publics": [
+   "Haïtiens"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51362",
+  "titre": "Ratifier un accord sur l'immersion de déchets en mer",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "immersion de déchets en mer",
+   "pollution marine",
+   "traité international"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L16N49849",
+  "titre": "Fixer de nouveaux objectifs pour l'énergie en France",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "objectifs énergétiques",
+   "nucléaire",
+   "énergies renouvelables"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N52087",
+  "titre": "Protéger l’effectivité du droit fondamental d’éligibilité",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "droit d'éligibilité",
+   "inéligibilité",
+   "droit électoral"
+  ],
+  "publics": [
+   "candidats"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N50724",
+  "titre": "Former et signaler les actes antisémites à l'université",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "antisémitisme",
+   "enseignement supérieur",
+   "formation et signalement"
+  ],
+  "publics": [
+   "étudiants"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N50819",
+  "titre": "Alléger les règles pesticides pour les agriculteurs",
+  "sujet": "Agriculture",
+  "enjeux": [
+   "pesticides",
+   "règles phytosanitaires",
+   "pulvérisation par drone"
+  ],
+  "publics": [
+   "agriculteurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51429",
+  "titre": "Allonger la rétention des étrangers condamnés pour des faits graves",
+  "sujet": "Immigration",
+  "enjeux": [
+   "rétention des étrangers condamnés",
+   "expulsion d'étrangers",
+   "immigration"
+  ],
+  "publics": [
+   "étrangers"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51985",
+  "titre": "Refonder Mayotte : programme de l'État et immigration",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "programme pour Mayotte",
+   "conditions de séjour",
+   "immigration à Mayotte"
+  ],
+  "publics": [
+   "habitants de Mayotte",
+   "étrangers"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51984",
+  "titre": "Créer le Département-Région de Mayotte",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "Département-Région de Mayotte",
+   "organisation territoriale",
+   "code électoral"
+  ],
+  "publics": [
+   "habitants de Mayotte"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N52655",
+  "titre": "Reporter le renouvellement général des membres du congrès et des assemblées de province de la Nouvelle-Calédonie pour permettre la mise en oeuvre de l'accord du 12 juillet 2025",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "report des élections en Nouvelle-Calédonie",
+   "accord du 12 juillet 2025",
+   "statut de la Nouvelle-Calédonie"
+  ],
+  "publics": [
+   "électeurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N52719",
+  "titre": "Demander de dénoncer les accords franco-algériens de 1968",
+  "sujet": "Immigration",
+  "enjeux": [
+   "accords franco-algériens de 1968",
+   "immigration algérienne",
+   "titres de séjour"
+  ],
+  "publics": [
+   "ressortissants algériens"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N52801",
+  "titre": "Une amende pour les étrangers sans papiers",
+  "sujet": "Immigration",
+  "enjeux": [
+   "séjour irrégulier",
+   "amende pour les étrangers sans papiers",
+   "immigration"
+  ],
+  "publics": [
+   "étrangers sans papiers"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N52787",
+  "titre": "Afficher le pays d'origine de tous les aliments",
+  "sujet": "Consommation et alimentation",
+  "enjeux": [
+   "étiquetage de l'origine des aliments",
+   "information des consommateurs"
+  ],
+  "publics": [
+   "consommateurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N52428",
+  "titre": "Voter le budget de l'État pour 2026",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "budget de l'État",
+   "dotations aux collectivités",
+   "mesures fiscales"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N53073",
+  "titre": "Demander de s'opposer à l'accord UE-Mercosur",
+  "sujet": "Agriculture",
+  "enjeux": [
+   "accord UE-Mercosur",
+   "commerce international",
+   "importations agricoles"
+  ],
+  "publics": [
+   "agriculteurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N52976",
+  "titre": "Le même prix du timbre en outre-mer qu'en métropole",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "prix du timbre",
+   "service postal",
+   "outre-mer"
+  ],
+  "publics": [
+   "habitants d'outre-mer"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53135",
+  "titre": "Ajuster le budget de l'État pour 2025 en fin d'année",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "budget de l'État rectificatif",
+   "ouverture et annulation de crédits"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N51457",
+  "titre": "Mieux protéger la santé des agents territoriaux",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "couverture santé et prévoyance",
+   "agents territoriaux",
+   "protection sociale des agents"
+  ],
+  "publics": [
+   "agents territoriaux"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N52781",
+  "titre": "Garantir un avocat à chaque enfant protégé",
+  "sujet": "Enfance et famille",
+  "enjeux": [
+   "avocat pour les enfants protégés",
+   "protection de l'enfance",
+   "aide juridictionnelle"
+  ],
+  "publics": [
+   "enfants"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53051",
+  "titre": "Protéger les mineurs isolés sans abri",
+  "sujet": "Enfance et famille",
+  "enjeux": [
+   "mineurs isolés",
+   "reconnaissance de minorité",
+   "hébergement d'urgence"
+  ],
+  "publics": [
+   "mineurs isolés"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53069",
+  "titre": "Rendre durable l'encadrement des loyers",
+  "sujet": "Logement",
+  "enjeux": [
+   "encadrement des loyers",
+   "hausse des loyers",
+   "logement"
+  ],
+  "publics": [
+   "locataires"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N52749",
+  "titre": "Renouveler automatiquement les titres de séjour de longue durée",
+  "sujet": "Immigration",
+  "enjeux": [
+   "renouvellement des titres de séjour",
+   "titres de séjour de longue durée",
+   "immigration"
+  ],
+  "publics": [
+   "étrangers"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53058",
+  "titre": "Baisser les prix des services en outre-mer",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "prix des billets d'avion",
+   "vie chère en outre-mer",
+   "continuité territoriale"
+  ],
+  "publics": [
+   "habitants d'outre-mer"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N52922",
+  "titre": "Fixer le budget de la Sécurité sociale pour 2026",
+  "sujet": "Sécurité sociale",
+  "enjeux": [
+   "finances de la Sécurité sociale"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N53386",
+  "titre": "Continuer à percevoir les impôts sans budget 2026",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "loi spéciale",
+   "continuité de la perception des impôts",
+   "budget de l'État"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N52132",
+  "titre": "Classer les Frères musulmans comme organisation terroriste",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "Frères musulmans",
+   "terrorisme",
+   "islamisme"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N53300",
+  "titre": "Demander de suspendre la création de nouvelles agences de l'État",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "agences de l'État",
+   "dépense publique",
+   "organisation administrative"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N52100",
+  "titre": "Organiser les Jeux olympiques d'hiver de 2030",
+  "sujet": "Culture et sport",
+  "enjeux": [
+   "Jeux olympiques d'hiver de 2030",
+   "organisation d'événements sportifs",
+   "marques olympiques"
+  ],
+  "publics": [
+   "sportifs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53427",
+  "titre": "Protéger les personnes menacées par le crime organisé",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "protection des témoins",
+   "crime organisé",
+   "identité d'emprunt"
+  ],
+  "publics": [
+   "personnes menacées"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51672",
+  "titre": "Renforcer les soins palliatifs et d'accompagnement",
+  "sujet": "Santé",
+  "enjeux": [
+   "soins palliatifs",
+   "accompagnement de fin de vie",
+   "droit opposable"
+  ],
+  "publics": [
+   "malades en fin de vie"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51346",
+  "titre": "Créer un statut unique pour les soignants des pompiers",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "statut des soignants des pompiers",
+   "sapeurs-pompiers",
+   "professions de santé"
+  ],
+  "publics": [
+   "sapeurs-pompiers"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51329",
+  "titre": "Faciliter la vente des biens en indivision",
+  "sujet": "Logement",
+  "enjeux": [
+   "biens en indivision",
+   "vente de biens immobiliers",
+   "succession"
+  ],
+  "publics": [
+   "héritiers"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51330",
+  "titre": "Faire respecter les droits voisins de la presse",
+  "sujet": "Culture et sport",
+  "enjeux": [
+   "droits voisins de la presse",
+   "plateformes en ligne",
+   "rémunération des éditeurs"
+  ],
+  "publics": [
+   "éditeurs de presse"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51175",
+  "titre": "Faciliter la prévention et la gestion des inondations",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "prévention des inondations",
+   "entretien des cours d'eau",
+   "gestion de l'eau"
+  ],
+  "publics": [
+   "riverains"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53672",
+  "titre": "Enseigner la défense nationale au collège et au lycée",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "enseignement de la défense nationale",
+   "éducation à la sécurité",
+   "lien armée-nation"
+  ],
+  "publics": [
+   "élèves"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53720",
+  "titre": "Mieux contrôler les agences et opérateurs de l'État",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "agences et opérateurs de l'État",
+   "hauts salaires",
+   "contrôle parlementaire"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N53717",
+  "titre": "Interdire les sucres ajoutés dans les aliments pour bébés",
+  "sujet": "Santé",
+  "enjeux": [
+   "sucres ajoutés",
+   "aliments pour bébés",
+   "santé publique"
+  ],
+  "publics": [
+   "nourrissons"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53715",
+  "titre": "Associer les appellations à l'urbanisme et sécuriser les horaires agricoles",
+  "sujet": "Agriculture",
+  "enjeux": [
+   "appellations d'origine",
+   "urbanisme",
+   "horaires agricoles"
+  ],
+  "publics": [
+   "agriculteurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51711",
+  "titre": "Punir plus durement l'organisation de rave-parties",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "rave-parties",
+   "rassemblements festifs non autorisés",
+   "sanctions pénales"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N53775",
+  "titre": "Encadrer les regroupements d'écoles rurales entre communes",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "regroupements d'écoles rurales",
+   "organisation scolaire",
+   "communes rurales"
+  ],
+  "publics": [
+   "élèves",
+   "communes"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53770",
+  "titre": "Simplifier les marchés publics pour les PME",
+  "sujet": "Entreprises et économie",
+  "enjeux": [
+   "marchés publics",
+   "accès des PME à la commande publique"
+  ],
+  "publics": [
+   "PME"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49868",
+  "titre": "Simplifier les démarches des entreprises",
+  "sujet": "Entreprises et économie",
+  "enjeux": [
+   "simplification pour les entreprises",
+   "allègement des règles",
+   "organismes consultatifs"
+  ],
+  "publics": [
+   "entreprises"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N52985",
+  "titre": "Renforcer la lutte contre les fraudes sociales et fiscales",
+  "sujet": "Impôts et budget",
+  "enjeux": [
+   "fraude sociale",
+   "fraude fiscale",
+   "échange d'informations entre administrations"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N52104",
+  "titre": "Permettre aux natifs de voter aux provinciales calédoniennes",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "élections provinciales en Nouvelle-Calédonie",
+   "corps électoral",
+   "électeurs natifs"
+  ],
+  "publics": [
+   "électeurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N52767",
+  "titre": "Abroger le Code noir",
+  "sujet": "Société et mémoire",
+  "enjeux": [
+   "Code noir",
+   "esclavage",
+   "mémoire"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N54144",
+  "titre": "Faciliter la remise sur le marché de logements anciens",
+  "sujet": "Logement",
+  "enjeux": [
+   "remise sur le marché de logements anciens",
+   "avantage fiscal du bailleur",
+   "location"
+  ],
+  "publics": [
+   "propriétaires bailleurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51791",
+  "titre": "Rendre durable le contrat de professionnalisation expérimental",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "contrat de professionnalisation",
+   "alternance",
+   "formation professionnelle"
+  ],
+  "publics": [
+   "salariés",
+   "jeunes"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53357",
+  "titre": "Aider toutes les communes pour la petite enfance",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "petite enfance",
+   "compensation financière aux communes",
+   "accueil des jeunes enfants"
+  ],
+  "publics": [
+   "communes"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53981",
+  "titre": "Appliquer l'avenant sur l'assurance chômage",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "assurance chômage",
+   "accord des partenaires sociaux"
+  ],
+  "publics": [
+   "demandeurs d'emploi"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N52977",
+  "titre": "Nationaliser ArcelorMittal France",
+  "sujet": "Travail et emploi",
+  "enjeux": [
+   "nationalisation d'ArcelorMittal",
+   "sidérurgie",
+   "emplois industriels"
+  ],
+  "publics": [
+   "salariés"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51981",
+  "titre": "Protéger le logement des retraités qui touchent le minimum vieillesse",
+  "sujet": "Retraites",
+  "enjeux": [
+   "minimum vieillesse",
+   "recouvrement sur succession",
+   "logement des retraités"
+  ],
+  "publics": [
+   "retraités modestes"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53304",
+  "titre": "Autoriser à nouveau la recherche d'hydrocarbures en outre-mer",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "hydrocarbures en outre-mer",
+   "recherche pétrolière",
+   "exploitation de gaz"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N54229",
+  "titre": "Indexer les bourses étudiantes et les verser sur douze mois",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "bourses étudiantes",
+   "aides aux étudiants",
+   "revalorisation annuelle"
+  ],
+  "publics": [
+   "étudiants"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53284",
+  "titre": "Renforcer la lutte contre le terrorisme et la rétention",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "lutte contre le terrorisme",
+   "examen psychiatrique",
+   "rétention de sûreté"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N51968",
+  "titre": "Faciliter le logement des agents des services publics",
+  "sujet": "Logement",
+  "enjeux": [
+   "logement des agents publics",
+   "logement social",
+   "attribution de logements"
+  ],
+  "publics": [
+   "agents publics"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53530",
+  "titre": "Passer l'hydroélectricité d'un régime de concession à un régime d'autorisation",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "hydroélectricité",
+   "concessions de barrages",
+   "régime d'autorisation"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N54218",
+  "titre": "Donner à la Corse un statut d'autonomie",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "autonomie de la Corse",
+   "révision constitutionnelle",
+   "organisation territoriale"
+  ],
+  "publics": [
+   "habitants de Corse"
+  ]
+ },
+ {
+  "dossier": "DLR5L16N49364",
+  "titre": "Encadrer la mode à renouvellement très rapide",
+  "sujet": "Environnement et énergie",
+  "enjeux": [
+   "mode à renouvellement rapide",
+   "pollution du textile",
+   "consommation responsable"
+  ],
+  "publics": [
+   "consommateurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N54083",
+  "titre": "Actualiser la programmation militaire 2024-2030",
+  "sujet": "Défense et international",
+  "enjeux": [
+   "programmation militaire",
+   "budget de la défense",
+   "effectifs des armées"
+  ],
+  "publics": [
+   "militaires"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51037",
+  "titre": "Présumer en légitime défense les policiers et gendarmes",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "légitime défense des policiers",
+   "usage des armes",
+   "forces de l'ordre"
+  ],
+  "publics": [
+   "policiers",
+   "gendarmes"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53940",
+  "titre": "Réformer la justice criminelle et l'accueil des victimes",
+  "sujet": "Justice",
+  "enjeux": [
+   "justice criminelle",
+   "cours criminelles",
+   "accueil des victimes"
+  ],
+  "publics": [
+   "victimes"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53942",
+  "titre": "Créer des assesseurs non magistrats dans les cours criminelles",
+  "sujet": "Justice",
+  "enjeux": [
+   "assesseurs non magistrats",
+   "cours criminelles",
+   "participation citoyenne à la justice"
+  ],
+  "publics": [
+   "citoyens",
+   "avocats"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51670",
+  "titre": "Autoriser l'aide à mourir sous conditions",
+  "sujet": "Santé",
+  "enjeux": [
+   "aide à mourir",
+   "fin de vie",
+   "maladie grave et incurable"
+  ],
+  "publics": [
+   "malades en fin de vie"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N54085",
+  "titre": "Protéger les agriculteurs français et leur souveraineté alimentaire",
+  "sujet": "Agriculture",
+  "enjeux": [
+   "souveraineté alimentaire",
+   "contrôle des denrées importées",
+   "projets agricoles"
+  ],
+  "publics": [
+   "agriculteurs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N51732",
+  "titre": "Réorganiser le sport professionnel",
+  "sujet": "Culture et sport",
+  "enjeux": [
+   "sport professionnel",
+   "fédérations et ligues",
+   "rémunération des dirigeants sportifs"
+  ],
+  "publics": [
+   "sportifs"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53426",
+  "titre": "Accélérer la prévention cardio-neuro-vasculaire et anticiper un risque sanitaire et social majeur",
+  "sujet": "Autres sujets",
+  "enjeux": [
+   "prévention cardio-neuro-vasculaire",
+   "santé publique",
+   "maladies chroniques"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N54006",
+  "titre": "Adapter les politiques publiques aux territoires de montagne",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "territoires de montagne",
+   "services publics",
+   "accès aux soins"
+  ],
+  "publics": [
+   "habitants de montagne"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53980",
+  "titre": "Durcir les règles sur explosifs, feux d'artifice et rave-parties",
+  "sujet": "Sécurité",
+  "enjeux": [
+   "explosifs et feux d'artifice",
+   "rave-parties",
+   "sécurité publique"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N54372",
+  "titre": "Réformer la protection de l'enfance",
+  "sujet": "Enfance et famille",
+  "enjeux": [
+   "protection de l'enfance",
+   "placement des enfants",
+   "accueil chez un proche"
+  ],
+  "publics": [
+   "enfants protégés"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N53187",
+  "titre": "Interdire les réseaux sociaux aux moins de 15 ans",
+  "sujet": "Enfance et famille",
+  "enjeux": [
+   "réseaux sociaux",
+   "protection des mineurs en ligne",
+   "couvre-feu numérique"
+  ],
+  "publics": [
+   "enfants",
+   "parents"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N52746",
+  "titre": "Créer un établissement public pour les biens immobiliers de l'État",
+  "sujet": "Institutions et État",
+  "enjeux": [
+   "immobilier de l'État",
+   "gestion des biens publics",
+   "établissement public"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N54844",
+  "titre": "Demander l'accès continu à l'eau potable en outre-mer",
+  "sujet": "Outre-mer",
+  "enjeux": [
+   "accès à l'eau potable en outre-mer",
+   "eau potable"
+  ],
+  "publics": [
+   "habitants d'outre-mer"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N54841",
+  "titre": "Privilégier les entreprises locales dans les marchés publics",
+  "sujet": "Entreprises et économie",
+  "enjeux": [
+   "marchés publics locaux",
+   "préférence locale",
+   "commande publique"
+  ],
+  "publics": [
+   "entreprises locales"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N54847",
+  "titre": "Demander une double frontière pour l'espace Schengen",
+  "sujet": "Immigration",
+  "enjeux": [
+   "espace Schengen",
+   "contrôle aux frontières",
+   "immigration"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N54916",
+  "titre": "Entrée au Panthéon de trois personnalités",
+  "sujet": "Société et mémoire",
+  "enjeux": [
+   "Panthéon",
+   "hommage national",
+   "mémoire"
+  ],
+  "publics": []
+ },
+ {
+  "dossier": "DLR5L17N54776",
+  "titre": "Agir contre les violences sexuelles et sexistes",
+  "sujet": "Justice",
+  "enjeux": [
+   "violences sexuelles",
+   "violences sexistes",
+   "protection des victimes"
+  ],
+  "publics": [
+   "femmes",
+   "enfants"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N54777",
+  "titre": "Former les juges aux violences sexuelles et familiales",
+  "sujet": "Justice",
+  "enjeux": [
+   "formation des magistrats",
+   "violences sexuelles",
+   "violences familiales"
+  ],
+  "publics": [
+   "magistrats",
+   "victimes"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N54901",
+  "titre": "Créer un corps de fonctionnaires pour les AESH",
+  "sujet": "Éducation et jeunesse",
+  "enjeux": [
+   "accompagnants d'élèves handicapés",
+   "statut des accompagnants",
+   "fonction publique"
+  ],
+  "publics": [
+   "élèves handicapés",
+   "accompagnants"
+  ]
+ },
+ {
+  "dossier": "DLR5L17N54898",
+  "titre": "Prendre en charge à 100 % les soins après des violences sexuelles",
+  "sujet": "Santé",
+  "enjeux": [
+   "soins après violences sexuelles",
+   "remboursement des soins",
+   "Assurance maladie"
+  ],
+  "publics": [
+   "victimes de violences sexuelles"
+  ]
+ }
+]
