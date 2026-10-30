@@ -129,6 +129,7 @@ def publier_legislature(leg, redaction, sigles):
                   "enClair": r.get("enClair"), "concerne": r.get("concerne"), "arguments": r.get("arguments"),
                   "niveau": r.get("niveau") or "a_venir",
                   "mesures": r.get("mesures") or [], "mesuresNiveau": r.get("mesuresNiveau"),
+                  "debat": r.get("debat"),
                   "inverse": t["inverse"], "loi": bool(t["suite"]["promulgation"]), "etape": etape(t)}
         if a["type"] == "depute":
             # Auteur élu sous une législature précédente : son groupe d'alors, rattaché à celui qui lui a succédé

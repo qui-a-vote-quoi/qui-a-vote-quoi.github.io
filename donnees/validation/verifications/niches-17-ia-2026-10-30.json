@@ -1,0 +1,207 @@
+{
+ "niches": [
+  {
+   "date": "2025-01-23",
+   "groupe_detecte": "SOC",
+   "verdict": "valide",
+   "groupe_reel": "SOC",
+   "preuve": "Le premier texte de la niche parlementaire du Parti socialiste a pour ambition de « prendre des mesures d’urgence contre la vie chère",
+   "cr": "CRSANR5L17S2025O1N079",
+   "ecarts_programme": [],
+   "note": "Programme conforme au compte rendu (5 adoptés, rénovation énergétique commencée à 21h30 puis levée à minuit)."
+  },
+  {
+   "date": "2025-02-06",
+   "groupe_detecte": "DR",
+   "verdict": "valide",
+   "groupe_reel": "DR",
+   "preuve": "cette journée est consacrée à la niche du groupe Droite républicaine",
+   "cr": "CRSANR5L17S2025O1N095",
+   "ecarts_programme": [],
+   "note": "Programme conforme (Mayotte adopté, logements sociaux commencé, levée à 23h15 le soir après dépôt d'une motion de censure l'après-midi)."
+  },
+  {
+   "date": "2025-03-06",
+   "groupe_detecte": "DEM",
+   "verdict": "valide",
+   "groupe_reel": "DEM",
+   "preuve": "inscrite par le groupe Les Démocrates à l’occasion de sa niche parlementaire",
+   "cr": "CRSANR5L17S2025O1N120",
+   "ecarts_programme": [],
+   "note": "Programme conforme (5 adoptés : démarchage, SDIS, frelon, vignes, indivision ; 4 non examinés)."
+  },
+  {
+   "date": "2025-06-05",
+   "groupe_detecte": "GDR",
+   "verdict": "valide",
+   "groupe_reel": "GDR",
+   "preuve": "Je remercie le groupe GDR et son rapporteur Frédéric Maillot pour l’inscription de ce texte à l’ordre du jour de leur niche parlementaire",
+   "cr": "CRSANR5L17S2025O1N227",
+   "ecarts_programme": [],
+   "note": "Programme conforme (retraites = proposition de résolution adoptée, Dutreil retiré, frais bancaires commencé, levée à minuit)."
+  },
+  {
+   "date": "2025-12-11",
+   "groupe_detecte": "SOC",
+   "verdict": "valide",
+   "groupe_reel": "SOC",
+   "preuve": "Si le groupe Socialistes et apparentés a fait le choix d’inscrire ce texte en tête de sa niche parlementaire",
+   "cr": "CRSANR5L17S2026O1N090",
+   "ecarts_programme": [],
+   "note": "Programme conforme (6 adoptés, innovation thérapeutique commencée, levée à minuit)."
+  },
+  {
+   "date": "2026-01-22",
+   "groupe_detecte": "DR",
+   "verdict": "valide",
+   "groupe_reel": "DR",
+   "preuve": "Il s’agit du premier texte déposé dans le cadre de la niche parlementaire du groupe Droite républicaine",
+   "cr": "CRSANR5L17S2026O1N121",
+   "ecarts_programme": [
+    {
+     "titre": "Projet de loi de finances pour 2026",
+     "statut_base": "pas_examine",
+     "statut_constate": "hors programme",
+     "preuve": "Absent des trois comptes rendus (CRSANR5L17S2026O1N121 à N123) : la journée enchaîne 3 résolutions/propositions du groupe DR. Entrée parasite issue de l'agenda, à retirer du programme."
+    }
+   ],
+   "note": "Autres statuts conformes (Frères musulmans adopté, agencification adoptée, légitime défense commencée)."
+  },
+  {
+   "date": "2026-02-12",
+   "groupe_detecte": "ECOS",
+   "verdict": "valide",
+   "groupe_reel": "ECOS",
+   "preuve": "l’inscription de ce texte à l’ordre du jour de ce jeudi qui est leur journée réservée",
+   "cr": "CRSANR5L17S2026O1N147",
+   "ecarts_programme": [],
+   "note": "Programme conforme (criminalité organisée adopté, eau potable retiré : « pris acte du retrait de la proposition de loi par son auteur », médias commencé)."
+  },
+  {
+   "date": "2026-03-26",
+   "groupe_detecte": "DEM",
+   "verdict": "valide",
+   "groupe_reel": "DEM",
+   "preuve": "l’inscription de ce texte à l’ordre du jour de la journée réservée au groupe Les Démocrates, pour la deuxième année consécutive",
+   "cr": "CRSANR5L17S2026O1N181",
+   "ecarts_programme": [
+    {
+     "titre": "proposition de loi, modifiée par le Sénat, relative aux missions des professionnels de santé, vétérinaires, psychothérapeutes et psychologues des services d’incendie et de secours",
+     "statut_base": "commence",
+     "statut_constate": "adopte (doublon)",
+     "preuve": "Ce texte (2e lecture) est le premier de la journée et a été adopté : « (La proposition de loi est adoptée.) » (CRSANR5L17S2026O1N181). Il apparaît deux fois dans le programme : une fois relié au dossier de 2025 (« Création du cadre d'emploi des personnels de santé… », adopte) et une fois sans dossier (commence). Doublon à fusionner, statut adopté."
+    }
+   ],
+   "note": "8 adoptions constatées (SDIS, droits voisins, indivision, agriculteurs, inondations, défense nationale, agences, sucres) : conforme. Marchés publics numériques et REP bâtiment : non examinés."
+  },
+  {
+   "date": "2026-04-09",
+   "groupe_detecte": "HOR",
+   "verdict": "valide",
+   "groupe_reel": "HOR",
+   "preuve": "Dans le cadre de sa journée réservée, le groupe Horizons & indépendants a souhaité inscrire à l’ordre du jour",
+   "cr": "CRSANR5L17S2026O1N197",
+   "ecarts_programme": [],
+   "note": "Programme conforme (RPI, rave-parties, commande publique adoptés ; prestations familiales retirée ; contrats d'énergie commencé, levée à minuit)."
+  },
+  {
+   "date": "2026-05-28",
+   "groupe_detecte": "LIOT",
+   "verdict": "valide",
+   "groupe_reel": "LIOT",
+   "preuve": "À l’occasion de sa niche parlementaire, le groupe LIOT a fait le choix fort d’inscrire en tête de l’ordre du jour",
+   "cr": "CRSANR5L17S2026O1N250",
+   "ecarts_programme": [],
+   "note": "Programme conforme (4 adoptés, revenu mensuel retraités commencé)."
+  },
+  {
+   "date": "2026-06-11",
+   "groupe_detecte": "GDR",
+   "verdict": "valide",
+   "groupe_reel": "GDR",
+   "preuve": "son examen intervient dans le cadre de la journée réservée au groupe de la Gauche démocrate et républicaine",
+   "cr": "CRSANR5L17S2026O1N268",
+   "ecarts_programme": [
+    {
+     "titre": "Adaptation du régime des intermittents du spectacle dans les départements et régions d'outre-mer",
+     "statut_base": "commence",
+     "statut_constate": "pas_examine",
+     "preuve": "Cité seulement dans « Ordre du jour de la prochaine séance » (CRSANR5L17S2026O1N267/N268). La séance de nuit se termine sur la résolution Cuba (« La suite de la discussion est renvoyée à une prochaine séance », N269) sans qu'il ait été appelé."
+    }
+   ],
+   "note": "Autres statuts conformes (retraités pauvres, ArcelorMittal, bourses, soins ultramarins adoptés ; hydrocarbures outre-mer rejeté ; résolution Cuba commencée)."
+  },
+  {
+   "date": "2026-10-08",
+   "groupe_detecte": "RN",
+   "verdict": "valide",
+   "groupe_reel": "RN",
+   "preuve": "dernière journée de niche parlementaire du Rassemblement national de la législature",
+   "cr": "CRSANR5L17S2027O1N013",
+   "ecarts_programme": [],
+   "note": "Programme conforme (4 résolutions rejetées, ZFE commencée, levée à minuit)."
+  },
+  {
+   "date": "2026-10-29",
+   "groupe_detecte": "LFI-NFP",
+   "verdict": "valide",
+   "groupe_reel": "LFI-NFP",
+   "preuve": "cette proposition de loi du groupe La France insoumise ; et, adressé aux LFI : « une niche parlementaire transformée en plateau de tournage »",
+   "cr": "CRSANR5L17S2027O1N045",
+   "ecarts_programme": [
+    {
+     "titre": "Protéger durablement les jeunes majeurs de l’aide sociale à l’enfance et de la protection judiciaire de la jeunesse",
+     "statut_base": "pas_examine",
+     "statut_constate": "incertain (probablement commence)",
+     "preuve": "La fin du CRSANR5L17S2027O1N045 contient déjà une intervention sur ce texte (« Avant d’étendre un droit opposable jusqu’à 25 ans… »), mais le compte rendu est marqué « en cours de finalisation »."
+    },
+    {
+     "titre": "Créer un corps de fonctionnaires de catégorie B pour les accompagnants d’élèves en situation de handicap",
+     "statut_base": "adopte",
+     "statut_constate": "non vérifiable dans le CR",
+     "preuve": "Débat présent dans CRSANR5L17S2027O1N044 (après le point 81074) mais la partie est « en cours de finalisation » ; seul le scrutin VTANR5L17V9203 de l'open data atteste le vote."
+    },
+    {
+     "titre": "Créer un parcours de soins intégralement pris en charge … victimes de violences sexuelles",
+     "statut_base": "adopte",
+     "statut_constate": "non vérifiable dans le CR",
+     "preuve": "CRSANR5L17S2027O1N045 s'arrête en cours de discussion (« en cours de finalisation ») ; CR de 21h30 (N046) pas encore publié (404). Vote attesté seulement par le scrutin VTANR5L17V9241."
+    }
+   ],
+   "note": "Journée récente (hier) : comptes rendus incomplets, statuts à revérifier quand N044-N046 seront finalisés. Groupe LFI-NFP établi par les auteurs (Nilor, Ratenon, Leboucher) et les citations, sans formule explicite « journée réservée »."
+  },
+  {
+   "date": "2026-11-19",
+   "groupe_detecte": "SOC",
+   "verdict": "incertain",
+   "groupe_reel": "SOC (prévu)",
+   "preuve": "Aucune : séance non tenue à la date de vérification (30/10/2026). L'agenda confirme 9 propositions de loi en 3 séances, dont la 2e lecture du texte SOC sur les rapports locatifs.",
+   "cr": "aucun (agenda RUANR5L17S2027IDS31054/55/56)",
+   "ecarts_programme": [],
+   "note": "À revérifier après la séance. Les 9 textes seront pas_examine/en cours jusque-là, ce qui est normal."
+  }
+ ],
+ "manquees": [
+  {
+   "date": "2024-11-28",
+   "groupe": "LFI-NFP",
+   "preuve": "Le groupe La France insoumise a choisi d’inscrire ce texte dans sa niche parlementaire (abrogation de la retraite à 64 ans, journée entière consacrée à ce seul texte à cause de l'obstruction)",
+   "cr": "CRSANR5L17S2025O1N055",
+   "note": "Jeudi présent dans les séances mais non détecté (un seul texte au programme). Confirmé aussi par N056 : « le gouvernement lui-même participe au blocage de la niche parlementaire d’un groupe d’opposition »."
+  },
+  {
+   "date": "2025-06-26",
+   "groupe": "UDR",
+   "preuve": "je ne suis évidemment pas surprise de retrouver un texte comme celui-là dans la niche du groupe UDR",
+   "cr": "CRSANR5L17S2025O1N258",
+   "note": "Programme du matin : accords franco-algériens, éligibilité, mariages simulés. N257 : « c’est votre niche parlementaire » adressé à M. Ciotti ; N259 : « cette journée de niche »."
+  },
+  {
+   "date": "2026-06-25",
+   "groupe": "UDR",
+   "preuve": "le groupe UDR bordélise sa propre niche et annonce qu’il quitte l’hémicycle",
+   "cr": "CRSANR5L17S2026O1N285",
+   "note": "N284 : « Vous avez inscrit à l’ordre du jour de votre niche parlementaire une série de textes » (mariages simulés ou arrangés en tête); N286 : « journée réservée à son groupe »."
+  }
+ ]
+}

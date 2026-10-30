@@ -72,7 +72,76 @@
    "contrainte_plus",
    "impot_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2025-02-20",
+   "comptesRendus": [
+    "CRSANR5L17S2025O1N110"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "La première vise à limiter la pollution à la source, en adoptant des restrictions dès 2026 pour les produits pour lesquels il existe des alternatives – cosmétiques, fart pour les skis, vêtements et chaussures. Je vous propose ensuite d’agir en 2030 pour l’ensemble des produits textiles.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Nicolas Thierry",
+      "qualite": "rapporteur de la commission du développement durable et de l’aménagement du territoire",
+      "groupe": "ECOS"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Si vous l’adoptez, ce texte permettra aux agences de l’eau d’inclure une nouvelle composante relative aux Pfas dans les redevances afin de financer des dispositifs de filtration des points d’eau potable. Il nous permettra aussi d’interdire les Pfas dans les produits cosmétiques, le fart et les produits textiles. Le gouvernement y est favorable.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Agnès Pannier-Runacher",
+      "qualite": "ministre de la transition écologique, de la biodiversité, de la forêt, de la mer et de la pêche",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "La première certitude est leur niveau de toxicité. La connaissance scientifique, encore partielle, progresse rapidement, et ses conclusions sont sans appel : les liens avec une série de pathologies graves sont désormais bien documentés.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Édouard Bénard",
+      "qualite": null,
+      "groupe": "GDR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Il est irresponsable d’interdire à nos entreprises d’utiliser les Pfas si nous ne disposons pas de produits de substitution viables et sans danger pour la santé humaine. Certains de ces composés ont des propriétés essentielles de durabilité contre l’obsolescence programmée, de résistance à la chaleur ou au froid, ou encore d’étanchéité.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Emeric Salmon",
+      "qualite": null,
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Force est de constater que les négociations européennes ont pris du retard sur le sujet, quand bien même le travail de consultation continue, notamment via l’Agence européenne des produits chimiques (AEPC). C’est pourquoi, en tant que législateur, il nous incombe d’agir sans attendre plus longtemps et d’envoyer ainsi un signal à nos partenaires européens.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Anne-Cécile Violland",
+      "qualite": null,
+      "groupe": "HOR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "L’inflation réglementaire, couplée à un calendrier accéléré et déconnecté de la réalité de terrain, inquiète à juste titre les professionnels – alors même que le président de la République parle de réindustrialiser la France. Nous devons faire confiance à nos entreprises et à nos entrepreneurs pour trouver des solutions de développement durable.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Éric Michoux",
+      "qualite": null,
+      "groupe": "UDR"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N49472": {
   "theme": "Agriculture",
@@ -218,7 +287,76 @@
   "mesures": [
    "aide_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2024-10-31",
+   "comptesRendus": [
+    "CRSANR5L17S2025O1N029"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Pour ceux qui ont commencé avant 20 ans et qui exercent un métier difficile, nous proposons un départ à la retraite à 60 ans avec quarante annuités. Pour ceux qui ont commencé après 20 ans, nous proposons un système progressif, avec un départ à 62 ans et quarante-deux annuités.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Thomas Ménagé",
+      "qualite": "rapporteur",
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "En réalité, pendant le débat sur les retraites, on a moins parlé dans les cortèges de deux ans de retraite en moins que de deux ans de travail en plus. Travailler deux ans de plus : voilà ce qui préoccupe les Français et le sujet sur lequel nous leur devons des réponses.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Astrid Panosyan-Bouvet",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Concrètement, elle propose de rétablir l’âge de départ à 62 ans et d’alléger les critères de cotisation pour garantir aux travailleurs ayant eu des carrières longues et hachées de pouvoir partir plus tôt.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Guillaume Florquin",
+      "qualite": null,
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Quelles conséquences cette aggravation du déséquilibre des caisses de retraite aurait-elle pour les Français ? Soyons clairs : il en découlerait soit une baisse des pensions, soit une augmentation des cotisations – c’est-à-dire une baisse du pouvoir d’achat des actifs –, voire les deux en même temps.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Thibault Bazin",
+      "qualite": null,
+      "groupe": "DR"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Notre projet défend la valeur travail et incite nos concitoyens à entrer plus tôt sur le marché du travail, car nous préférons que les Français travaillent entre 20 et 22 ans plutôt qu’entre 64 et 66 ans.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Thomas Ménagé",
+      "qualite": "rapporteur",
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Aujourd’hui, le rapport entre les deux est déjà sous pression : il n’y a plus 4 actifs pour financer un retraité, mais à peine 1,7. Face à ce constat, les réformes que nous avons engagées étaient indispensables pour éviter un effondrement financier.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. François Gernigon",
+      "qualite": null,
+      "groupe": "HOR"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L17N50579": {
   "theme": "Institutions et État",
@@ -352,7 +490,76 @@
    "contrainte_plus",
    "sanction_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2025-01-23",
+   "comptesRendus": [
+    "CRSANR5L17S2025O1N079"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Ce texte repose sur quatre axes : en premier lieu, renforcer le bouclier qualité prix (BQP), en élargissant son champ à davantage de produits – téléphonie, parapharmacie, pièces détachées automobiles – et en visant des prix équivalents à ceux de l’Hexagone.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Béatrice Bellay",
+      "qualite": "rapporteure de la commission des affaires économiques",
+      "groupe": "SOC"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Elle représente une avancée. Dès lors, le gouvernement choisit de l’accompagner tout en considérant qu’elle peut et doit être améliorée – nous allons en débattre – pour répondre pleinement aux attentes des populations d’outre-mer.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Manuel Valls",
+      "qualite": "ministre d’État, ministre des outre-mer",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Elle entraîne un renforcement de la transparence, arme indispensable si l’on veut véritablement mettre fin à l’opacité structurelle entourant la formation des prix et les marges en outre-mer, du fait notamment de la non-publication, depuis des décennies et en toute impunité, de leurs comptes par les faiseurs de vie chère.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Jean-Philippe Nilor",
+      "qualite": null,
+      "groupe": "LFI-NFP"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Les mécanismes de régulation économique proposés vont ainsi inévitablement alourdir les contraintes pesant sur les entreprises locales. La régulation de la concentration économique, aussi légitime soit-elle, semble reposer sur des dispositifs insuffisamment définis, ce qui pourrait créer des effets pervers.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Bernard Chaix",
+      "qualite": null,
+      "groupe": "UDR"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Notre ambition est triple : rendre effectif le bouclier qualité prix afin que les prix des biens de première nécessité et de consommation courante soient équivalents à ceux que l’on pratique en moyenne dans l’Hexagone ; renforcer les sanctions encourues par les sociétés qui ne respectent pas l’obligation légale de publication de leurs comptes",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Philippe Naillet",
+      "qualite": null,
+      "groupe": "SOC"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "fixer unilatéralement des prix au niveau de ceux de l’Hexagone sans tenir compte des coûts réels liés à l’éloignement, à la chaîne d’approvisionnement et à la fiscalité fait courir le risque de pénuries en rendant les opérations de vente des produits potentiellement déficitaires.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Henri Alfandari",
+      "qualite": null,
+      "groupe": "HOR"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L17N50819": {
   "theme": "Agriculture",
@@ -410,7 +617,76 @@
   "mesures": [
    "aide_moins"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2025-02-06",
+   "comptesRendus": [
+    "CRSANR5L17S2025O1N093"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "En deuxième lieu, l’article unique de la proposition de loi porte de trois mois à un an la durée minimale de résidence régulière exigée au moment de la naissance de l’enfant.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Philippe Gosselin",
+      "qualite": "rapporteur",
+      "groupe": "DR"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "En attendant, le texte s’inscrit pleinement dans l’équilibre souhaité par le Conseil constitutionnel, notamment dans sa décision du 6 septembre 2018, qui a expressément reconnu que Mayotte présentait des caractéristiques et des contraintes particulières justifiant une adaptation du droit de la nationalité.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Gérald Darmanin",
+      "qualite": "ministre d’État",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Ensuite, cette proposition tend à allonger la durée de résidence nécessaire pour les parents, passant de trois mois, une durée manifestement trop courte, à un an. Ce n’est pas excessif, ce n’est pas insurmontable. C’est une étape raisonnable, proportionnée, et adaptée aux défis spécifiques auxquels est confrontée Mayotte.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Blandine Brocard",
+      "qualite": null,
+      "groupe": "DEM"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Depuis 2018, le nombre d’acquisitions de la nationalité française à Mayotte à la majorité par effet du droit du sol a été divisé par trois. Dans le même temps, le nombre de passage d’étrangers en situation irrégulière a été multiplié par dix.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Sacha Houlié",
+      "qualite": null,
+      "groupe": "NI"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Il faut le savoir, les enfants sont utilisés à Mayotte comme des passeports, puisque lorsqu’un enfant naît sur l’île, lui et ses parents deviennent presque inexpulsables jusqu’à sa majorité. Dans la pratique, la venue d’un enfant garantit à sa famille des titres de séjour et, in fine, la nationalité.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Estelle Youssouffa",
+      "qualite": null,
+      "groupe": "LIOT"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Alors que la loi pour une immigration maîtrisée, un droit d’asile effectif et une intégration réussie était présentée comme une extraordinaire barrière pour les endiguer, les flux migratoires ont continué d’augmenter depuis 2018.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Colette Capdevielle",
+      "qualite": null,
+      "groupe": "SOC"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L17N51078": {
   "theme": "Justice",
@@ -780,7 +1056,76 @@
   "mesures": [
    "contrainte_moins"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2025-05-15",
+   "comptesRendus": [
+    "CRSANR5L17S2025O1N193"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "nous sommes forcés de constater, en tant qu’élus locaux ou anciens maires, qu’il y a dans les procédures auxquelles nous avons été confrontés des délais et des coûts qui ne sont plus justifiables et dont nous pourrions faire l’économie sans remettre en cause aucune des garanties de notre droit.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Harold Huwart",
+      "qualite": "rapporteur de la commission des affaires économiques",
+      "groupe": "LIOT"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Un vrai levier de relance économique, c’est la simplification. Les études qui se multiplient, représentent aujourd’hui jusqu’à 10 % d’augmentation du coût des projets. Des mois de délais d’instruction ou de contentieux, ce sont des frais supplémentaires de portage du foncier et une remise en cause des bilans d’opération.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Valérie Létard",
+      "qualite": "ministre chargée du logement",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Il élargit également la procédure de modification simplifiée des PLU et porte de 20 % à 50 % le seuil de majoration constructible, ce qui offrira un gain de temps considérable – jusqu’à six mois – pour les projets de densification urbaine.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Thomas Lam",
+      "qualite": null,
+      "groupe": "HOR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Simplifier n’est pas déréguler, et la facilitation du travail des élus ne saurait se traduire par des coups de canif dans les objectifs de transition écologique ou dans les procédures de participation du public. Nous savons tous ici que l’expertise des projets comme la consultation des citoyens réclament du temps",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Julien Brugerolles",
+      "qualite": null,
+      "groupe": "GDR"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Soutenir ce texte, c’est aussi apporter une réponse à ceux qui croulent sous les recours abusifs et les contentieux. La France est le pays des procédures infinies, qui mènent parfois à l’abandon des projets",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Marie Lebec",
+      "qualite": null,
+      "groupe": "EPR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "l’article 4 réduit les droits des citoyens ! Il tend à réduire de deux mois à un seul le délai d’introduction d’un recours gracieux ou hiérarchique à l’encontre de décisions d’urbanisme. Il vise également à rendre ce recours non suspensif, de sorte que les travaux pourraient commencer en dépit de son introduction.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Julie Ozenne",
+      "qualite": null,
+      "groupe": "ECOS"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L17N51900": {
   "theme": "Société et mémoire",
@@ -887,7 +1232,66 @@
   "mesures": [
    "symbolique"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2025-06-05",
+   "comptesRendus": [
+    "CRSANR5L17S2025O1N227"
+   ],
+   "repliques": [
+    {
+     "role": "gouvernement",
+     "citation": "Encore une fois, vous organisez un procès à charge, sans mentionner les nombreuses avancées de la réforme que vous n’envisageriez pas de remettre en cause : la revalorisation des petites pensions, l’amélioration de la prise en compte de la pénibilité",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Astrid Panosyan-Bouvet",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "En repoussant de force l’âge légal de départ à la retraite à 64 ans, vous avez méprisé le quotidien et les difficultés des travailleuses et des travailleurs aux métiers pénibles et aux carrières longues.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Sandrine Runel",
+      "qualite": null,
+      "groupe": "SOC"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Le déficit de notre système de retraites doublera d’ici 2035, puis doublera de nouveau d’ici 2045. Il s’élèvera alors à 30 milliards d’euros, sans compter le déficit du régime public. Notre démographie vieillissante est une réalité.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Stéphanie Rist",
+      "qualite": null,
+      "groupe": "EPR"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Les salaires sont gelés, et affectés depuis trois ans par l’inflation. Les critères de pénibilité ont été retirés – vibrations, port de charges, postures pénibles, produits chimiques respirés – et deux années de retraite volées.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. François Ruffin",
+      "qualite": null,
+      "groupe": "ECOS"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Alors même que tous les organismes dont l’objectivité n’est pas sujette à caution annoncent un déficit annuel de 25 à 32 milliards d’euros, à périmètre constant, vous voulez l’alourdir de 16 milliards d’euros par an.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Jean-Didier Berger",
+      "qualite": null,
+      "groupe": "DR"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L17N52087": {
   "theme": "Institutions et État",
@@ -946,7 +1350,76 @@
    "international",
    "symbolique"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2026-01-22",
+   "comptesRendus": [
+    "CRSANR5L17S2026O1N121"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "La présente proposition de résolution européenne vise à demander l’inscription de la mouvance des Frères musulmans sur la liste européenne des organisations terroristes.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Éric Pauget",
+      "qualite": "rapporteur de la commission des affaires étrangères",
+      "groupe": "DR"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "D’une part, la nature des Frères musulmans, qui relèvent davantage d’une mouvance idéologique que d’une organisation structurée, ne permet pas, eu égard aux critères juridiques en vigueur, leur désignation comme entité terroriste. Une sanction juridiquement faible nous exposerait à des risques de contentieux importants.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Eléonore Caroit",
+      "qualite": "ministre déléguée chargée de la francophonie, des partenariats internationaux et des Français de l’étranger",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Elle constitue une nébuleuse idéologique et organisationnelle, dont le projet politique vise à subordonner l’ordre civil à une lecture rigoriste du religieux, en rupture avec la primauté de la loi, l’égalité entre les femmes et les hommes et le principe de laïcité.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Frédéric Valletoux",
+      "qualite": null,
+      "groupe": "HOR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Il n’existe pas, à l’échelle européenne, une entité unifiée et clairement délimitée qui s’appellerait « mouvance des Frères musulmans », aisément assimilable aux organisations classiquement inscrites sur cette liste.De ce fait, votre proposition de résolution est juridiquement nulle. Elle ne produira aucun effet, et vous le savez.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Édouard Bénard",
+      "qualite": null,
+      "groupe": "GDR"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Face à cela, l’Union européenne ne peut rester dans l’ambiguïté. La proposition de résolution européenne, que nous soutenons, vise précisément à nommer clairement la menace, à doter l’Union d’un cadre cohérent et à harmoniser notre réponse politique et juridique.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Caroline Yadan",
+      "qualite": null,
+      "groupe": "EPR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "En vérité, aucun élément ne permet d’établir un lien entre cette organisation et l’une des infractions définies à l’article 421-1 du code pénal. Nous voterons donc contre ce texte.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Dominique Voynet",
+      "qualite": null,
+      "groupe": "ECOS"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L17N52428": {
   "theme": "Impôts et budget",
@@ -976,7 +1449,76 @@
   "mesures": [
    "international"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2025-10-30",
+   "comptesRendus": [
+    "CRSANR5L17S2026O1N021"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Nous ne devons plus tergiverser ; il faut adopter cette proposition de résolution pour enjoindre au gouvernement de dénoncer l’accord franco-algérien de 1968.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Guillaume Bigot",
+      "qualite": null,
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Notre ferme intention et notre intérêt sont de renégocier cet accord, le moment venu, pour obtenir un texte plus proche du droit commun et plus équilibré.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Laurent Panifous",
+      "qualite": "ministre délégué",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Tout d’abord, un regroupement familial, quasiment de plein droit, peut être demandé par un ressortissant algérien dès douze mois de résidence, ce qui n’est le cas pour aucun autre étranger. Ensuite, aucune possibilité n’existe pour la France de retirer la carte de résidence de dix ans, même pour un motif d’ordre public.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Laurent Wauquiez",
+      "qualite": null,
+      "groupe": "DR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "C’est même l’ensemble de nos coopérations bilatérales qui seraient à l’arrêt. En matière de lutte contre le terrorisme, les trafics criminels ou l’immigration illégale, une rupture aurait pour effet de geler ces échanges et d’affaiblir nos dispositifs de sécurité.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Bruno Fuchs",
+      "qualite": null,
+      "groupe": "DEM"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Le principe d’égalité, valeur cardinale de notre République, est aujourd’hui piétiné. Un étranger algérien n’est pas soumis au même droit qu’un étranger marocain, tunisien ou malien. L’égalité devant la loi, garantie par l’article 1er de notre Constitution, s’efface ici devant un traité obsolète, entretenu par une jurisprudence aussi généreuse qu’irresponsable.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Matthieu Bloch",
+      "qualite": null,
+      "groupe": "UDR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "il est maintenant impératif pour la France et l’Europe de renouer des liens avec ses voisins du Sud. L’Algérie occupe à cet égard une place stratégique et nos intérêts convergent dans de nombreux domaines, depuis la lutte contre le terrorisme et la grande criminalité jusqu’à l’avenir de cette mer Méditerranée que nous avons en commun.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Laurent Lhardit",
+      "qualite": null,
+      "groupe": "SOC"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L17N52746": {
   "theme": "Institutions et État",
@@ -1126,7 +1668,76 @@
   "mesures": [
    "contrainte_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2026-06-11",
+   "comptesRendus": [
+    "CRSANR5L17S2026O1N267"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Il est temps de reprendre la main sur nos usines et sur nos vies. La seule solution, sérieuse et pragmatique, c’est la nationalisation : 3 milliards pour sauver notre indépendance économique et des dizaines de milliers d’emplois.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Aurélie Trouvé",
+      "qualite": "rapporteure de la commission des finances, de l’économie générale et du contrôle budgétaire",
+      "groupe": "LFI-NFP"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Là encore, je ne vois pas en quoi cela constituerait une réponse opérationnelle aux questions que posent légitimement les salariés d’ArcelorMittal.On peut encore s’interroger sur le coût de l’opération pour les finances publiques, compris entre 3 et 6 milliards d’euros selon les évaluations.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Sébastien Martin",
+      "qualite": "ministre délégué",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Nous sommes dans un autre monde ; un monde dans lequel le contrôle de nos capacités de production stratégiques est fondamental. La question de l’acier est désormais centrale.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Philippe Brun",
+      "qualite": null,
+      "groupe": "SOC"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Face à ces réalités, que changerait la nationalisation française ? Absolument rien. Elle ne ferait que déplacer le problème : du bilan de l’entreprise vers celui de l’État et du marché vers le contribuable. Là est le paradoxe de ce texte.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Marie Lebec",
+      "qualite": null,
+      "groupe": "EPR"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Il s’agit d’agir pour la survie de l’industrie de notre pays et de préserver sa capacité tant à répondre aux urgences sociales et économiques du présent qu’à relever les grands défis de l’avenir, au premier rang desquels la mutation écologique.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Benjamin Lucas-Lundy",
+      "qualite": null,
+      "groupe": "ECOS"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "On peut aussi déplorer un déficit d’innovation et des fragilités de gouvernance qui handicapent certaines entreprises face à une concurrence particulièrement intense. On peut en outre s’interroger sur la compatibilité entre le coût financier d’une nationalisation et l’état actuel de nos finances publiques, en particulier dans un contexte de crise.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Emmanuel Mandon",
+      "qualite": null,
+      "groupe": "DEM"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L17N52985": {
   "theme": "Impôts et budget",
@@ -1342,7 +1953,76 @@
    "institutions",
    "aide_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2026-02-12",
+   "comptesRendus": [
+    "CRSANR5L17S2026O1N147"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Cette proposition de loi institue donc formellement dans le droit un mécanisme de protection des personnes qui participent à la dénonciation de l’emprise des réseaux criminels et qui se retrouvent en danger. Elle vise à les protéger, elles et leurs proches, en tant qu’individus comme en tant que collectifs.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Sandra Regol",
+      "qualite": "rapporteure de la commission des lois constitutionnelles, de la législation et de l’administration générale de la République",
+      "groupe": "ECOS"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Plus largement, sous couvert des meilleures intentions, ce texte viendrait entraver le travail de l’administration policière en l’enfermant dans un cadre législatif plus rigide.Le dispositif doit en réalité demeurer souple et agile si l’on veut qu’il soit à la fois le plus ajusté aux personnes ciblées et qu’il bénéficie au plus grand nombre",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Laurent Nuñez",
+      "qualite": "ministre de l’intérieur",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Cette proposition de loi, elle, part d’un constat juste : notre droit protège les hautes personnalités, les témoins et les repentis, mais laisse trop souvent sans réponse celles et ceux qui, sans statut particulier, s’engagent sur le terrain contre la criminalité organisée et en paient le prix.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Elsa Faucillon",
+      "qualite": null,
+      "groupe": "GDR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Le mécanisme que vous proposez tend à inventer ex nihilo une forme de troisième pilier dont les contours, les modalités opérationnelles et, surtout, le nombre de personnes concernées demeurent insuffisamment clarifiés. C’est le grand vide de ce texte.Cette absence de prévisibilité et de lisibilité pose la question de l’efficacité du dispositif que vous envisagez.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Vincent Caure",
+      "qualite": null,
+      "groupe": "EPR"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Le texte s’appuie sur le droit existant. Il renforce ce qui fonctionne. Il sanctionne plus fermement la divulgation de l’identité d’un témoin. Il sécurise la parole. Il permet une protection en amont, avant même qu’une procédure pénale lourde ne soit engagée.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Céline Thiébault-Martinez",
+      "qualite": null,
+      "groupe": "SOC"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "D’abord, il encombre un dispositif qui doit rester souple, évolutif et adapté à la réalité mouvante de la menace. Le ministère de l’intérieur évalue aujourd’hui les risques de manière pluridisciplinaire, individualisée et, surtout, évolutive.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Ian Boucard",
+      "qualite": null,
+      "groupe": "DR"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L17N53530": {
   "theme": "Environnement et énergie",
@@ -1674,7 +2354,76 @@
   "mesures": [
    "symbolique"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2026-10-08",
+   "comptesRendus": [
+    "CRSANR5L17S2027O1N013"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Cette proposition de résolution entend donc mobiliser non pas un outil unique, mais toute la boîte à outils dont dispose l’État.Le premier outil est celui de la gestion de crise. Lorsque les conséquences d’un sinistre dépassent les capacités d’un territoire, le préfet peut mobiliser les moyens de l’État, des collectivités territoriales et des établissements publics.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Anchya Bamana (RN)",
+      "qualite": null,
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Elle part d’un constat réel, mais n’apporte pas de réponse. Elle demande une mobilisation exceptionnelle de l’État, alors que cette mobilisation existe déjà ; une intervention temporaire, alors que nous avons besoin d’investissements et de compétences dans la durée.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Naïma Moutchou",
+      "qualite": "ministre des outre-mer",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Ils demandent que le droit le plus élémentaire à l’eau potable soit effectivement garanti. Il ne peut y avoir d’inégalité en République.L’État a engagé des moyens mais, de toute évidence, ce n’est pas suffisant face à cette injustice.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Eric Liégeon (DR)",
+      "qualite": null,
+      "groupe": "DR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Les Français qui ont soif n’ont pas besoin qu’on leur promette tout, tout de suite, sans dire comment. Ils ont besoin d’engagements. Or ce texte se contente de promettre ce qu’il ne peut garantir et fragilise les responsabilités.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Corinne Vignon",
+      "qualite": null,
+      "groupe": "EPR"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Ce qui est en cause, au fond, c’est la parole de l’État. Depuis deux siècles, la République française prétend à quelque chose de singulier. Elle ne considère pas la citoyenneté comme une question de distance. Elle ne connaît pas de Français périphériques.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Antoine Valentin (UDR)",
+      "qualite": null,
+      "groupe": "UDR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Vous présentez une proposition de résolution sans vision, sans stratégie, sans mesure concrète, sans calendrier, sans un euro. Rien sur les forages ; rien sur le dessalement ; rien sur les retenues collinaires ; rien sur la modernisation des réseaux ; rien sur la gouvernance.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Carole Guillerm",
+      "qualite": null,
+      "groupe": "DEM"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L17N54847": {
   "theme": "Immigration",

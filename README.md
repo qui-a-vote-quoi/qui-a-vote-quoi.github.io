@@ -42,6 +42,8 @@ Produit `site/donnees.js` à partir de la base et des rédactions, pour les troi
 
 Pour rédiger les brouillons de résumés, `python3 pipeline/extraits.py 17` prépare un extrait du texte officiel de chaque dossier (dans `donnees/brut/`, non versionné).
 
+Pour « Vivre le débat » : `python3 pipeline/debats.py 17` extrait des comptes rendus la présentation et la discussion générale de chaque texte (orateur, qualité, groupe, texte exact). Les répliques choisies par IA sont ensuite contrôlées et enregistrées par `python3 pipeline/verifier_debats.py 17 <fichier de répliques>` : citation mot pour mot, aucun nom avant le vote, autant de répliques de chaque camp.
+
 Pour voir le site en local : `python3 -m http.server 8738 --directory site`, puis http://localhost:8738.
 
 Le site est publié sur GitHub Pages par `.github/workflows/site.yml` à chaque modification de `site/` poussée sur `main`.
@@ -67,6 +69,19 @@ En été (fin de la session ordinaire en juin), il y a peu ou pas de séances : 
 ## Source des données
 
 Open data de l'Assemblée nationale : https://data.assemblee-nationale.fr (Licence Ouverte Etalab).
+
+## Où sont les données, et combien de temps
+
+| Quoi | Où | Sauvegardé ? | Si on le perd |
+|---|---|---|---|
+| **Fichiers bruts** de l'Assemblée (votes, dossiers, agenda, députés), comptes rendus, textes officiels, extraits, débats (`donnees/brut/`, ~850 Mo) | Seulement sur l'ordinateur qui fait tourner la chaîne. Non versionnés (`.gitignore`). | Non | On les re-télécharge : `telecharger.py`, puis `construire.py`, `extraits.py` et `debats.py` les retrouvent (quelques heures pour tout, à cause des comptes rendus). Les archives des législatures passées restent publiées par l'Assemblée. |
+| **Base** produite par la chaîne (`donnees/base/`) | Git, et le dépôt public sur GitHub | Oui | On la reconstruit à partir des fichiers bruts. |
+| **Travail de vérification et de rédaction** : niches vérifiées et leurs corrections (`donnees/validation/`, avec les rapports détaillés dans `verifications/`), résumés, sujets, classements, débats retenus (`donnees/redaction/`) | Git, et le dépôt public sur GitHub | Oui | C'est la seule partie qui ne se refait pas automatiquement : à ne jamais perdre. Garder une copie du dépôt ailleurs (un second ordinateur, un disque) en plus de GitHub. |
+| **Site publié** (`site/`) | Git, GitHub, et GitHub Pages pour la mise en ligne | Oui | On le republie avec `publier.py` puis un `git push`. |
+| **Brouillons des sous-agents IA** (lots, brouillons, rapports bruts) | Dossier temporaire de la session de travail | Non, effacé à la fin de la session | Rien à perdre : tout ce qui compte est recopié dans `donnees/redaction/` et `donnees/validation/` au moment de l'intégration. |
+| **Votes des visiteurs** dans « À vous de voter » | Dans le navigateur du visiteur (stockage local), jamais envoyés | Non | Ils restent tant que le visiteur ne les efface pas. Certains navigateurs les suppriment d'eux-mêmes : Safari après 7 jours sans visite du site, et la navigation privée à la fermeture. |
+
+**Le cache des navigateurs** : la page charge `donnees.js?v=<empreinte>`. L'empreinte change quand les données changent, ce qui oblige les navigateurs à recharger les nouvelles données après chaque mise à jour, au lieu de garder l'ancienne version en mémoire. GitHub Pages garde aussi une copie quelques minutes : une nouvelle publication peut mettre jusqu'à 10 minutes à apparaître partout.
 
 ## Licences
 

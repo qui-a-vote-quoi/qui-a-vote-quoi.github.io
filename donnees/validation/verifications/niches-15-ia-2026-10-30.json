@@ -1,0 +1,688 @@
+{
+ "niches": [
+  {
+   "date": "2017-11-30",
+   "groupe_detecte": "DEM",
+   "verdict": "valide",
+   "groupe_reel": "DEM (MoDem)",
+   "preuve": "le groupe MODEM a décidé d’inscrire à l’ordre du jour de sa niche parlementaire la discussion d’une proposition de résolution",
+   "cr": "CRSANR5L15S2018O1N077",
+   "ecarts_programme": [
+    {
+     "titre": "Garde alternée des enfants",
+     "statut_base": "pas_examine",
+     "statut_constate": "commence",
+     "preuve": "(La motion de rejet préalable, mise aux voix, n’est pas adoptée.) [CRSANR5L15S2018O1N079]"
+    }
+   ],
+   "note": "Garde alternée (PPL Latombe, 'résidence de l'enfant'): discussion générale entamée, séance levée à 1 h le 1er décembre sans vote final (la PPL est donc 'commence', pas 'pas_examine')."
+  },
+  {
+   "date": "2017-12-07",
+   "groupe_detecte": "UDI-I",
+   "verdict": "valide",
+   "groupe_reel": "UDI-I (UDI, Agir et indépendants)",
+   "preuve": "cette première niche du groupe UAI nous donnent une excellente occasion",
+   "cr": "CRSANR5L15S2018O1N087",
+   "ecarts_programme": [
+    {
+     "titre": "Agence nationale de la cohésion des territoires",
+     "statut_base": "commence",
+     "statut_constate": "renvoye",
+     "preuve": "(La motion de renvoi en commission, mise aux voix, est adoptée.) [CRSANR5L15S2018O1N088]"
+    }
+   ],
+   "note": "Motion de renvoi adoptée à main levée (pas de scrutin), d'où le 'commence' de la base. Le 'Chèque-emploi' est bien non examiné."
+  },
+  {
+   "date": "2018-01-18",
+   "groupe_detecte": "SOC",
+   "verdict": "valide",
+   "groupe_reel": "SOC (Nouvelle Gauche)",
+   "preuve": "présentée par le groupe Nouvelle Gauche au cours d’une niche et soutenue par la majorité",
+   "cr": "CRSANR5L15S2018O1N117",
+   "ecarts_programme": [
+    {
+     "titre": "Modalités de dépôt des candidatures aux élections (et doublon 'modifiée par le Sénat')",
+     "statut_base": "commence",
+     "statut_constate": "adopte",
+     "preuve": "Je mets aux voix l’ensemble de la proposition de loi. (La proposition de loi est adoptée. [CRSANR5L15S2018O1N116]"
+    }
+   ],
+   "note": "Adoptée sans scrutin public (main levée), donc non détectée par la base. Indivision successorale: adoptée (conforme)."
+  },
+  {
+   "date": "2018-02-01",
+   "groupe_detecte": "FI",
+   "verdict": "valide",
+   "groupe_reel": "FI",
+   "preuve": "le groupe La France insoumise a décidé d’inscrire, comme premier texte de sa niche parlementaire",
+   "cr": "CRSANR5L15S2018O1N131",
+   "ecarts_programme": [
+    {
+     "titre": "Reconnaissance de l’épuisement professionnel comme maladie (doublon du burn-out)",
+     "statut_base": "commence",
+     "statut_constate": "rejete",
+     "preuve": "(La motion de rejet préalable est adoptée.) [CRSANR5L15S2018O1N131]"
+    }
+   ],
+   "note": "Même PPL burn-out (Ruffin) listée deux fois dans la base (commence + rejete). Euthanasie: discussion commencée, séance levée à 1 h (conforme)."
+  },
+  {
+   "date": "2018-03-08",
+   "groupe_detecte": "GDR",
+   "verdict": "valide",
+   "groupe_reel": "GDR",
+   "preuve": "dans le cadre de la journée réservée au groupe de la Gauche démocrate et républicaine",
+   "cr": "CRSANR5L15S2018O1N155",
+   "ecarts_programme": [],
+   "note": "Programme conforme (4 renvois en commission, 1 rejet préalable)."
+  },
+  {
+   "date": "2018-04-05",
+   "groupe_detecte": "LR",
+   "verdict": "valide",
+   "groupe_reel": "LR",
+   "preuve": "niche parlementaire réservée au groupe Les Républicains",
+   "cr": "CRSANR5L15S2018O1N179",
+   "ecarts_programme": [],
+   "note": "Programme conforme; gens du voyage 'commence' exact (adoptée le 21 juin)."
+  },
+  {
+   "date": "2018-05-17",
+   "groupe_detecte": "DEM",
+   "verdict": "valide",
+   "groupe_reel": "DEM (MoDem)",
+   "preuve": "dans le cadre de la journée réservée au groupe du Mouvement démocrate et apparentés",
+   "cr": "CRSANR5L15S2018O1N216",
+   "ecarts_programme": [],
+   "note": "Programme conforme."
+  },
+  {
+   "date": "2018-06-07",
+   "groupe_detecte": "LAREM",
+   "verdict": "incertain",
+   "groupe_reel": "LAREM (majorité) - probablement une journée de textes de la majorité, pas une niche d'opposition",
+   "preuve": "le jeudi 7 est entièrement réservé à une niche parlementaire",
+   "cr": "CRSANR5L15S2018O1N239",
+   "ecarts_programme": [
+    {
+     "titre": "Lutte contre les rodéos motorisés",
+     "statut_base": "commence",
+     "statut_constate": "pas_examine",
+     "preuve": "Discussion, après engagement de la procédure accélérée, de la proposition de loi renforçant la lutte contre les rodéos motorisés. La séance est levée. [CRSANR5L15S2018O1N258]"
+    }
+   ],
+   "note": "Textes tous LAREM (PPL Ferrand/Studer téléphone portable, PPL et PPLO Ferrand fausses informations, PPL rodéos). Seule mention de 'niche' trouvée: un député LR le 31 mai 2018 (CR N239, séance du 31/05) dit que le jeudi 7 est 'entièrement réservé à une niche parlementaire'; le 7 juin, des députés d'opposition parlent de 'textes' de la majorité et d'engagement de campagne, sans mention de journée réservée. Rodéos: figure seulement à l'ordre du jour de la prochaine séance, jamais discuté. Fausses informations: discussion générale commencée, non terminée (conforme)."
+  },
+  {
+   "date": "2018-06-21",
+   "groupe_detecte": "LR",
+   "verdict": "valide",
+   "groupe_reel": "LR",
+   "preuve": "remercier le président Jacob et le groupe Les Républicains d’avoir réinscrit ce texte dans le cadre de cette niche parlementaire",
+   "cr": "CRSANR5L15S2018O1N284",
+   "ecarts_programme": [
+    {
+     "titre": "Accueil des gens du voyage et installations illicites",
+     "statut_base": "commence",
+     "statut_constate": "adopte",
+     "preuve": "(La proposition de loi est adoptée.) [CRSANR5L15S2018O1N284]"
+    }
+   ],
+   "note": "Gens du voyage: commencé le 5 avril, terminé et adopté le 21 juin (réinscrit). Groupuscules (résolution): rejetée (conclusions de rejet adoptées) conforme. Aubert (droit de propriété) 'commence' conforme."
+  },
+  {
+   "date": "2018-10-11",
+   "groupe_detecte": "LR",
+   "verdict": "valide",
+   "groupe_reel": "LR",
+   "preuve": "en accord avec le groupe Les Républicains et dans le cadre de notre niche parlementaire",
+   "cr": "CRSANR5L15S2019O1N014",
+   "ecarts_programme": [],
+   "note": "Programme conforme."
+  },
+  {
+   "date": "2018-11-29",
+   "groupe_detecte": "DEM",
+   "verdict": "valide",
+   "groupe_reel": "DEM (MoDem)",
+   "preuve": "inscrite à l’ordre du jour de la niche parlementaire du groupe du Mouvement Démocrate et apparentés",
+   "cr": "CRSANR5L15S2019O1N087",
+   "ecarts_programme": [],
+   "note": "Programme conforme."
+  },
+  {
+   "date": "2018-12-06",
+   "groupe_detecte": "UDI-I",
+   "verdict": "valide",
+   "groupe_reel": "UDI-I",
+   "preuve": "la niche d’aujourd’hui est celle de collègues de l’UDI, et pas la nôtre",
+   "cr": "CRSANR5L15S2019O1N098",
+   "ecarts_programme": [
+    {
+     "titre": "Financement de la recherche oncologique pédiatrique (doublon de 'Questions sociales et santé : fonds spécifique...')",
+     "statut_base": "commence",
+     "statut_constate": "rejete",
+     "preuve": "Pour l’adoption 14 Contre 25 (La proposition de résolution n’est pas adoptée.) [CRSANR5L15S2019O1N098]"
+    },
+    {
+     "titre": "proposition de loi visant à encadrer le démarchage téléphonique (doublon)",
+     "statut_base": "commence",
+     "statut_constate": "adopte",
+     "preuve": "Pour l’adoption 79 Contre 1 (La proposition de loi est adoptée.) [CRSANR5L15S2019O1N097]"
+    }
+   ],
+   "note": "Les deux 'commence' sont des doublons de dossiers: la résolution est rejetée au scrutin, le démarchage (Naegelen) est adopté."
+  },
+  {
+   "date": "2019-01-31",
+   "groupe_detecte": "SOC",
+   "verdict": "valide",
+   "groupe_reel": "SOC (Socialistes et apparentés)",
+   "preuve": "dans le cadre de la journée réservée au groupe Socialistes et apparentés",
+   "cr": "CRSANR5L15S2019O1N133",
+   "ecarts_programme": [
+    {
+     "titre": "Fonds d'indemnisation des victimes du chlordécone et du paraquat en Guadeloupe et Martinique",
+     "statut_base": "commence",
+     "statut_constate": "pas_examine",
+     "preuve": "Discussion de la proposition de loi tendant à la création d’un fonds d’indemnisation des victimes du chlordécone et du paraquat en Guadeloupe et en Martinique. La séance est levée. [CRSANR5L15S2019O1N134]"
+    }
+   ],
+   "note": "Chlordécone: seulement annoncé à l'ordre du jour de la séance suivante, jamais discuté. Le texte réellement entamé est la PPL Sénat 'fonds d'indemnisation des victimes des produits phytopharmaceutiques' ('commence' exact); l'entrée 'Fonds d'indemnisation des victimes de la covid-19' (dossier DLR5L15N41244) est un titre anachronique/erroné pour 2019 (ce dossier est celui de la niche SOC du 18/02/2021)."
+  },
+  {
+   "date": "2019-02-21",
+   "groupe_detecte": "FI",
+   "verdict": "valide",
+   "groupe_reel": "FI",
+   "preuve": "inscrite à l’ordre du jour de la niche parlementaire du groupe La France insoumise",
+   "cr": "CRSANR5L15S2019O1N160",
+   "ecarts_programme": [
+    {
+     "titre": "proposition de loi visant à protéger la population contre les dangers de la malbouffe (doublon de 'Qualité nutritionnelle des aliments')",
+     "statut_base": "commence",
+     "statut_constate": "adopte",
+     "preuve": "Pour l’adoption 57 Contre 0 (La proposition de loi est adoptée.) [CRSANR5L15S2019O1N162]"
+    },
+    {
+     "titre": "Interdiction du régime européen de travail détaché",
+     "statut_base": "commence",
+     "statut_constate": "pas_examine",
+     "preuve": "Proposition de loi pour l’interdiction du régime européen de travail détaché sur le territoire national. La séance est levée. [CRSANR5L15S2019O1N161]"
+    }
+   ],
+   "note": "Travail détaché: seulement annoncé à la prochaine séance. Fonds de soutien à la création artistique: commencé (conforme)."
+  },
+  {
+   "date": "2019-03-07",
+   "groupe_detecte": "GDR",
+   "verdict": "valide",
+   "groupe_reel": "GDR",
+   "preuve": "texte proposé par nos collègues du groupe de la Gauche démocrate et républicaine dans le cadre de ce que l’on appelle communément leur",
+   "cr": "CRSANR5L15S2019O1N170",
+   "ecarts_programme": [
+    {
+     "titre": "Augmentation du SMIC et des salaires (doublon 'salaire minimum interprofessionnel' marqué pas_examine)",
+     "statut_base": "commence",
+     "statut_constate": "rejete",
+     "preuve": "Pour l’adoption 37 Contre 28 (La motion de rejet préalable est adoptée.) [CRSANR5L15S2019O1N169]"
+    },
+    {
+     "titre": "Intégrité des mandats électifs et de la représentation nationale",
+     "statut_base": "commence",
+     "statut_constate": "renvoye",
+     "preuve": "(La motion de renvoi en commission, mise aux voix, est adoptée.) [CRSANR5L15S2019O1N170]"
+    }
+   ],
+   "note": "SMIC (Peu): rejet préalable adopté. Intégrité (Brotherson): renvoi en commission adopté. 'Impôt de solidarité écologique sur la fortune' (rejete, scrutin V1716) n'est qu'évoqué dans un discours (PPL Lambert), pas un point de l'ordre du jour ce jour-là: à vérifier."
+  },
+  {
+   "date": "2019-04-04",
+   "groupe_detecte": "LR",
+   "verdict": "valide",
+   "groupe_reel": "LR",
+   "preuve": "nous sommes saisis d’une proposition de loi du groupe Les Républicains, dans le cadre d’une niche parlementaire",
+   "cr": "CRSANR5L15S2019O1N207",
+   "ecarts_programme": [
+    {
+     "titre": "proposition de loi constitutionnelle visant à lutter contre la sur-réglementation",
+     "statut_base": "commence",
+     "statut_constate": "rejete",
+     "preuve": "(La motion de rejet préalable, mise aux voix, est adoptée.) [CRSANR5L15S2019O1N207]"
+    }
+   ],
+   "note": "Répertoire des maladies rares: adopté (conforme)."
+  },
+  {
+   "date": "2019-05-09",
+   "groupe_detecte": "DEM",
+   "verdict": "valide",
+   "groupe_reel": "DEM (MoDem)",
+   "preuve": "le groupe MODEM et apparentés a choisi d’inscrire à l’ordre du jour de sa « niche »",
+   "cr": "CRSANR5L15S2019O1N223",
+   "ecarts_programme": [],
+   "note": "Programme conforme (les 'pré-enseignes' pas_examine est un doublon: PPL Ramos adoptée)."
+  },
+  {
+   "date": "2019-06-20",
+   "groupe_detecte": "LR",
+   "verdict": "valide",
+   "groupe_reel": "LR",
+   "preuve": "d’avoir inscrit à l’ordre du jour de leur niche parlementaire ce texte",
+   "cr": "CRSANR5L15S2019O1N285",
+   "ecarts_programme": [
+    {
+     "titre": "Rétablissement du pouvoir d'achat des Français",
+     "statut_base": "commence",
+     "statut_constate": "rejete",
+     "preuve": "L’ensemble des articles et des amendements portant article additionnel ayant été rejetés, la proposition de loi est rejetée. [CRSANR5L15S2019O1N284]"
+    }
+   ],
+   "note": "Pouvoir d'achat: renvoyé en commission le 4 avril, réinscrit et rejeté le 20 juin. Accueil familial: discussion générale en cours à 1 h (conforme)."
+  },
+  {
+   "date": "2019-10-10",
+   "groupe_detecte": "LR",
+   "verdict": "valide",
+   "groupe_reel": "LR",
+   "preuve": "le groupe Les Républicains avait décidé de dédier toute sa niche parlementaire au seul sujet",
+   "cr": "CRSANR5L15S2020O1N020",
+   "ecarts_programme": [
+    {
+     "titre": "Violences au sein de la famille (PPL Pradié)",
+     "statut_base": "commence",
+     "statut_constate": "adopte",
+     "preuve": "Pour l’adoption 551 Contre 2 (La proposition de loi est adoptée.) [CRSANR5L15S2020O1N023]"
+    }
+   ],
+   "note": "PPL Pradié: examen des articles terminé le 10/10, vote public différé au mardi 15/10/2019 (CR N020: 'le vote par scrutin public ... aura lieu le mardi 15 octobre'), adoptée 551-2 (CR du 15/10/2019, CRSANR5L15S2020O1N023). 'Violences au sein des couples' (Boyer): commence conforme (séance levée à minuit)."
+  },
+  {
+   "date": "2019-11-28",
+   "groupe_detecte": "DEM",
+   "verdict": "valide",
+   "groupe_reel": "DEM (MoDem)",
+   "preuve": "le groupe du Mouvement démocrate et apparentés, pour avoir inscrit ce texte à l’ordre du jour de sa niche parlementaire",
+   "cr": "CRSANR5L15S2020O1N087",
+   "ecarts_programme": [
+    {
+     "titre": "proposition de loi, en deuxième lecture, visant à améliorer la trésorerie des associations (doublon)",
+     "statut_base": "commence",
+     "statut_constate": "adopte",
+     "preuve": "(La proposition de loi est adoptée.) [CRSANR5L15S2020O1N087]"
+    },
+    {
+     "titre": "proposition de loi visant à réduire le coût du foncier (doublon)",
+     "statut_base": "commence",
+     "statut_constate": "adopte",
+     "preuve": "(La proposition de loi est adoptée.) [CRSANR5L15S2020O1N087]"
+    }
+   ],
+   "note": "Tous les textes de la journée sont adoptés (deux 'commence' sont des doublons)."
+  },
+  {
+   "date": "2019-12-12",
+   "groupe_detecte": "SOC",
+   "verdict": "valide",
+   "groupe_reel": "SOC (Socialistes et apparentés)",
+   "preuve": "remercier le groupe Socialistes et apparentés de mettre en débat, à l’occasion de son ordre du jour réservé",
+   "cr": "CRSANR5L15S2020O1N100",
+   "ecarts_programme": [],
+   "note": "Programme conforme (vérifié: code de la route rejeté, écocide/prime climat/certification rejetés par articles, Garot et résolution adoptés)."
+  },
+  {
+   "date": "2020-01-30",
+   "groupe_detecte": "UDI-I",
+   "verdict": "valide",
+   "groupe_reel": "UDI-I",
+   "preuve": "remercier sincèrement le groupe UDI, Agir et indépendants d’avoir choisi d’inscrire, dans le créneau qui lui est imparti",
+   "cr": "CRSANR5L15S2020O1N131",
+   "ecarts_programme": [
+    {
+     "titre": "Véritable congé de deuil pour le décès d'un enfant (doublon)",
+     "statut_base": "commence",
+     "statut_constate": "adopte",
+     "preuve": "Congé de deuil en cas de décès d’un enfant mineur [CRSANR5L15S2020O1N130]"
+    },
+    {
+     "titre": "proposition de loi, modifiée par le Sénat, visant à encadrer le démarchage téléphonique (doublon)",
+     "statut_base": "commence",
+     "statut_constate": "adopte",
+     "preuve": "Démarchage téléphonique et appels frauduleux [CRSANR5L15S2020O1N130]"
+    }
+   ],
+   "note": "Les 4 premiers textes passent en procédure simplifiée (art. 103) et sont adoptés; les deux 'commence' sont des doublons."
+  },
+  {
+   "date": "2020-02-13",
+   "groupe_detecte": "LT",
+   "verdict": "valide",
+   "groupe_reel": "LT",
+   "preuve": "remercier le président Vigier et le groupe Libertés et territoires d’avoir inscrit à l’ordre du jour de leur niche parlementaire",
+   "cr": "CRSANR5L15S2020O1N141",
+   "ecarts_programme": [],
+   "note": "Programme conforme."
+  },
+  {
+   "date": "2020-06-04",
+   "groupe_detecte": "FI",
+   "verdict": "valide",
+   "groupe_reel": "FI",
+   "preuve": "dans le cadre de la niche du groupe La France insoumise",
+   "cr": "CRSANR5L15S2020O1N224",
+   "ecarts_programme": [
+    {
+     "titre": "Femmes de ménage : encadrer la sous-traitance",
+     "statut_base": "pas_examine",
+     "statut_constate": "retire",
+     "preuve": "la proposition de loi sur les femmes de ménage que notre collègue François Ruffin avait l’intention de défendre ici [CRSANR5L15S2020O1N224]"
+    }
+   ],
+   "note": "Retrait attesté par un député EDS: 'dans le cadre de la niche du groupe La France insoumise, ait été retirée'. Le sort de 'Pôle public du médicament' et 'Crise alimentaire' (pas_examine) n'est pas documenté (incertain, peut-être aussi retirés). Cariou dit 'hier, la niche du groupe LR' le 4 juin: erreur de langage (niche LR le 11 juin)."
+  },
+  {
+   "date": "2020-06-11",
+   "groupe_detecte": "LR",
+   "verdict": "valide",
+   "groupe_reel": "LR",
+   "preuve": "remercier le groupe Les Républicains d’avoir inscrit, en première position de l’ordre du jour de sa niche",
+   "cr": "CRSANR5L15S2020O1N233",
+   "ecarts_programme": [
+    {
+     "titre": "proposition de loi visant à exonérer de TVA les masques (doublon marqué pas_examine)",
+     "statut_base": "pas_examine",
+     "statut_constate": "rejete",
+     "preuve": "Éric Straumann et plusieurs de ses collègues visant à exonérer de taxe sur la valeur ajoutée [CRSANR5L15S2020O1N235]"
+    }
+   ],
+   "note": "Le point 'Loi d'urgence' (commence, DLR5L15N39209) n'apparaît pas dans les comptes rendus de la journée."
+  },
+  {
+   "date": "2020-06-18",
+   "groupe_detecte": "GDR",
+   "verdict": "valide",
+   "groupe_reel": "GDR",
+   "preuve": "initiative du groupe GDR d’inscrire, à l’ordre du jour de sa niche parlementaire",
+   "cr": "CRSANR5L15S2020O1N240",
+   "ecarts_programme": [
+    {
+     "titre": "proposition de loi visant à assurer la revalorisation des pensions de retraite agricoles (2e lecture)",
+     "statut_base": "commence",
+     "statut_constate": "adopte",
+     "preuve": "Je mets aux voix l’ensemble de la proposition de loi. (La proposition de loi est adoptée à l’unanimité .) [CRSANR5L15S2020O1N240]"
+    }
+   ],
+   "note": "Retraites agricoles: adoptée à l'unanimité. Autres textes conformes."
+  },
+  {
+   "date": "2020-06-25",
+   "groupe_detecte": "LR",
+   "verdict": "valide",
+   "groupe_reel": "LR (deuxième niche LR de juin 2020; la précédente était le 11 juin)",
+   "preuve": "d’avoir cosigné cette proposition de loi et de l’avoir inscrite à l’ordre du jour de cette niche parlementaire",
+   "cr": "CRSANR5L15S2020O1N249",
+   "ecarts_programme": [],
+   "note": "Rapporteurs/auteurs LR (Grelier, Viry, Lurton, Breton). Programme conforme. Le 'TVA masques' pas_examine est un doublon (traité le 11 juin)."
+  },
+  {
+   "date": "2020-07-16",
+   "groupe_detecte": "LAREM",
+   "verdict": "rejete",
+   "groupe_reel": "Aucune niche: jeudi de session extraordinaire (textes du Gouvernement/CMP)",
+   "preuve": "Règlement du budget et approbation des comptes de l’année 2019",
+   "cr": "CRSANR5L15S2020E1N014",
+   "ecarts_programme": [],
+   "note": "Ordre du jour: projet de loi de règlement 2019, CMP chèques-vacances, loi organique dette sociale, CMP violences conjugales (texte LR), questions au Gouvernement. Aucune mention de niche/ordre du jour réservé; pas une journée de groupe."
+  },
+  {
+   "date": "2020-10-08",
+   "groupe_detecte": "EDS",
+   "verdict": "valide",
+   "groupe_reel": "EDS (Écologie démocratie solidarité)",
+   "preuve": "remercier le groupe Écologie démocratie solidarité d’avoir inscrit cette proposition de loi dans sa niche parlementaire",
+   "cr": "CRSANR5L15S2021O1N012",
+   "ecarts_programme": [
+    {
+     "titre": "proposition de loi visant à renforcer le droit à l’avortement (doublon)",
+     "statut_base": "commence",
+     "statut_constate": "adopte",
+     "preuve": "Pour l’adoption [CRSANR5L15S2021O1N012]"
+    }
+   ],
+   "note": "Avortement (Gaillot) adoptée; Villani (condition des animaux) commencée, séance levée à minuit (conforme)."
+  },
+  {
+   "date": "2020-11-26",
+   "groupe_detecte": "AGIR-E",
+   "verdict": "valide",
+   "groupe_reel": "AGIR-E (Agir ensemble)",
+   "preuve": "dans le cadre de la niche parlementaire du groupe Agir ensemble",
+   "cr": "CRSANR5L15S2021O1N095",
+   "ecarts_programme": [
+    {
+     "titre": "proposition de loi visant à promouvoir la France des accents (doublon)",
+     "statut_base": "commence",
+     "statut_constate": "adopte",
+     "preuve": "(La proposition de loi est adoptée.) [CRSANR5L15S2021O1N095]"
+    }
+   ],
+   "note": "Doublon d'un texte adopté en procédure simplifiée."
+  },
+  {
+   "date": "2020-12-03",
+   "groupe_detecte": "LR",
+   "verdict": "valide",
+   "groupe_reel": "LR",
+   "preuve": "Je vous remercie, chers collègues du groupe Les Républicains, d’ouvrir votre journée de niche parlementaire",
+   "cr": "CRSANR5L15S2021O1N103",
+   "ecarts_programme": [],
+   "note": "Programme conforme (éolien Aubert: commencé, levée à minuit)."
+  },
+  {
+   "date": "2021-01-28",
+   "groupe_detecte": "DEM",
+   "verdict": "valide",
+   "groupe_reel": "DEM (MoDem)",
+   "preuve": "le groupe Mouvement démocrate (MODEM) et démocrates apparentés qui a déposé cette proposition de loi dans le cadre de sa niche",
+   "cr": "CRSANR5L15S2021O1N141",
+   "ecarts_programme": [],
+   "note": "Programme conforme (séance levée à 18 h; additifs nitrés et budget vacances non examinés)."
+  },
+  {
+   "date": "2021-02-18",
+   "groupe_detecte": "SOC",
+   "verdict": "valide",
+   "groupe_reel": "SOC (Socialistes et apparentés)",
+   "preuve": "Nous ne disposons que d’un jour par an !",
+   "cr": "CRSANR5L15S2021O1N176",
+   "ecarts_programme": [
+    {
+     "titre": "Rapport d'information sur la proposition de loi n° 3721 (doublon)",
+     "statut_base": "commence",
+     "statut_constate": "adopte",
+     "preuve": "Protection des mineurs victimes de violences sexuelles [CRSANR5L15S2021O1N176]"
+    }
+   ],
+   "note": "Groupe confirmé par les rapporteurs SOC (Vallaud, Saulignac) et par un propos du 26/11/2021 ('journée de niche parlementaire du 18 février 2021, le groupe Socialistes et apparentés', CRSANR5L15S2022O1N074). Retrait de la PPL Vallaud (AIES) conforme: 'j’ai pris acte du retrait de la proposition de loi par son auteur, M. Boris Vallaud' (N176)."
+  },
+  {
+   "date": "2021-03-18",
+   "groupe_detecte": "LAREM",
+   "verdict": "rejete",
+   "groupe_reel": "Aucune niche: jeudi de textes de la majorité (PPL Vidal, nouvelle lecture PPL Rist, PPL sport)",
+   "preuve": "Droits à protection sociale des assistants maternels et des salariés des particuliers employeurs",
+   "cr": "CRSANR5L15S2021O1N202",
+   "ecarts_programme": [],
+   "note": "Aucune mention de niche ni d'ordre du jour réservé dans les 3 séances; textes LAREM (Vidal, Rist, Belhaddad). La niche de mars 2021 est celle de l'UDI-I le 25 mars."
+  },
+  {
+   "date": "2021-03-25",
+   "groupe_detecte": "UDI-I",
+   "verdict": "valide",
+   "groupe_reel": "UDI-I",
+   "preuve": "Je remercie le groupe UDI et indépendants, son président, et l’auteur de cette proposition de résolution, Yannick Favennec-Bécot",
+   "cr": "CRSANR5L15S2021O1N214",
+   "ecarts_programme": [
+    {
+     "titre": "Contrôles d'identité des passagers des transports collectifs routiers",
+     "statut_base": "pas_examine",
+     "statut_constate": "retire",
+     "preuve": "même si la proposition a finalement été retirée de la niche UDI-I [CRSANR5L15S2021O1N216]"
+    }
+   ],
+   "note": "Retrait attesté par un orateur (le titre n'est pas cité mais le sujet est les contrôles d'identité). 'OPJ réservistes' pas_examine: non documenté."
+  },
+  {
+   "date": "2021-05-06",
+   "groupe_detecte": "FI",
+   "verdict": "valide",
+   "groupe_reel": "FI",
+   "preuve": "déposée dans le cadre de la niche du groupe La France insoumise",
+   "cr": "CRSANR5L15S2021O1N265",
+   "ecarts_programme": [],
+   "note": "Programme conforme."
+  },
+  {
+   "date": "2021-06-17",
+   "groupe_detecte": "GDR",
+   "verdict": "valide",
+   "groupe_reel": "GDR",
+   "preuve": "Je remercie très chaleureusement le groupe GDR de l’avoir inscrite à l’ordre du jour de sa journée de niche",
+   "cr": "CRSANR5L15S2021O1N309",
+   "ecarts_programme": [],
+   "note": "Programme conforme (essais nucléaires rejetée par articles; intermittents commencé, levée à minuit)."
+  },
+  {
+   "date": "2021-06-24",
+   "groupe_detecte": "DEM",
+   "verdict": "rejete",
+   "groupe_reel": "Aucune niche: ordre du jour du Gouvernement/majorité (3 textes Dem/LAREM, dont un inscrit à l'initiative du Gouvernement)",
+   "preuve": "c’est à l’initiative du Gouvernement que le texte a été inscrit à l’ordre du jour",
+   "cr": "CRSANR5L15S2021O1N319",
+   "ecarts_programme": [
+    {
+     "titre": "proposition de loi, modifiée par le Sénat, visant à améliorer la trésorerie des associations (doublon)",
+     "statut_base": "commence",
+     "statut_constate": "adopte",
+     "preuve": "(La proposition de loi est adoptée.) [CRSANR5L15S2021O1N318]"
+    }
+   ],
+   "note": "Aucune mention de niche. Textes: trésorerie des associations et engagement associatif (3e lecture, procédure simplifiée), rémunération des agriculteurs (PPL Besson-Moreau, LAREM, 'à l'initiative du Gouvernement'). La niche DEM de la session est celle du 28 janvier 2021. Hypothèse seulement: journée de la majorité."
+  },
+  {
+   "date": "2021-10-07",
+   "groupe_detecte": "LR",
+   "verdict": "valide",
+   "groupe_reel": "LR",
+   "preuve": "vous voulez faire échouer la niche parlementaire du groupe Les Républicains",
+   "cr": "CRSANR5L15S2022O1N006",
+   "ecarts_programme": [
+    {
+     "titre": "proposition de loi visant à raisonner le développement de l'éolien (doublon de 'Développement raisonnable de l'éolien')",
+     "statut_base": "commence",
+     "statut_constate": "rejete",
+     "preuve": "ayant été rejetés ou supprimés, la proposition de loi est rejetée. Création d’un ticket restaurant étudiant [CRSANR5L15S2022O1N006]"
+    },
+    {
+     "titre": "Relocaliser et créer une filière française de production et de recyclage de masques (doublon)",
+     "statut_base": "commence",
+     "statut_constate": "adopte",
+     "preuve": "Pour l’adoption [CRSANR5L15S2022O1N007]"
+    }
+   ],
+   "note": "Éolien: rejeté par articles; résolution masques: adoptée; CPF: commencé (levée à minuit)."
+  },
+  {
+   "date": "2021-11-25",
+   "groupe_detecte": "AGIR-E",
+   "verdict": "valide",
+   "groupe_reel": "AGIR-E (Agir ensemble)",
+   "preuve": "le groupe Agir ensemble qui a inscrit ce texte dans sa niche",
+   "cr": "CRSANR5L15S2022O1N071",
+   "ecarts_programme": [],
+   "note": "Programme conforme (7 textes adoptés)."
+  },
+  {
+   "date": "2021-12-02",
+   "groupe_detecte": "GDR",
+   "verdict": "valide",
+   "groupe_reel": "GDR",
+   "preuve": "textes présentés dans le cadre de la niche du groupe de la Gauche démocrate et républicaine",
+   "cr": "CRSANR5L15S2022O1N081",
+   "ecarts_programme": [],
+   "note": "Programme conforme (eau/assainissement commencé, levée à minuit)."
+  },
+  {
+   "date": "2022-01-13",
+   "groupe_detecte": "FI",
+   "verdict": "valide",
+   "groupe_reel": "FI",
+   "preuve": "de l’avoir inscrit à l’ordre du jour de leur niche parlementaire",
+   "cr": "CRSANR5L15S2022O1N121",
+   "ecarts_programme": [],
+   "note": "Programme conforme (État de droit commencé, levée à minuit)."
+  },
+  {
+   "date": "2022-01-20",
+   "groupe_detecte": "SOC",
+   "verdict": "valide",
+   "groupe_reel": "SOC (Socialistes et apparentés)",
+   "preuve": "que le groupe socialiste a choisi de reprendre in extenso dans le cadre de sa niche parlementaire",
+   "cr": "CRSANR5L15S2022O1N131",
+   "ecarts_programme": [],
+   "note": "Programme conforme."
+  },
+  {
+   "date": "2022-02-03",
+   "groupe_detecte": "DEM",
+   "verdict": "valide",
+   "groupe_reel": "DEM (MoDem)",
+   "preuve": "Patrick Mignola et l’ensemble des députés du groupe Mouvement démocrate (MODEM) et démocrates apparentés en inscrivant à l’ordre du jour de cette niche parlementaire",
+   "cr": "CRSANR5L15S2022O1N146",
+   "ecarts_programme": [],
+   "note": "Programme conforme (vote par correspondance rejeté, 7 autres adoptés)."
+  },
+  {
+   "date": "2022-02-24",
+   "groupe_detecte": "LAREM",
+   "verdict": "rejete",
+   "groupe_reel": "Aucune niche: lectures définitives de textes LAREM + déclaration du Gouvernement (Ukraine/covid)",
+   "preuve": "Situation en Ukraine",
+   "cr": "CRSANR5L15S2022O1N164",
+   "ecarts_programme": [],
+   "note": "Ordre du jour: déclarations du Gouvernement puis lectures définitives (sport, harcèlement scolaire, choix du nom). Aucune mention de niche."
+  }
+ ],
+ "manquees": [
+  {
+   "date": "2017-10-12",
+   "groupe": "LR",
+   "preuve": "La décision du groupe Les Républicains d’inscrire en premier point de l’ordre du jour de cette première niche parlementaire",
+   "cr": "CRSANR5L15S2018O1N008",
+   "note": "PPL Viala (compétitivité agriculture, rejet préalable adopté) puis PPL Sénat eau/assainissement (renvoi en commission). Texte aussi rappelé le 30/11/2017: 'renvoyée en commission le 12 octobre dernier, lors de la niche de notre groupe'."
+  },
+  {
+   "date": "2021-04-08",
+   "groupe": "LT",
+   "preuve": "l’inscription de cette proposition de loi transpartisane à l’ordre du jour de la niche du groupe Libertés et territoires",
+   "cr": "CRSANR5L15S2021O1N236",
+   "note": "Langues régionales 2e lecture (Molac) adoptée; fin de vie libre et choisie (Falorni): 4000 amendements, discussion non terminée, levée le vendredi 9 avril."
+  },
+  {
+   "date": "2021-11-26",
+   "groupe": "UDI-I",
+   "preuve": "d’avoir ce texte à l’ordre du jour de votre niche",
+   "cr": "CRSANR5L15S2022O1N073",
+   "note": "Vendredi. Textes: enfants nés sans vie, cybersécurité, implantation locale (PLO), fonctionnaires d'outre-mer (Sanquer), plateforme malades covid (Zumkeller, 'niche parlementaire du groupe UDI et indépendants'), emploi des seniors (Six), génocide des Kurdes (résolution rejetée)."
+  },
+  {
+   "date": "2022-02-04",
+   "groupe": "LT",
+   "preuve": "Nous remercions le groupe Libertés et territoires d’avoir inscrit ce texte à l’ordre du jour de sa journée de niche parlementaire",
+   "cr": "CRSANR5L15S2022O1N147",
+   "note": "Vendredi. Corse (Acquaviva) adoptée, don d'organes rejeté, pollution plastique, frais bancaires rejeté, résolution Assange rejetée, vote blanc (minuit). Une résolution génocide a été retirée de l'ordre du jour par le Gouvernement."
+  }
+ ]
+}

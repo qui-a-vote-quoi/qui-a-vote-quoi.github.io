@@ -1,0 +1,283 @@
+{
+ "niches": [
+  {
+   "date": "2022-10-06",
+   "groupe_detecte": "DEM",
+   "verdict": "valide",
+   "groupe_reel": "DEM",
+   "preuve": "Le groupe Démocrate et indépendants est heureux de voir figurer ce texte à l’ordre du jour de sa niche parlementaire.",
+   "cr": "CRSANR5L16S2023O1N007",
+   "ecarts_programme": [],
+   "note": "Statuts du programme conformes au compte rendu (3 PPL adoptées en séance 1/2/3, 4e adoptée le soir ; deux textes non examinés)."
+  },
+  {
+   "date": "2022-11-24",
+   "groupe_detecte": "LFI-NUPES",
+   "verdict": "valide",
+   "groupe_reel": "LFI-NUPES",
+   "preuve": "nous débattons aujourd’hui dans le cadre de la niche parlementaire du groupe La France insoumise-Nouvelle Union populaire, écologique et sociale.",
+   "cr": "CRSANR5L16S2023O1N068",
+   "ecarts_programme": [
+    {
+     "titre": "Réintégrer le personnel des établissements de santé et de secours non-vacciné grâce à un protocole sanitaire renforcé",
+     "statut_base": "retire",
+     "statut_constate": "commence",
+     "preuve": "La discussion de ce texte n'est jamais retirée : la séance est levée à minuit pendant l'examen de l'article 1er (« Très bien, je lève la séance ! », CRSANR5L16S2023O1N069). Le « retrait » détecté vient d'une phrase de M. Maillard sur le texte précédent (« Le texte suivant, relatif à la corrida, a été retiré sans débat »), qui tombe dans le segment de ce texte (regex « le texte a été retiré »)."
+    }
+   ],
+   "note": "Aussi : le texte « Augmenter le Smic à 1600 euros » a été retiré de l'ordre du jour par LFI avant la séance (« vous ayez retiré de l'ordre du jour la proposition de loi visant à porter le SMIC à 1 600 euros net », N067) : base = pas_examine, plus exactement retiré avant examen (mineur)."
+  },
+  {
+   "date": "2022-12-01",
+   "groupe_detecte": "LR",
+   "verdict": "valide",
+   "groupe_reel": "LR",
+   "preuve": "les députés du groupe Les Républicains d’avoir, dans le cadre de leur niche parlementaire, appelé l’attention de la représentation nationale",
+   "cr": "CRSANR5L16S2023O1N077",
+   "ecarts_programme": [],
+   "note": "Tous les statuts du programme sont conformes (retraite agricole adoptée à l'unanimité ; expulsion menace grave : article unique supprimé = rejetée ; juridiction expulsion rejetée ; juridiction VIF adoptée 41-40 ; résolution Iran non examinée)."
+  },
+  {
+   "date": "2023-01-12",
+   "groupe_detecte": "RN",
+   "verdict": "valide",
+   "groupe_reel": "RN",
+   "preuve": "Dans le cadre de sa niche parlementaire, le groupe RN a choisi d’en demander la suspension illimitée",
+   "cr": "CRSANR5L16S2023O1N113",
+   "ecarts_programme": [],
+   "note": "Statuts conformes : salaires, ZFE, droit de visite, tenue uniforme, représentation politique = rejetés (articles supprimés) ; TEOM = commencé (séance levée à minuit) ; reste non examiné."
+  },
+  {
+   "date": "2023-01-19",
+   "groupe_detecte": "RE",
+   "verdict": "rejete",
+   "groupe_reel": "aucun : ordre du jour ordinaire (textes de la majorité Renaissance), pas une journée réservée",
+   "preuve": "Hier soir, l’Assemblée a commencé la discussion des articles de la proposition de loi, s’arrêtant à l’amendement n o 435",
+   "cr": "CRSANR5L16S2023O1N123",
+   "ecarts_programme": [],
+   "note": "Le matin du 19 janvier 2023 poursuit la PPL Rist (accès aux soins, RE) commencée le mercredi 18 ; l'après-midi (CRSANR5L16S2023O1N124) examine la PPL Bergé/Abad sur le tiers financement (adoptée 56-0, séance levée à 16h25). Une journée réservée dure toute la journée jusqu'à minuit, et ne peut pas revenir à un groupe de la majorité (art. 48 al. 5). Pas de mention de niche pour RE."
+  },
+  {
+   "date": "2023-02-09",
+   "groupe_detecte": "SOC",
+   "verdict": "valide",
+   "groupe_reel": "SOC",
+   "preuve": "Socialistes et apparentés, qui ont décidé d’inscrire ce texte à l’ordre du jour de leur journée de niche parlementaire",
+   "cr": "CRSANR5L16S2023O1N138",
+   "ecarts_programme": [],
+   "note": "Statuts conformes. EDF (nationalisation) adoptée, Santiago adoptée, influenceurs retirée, ordonnance de protection adoptée, Défenseur de l'environnement seulement présenté à minuit."
+  },
+  {
+   "date": "2023-03-02",
+   "groupe_detecte": "HOR",
+   "verdict": "valide",
+   "groupe_reel": "HOR",
+   "preuve": "Pour sa première niche parlementaire depuis sa création, le groupe Horizons a fait le choix de rouvrir un débat",
+   "cr": "CRSANR5L16S2023O1N163",
+   "ecarts_programme": [],
+   "note": "Statuts conformes (récidive retirée par l'auteure ; majorité numérique et familles d'enfants malades adoptées ; 2 textes non examinés)."
+  },
+  {
+   "date": "2023-04-06",
+   "groupe_detecte": "ECOLO",
+   "verdict": "valide",
+   "groupe_reel": "ECOLO",
+   "preuve": "Le groupe Écologiste a donc bien fait d’inscrire ce débat dans sa niche parlementaire.",
+   "cr": "CRSANR5L16S2023O1N206",
+   "ecarts_programme": [
+    {
+     "titre": "Interdire les vols en jets privés",
+     "statut_base": "commence",
+     "statut_constate": "rejete",
+     "preuve": "« L’article unique et les amendements portant article additionnel ayant été rejetés, la proposition de loi est rejetée. » (CRSANR5L16S2023O1N208, séance levée à minuit)"
+    },
+    {
+     "titre": "Reconnaissance de la répression des Algériens du 17 octobre 1961 à Paris… / Interdiction de toute forme de publicité numérique et lumineuse dans l’espace public",
+     "statut_base": "pas_examine",
+     "statut_constate": "retire (avant examen)",
+     "preuve": "« La proposition de résolution relative à la reconnaissance du massacre des Algériens du 17 octobre 1961 à Paris, ainsi que la proposition de loi relative à l’interdiction de toute forme de publicité numérique et lumineuse… ont été retirées » (N206). Mineur : pas_examine reste défendable."
+    }
+   ],
+   "note": "Mieux manger : rejetée 121-138 (conforme) ; retrait-gonflement adoptée (conforme)."
+  },
+  {
+   "date": "2023-05-04",
+   "groupe_detecte": "GDR-NUPES",
+   "verdict": "valide",
+   "groupe_reel": "GDR-NUPES",
+   "preuve": "Dans le cadre de sa niche parlementaire, le groupe communiste a retiré deux textes",
+   "cr": "CRSANR5L16S2023O1N222",
+   "ecarts_programme": [],
+   "note": "Le CR parle du « groupe communiste » (GDR). Statuts conformes : résolution deux États rejetée 71-199 ; obligation vaccinale adoptée 157-137 ; EDF 2e lecture (« protéger le groupe EDF d'un démembrement ») adoptée 127-89 ; DGF organique seulement présentée, séance levée après l'événement tragique ; reste non examiné."
+  },
+  {
+   "date": "2023-05-11",
+   "groupe_detecte": "RE",
+   "verdict": "rejete",
+   "groupe_reel": "aucun : ordre du jour ordinaire (semaine « Europe », textes de la majorité Renaissance), pas une journée réservée",
+   "preuve": "Cette semaine n’est pas une semaine comme les autres : nous célébrons l’Europe.",
+   "cr": "CRSANR5L16S2023O1N231",
+   "ecarts_programme": [],
+   "note": "Une seule séance (matin, levée à 13h05) : PPL Maillard/Bergé/Marcangeli « Erasmus de l'apprentissage » + résolution art. 34-1 sur les surtranspositions agricoles (RE). Les textes suivants listés au programme de la base (pavoisement, accès aux soins…) avaient été examinés les 9-10 mai. Le prochain ordre du jour est le lundi 15 mai. Pas de mention de niche."
+  },
+  {
+   "date": "2023-06-08",
+   "groupe_detecte": "LIOT",
+   "verdict": "valide",
+   "groupe_reel": "LIOT",
+   "preuve": "le texte proposé aujourd’hui par le groupe LIOT, dans le cadre de sa niche parlementaire",
+   "cr": "CRSANR5L16S2023O1N261",
+   "ecarts_programme": [
+    {
+     "titre": "Renforcer l’engagement et la participation des citoyens à la vie démocratique",
+     "statut_base": "pas_examine",
+     "statut_constate": "retire (avant examen)",
+     "preuve": "« la présidente a été informée du retrait par son auteur, en application de l’article 84, alinéa 2… Il est pris acte de ce retrait » (fin de la 1re séance, CRSANR5L16S2023O1N262 ou N261, texte inscrit à l'ordre du jour de la journée). Mineur."
+    }
+   ],
+   "note": "Retraites (Pancher) : retirée par le groupe après l'article 40 (« nous retirons la proposition de loi ») ; taxe transactions financières retirée par Naegelen (« je retire cette proposition de loi, afin que les autres textes… de notre niche parlementaire puissent être discutés ») ; continuité territoriale adoptée 178-0 ; gestion de l'eau commencée. Conforme."
+  },
+  {
+   "date": "2023-10-12",
+   "groupe_detecte": "RN",
+   "verdict": "valide",
+   "groupe_reel": "RN",
+   "preuve": "Nous débattons dans le cadre de la niche attribuée au groupe Rassemblement national.",
+   "cr": "CRSANR5L16S2024O1N017",
+   "ecarts_programme": [
+    {
+     "titre": "Soutenir les femmes qui souffrent d'endométriose",
+     "statut_base": "commence",
+     "statut_constate": "retire",
+     "preuve": "« M. Jean-Philippe Tanguy, auteur de la proposition de loi, vient de me confirmer qu’elle était retirée. (La proposition de loi n° 1221 rectifié est retirée.) » (CRSANR5L16S2024O1N016)"
+    },
+    {
+     "titre": "Proposition de loi visant à supprimer ou à suspendre les allocations familiales (parents d'enfants criminels ou délinquants)",
+     "statut_base": "commence",
+     "statut_constate": "retire",
+     "preuve": "« Nous retirons notre texte. Je prends acte du retrait de la proposition de loi. » (rapporteur Masson, article 1er rejeté, CRSANR5L16S2024O1N017)"
+    },
+    {
+     "titre": "Interdiction de l’écriture dite « inclusive »",
+     "statut_base": "rejete",
+     "statut_constate": "retire (après suppression de l'article unique)",
+     "preuve": "Article unique supprimé par amendements identiques (127-83), puis « j’en demande le retrait. Il est pris acte du retrait de la proposition de loi par son auteur. » (CRSANR5L16S2024O1N018). Les deux sont vrais ; à trancher selon la règle voulue."
+    }
+   ],
+   "note": "Facture énergétique : retirée (conforme) ; complément de revenu étudiants : seulement présenté (conforme) ; Assange et minorité étrangers non examinés. Le motif de retrait des 3 premiers textes est le même : textes vidés par les amendements."
+  },
+  {
+   "date": "2023-11-23",
+   "groupe_detecte": "RE",
+   "verdict": "rejete",
+   "groupe_reel": "aucun : ordre du jour gouvernemental / ordinaire, pas une journée réservée",
+   "preuve": "L’ordre du jour appelle la discussion du projet de loi de financement de la sécurité sociale pour 2024",
+   "cr": "CRSANR5L16S2024O1N061",
+   "ecarts_programme": [],
+   "note": "Matin : deux accords internationaux en procédure simplifiée + PPL Kasbarian titres-restaurant (adoptée 117-1) ; après-midi/soir : nouvelle lecture du PLFSS 2024 (levée à 20h35) puis suite du « bien vieillir », commencé les 21-22 novembre. Le même jour, des orateurs LFI annoncent leur niche pour « jeudi prochain » (30 novembre)."
+  },
+  {
+   "date": "2023-11-30",
+   "groupe_detecte": "LFI-NUPES",
+   "verdict": "valide",
+   "groupe_reel": "LFI-NUPES",
+   "preuve": "J’ai l’immense honneur d’ouvrir cette riche niche parlementaire dédiée au groupe La France insoumise-Nouvelle Union populaire",
+   "cr": "CRSANR5L16S2024O1N068",
+   "ecarts_programme": [],
+   "note": "Statuts conformes : commission d'enquête risques naturels adoptée ; marges agroalimentaires rejetée 162-168 ; mégabassines retirée ; accueils physiques adoptée 122-29 ; art. L.435-1 CSI commencé ; le reste non examiné."
+  },
+  {
+   "date": "2023-12-07",
+   "groupe_detecte": "LR",
+   "verdict": "valide",
+   "groupe_reel": "LR",
+   "preuve": "je suis heureuse d’ouvrir cette niche parlementaire au nom du groupe Les Républicains",
+   "cr": "CRSANR5L16S2024O1N078",
+   "ecarts_programme": [],
+   "note": "Statuts conformes : accord franco-algérien (résolution) rejetée 114-151 ; souveraineté/immigration retirée par Marleix (« je retire malheureusement le texte ») ; territorialisation soins adoptée 68-0 ; soins palliatifs (résolution) adoptée 90-0 ; reste non examiné."
+  },
+  {
+   "date": "2024-01-18",
+   "groupe_detecte": "DEM",
+   "verdict": "valide",
+   "groupe_reel": "DEM",
+   "preuve": "Je remercie le groupe Démocrate d’avoir inscrit cette proposition de loi dans sa niche",
+   "cr": "CRSANR5L16S2024O1N096",
+   "ecarts_programme": [],
+   "note": "Statuts conformes (APD adoptée à l'unanimité ; CDI employabilité adoptée 101-17 ; logement (résolution) adoptée 65-6 ; justice patrimoniale adoptée 78-0)."
+  },
+  {
+   "date": "2024-02-01",
+   "groupe_detecte": "LR",
+   "verdict": "incertain",
+   "groupe_reel": "LR (très probable, texte par texte) mais statut de journée réservée non établi",
+   "preuve": "je remercie au nom du Gouvernement Michèle Tabarot ainsi que le groupe Les Républicains",
+   "cr": "CRSANR5L16S2024O1N115",
+   "ecarts_programme": [
+    {
+     "titre": "Proposition de loi encadrant l'intervention des cabinets de conseil privés dans les politiques publiques",
+     "statut_base": "adopte",
+     "statut_constate": "adopte, mais hors programme LR",
+     "preuve": "« À la demande des groupes Démocrate et Gauche démocrate et républicaine, la conférence des présidents… a finalement décidé… d’inscrire à notre ordre du jour la proposition de loi encadrant l’intervention des cabinets de conseil » (rapporteur, CRSANR5L16S2024O1N112, 31 janvier au soir). Texte du Sénat examiné de mercredi 21h30 au jeudi 19h, avant les textes LR."
+    }
+   ],
+   "note": "Aucune occurrence de « niche » ou « journée réservée » dans les 3 comptes rendus du 1er février. Le jeudi matin et l'après-midi poursuivent le texte Dem/GDR (cabinets de conseil, commencé la veille) ; les textes LR (Bonnivard classes de découverte adoptée 47-0 ; Tabarot jardins d'enfants adoptée 38-4) n'arrivent que vers 19h-21h30, la séance finit à 23h50 ; bureaux→logements et trophées de chasse non examinés. Ressemble à une journée LR écourtée / à une répartition de l'ordre du jour, pas à une niche pleine. Si on garde la niche LR, retirer le texte cabinets de conseil de son programme (rapporteurs Sansu GDR et Millienne Dem, demandé par Dem+GDR)."
+  },
+  {
+   "date": "2024-02-29",
+   "groupe_detecte": "SOC",
+   "verdict": "valide",
+   "groupe_reel": "SOC",
+   "preuve": "du groupe Socialistes, en particulier la rapporteure Claudia Rouaux, d’avoir choisi d’utiliser leur niche",
+   "cr": "CRSANR5L16S2024O1N131",
+   "ecarts_programme": [
+    {
+     "titre": "Proposition de loi visant à lutter contre les pénuries de médicaments et de vaccins (DLR5L16N46114)",
+     "statut_base": "commence",
+     "statut_constate": "doublon probable de « Lutte contre les pénuries de médicaments » (adopte)",
+     "preuve": "Le CR ne contient qu'une seule PPL sur les pénuries : « proposition de loi de Mme Valérie Rabault… visant à lutter contre les pénuries de médicaments (n°s 2062, 2214) », adoptée 110-0 (CRSANR5L16S2024O1N133). Le mot « vaccins » est absent du CR du 29 février. Rattachement du dossier DLR5L16N46114 à vérifier."
+    }
+   ],
+   "note": "Autres statuts conformes : EDF 3e lecture adoptée 293-0 ; sport adoptée 207-0 ; chlordécone adoptée 100-1 ; frais bancaires adoptée 112-0 ; gel des tarifs transports JO : seulement présentée, renvoyée. Clôture SOC : « Rendez-vous l'année prochaine pour d'autres victoires ! »."
+  },
+  {
+   "date": "2024-03-14",
+   "groupe_detecte": "HOR",
+   "verdict": "valide",
+   "groupe_reel": "HOR",
+   "preuve": "Le groupe Horizons et apparentés a donc inscrit à l’ordre du jour de l’Assemblée nationale, dans le cadre de sa journée réservée",
+   "cr": "CRSANR5L16S2024O1N148",
+   "ecarts_programme": [],
+   "note": "Statuts conformes : pensions alimentaires adoptée 102-0 ; textile adoptée 146-0 ; sécurité professionnels de santé adoptée 81-0 ; ancrage territorial (loi organique) : article unique adopté 64-44 mais séance levée avant le vote final (commence correct)."
+  },
+  {
+   "date": "2024-04-04",
+   "groupe_detecte": "ECOLO",
+   "verdict": "valide",
+   "groupe_reel": "ECOLO",
+   "preuve": "Nous avons décidé – et je remercie mon groupe pour cela – de consacrer notre niche",
+   "cr": "CRSANR5L16S2024O1N169",
+   "ecarts_programme": [],
+   "note": "Statuts conformes : PFAS adoptée 186-0 ; revenu digne agriculteurs adoptée 89-66 ; article 49 respectueux : commencé ; reste non examiné."
+  },
+  {
+   "date": "2024-05-30",
+   "groupe_detecte": "GDR-NUPES",
+   "verdict": "valide",
+   "groupe_reel": "GDR-NUPES",
+   "preuve": "en ouverture de la niche du groupe Gauche démocrate et républicaine, le groupe GDR",
+   "cr": "CRSANR5L16S2024O1N218",
+   "ecarts_programme": [
+    {
+     "titre": "proposition de loi constitutionnelle constitutionnaliser la sécurité sociale",
+     "statut_base": "retire",
+     "statut_constate": "rejete puis retiree",
+     "preuve": "« (L’article unique n’est pas adopté.) » 56-68, puis « Je retire ma proposition de loi… Il est donc pris acte du retrait » (CRSANR5L16S2024O1N219). Mineur : le texte est rejeté par vote avant le retrait."
+    }
+   ],
+   "note": "Autres statuts conformes : climat (résolution) adoptée 167-0 ; CETA (résolution) adoptée 151-4 ; logement social outre-mer adoptée 81-0 ; langues régionales ultramarines adoptée 82-0 ; cancer du sein adoptée 93-0 ; commission permanente outre-mer : commencée."
+  }
+ ],
+ "manquees": [],
+ "note_manquees": "Tous les jeudis des sessions 2022-23 et 2023-24 ont été passés en revue (titres des comptes rendus de 57 jeudis, dont 36 non détectés). Aucune niche manquée trouvée. Chaque mois d'octobre 2022 à mai 2023 et d'octobre 2023 à mai 2024 a une niche (février 2024 en a deux : 1er et 29). Juin 2023 couvert (8 juin). Pas de niche en juin 2024 (dissolution le 9 juin). Aucune niche LIOT en 2023-24 repérée (non prouvé qu'elle était prévue). Jeudis écartés : séances budget/PLFSS/motions de censure/textes gouvernementaux (13/10, 20/10, 27/10, 17/11, 8/12, 15/12/2022 ; 16/02, 16/03, 23/03, 13/04, 25/05, 1/06/2023 ; 28/09, 5/10, 2/11, 9/11, 14/12, 21/12/2023 ; 25/01, 16/05, 23/05, 6/06/2024) ; semaines de l'Assemblée avec PPL transpartisanes (30/03/2023 influenceurs, 15/06/2023, 22/06/2023 ZAN, 7/03/2024 bureaux-logements/danse, 28/03/2024 résolution 17 octobre 1961 + discrimination capillaire, 2/05/2024 commission d'enquête cinéma + résolution langue française + neurodéveloppement). Seuls les jeudis ont été examinés (la détection ne regarde que les jeudis) ; les autres jours de semaine n'ont pas été téléchargés."
+}

@@ -157,6 +157,17 @@ a.chip:hover { border-color: var(--encre); }
 .seance h2 { margin: 0; font-size: clamp(22px, 3.5vw, 30px); }
 .seance-haut { display: grid; gap: 6px; }
 .seance-resume { font-size: 18px; margin: 0; }
+.debat { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.replique { max-width: 88%; background: var(--bg); border: var(--bord); border-radius: 16px; padding: 10px 14px; display: grid; gap: 4px; animation: apparait .3s ease-out; }
+.replique.pour { justify-self: start; border-bottom-left-radius: 4px; }
+.replique.contre { justify-self: end; border-bottom-right-radius: 4px; }
+.replique.presentation, .replique.gouvernement { max-width: 100%; }
+.replique .orateur { font-size: 13px; font-weight: 700; color: var(--muted); display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.replique q { quotes: "« " " »"; font-size: 16px; }
+.vivre { display: grid; gap: 10px; }
+.lien-debat { font-weight: 700; font-size: 14px; text-decoration: none; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; }
+.lien-debat::before { content: "▶ "; font-size: 11px; }
+.lien-debat:hover { background: var(--accent); color: var(--on-accent); }
 .details-choix { display: grid; gap: 14px; background: var(--bg); border-radius: var(--rayon-s); padding: 16px; animation: apparait .35s ease-out; }
 .details-choix h3 { font-size: 20px; }
 .details-choix ul { margin: 4px 0 0; padding-left: 20px; }
@@ -330,7 +341,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   .logo { flex-basis: 100%; }
   nav { gap: 16px; }
 }
-@media (prefers-reduced-motion: reduce) { .revelation, .details-choix { animation: none; } .carte, .door, a.card { transition: none; } .carte:hover, .door:hover, a.card:hover { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .revelation, .details-choix, .replique { animation: none; } .carte, .door, a.card { transition: none; } .carte:hover, .door:hover, a.card:hover { transform: none; } }
 @media (prefers-reduced-motion: reduce) { .progress i { transition: none; } }
 </style>
 </head>
@@ -353,7 +364,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   <span id="maj"></span>
 </div></footer>
 
-<script src="donnees.js?v=4b1583dcdb"></script>
+<script src="donnees.js?v=05d1159030"></script>
 <script>
 // Groupes de toutes les législatures (GROUPES vient de donnees.js), dans l'ordre de l'hémicycle, de la gauche vers la droite.
 // Un même sigle d'une législature à l'autre désigne le même groupe (SOC, LR, RN…).
@@ -518,7 +529,7 @@ function carteTexte(t, { avecAuteur = true } = {}) {
   const s = totals(t), serre = s.ecart <= ECART_SERRE;
   return `<article class="carte">
     <div class="carte-haut"><h3><a href="#texte/${t.id}">${t.titre}</a>${badgeIA(t)}</h3>${issueTag(t)}</div>
-    <div class="carte-bas">${avecAuteur ? `<span>Par ${auteurCourt(t)}</span>` : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, 0, 0)}</span>${s.pour} pour · ${s.contre} contre${serre ? `<span class="serre">· à ${s.ecart} voix près</span>` : ""}</span><span class="carte-date">${fdateCourte(t.date)} · ${t.type === "solennel" ? "Vote solennel" : "Journée réservée"}${lecture(t) ? `, ${lecture(t)}` : ""}</span></div>
+    <div class="carte-bas">${avecAuteur ? `<span>Par ${auteurCourt(t)}</span>` : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, 0, 0)}</span>${s.pour} pour · ${s.contre} contre${serre ? `<span class="serre">· à ${s.ecart} voix près</span>` : ""}</span>${t.debat ? `<a class="lien-debat" href="#texte/${t.id}/debat">Le débat<span class="sr-only"> : ${t.titre.replace(/"/g, "&quot;")}</span></a>` : ""}<span class="carte-date">${fdateCourte(t.date)} · ${t.type === "solennel" ? "Vote solennel" : "Journée réservée"}${lecture(t) ? `, ${lecture(t)}` : ""}</span></div>
   </article>`;
 }
 // L'étape du parcours du texte, en mots simples (l'intitulé officiel est sur la fiche)
@@ -674,6 +685,9 @@ const views = {
         ${t.concerne ? `<div><div class="eyebrow">Qui est concerné</div><p>${t.concerne}</p></div>` : ""}
       </div>
       ${t.enClair ? `<p class="note">${NIVEAUX[t.niveau] || ""}</p>` : ""}
+      ${t.debat ? `<h2 id="le-debat" tabindex="-1">Pourquoi ce résultat&nbsp;? Le débat</h2>
+        <p class="meta">Ce qu'ont dit les deux camps en séance, à égalité, avant le vote.</p>${repliques(t, { nomme: true })}
+        <p class="note">Extraits exacts du compte rendu (${t.debat.comptesRendus.map(ref => ext(urlCompteRendu(ref, t.leg), `séance du ${fdate(t.debat.date)}`)).join(", ")}). Choix fait par IA, citations vérifiées mot pour mot, pas encore relu par un humain.</p>` : ""}
       ${mesuresTexte(t)}
       ${t.arguments ? `<h2>Les arguments des deux camps</h2>${argsGrid(t)}
         <p class="note">Arguments avancés pendant les débats, rapportés sans jugement. Sources : ${t.arguments.sources.map(x => ext(x.url, x.label)).join(", ")}.</p>` : ""}
@@ -915,6 +929,11 @@ function afficherSeance() {
     <div class="seance-haut"><span class="eyebrow">Texte ${seance.i + 1} sur ${n} · ${t.theme}</span><div class="progress" aria-hidden="true"><i style="width:${(100 * seance.i / n).toFixed(1)}%"></i></div></div>
     <h2 tabindex="-1" id="q-titre">${t.titre}</h2>
     <p class="seance-resume">${t.enClair}${t.niveau === "ia" ? ` ${badgeIA(t)}` : ""}</p>
+    ${t.debat && !seance.revele ? (seance.repl
+      ? `<section class="vivre" aria-label="Le débat"><h3 class="sr-only">Le débat</h3>${repliques(t, { visibles: seance.repl })}
+          <p class="row">${seance.repl < t.debat.repliques.length ? `<button type="button" class="plus" id="replique-suivante">Réplique suivante ↓</button>
+            <button type="button" class="lien-bouton" id="tout-le-debat">Tout afficher</button><span class="meta">${seance.repl} / ${t.debat.repliques.length}</span>` : `<span class="meta">Fin du débat. À vous de voter.</span>`}</p></section>`
+      : `<p><button type="button" class="plus" id="vivre-debat">▶ Vivre le débat <span class="meta">(${t.debat.repliques.length} répliques)</span></button></p>`) : ""}
     ${seance.details && !seance.revele ? elementsPourChoisir(t) : ""}
     ${!seance.revele ? `<div class="btns" data-id="${t.id}" role="group" aria-label="Votre vote : ${t.titre.replace(/"/g, "&quot;")}">
         ${VOTES.map(([val, l]) => `<button type="button" data-v="${val}">${l}</button>`).join("")}</div>
@@ -927,9 +946,27 @@ function afficherSeance() {
           ${hemicycle(t)}
           <p>Ce texte avait été proposé par ${auteurNom(t)}${t.groupe ? ` ${chip(t.groupe)}` : ""}.</p>
           <div class="camps">${camps(t)}</div>
+          ${t.debat && seance.repl ? `<details class="args-mini"><summary>Qui parlait dans le débat</summary>${repliques(t, { visibles: seance.repl, nomme: true })}</details>` : ""}
           <p class="row"><button type="button" class="plus principal" id="suivant">${seance.i + 1 < n ? "Texte suivant →" : "Voir ma séance →"}</button><a href="#texte/${t.id}">La fiche du texte</a></p>
         </div>`; })()}
   </article>`;
+}
+// « Vivre le débat » : des citations exactes du compte rendu, autant de chaque camp, en alternance.
+// Avant le vote, les orateurs sont anonymes ; après, on voit qui parlait et pour quel groupe.
+const feminin = o => o.nom.startsWith("Mme");
+function qui(r, nomme) {
+  const o = r.orateur;
+  if (nomme) return `${o.nom.replace(/\s*\([^)]*\)$/, "")}${o.qualite ? `, ${o.qualite.split(" de la ")[0]}` : ""}${o.groupe && o.groupe !== "GOUVERNEMENT" ? ` ${chip(o.groupe)}` : ""}`;
+  return { presentation: feminin(o) ? "Celle qui présente le texte" : "Celui qui présente le texte",
+    gouvernement: feminin(o) ? "La ministre, pour le gouvernement" : "Le ministre, pour le gouvernement",
+    pour: feminin(o) ? "Une députée favorable au texte" : "Un député favorable au texte",
+    contre: feminin(o) ? "Une députée opposée au texte" : "Un député opposé au texte" }[r.role];
+}
+const urlCompteRendu = (ref, leg) => `https://www.assemblee-nationale.fr/dyn/${leg}/comptes-rendus/seance/${ref}`;
+function repliques(t, { visibles = Infinity, nomme = false } = {}) {
+  const rs = t.debat.repliques.slice(0, visibles);
+  return `<ol class="debat">${rs.map((r, i) => `<li class="replique ${r.role}"${i === rs.length - 1 && !nomme ? ' tabindex="-1" id="derniere-replique"' : ""}>
+    <span class="orateur">${qui(r, nomme)}</span><q>${r.citation}</q></li>`).join("")}</ol>`;
 }
 // « Je ne sais pas » : les éléments pour se faire un avis, sans dévoiler l'auteur ni le résultat
 function elementsPourChoisir(t) {
@@ -949,7 +986,7 @@ function melanger(liste) {
 }
 function commencerSeance() {
   const rep = load();
-  seance = { ids: melanger(selectionBilan().filter(t => !(t.id in rep))).slice(0, TAILLE_SEANCE).map(t => t.id), i: 0, revele: false, details: false };
+  seance = { ids: melanger(selectionBilan().filter(t => !(t.id in rep))).slice(0, TAILLE_SEANCE).map(t => t.id), i: 0, revele: false, details: false, repl: 0 };
   majQuestions(); $("#q-titre")?.focus();
 }
 function load() { try { return JSON.parse(localStorage.getItem("bilan") || "{}"); } catch { return {}; } }
@@ -1007,7 +1044,7 @@ function majBilan() {
 }
 
 function render() {
-  const [view, arg] = (location.hash.slice(1) || "accueil").split("/");
+  const [view, arg] = (location.hash.slice(1) || "accueil").split("/");   // #texte/<id>/debat : voir le gestionnaire hashchange
   const fn = views[view] || views.accueil;
   app.innerHTML = fn(decodeURIComponent(arg || ""));
   // Titre de l'onglet propre à chaque vue (annoncé par les lecteurs d'écran)
@@ -1036,7 +1073,10 @@ app.addEventListener("click", e => {
   }
   if (e.target.closest(".panel-toggle")) { panelOpen = !panelOpen; majBilan(); return; }
   if (e.target.id === "sieger") { commencerSeance(); return; }
-  if (e.target.id === "suivant" || e.target.id === "passer") { seance.i++; seance.revele = false; seance.details = false; afficherSeance(); ($("#q-titre") || $("#fin-seance"))?.focus(); return; }
+  if (e.target.id === "suivant" || e.target.id === "passer") { seance.i++; seance.revele = false; seance.details = false; seance.repl = 0; afficherSeance(); ($("#q-titre") || $("#fin-seance"))?.focus(); return; }
+  if (e.target.closest("#vivre-debat")) { seance.repl = 1; afficherSeance(); $("#derniere-replique")?.focus(); return; }
+  if (e.target.id === "replique-suivante") { seance.repl++; afficherSeance(); $("#derniere-replique")?.focus(); return; }
+  if (e.target.id === "tout-le-debat") { seance.repl = Infinity; afficherSeance(); $("#derniere-replique")?.focus(); return; }
   if (e.target.id === "en-savoir-plus") { seance.details = true; afficherSeance(); $("#details-titre")?.focus(); return; }
   if (e.target.id === "autre-seance") { seance = null; commencerSeance(); if (!seance.ids.length) { seance = null; majQuestions(); } return; }
   if (e.target.id === "voir-plus") {
@@ -1072,12 +1112,18 @@ app.addEventListener("submit", e => {
 });
 addEventListener("hashchange", () => {
   if (!location.hash.startsWith("#bilan")) seance = null;
+  if (location.hash.endsWith("/debat")) {
+    render(); const h = $("#le-debat");
+    if (h) { h.scrollIntoView(); h.focus({ preventScroll: true }); return; }
+  }
   render(); scrollTo(0, 0);
   // Annonce la nouvelle vue : le focus va sur son titre principal
   const h1 = app.querySelector("h1");
   if (h1) { h1.setAttribute("tabindex", "-1"); h1.focus({ preventScroll: true }); }
 });
 render();
+// Lien direct vers un débat : on y descend une fois la page chargée (le navigateur remet sinon la page en haut)
+if (location.hash.endsWith("/debat")) addEventListener("load", () => setTimeout(() => $("#le-debat")?.scrollIntoView(), 0));
 </script>
 </body>
 </html>

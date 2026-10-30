@@ -45,3 +45,16 @@ Règles pour l'IA :
 - pour vérifier une niche, elle cite le compte rendu (champ `preuve`) ; sans preuve, la niche reste « à valider ».
 
 Les votes eux-mêmes ne sont jamais rédigés : ils viennent des décomptes officiels.
+
+## Vivre le débat
+
+Pour comprendre un vote, on peut revivre un résumé du vrai débat en séance, réplique après réplique.
+
+- **Des citations exactes du compte rendu officiel**, jamais reformulées. Un script (`pipeline/verifier_debats.py`) écarte toute citation qui ne figure pas mot pour mot dans l'intervention d'origine.
+- **L'orateur, sa qualité et son groupe viennent du compte rendu** (`pipeline/debats.py`), jamais de l'IA.
+- **Une stricte symétrie** : la présentation du texte, l'avis du gouvernement, puis autant de répliques favorables que défavorables, en alternance. Si une citation est écartée d'un côté, une réplique de l'autre côté est retirée.
+- **Sur le fond** : pas d'attaques personnelles, de querelles de procédure ni d'ironie.
+- **Anonymat avant le vote** (« une députée opposée au texte ») : une citation qui nomme une personne, un parti ou un groupe est écartée automatiquement. Les noms et les groupes sont révélés après le vote, et sur la fiche du texte.
+- **Même couleur pour les deux camps** ; seul le côté change.
+- **Texte consensuel** : quand aucun orateur ne s'y oppose sur le fond, on ne fabrique pas de camp opposé. Le débat n'est pas affiché (à terme : la présentation et la mention du consensus).
+- Le choix des répliques est fait par IA, puis relu par un humain ; le niveau est affiché.
