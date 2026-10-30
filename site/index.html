@@ -286,7 +286,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   <a class="logo" href="#accueil">Qui a <span>voté</span> quoi</a>
   <nav>
     <a href="#groupes" data-nav="groupes">Les groupes</a>
-    <a href="#sujets" data-nav="sujets">Mes sujets</a>
+    <a href="#sujets" data-nav="sujets">Les textes</a>
     <a href="#bilan" data-nav="bilan">Mon bilan</a>
   </nav>
 </div></header>
@@ -534,7 +534,7 @@ const views = {
       <p class="lead">Pour chaque texte : qui l'a proposé, ce qu'il change en clair, et ce que chaque groupe de députés a voté. Le site ne juge pas : à vous de vous faire votre avis.</p>
       <div class="doors trio">
         <a class="door" href="#groupes"><b>Les groupes</b><span>Ce que chaque groupe de députés a proposé, et comment il a voté.</span></a>
-        <a class="door" href="#sujets"><b>Mes sujets</b><span>Retraites, impôts, logement, santé : les textes qui vous concernent.</span></a>
+        <a class="door" href="#sujets"><b>Les textes</b><span>Tout ce qui a été voté, par sujet, par auteur ou par mot : retraites, impôts, logement, santé…</span></a>
         <a class="door" href="#bilan"><b>Mon bilan</b><span>Votez comme un député${BILAN.length ? ` sur ${BILAN.length} textes` : ""}, voyez quels groupes ont voté comme vous.</span></a>
       </div>
       <h2>Derniers votes</h2>
@@ -561,7 +561,7 @@ const views = {
   },
   sujets() {
     const options = (liste, valeur, tous) => `<option value="">${tous}</option>` + liste.map(([v, l]) => `<option value="${v}"${valeur === v ? " selected" : ""}>${l}</option>`).join("");
-    return `<h1>Mes sujets</h1>
+    return `<h1>Les textes</h1>
       <p class="lead">Tous les textes votés, des plus récents aux plus anciens. Filtrez par sujet, par auteur ou par période, ou cherchez un mot : on vous montre ce qui a été proposé, et qui a voté pour ou contre.</p>
       <form class="filtres" role="search" onsubmit="return false">
         <div class="champ"><label for="q">Chercher un texte</label><input id="q" type="search" autocomplete="off" placeholder="Par exemple : retraite, loyer, police" value="${filtre.q.replace(/"/g, "&quot;")}"></div>
@@ -793,7 +793,7 @@ const views = {
       </div>`;
   },
 };
-// Mes sujets : la grille des sujets, ou les résultats de la recherche, sans redessiner le formulaire (le focus reste dans le champ)
+// Les textes : la liste filtrée, sans redessiner le formulaire (le focus reste dans le champ)
 function majSujets() {
   const q = filtre.q.trim();
   const ts = parPeriode(TEXTES, filtre.leg)
@@ -924,7 +924,7 @@ app.addEventListener("click", e => {
   }
   if (e.target.id === "reset") { e.preventDefault(); save({}); majBilan(); }
 });
-// Formulaires : recherche et période (Mes sujets), sujets et période (Mon bilan)
+// Formulaires : filtres (Les textes), sujets et période (Mon bilan)
 app.addEventListener("input", e => {
   if (e.target.id === "q") { filtre.q = e.target.value; nbVisibles = 30; majSujets(); }
 });

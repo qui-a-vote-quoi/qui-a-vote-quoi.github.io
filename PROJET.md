@@ -22,7 +22,7 @@ Principe directeur : **simple et efficace**. Les idées qui ajoutent de la compl
 | Points ouverts | 1. **Les textes votés à main levée** (surtout en 2017-2022) : les afficher avec leur sort mais sans répartition par groupe, et les exclure de Mon bilan ? 2. **Le statut « renvoyé en commission »** (14 textes en 2017-2022) : nouveau statut à afficher, avec le vote sur la motion. 3. Les textes adoptés **par 49.3, sans vote**. Le seul vote est alors la motion de censure : il y en a eu 11 liées à un 49.3 depuis 2024, dont le budget 2025. À décider : les afficher comme « vote sur le texte » en expliquant le mécanisme. |
 | Période | **2017-2026** : les 15ᵉ, 16ᵉ et 17ᵉ législatures, les seules dont l'open data est structuré et complet. |
 | Mise à jour | **Une fois par mois, vers le 5 à 10 du mois**, avec `python3 pipeline/mettre_a_jour.py` (détail dans le [README](README.md)). Tout est re-téléchargé et recalculé (environ 20 secondes) ; seul ce qui est nouveau est à valider à la main. |
-| Entrées du site | Trois entrées à égalité : **Les groupes**, **Mes sujets** et **Mon bilan**. |
+| Entrées du site | Trois entrées à égalité : **Les groupes**, **Les textes** (tous les textes, filtrables par sujet, auteur, période ou mot ; « Mes sujets » jusqu'au 30/10/2026) et **Mon bilan**. |
 | Mon bilan | « Si vous étiez député, qu'auriez-vous voté ? » : **Pour / Contre / Je ne sais pas**, avec le parti caché jusqu'au résultat. |
 | Neutralité | Le site montre les faits, l'utilisateur juge. Les règles sont dans [CHARTE-NEUTRALITE.md](CHARTE-NEUTRALITE.md). |
 | Accessibilité | RGAA 4.1 / WCAG 2.1 AA, à vérifier à chaque évolution. Les règles sont dans [ACCESSIBILITE.md](ACCESSIBILITE.md). |
