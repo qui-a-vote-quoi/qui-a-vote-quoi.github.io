@@ -13772,5 +13772,35 @@
    ],
    "niveau": "ia"
   }
+ },
+ "DLR5L15N36254": {
+  "theme": "Institutions et État",
+  "sujetNiveau": "ia",
+  "titreClair": "Créer une circonscription unique pour les élections européennes",
+  "enClair": "La France formerait une seule circonscription pour élire ses représentants au Parlement européen, au lieu des huit circonscriptions interrégionales actuelles. Les listes présenteraient autant de candidats que de sièges, le plafond des dépenses électorales passerait à 9,2 millions d'euros par liste, et le temps d'antenne de la campagne officielle serait réparti selon de nouvelles règles.",
+  "concerne": "Électeurs, listes de candidats et partis.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PRJLANR5L15B0539",
+  "mesures": [
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
+ },
+ "DLR5L15N36468": {
+  "theme": "Institutions et État",
+  "sujetNiveau": "ia",
+  "titreClair": "Étendre à l'élection présidentielle les règles contre les fausses informations",
+  "enClair": "Cette loi organique rend applicables à la campagne de l'élection du Président de la République les articles du code électoral sur la lutte contre la diffusion de fausses informations en période électorale. Elle met à jour les références aux textes de 2017 dans la loi de 1962.",
+  "concerne": "Candidats à l'élection présidentielle, plateformes en ligne, électeurs.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PIONANR5L15B0772",
+  "remarque": "Extrait : texte déposé ; le vote porte sur la lecture définitive. Les obligations elles-mêmes figurent dans la loi ordinaire dont ce texte étend l'application.",
+  "mesures": [
+   "contrainte_plus",
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
  }
 }

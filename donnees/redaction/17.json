@@ -7452,5 +7452,35 @@
    ],
    "niveau": "ia"
   }
+ },
+ "DLR5L17N52655": {
+  "theme": "Outre-mer",
+  "sujetNiveau": "ia",
+  "titreClair": "Reporter les élections provinciales en Nouvelle-Calédonie au plus tard le 28 juin 2026",
+  "enClair": "Les élections du congrès et des assemblées de province de Nouvelle-Calédonie, prévues au plus tard le 30 novembre 2025, auraient lieu au plus tard le 28 juin 2026. Les mandats en cours et les fonctions des organes du congrès sont prolongés jusqu'à la première réunion des nouvelles assemblées.",
+  "concerne": "Électeurs et élus de Nouvelle-Calédonie.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PIONANR5L17B1969",
+  "remarque": "Extrait : texte adopté par le Sénat et transmis à l'Assemblée ; l'Assemblée a pu le modifier.",
+  "mesures": [
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
+ },
+ "DLR5L17N53426": {
+  "theme": "Santé",
+  "sujetNiveau": "ia",
+  "titreClair": "Renforcer le dépistage et la prévention des maladies cardio-neuro-vasculaires",
+  "enClair": "Les politiques de dépistage devraient inclure obligatoirement les maladies cardio-neuro-vasculaires et leurs facteurs de risque (diabète, hypertension, cholestérol). Chaque employeur devrait organiser au moins une fois par an une action de sensibilisation des salariés à ces risques, éventuellement avec des associations de prévention.",
+  "concerne": "Employeurs, salariés, patients, professionnels de santé.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PIONANR5L17B2309",
+  "remarque": "Extrait : texte déposé ; le vote porte sur le texte de la commission mixte paritaire, qui peut différer. Article de compensation financière non détaillé.",
+  "mesures": [
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  }
 }
