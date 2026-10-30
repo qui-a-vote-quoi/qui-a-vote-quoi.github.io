@@ -17,7 +17,7 @@
 :root {
   --bg: #fbf8f3; --surface: #ffffff; --fg: #231a33; --muted: #5c5270; --line: #e4dcec; --encre: #231a33;
   --accent: #5b3fd9; --accent-soft: #ede7ff; --on-accent: #ffffff; --corail: #d9541f;
-  --soutien: #1a7f5a; --opposition: #c23b22; --abst: #8a6200; --absent: #9a91ab; --seat-absent: #9a91ab; --trait: #8f85a3;
+  --soutien: #1a7f5a; --opposition: #c23b22; --abst: #8a6200; --absent: #ddd6e6; --seat-absent: #ddd6e6; --trait: #8f85a3;
   --jauge-pour: #5cbf93; --jauge-contre: #ef8a74; --jauge-abst: #e7c25e;
   --ok-soft: #d8f3e7; --ok-fg: #0f5e42; --ko-soft: #ffe2da; --ko-fg: #9a2a14; --loi-soft: #ede7ff; --serre-soft: #fff0c2; --serre-fg: #6b4300;
   --rayon: 18px; --rayon-s: 12px; --bord: 1.5px solid var(--line); --bord-encre: 1.5px solid var(--encre); --ombre: 3px 3px 0 var(--encre);
@@ -27,7 +27,7 @@
 @media (prefers-color-scheme: dark) {
   :root { --bg: #16121e; --surface: #201a2b; --fg: #f2edf9; --muted: #b6abc9; --line: #3a314a; --encre: #8f84a6;
     --accent: #ab98ff; --accent-soft: #2c2445; --on-accent: #16121e; --corail: #ff8d68;
-    --soutien: #4fc497; --opposition: #ff8a70; --abst: #e2b852; --absent: #7d7392; --seat-absent: #7d7392; --trait: #8f84a6;
+    --soutien: #4fc497; --opposition: #ff8a70; --abst: #e2b852; --absent: #3e3550; --seat-absent: #3e3550; --trait: #8f84a6;
     --jauge-pour: #3f9f78; --jauge-contre: #d9735f; --jauge-abst: #c9a24a;
     --ok-soft: #183a2d; --ok-fg: #9be6c6; --ko-soft: #43211b; --ko-fg: #ffb8a6; --loi-soft: #2c2445; --serre-soft: #3e3214; --serre-fg: #f3d27a;
     color-scheme: dark; }
@@ -280,6 +280,7 @@ a.plus { text-decoration: none; display: inline-flex; align-items: center; }
 .hemi .sous { fill: var(--muted); font: 400 14px var(--body); }
 .hemi.cliquable svg a circle, .legende-groupes a { transition: opacity .15s; }
 .hemi .zone { fill: transparent; }
+.hemi .coupe { stroke: var(--surface); stroke-width: 3; pointer-events: none; }
 .hemi.un-groupe svg a:not(.on) circle, .hemi.un-groupe svg a:not(.on) text { opacity: .2; }
 .periodes { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; }
 .periodes button { font: 700 15px var(--body); padding: 8px 16px; min-height: 44px; border-radius: 999px; border: var(--bord); background: var(--surface); color: var(--fg); cursor: pointer; }
@@ -603,16 +604,20 @@ function hemicycle(blocs, { aria, centre, sous = "", tete = "", pied = "", lien 
       seg += `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" text-anchor="${anc}">${g}</text>`;
     }
     dessin += lien ? `<a href="#groupe/${g}" data-g="${g}" tabindex="-1">${seg}</a>` : seg;
-    bornes.push({ g, de: sieges[debut].a, a: sieges[i - 1].a });
+    if (i > debut) bornes.push({ g, de: sieges[debut].a, a: sieges[i - 1].a });
   });
+  // Les sièges sont rangés par angle : la frontière entre deux groupes voisins est un rayon, à mi-chemin entre eux
+  const ri = (r0 - .04) * S, re = 1.04 * S, pt = (r, t) => `${(r * Math.cos(t)).toFixed(1)} ${(-r * Math.sin(t)).toFixed(1)}`;
+  const frontieres = bornes.slice(1).map((b, k) => (bornes[k].a + b.de) / 2);
+  // Une fine coupure sur chaque frontière, pour voir où finit un groupe
+  const coupes = frontieres.map(t => `<path class="coupe" d="M${pt(ri, t)} L${pt(re, t)}"/>`).join("");
   // Cliquable : sous les points, une part d'anneau par groupe couvre aussi les vides entre eux (le survol ne clignote pas)
   const zones = lien ? bornes.map((b, k) => {
-    const A = k ? (bornes[k - 1].a + b.de) / 2 : Math.PI, B = k < bornes.length - 1 ? (b.a + bornes[k + 1].de) / 2 : 0;
-    const ri = (r0 - .04) * S, re = 1.04 * S, pt = (r, t) => `${(r * Math.cos(t)).toFixed(1)} ${(-r * Math.sin(t)).toFixed(1)}`;
+    const A = k ? frontieres[k - 1] : Math.PI, B = k < bornes.length - 1 ? frontieres[k] : 0;
     return `<a href="#groupe/${b.g}" data-g="${b.g}" tabindex="-1"><path class="zone" d="M${pt(re, A)} A${re} ${re} 0 0 1 ${pt(re, B)} L${pt(ri, B)} A${ri} ${ri} 0 0 0 ${pt(ri, A)}Z"/></a>`;
   }).join("") : "";
   return `<div class="hemi${lien ? " cliquable" : ""}">${tete}<svg viewBox="-300 -262 600 280" ${lien ? `aria-hidden="true"` : `role="img" aria-label="${aria}"`}>
-    ${zones}${dessin}<text class="centre" x="0" y="${sous ? -24 : -6}" text-anchor="middle">${centre}</text>${sous ? `<text class="sous" x="0" y="-2" text-anchor="middle">${sous}</text>` : ""}</svg>${pied}</div>`;
+    ${zones}${dessin}${coupes}<text class="centre" x="0" y="${sous ? -24 : -6}" text-anchor="middle">${centre}</text>${sous ? `<text class="sous" x="0" y="-2" text-anchor="middle">${sous}</text>` : ""}</svg>${pied}</div>`;
 }
 // Hémicycle d'un vote : chaque député coloré selon son vote
 function hemicycleVote(t) {

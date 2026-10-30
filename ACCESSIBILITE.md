@@ -22,7 +22,7 @@ Le site s'adresse à tout le monde : il doit rester accessible à chaque évolut
 ## Couleurs et tailles
 
 - **Texte : contraste d'au moins 4,5:1.** **Éléments graphiques et contours de boutons : au moins 3:1.** À vérifier en mode clair et en mode sombre.
-- **Une information n'est jamais portée par la seule couleur** : toujours un texte, une icône ou une forme (par exemple les sièges vides de l'hémicycle sont des cercles creux).
+- **Une information n'est jamais portée par la seule couleur** : toujours un texte, une icône ou une forme (par exemple les députés qui n'ont pas voté sont en gris très clair, comme des sièges vides : ils se distinguent par la clarté et pas seulement par la teinte, et leur nombre est toujours écrit en toutes lettres).
 - **Zones cliquables d'au moins 24 px**, 44 px pour les boutons principaux.
 - **Pas de défilement horizontal à 320 px de large** (zoom 400 %).
 - **Les animations respectent « réduire les animations ».**
