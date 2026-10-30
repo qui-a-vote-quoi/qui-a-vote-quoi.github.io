@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qui a voté quoi — maquette</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Mise en page : une colonne de 960 px pour tout le site ; l'hémicycle (gauche → droite) comme fil conducteur des votes */
+:root {
+  --bg: #f5f6f8; --surface: #ffffff; --fg: #161a22; --muted: #5b6372; --line: #dfe2e8;
+  --accent: #27407a; --accent-soft: #e6ebf6; --on-accent: #ffffff;
+  --soutien: #2e7d4f; --opposition: #b3261e; --abst: #7a6420; --absent: #848b96; --seat-absent: #848b96; --trait: #848b96;
+  --ok-soft: #e7f3ec; --ko-soft: #f9e9e7; --loi-soft: #e6ebf6;
+  --display: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #11141a; --surface: #1a1e26; --fg: #e9ecf1; --muted: #9aa3b2; --line: #2c323d;
+    --accent: #9fb4ea; --accent-soft: #232c42; --on-accent: #11141a;
+    --soutien: #57b07e; --opposition: #e0645a; --abst: #c9ad5a; --absent: #6f7785; --seat-absent: #6f7785; --trait: #6f7785;
+    --ok-soft: #1b2c23; --ko-soft: #33201f; --loi-soft: #232c42; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 90px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip { position: absolute; left: 8px; top: -60px; z-index: 20; background: var(--accent); color: var(--on-accent); padding: 10px 16px; border-radius: 6px; font-weight: 700; }
+.skip:focus { top: 8px; }
+main:focus, h1:focus { outline: none; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.5 var(--body); }
+a { color: var(--accent); }
+.wrap { max-width: 960px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.proto { background: #7a6420; color: #fff; text-align: center; font-size: 13px; font-weight: 700; padding: 4px 16px; }
+.proto .court { display: none; }
+header.top { background: var(--surface); border-bottom: 1px solid var(--line); position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; }
+header.top .wrap { display: flex; align-items: center; gap: 20px; padding-block: 12px; }
+.logo { font: 700 20px var(--display); text-decoration: none; color: var(--fg); margin-right: auto; white-space: nowrap; }
+.logo span { color: var(--accent); }
+nav { display: flex; gap: 18px; }
+nav a { text-decoration: none; color: var(--muted); font-weight: 600; padding: 4px 2px; white-space: nowrap; }
+nav a.on { color: var(--fg); border-bottom: 2px solid var(--accent); }
+main { padding-block: 32px 64px; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.15; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(28px, 5vw, 42px); }
+h2 { font-size: 24px; margin-top: 44px; margin-bottom: 14px; }
+h3 { font-size: 19px; }
+.lead { font-size: 19px; color: var(--muted); max-width: 62ch; margin: 12px 0 0; }
+.eyebrow { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 700; }
+.meta { color: var(--muted); font-size: 15px; }
+.note { font-size: 14px; color: var(--muted); margin-top: 24px; max-width: 75ch; }
+.back { display: inline-block; margin-bottom: 16px; text-decoration: none; font-weight: 600; }
+.row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.list { display: grid; gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; text-decoration: none; color: var(--fg); display: grid; gap: 10px; }
+a.card:hover, .door:hover { border-color: var(--accent); }
+
+/* Partis : pastille claire (lien) et badge plein (identité) */
+.chip { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; padding: 3px 10px 3px 8px; min-height: 26px; border-radius: 999px; background: var(--accent-soft); color: var(--fg); text-decoration: none; white-space: nowrap; }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; }
+.badge { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; height: 28px; padding: 0 10px; border-radius: 6px; font: 700 13px var(--display); letter-spacing: .02em; white-space: nowrap; text-decoration: none; }
+.badge.lg { height: 40px; min-width: 64px; font-size: 17px; border-radius: 8px; }
+
+/* Verdicts : trois formes distinctes, lisibles sans la couleur */
+.tag { display: inline-flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 700; padding: 1px 8px; border-radius: 4px; border: 1.5px solid currentColor; white-space: nowrap; }
+.tag.ok { color: var(--soutien); }
+.tag.ko { color: var(--opposition); border-style: dashed; }
+.tag.loi { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.verdict { display: flex; gap: 16px; align-items: center; border-radius: 12px; padding: 18px 20px; margin-top: 20px; }
+.verdict.ok { background: var(--ok-soft); } .verdict.ko { background: var(--ko-soft); } .verdict.loi { background: var(--loi-soft); }
+.v-ico { flex: none; width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; color: #fff; }
+.verdict.ok .v-ico { background: var(--soutien); } .verdict.ko .v-ico { background: var(--opposition); } .verdict.loi .v-ico { background: var(--accent); color: var(--on-accent); }
+.verdict b { display: block; font: 700 22px/1.2 var(--display); }
+.verdict div > span { color: var(--muted); }
+
+/* Accueil */
+.steps { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; counter-reset: etape; }
+.steps li { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 2px 12px; counter-increment: etape; }
+.steps li::before { content: counter(etape); grid-row: span 2; width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: grid; place-items: center; font: 700 15px var(--display); }
+.steps b { font-family: var(--display); }
+.steps span { color: var(--muted); font-size: 15px; }
+.doors { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 32px; }
+.doors.trio { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.door { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; text-decoration: none; color: var(--fg); display: grid; gap: 6px; align-content: start; }
+.door b { font: 700 19px var(--display); display: flex; justify-content: space-between; gap: 8px; }
+.door b::after { content: "→"; color: var(--accent); }
+.door span { color: var(--muted); font-size: 15px; }
+
+
+/* Fiche texte */
+.clair { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px 28px; margin-top: 24px; }
+.clair p { margin: 4px 0 0; font-size: 18px; }
+.duel { display: grid; gap: 8px; }
+.duel-nums { display: flex; justify-content: space-between; font: 700 34px/1 var(--display); font-variant-numeric: tabular-nums; }
+.duel-nums small { font: 600 15px var(--body); color: var(--muted); margin-left: 6px; }
+.duel-nums .p { color: var(--soutien); } .duel-nums .c { color: var(--opposition); }
+.duel-bar { position: relative; display: flex; height: 18px; border-radius: 9px; overflow: hidden; background: var(--line); }
+.duel-bar i { display: block; height: 100%; }
+.duel-bar .mid { position: absolute; left: 50%; top: -4px; bottom: -4px; width: 2px; background: var(--fg); }
+.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 20px; }
+.fact { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 2px; }
+.fact b { font: 700 34px/1.1 var(--display); font-variant-numeric: tabular-nums; }
+.fact span { color: var(--muted); font-size: 15px; }
+.hemi { margin-top: 24px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.hemi svg { display: block; width: 100%; max-width: 620px; height: auto; margin: 0 auto; }
+.hemi .s-p { fill: var(--soutien); } .hemi .s-c { fill: var(--opposition); } .hemi .s-a { fill: var(--abst); } .hemi .s-n { fill: none; stroke: var(--seat-absent); stroke-width: 1.4; }
+.hemi text { fill: var(--muted); font: 700 11px var(--body); }
+.hemi .centre { fill: var(--fg); font: 700 22px var(--display); }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 14px; color: var(--muted); justify-content: center; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.grp-list { display: grid; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.grp { display: grid; grid-template-columns: 110px 140px minmax(0, 1fr) 52px; gap: 12px; align-items: center; padding: 10px 14px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.grp:last-child { border-bottom: 0; }
+.grp .num { font-size: 13px; color: var(--muted); grid-column: 3; margin-top: -8px; }
+.grp .pct { text-align: right; font-weight: 700; }
+.grp .chip, .score .chip { justify-self: start; }
+.pos { font-weight: 700; }
+.pos.soutien { color: var(--soutien); } .pos.opposition { color: var(--opposition); } .pos.abstention { color: var(--abst); } .pos.absent { color: var(--muted); font-weight: 400; }
+.bar { display: flex; height: 12px; border-radius: 6px; overflow: hidden; background: var(--line); }
+.bar i { display: block; height: 100%; }
+
+.args-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.arg { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.arg ul { margin: 8px 0 0; padding-left: 18px; display: grid; gap: 8px; }
+.args-mini summary { min-height: 28px; display: flex; align-items: center; cursor: pointer; color: var(--accent); font-weight: 600; font-size: 15px; }
+.args-mini[open] summary { margin-bottom: 10px; }
+.args-mini .arg { background: var(--bg); font-size: 15px; }
+
+/* Fiche parti */
+.party-head { --pc: var(--accent); background: color-mix(in srgb, var(--pc) 13%, var(--surface)); border: 1px solid color-mix(in srgb, var(--pc) 30%, var(--line)); border-radius: 14px; padding: 24px; display: grid; gap: 16px; }
+.contexte { margin: 0; max-width: 70ch; }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.stat .meta { font-size: 14px; }
+.big { font: 700 30px var(--display); }
+.score { display: grid; grid-template-columns: 110px minmax(0, 1fr) 48px; gap: 12px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.score:last-child { border-bottom: 0; }
+.score b { text-align: right; }
+.callout { background: var(--accent-soft); border-radius: 10px; padding: 16px 18px; margin-top: 18px; }
+.callout b { font-family: var(--display); }
+.prog { list-style: none; margin: 0; padding: 0; display: grid; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.prog li { display: grid; grid-template-columns: 10rem minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+.prog li:last-child { border-bottom: 0; }
+.prog li > .tag { justify-self: start; }
+.prog-txt > span { font: 600 17px/1.35 var(--display); }
+.camps { display: grid; gap: 6px; margin-top: 10px; }
+.camp .pos { min-width: 8.5em; font-size: 14px; }
+.camp { gap: 6px; }
+.prog li.sans-fiche .prog-txt > span { color: var(--muted); }
+.prog small { display: block; font: 400 14px var(--body); color: var(--muted); margin-top: 2px; }
+.tag.na { color: var(--muted); border-color: var(--line); border-style: solid; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.tablewrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); font-size: 15px; }
+tr:last-child td { border-bottom: 0; }
+th { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+
+/* Mon bilan */
+.q { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; display: grid; gap: 10px; }
+.btns { display: flex; gap: 8px; flex-wrap: wrap; }
+.btns button { display: inline-flex; align-items: center; gap: 8px; font: 600 15px var(--body); padding: 8px 18px; min-width: 88px; justify-content: center; border-radius: 8px; border: 1px solid var(--trait); background: var(--surface); color: var(--fg); cursor: pointer; min-height: 44px; }
+.btns button.sel[data-v="1"] { background: var(--soutien); border-color: var(--soutien); color: #fff; }
+.btns button.sel[data-v="-1"] { background: var(--opposition); border-color: var(--opposition); color: #fff; }
+.btns button.sel[data-v="0"] { background: var(--muted); border-color: var(--muted); color: #fff; }
+button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.bilan { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 28px; align-items: start; margin-top: 24px; }
+.panel { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 76px); background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: grid; gap: 10px; }
+.panel-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.panel-head .meta { margin-right: auto; font-variant-numeric: tabular-nums; }
+.panel-top { margin: 0; font-size: 15px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.panel-scores { display: grid; gap: 6px; }
+.pscore { display: grid; grid-template-columns: 84px minmax(0, 1fr) auto 3em; gap: 6px; align-items: center; font-variant-numeric: tabular-nums; text-align: right; }
+.pscore .chip { justify-self: start; }
+.pscore b { white-space: nowrap; min-width: 3.2em; }
+.pscore .sur { font-size: 12px; color: var(--muted); text-align: left; white-space: nowrap; }
+.pscore.hors { opacity: .45; }
+.progress { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.progress i { display: block; height: 100%; background: var(--accent); transition: width .2s; }
+.panel-legend { font-size: 13px; gap: 10px; justify-content: flex-start; }
+.panel-toggle { display: none; font: 600 14px var(--body); background: none; border: 0; color: var(--accent); cursor: pointer; padding: 0; }
+
+@media (max-width: 860px) {
+  .bilan { grid-template-columns: minmax(0, 1fr); }
+  .panel { position: fixed; top: auto; left: 0; right: 0; bottom: 0; z-index: 6; border-radius: 14px 14px 0 0; max-height: 75vh; overflow: auto;
+    padding: 12px max(16px, env(safe-area-inset-right, 0px)) calc(12px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+    box-shadow: 0 -6px 24px rgb(0 0 0 / .14); }
+  .panel .panel-scores, .panel .panel-legend { display: none; }
+  .panel.open .panel-scores { display: grid; }
+  .panel.open .panel-legend { display: flex; }
+  .panel-toggle { display: inline-block; }
+  main.has-panel { padding-bottom: 180px; }
+  /* un élément qui reçoit le focus ne doit pas finir caché sous le bandeau de résultat */
+  html:has(main.has-panel) { scroll-padding-bottom: 140px; }
+}
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .proto .long { display: none; } .proto .court { display: inline; }
+  header.top .wrap { gap: 12px; padding-block: 10px; }
+  .logo { font-size: 16px; }
+  nav { gap: 12px; } nav a { font-size: 14px; }
+  main { padding-block: 24px 48px; }
+  .steps { grid-template-columns: minmax(0, 1fr); gap: 12px; margin-top: 20px; }
+  .doors.trio { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .doors:not(.trio) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .steps li { grid-template-columns: 26px minmax(0, 1fr); }
+  .steps li::before { width: 26px; height: 26px; font-size: 13px; }
+  .steps span { font-size: 14px; }
+  .verdict { padding: 14px; gap: 12px; } .verdict b { font-size: 19px; } .v-ico { width: 40px; height: 40px; font-size: 20px; }
+  .duel-nums { font-size: 28px; }
+  .fact b { font-size: 28px; }
+  .grp { grid-template-columns: minmax(0, 1fr) auto; gap: 6px 10px; }
+  .grp .bar { grid-column: 1; } .grp .pct { grid-column: 2; }
+  .grp .num { grid-column: 1 / -1; margin-top: 0; }
+  .score { grid-template-columns: 96px minmax(0, 1fr) 44px; }
+  .party-head { padding: 18px; }
+  .args-grid { grid-template-columns: minmax(0, 1fr); }
+  .prog li { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .stats { gap: 8px; } .stat { padding: 10px 12px; } .stat .meta { font-size: 13px; } .big { font-size: 24px; }
+  .grp .pos { text-align: right; }
+}
+@media (prefers-reduced-motion: reduce) { .progress i { transition: none; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu" id="skip">Aller au contenu</a>
+<div class="proto"><span class="long">MAQUETTE — données réelles de l'Assemblée nationale, résumés à valider</span><span class="court">MAQUETTE · données réelles</span></div>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#accueil">Qui a <span>voté</span> quoi</a>
+  <nav>
+    <a href="#groupes" data-nav="groupes">Les groupes</a>
+    <a href="#sujets" data-nav="sujets">Mes sujets</a>
+    <a href="#bilan" data-nav="bilan">Mon bilan</a>
+  </nav>
+</div></header>
+<main class="wrap" id="app" tabindex="-1"></main>
+
+<script src="data.js?v=8"></script>
+<script>
+// Ordre de l'hémicycle, de la gauche vers la droite. t : couleur du texte sur la couleur du parti
+const GROUPES = {
+  "LFI-NFP": { nom: "La France insoumise – NFP", c: "#c0272d", t: "#fff" },
+  "GDR":     { nom: "Gauche démocrate et républicaine", c: "#8e1b1b", t: "#fff" },
+  "ECOS":    { nom: "Écologiste et social", c: "#2e7d3a", t: "#fff" },
+  "SOC":     { nom: "Socialistes et apparentés", c: "#c2306a", t: "#fff" },
+  "LIOT":    { nom: "Libertés, indépendants, outre-mer et territoires", c: "#b08850", t: "#1b1406" },
+  "DEM":     { nom: "Les Démocrates", c: "#e9862b", t: "#1f1203" },
+  "EPR":     { nom: "Ensemble pour la République", c: "#d8b31c", t: "#1f1a03" },
+  "HOR":     { nom: "Horizons & indépendants", c: "#3aa6c2", t: "#04161b" },
+  "DR":      { nom: "Droite républicaine", c: "#2f6fd0", t: "#fff" },
+  "UDR":     { nom: "Union des droites pour la République", c: "#43497f", t: "#fff" },
+  "RN":      { nom: "Rassemblement national", c: "#1f2f7a", t: "#fff" },
+  "NI":      { nom: "Non-inscrits", c: "#6b707a", t: "#fff" },
+};
+const ORDRE = Object.keys(GROUPES);
+const LIB = { soutien: "Pour le texte", opposition: "Contre le texte", abstention: "Abstention", absent: "N'a pas voté" };
+const $ = s => document.querySelector(s);
+const app = $("#app");
+const fdate = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
+const chip = (g, lien = true) => lien
+  ? `<a class="chip" href="#groupe/${g}" title="${GROUPES[g].nom}" aria-label="${g}, ${GROUPES[g].nom}"><i class="dot" style="background:${GROUPES[g].c}"></i>${g}</a>`
+  : `<span class="chip"><i class="dot" style="background:${GROUPES[g].c}"></i>${g}</span>`;
+const badge = (g, cls = "") => `<span class="badge ${cls}" style="background:${GROUPES[g].c};color:${GROUPES[g].t}" title="${GROUPES[g].nom}">${g}</span>`;
+// Auteur d'un texte : un groupe de l'Assemblée, ou un auteur extérieur (gouvernement, sénateurs)
+// Un texte de niche est mis au programme par le groupe ; ailleurs, l'auteur est un député (premier signataire) de ce groupe
+const auteurNom = t => t.groupe ? (t.type === "solennel" ? `un député du groupe ${GROUPES[t.groupe].nom}` : `le groupe ${GROUPES[t.groupe].nom}`) : t.auteur;
+const auteurCourt = (t, lien = true) => t.groupe ? chip(t.groupe, lien) : `<span class="chip">${t.auteurCourt}</span>`;
+// Lien externe : signale l'ouverture dans un nouvel onglet
+const ext = (url, label) => `<a href="${url}" target="_blank" rel="noopener">${label}<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>`;
+const byId = id => TEXTES.find(t => t.id === id);
+
+// Position d'un groupe vis-à-vis du TEXTE (pas du scrutin) : quand le vote portait sur
+// la suppression de l'article unique, voter « pour » revient à s'opposer au texte.
+function votesGroupe(t, row) {
+  let p = row.pour, c = row.contre;
+  if (t.inverse) [p, c] = [c, p];
+  return { p, c, a: row.abst, n: row.m - row.pour - row.contre - row.abst };
+}
+function stance(t, row) {
+  const { p, c, a } = votesGroupe(t, row);
+  if (!(p + c + a)) return "absent";
+  const m = Math.max(p, c, a);
+  return m === p ? "soutien" : m === c ? "opposition" : "abstention";
+}
+function totals(t) {
+  let pour = t.pour, contre = t.contre;
+  if (t.inverse) [pour, contre] = [contre, pour];
+  const membres = t.groupes.reduce((s, g) => s + g.m, 0);
+  const votants = t.pour + t.contre + t.abst;
+  return { pour, contre, abst: t.abst, membres, absents: membres - votants, adopte: pour > contre, ecart: Math.abs(pour - contre) };
+}
+function issueTag(t) {
+  if (t.loi) return `<span class="tag loi">§ C'est une loi</span>`;
+  return totals(t).adopte ? `<span class="tag ok">✓ Adopté</span>` : `<span class="tag ko">✕ Rejeté</span>`;
+}
+// Le verdict en tête de fiche : ce qui s'est passé, et de combien
+function verdict(t) {
+  const s = totals(t), kind = t.loi ? "loi" : s.adopte ? "ok" : "ko";
+  const titre = t.loi ? "C'est une loi" : s.adopte ? "Adopté par les députés" : "Rejeté par les députés";
+  // Un texte « vidé » (article unique supprimé) est présenté comme rejeté, avec la précision ici seulement
+  const marge = (t.inverse && !s.adopte ? "Ils ont supprimé son unique article. " : "") + (s.ecart <= 30 ? `À ${s.ecart} voix près.` : `${s.pour} voix pour, ${s.contre} contre.`);
+  const ico = { loi: `<text x="12" y="17.5" text-anchor="middle" font-size="17" font-weight="700" fill="currentColor" stroke="none">§</text>`, ok: `<path d="M5 12.5l4.5 4.5L19 7.5"/>`, ko: `<path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/>` }[kind];
+  return `<div class="verdict ${kind}"><span class="v-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">${ico}</svg></span>
+    <div><b>${titre}</b><span>${t.loi ? `${s.pour} voix pour, ${s.contre} contre à l'Assemblée. ${t.etape}` : `${marge} Et ensuite : ${t.etape.charAt(0).toLowerCase() + t.etape.slice(1)}`}</span></div></div>`;
+}
+function bar(p, c, a, n) {
+  const tot = p + c + a + n || 1, w = x => (100 * x / tot).toFixed(1) + "%";
+  return `<div class="bar"><i style="width:${w(p)};background:var(--soutien)"></i><i style="width:${w(c)};background:var(--opposition)"></i><i style="width:${w(a)};background:var(--abst)"></i><i style="width:${w(n)};background:var(--absent)"></i></div>`;
+}
+const legende = `<div class="legend"><span><i class="dot" style="background:var(--soutien)"></i>Pour le texte</span><span><i class="dot" style="background:var(--opposition)"></i>Contre</span><span><i class="dot" style="background:var(--abst)"></i>Abstention</span><span><i class="dot" style="border:1.5px solid var(--seat-absent);background:none"></i>N'a pas voté</span></div>`;
+
+// Hémicycle : un point par député, rangés de la gauche vers la droite par groupe,
+// colorés selon leur vote. Disposition classique en rangées concentriques.
+function hemicycle(t) {
+  const N = t.groupes.reduce((s, g) => s + g.m, 0), rangs = 12, r0 = .4, S = 230;
+  const rayons = Array.from({ length: rangs }, (_, i) => r0 + (1 - r0) * i / (rangs - 1));
+  const somme = rayons.reduce((a, b) => a + b, 0);
+  const parRang = rayons.map(r => Math.round(N * r / somme));
+  parRang[rangs - 1] += N - parRang.reduce((a, b) => a + b, 0);
+  const sieges = [];
+  rayons.forEach((r, i) => { const n = parRang[i]; for (let k = 0; k < n; k++) { const a = Math.PI * (1 - k / (n - 1)); sieges.push({ x: r * Math.cos(a), y: r * Math.sin(a), a }); } });
+  sieges.sort((u, v) => v.a - u.a || v.y - u.y);
+  let i = 0, points = "", labels = "";
+  ORDRE.forEach(g => {
+    const row = t.groupes.find(r => r.g === g); if (!row) return;
+    const v = votesGroupe(t, row), debut = i;
+    [["s-p", v.p], ["s-a", v.a], ["s-c", v.c], ["s-n", v.n]].forEach(([cl, k]) => {
+      for (let j = 0; j < k && i < sieges.length; j++, i++) points += `<circle class="${cl}" cx="${(sieges[i].x * S).toFixed(1)}" cy="${(-sieges[i].y * S).toFixed(1)}" r="5.2"/>`;
+    });
+    if (row.m >= 15) {
+      const am = (sieges[debut].a + sieges[i - 1].a) / 2, R = 1.09 * S;
+      const x = R * Math.cos(am), y = -R * Math.sin(am), anc = Math.abs(x) < 30 ? "middle" : x < 0 ? "end" : "start";
+      labels += `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" text-anchor="${anc}">${g}</text>`;
+    }
+  });
+  const s = totals(t);
+  return `<div class="hemi"><svg viewBox="-300 -262 600 280" role="img" aria-label="Hémicycle : ${s.pour} députés pour, ${s.contre} contre, ${s.abst} abstentions, ${s.absents} n'ont pas voté">
+    ${points}${labels}<text class="centre" x="0" y="-6" text-anchor="middle">${s.pour} – ${s.contre}</text></svg>
+    ${legende}<p class="meta" style="text-align:center;margin:6px 0 0">Chaque point est un député.</p></div>`;
+}
+// Les arguments des deux camps (voir CHARTE-NEUTRALITE.md) : même forme des deux côtés, sans couleur de camp
+function argsGrid(t) {
+  const col = (titre, liste) => `<div class="arg"><div class="eyebrow">${titre}</div><ul>${liste.map(a => `<li>${a}</li>`).join("")}</ul></div>`;
+  return `<div class="args-grid">${col("Selon ses défenseurs", t.arguments.pour)}${col("Selon ses opposants", t.arguments.contre)}</div>`;
+}
+// Groupes rangés par position sur un vote, dans l'ordre de l'hémicycle
+function camps(t) {
+  return ["soutien", "opposition", "abstention"].map(st => {
+    const gs = ORDRE.filter(g => { const r = t.groupes.find(x => x.g === g); return r && stance(t, r) === st; });
+    if (st === "abstention" && !gs.length) return "";
+    return `<div class="row camp"><span class="pos ${st}">${LIB[st]}</span>${gs.map(g => chip(g)).join("") || `<span class="meta">aucun groupe</span>`}</div>`;
+  }).join("");
+}
+function texteCard(t, parti = true) {
+  const s = totals(t);
+  return `<a class="card" href="#texte/${t.id}">
+    <div class="row">${issueTag(t)}<span class="meta">${t.theme} · ${fdate(t.date)}</span></div>
+    <h3>${t.titre}</h3>
+    <div class="row meta">${parti ? `Proposé par ${auteurNom(t)} · ` : ""}${s.pour} députés pour, ${s.contre} contre</div>
+  </a>`;
+}
+// Programme d'une niche : chaque ligne est soit un texte avec fiche (id), soit un titre + statut
+const STATUTS = {
+  loi: ["tag loi", "§ C'est une loi", ""], adoptee: ["tag ok", "✓ Adopté", ""], rejetee: ["tag ko", "✕ Rejeté", ""],
+  retiree: ["tag na", "Retiré", "par son auteur, en séance"],
+  commence: ["tag na", "Pas voté", "la journée s'est terminée pendant sa discussion"],
+  pas_examine: ["tag na", "Pas examiné", "faute de temps avant minuit"],
+};
+function statutFiche(t) { return t.loi ? "loi" : totals(t).adopte ? "adoptee" : "rejetee"; }
+function lignesProgramme(n) {
+  return n.programme.map(p => {
+    const t = p.id && byId(p.id), statut = t ? statutFiche(t) : p.statut, [cls, lib, expl] = STATUTS[statut];
+    return { t, statut, titre: t ? t.titre : p.titre, tag: `<span class="${cls}">${lib}</span>`, expl, v: t || p.vote || null };
+  });
+}
+function bilanNiche(n) {
+  const l = lignesProgramme(n), c = k => l.filter(x => k.includes(x.statut)).length;
+  return { total: l.length, votes: c(["loi", "adoptee", "rejetee"]), adoptes: c(["loi", "adoptee"]), sansVote: c(["commence", "pas_examine"]), retires: c(["retiree"]) };
+}
+
+const views = {
+  accueil() {
+    const derniers = [...TEXTES].sort((x, y) => y.date.localeCompare(x.date)).slice(0, 4);
+    return `
+      <div class="eyebrow">Assemblée nationale</div>
+      <h1>Qui a proposé quoi à l'Assemblée, et qui l'a voté.</h1>
+      <p class="lead">Pour chaque texte : qui l'a proposé, ce qu'il change en clair, et ce que chaque groupe de députés a voté. Le site ne juge pas : à vous de vous faire votre avis.</p>
+      <ol class="steps">
+        <li><b>Un texte est proposé</b><span>Par des députés, des sénateurs ou le gouvernement.</span></li>
+        <li><b>Les députés votent</b><span>Pour, contre ou abstention. Certains ne viennent pas.</span></li>
+        <li><b>Le Sénat vote aussi</b><span>Le texte devient une loi si les deux l'adoptent, ou si l'Assemblée a le dernier mot.</span></li>
+      </ol>
+      <div class="doors trio">
+        <a class="door" href="#groupes"><b>Les groupes</b><span>Ce que chaque groupe de députés a proposé, et comment il a voté.</span></a>
+        <a class="door" href="#sujets"><b>Mes sujets</b><span>Retraites, impôts, logement, santé : les textes qui vous concernent.</span></a>
+        <a class="door" href="#bilan"><b>Mon bilan</b><span>Votez comme un député sur ${TEXTES.length} textes, voyez quels groupes ont voté comme vous.</span></a>
+      </div>
+      <h2>Derniers textes votés</h2>
+      <div class="list">${derniers.map(t => texteCard(t)).join("")}</div>`;
+  },
+  groupes() {
+    // Un groupe par carte, dans l'ordre de l'hémicycle
+    const groupes = ORDRE.filter(g => g !== "NI");
+    return `<h1>Les groupes politiques</h1>
+      <p class="lead">À l'Assemblée, les députés s'organisent et votent en groupes. Un groupe correspond souvent à un parti, mais pas toujours : certains réunissent des députés de plusieurs partis, et les non-inscrits n'appartiennent à aucun groupe. Ici de la gauche vers la droite de l'hémicycle.</p>
+      <div class="list" style="margin-top:24px">${groupes.map(g => {
+        const props = TEXTES.filter(t => t.groupe === g), adoptes = props.filter(t => totals(t).adopte).length;
+        return `<a class="card" href="#groupe/${g}"><div class="row">${badge(g)}<b style="font:700 19px var(--display)">${GROUPES[g].nom}</b></div>
+          <span class="meta">${props.length ? `${props.length} texte${props.length > 1 ? "s" : ""} proposé${props.length > 1 ? "s" : ""} dans la maquette, dont ${adoptes} adopté${adoptes > 1 ? "s" : ""}` : "Aucun texte proposé dans la maquette"}</span></a>`;
+      }).join("")}</div>`;
+  },
+  sujets() {
+    const themes = [...new Set(TEXTES.map(t => t.theme))].sort((a, b) => a.localeCompare(b, "fr"));
+    return `<h1>Mes sujets</h1>
+      <p class="lead">Choisissez ce qui vous concerne : on vous montre ce qui a été proposé sur ce sujet, et qui a voté pour ou contre.</p>
+      <div class="doors">${themes.map(th => {
+        const n = TEXTES.filter(t => t.theme === th).length;
+        return `<a class="door" href="#sujet/${encodeURIComponent(th)}"><b>${th}</b><span>${n} texte${n > 1 ? "s" : ""}</span></a>`;
+      }).join("")}</div>
+      <p class="note">Dans la maquette, seuls les thèmes des ${TEXTES.length} textes disponibles apparaissent.</p>`;
+  },
+  sujet(th) {
+    const ts = TEXTES.filter(t => t.theme === th);
+    const simu = ["Impôts", "Retraites"].includes(th)
+      ? `<div class="callout"><b>Simulateur ${th === "Impôts" ? "impôts et héritage" : "retraite"} : bientôt.</b> Vous pourrez calculer ce que chaque proposition changerait pour vous.</div>` : "";
+    return `<a class="back" href="#sujets">← Tous les sujets</a>
+      <h1>${th}</h1>
+      <p class="lead">${ts.length} texte${ts.length > 1 ? "s" : ""} sur ce sujet.</p>
+      ${simu}
+      <h2 class="sr-only">Les textes</h2>
+      <div class="list" style="margin-top:20px">${ts.map(t => `<div class="card">
+        <div class="row">${issueTag(t)}<span class="meta">Proposé par ${auteurNom(t)} · ${fdate(t.date)}</span></div>
+        <h3><a href="#texte/${t.id}">${t.titre}</a></h3>
+        <p class="meta" style="margin:0">${t.enClair}</p>
+        ${camps(t)}
+      </div>`).join("")}</div>`;
+  },
+  niche(date) {
+    const n = NICHES.find(x => x.date === date), b = bilanNiche(n);
+    return `<a class="back" href="#groupe/${n.groupe}">← ${GROUPES[n.groupe].nom}</a>
+      <div class="row">${badge(n.groupe, "lg")}<span class="eyebrow">Journée réservée du ${fdate(n.date)}</span></div>
+      <h1 style="margin-top:12px">${GROUPES[n.groupe].nom}</h1>
+      <p class="lead">Une fois par mois, l'Assemblée réserve une journée à l'un des groupes d'opposition ou minoritaires : c'est lui qui choisit les textes discutés. On l'appelle sa « niche ». Ce jour-là, ce groupe a mis ${b.total} textes au programme. La journée s'arrête à minuit : les députés ont voté ${n.scrutins} fois, et ${b.votes} textes ont été votés jusqu'au bout.</p>
+      <div class="facts">
+        <div class="fact"><b>${b.votes} / ${b.total}</b><span>textes votés, dont ${b.adoptes} adopté${b.adoptes > 1 ? "s" : ""}</span></div>
+        <div class="fact"><b>${b.sansVote}</b><span>texte${b.sansVote > 1 ? "s" : ""} sans vote, faute de temps</span></div>
+      </div>
+      <h2>Le programme de la journée</h2>
+      <ol class="prog">${lignesProgramme(n).map(l => `<li class="${l.t ? "" : "sans-fiche"}">${l.tag}
+        <div class="prog-txt"><span>${l.t ? `<a href="#texte/${l.t.id}">${l.titre}</a>` : l.titre}</span>${l.expl ? `<small>${l.expl}</small>` : ""}
+          ${l.v ? (() => { const s = l.t ? totals(l.t) : { pour: l.v.pour, contre: l.v.contre }, n = l.t ? l.t.scrutin : l.v.scrutin;
+            return `<div class="camps">${camps(l.v)}<small>${s.pour} pour, ${s.contre} contre · ${ext(`https://www.assemblee-nationale.fr/dyn/17/scrutins/${n}`, `vote n° ${n}`)}</small></div>`; })() : ""}</div></li>`).join("")}</ol>
+      ${n.programme.some(p => !p.id && p.titre.startsWith("Résolution")) || n.programme.some(p => p.id === undefined) ? `<p class="note">Une résolution exprime un avis de l'Assemblée ; elle ne change pas la loi. Dans la maquette, seuls certains textes ont une fiche détaillée.</p>` : ""}`;
+  },
+  texte(id) {
+    const t = byId(id), s = totals(t);
+    const rows = ORDRE.map(g => t.groupes.find(r => r.g === g)).filter(Boolean);
+    const exprimes = s.pour + s.contre || 1;
+    return `<a class="back" href="#sujet/${encodeURIComponent(t.theme)}">← ${t.theme}</a>
+      <div class="row"><span class="eyebrow">${t.theme}</span></div>
+      <h1 style="margin-top:8px">${t.titre}</h1>
+      <p class="lead row" style="gap:8px">${t.type === "solennel"
+        ? `Proposé par ${auteurNom(t)}. L'Assemblée en a fait l'un de ses grands votes (vote solennel), le ${fdate(t.date)}.`
+        : `Proposé par le groupe ${badge(t.groupe)} ${GROUPES[t.groupe].nom}, qui l'a mis au programme pendant <a href="#niche/${t.date}">sa journée réservée (niche) du ${fdate(t.date)}</a>.`}</p>
+      ${verdict(t)}
+      <div class="clair">
+        <div><div class="eyebrow">En clair</div><p>${t.enClair}</p></div>
+        <div><div class="eyebrow">Qui est concerné</div><p>${t.concerne}</p></div>
+      </div>
+      ${t.arguments ? `<h2>Les arguments des deux camps</h2>${argsGrid(t)}
+        <p class="note">Arguments avancés pendant les débats, rapportés sans jugement. Sources : ${t.arguments.sources.map(x => ext(x.url, x.label)).join(", ")}.</p>` : ""}
+      ${t.aVerifier ? `<p class="note">Résumé à vérifier sur le texte officiel avant publication.</p>` : ""}
+      <h2>Le vote des députés</h2>
+      <div class="duel">
+        <div class="duel-nums"><span class="p">${s.pour}<small>pour</small></span><span class="c">${s.contre}<small>contre</small></span></div>
+        <div class="duel-bar"><i style="width:${(100 * s.pour / exprimes).toFixed(1)}%;background:var(--soutien)"></i><i style="width:${(100 * s.contre / exprimes).toFixed(1)}%;background:var(--opposition)"></i><span class="mid" title="Majorité"></span></div>
+        <span class="meta">Le trait marque la majorité : le texte passe s'il a plus de « pour » que de « contre ». ${s.abst} abstention${s.abst > 1 ? "s" : ""}, qui ne comptent pas.</span>
+      </div>
+      <div class="facts">
+        <div class="fact"><b>${s.ecart}</b><span>voix d'écart entre les deux camps</span></div>
+        <div class="fact"><b>${s.absents}</b><span>députés sur ${s.membres} n'ont pas voté</span></div>
+      </div>
+      ${t.inverse ? `<p class="note">Comment le texte a été vidé : il ne contenait qu'un article, et les députés ont voté pour le supprimer. Ici, « pour le texte » veut dire avoir voté contre cette suppression.</p>` : ""}
+      ${hemicycle(t)}
+      <h2>Groupe par groupe</h2>
+      <div class="grp-list">${rows.map(r => {
+        const st = stance(t, r), v = votesGroupe(t, r), pres = Math.round(100 * (v.p + v.c + v.a) / r.m);
+        return `<div class="grp">${chip(r.g)}<span class="pos ${st}">${LIB[st]}</span>${bar(v.p, v.c, v.a, v.n)}<span class="pct">${pres} %</span>
+          <span class="num">${v.p} pour · ${v.c} contre · ${v.a} abst. · ${v.n} n'ont pas voté (participation ${pres} %)</span></div>`;
+      }).join("")}</div>
+      <p class="note">Position du groupe : le choix le plus fréquent parmi ses députés qui ont voté. Source : ${ext(`https://www.assemblee-nationale.fr/dyn/17/scrutins/${t.scrutin}`, `vote n° ${t.scrutin}`)} sur le site de l'Assemblée nationale.</p>`;
+  },
+  groupe(g) {
+    const G = GROUPES[g];
+    const portes = TEXTES.filter(t => t.groupe === g);
+    const autres = TEXTES.filter(t => t.groupe !== g && t.groupes.some(r => r.g === g));
+    const pres = TEXTES.map(t => t.groupes.find(r => r.g === g)).filter(Boolean);
+    const presMoy = pres.length ? Math.round(100 * pres.reduce((s, r) => s + (r.pour + r.contre + r.abst) / r.m, 0) / pres.length) : null;
+    const reussis = portes.filter(t => totals(t).adopte).length;
+    // accord avec les autres groupes sur l'ensemble des textes de la maquette
+    const accords = ORDRE.filter(o => o !== g).map(o => {
+      let same = 0, n = 0;
+      TEXTES.forEach(t => {
+        const a = t.groupes.find(r => r.g === g), b = t.groupes.find(r => r.g === o);
+        if (!a || !b) return;
+        const sa = stance(t, a), sb = stance(t, b);
+        if (sa === "absent" || sb === "absent") return;
+        n++; if (sa === sb) same++;
+      });
+      return { o, pct: n ? Math.round(100 * same / n) : null, n };
+    }).filter(x => x.pct !== null).sort((x, y) => y.pct - x.pct);
+    const niches = NICHES.filter(n => n.groupe === g);
+    return `<a class="back" href="#groupes">← Les groupes</a>
+      <div class="party-head" style="--pc:${G.c}">
+        <div class="row" style="gap:14px">${badge(g, "lg")}<h1>${G.nom}</h1></div>
+        ${(() => {
+          // Contexte : sièges au dernier vote connu (l'open data ne donne pas la position officielle opposition / majorité)
+          const dernier = [...TEXTES].sort((x, y) => y.date.localeCompare(x.date)).find(t => t.groupes.some(r => r.g === g));
+          const sieges = dernier ? dernier.groupes.find(r => r.g === g).m : null, total = dernier ? dernier.groupes.reduce((n, r) => n + r.m, 0) : 577;
+          return sieges ? `<p class="contexte"><b>${sieges} députés sur ${total}</b>, soit ${Math.round(100 * sieges / total)} % des sièges. Depuis 2024, aucun groupe n'a seul la majorité : un texte n'est adopté qu'avec les voix de plusieurs groupes. Les textes mis au programme pendant les journées réservées (niches), qui reviennent aux groupes d'opposition et minoritaires, sont rarement adoptés.</p>` : "";
+        })()}
+        <div class="stats">
+          <div class="stat"><div class="meta">Textes proposés (maquette)</div><span class="big">${portes.length}</span></div>
+          <div class="stat"><div class="meta">Adoptés par l'Assemblée</div><span class="big">${reussis} / ${portes.length}</span></div>
+          <div class="stat"><div class="meta">Participation moyenne aux votes</div><span class="big">${presMoy ?? "–"} %</span></div>
+        </div>
+      </div>
+      ${portes.length ? `<h2>Ce que ce groupe a proposé</h2><div class="list">${portes.map(t => texteCard(t, false)).join("")}</div>` : `<p class="lead">Aucun texte de ce groupe dans la maquette.</p>`}
+      ${niches.length ? `<h2>Ses journées réservées</h2><p class="meta">Les jours où ce groupe a choisi seul les textes discutés (sa « niche »), avec tout son programme.</p>
+        <div class="list">${niches.map(n => { const b = bilanNiche(n); return `<a class="card" href="#niche/${n.date}"><b style="font:700 17px var(--display)">${fdate(n.date)}</b><span class="meta">${b.total} textes au programme · ${b.votes} votés · ${b.sansVote} sans vote faute de temps</span></a>`; }).join("")}</div>` : ""}
+      <h2>Comment il a voté sur les autres textes</h2>
+      <div class="tablewrap"><table><thead><tr><th>Texte</th><th>Proposé par</th><th>Position</th></tr></thead><tbody>
+        ${autres.map(t => { const st = stance(t, t.groupes.find(r => r.g === g)); return `<tr><td><a href="#texte/${t.id}">${t.titre}</a></td><td>${auteurCourt(t)}</td><td class="pos ${st}">${LIB[st]}</td></tr>`; }).join("")}
+      </tbody></table></div>
+      <h2>Avec qui vote-t-il ?</h2>
+      <p class="meta">Part des textes de la maquette où les deux groupes ont pris la même position.</p>
+      <div>${accords.map(a => `<div class="score">${chip(a.o)}<div class="bar"><i style="width:${a.pct}%;background:${GROUPES[a.o].c}"></i></div><b>${a.pct} %</b></div>`).join("")}</div>`;
+  },
+  bilan() {
+    return `<h1>Mon bilan</h1>
+      <p class="lead">Si vous étiez député, qu'auriez-vous voté ? Votez sur chaque texte, et voyez quels groupes ont voté comme vous. Qui l'a proposé reste caché pour ne pas influencer votre choix : vous le découvrez dans votre résultat. Vos réponses restent sur votre appareil.</p>
+      <div class="bilan">
+        <div>
+          <h2 class="sr-only">Les textes à voter</h2>
+          <div class="list">${TEXTES.map(t => `
+            <div class="q">
+              <span class="eyebrow">${t.theme}</span>
+              <h3>${t.titre}</h3>
+              <p class="meta" style="margin:0">${t.enClair}</p>
+              ${t.arguments ? `<details class="args-mini"><summary>Voir les arguments</summary>${argsGrid(t)}</details>` : ""}
+              <div class="btns" data-id="${t.id}" role="group" aria-label="Votre vote : ${t.titre.replace(/"/g, "&quot;")}">
+                ${[[1, "Pour"], [-1, "Contre"], [0, "Je ne sais pas"]].map(([v, l]) => `<button type="button" data-v="${v}">${l}</button>`).join("")}
+              </div>
+            </div>`).join("")}</div>
+          <section id="revel"></section>
+          <p class="note">Calcul : part des textes votés où le groupe a voté comme vous. Quand un groupe s'est abstenu, il n'a voté ni comme vous ni contre vous ; un groupe absent n'est pas compté. « Je ne sais pas » n'entre pas dans le calcul. Un groupe n'est classé que s'il a voté sur au moins la moitié des textes que vous avez votés. <a href="#bilan" id="reset">Effacer mes réponses</a></p>
+        </div>
+        <aside class="panel" id="panel" aria-label="Votre résultat"></aside>
+        <p class="sr-only" id="annonce" aria-live="polite"></p>
+      </div>`;
+  },
+};
+function load() { try { return JSON.parse(localStorage.getItem("bilan") || "{}"); } catch { return {}; } }
+function save(r) { try { localStorage.setItem("bilan", JSON.stringify(r)); } catch {} }
+
+function scoresBilan(rep) {
+  const answered = TEXTES.filter(t => rep[t.id] === 1 || rep[t.id] === -1);
+  const scores = ORDRE.map(g => {
+    let acc = 0, des = 0, abs = 0;
+    answered.forEach(t => {
+      const r = t.groupes.find(x => x.g === g); if (!r) return;
+      const st = stance(t, r); if (st === "absent") return;
+      if (st === "abstention") abs++;
+      else if ((st === "soutien") === (rep[t.id] === 1)) acc++; else des++;
+    });
+    const n = acc + des + abs;
+    return { g, acc, des, abs, n, pct: n ? Math.round(100 * acc / n) : null };
+  });
+  // Un groupe n'est classé que s'il a voté sur au moins la moitié des textes que vous avez votés :
+  // sinon un groupe souvent absent pourrait arriver en tête sur un seul vote.
+  const seuil = Math.ceil(answered.length / 2);
+  scores.forEach(s => s.classe = s.n > 0 && s.n >= seuil);
+  // Tant que rien n'est voté, on garde l'ordre de l'hémicycle
+  if (answered.length) scores.sort((a, b) => (b.classe - a.classe) || ((b.pct ?? -1) - (a.pct ?? -1)));
+  return { answered, scores, seuil };
+}
+let panelOpen = false;
+// Met à jour le panneau et les réponses sans redessiner la page : rien ne bouge sous le doigt
+function majBilan() {
+  const rep = load(), { answered, scores } = scoresBilan(rep);
+  document.querySelectorAll(".btns").forEach(bx => bx.querySelectorAll("button").forEach(b => {
+    const on = rep[bx.dataset.id] === +b.dataset.v;
+    b.classList.toggle("sel", on); b.setAttribute("aria-pressed", on);
+  }));
+  const vus = Object.keys(rep).length, top = answered.length && scores[0].classe ? scores[0] : null;
+  const panel = $("#panel");
+  panel.classList.toggle("open", panelOpen);
+  panel.innerHTML = `
+    <div class="panel-head"><span class="eyebrow">Votre résultat</span><span class="meta">${vus} / ${TEXTES.length} textes</span>
+      <button type="button" class="panel-toggle">${panelOpen ? "Réduire" : "Voir le détail"}</button></div>
+    <div class="progress"><i style="width:${(100 * vus / TEXTES.length).toFixed(1)}%"></i></div>
+    <p class="panel-top">${top ? (() => {
+      const ex = scores.filter(s => s.classe && s.pct === top.pct);
+      return `<span>${ex.length > 1 ? "Les plus proches de vous, à égalité" : "Le plus proche de vous"} :</span> ${ex.map(s => chip(s.g, false)).join(" ")} <b>${top.pct} %</b>`;
+    })() : "Répondez à une première question : votre résultat s'affiche ici, en direct."}</p>
+    <div class="panel-scores">${scores.map(s => `<div class="pscore${answered.length && !s.classe ? " hors" : ""}">${chip(s.g, false)}${s.n ? bar(s.acc, s.des, s.abs, 0) : bar(0, 0, 0, 1)}<b>${s.n ? s.pct + " %" : "–"}</b><span class="sur">${answered.length ? `sur ${s.n}` : ""}</span></div>`).join("")}</div>
+    ${scores.some(s => answered.length && !s.classe) ? `<p class="meta" style="margin:0;font-size:13px">En grisé : groupes présents sur moins de la moitié des textes que vous avez votés. Ils ne sont pas classés.</p>` : ""}
+    <div class="legend panel-legend"><span><i class="dot" style="background:var(--soutien)"></i>A voté comme vous</span><span><i class="dot" style="background:var(--opposition)"></i>A voté autrement</span><span><i class="dot" style="background:var(--abst)"></i>Abstention</span></div>`;
+  const aimes = answered.filter(t => rep[t.id] === 1);
+  const origine = {}; aimes.forEach(t => { const k = t.groupe || t.auteurCourt; origine[k] = (origine[k] || 0) + 1; });
+  $("#revel").innerHTML = answered.length ? `<h2>Qui avait proposé quoi</h2>
+    ${aimes.length ? `<div class="callout" style="margin-top:0;margin-bottom:12px"><b>Les textes pour lesquels vous avez voté pour</b> avaient été proposés par : ${Object.entries(origine).map(([g, n]) => `${GROUPES[g] ? chip(g) : `<span class="chip">${g}</span>`} ×${n}`).join(" ")}</div>` : ""}
+    <div class="tablewrap"><table><thead><tr><th>Votre vote</th><th>Texte</th><th>Proposé par</th><th>Résultat</th></tr></thead><tbody>${answered.map(t => `<tr><td class="pos ${rep[t.id] === 1 ? "soutien" : "opposition"}">Vous : ${rep[t.id] === 1 ? "pour" : "contre"}</td><td><a href="#texte/${t.id}">${t.titre}</a></td><td>${auteurCourt(t)}</td><td>${issueTag(t)}</td></tr>`).join("")}</tbody></table></div>` : "";
+}
+
+function render() {
+  const [view, arg] = (location.hash.slice(1) || "accueil").split("/");
+  const fn = views[view] || views.accueil;
+  app.innerHTML = fn(decodeURIComponent(arg || ""));
+  // Titre de l'onglet propre à chaque vue (annoncé par les lecteurs d'écran)
+  const h1 = app.querySelector("h1");
+  document.title = view === "accueil" || !h1 ? "Qui a voté quoi — maquette" : `${h1.textContent} – Qui a voté quoi`;
+  app.classList.toggle("has-panel", view === "bilan");
+  if (view === "bilan") majBilan();
+  // Une fiche texte n'appartient à aucune rubrique du menu
+  const rubrique = { groupes: "groupes", niche: "groupes", groupe: "groupes", sujets: "sujets", sujet: "sujets", bilan: "bilan" }[view];
+  document.querySelectorAll("nav a").forEach(a => a.classList.toggle("on", a.dataset.nav === rubrique));
+}
+$("#skip").addEventListener("click", e => { e.preventDefault(); app.focus(); });
+app.addEventListener("click", e => {
+  const b = e.target.closest(".btns button");
+  if (b) {
+    const r = load(), id = b.parentElement.dataset.id, v = +b.dataset.v;
+    if (r[id] === v) delete r[id]; else r[id] = v;
+    save(r); majBilan();
+    // Une phrase courte pour les lecteurs d'écran, plutôt que la relecture de tout le panneau
+    const { answered, scores } = scoresBilan(r), top = answered.length && scores[0].classe ? scores[0] : null;
+    const ex = top ? scores.filter(x => x.classe && x.pct === top.pct).map(x => x.g).join(", ") : "";
+    $("#annonce").textContent = `Vote enregistré. ${Object.keys(r).length} sur ${TEXTES.length} textes.` + (top ? ` Plus proche de vous : ${ex}, ${top.pct} %.` : "");
+    return;
+  }
+  if (e.target.closest(".panel-toggle")) { panelOpen = !panelOpen; majBilan(); return; }
+  if (e.target.id === "reset") { e.preventDefault(); save({}); majBilan(); }
+});
+addEventListener("hashchange", () => {
+  render(); scrollTo(0, 0);
+  // Annonce la nouvelle vue : le focus va sur son titre principal
+  const h1 = app.querySelector("h1");
+  if (h1) { h1.setAttribute("tabindex", "-1"); h1.focus({ preventScroll: true }); }
+});
+render();
+</script>
+</body>
+</html>

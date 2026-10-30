@@ -1,0 +1,119 @@
+[
+ {
+  "abrev": "LFI-NFP",
+  "nom": "La France insoumise - Nouveau Front Populaire",
+  "couleur": "#C00D0D",
+  "organes": [
+   "PO845413"
+  ],
+  "deputes": 70
+ },
+ {
+  "abrev": "GDR",
+  "nom": "Gauche Démocrate et Républicaine",
+  "couleur": "#830E21",
+  "organes": [
+   "PO845514"
+  ],
+  "deputes": 17
+ },
+ {
+  "abrev": "ECOS",
+  "nom": "Écologiste et Social",
+  "couleur": "#77AA79",
+  "organes": [
+   "PO845439"
+  ],
+  "deputes": 38
+ },
+ {
+  "abrev": "SOC",
+  "nom": "Socialistes et apparentés",
+  "couleur": "#F5B4CE",
+  "organes": [
+   "PO845419"
+  ],
+  "deputes": 68
+ },
+ {
+  "abrev": "LIOT",
+  "nom": "Libertés, Indépendants, Outre-mer et Territoires",
+  "couleur": "#FFD96F",
+  "organes": [
+   "PO845485"
+  ],
+  "deputes": 23
+ },
+ {
+  "abrev": "DEM",
+  "nom": "Les Démocrates",
+  "couleur": "#F07E26",
+  "organes": [
+   "PO845454"
+  ],
+  "deputes": 37
+ },
+ {
+  "abrev": "EPR",
+  "nom": "Ensemble pour la République",
+  "couleur": "#7B4591",
+  "organes": [
+   "PO845407"
+  ],
+  "deputes": 90
+ },
+ {
+  "abrev": "HOR",
+  "nom": "Horizons & Indépendants",
+  "couleur": "#B5E2F9",
+  "organes": [
+   "PO845470"
+  ],
+  "deputes": 35
+ },
+ {
+  "abrev": "DR",
+  "nom": "Droite Républicaine",
+  "couleur": "#8CB0DC",
+  "organes": [
+   "PO845425"
+  ],
+  "deputes": 47
+ },
+ {
+  "abrev": "UDR",
+  "nom": "Union des droites pour la République",
+  "couleur": "#3367A7",
+  "organes": [
+   "PO847173",
+   "PO872880"
+  ],
+  "deputes": 17
+ },
+ {
+  "abrev": "RN",
+  "nom": "Rassemblement National",
+  "couleur": "#313567",
+  "organes": [
+   "PO845401"
+  ],
+  "deputes": 121
+ },
+ {
+  "abrev": "NI",
+  "nom": "Non inscrit",
+  "couleur": "#8D949A",
+  "organes": [
+   "PO840056"
+  ],
+  "deputes": 11
+ },
+ {
+  "abrev": "AD",
+  "nom": "À Droite",
+  "couleur": "#3367A7",
+  "organes": [
+   "PO845520"
+  ]
+ }
+]

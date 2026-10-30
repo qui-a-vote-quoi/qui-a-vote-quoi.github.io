@@ -1,0 +1,7 @@
+# Données brutes téléchargées depuis l'open data : volumineuses et re-téléchargeables
+donnees/brut/
+
+# Système et éditeurs
+.DS_Store
+__pycache__/
+*.pyc

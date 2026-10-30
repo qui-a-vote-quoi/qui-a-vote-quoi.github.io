@@ -1,0 +1,3332 @@
+[
+ {
+  "id": "DLR5L17N50453",
+  "origine": "niche",
+  "date": "2024-10-31",
+  "titre": "Restaurer un système de retraite plus juste en annulant les dernières réformes portant sur l'âge de départ et le nombre d'annuités",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "RN",
+   "acteur": "PA794322"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L17V217",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2024-10-31"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N50434",
+  "origine": "niche",
+  "date": "2024-10-31",
+  "titre": "Réduire les contraintes énergétiques pesant sur l’offre locative et juguler leurs effets sur la crise du logement",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "RN",
+   "acteur": "PA793246"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L17V219",
+  "inverse": true,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2024-10-31"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N50198@2024-11-12",
+  "dossier": "DLR5L17N50198",
+  "origine": "solennel",
+  "date": "2024-11-12",
+  "titre": "Projet de loi de finances pour 2025",
+  "lecture": "première lecture",
+  "procedure": "Projet de loi de finances de l'année",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L17V438",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-02-14",
+   "numeroLoi": "2025-127",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-02-14"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51079@2024-12-16",
+  "dossier": "DLR5L17N51079",
+  "origine": "solennel",
+  "date": "2024-12-16",
+  "titre": "Projet de loi spéciale prévue par l’article 45 de la loi organique du 1er août 2001 relative aux lois de finances",
+  "lecture": "première lecture",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V525",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2024-12-20",
+   "numeroLoi": "2024-1188",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2024-12-20"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51222@2025-01-22",
+  "dossier": "DLR5L17N51222",
+  "origine": "solennel",
+  "date": "2025-01-22",
+  "titre": "Projet de loi d'urgence pour Mayotte",
+  "lecture": "première lecture",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V580",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-02-24",
+   "numeroLoi": "2025-176",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-02-24"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N50779",
+  "origine": "niche",
+  "date": "2025-01-23",
+  "titre": "Prendre des mesures d’urgence contre la vie chère et réguler la concentration des acteurs économiques dans les territoires d’outre-mer",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "SOC",
+   "acteur": "PA719930"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V596",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2025-01-23"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L16N46650",
+  "origine": "niche",
+  "date": "2025-01-23",
+  "titre": "Proposition de loi relative à l'instauration d'un nombre minimum de soignants par patient hospitalisé",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V600",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-01-29",
+   "numeroLoi": "2025-74",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-01-29"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N50778",
+  "origine": "niche",
+  "date": "2025-01-23",
+  "titre": "Rendre accessible à tous les étudiants le repas à 1 euro",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "SOC",
+   "acteur": "PA795156"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V606",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2025-01-24"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N50777",
+  "origine": "niche",
+  "date": "2025-01-23",
+  "titre": "Lutter contre les pannes d'ascenseurs non prises en charge",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "SOC",
+   "acteur": "PA793624"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V611",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2025-01-24"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N50775",
+  "origine": "niche",
+  "date": "2025-01-23",
+  "titre": "Mesures d’urgence pour protéger nos enfants accueillis en crèches privées à but lucratif",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "SOC",
+   "acteur": "PA841853"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V612",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2025-01-24"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51039",
+  "origine": "niche",
+  "date": "2025-02-06",
+  "titre": "Renforcer les conditions d'accès à la nationalité française à Mayotte",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DR",
+   "acteur": "PA266797"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V738",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-05-12",
+   "numeroLoi": "2025-412",
+   "conseilConstitutionnel": "Conforme avec réserve",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-05-12"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51222@2025-02-12",
+  "dossier": "DLR5L17N51222",
+  "origine": "solennel",
+  "date": "2025-02-12",
+  "titre": "Projet de loi d'urgence pour Mayotte",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V790",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-02-24",
+   "numeroLoi": "2025-176",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-02-24"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53702@2025-02-19",
+  "dossier": "DLR5L17N53702",
+  "origine": "solennel",
+  "date": "2025-02-19",
+  "titre": "La souveraineté alimentaire et agricole",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet ou proposition de loi constitutionnelle",
+  "auteur": {
+   "type": "depute",
+   "groupe": "RN",
+   "acteur": "PA642988"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V844",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEPOT",
+   "dateDerniereEtape": "2026-02-03"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L16N49455",
+  "origine": "niche",
+  "date": "2025-02-20",
+  "titre": "Protéger la population des risques liés aux substances per- et polyfluoroalkylées (PFAS)",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "ECOLO",
+   "acteur": "PA793948"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V852",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-02-27",
+   "numeroLoi": "2025-188",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-02-27"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51215",
+  "origine": "niche",
+  "date": "2025-02-20",
+  "titre": "Impôt plancher de 2 % sur le patrimoine des ultra riches",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "ECOS",
+   "acteur": "PA610002"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V881",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEBATS-DEC",
+   "dateDerniereEtape": "2025-06-12"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51563",
+  "origine": "niche",
+  "date": "2025-03-06",
+  "titre": "Proposition de loi pour un démarchage téléphonique consenti et une protection renforcée des consommateurs contre les abus",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V898",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2025-03-06"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L16N49472",
+  "origine": "niche",
+  "date": "2025-03-06",
+  "titre": "Proposition de loi visant à endiguer la prolifération du frelon asiatique et à préserver la filière apicole",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V914",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-03-14",
+   "numeroLoi": "2025-237",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-03-14"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51328",
+  "origine": "niche",
+  "date": "2025-03-06",
+  "titre": "Instaurer un dispositif de sanction contraventionnelle pour prévenir le développement des vignes non cultivées qui représentent une menace sanitaire pour l’ensemble du vignoble français",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA794830"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V918",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-06-13",
+   "numeroLoi": "2025-533",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-06-13"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51467@2025-03-12",
+  "dossier": "DLR5L17N51467",
+  "origine": "solennel",
+  "date": "2025-03-12",
+  "titre": "Renforcement du soutien à l'Ukraine",
+  "lecture": null,
+  "procedure": "Résolution",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LIOT",
+   "acteur": "PA841931"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V988",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
+   "dateDerniereEtape": "2025-03-12"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L16N49176@2025-03-18",
+  "dossier": "DLR5L16N49176",
+  "origine": "solennel",
+  "date": "2025-03-18",
+  "titre": "Proposition de loi relative au renforcement de la sûreté dans les transports",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1041",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-04-28",
+   "numeroLoi": "2025-379",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-04-28"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N50169@2025-04-01",
+  "dossier": "DLR5L17N50169",
+  "origine": "solennel",
+  "date": "2025-04-01",
+  "titre": "Proposition de loi visant à sortir la France du piège du narcotrafic",
+  "lecture": "première lecture",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1194",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-06-13",
+   "numeroLoi": "2025-532",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-06-13"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51518",
+  "origine": "niche",
+  "date": "2025-04-03",
+  "titre": "Valoriser la réserve communale de sécurité civile",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "HOR",
+   "acteur": "PA794838"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1234",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-COM-FOND-RAPPORT",
+   "dateDerniereEtape": "2026-10-28"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N50631",
+  "origine": "niche",
+  "date": "2025-04-03",
+  "titre": "Faire exécuter les peines d'emprisonnement ferme",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "HOR",
+   "acteur": "PA719052"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1262",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN2-COM-FOND-REUNION",
+   "dateDerniereEtape": "2026-04-07"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51014",
+  "origine": "niche",
+  "date": "2025-04-03",
+  "titre": "Renforcer la démographie professionnelle des orthophonistes",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "HOR",
+   "acteur": "PA267780"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1265",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2025-04-04"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L15N43846@2025-04-07",
+  "dossier": "DLR5L15N43846",
+  "origine": "solennel",
+  "date": "2025-04-07",
+  "titre": "Renforcement de la parité dans les fonctions électives et exécutives du bloc communal",
+  "lecture": "deuxième lecture",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA719874"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1303",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-05-21",
+   "numeroLoi": "2025-444",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-05-21"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N50579@2025-04-07",
+  "dossier": "DLR5L17N50579",
+  "origine": "solennel",
+  "date": "2025-04-07",
+  "titre": "Proposition de loi organique visant à harmoniser le mode de scrutin aux élections municipales afin de garantir la vitalité démocratique, la cohésion municipale et la parité",
+  "lecture": "première lecture",
+  "procedure": "Projet ou proposition de loi organique",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1304",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-05-21",
+   "numeroLoi": "2025-443",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-05-21"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51039@2025-04-08",
+  "dossier": "DLR5L17N51039",
+  "origine": "solennel",
+  "date": "2025-04-08",
+  "titre": "Renforcer les conditions d'accès à la nationalité française à Mayotte",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DR",
+   "acteur": "PA266797"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1308",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-05-12",
+   "numeroLoi": "2025-412",
+   "conseilConstitutionnel": "Conforme avec réserve",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-05-12"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51504@2025-04-09",
+  "dossier": "DLR5L17N51504",
+  "origine": "solennel",
+  "date": "2025-04-09",
+  "titre": "Renforcer la stabilité économique et la compétitivité du secteur agroalimentaire",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "EPR",
+   "acteur": "PA607395"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1319",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-04-14",
+   "numeroLoi": "2025-337",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-04-14"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N50169@2025-04-29",
+  "dossier": "DLR5L17N50169",
+  "origine": "solennel",
+  "date": "2025-04-29",
+  "titre": "Proposition de loi visant à sortir la France du piège du narcotrafic",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1473",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-06-13",
+   "numeroLoi": "2025-532",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-06-13"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51078@2025-04-29",
+  "dossier": "DLR5L17N51078",
+  "origine": "solennel",
+  "date": "2025-04-29",
+  "titre": "Proposition de loi organique fixant le statut du procureur national anti-stupéfiants",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet ou proposition de loi organique",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1474",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-06-13",
+   "numeroLoi": "2025-531",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-06-13"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N50690@2025-05-13",
+  "dossier": "DLR5L17N50690",
+  "origine": "solennel",
+  "date": "2025-05-13",
+  "titre": "Restaurer l'autorité de la justice à l'égard des mineurs délinquants et de leurs parents",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "EPR",
+   "acteur": "PA722190"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1624",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-06-23",
+   "numeroLoi": "2025-568",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-06-23"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51852",
+  "origine": "niche",
+  "date": "2025-05-15",
+  "titre": "Simplification du droit de l'urbanisme et du logement",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LIOT",
+   "acteur": "PA841017"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1717",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-11-26",
+   "numeroLoi": "2025-1129",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-11-26"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51849",
+  "origine": "niche",
+  "date": "2025-05-15",
+  "titre": "Lutter contre la mortalité infantile",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LIOT",
+   "acteur": "PA719286"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1723",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2025-05-16"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N50413",
+  "origine": "niche",
+  "date": "2025-05-15",
+  "titre": "Créer une croix de la valeur des sapeurs-pompiers volontaires et professionnels",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LIOT",
+   "acteur": "PA721474"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1724",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2025-05-15"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N50627",
+  "origine": "niche",
+  "date": "2025-05-15",
+  "titre": "Lutter contre la pédocriminalité",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LIOT",
+   "acteur": "PA721486"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V1725",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2025-05-16"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51672@2025-05-27",
+  "dossier": "DLR5L17N51672",
+  "origine": "solennel",
+  "date": "2025-05-27",
+  "titre": "Soins palliatifs et d’accompagnement",
+  "lecture": "première lecture",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "EPR",
+   "acteur": "PA722102"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2106",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-05-26",
+   "numeroLoi": "2026-404",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-05-26"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51670@2025-05-27",
+  "dossier": "DLR5L17N51670",
+  "origine": "solennel",
+  "date": "2025-05-27",
+  "titre": "Fin de vie",
+  "lecture": "première lecture",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA605694"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2107",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-08-18",
+   "numeroLoi": "2026-794",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-08-18"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51999",
+  "origine": "niche",
+  "date": "2025-06-05",
+  "titre": "Abroger la loi n° 2023-270 du 14 avril 2023 de financement rectificative de la sécurité sociale pour 2023 dite réforme des retraites",
+  "procedure": "Résolution Article 34-1",
+  "auteur": {
+   "type": "depute",
+   "groupe": "GDR",
+   "acteur": "PA721270"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2257",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
+   "dateDerniereEtape": "2025-06-05"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51115",
+  "origine": "niche",
+  "date": "2025-06-05",
+  "titre": "Proposition de loi expérimentant l’encadrement des loyers et améliorant l’habitat dans les outre-mer",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2262",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-06-13",
+   "numeroLoi": "2025-534",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-06-13"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51979",
+  "origine": "niche",
+  "date": "2025-06-05",
+  "titre": "Accorder le versement des allocations familiales dès le premier enfant",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "GDR",
+   "acteur": "PA796106"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2272",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2025-06-05"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51900",
+  "origine": "niche",
+  "date": "2025-06-05",
+  "titre": "La reconnaissance, le remboursement et la réparation par la France de la « double dette » d’Haïti",
+  "procedure": "Résolution Article 34-1",
+  "auteur": {
+   "type": "depute",
+   "groupe": "GDR",
+   "acteur": "PA795998"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2274",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
+   "dateDerniereEtape": "2025-06-05"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51619",
+  "origine": "niche",
+  "date": "2025-06-05",
+  "titre": "Les dysfonctionnements obstruant l’accès à une justice adaptée aux besoins des justiciables ultramarins",
+  "procedure": "Résolution",
+  "auteur": {
+   "type": "depute",
+   "groupe": "GDR",
+   "acteur": "PA795876"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2273",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
+   "dateDerniereEtape": "2025-06-05"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L16N49868@2025-06-17",
+  "dossier": "DLR5L16N49868",
+  "origine": "solennel",
+  "date": "2025-06-17",
+  "titre": "Projet de loi de simplification de la vie économique",
+  "lecture": "première lecture",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2458",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-05-26",
+   "numeroLoi": "2026-403",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-05-26"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51362@2025-06-17",
+  "dossier": "DLR5L17N51362",
+  "origine": "solennel",
+  "date": "2025-06-17",
+  "titre": "Projet de loi autorisant la ratification de la résolution LP.3(4) portant amendement de l’article 6 du Protocole de Londres de 1996 à la Convention de 1972 sur la prévention de la pollution des mers résultant de l’immersion de déchets et autres matières",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet de ratification des traités et conventions",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2460",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-06-23",
+   "numeroLoi": "2025-566",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-06-23"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L16N49849@2025-06-24",
+  "dossier": "DLR5L16N49849",
+  "origine": "solennel",
+  "date": "2025-06-24",
+  "titre": "Programmation nationale et simplification normative dans le secteur économique de l’énergie",
+  "lecture": "première lecture",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L17V2653",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN2-COM-AVIS-SAISIE",
+   "dateDerniereEtape": "2025-07-17"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51985@2025-07-01",
+  "dossier": "DLR5L17N51985",
+  "origine": "solennel",
+  "date": "2025-07-01",
+  "titre": "Projet de loi de programmation pour la refondation de Mayotte",
+  "lecture": "première lecture",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2874",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-08-11",
+   "numeroLoi": "2025-797",
+   "conseilConstitutionnel": "Conforme avec réserve",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-08-11"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51984@2025-07-01",
+  "dossier": "DLR5L17N51984",
+  "origine": "solennel",
+  "date": "2025-07-01",
+  "titre": "Département-Région de Mayotte",
+  "lecture": "première lecture",
+  "procedure": "Projet ou proposition de loi organique",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2875",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-08-11",
+   "numeroLoi": "2025-793",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-08-11"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53669@2025-07-02",
+  "dossier": "DLR5L17N53669",
+  "origine": "solennel",
+  "date": "2025-07-02",
+  "titre": "Renforcer la prévention et la lutte contre l’antisémitisme et le racisme dans l’enseignement supérieur par des actions de sensibilisation et de formation ciblées",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "UDR",
+   "acteur": "PA840889"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2880",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEPOT",
+   "dateDerniereEtape": "2026-01-27"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52973@2025-07-08",
+  "dossier": "DLR5L17N52973",
+  "origine": "solennel",
+  "date": "2025-07-08",
+  "titre": "Interdire l’importation en France de produits agricoles et denrées alimentaires contenant de l’acétamipride et à abroger la loi visant à lever les contraintes à l’exercice du métier d’agriculteur",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LFI-NFP",
+   "acteur": "PA719578"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2957",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-COM-FOND-REUNION",
+   "dateDerniereEtape": "2025-11-26"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53496@2025-07-08",
+  "dossier": "DLR5L17N53496",
+  "origine": "solennel",
+  "date": "2025-07-08",
+  "titre": "Projet de loi ratifiant l’ordonnance n°2025-1073 du 10 novembre 2025 portant extension et adaptation des dispositions de la loi n° 2025-796 du 11 août 2025 visant à faciliter le maintien en rétention des personnes condamnées pour des faits d’une particulière gravité et présentant de forts risques de récidive à Saint-Barthélemy, à Saint-Martin, dans les îles Wallis et Futuna, en Polynésie française et en Nouvelle-Calédonie",
+  "lecture": "première lecture",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2958",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2026-01-05"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51985@2025-07-09",
+  "dossier": "DLR5L17N51985",
+  "origine": "solennel",
+  "date": "2025-07-09",
+  "titre": "Projet de loi de programmation pour la refondation de Mayotte",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2975",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-08-11",
+   "numeroLoi": "2025-797",
+   "conseilConstitutionnel": "Conforme avec réserve",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-08-11"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51984@2025-07-09",
+  "dossier": "DLR5L17N51984",
+  "origine": "solennel",
+  "date": "2025-07-09",
+  "titre": "Département-Région de Mayotte",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet ou proposition de loi organique",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V2976",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-08-11",
+   "numeroLoi": "2025-793",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-08-11"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N50450@2025-10-28",
+  "dossier": "DLR5L17N50450",
+  "origine": "solennel",
+  "date": "2025-10-28",
+  "titre": "Proposition de loi organique visant à reporter le renouvellement général des membres du congrès et des assemblées de province de la Nouvelle-Calédonie",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet ou proposition de loi organique",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V3182",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2024-11-15",
+   "numeroLoi": "2024-1026",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2024-11-15"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52719",
+  "origine": "niche",
+  "date": "2025-10-30",
+  "titre": "Dénoncer les accords franco-algériens du 27 décembre 1968",
+  "procedure": "Résolution Article 34-1",
+  "auteur": {
+   "type": "depute",
+   "groupe": "RN",
+   "acteur": "PA842001"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V3260",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
+   "dateDerniereEtape": "2025-10-30"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52801",
+  "origine": "niche",
+  "date": "2025-10-30",
+  "titre": "Rétablissement du délit de séjour irrégulier",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "RN",
+   "acteur": "PA841075"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L17V3261",
+  "inverse": true,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2025-10-30"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52787",
+  "origine": "niche",
+  "date": "2025-10-30",
+  "titre": "Rendre systématique l’information du consommateur sur l’origine des denrées alimentaires par le moyen de l’étiquetage",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "RN",
+   "acteur": "PA794354"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L17V3273",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-COM-FOND-REUNION",
+   "dateDerniereEtape": "2025-10-30"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52428@2025-11-21",
+  "dossier": "DLR5L17N52428",
+  "origine": "solennel",
+  "date": "2025-11-21",
+  "titre": "Projet de loi de finances pour 2026",
+  "lecture": "première lecture",
+  "procedure": "Projet de loi de finances de l'année",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L17V4241",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-02-19",
+   "numeroLoi": "2026-103",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "CC-CONCLUSION",
+   "dateDerniereEtape": "2026-02-19"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53073",
+  "origine": "niche",
+  "date": "2025-11-27",
+  "titre": "S’opposer à l’adoption de l’accord commercial entre l’Union européenne et le Mercosur",
+  "procedure": "Résolution Article 34-1",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LFI-NFP",
+   "acteur": "PA720892"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V4244",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
+   "dateDerniereEtape": "2025-11-27"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52976",
+  "origine": "niche",
+  "date": "2025-11-27",
+  "titre": "L'établissement de l’égalité d’accès au service public postal en outre-mer",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LFI-NFP",
+   "acteur": "PA721062"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V4287",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2025-11-27"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53135@2025-12-02",
+  "dossier": "DLR5L17N53135",
+  "origine": "solennel",
+  "date": "2025-12-02",
+  "titre": "Projet de loi de finances de fin de gestion pour 2025",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet de loi de finances rectificative",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V4442",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-12-08",
+   "numeroLoi": "2025-1173",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-12-08"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52922@2025-12-09",
+  "dossier": "DLR5L17N52922",
+  "origine": "solennel",
+  "date": "2025-12-09",
+  "titre": "Projet de loi de financement de la sécurité sociale pour 2026",
+  "lecture": "nouvelle lecture",
+  "procedure": "Projet de loi de financement de la sécurité sociale",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V4696",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-12-30",
+   "numeroLoi": "2025-1403",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "CC-CONCLUSION",
+   "dateDerniereEtape": "2025-12-30"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51457",
+  "origine": "niche",
+  "date": "2025-12-11",
+  "titre": "Proposition de loi relative à la protection sociale complémentaire des agents publics territoriaux",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V4707",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-12-22",
+   "numeroLoi": "2025-1251",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-12-22"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52781",
+  "origine": "niche",
+  "date": "2025-12-11",
+  "titre": "Assurer le droit de chaque enfant à disposer d’un avocat dans le cadre d’une mesure d’assistance éducative et de protection de l’enfance",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "SOC",
+   "acteur": "PA842263"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V4714",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-07-13",
+   "numeroLoi": "2026-630",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-07-13"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53051",
+  "origine": "niche",
+  "date": "2025-12-11",
+  "titre": "Protéger les mineurs isolés et à lutter contre le sans-abrisme",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "SOC",
+   "acteur": "PA840171"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V4723",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2025-12-11"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53069",
+  "origine": "niche",
+  "date": "2025-12-11",
+  "titre": "Retrouver la confiance et l’équilibre dans les rapports locatifs",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "SOC",
+   "acteur": "PA794854"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V4745",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN2-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-11-19"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52749",
+  "origine": "niche",
+  "date": "2025-12-11",
+  "titre": "Garantir un renouvellement automatique des titres de séjour de longue durée",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "SOC",
+   "acteur": "PA795156"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V4754",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2025-12-12"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53058",
+  "origine": "niche",
+  "date": "2025-12-11",
+  "titre": "Prendre des mesures d’urgence contre la vie chère en outre-mer dans le secteur des services",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "SOC",
+   "acteur": "PA643157"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V4755",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2025-12-12"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52922@2025-12-16",
+  "dossier": "DLR5L17N52922",
+  "origine": "solennel",
+  "date": "2025-12-16",
+  "titre": "Projet de loi de financement de la sécurité sociale pour 2026",
+  "lecture": "lecture définitive",
+  "procedure": "Projet de loi de financement de la sécurité sociale",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V4758",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-12-30",
+   "numeroLoi": "2025-1403",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "CC-CONCLUSION",
+   "dateDerniereEtape": "2025-12-30"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53386@2025-12-23",
+  "dossier": "DLR5L17N53386",
+  "origine": "solennel",
+  "date": "2025-12-23",
+  "titre": "Projet de loi spéciale prévue par l'article 45 de la loi organique n°2001-692 du 1er août 2001 relative aux lois de finances",
+  "lecture": "première lecture",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V4947",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-12-26",
+   "numeroLoi": "2025-1316",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-12-26"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52100@2026-01-13",
+  "dossier": "DLR5L17N52100",
+  "origine": "solennel",
+  "date": "2026-01-13",
+  "titre": "Projet de loi relatif à l’organisation des jeux Olympiques et Paralympiques de 2030",
+  "lecture": "première lecture",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V4963",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-03-20",
+   "numeroLoi": "2026-201",
+   "conseilConstitutionnel": "Conforme avec réserve",
+   "derniereEtape": "CC-CONCLUSION",
+   "dateDerniereEtape": "2026-03-20"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52132",
+  "origine": "niche",
+  "date": "2026-01-22",
+  "titre": "Inscrire la mouvance des frères musulmans sur la liste européenne des organisations terroristes",
+  "procedure": "Résolution",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DR",
+   "acteur": "PA718784"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V5106",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-COM-FOND-REUNION",
+   "dateDerniereEtape": "2026-01-22"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53300",
+  "origine": "niche",
+  "date": "2026-01-22",
+  "titre": "Suspendre toute nouvelle création d’instances administratives pour lutter contre le phénomène d’agencification de l’État et rendre plus lisible le fonctionnement de l’administration française",
+  "procedure": "Résolution Article 34-1",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DR",
+   "acteur": "PA774954"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V5107",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-01-22"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52100@2026-02-03",
+  "dossier": "DLR5L17N52100",
+  "origine": "solennel",
+  "date": "2026-02-03",
+  "titre": "Projet de loi relatif à l’organisation des jeux Olympiques et Paralympiques de 2030",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V5296",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-03-20",
+   "numeroLoi": "2026-201",
+   "conseilConstitutionnel": "Conforme avec réserve",
+   "derniereEtape": "CC-CONCLUSION",
+   "dateDerniereEtape": "2026-03-20"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53427",
+  "origine": "niche",
+  "date": "2026-02-12",
+  "titre": "Améliorer la protection des personnes ciblées par les réseaux de criminalité organisée",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "ECOS",
+   "acteur": "PA794778"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V5358",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN2-DEPOT",
+   "dateDerniereEtape": "2026-05-11"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51672@2026-02-25",
+  "dossier": "DLR5L17N51672",
+  "origine": "solennel",
+  "date": "2026-02-25",
+  "titre": "Soins palliatifs et d’accompagnement",
+  "lecture": "deuxième lecture",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "EPR",
+   "acteur": "PA722102"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V5728",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-05-26",
+   "numeroLoi": "2026-404",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-05-26"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51670@2026-02-25",
+  "dossier": "DLR5L17N51670",
+  "origine": "solennel",
+  "date": "2026-02-25",
+  "titre": "Fin de vie",
+  "lecture": "deuxième lecture",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA605694"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V5729",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-08-18",
+   "numeroLoi": "2026-794",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-08-18"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51346",
+  "origine": "niche",
+  "date": "2026-03-26",
+  "titre": "Création du cadre d'emploi des personnels de santé des services d’incendie et de secours",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA267318"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V5829",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-04-07",
+   "numeroLoi": "2026-247",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-04-07"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51329",
+  "origine": "niche",
+  "date": "2026-03-26",
+  "titre": "Simplifier la sortie de l’indivision successorale",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA794810"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V5832",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-04-07",
+   "numeroLoi": "2026-248",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-04-07"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51330",
+  "origine": "niche",
+  "date": "2026-03-26",
+  "titre": "Renforcer l’effectivité des droits voisins de la presse",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA719558"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V5831",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN2-DEPOT",
+   "dateDerniereEtape": "2026-06-17"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53715",
+  "origine": "niche",
+  "date": "2026-03-26",
+  "titre": "Renforcer la place des agriculteurs dans l’aménagement du territoire et à sécuriser l’exercice des activités agricoles face au changement climatique",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA794830"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V5839",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-03-26"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51175",
+  "origine": "niche",
+  "date": "2026-03-26",
+  "titre": "Proposition de loi visant à soutenir les collectivités territoriales dans la prévention et la gestion des inondations",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V5844",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-05-19",
+   "numeroLoi": "2026-381",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-05-19"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53672",
+  "origine": "niche",
+  "date": "2026-03-26",
+  "titre": "Renforcer l’enseignement à la défense nationale dans le cadre du parcours de citoyenneté",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA719024"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V5845",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2026-03-27"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53720",
+  "origine": "niche",
+  "date": "2026-03-26",
+  "titre": "Renforcer le contrôle, la gouvernance et la responsabilité financière des agences et opérateurs de l’État",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA720728"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V5846",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2026-03-27"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53717",
+  "origine": "niche",
+  "date": "2026-03-26",
+  "titre": "Interdire les sucres ajoutés dans les aliments destinés aux nourrissons et aux enfants en bas âge",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA722374"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V5847",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2026-03-27"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52985@2026-04-07",
+  "dossier": "DLR5L17N52985",
+  "origine": "solennel",
+  "date": "2026-04-07",
+  "titre": "Projet de loi relatif à la lutte contre les fraudes sociales et fiscales",
+  "lecture": "première lecture",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V6023",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-06-25",
+   "numeroLoi": "2026-534",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-06-25"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53775",
+  "origine": "niche",
+  "date": "2026-04-09",
+  "titre": "Encadrer les regroupements pédagogiques intercommunaux afin de garantir l’égalité d’accès à l’école en milieu rural",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "HOR",
+   "acteur": "PA722070"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V6076",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-04-09"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51711",
+  "origine": "niche",
+  "date": "2026-04-09",
+  "titre": "Renforcer la pénalisation de l’organisation de rave-parties",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "HOR",
+   "acteur": "PA720138"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V6124",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2026-04-10"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53770",
+  "origine": "niche",
+  "date": "2026-04-09",
+  "titre": "Simplifier la gestion de la commande publique par les acheteurs publics et les opérateurs économiques",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "HOR",
+   "acteur": "PA842125"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V6131",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2026-04-10"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L16N49868@2026-04-14",
+  "dossier": "DLR5L16N49868",
+  "origine": "solennel",
+  "date": "2026-04-14",
+  "titre": "Projet de loi de simplification de la vie économique",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V6184",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-05-26",
+   "numeroLoi": "2026-403",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-05-26"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53284@2026-05-05",
+  "dossier": "DLR5L17N53284",
+  "origine": "solennel",
+  "date": "2026-05-05",
+  "titre": "Renforcer la sécurité, la rétention administrative et la prévention des risques d’attentat",
+  "lecture": "première lecture",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "EPR",
+   "acteur": "PA795528"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V6318",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-07-27",
+   "numeroLoi": "2026-667",
+   "conseilConstitutionnel": "Conforme avec réserve",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-07-27"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52985@2026-05-05",
+  "dossier": "DLR5L17N52985",
+  "origine": "solennel",
+  "date": "2026-05-05",
+  "titre": "Projet de loi relatif à la lutte contre les fraudes sociales et fiscales",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V6319",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-06-25",
+   "numeroLoi": "2026-534",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-06-25"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54083@2026-05-19",
+  "dossier": "DLR5L17N54083",
+  "origine": "solennel",
+  "date": "2026-05-19",
+  "titre": "Projet de loi actualisant la programmation militaire pour les années 2024 à 2030 et portant diverses dispositions intéressant la défense",
+  "lecture": "première lecture",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V6736",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-08-16",
+   "numeroLoi": "2026-791",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-08-16"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52104@2026-05-20",
+  "dossier": "DLR5L17N52104",
+  "origine": "solennel",
+  "date": "2026-05-20",
+  "titre": "Proposition de loi organique portant actualisation du corps électoral pour les élections au congrès et aux assemblées de province de la Nouvelle-Calédonie",
+  "lecture": "première lecture",
+  "procedure": "Projet ou proposition de loi organique",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V6753",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-05-28",
+   "numeroLoi": "2026-410",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "CC-CONCLUSION",
+   "dateDerniereEtape": "2026-05-28"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52767",
+  "origine": "niche",
+  "date": "2026-05-28",
+  "titre": "Abrogation du Code noir",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LIOT",
+   "acteur": "PA720976"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7002",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEBATS-DEC",
+   "dateDerniereEtape": "2026-10-20"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53357",
+  "origine": "niche",
+  "date": "2026-05-28",
+  "titre": "Proposition de loi visant à étendre à toutes les communes la compensation financière prévue pour les communes de plus de 3 500 habitants pour l’exercice de l’ensemble des compétences du service public de la petite enfance",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7004",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-06-04",
+   "numeroLoi": "2026-442",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-06-04"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54144",
+  "origine": "niche",
+  "date": "2026-05-28",
+  "titre": "Pour la mobilisation de l’habitat existant en réponse à la crise du logement",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7027",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2026-05-29"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51791",
+  "origine": "niche",
+  "date": "2026-05-28",
+  "titre": "Proposition de loi portant pérennisation du contrat de professionnalisation expérimental",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7039",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-06-04",
+   "numeroLoi": "2026-441",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-06-04"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54085@2026-06-02",
+  "dossier": "DLR5L17N54085",
+  "origine": "solennel",
+  "date": "2026-06-02",
+  "titre": "Projet de loi d’urgence pour la protection et la souveraineté agricoles",
+  "lecture": "première lecture",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7259",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-08-18",
+   "numeroLoi": "2026-796",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-08-18"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53981@2026-06-02",
+  "dossier": "DLR5L17N53981",
+  "origine": "solennel",
+  "date": "2026-06-02",
+  "titre": "Projet de loi portant transposition de l’avenant n°3 du 25 février 2026 au protocole d’accord du 10 novembre 2023 relatif à l’assurance chômage",
+  "lecture": "deuxième lecture",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7260",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-06-11",
+   "numeroLoi": "2026-470",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-06-11"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52977",
+  "origine": "niche",
+  "date": "2026-06-11",
+  "titre": "Nationalisation d'ArcelorMittal France",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LFI-NFP",
+   "acteur": "PA795164"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7380",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN2-COM-FOND-REUNION",
+   "dateDerniereEtape": "2026-06-11"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51981",
+  "origine": "niche",
+  "date": "2026-06-11",
+  "titre": "Renforcer la solidarité envers les retraités pauvres",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "GDR",
+   "acteur": "PA795998"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7354",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-06-11"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53304",
+  "origine": "niche",
+  "date": "2026-06-11",
+  "titre": "Proposition de loi visant à lever dans les territoires d’outre-mer l’interdiction de recherche, d’exploration et d’exploitation des hydrocarbures",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "rejete",
+  "scrutin": null,
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-06-11"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54229",
+  "origine": "niche",
+  "date": "2026-06-11",
+  "titre": "Réformer les bourses sur critères sociaux et lutter contre la précarité étudiante",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "GDR",
+   "acteur": "PA720838"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7397",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-DEPOT",
+   "dateDerniereEtape": "2026-06-12"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53401",
+  "origine": "niche",
+  "date": "2026-06-11",
+  "titre": "Pour l’égalité d’accès aux soins des ressortissants ultramarins en hexagone",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "GDR",
+   "acteur": "PA795240"
+  },
+  "statut": "adopte",
+  "scrutin": null,
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN2-DEPOT",
+   "dateDerniereEtape": "2026-10-20"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53284@2026-06-16",
+  "dossier": "DLR5L17N53284",
+  "origine": "solennel",
+  "date": "2026-06-16",
+  "titre": "Renforcer la sécurité, la rétention administrative et la prévention des risques d’attentat",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "EPR",
+   "acteur": "PA795528"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7405",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-07-27",
+   "numeroLoi": "2026-667",
+   "conseilConstitutionnel": "Conforme avec réserve",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-07-27"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51968@2026-06-17",
+  "dossier": "DLR5L17N51968",
+  "origine": "solennel",
+  "date": "2026-06-17",
+  "titre": "Améliorer l'accès au logement des travailleurs des services publics",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "EPR",
+   "acteur": "PA795950"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7408",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-06-29",
+   "numeroLoi": "2026-553",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-06-29"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53530@2026-06-17",
+  "dossier": "DLR5L17N53530",
+  "origine": "solennel",
+  "date": "2026-06-17",
+  "titre": "Relancer les investissements dans le secteur de l’hydroélectricité pour contribuer à la transition énergétique",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "SOC",
+   "acteur": "PA342415"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7409",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-06-29",
+   "numeroLoi": "2026-554",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-06-29"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54218@2026-06-23",
+  "dossier": "DLR5L17N54218",
+  "origine": "solennel",
+  "date": "2026-06-23",
+  "titre": "Projet de loi constitutionnelle pour une Corse autonome au sein de la République",
+  "lecture": "première lecture",
+  "procedure": "Projet ou proposition de loi constitutionnelle",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7454",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN2-DEPOT",
+   "dateDerniereEtape": "2026-10-28"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L16N49364@2026-06-24",
+  "dossier": "DLR5L16N49364",
+  "origine": "solennel",
+  "date": "2026-06-24",
+  "titre": "Réduire l’impact environnemental de l’industrie textile",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "HOR",
+   "acteur": "PA795026"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7494",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-07-08",
+   "numeroLoi": "2026-602",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-07-08"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51670@2026-06-30",
+  "dossier": "DLR5L17N51670",
+  "origine": "solennel",
+  "date": "2026-06-30",
+  "titre": "Fin de vie",
+  "lecture": "nouvelle lecture",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA605694"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7894",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-08-18",
+   "numeroLoi": "2026-794",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-08-18"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54083@2026-07-01",
+  "dossier": "DLR5L17N54083",
+  "origine": "solennel",
+  "date": "2026-07-01",
+  "titre": "Projet de loi actualisant la programmation militaire pour les années 2024 à 2030 et portant diverses dispositions intéressant la défense",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7905",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-08-16",
+   "numeroLoi": "2026-791",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-08-16"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53940@2026-07-07",
+  "dossier": "DLR5L17N53940",
+  "origine": "solennel",
+  "date": "2026-07-07",
+  "titre": "Projet de loi sur la justice criminelle et le respect des victimes",
+  "lecture": "première lecture",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7980",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-07-23",
+   "numeroLoi": "2026-651",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "CC-CONCLUSION",
+   "dateDerniereEtape": "2026-07-23"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53942@2026-07-07",
+  "dossier": "DLR5L17N53942",
+  "origine": "solennel",
+  "date": "2026-07-07",
+  "titre": "Projet de loi organique relatif au renforcement des juridictions criminelles",
+  "lecture": "première lecture",
+  "procedure": "Projet ou proposition de loi organique",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7981",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-07-23",
+   "numeroLoi": "2026-650",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "CC-CONCLUSION",
+   "dateDerniereEtape": "2026-07-23"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51037@2026-07-07",
+  "dossier": "DLR5L17N51037",
+  "origine": "solennel",
+  "date": "2026-07-07",
+  "titre": "Reconnaître une présomption de légitime défense pour les forces de l'ordre, dans l'exercice de leurs fonctions",
+  "lecture": "première lecture",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DR",
+   "acteur": "PA718784"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V7987",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-07-07"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53940@2026-07-08",
+  "dossier": "DLR5L17N53940",
+  "origine": "solennel",
+  "date": "2026-07-08",
+  "titre": "Projet de loi sur la justice criminelle et le respect des victimes",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V8042",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-07-23",
+   "numeroLoi": "2026-651",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "CC-CONCLUSION",
+   "dateDerniereEtape": "2026-07-23"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53942@2026-07-08",
+  "dossier": "DLR5L17N53942",
+  "origine": "solennel",
+  "date": "2026-07-08",
+  "titre": "Projet de loi organique relatif au renforcement des juridictions criminelles",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet ou proposition de loi organique",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V8043",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-07-23",
+   "numeroLoi": "2026-650",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "CC-CONCLUSION",
+   "dateDerniereEtape": "2026-07-23"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53980@2026-07-15",
+  "dossier": "DLR5L17N53980",
+  "origine": "solennel",
+  "date": "2026-07-15",
+  "titre": "Projet de loi visant à offrir des réponses immédiates aux phénomènes troublant l’ordre public, la sécurité et la tranquillité de nos concitoyens",
+  "lecture": "première lecture",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V8279",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-08-18",
+   "numeroLoi": "2026-798",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-08-18"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51670@2026-07-15",
+  "dossier": "DLR5L17N51670",
+  "origine": "solennel",
+  "date": "2026-07-15",
+  "titre": "Fin de vie",
+  "lecture": "lecture définitive",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA605694"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V8280",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-08-18",
+   "numeroLoi": "2026-794",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-08-18"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N51732@2026-07-20",
+  "dossier": "DLR5L17N51732",
+  "origine": "solennel",
+  "date": "2026-07-20",
+  "titre": "Proposition de loi relative à l'organisation, à la gestion et au financement du sport professionnel",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V8418",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-08-03",
+   "numeroLoi": "2026-725",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-08-03"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54006@2026-07-20",
+  "dossier": "DLR5L17N54006",
+  "origine": "solennel",
+  "date": "2026-07-20",
+  "titre": "Pour une montagne vivante et souveraine",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DR",
+   "acteur": "PA607090"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V8421",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-08-18",
+   "numeroLoi": "2026-797",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-08-18"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54085@2026-07-20",
+  "dossier": "DLR5L17N54085",
+  "origine": "solennel",
+  "date": "2026-07-20",
+  "titre": "Projet de loi d’urgence pour la protection et la souveraineté agricoles",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V8427",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-08-18",
+   "numeroLoi": "2026-796",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-08-18"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54372@2026-07-21",
+  "dossier": "DLR5L17N54372",
+  "origine": "solennel",
+  "date": "2026-07-21",
+  "titre": "Projet de loi relatif à la protection des enfants",
+  "lecture": "première lecture",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V8430",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "SN1-COM-FOND-RAPPORT",
+   "dateDerniereEtape": "2026-10-21"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53187@2026-07-21",
+  "dossier": "DLR5L17N53187",
+  "origine": "solennel",
+  "date": "2026-07-21",
+  "titre": "Protéger les mineurs des risques auxquels les expose l’utilisation des réseaux sociaux",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "EPR",
+   "acteur": "PA817203"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V8431",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-08-24",
+   "numeroLoi": "2026-813",
+   "conseilConstitutionnel": "Non conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-08-24"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53980@2026-07-21",
+  "dossier": "DLR5L17N53980",
+  "origine": "solennel",
+  "date": "2026-07-21",
+  "titre": "Projet de loi visant à offrir des réponses immédiates aux phénomènes troublant l’ordre public, la sécurité et la tranquillité de nos concitoyens",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Projet de loi ordinaire",
+  "auteur": {
+   "type": "gouvernement"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V8433",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-08-18",
+   "numeroLoi": "2026-798",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-08-18"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N52746@2026-07-21",
+  "dossier": "DLR5L17N52746",
+  "origine": "solennel",
+  "date": "2026-07-21",
+  "titre": "Moderniser la gestion du patrimoine immobilier de l'État",
+  "lecture": "texte de la commission mixte paritaire",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "EPR",
+   "acteur": "PA793940"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V8434",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-08-18",
+   "numeroLoi": "2026-795",
+   "conseilConstitutionnel": "Conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-08-18"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54844",
+  "origine": "niche",
+  "date": "2026-10-08",
+  "titre": "Garantir un accès continu à l’eau potable dans les territoires ultramarins",
+  "procedure": "Résolution Article 34-1",
+  "auteur": {
+   "type": "depute",
+   "groupe": "RN",
+   "acteur": "PA842279"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L17V8609",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-10-08"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54841",
+  "origine": "niche",
+  "date": "2026-10-08",
+  "titre": "Mobiliser la commande publique au service de l’emploi, de la production et de l’innovation en France",
+  "procedure": "Résolution Article 34-1",
+  "auteur": {
+   "type": "depute",
+   "groupe": "RN",
+   "acteur": "PA794590"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L17V8610",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-10-08"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54847",
+  "origine": "niche",
+  "date": "2026-10-08",
+  "titre": "Refonder l'espace Schengen en instaurant une double frontière nationale et européenne",
+  "procedure": "Résolution Article 34-1",
+  "auteur": {
+   "type": "depute",
+   "groupe": "RN",
+   "acteur": "PA841131"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L17V8611",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-10-08"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54916",
+  "origine": "niche",
+  "date": "2026-10-08",
+  "titre": "Inviter le Gouvernement à engager les démarches en vue de soutenir l’entrée au Panthéon d’Olympe de Gouges, de l’abbé Charles-Michel de l’Épée et de Zéna M’Déré",
+  "procedure": "Résolution Article 34-1",
+  "auteur": {
+   "type": "depute",
+   "groupe": "RN",
+   "acteur": "PA795778"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L17V8612",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-10-08"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54776@2026-10-13",
+  "dossier": "DLR5L17N54776",
+  "origine": "solennel",
+  "date": "2026-10-13",
+  "titre": "Apporter une réponse intégrale au phénomène des violences sexuelles et sexistes contre les femmes et les enfants",
+  "lecture": "première lecture",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "SOC",
+   "acteur": "PA841893"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V8705",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-10-13"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54777@2026-10-13",
+  "dossier": "DLR5L17N54777",
+  "origine": "solennel",
+  "date": "2026-10-13",
+  "titre": "Adapter l'autorité judiciaire à la lutte contre les violences sexuelles et intrafamiliales",
+  "lecture": "première lecture",
+  "procedure": "Projet ou proposition de loi organique",
+  "auteur": {
+   "type": "depute",
+   "groupe": "SOC",
+   "acteur": "PA841893"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V8706",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-10-13"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N53331",
+  "origine": "niche",
+  "date": "2026-10-29",
+  "titre": "Rétablir le droit commun de la prescription acquisitive dans les collectivités régies par l’article 73 de la Constitution ainsi qu’à Saint-Martin et Saint-Barthélemy",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LFI-NFP",
+   "acteur": "PA610654"
+  },
+  "statut": "adopte",
+  "scrutin": null,
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-10-29"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ }
+]

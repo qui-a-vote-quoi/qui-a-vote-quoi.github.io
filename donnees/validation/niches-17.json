@@ -1,0 +1,108 @@
+[
+ {
+  "date": "2024-10-31",
+  "groupe": "RN",
+  "statut": "valide",
+  "note": "vérifiée dans les comptes rendus pour la maquette"
+ },
+ {
+  "date": "2025-01-23",
+  "groupe": "SOC",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2025-02-06",
+  "groupe": "DR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2025-02-20",
+  "groupe": "ECOS",
+  "statut": "valide",
+  "note": "vérifiée dans les comptes rendus pour la maquette"
+ },
+ {
+  "date": "2025-03-06",
+  "groupe": "DEM",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2025-04-03",
+  "groupe": "HOR",
+  "statut": "valide",
+  "note": "vérifiée dans les comptes rendus pour la maquette"
+ },
+ {
+  "date": "2025-05-15",
+  "groupe": "LIOT",
+  "statut": "valide",
+  "note": "vérifiée dans les comptes rendus pour la maquette"
+ },
+ {
+  "date": "2025-06-05",
+  "groupe": "GDR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2025-10-30",
+  "groupe": "RN",
+  "statut": "valide",
+  "note": "vérifiée dans les comptes rendus pour la maquette"
+ },
+ {
+  "date": "2025-11-27",
+  "groupe": "LFI-NFP",
+  "statut": "valide",
+  "note": "vérifiée dans les comptes rendus pour la maquette"
+ },
+ {
+  "date": "2025-12-11",
+  "groupe": "SOC",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2026-01-22",
+  "groupe": "DR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2026-02-12",
+  "groupe": "ECOS",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2026-03-26",
+  "groupe": "DEM",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2026-04-09",
+  "groupe": "HOR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2026-05-28",
+  "groupe": "LIOT",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2026-06-11",
+  "groupe": "GDR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2026-10-08",
+  "groupe": "RN",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2026-10-29",
+  "groupe": "LFI-NFP",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2026-11-19",
+  "groupe": "SOC",
+  "statut": "a_valider"
+ }
+]
