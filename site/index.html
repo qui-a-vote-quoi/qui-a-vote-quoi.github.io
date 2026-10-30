@@ -249,6 +249,8 @@ a.chip:hover { border-color: var(--encre); }
 .tuiles a:hover { border-color: var(--encre); }
 .tuiles span { font: 400 14px var(--body); color: var(--muted); }
 .tuiles li:nth-child(-n+6) a { background: var(--accent-soft); border-color: transparent; }
+.barre-jouer { position: sticky; bottom: 12px; z-index: 4; margin-top: 16px; }
+.appel-jeu { margin-top: 28px; }
 .ligne-resume { margin: 0; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .plus.grand { font-size: 19px; padding: 16px 28px; }
 a.plus { text-decoration: none; display: inline-flex; align-items: center; }
@@ -721,7 +723,8 @@ const views = {
           ${choixPeriode("periode", filtre.leg)}
         </form></details>
       <p class="meta" id="nb" aria-live="polite"></p>
-      <div id="resultats"></div>`;
+      <div id="resultats"></div>
+      ${appelJeu(th, { collant: true })}`;
   },
   // Après « À vous de juger » : partir de ce qui compte pour le lecteur. Les sujets du quotidien d'abord.
   juger() {
@@ -791,7 +794,8 @@ const views = {
         return `<div class="grp">${chip(r.g)}<span class="pos ${st}">${LIB[st]}</span>${bar(v.p, v.c, v.a, v.n)}<span class="pct">${pres} %</span>
           <span class="num">${v.p} pour · ${v.c} contre · ${v.a} abst. · ${v.n} n'ont pas voté (participation ${pres} %)</span></div>`;
       }).join("")}</div>
-      <p class="note">Position du groupe : le choix le plus fréquent parmi ses députés qui ont voté. Sources sur le site de l'Assemblée nationale : ${ext(urlVote(t.scrutin, t.leg), `vote n° ${t.scrutin}`)}, ${ext(urlDossier(t), "le texte et son parcours")}.</p>`;
+      <p class="note">Position du groupe : le choix le plus fréquent parmi ses députés qui ont voté. Sources sur le site de l'Assemblée nationale : ${ext(urlVote(t.scrutin, t.leg), `vote n° ${t.scrutin}`)}, ${ext(urlDossier(t), "le texte et son parcours")}.</p>
+      ${appelJeu(t.theme)}`;
   },
   groupe(g) {
     const Gx = GROUPES[g] || { nom: g, c: "#6b707a", t: "#fff", periodes: {} };
@@ -998,6 +1002,19 @@ function selectionBilan() {
   const { sujets, leg } = prefBilan();
   return parPeriode(BILAN.filter(t => sujets.includes(t.theme)), leg);
 }
+// Durée estimée d'une séance : environ 1 min 30 pour un texte avec son débat, 40 secondes sans
+function estimation(restants) {
+  const k = Math.min(TAILLE_SEANCE, restants.length), moy = restants.length ? restants.reduce((a, t) => a + (t.debat ? 1.5 : 0.7), 0) / restants.length : 1;
+  return { k, min: Math.max(1, Math.round(k * moy)) };
+}
+// « À vous de jouer » : après avoir exploré un sujet (sa page, la fiche d'un texte), siéger sur ses textes
+function appelJeu(th, { collant = false } = {}) {
+  const rep = load(), restants = BILAN.filter(t => t.theme === th && !(t.id in rep));
+  if (!restants.length) return "";
+  const { k, min } = estimation(restants);
+  return `<div class="${collant ? "barre-jouer" : "appel-jeu"}"><div class="siege pret"><p><b>Et vous, qu'auriez-vous voté&nbsp;?</b><br><span class="meta">${pluriel(k, "texte")} sur ce sujet, environ ${min} min</span></p>
+    <a class="plus principal" href="#jouer/${encodeURIComponent(th)}">À vous de jouer →</a></div></div>`;
+}
 // « Siégez » : une séance de 10 textes tirés au hasard parmi ceux pas encore votés, un à la fois.
 // Après chaque vote, on découvre le vrai vote de l'Assemblée et qui avait proposé le texte. Pas de score de « bonne réponse ».
 const TAILLE_SEANCE = 10;
@@ -1013,15 +1030,14 @@ function majQuestions() {
   const aVoter = parPeriode(BILAN, prefBilan().leg).filter(t => !(t.id in rep));
   document.querySelectorAll(".nb-sujet").forEach(x => { const k = aVoter.filter(t => t.theme === x.dataset.sujet).length; x.textContent = `· ${k}`; x.title = `${pluriel(k, "texte")} à voter`; });
   const tous = $("#tous-sujets"); if (tous) tous.textContent = document.querySelectorAll("input[name=sujet]:not(:checked)").length ? "Tout cocher" : "Tout décocher";
-  // Durée estimée : environ 1 min 30 pour un texte avec son débat, 40 secondes sans
-  const k = Math.min(TAILLE_SEANCE, restants.length), moy = restants.length ? restants.reduce((a, t) => a + (t.debat ? 1.5 : 0.7), 0) / restants.length : 1;
+  const { k, min } = estimation(restants);
   $("#historique").innerHTML = historique();
   // Annoncé aux lecteurs d'écran à chaque case cochée (le bandeau, lui, est redessiné)
-  $("#nb-bilan").textContent = choisis ? `${pluriel(restants.length, "texte")} à voter. Une séance de ${k} textes dure environ ${Math.max(1, Math.round(k * moy))} minutes.` : "";
+  $("#nb-bilan").textContent = choisis ? `${pluriel(restants.length, "texte")} à voter. Une séance de ${k} textes dure environ ${min} minutes.` : "";
   $("#questions").innerHTML = !choisis
     ? `<div class="callout" style="margin-top:0"><b>Pour commencer, cochez un ou plusieurs sujets.</b> Vous siégerez ensuite sur des textes de ces sujets.</div>`
     : restants.length
-      ? `<div class="siege pret"><p><b>${pluriel(restants.length, "texte")} à voter</b> sur ces sujets<br><span class="meta">${restants.length > k ? `Chaque séance en tire ${k} au hasard` : "Une séance"} : environ ${Math.max(1, Math.round(k * moy))} min</span></p>
+      ? `<div class="siege pret"><p><b>${pluriel(restants.length, "texte")} à voter</b> sur ces sujets<br><span class="meta">${restants.length > k ? `Chaque séance en tire ${k} au hasard` : "Une séance"} : environ ${min} min</span></p>
           <button type="button" class="plus principal" id="sieger">Siéger →</button></div>`
       : `<div class="callout" style="margin-top:0">Vous avez voté sur tous les textes de ces sujets. Cochez d'autres sujets pour continuer.</div>`;
   majBilan();
@@ -1207,6 +1223,11 @@ function majBilan() {
 
 function render() {
   const [view, arg] = (location.hash.slice(1) || "accueil").split("/");   // #texte/<id>/debat : voir le gestionnaire hashchange
+  if (view === "jouer") {   // #jouer/<sujet> : une séance sur ce sujet, lancée tout de suite
+    ecrirePref("bilanChoix", { sujets: [decodeURIComponent(arg || "")], leg: "" });
+    seance = null; history.replaceState(null, "", "#bilan");
+    return render(), commencerSeance();
+  }
   const fn = views[view] || views.accueil;
   app.innerHTML = fn(decodeURIComponent(arg || ""));
   // Titre de l'onglet propre à chaque vue (annoncé par les lecteurs d'écran)
