@@ -369,7 +369,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   /* Sur téléphone, le menu passe sous le nom du site, séparé par un trait, en trois cases égales */
   header.top .wrap { flex-wrap: wrap; gap: 8px; padding-block: 8px 10px; }
   .logo { font-size: 17px; flex-basis: 100%; }
-  nav { flex-basis: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; padding-top: 8px; border-top: var(--bord); }
+  /* le trait va d'un bord à l'autre de l'écran : on annule les marges de la colonne */
+  nav { --g: max(16px, env(safe-area-inset-left, 0px)); --d: max(16px, env(safe-area-inset-right, 0px));
+    flex: 0 0 calc(100% + var(--g) + var(--d)); margin: 0 calc(-1 * var(--d)) 0 calc(-1 * var(--g)); padding: 8px var(--d) 0 var(--g);
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; border-top: var(--bord); }
   nav a { font-size: 14px; line-height: 1.1; white-space: normal; text-align: center; padding: 6px 4px; min-height: 40px; display: flex; align-items: center; justify-content: center; }
   nav a:hover { border-color: transparent; background: var(--accent-soft); }
   nav a.on, nav a.on:hover { background: var(--fg); }
