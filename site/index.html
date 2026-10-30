@@ -179,6 +179,15 @@ a.chip:hover { border-color: var(--encre); }
 #app.en-seance .lead, .en-seance .bilan .filtres { display: none; }
 .seance-sujets { display: none; }
 .en-seance .seance-sujets { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0 0 14px; font-size: 15px; color: var(--muted); }
+/* Séance en cours : une seule colonne, rien d'autre que le texte ; le panneau des groupes revient à la fin */
+.bilan.sans-panel { grid-template-columns: minmax(0, 1fr); }
+.bilan.sans-panel .panel, .en-cours .bilan > div > .note, .en-cours #revel { display: none; }
+.en-cours .bilan { grid-template-columns: minmax(0, 760px); justify-content: center; }
+.en-cours h1 { font-size: clamp(22px, 3vw, 28px); text-align: center; }
+.en-cours .seance-sujets { justify-content: center; }
+.scrutin { display: grid; gap: 10px; border-top: var(--bord); padding-top: 14px; }
+.scrutin h3 { margin: 0; }
+.seance .btns button { flex: 1 1 120px; min-height: 52px; font-size: 17px; }
 .seance-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
 .seance-resume { font-size: 18px; margin: 0; }
 .debat { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
@@ -951,7 +960,7 @@ const VOTES = [[1, "Pour"], [-1, "Contre"], [0, "Je m'abstiens"]];
 const libVote = v => ({ 1: "pour", "-1": "contre", 0: "abstention" })[v];
 function majQuestions() {
   if (seance) { afficherSeance(); majBilan(); return; }
-  app.classList.remove("en-seance");
+  app.classList.remove("en-seance", "en-cours");
   const ts = selectionBilan(), choisis = prefBilan().sujets.length, rep = load();
   const restants = ts.filter(t => !(t.id in rep));
   $("#nb-bilan").textContent = choisis ? `${pluriel(ts.length, "texte")} sur ces sujets, dont ${restants.length} pas encore voté${restants.length > 1 ? "s" : ""}.` : "";
@@ -966,6 +975,8 @@ function majQuestions() {
 function afficherSeance() {
   const n = seance.ids.length, { sujets, leg } = prefBilan();
   app.classList.add("en-seance");
+  app.classList.toggle("en-cours", seance.i < n);
+  dispositionBilan();
   $("#seance-sujets").innerHTML = `<span>${sujets.length > 3 ? `${sujets.slice(0, 2).join(", ")} et ${sujets.length - 2} autres sujets` : sujets.join(", ")} · ${leg ? PERIODES[leg].lib : "de 2017 à aujourd'hui"}</span>
     <button type="button" class="lien-bouton" id="changer-sujets">Changer de sujets</button>`;
   const precedent = seance.i > 0 ? `<button type="button" class="lien-bouton" id="precedent">← Texte précédent</button>` : "";
@@ -974,7 +985,7 @@ function afficherSeance() {
     $("#nb-bilan").textContent = "";
     $("#questions").innerHTML = `<div class="siege"><h2 tabindex="-1" id="fin-seance">Séance terminée</h2>
       <p>Vous avez voté sur ${pluriel(ts.length, "texte")}${passes ? ` (et passé ${passes})` : ""}. Les députés en ont adopté ${adoptes} et rejeté ${ts.length - adoptes}.${serres ? ` ${serres > 1 ? `${serres} votes se sont joués` : "Un vote s'est joué"} à ${ECART_SERRE} voix près ou moins : quelques sièges ont fait la différence.` : ""}</p>
-      <p>Les groupes qui ont voté comme vous sont dans le panneau « Ont voté comme vous ». Le détail de vos votes est plus bas.</p>
+      <p>Découvrez maintenant les groupes qui ont voté comme vous, dans le panneau « Ont voté comme vous », et le détail de vos votes plus bas.</p>
       <p class="row"><button type="button" class="plus principal" id="autre-seance">Une autre séance →</button>${precedent}</p></div>`;
     return;
   }
@@ -984,16 +995,15 @@ function afficherSeance() {
     <div class="seance-haut"><div class="seance-nav"><span class="eyebrow">Texte ${seance.i + 1} sur ${n} · ${t.theme}</span>${precedent}</div><div class="progress" aria-hidden="true"><i style="width:${(100 * seance.i / n).toFixed(1)}%"></i></div></div>
     <h2 tabindex="-1" id="q-titre">${t.titre}</h2>
     <p class="seance-resume">${t.enClair}${t.niveau === "ia" ? ` ${badgeIA(t)}` : ""}</p>
-    ${t.debat && !seance.revele ? (seance.repl
-      ? `<section class="vivre" aria-label="Le débat"><h3 class="sr-only">Le débat</h3>${repliques(t, { visibles: seance.repl })}
+    ${t.debat && !seance.revele ? `<section class="vivre" aria-labelledby="titre-debat"><h3 class="eyebrow" id="titre-debat">Le débat dans l'hémicycle</h3>${repliques(t, { visibles: seance.repl })}
           <p class="row">${seance.repl < t.debat.repliques.length ? `<button type="button" class="plus" id="replique-suivante">Réplique suivante ↓</button>
-            <button type="button" class="lien-bouton" id="tout-le-debat">Tout afficher</button><span class="meta">${seance.repl} / ${t.debat.repliques.length}</span>` : `<span class="meta">Fin du débat. À vous de voter.</span>`}</p></section>`
-      : `<p><button type="button" class="plus" id="vivre-debat">▶ Vivre le débat <span class="meta">(${t.debat.repliques.length} répliques)</span></button></p>`) : ""}
+            <button type="button" class="lien-bouton" id="tout-le-debat">Tout afficher</button><span class="meta">${seance.repl} / ${t.debat.repliques.length}</span>` : `<span class="meta">Fin du débat.</span>`}</p></section>` : ""}
     ${seance.details && !seance.revele ? elementsPourChoisir(t) : ""}
-    ${!seance.revele ? `<div class="btns" data-id="${t.id}" role="group" aria-label="Votre vote : ${t.titre.replace(/"/g, "&quot;")}">
+    ${!seance.revele ? `<div class="scrutin"><h3 class="eyebrow" id="titre-scrutin">Le scrutin est ouvert</h3>
+      <div class="btns" data-id="${t.id}" role="group" aria-labelledby="titre-scrutin q-titre">
         ${VOTES.map(([val, l]) => `<button type="button" data-v="${val}">${l}</button>`).join("")}</div>
       <div class="row">${seance.details ? "" : `<button type="button" class="lien-bouton" id="en-savoir-plus">Je ne sais pas : j'ai besoin d'en savoir plus</button>`}
-        <button type="button" class="lien-bouton" id="passer">Passer ce texte</button></div>`
+        <button type="button" class="lien-bouton" id="passer">Passer ce texte</button></div></div>`
       : (() => { const s = totals(t), serre = s.ecart <= ECART_SERRE;
         return `<div class="revelation">
           <h3 tabindex="-1" id="revelation">${issueTag(t)} Les députés l'ont ${s.adopte ? "adopté" : "rejeté"}</h3>
@@ -1046,8 +1056,16 @@ function melanger(liste) {
 }
 function commencerSeance() {
   const rep = load();
-  seance = { ids: melanger(selectionBilan().filter(t => !(t.id in rep))).slice(0, TAILLE_SEANCE).map(t => t.id), i: 0, revele: false, details: false, repl: 0 };
-  majQuestions(); $("#q-titre")?.focus();
+  seance = { ids: melanger(selectionBilan().filter(t => !(t.id in rep))).slice(0, TAILLE_SEANCE).map(t => t.id) };
+  allerA(0);
+}
+// Aller à un texte de la séance. Le débat démarre d'office (première réplique) ; un texte déjà voté montre son résultat.
+function allerA(i) {
+  const t = byId(seance.ids[i]);
+  Object.assign(seance, { i, revele: !!t && t.id in load(), details: false, repl: t?.debat ? 1 : 0 });
+  if (seance.revele && t.debat) seance.repl = Infinity;
+  majQuestions();
+  ($("#revelation") || $("#q-titre") || $("#fin-seance"))?.focus();
 }
 function load() { try { return JSON.parse(localStorage.getItem("bilan") || "{}"); } catch { return {}; } }
 function save(r) { try { localStorage.setItem("bilan", JSON.stringify(r)); } catch {} }
@@ -1074,6 +1092,12 @@ function scoresBilan(rep) {
   return { answered, scores, seuil };
 }
 let panelOpen = false;
+// Le panneau des groupes n'apparaît que s'il a quelque chose à dire : pas avant le premier vote, pas pendant la séance
+function dispositionBilan() {
+  const sans = app.classList.contains("en-cours") || !scoresBilan(load()).answered.length;
+  $(".bilan")?.classList.toggle("sans-panel", sans);
+  app.classList.toggle("has-panel", !sans);
+}
 // Met à jour le panneau et les réponses sans redessiner la page : rien ne bouge sous le doigt
 function majBilan() {
   const rep = load(), { answered, scores } = scoresBilan(rep);
@@ -1083,6 +1107,7 @@ function majBilan() {
   }));
   const selection = selectionBilan(), vus = selection.filter(t => t.id in rep).length, top = answered.length && scores[0].classe && scores[0].pct > 0 ? scores[0] : null;
   const panel = $("#panel");
+  dispositionBilan();
   panel.classList.toggle("open", panelOpen);
   panel.innerHTML = `
     <div class="panel-head"><span class="eyebrow">Ont voté comme vous</span><span class="meta">${vus} / ${selection.length} textes</span>
@@ -1111,7 +1136,7 @@ function render() {
   const h1 = app.querySelector("h1");
   document.title = view === "accueil" || !h1 ? "Qui a voté quoi (version de test)" : `${h1.textContent} – Qui a voté quoi`;
   app.classList.toggle("has-panel", view === "bilan");
-  app.classList.remove("en-seance");
+  app.classList.remove("en-seance", "en-cours");
   if (view === "bilan") majQuestions();
   if (view === "sujets" || view === "sujet") majSujets();
   // Une fiche texte n'appartient à aucune rubrique du menu
@@ -1134,13 +1159,12 @@ app.addEventListener("click", e => {
   }
   if (e.target.closest(".panel-toggle")) { panelOpen = !panelOpen; majBilan(); return; }
   if (e.target.id === "sieger") { commencerSeance(); return; }
-  if (e.target.id === "suivant" || e.target.id === "passer") { seance.i++; seance.revele = false; seance.details = false; seance.repl = 0; afficherSeance(); ($("#q-titre") || $("#fin-seance"))?.focus(); return; }
-  if (e.target.closest("#vivre-debat")) { seance.repl = 1; afficherSeance(); $("#derniere-replique")?.focus(); return; }
+  if (e.target.id === "suivant" || e.target.id === "passer") { allerA(seance.i + 1); return; }
   if (e.target.id === "replique-suivante") { seance.repl++; afficherSeance(); $("#derniere-replique")?.focus(); return; }
   if (e.target.id === "tout-le-debat") { seance.repl = Infinity; afficherSeance(); $("#derniere-replique")?.focus(); return; }
   if (e.target.id === "en-savoir-plus") { seance.details = true; afficherSeance(); $("#details-titre")?.focus(); return; }
   // Revenir au texte d'avant : s'il a été voté, on revoit son résultat ; s'il a été passé, on peut voter
-  if (e.target.id === "precedent") { seance.i--; seance.revele = seance.ids[seance.i] in load(); seance.details = false; seance.repl = 0; afficherSeance(); ($("#revelation") || $("#q-titre"))?.focus(); return; }
+  if (e.target.id === "precedent") { allerA(seance.i - 1); return; }
   if (e.target.id === "changer-sujets") { seance = null; majQuestions(); app.querySelector("input[name=sujet]")?.focus(); return; }
   if (e.target.id === "autre-seance") { seance = null; commencerSeance(); if (!seance.ids.length) { seance = null; majQuestions(); } return; }
   if (e.target.id === "voir-plus") {
