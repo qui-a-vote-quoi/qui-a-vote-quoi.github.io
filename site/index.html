@@ -252,6 +252,10 @@ a.chip:hover { border-color: var(--encre); }
 .tuiles-titre + .tuiles { margin-top: 10px; }
 .barre-jouer { position: sticky; bottom: 12px; z-index: 4; margin-top: 16px; }
 .appel-jeu { margin-top: 28px; }
+.qui-decide { max-width: 720px; margin: 56px auto 0; padding-top: 28px; border-top: var(--bord); }
+.qui-decide h2 { font-size: 22px; }
+.qui-decide ul { padding-left: 20px; display: grid; gap: 8px; color: var(--muted); }
+.qui-decide b { color: var(--fg); }
 .ligne-resume { margin: 0; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .plus.grand { font-size: 19px; padding: 16px 28px; }
 a.plus { text-decoration: none; display: inline-flex; align-items: center; }
@@ -663,6 +667,24 @@ function decisif(t, g) {
 // Un texte par dossier (son dernier vote retenu) : un texte voté en plusieurs lectures ne compte qu'une fois
 const parDossier = ts => Object.values(ts.reduce((m, t) => { if (!m[t.dossier] || m[t.dossier].date < t.date) m[t.dossier] = t; return m; }, {}))
   .sort((a, b) => b.date.localeCompare(a.date));
+// Qui a proposé les textes d'une liste, un texte compté une fois même s'il a été voté en plusieurs lectures
+function repartitionAuteurs(ts) {
+  const ds = parDossier(ts), gouv = ds.filter(t => t.auteurCourt === "Gouvernement").length, senat = ds.filter(t => t.auteurCourt === "Sénat").length;
+  return { total: ds.length, gouv, senat, groupes: ds.length - gouv - senat };
+}
+// « Qui décide de ce qui est voté ? » : le lien entre le vote des citoyens et les textes discutés. Des faits, sans jugement.
+function quiDecide() {
+  const sol = TEXTES.filter(t => t.type === "solennel"), gouv = sol.filter(t => t.auteurCourt === "Gouvernement").length;
+  return `<section class="qui-decide" aria-labelledby="qui-decide">
+    <h2 id="qui-decide" tabindex="-1">Qui décide de ce qui est voté&nbsp;?</h2>
+    <ul>
+      <li><b>Vous élisez les députés.</b> Le gouvernement doit pouvoir compter sur eux : l'Assemblée peut le renverser.</li>
+      <li><b>Le gouvernement choisit la plupart des textes discutés.</b> Il fixe l'ordre du jour de deux semaines de séance sur quatre. Les groupes d'opposition et minoritaires ont une journée par mois.</li>
+      <li><b>Sur les ${sol.length} grands votes présentés ici, ${gouv} portaient sur un texte du gouvernement.</b></li>
+    </ul>
+    <p class="note">Ces chiffres portent sur les votes de ce site : les votes solennels et les journées réservées. N'y figurent pas encore les autres votes nominatifs sur des textes entiers, ni les textes adoptés sans vote nominatif (à main levée, ou avec l'article 49.3). <a href="#methode">Notre méthode</a></p>
+  </section>`;
+}
 const pluriel = (n, mot) => `${n} ${mot}${n > 1 ? "s" : ""}`;
 // Ce que fait un texte : grille descriptive (GRILLE-MESURES.md). Chaque mécanisme a son contraire ; aucun n'est « bon » ou « mauvais ».
 const MESURES = {
@@ -718,7 +740,8 @@ const views = {
         <p class="lead">Loyers, retraites, santé, impôts : voyez qui a proposé quoi à l'Assemblée depuis 2017, et qui a voté pour ou contre. ${serres} votes se sont joués à ${ECART_SERRE} voix près ou moins.</p>
         <p><a class="plus principal grand" href="#juger">À vous de juger →</a></p>
         <p class="hero-fait"><a href="#bilan">Ou mettez-vous à leur place : qu'auriez-vous voté&nbsp;?</a></p>
-      </section>`;
+      </section>
+      ${quiDecide()}`;
   },
   groupes() {
     // Une période à la fois : son hémicycle, puis la légende de ses groupes
@@ -746,6 +769,8 @@ const views = {
     return `<a class="back" href="#juger">← Changer de sujet</a>
       <h1>${th}</h1>
       <p class="lead">Les textes votés depuis 2017 sur ce sujet : ce qu'ils changent, qui les a proposés, et qui a voté pour ou contre.</p>
+      ${(() => { const r = repartitionAuteurs(TEXTES.filter(t => t.theme === th));
+        return `<p class="meta">Sur ce sujet : ${[[r.gouv, "proposé", "par le gouvernement"], [r.groupes, "proposé", "par des groupes de députés"], [r.senat, "venu", "du Sénat"]].filter(x => x[0]).map(([n, v, qui]) => `${pluriel(n, "texte")} ${v}${n > 1 ? "s" : ""} ${qui}`).join(", ")}. <a href="#accueil/qui-decide">Qui décide de ce qui est voté&nbsp;?</a></p>`; })()}
       <details class="depli"><summary>Affiner : par auteur, par période ou par mot</summary>
         <form class="filtres" role="search" onsubmit="return false">
           <div class="champ"><label for="q">Chercher un texte</label>${champRecherche("q", filtre.q)}</div>
@@ -1357,6 +1382,9 @@ function surligner(e) {
 ["mouseover", "mouseout", "focusin", "focusout"].forEach(t => app.addEventListener(t, surligner));
 addEventListener("hashchange", () => {
   if (!location.hash.startsWith("#bilan")) seance = null;
+  if (location.hash === "#accueil/qui-decide") {   // lien depuis la page d'un sujet
+    render(); const h = $("#qui-decide"); h.scrollIntoView(); h.focus({ preventScroll: true }); return;
+  }
   if (location.hash.endsWith("/debat")) {
     render(); const h = $("#le-debat");
     if (h) { h.scrollIntoView(); h.focus({ preventScroll: true }); return; }
