@@ -180,7 +180,7 @@ a.chip:hover { border-color: var(--encre); }
 .siege h2 { margin: 0 0 8px; }
 /* Avant la séance : ce qui vous attend reste visible en bas de l'écran pendant qu'on coche */
 #questions:has(.pret) { position: sticky; bottom: 12px; z-index: 4; }
-.siege.pret { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 14px 18px; }
+.siege.pret { margin-top: 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 14px 18px; }
 .siege.pret p { margin: 0; flex: 1 1 160px; font-size: 15px; }
 .seance { padding: 22px; gap: 14px; border: var(--bord-encre); box-shadow: var(--ombre); }
 .seance h2 { margin: 0; font-size: clamp(22px, 3.5vw, 30px); }
@@ -1192,11 +1192,11 @@ function majQuestions() {
   const { k, min } = estimation(restants);
   $("#historique").innerHTML = historique();
   // Annoncé aux lecteurs d'écran à chaque case cochée (le bandeau, lui, est redessiné)
-  $("#nb-bilan").textContent = choisis ? `${pluriel(restants.length, "texte")} à voter. Une séance de ${k} textes dure environ ${min} minutes.` : "";
+  $("#nb-bilan").textContent = choisis ? `Une séance de ${pluriel(k, "texte")}, environ ${min} minutes${restants.length > k ? `, tirés au hasard parmi ${restants.length}` : ""}.` : "";
   $("#questions").innerHTML = !choisis
     ? `<div class="callout" style="margin-top:0"><b>Pour commencer, cochez un ou plusieurs sujets.</b> Vous siégerez ensuite sur des textes de ces sujets.</div>`
     : restants.length
-      ? `<div class="siege pret"><p><b>${pluriel(restants.length, "texte")} à voter</b> sur ces sujets<br><span class="meta">${restants.length > k ? `Chaque séance en tire ${k} au hasard` : "Une séance"} : environ ${min} min</span></p>
+      ? `<div class="siege pret"><p><b>Une séance de ${pluriel(k, "texte")}</b>, environ ${min} min<br><span class="meta">${restants.length > k ? `Tirés au hasard parmi les ${restants.length} textes de ces sujets` : "Tous les textes qui restent sur ces sujets"}</span></p>
           <button type="button" class="plus principal" id="sieger">Siéger →</button></div>`
       : `<div class="callout" style="margin-top:0">Vous avez voté sur tous les textes de ces sujets. Cochez d'autres sujets pour continuer.</div>`;
   majBilan();
