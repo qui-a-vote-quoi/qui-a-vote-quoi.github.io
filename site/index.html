@@ -249,18 +249,32 @@ a.chip:hover { border-color: var(--encre); }
 .tuiles-titre + .tuiles { margin-top: 10px; }
 .barre-jouer { position: sticky; bottom: 12px; z-index: 4; margin-top: 16px; }
 .appel-jeu { margin-top: 28px; }
-.qui-decide { max-width: 880px; margin: 64px auto 0; }
-.qui-decide h2 { font-size: 24px; text-align: center; margin-bottom: 20px; }
-.chaine { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; counter-reset: etape; }
-.chaine li { position: relative; background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 18px; display: grid; gap: 6px; align-content: start; color: var(--muted); }
-.chaine li + li::before { content: "→"; content: "→" / ""; position: absolute; left: -24px; top: 50%; transform: translateY(-50%); color: var(--trait); font-weight: 700; }
-.chaine b { font: 700 18px/1.2 var(--display); color: var(--fg); }
-.chaine .chiffre { margin-top: 6px; padding-top: 10px; border-top: var(--bord); color: var(--fg); }
-.chaine .chiffre strong { display: block; font: 800 32px/1 var(--display); color: var(--accent); }
-.qui-decide .note { text-align: center; margin: 16px auto 0; }
+.qui-decide { max-width: 860px; margin: 72px auto 0; text-align: center; }
+.qui-decide h2 { font-size: 26px; margin-bottom: 6px; }
+.qd-sous { color: var(--muted); margin: 0 0 28px; font-size: 18px; }
+.chaine { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; position: relative; }
+.chaine::before { content: ""; position: absolute; top: 31px; left: 16.6%; right: 16.6%; border-top: 2px dashed var(--trait); }
+.chaine li { position: relative; display: grid; justify-items: center; gap: 4px; color: var(--muted); line-height: 1.35; }
+.qd-ico { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); border: 3px solid var(--bg); margin-bottom: 8px; }
+.chaine b { font: 700 19px/1.2 var(--display); color: var(--fg); }
+.qd-chiffre { margin-top: 36px; background: var(--surface); border: var(--bord-encre); border-radius: var(--rayon); box-shadow: var(--ombre); padding: 22px 24px; text-align: left; }
+.qd-chiffre p { margin: 0 0 14px; font-size: 18px; }
+.qd-chiffre strong { font: 800 44px/1 var(--display); color: var(--accent); margin-right: 6px; vertical-align: -4px; }
+.qd-barre { display: flex; gap: 3px; height: 14px; }
+.qd-barre span { border-radius: 4px; }
+.qd-g { background: var(--accent); } .qd-d { background: var(--corail); } .qd-s { background: var(--trait); }
+.qd-legende { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 6px 20px; color: var(--muted); font-size: 15px; }
+.qd-legende i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+.qui-decide .note { margin: 16px auto 0; }
 @media (max-width: 700px) {
-  .chaine { grid-template-columns: minmax(0, 1fr); gap: 24px; }
-  .chaine li + li::before { content: "↓"; content: "↓" / ""; left: 50%; top: -22px; transform: translateX(-50%); }
+  .qui-decide { text-align: left; }
+  .chaine { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .chaine::before { top: 32px; bottom: 32px; left: 31px; right: auto; border-top: 0; border-left: 2px dashed var(--trait); }
+  .chaine li { grid-template-columns: 64px minmax(0, 1fr); justify-items: start; align-items: center; column-gap: 14px; }
+  .qd-ico { grid-row: span 2; margin: 0; }
+  .chaine b { align-self: end; }
+  .chaine li span:last-child { align-self: start; }
+}
 }
 .ligne-resume { margin: 0; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .plus.grand { font-size: 19px; padding: 16px 28px; }
@@ -759,16 +773,22 @@ function repartitionAuteurs(ts) {
 }
 // « Qui décide de ce qui est voté ? » : le lien entre le vote des citoyens et les textes discutés. Des faits, sans jugement.
 function quiDecide() {
-  const sol = TEXTES.filter(t => t.type === "solennel"), gouv = sol.filter(t => t.auteurCourt === "Gouvernement").length;
-  // Pourquoi le vote compte : de l'élection des députés au choix des textes votés
+  const sol = TEXTES.filter(t => t.type === "solennel"), n = a => sol.filter(t => t.auteurCourt === a).length;
+  const gouv = n("Gouvernement"), senat = n("Sénat"), deputes = sol.length - gouv - senat;
+  const part = [["qd-g", "Gouvernement", gouv], ["qd-d", "Groupes de députés", deputes], ["qd-s", "Sénat", senat]].filter(x => x[2]);
   return `<section class="qui-decide" aria-labelledby="qui-decide">
     <h2 id="qui-decide" tabindex="-1">Qui décide de ce qui est voté&nbsp;?</h2>
+    <p class="qd-sous">Votre vote compte, mais il passe par plusieurs étapes.</p>
     <ol class="chaine">
-      <li><b>Vous élisez les députés</b> Ils votent les lois.</li>
-      <li><b>Les députés tiennent le gouvernement</b> Il ne reste en place que s'ils ne le renversent pas.</li>
-      <li><b>Le gouvernement choisit la plupart des textes</b> Il fixe l'ordre du jour la moitié du temps. L'opposition a une journée par mois.
-        <span class="chiffre"><strong>${gouv} sur ${sol.length}</strong> grands votes de ce site portaient sur un texte du gouvernement</span></li>
+      <li><span class="qd-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v7H4z"/><path d="M8 13V4h8v9"/><path d="M10 8.5l1.5 1.5L14.5 7"/></svg></span><b>Vous</b><span>élisez les 577 députés</span></li>
+      <li><span class="qd-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 19h20"/><path d="M3.5 19a8.5 8.5 0 0 1 17 0"/><path d="M8 19a4 4 0 0 1 8 0"/></svg></span><b>Les députés</b><span>peuvent renverser le gouvernement</span></li>
+      <li><span class="qd-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21v-9M9.7 21v-9M14.3 21v-9M19 21v-9"/><path d="M2 12l10-7 10 7z"/></svg></span><b>Le gouvernement</b><span>choisit les textes la moitié du temps&nbsp;; l'opposition a une journée par mois</span></li>
     </ol>
+    <div class="qd-chiffre">
+      <p><strong>${gouv}</strong> des ${sol.length} grands votes de ce site portaient sur un texte du gouvernement.</p>
+      <div class="qd-barre" aria-hidden="true">${part.map(([c, , k]) => `<span class="${c}" style="flex:${k}"></span>`).join("")}</div>
+      <ul class="qd-legende">${part.map(([c, l, k]) => `<li><i class="${c}" aria-hidden="true"></i>${l} · ${k}</li>`).join("")}</ul>
+    </div>
     <p class="note">Les autres votes et les textes adoptés sans vote nominatif (à main levée, 49.3) ne sont pas encore comptés. <a href="#methode/ce-qui-manque">Ce qui manque</a></p>
   </section>`;
 }
