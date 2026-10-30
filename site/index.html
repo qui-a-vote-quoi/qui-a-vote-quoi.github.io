@@ -238,7 +238,7 @@ th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--li
 tr:last-child td { border-bottom: 0; }
 th { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
 
-/* Mon bilan */
+/* À vous de voter */
 .q { background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 16px 18px; display: grid; gap: 10px; }
 .btns { display: flex; gap: 8px; flex-wrap: wrap; }
 .btns button { display: inline-flex; align-items: center; gap: 8px; font: 700 15px var(--body); padding: 8px 18px; min-width: 88px; justify-content: center; border-radius: 999px; border: var(--bord-encre); background: var(--surface); color: var(--fg); cursor: pointer; min-height: 44px; }
@@ -252,7 +252,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
 .panel-head .meta { margin-right: auto; font-variant-numeric: tabular-nums; }
 .panel-top { margin: 0; font-size: 15px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .panel-scores { display: grid; gap: 6px; }
-.pscore { display: grid; grid-template-columns: 84px minmax(0, 1fr) auto 3em; gap: 6px; align-items: center; font-variant-numeric: tabular-nums; text-align: right; }
+.pscore { display: grid; grid-template-columns: 108px minmax(0, 1fr) auto 3em; gap: 6px; align-items: center; font-variant-numeric: tabular-nums; text-align: right; }
 .pscore .chip { justify-self: start; }
 .pscore b { white-space: nowrap; min-width: 3.2em; }
 .pscore .sur { font-size: 12px; color: var(--muted); text-align: left; white-space: nowrap; }
@@ -323,7 +323,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   <nav>
     <a href="#groupes" data-nav="groupes">Les groupes</a>
     <a href="#sujets" data-nav="sujets">Les textes</a>
-    <a href="#bilan" data-nav="bilan">Mon bilan</a>
+    <a href="#bilan" data-nav="bilan">À vous de voter</a>
   </nav>
 </div></header>
 <main class="wrap" id="app" tabindex="-1"></main>
@@ -377,14 +377,14 @@ const parPeriode = (ts, leg) => leg ? ts.filter(t => t.leg === leg) : ts;
 const SUJETS = [...new Set(TEXTES.map(t => t.theme))].sort((a, b) => a === "Autres sujets" ? 1 : b === "Autres sujets" ? -1 : a.localeCompare(b, "fr"));
 const choixPeriode = (id, valeur) => `<div><label for="${id}">Période</label><select id="${id}">
   <option value="">De 2017 à aujourd'hui</option>${[...INFOS.legislatures].sort().reverse().map(l => `<option value="${l}"${valeur === l ? " selected" : ""}>${PERIODES[l].lib}</option>`).join("")}</select></div>`;
-// Choix gardés le temps de la visite (et, pour Mon bilan, sur l'appareil)
+// Choix gardés le temps de la visite (et, pour À vous de voter, sur l'appareil)
 let filtre = { q: "", leg: "", sujet: "", auteur: "" }, nbVisibles = 30;
 // Auteur d'un texte, pour le filtre : le sigle du groupe, ou « Gouvernement », « Sénat »
 const auteurDe = t => t.groupe || t.auteurCourt;
 const AUTEURS = [...ORDRE.filter(g => TEXTES.some(t => t.groupe === g)), ...["Gouvernement", "Sénat"].filter(a => TEXTES.some(t => t.auteurCourt === a))];
 function lirePref(cle, defaut) { try { return JSON.parse(localStorage.getItem(cle)) ?? defaut; } catch { return defaut; } }
 function ecrirePref(cle, v) { try { localStorage.setItem(cle, JSON.stringify(v)); } catch {} }
-// Mon bilan : un texte par dossier (son dernier vote), et seulement s'il a déjà un résumé
+// À vous de voter : un texte par dossier (son dernier vote), et seulement s'il a déjà un résumé
 const BILAN = Object.values(TEXTES.filter(t => t.enClair).reduce((m, t) => {
   if (!m[t.dossier] || m[t.dossier].date < t.date) m[t.dossier] = t;
   return m;
@@ -581,7 +581,7 @@ const views = {
       <div class="doors trio">
         <a class="door" href="#groupes"><b>Les groupes</b><span>Ce que chaque groupe de députés a proposé, et comment il a voté.</span></a>
         <a class="door" href="#sujets"><b>Les textes</b><span>Tout ce qui a été voté, par sujet, par auteur ou par mot : retraites, impôts, logement, santé…</span></a>
-        <a class="door" href="#bilan"><b>Mon bilan</b><span>Votez comme un député${BILAN.length ? ` sur ${BILAN.length} textes` : ""}, voyez quels groupes ont voté comme vous.</span></a>
+        <a class="door" href="#bilan"><b>À vous de voter</b><span>Votez comme un député${BILAN.length ? ` sur ${BILAN.length} textes` : ""}, voyez quels groupes ont voté comme vous.</span></a>
       </div>
       <h2>Derniers votes</h2>
       ${listeTextes(derniers)}
@@ -751,7 +751,7 @@ const views = {
       </ul>
       <p>De même, les journées réservées sont repérées automatiquement, puis vérifiées dans les comptes rendus de séance, par IA ou par un humain : c'est indiqué sur chacune.</p>
       <h2>Donner votre avis</h2>
-      <p>${AVIS_URL ? `Ce qui est clair, ce qui ne l'est pas, ce qui vous manque : ${ext(AVIS_URL, "donnez votre avis")}. Ne donnez pas vos votes de Mon bilan : ils sont personnels.` : "Le moyen de donner votre avis arrive bientôt."}</p>
+      <p>${AVIS_URL ? `Ce qui est clair, ce qui ne l'est pas, ce qui vous manque : ${ext(AVIS_URL, "donnez votre avis")}. Ne donnez pas vos votes de la page « À vous de voter » : ils sont personnels.` : "Le moyen de donner votre avis arrive bientôt."}</p>
       <h2>D'où viennent les chiffres</h2>
       <ul>
         <li>Toutes les données viennent de l'${ext("https://data.assemblee-nationale.fr", "open data de l'Assemblée nationale")} : votes, textes, comptes rendus des séances. Elles sont mises à jour une fois par mois.</li>
@@ -762,7 +762,7 @@ const views = {
       <h2>Confidentialité</h2>
       <ul>
         <li>Pas de compte, pas de cookie, pas de mesure d'audience, pas de publicité.</li>
-        <li>Vos réponses à Mon bilan restent dans votre navigateur, sur votre appareil. Elles ne sont envoyées nulle part. Vous pouvez les effacer depuis Mon bilan.</li>
+        <li>Vos votes sur la page « À vous de voter » restent dans votre navigateur, sur votre appareil. Ils ne sont envoyés nulle part. Vous pouvez les effacer depuis cette page.</li>
         <li>Comme tout hébergeur, GitHub reçoit l'adresse IP des visiteurs pour faire fonctionner le site (${ext("https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement", "déclaration de confidentialité de GitHub")}).</li>
       </ul>
       <h2>Mentions légales</h2>
@@ -807,7 +807,7 @@ const views = {
       <p>Le sujet de chaque texte (Santé, Logement…) est attribué de la même façon, et signalé tant qu'il n'est pas relu.</p>
       <h2>Les arguments des deux camps</h2>
       <p>Quand une fiche présente des arguments, ils sont toujours attribués (« selon ses défenseurs », « selon ses opposants »), en nombre égal de chaque côté, tirés des débats officiels avec leur source, et sans nom de groupe ni de parti.</p>
-      <h2>Mon bilan</h2>
+      <h2>À vous de voter</h2>
       <ul>
         <li>Vous votez sans savoir qui a proposé le texte ni s'il a été adopté : vous le découvrez dans votre résultat.</li>
         <li>Le site calcule seulement quels groupes ont voté comme vous, et sur combien de textes. Les égalités sont affichées. Un groupe qui a voté sur moins de la moitié de vos textes n'est pas classé.</li>
@@ -817,8 +817,8 @@ const views = {
       <p>${AVIS_URL ? `Signalez-la : ${ext(AVIS_URL, "proposer une correction")}.` : `Un moyen simple de signaler une erreur arrive bientôt. En attendant, tout le travail est ${ext(gh, "public")} : chacun peut vérifier les calculs et les textes.`}</p></div>`;
   },
   bilan() {
-    return `<h1>Mon bilan</h1>
-      <p class="lead">Si vous étiez député, qu'auriez-vous voté ? Votez sur chaque texte, et voyez quels groupes ont voté comme vous. Qui l'a proposé reste caché pour ne pas influencer votre choix : vous le découvrez dans votre résultat. Vos réponses restent sur votre appareil.</p>
+    return `<h1>Si vous étiez député, qu'auriez-vous voté&nbsp;?</h1>
+      <p class="lead">Votez sur chaque texte, et voyez quels groupes ont voté comme vous. Qui l'a proposé reste caché pour ne pas influencer votre choix : vous le découvrez dans votre résultat. Vos réponses restent sur votre appareil.</p>
       <div class="bilan">
         <div>
           <form class="filtres" onsubmit="return false">
@@ -834,7 +834,7 @@ const views = {
           <section id="revel"></section>
           <p class="note">Calcul : part des textes votés où le groupe a voté comme vous. Quand un groupe s'est abstenu, il n'a voté ni comme vous ni contre vous ; un groupe absent n'est pas compté. « Je ne sais pas » n'entre pas dans le calcul. Un groupe n'est classé que s'il a voté sur au moins la moitié des textes que vous avez votés. <a href="#bilan" id="reset">Effacer mes réponses</a></p>
         </div>
-        <aside class="panel" id="panel" aria-label="Votre résultat"></aside>
+        <aside class="panel" id="panel" aria-label="Les groupes qui ont voté comme vous"></aside>
         <p class="sr-only" id="annonce" aria-live="polite"></p>
       </div>`;
   },
@@ -854,7 +854,7 @@ function majSujets() {
     + (ts.length > nbVisibles ? `<p><button type="button" class="plus" id="voir-plus">Afficher ${Math.min(30, ts.length - nbVisibles)} textes de plus</button> <span class="meta">(${nbVisibles} sur ${ts.length})</span></p>` : "")
     + `<p class="note">Chaque texte est rangé dans un seul sujet.${TEXTES.some(t => t.sujetNiveau !== "relu") ? " Les sujets ont été attribués par IA et ne sont pas encore tous vérifiés par un humain." : ""}</p>`;
 }
-// Mon bilan : les sujets et la période choisis, gardés sur l'appareil
+// À vous de voter : les sujets et la période choisis, gardés sur l'appareil
 const prefBilan = () => lirePref("bilanChoix", { sujets: [], leg: "" });
 function selectionBilan() {
   const { sujets, leg } = prefBilan();
@@ -911,7 +911,7 @@ function majBilan() {
   const panel = $("#panel");
   panel.classList.toggle("open", panelOpen);
   panel.innerHTML = `
-    <div class="panel-head"><span class="eyebrow">Votre résultat</span><span class="meta">${vus} / ${selection.length} textes</span>
+    <div class="panel-head"><span class="eyebrow">Ont voté comme vous</span><span class="meta">${vus} / ${selection.length} textes</span>
       <button type="button" class="panel-toggle">${panelOpen ? "Réduire" : "Voir le détail"}</button></div>
     <div class="progress"><i style="width:${(100 * vus / (selection.length || 1)).toFixed(1)}%"></i></div>
     <p class="panel-top">${top ? (() => {
@@ -970,7 +970,7 @@ app.addEventListener("click", e => {
   }
   if (e.target.id === "reset") { e.preventDefault(); save({}); majBilan(); }
 });
-// Formulaires : filtres (Les textes), sujets et période (Mon bilan)
+// Formulaires : filtres (Les textes), sujets et période (À vous de voter)
 app.addEventListener("input", e => {
   if (e.target.id === "q") { filtre.q = e.target.value; nbVisibles = 30; majSujets(); }
 });
