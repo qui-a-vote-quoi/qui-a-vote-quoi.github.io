@@ -252,10 +252,13 @@ a.chip:hover { border-color: var(--encre); }
 .qui-decide { max-width: 1000px; margin: 72px auto 0; text-align: center; }
 .qui-decide h2 { font-size: 26px; margin-bottom: 6px; }
 .qd-sous { color: var(--muted); margin: 0 0 28px; font-size: 18px; }
-.chaine { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; position: relative; }
-.chaine::before { content: ""; position: absolute; top: 31px; left: 12.5%; right: 12.5%; border-top: 2px dashed var(--trait); }
+.chaine { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; position: relative; }
+.chaine::before { content: ""; position: absolute; top: 31px; left: 25%; right: 25%; border-top: 2px dashed var(--trait); }
+.qd-deux { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.qd-groupe { background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 18px 20px 22px; }
+.qd-groupe h3 { margin: 0 0 16px; }
 .chaine li { position: relative; display: grid; justify-items: center; align-content: start; gap: 4px; color: var(--muted); line-height: 1.35; }
-.qd-ico { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); border: 3px solid var(--bg); margin-bottom: 8px; }
+.qd-ico { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); border: 3px solid var(--surface); margin-bottom: 8px; }
 .chaine b { font: 700 19px/1.2 var(--display); color: var(--fg); }
 .qd-chiffre { margin-top: 36px; background: var(--surface); border: var(--bord-encre); border-radius: var(--rayon); box-shadow: var(--ombre); padding: 22px 24px; text-align: left; }
 .qd-chiffre p { margin: 0 0 14px; font-size: 18px; }
@@ -268,13 +271,13 @@ a.chip:hover { border-color: var(--encre); }
 .qui-decide .note { margin: 16px auto 0; }
 @media (max-width: 860px) {
   .qui-decide { text-align: left; }
+  .qd-deux { grid-template-columns: minmax(0, 1fr); }
   .chaine { grid-template-columns: minmax(0, 1fr); gap: 18px; }
   .chaine::before { top: 32px; bottom: 32px; left: 31px; right: auto; border-top: 0; border-left: 2px dashed var(--trait); }
   .chaine li { grid-template-columns: 64px minmax(0, 1fr); justify-items: start; align-items: center; column-gap: 14px; }
   .qd-ico { grid-row: span 2; margin: 0; }
   .chaine b { align-self: end; }
   .chaine li span:last-child { align-self: start; }
-}
 }
 .ligne-resume { margin: 0; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .plus.grand { font-size: 19px; padding: 16px 28px; }
@@ -780,12 +783,18 @@ function quiDecide() {
   return `<section class="qui-decide" aria-labelledby="qui-decide">
     <h2 id="qui-decide" tabindex="-1">Qui décide de ce qui est voté&nbsp;?</h2>
     <p class="qd-sous">Surtout le gouvernement, nommé par le président. Mais ce sont les députés qui votent. Et vous élisez les deux.</p>
-    <ol class="chaine">
-      <li><span class="qd-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v7H4z"/><path d="M8 13V4h8v9"/><path d="M10 8.5l1.5 1.5L14.5 7"/></svg></span><b>La présidentielle</b><span>Vous élisez le président, tous les cinq ans. Il nomme le Premier ministre et le gouvernement.</span></li>
-      <li><span class="qd-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21v-9M9.7 21v-9M14.3 21v-9M19 21v-9"/><path d="M2 12l10-7 10 7z"/></svg></span><b>Le gouvernement</b><span>Il décide de la plupart des textes mis au vote. L'opposition a une journée par mois pour les siens.</span></li>
-      <li><span class="qd-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v7H4z"/><path d="M8 13V4h8v9"/><path d="M10 8.5l1.5 1.5L14.5 7"/></svg></span><b>Les législatives</b><span>Vous élisez les 577 députés, en principe tous les cinq ans (plus tôt en cas de dissolution, comme en 2024).</span></li>
-      <li><span class="qd-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 19h20"/><path d="M3.5 19a8.5 8.5 0 0 1 17 0"/><path d="M8 19a4 4 0 0 1 8 0"/></svg></span><b>Les députés</b><span>Ils adoptent ou rejettent chaque texte. Ils peuvent aussi faire tomber le gouvernement par une motion de censure.</span></li>
-    </ol>
+    <div class="qd-deux">
+      <div class="qd-groupe"><h3 class="eyebrow">Qui choisit les textes</h3>
+        <ol class="chaine">
+        <li><span class="qd-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v7H4z"/><path d="M8 13V4h8v9"/><path d="M10 8.5l1.5 1.5L14.5 7"/></svg></span><b>La présidentielle</b><span>Vous élisez le président, tous les cinq ans. Il nomme le Premier ministre et le gouvernement.</span></li>
+        <li><span class="qd-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21v-9M9.7 21v-9M14.3 21v-9M19 21v-9"/><path d="M2 12l10-7 10 7z"/></svg></span><b>Le gouvernement</b><span>Il décide de la plupart des textes mis au vote. L'opposition a une journée par mois pour les siens.</span></li>
+        </ol></div>
+      <div class="qd-groupe"><h3 class="eyebrow">Qui les vote</h3>
+        <ol class="chaine">
+        <li><span class="qd-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v7H4z"/><path d="M8 13V4h8v9"/><path d="M10 8.5l1.5 1.5L14.5 7"/></svg></span><b>Les législatives</b><span>Vous élisez les 577 députés, en principe tous les cinq ans (plus tôt en cas de dissolution, comme en 2024).</span></li>
+        <li><span class="qd-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 19h20"/><path d="M3.5 19a8.5 8.5 0 0 1 17 0"/><path d="M8 19a4 4 0 0 1 8 0"/></svg></span><b>Les députés</b><span>Ils adoptent ou rejettent chaque texte.</span></li>
+        </ol></div>
+    </div>
     <div class="qd-chiffre">
       <p><strong>${gouv}</strong> des ${sol.length} grands votes de ce site portaient sur un texte du gouvernement.</p>
       <div class="qd-barre" aria-hidden="true">${part.map(([c, , k]) => `<span class="${c}" style="flex:${k}"></span>`).join("")}</div>
