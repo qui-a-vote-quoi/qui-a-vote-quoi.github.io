@@ -21,10 +21,32 @@ Un site simple et neutre qui montre, pour chaque texte examiné à l'Assemblée 
 
 Python 3.9 ou plus récent, sans dépendance externe.
 
+Première construction d'une législature (15 pour 2017-2022, 16 pour 2022-2024, 17 pour 2024-2026) :
+
 ```bash
 python3 pipeline/telecharger.py 17
 python3 pipeline/construire.py 17
 ```
+
+Le premier passage télécharge aussi les comptes rendus des séances utiles (une dizaine de minutes). Ils restent en cache dans `donnees/brut/`, et une reconstruction prend ensuite quelques secondes.
+
+## Mise à jour mensuelle
+
+Une seule commande, vers le 5 à 10 de chaque mois (le temps que l'Assemblée publie les comptes rendus des dernières séances) :
+
+```bash
+python3 pipeline/mettre_a_jour.py
+```
+
+Elle :
+1. re-télécharge les fichiers de l'open data : l'Assemblée ne publie que des fichiers complets (~60 Mo), pas les seules modifications ;
+2. re-télécharge les comptes rendus des 45 derniers jours, qui peuvent être corrigés après publication ;
+3. reconstruit toute la base. On recalcule tout plutôt que de compléter : un texte peut changer de sort des mois plus tard (adopté au Sénat, promulgué, censuré), et le recalcul le prend en compte ;
+4. compare avec la base précédente et écrit `donnees/base/17/nouveautes.md` : niches détectées, nouveaux textes votés, textes dont le sort a changé, statuts changés dans un programme de niche.
+
+Les vérifications faites à la main, dans `donnees/validation/`, ne sont jamais refaites : seuls les nouveaux cas sont à valider. Un compte rendu pas encore publié est signalé dans `rapport.md` et repris à la mise à jour suivante. Les législatures terminées (15ᵉ et 16ᵉ) se construisent une fois pour toutes.
+
+En été (fin de la session ordinaire en juin), il y a peu ou pas de séances : la mise à jour d'août peut être sautée.
 
 ## Source des données
 

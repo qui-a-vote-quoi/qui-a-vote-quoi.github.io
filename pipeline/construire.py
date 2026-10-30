@@ -1,6 +1,10 @@
 """Construit la base JSON d'une législature à partir des fichiers bruts de l'open data.
 
-Usage : python3 pipeline/construire.py 17
+Usage : python3 pipeline/construire.py 17 [--rafraichir-cr AAAA-MM-JJ]
+
+Les comptes rendus de séance sont gardés en cache dans donnees/brut/<législature>/comptes-rendus/.
+Avec --rafraichir-cr, ceux des séances tenues à partir de cette date sont re-téléchargés
+(l'Assemblée peut corriger un compte rendu quelques jours après sa publication).
 
 Produit dans donnees/base/<législature>/ :
 - groupes.json  : les groupes politiques, dans l'ordre de l'hémicycle ;
@@ -15,6 +19,7 @@ import collections
 import datetime
 import html
 import re
+import subprocess
 import sys
 import xml.etree.ElementTree as ET
 
@@ -22,11 +27,25 @@ from commun import (BASE, BRUT, ORGANE_ASSEMBLEE, ORGANE_SENAT, SITE_AN, VALIDAT
                     en_liste, lire_json, lire_zip, normaliser, proximite, telecharger)
 
 # Ordre de l'hémicycle, de la gauche vers la droite (l'open data ne le fournit pas)
-ORDRE_HEMICYCLE = ["LFI-NFP", "GDR", "ECOS", "SOC", "LIOT", "DEM", "EPR", "HOR", "DR", "UDR", "RN", "NI"]
-# Groupes qui ont changé de sigle en cours de législature sans changer de nom
-MEME_GROUPE = {"UDDPLR": "UDR"}
+ORDRE_HEMICYCLE = {
+    "15": ["FI", "GDR", "SOC", "EDS", "LT", "LAREM", "DEM", "AGIR-E", "UDI-I", "LR", "NI"],
+    "16": ["LFI-NUPES", "GDR-NUPES", "ECOLO", "SOC", "LIOT", "RE", "DEM", "HOR", "LR", "RN", "NI"],
+    "17": ["LFI-NFP", "GDR", "ECOS", "SOC", "LIOT", "DEM", "EPR", "HOR", "DR", "UDR", "RN", "NI"],
+}
+# Groupes qui ont changé de sigle en cours de législature : on garde un seul sigle, le plus récent
+MEME_GROUPE = {
+    "UDDPLR": "UDR",                                   # 17e
+    "SOC-A": "SOC",                                    # 16e
+    "MODEM": "DEM", "NG": "SOC",                       # 15e : renommages
+    "LC": "UDI-I", "UDI-AGIR": "UDI-I", "UDI-A-I": "UDI-I", "UDI_I": "UDI-I",   # 15e : Les Constructifs, devenus UDI et Indépendants
+}
 
 NS = "{http://schemas.assemblee-nationale.fr/referentiel}"
+
+# Date à partir de laquelle les comptes rendus en cache sont re-téléchargés (option --rafraichir-cr)
+RAFRAICHIR_DEPUIS = None
+_rafraichis = set()
+CR_ABSENTS = []   # comptes rendus pas encore publiés
 
 
 # ---------------------------------------------------------------- chargement
@@ -40,7 +59,8 @@ def charger_groupes_et_mandats(legislature):
             tous_groupes[o["uid"]] = abrev   # toutes législatures : un texte peut venir d'une législature précédente
             if o.get("legislature") == legislature:
                 organes[o["uid"]] = {"abrev": abrev, "nom": o["libelle"], "couleur": o.get("couleurAssociee"),
-                                     "debut": o["viMoDe"].get("dateDebut"), "fin": o["viMoDe"].get("dateFin")}
+                                     "position": o.get("positionPolitique"),   # vide pour la 17e
+                                     "debut": o["viMoDe"].get("dateDebut") or "", "fin": o["viMoDe"].get("dateFin")}
     for doc in lire_zip(BRUT / legislature / "acteurs.zip", "acteur"):
         a = doc["acteur"]
         uid = a["uid"]["#text"] if isinstance(a["uid"], dict) else a["uid"]
@@ -88,7 +108,7 @@ def charger_seances(legislature):
     jours = collections.defaultdict(list)
     for doc in lire_zip(BRUT / legislature / "agenda.zip", "reunion"):
         r = doc["reunion"]
-        if r.get("@xsi:type") == "seance_type" and r.get("organeReuniRef") == ORGANE_ASSEMBLEE and r["cycleDeVie"]["etat"] == "Confirmé":
+        if r.get("@xsi:type") == "seance_type" and r.get("organeReuniRef") == ORGANE_ASSEMBLEE[legislature] and r["cycleDeVie"]["etat"] == "Confirmé":
             jours[r["timeStampDebut"][:10]].append(r)
     for liste in jours.values():
         liste.sort(key=lambda r: r["timeStampDebut"])
@@ -137,7 +157,7 @@ def decisions_assemblee(dossier):
     """Décisions de l'Assemblée sur ce texte : date, résultat, votes associés."""
     res = []
     for a in actes(dossier):
-        if a["codeActe"].endswith("DEBATS-DEC") and a.get("organeRef") == ORGANE_ASSEMBLEE and a.get("dateActe"):
+        if a["codeActe"].endswith("DEBATS-DEC") and a.get("organeRef") in ORGANE_ASSEMBLEE.values() and a.get("dateActe"):
             res.append({"date": a["dateActe"][:10], "statut": (a.get("statutConclusion") or {}).get("libelle", ""),
                         "votes": en_liste((a.get("voteRefs") or {}).get("voteRef"))})
     return res
@@ -145,11 +165,18 @@ def decisions_assemblee(dossier):
 
 # ---------------------------------------------------------------- comptes rendus
 
-def compte_rendu(legislature, ref):
+def compte_rendu(legislature, ref, jour=None):
     """Plan (sommaire) et texte intégral d'un compte rendu de séance, téléchargé au besoin."""
     chemin = BRUT / legislature / "comptes-rendus" / f"{ref}.xml"
-    if not chemin.exists():
-        telecharger(f"{SITE_AN}/{ref}.xml", chemin)
+    recent = RAFRAICHIR_DEPUIS and jour and jour >= RAFRAICHIR_DEPUIS and ref not in _rafraichis
+    if not chemin.exists() or recent:
+        try:
+            telecharger(f"{SITE_AN}/{ref}.xml", chemin)
+            _rafraichis.add(ref)
+        except (OSError, subprocess.CalledProcessError):
+            if not chemin.exists():   # séance trop récente : l'Assemblée n'a pas encore publié son compte rendu
+                CR_ABSENTS.append(f"{ref} (séance du {jour})")
+                return [], ""
     racine = ET.parse(chemin).getroot()
     titres = []
     for s1 in racine.iter(f"{NS}sommaire1"):
@@ -174,7 +201,7 @@ def segments_du_jour(legislature, seances):
         ref = r.get("compteRenduRef")
         if not ref:
             continue
-        titres, corps = compte_rendu(legislature, ref)
+        titres, corps = compte_rendu(legislature, ref, r["timeStampDebut"][:10])
         # Les débats commencent à l'ouverture de la séance : avant, c'est le sommaire, qui répète les mêmes titres
         fin_sommaire = corps.find("La séance est ouverte")
         positions = []
@@ -261,43 +288,95 @@ def vote_final_du_jour(titre, scrutins, jour):
     return max(candidats)[1] if candidats else None
 
 
+def vote_de_suppression(titre, scrutins, jour, articles=("article unique", "article premier")):
+    """Le vote qui a supprimé l'article unique, ou le premier article, d'un texte (le texte est alors vidé)."""
+    candidats = [(proximite(titre, titre_vise(s["titre"])), uid) for uid, s in scrutins.items()
+                 if s["date"] == jour and s["titre"].startswith(("l'amendement de suppression", "l’amendement de suppression"))
+                 and any(a in s["titre"] for a in articles) and s["sort"] == "adopté"]
+    candidats = [c for c in candidats if c[0] >= 0.75]
+    return max(candidats)[1] if candidats else None
+
+
+# Votes qui rejettent un texte sans examiner ses articles. Pour une proposition de résolution (commission d'enquête),
+# la commission peut conclure au rejet : adopter ces conclusions revient à rejeter le texte
+REJET = ("la motion de rejet préalable", "les conclusions de rejet de la commission")
+
+
+def vote_premier_article(titre, scrutins, jour):
+    """Le vote rejetant l'article premier d'un texte (le texte est alors vidé de son contenu principal)."""
+    candidats = [(proximite(titre, s["titre"]), uid) for uid, s in scrutins.items()
+                 if s["date"] == jour and s["titre"].startswith(("l'article premier", "l’article premier")) and s["sort"] == "rejeté"]
+    candidats = [c for c in candidats if c[0] >= 0.75]
+    return max(candidats)[1] if candidats else None
+
+
+def vote_de_motion(titre, scrutins, jour, motion):
+    """Une motion de procédure adoptée sur ce texte : « la motion de rejet préalable » ou « la motion de renvoi en commission »."""
+    candidats = [(proximite(titre, s["titre"].split(" de la proposition de ", 1)[-1]), uid) for uid, s in scrutins.items()
+                 if s["date"] == jour and s["titre"].startswith(motion) and s["sort"] == "adopté"]
+    candidats = [c for c in candidats if c[0] >= 0.75]
+    return max(candidats)[1] if candidats else None
+
+
 def statut_point(point, dossier_uid, dossiers, scrutins, segments, jour):
     """Statut d'un texte au programme d'une niche, d'après les décisions, les votes et le compte rendu."""
     d = dossiers.get(dossier_uid) if dossier_uid else None
     titre = d["titreDossier"]["titre"].replace("\r", " ") if d else point["objet"]
     resultat = {"titre": titre, "dossier": dossier_uid, "scrutin": None, "inverse": False}
+    # En 2017-2022, les titres commencent souvent par un thème (« Société : … ») absent de l'intitulé des votes :
+    # on cherche avec le titre complet, puis sans ce préfixe
+    variantes = list(dict.fromkeys([titre, re.sub(r"^[^:]{3,40} : ", "", titre)]))
+
+    def chercher(fonction, *args):
+        return next((v for t in variantes for v in [fonction(t, scrutins, jour, *args)] if v), None)
+
     # 1. Une décision de l'Assemblée ce jour-là
     if d:
         for dec in decisions_assemblee(d):
             if dec["date"] == jour:
                 # « modifiée » : adoptée en deuxième lecture avec des changements
                 resultat["statut"] = "adopte" if dec["statut"].startswith(("adopt", "modifi")) else "rejete" if dec["statut"].startswith("rejet") else dec["statut"]
-                resultat["scrutin"] = next((v for v in dec["votes"] if v in scrutins), None) or vote_final_du_jour(titre, scrutins, jour)
+                resultat["scrutin"] = next((v for v in dec["votes"] if v in scrutins), None) or chercher(vote_final_du_jour)
+                # Rejeté sans vote sur l'ensemble : par une motion de procédure, ou parce que ses articles ont été supprimés
+                # un à un (vote inversé : « pour » la suppression = contre le texte)
+                if resultat["statut"] == "rejete" and not resultat["scrutin"]:
+                    resultat["scrutin"] = chercher(vote_de_motion, REJET) or chercher(vote_de_suppression)
+                    resultat["inverse"] = bool(resultat["scrutin"])
+                    if not resultat["scrutin"]:   # premier article rejeté : vote dans le même sens que le texte
+                        resultat["scrutin"] = chercher(vote_premier_article)
                 return resultat
-    # 2. Un article unique supprimé : le texte est vidé, donc rejeté (le vote est inversé)
-    for uid, s in scrutins.items():
-        if s["date"] == jour and s["titre"].startswith("l'amendement de suppression") and "article unique" in s["titre"] \
-                and s["sort"] == "adopté" and proximite(titre, s["titre"]) >= 0.75:
-            resultat.update(statut="rejete", scrutin=uid, inverse=True)
-            return resultat
-    # 3. Le compte rendu : retiré en séance, discussion commencée, ou pas examiné
-    meilleur = max(segments, key=lambda sg: proximite(titre, sg["titre"]), default=None)
-    if meilleur and proximite(titre, meilleur["titre"]) >= 0.5:
-        resultat["statut"] = "retire" if RETRAIT.search(meilleur["texte"]) else "commence"
+    # 2. Une motion de rejet préalable adoptée, ou un article unique supprimé : le texte est rejeté (le vote est inversé)
+    vote = chercher(vote_de_motion, REJET) or chercher(vote_de_suppression, ("article unique",))
+    if vote:
+        resultat.update(statut="rejete", scrutin=vote, inverse=True)
+        return resultat
+    # 3. Une motion de renvoi en commission adoptée : la discussion s'arrête, le texte retourne en commission
+    vote = chercher(vote_de_motion, "la motion de renvoi en commission")
+    if vote:
+        resultat.update(statut="renvoye", scrutin=vote, inverse=True)
+        return resultat
+    # 4. Le compte rendu : retiré en séance, discussion commencée, ou pas examiné. Un texte peut y figurer
+    # plusieurs fois (début de la discussion, puis retrait en fin de journée) : on regarde tous ses passages
+    passages = [sg for sg in segments if max(proximite(t, sg["titre"]) for t in variantes) >= 0.5]
+    if passages:
+        resultat["statut"] = "retire" if any(RETRAIT.search(sg["texte"]) for sg in passages) else "commence"
     else:
         resultat["statut"] = "pas_examine"
     return resultat
 
 
-RANG_STATUT = {"pas_examine": 0, "commence": 1, "retire": 2, "rejete": 3, "adopte": 3}
+RANG_STATUT = {"pas_examine": 0, "commence": 1, "retire": 2, "renvoye": 2, "rejete": 3, "adopte": 3}
 
 
 # ---------------------------------------------------------------- construction
 
 def main():
+    global RAFRAICHIR_DEPUIS
     if len(sys.argv) < 2:
-        sys.exit("Usage : python3 pipeline/construire.py <législature>")
+        sys.exit("Usage : python3 pipeline/construire.py <législature> [--rafraichir-cr AAAA-MM-JJ]")
     leg = sys.argv[1]
+    if "--rafraichir-cr" in sys.argv:
+        RAFRAICHIR_DEPUIS = sys.argv[sys.argv.index("--rafraichir-cr") + 1]
     sortie = BASE / leg
     print("Chargement des groupes et des députés…", flush=True)
     organes, mandats = charger_groupes_et_mandats(leg)
@@ -320,15 +399,18 @@ def main():
     # Groupes
     groupes = {}
     for uid, o in organes.items():
-        g = groupes.setdefault(o["abrev"], {"abrev": o["abrev"], "nom": o["nom"], "couleur": o["couleur"], "organes": []})
+        g = groupes.setdefault(o["abrev"], {"abrev": o["abrev"], "nom": o["nom"], "couleur": o["couleur"], "position": o["position"],
+                                            "organes": [], "_debut": ""})
         g["organes"].append(uid)
-        if not o["fin"]:   # le nom et la couleur en cours l'emportent
-            g["nom"], g["couleur"] = o["nom"], o["couleur"]
+        if not o["fin"] or o["debut"] > g["_debut"]:   # le nom le plus récent l'emporte
+            g.update(nom=o["nom"], couleur=o["couleur"], position=o["position"], _debut=o["debut"] if o["fin"] else "9999")
+    for g in groupes.values():
+        del g["_debut"]
     dernier_vote = max(scrutins.values(), key=lambda s: (s["date"], s["numero"]))
     for r in dernier_vote["groupes"]:
         if r["g"] in groupes:
             groupes[r["g"]]["deputes"] = r["m"]
-    liste_groupes = sorted(groupes.values(), key=lambda g: ORDRE_HEMICYCLE.index(g["abrev"]) if g["abrev"] in ORDRE_HEMICYCLE else 99)
+    liste_groupes = sorted(groupes.values(), key=lambda g: ORDRE_HEMICYCLE[leg].index(g["abrev"]) if g["abrev"] in ORDRE_HEMICYCLE[leg] else 99)
 
     # Niches : détection, puis validation manuelle
     print("Détection des niches…", flush=True)
@@ -361,7 +443,7 @@ def main():
                                "statut": ligne["statut"], "scrutin": ligne["scrutin"], "inverse": ligne["inverse"],
                                "suite": suite_donnee(d), "resume": None, "arguments": None, "relu": False}
                 if not ligne["scrutin"]:
-                    a_verifier.append(f"Niche du {jour} : « {ligne['titre'][:80]} » {ligne['statut']} sans vote public (main levée ?)")
+                    a_verifier.append(f"Niche du {jour} : « {ligne['titre'][:80]} » {ligne['statut']} sans vote public retrouvé (main levée ?)")
             # Un même texte peut figurer deux fois à l'ordre du jour (avec ou sans référence, ou sous deux dossiers) :
             # on garde une seule ligne, avec le statut le plus avancé
             doublon = next((x for x in programme if (uid and x["dossier"] == uid) or proximite(x["titre"], ligne["titre"]) >= 0.9), None)
@@ -405,6 +487,8 @@ def main():
                        "suite": suite_donnee(d), "resume": None, "arguments": None, "relu": False}
         utilises.add(vuid)
 
+    for ref in CR_ABSENTS:
+        a_verifier.append(f"Compte rendu pas encore publié : {ref}. Statuts de ce jour à reprendre à la prochaine mise à jour")
     for t in textes.values():
         if t["auteur"]["type"] == "inconnu":
             a_verifier.append(f"Auteur non identifié : « {t['titre'][:80]} » ({t.get('dossier') or t['id']})")

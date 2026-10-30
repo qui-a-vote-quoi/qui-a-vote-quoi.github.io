@@ -1,0 +1,1332 @@
+[
+ {
+  "date": "2022-10-06",
+  "groupe": "DEM",
+  "validee": false,
+  "votesDuJour": 10,
+  "programme": [
+   {
+    "titre": "Lutte contre les plastiques dangereux pour l’environnement et la santé",
+    "dossier": "DLR5L16N46116",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V225",
+    "inverse": false
+   },
+   {
+    "titre": "Limiter l'engrillagement des espaces naturels et protéger la propriété privée",
+    "dossier": "DLR5L15N43849",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V228",
+    "inverse": false
+   },
+   {
+    "titre": "Lutte contre les abus et les fraudes au compte personnel de formation",
+    "dossier": "DLR5L16N46187",
+    "statut": "adopte",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Charge fiscale de la pension alimentaire",
+    "dossier": "DLR5L16N46185",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V233",
+    "inverse": false
+   },
+   {
+    "titre": "Mission flash Permettre le transfert de trimestres de retraite au sein du couple",
+    "dossier": "DLR5L16N46898",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Réguler le secteur de la livraison alimentaire à domicile",
+    "dossier": "DLR5L16N46131",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2022-11-24",
+  "groupe": "LFI-NUPES",
+  "validee": false,
+  "votesDuJour": 7,
+  "programme": [
+   {
+    "titre": "Création d’une commission d’enquête relative aux révélations des Uber Files et au rôle du Président de la République dans l’implantation d’Uber en France",
+    "dossier": "DLR5L16N46437",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Protéger et garantir le droit fondamental à l’interruption volontaire de grossesse et à la contraception",
+    "dossier": "DLR5L16N46412",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V629",
+    "inverse": false
+   },
+   {
+    "titre": "Augmenter le salaire minimum interprofessionnel de croissance à 1600 euros net",
+    "dossier": "DLR5L16N46434",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Abolir la corrida : un petit pas pour l’animal, un grand pas pour l’humanité",
+    "dossier": "DLR5L16N46435",
+    "statut": "retire",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Réintégrer le personnel des établissements de santé et de secours non-vacciné grâce à un protocole sanitaire renforcé",
+    "dossier": "DLR5L16N46428",
+    "statut": "retire",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Instaurer une allocation d'autonomie pour les jeunes en formation",
+    "dossier": "DLR5L16N46429",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Créer un corps de fonctionnaire pour les accompagnants d’élèves en situation de handicap",
+    "dossier": "DLR5L16N46432",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Modifier les conditions de déclenchement du référendum d'initiative partagée",
+    "dossier": "DLR5L16N46411",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Assurer l’égalité effective entre tous les citoyens par une grande loi de développement pour les Outre-mer",
+    "dossier": "DLR5L16N46407",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Accélérer la rénovation thermique des logements, en garantissant un reste à charge zéro pour les ménages les plus modestes réalisant des travaux et en interdisant réellement les logements les plus énergivores",
+    "dossier": "DLR5L16N46430",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Mettre fin à la concentration dans les médias et l’industrie culturelle",
+    "dossier": "DLR5L16N46433",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Garantir l’accès à l’eau potable par la gratuité des mètres cubes vitaux",
+    "dossier": "DLR5L16N46431",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2022-12-01",
+  "groupe": "LR",
+  "validee": false,
+  "votesDuJour": 5,
+  "programme": [
+   {
+    "titre": "Calculer la retraite de base des non-salariés agricoles en fonction de leurs seules vingt-cinq meilleures années de revenus",
+    "dossier": "DLR5L16N46472",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V654",
+    "inverse": false
+   },
+   {
+    "titre": "Condamner le régime dictatorial de la République islamique d’Iran pour ses crimes à l’encontre des femmes iraniennes",
+    "dossier": "DLR5L16N46413",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Assouplir les conditions d’expulsion des étrangers constituant une menace grave pour l’ordre public",
+    "dossier": "DLR5L16N46473",
+    "statut": "rejete",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Création d’une juridiction spécialisée dans l'expulsion des étrangers délinquants",
+    "dossier": "DLR5L16N46471",
+    "statut": "rejete",
+    "scrutin": "VTANR5L16V657",
+    "inverse": true
+   },
+   {
+    "titre": "Création d’une juridiction spécialisée aux violences intrafamiliales",
+    "dossier": "DLR5L16N46466",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V658",
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2023-01-12",
+  "groupe": "RN",
+  "validee": false,
+  "votesDuJour": 8,
+  "programme": [
+   {
+    "titre": "Proposition de loi créant une aide universelle d'urgence pour les victimes de violences conjugales",
+    "dossier": "DLR5L16N46270",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Favoriser et inciter les entreprises à augmenter les salaires nets de 10 %",
+    "dossier": "DLR5L16N46760",
+    "statut": "rejete",
+    "scrutin": "VTANR5L16V824",
+    "inverse": true
+   },
+   {
+    "titre": "Suppression des zones à faibles émissions mobilité",
+    "dossier": "DLR5L16N46275",
+    "statut": "rejete",
+    "scrutin": "VTANR5L16V827",
+    "inverse": true
+   },
+   {
+    "titre": "Réintégrer le personnel des établissements de santé et de secours non-vacciné grâce à un protocole sanitaire renforcé",
+    "dossier": "DLR5L16N46428",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Etendre le droit de visite des parlementaires et parlementaires européens élus en France aux établissements sociaux et médico sociaux",
+    "dossier": "DLR5L16N46778",
+    "statut": "rejete",
+    "scrutin": "VTANR5L16V829",
+    "inverse": true
+   },
+   {
+    "titre": "Instituer dans les écoles et collèges publics le port d’une tenue uniforme aux couleurs de l’établissement scolaire",
+    "dossier": "DLR5L16N46249",
+    "statut": "rejete",
+    "scrutin": "VTANR5L16V830",
+    "inverse": true
+   },
+   {
+    "titre": "Revivifier la représentation politique",
+    "dossier": "DLR5L16N46780",
+    "statut": "rejete",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Modification du calcul de la taxe d’enlèvement des ordures ménagères et invitation du Gouvernement à une refonte de la fiscalité locale",
+    "dossier": "DLR5L16N46757",
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Instituer une présomption de légitime défense pour les membres des forces de l’ordre",
+    "dossier": "DLR5L16N46782",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Réintégrer et indemniser les personnels suspendus soumis à l’obligation vaccinale contre la covid-19",
+    "dossier": "DLR5L16N46794",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2023-01-19",
+  "groupe": "RE",
+  "validee": false,
+  "votesDuJour": 9,
+  "programme": [
+   {
+    "titre": "Interdire la maltraitance sur les animaux de compagnie par l'utilisation de colliers étrangleurs et électriques",
+    "dossier": "DLR5L16N46749",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Sécuriser l’approvisionnement des Français en produits de grande consommation et assurer l’avenir du fabriqué en France",
+    "dossier": "DLR5L16N46687",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Amélioration de l’accès aux soins par la confiance aux professionnels de santé",
+    "dossier": "DLR5L16N46486",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V875",
+    "inverse": false
+   },
+   {
+    "titre": "Ouvrir le tiers financement à l’État, à ses établissements publics et aux collectivités territoriales pour favoriser les travaux de rénovation énergétique",
+    "dossier": "DLR5L16N46753",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V876",
+    "inverse": false
+   },
+   {
+    "titre": "Proposition de loi créant une aide universelle d'urgence pour les victimes de violences conjugales",
+    "dossier": "DLR5L16N46270",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Faire évoluer la formation de sage-femme",
+    "dossier": "DLR5L15N43746",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Mise en place d'un protocole relatif à l'accompagnement psychologique des femmes victimes de fausses couches",
+    "dossier": "DLR5L16N46126",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Faciliter la mobilité internationale des alternants pour un « Erasmus de l’apprentissage »",
+    "dossier": "DLR5L16N46767",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Réintégrer le personnel des établissements de santé et de secours non-vacciné grâce à un protocole sanitaire renforcé",
+    "dossier": "DLR5L16N46428",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2023-02-09",
+  "groupe": "SOC",
+  "validee": false,
+  "votesDuJour": 16,
+  "programme": [
+   {
+    "titre": "Création d'une contribution additionnelle sur les bénéfices exceptionnels des grandes entreprises",
+    "dossier": "DLR5L16N46330",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Le coût de la vie dans les départements et régions d’Outre-mer",
+    "dossier": "DLR5L16N46900",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V924",
+    "inverse": false
+   },
+   {
+    "titre": "Assurer un repas à 1 euro pour tous les étudiants",
+    "dossier": "DLR5L16N46858",
+    "statut": "rejete",
+    "scrutin": "VTANR5L16V931",
+    "inverse": false
+   },
+   {
+    "titre": "Proposition de loi visant à la nationalisation du groupe Électricité de France",
+    "dossier": "DLR5L16N46921",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V935",
+    "inverse": false
+   },
+   {
+    "titre": "Mieux protéger et accompagner les enfants victimes et co-victimes de violences intrafamiliales",
+    "dossier": "DLR5L16N46864",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V937",
+    "inverse": false
+   },
+   {
+    "titre": "Proposition de loi visant à lutter contre les dérives des influenceurs sur les réseaux sociaux",
+    "dossier": "DLR5L16N46913",
+    "statut": "retire",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Renforcer l’ordonnance de protection",
+    "dossier": "DLR5L16N46890",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V938",
+    "inverse": false
+   },
+   {
+    "titre": "proposition de loi constitutionnelle visant à créer un Défenseur de l’environnement",
+    "dossier": null,
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2023-03-02",
+  "groupe": "HOR",
+  "validee": false,
+  "votesDuJour": 16,
+  "programme": [
+   {
+    "titre": "Mieux lutter contre la récidive",
+    "dossier": "DLR5L16N47036",
+    "statut": "retire",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Instaurer une majorité numérique et à lutter contre la haine en ligne",
+    "dossier": "DLR5L16N47035",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V1108",
+    "inverse": false
+   },
+   {
+    "titre": "Améliorer l’accès au soin pour tous",
+    "dossier": "DLR5L16N46887",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Renforcer la protection des familles d’enfants touchés par une affection de longue durée",
+    "dossier": "DLR5L16N47037",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V1114",
+    "inverse": false
+   },
+   {
+    "titre": "Soutenir les petites entreprises et les collectivités territoriales en cas de crise énergétique",
+    "dossier": "DLR5L16N47034",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2023-04-06",
+  "groupe": "ECOLO",
+  "validee": false,
+  "votesDuJour": 46,
+  "programme": [
+   {
+    "titre": "Reconnaissance de la répression des Algériens du 17 octobre 1961 à Paris et commémoration pour la mémoire des victimes",
+    "dossier": "DLR5L16N46881",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Mieux manger en soutenant les Français face à l'inflation et en favorisant l'accès à une alimentation saine",
+    "dossier": "DLR5L16N47218",
+    "statut": "rejete",
+    "scrutin": "VTANR5L16V1387",
+    "inverse": false
+   },
+   {
+    "titre": "Interdiction de toute forme de publicité numérique et lumineuse dans l’espace public",
+    "dossier": "DLR5L16N47227",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Mieux indemniser les dégâts sur les biens immobiliers causés par le retrait-gonflement de l’argile",
+    "dossier": "DLR5L16N47217",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V1402",
+    "inverse": false
+   },
+   {
+    "titre": "Interdire les vols en jets privés",
+    "dossier": "DLR5L16N47215",
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Protéger la jeunesse de la précarité par la solidarité intergénérationnelle",
+    "dossier": "DLR5L16N47214",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Garantir l’accès sûr et tranquille à la nature pour tous les Français",
+    "dossier": "DLR5L16N47216",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Dresser un état des lieux exhaustif de la menace terroriste d'extrême droite",
+    "dossier": "DLR5L16N47220",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2023-05-04",
+  "groupe": "GDR-NUPES",
+  "validee": false,
+  "votesDuJour": 27,
+  "programme": [
+   {
+    "titre": "Nécessité d’une solution à deux États et condamnation de l’institutionnalisation par l’État d’Israël d’un régime d’apartheid consécutif à sa politique coloniale",
+    "dossier": "DLR5L16N47549",
+    "statut": "rejete",
+    "scrutin": "VTANR5L16V1456",
+    "inverse": false
+   },
+   {
+    "titre": "Surseoir à l’ouverture à la concurrence du réseau de bus de la Régie autonome des transports parisiens",
+    "dossier": "DLR5L16N47421",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Abrogation de l'obligation vaccinale contre la covid-19 dans les secteurs médicaux, paramédicaux et d'aide à la personne et visant à la réintégration des professionnels et étudiants suspendus",
+    "dossier": "DLR5L16N47411",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V1462",
+    "inverse": false
+   },
+   {
+    "titre": "Proposition de loi visant à la nationalisation du groupe Électricité de France",
+    "dossier": "DLR5L16N46921",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V1482",
+    "inverse": false
+   },
+   {
+    "titre": "Promouvoir l'emploi et le retour des fonctionnaires d'Etat ultramarins dans les territoires d'Outre-mer",
+    "dossier": "DLR5L16N47422",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "proposition de loi organisque visant à indexer la dotation globale de fonctionnement sur l’inflation",
+    "dossier": null,
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Revitalisation pérenne des lignes ferroviaires de dessertes fines du territoire",
+    "dossier": "DLR5L16N47423",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2023-05-11",
+  "groupe": "RE",
+  "validee": false,
+  "votesDuJour": 3,
+  "programme": [
+   {
+    "titre": "Lutter contre les sur-transpositions en matière agricole",
+    "dossier": "DLR5L16N47291",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V1504",
+    "inverse": false
+   },
+   {
+    "titre": "Faciliter la mobilité internationale des alternants pour un « Erasmus de l’apprentissage »",
+    "dossier": "DLR5L16N46767",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V1503",
+    "inverse": false
+   },
+   {
+    "titre": "Rendre obligatoire le pavoisement des drapeaux français et européen sur le fronton des mairies",
+    "dossier": "DLR5L16N47443",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Amélioration de l’accès aux soins par la confiance aux professionnels de santé",
+    "dossier": "DLR5L16N46486",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Soutenir les petites entreprises et les collectivités territoriales en cas de crise énergétique",
+    "dossier": "DLR5L16N47034",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2023-06-08",
+  "groupe": "LIOT",
+  "validee": false,
+  "votesDuJour": 19,
+  "programme": [
+   {
+    "titre": "Abroger le recul de l'âge effectif de départ à la retraite et proposer la tenue d'une conférence de financement du système de retraite",
+    "dossier": "DLR5L16N47635",
+    "statut": "retire",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Élargir l'assiette de la taxe sur les transactions financières",
+    "dossier": "DLR5L16N47595",
+    "statut": "retire",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Renforcer l’engagement et la participation des citoyens à la vie démocratique",
+    "dossier": "DLR5L16N47620",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Renforcer le principe de la continuité territoriale en Outre-Mer",
+    "dossier": "DLR5L16N47622",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V1797",
+    "inverse": false
+   },
+   {
+    "titre": "La gestion de l’eau",
+    "dossier": "DLR5L16N48302",
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Consultation des habitants d'un département sur le choix de leur région d'appartenance",
+    "dossier": "DLR5L16N47634",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Limiter la contamination par les substances polyfluoroalkyles et perfluoroalkyles",
+    "dossier": "DLR5L16N47613",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2023-10-12",
+  "groupe": "RN",
+  "validee": false,
+  "votesDuJour": 9,
+  "programme": [
+   {
+    "titre": "Soutenir les femmes qui souffrent d'endométriose",
+    "dossier": "DLR5L16N47806",
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Proposition de loi visant à supprimer ou à suspendre les allocations familiales pour les parents d’enfants criminels ou délinquants",
+    "dossier": "DLR5L16N48484",
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Proposition de loi visant à baisser la facture énergétique des Français et des entreprises sur le territoire",
+    "dossier": "DLR5L16N48543",
+    "statut": "retire",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Interdiction de l’écriture dite « inclusive » dans les éditions, productions et publications scolaires et universitaires ainsi que dans les actes civils, administratifs et commerciaux",
+    "dossier": "DLR5L16N47051",
+    "statut": "rejete",
+    "scrutin": "VTANR5L16V2758",
+    "inverse": true
+   },
+   {
+    "titre": "Création d'un complément de revenu garanti par l’État pour les étudiants qui travaillent durant leurs études",
+    "dossier": "DLR5L16N47602",
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Accorder l’asile politique à Julian Assange",
+    "dossier": "DLR5L16N48361",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Renforcer le contrôle des déclarations de minorité des étrangers",
+    "dossier": "DLR5L16N47938",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2023-11-23",
+  "groupe": "RE",
+  "validee": false,
+  "votesDuJour": 15,
+  "programme": [
+   {
+    "titre": "Approbation de l’accord entre la France et Andorre concernant la démarcation et l’entretien de la frontière",
+    "dossier": "DLR5L16N48255",
+    "statut": "adopte",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Approbation de la convention d’entraide judiciaire en matière pénale entre la France et la République de Maurice et de la convention d’extradition entre la France et la République de Maurice",
+    "dossier": "DLR5L16N48541",
+    "statut": "adopte",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Mesures pour bâtir la société du bien vieillir en France",
+    "dossier": "DLR5L16N46868",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3045",
+    "inverse": false
+   },
+   {
+    "titre": "Proposition de loi relative à l'ouverture à la concurrence du réseau de bus francilien de la RATP",
+    "dossier": "DLR5L16N48696",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Prolonger en 2024 l'utilisation des titres-restaurant pour des achats de produits alimentaires non directement consommables",
+    "dossier": "DLR5L16N48925",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3035",
+    "inverse": false
+   },
+   {
+    "titre": "Projet de loi de financement de la sécurité sociale pour 2024",
+    "dossier": "DLR5L16N48683",
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2023-11-30",
+  "groupe": "LFI-NUPES",
+  "validee": false,
+  "votesDuJour": 36,
+  "programme": [
+   {
+    "titre": "Abrogation de la réforme des retraites portant l'âge légal de départ à 64 ans",
+    "dossier": "DLR5L16N47636",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Création d’une commission d’enquête sur la gestion par l’État des risques naturels majeurs dans les territoires transocéaniques de France, dits d’Outre-mer",
+    "dossier": "DLR5L16N48718",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3081",
+    "inverse": false
+   },
+   {
+    "titre": "Lutter contre l’inflation par l’encadrement des marges des industries agroalimentaires, du raffinage et de la grande distribution et établissant un prix d’achat plancher des matières premières agricoles",
+    "dossier": "DLR5L16N48766",
+    "statut": "rejete",
+    "scrutin": "VTANR5L16V3101",
+    "inverse": false
+   },
+   {
+    "titre": "Garantir le droit fondamental à l’éducation",
+    "dossier": "DLR5L16N46108",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Instaurer un moratoire sur le déploiement des méga-bassines",
+    "dossier": "DLR5L16N48755",
+    "statut": "rejete",
+    "scrutin": "VTANR5L16V3102",
+    "inverse": true
+   },
+   {
+    "titre": "Opposer à la ratification de l'accord de libre-échange et d'association entre l'Union européenne et la Nouvelle-Zélande, et à soumettre sa ratification au Parlement français",
+    "dossier": "DLR5L16N48715",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Réouverture des accueils physiques dans les services publics",
+    "dossier": "DLR5L16N48763",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3115",
+    "inverse": false
+   },
+   {
+    "titre": "Abroger l'article L. 435-1 du code de la sécurité intérieure",
+    "dossier": "DLR5L16N48356",
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Proposition de loi visant à indexer les salaires et les traitements de la fonction publique sur l'inflation pour soutenir le pouvoir d'achat des Français",
+    "dossier": "DLR5L16N48478",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Déconjugaliser l'allocation de soutien familial",
+    "dossier": "DLR5L16N48760",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Répondre à la crise du logement chez les jeunes",
+    "dossier": "DLR5L16N48761",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2023-12-07",
+  "groupe": "LR",
+  "validee": false,
+  "votesDuJour": 20,
+  "programme": [
+   {
+    "titre": "Dénonciation, par les autorités françaises, de l’accord franco-algérien du 27 décembre 1968",
+    "dossier": "DLR5L16N48140",
+    "statut": "rejete",
+    "scrutin": "VTANR5L16V3183",
+    "inverse": false
+   },
+   {
+    "titre": "Souveraineté de la France, nationalité, immigration et asile",
+    "dossier": "DLR5L16N48135",
+    "statut": "retire",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Améliorer l'accès aux soins par la territorialisation et la formation",
+    "dossier": "DLR5L16N48758",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3201",
+    "inverse": false
+   },
+   {
+    "titre": "Rendre effectifs les soins palliatifs sur tout le territoire national",
+    "dossier": "DLR5L16N48777",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3202",
+    "inverse": false
+   },
+   {
+    "titre": "Relancer l’organisation des classes de découverte",
+    "dossier": "DLR5L16N48800",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Plan d’urgence pour le recrutement et la formation initiale des enseignants du second degré",
+    "dossier": "DLR5L16N48805",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Baisser le prix des billets des trains express régionaux par une fiscalité allégée",
+    "dossier": "DLR5L16N48804",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Proposition de loi visant à protéger la langue française des dérives de l’écriture dite inclusive",
+    "dossier": "DLR5L15N44968",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Mesures d'urgence pour remédier à la crise du logement",
+    "dossier": "DLR5L16N48799",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Pérenniser les jardins d’enfants bénéficiant de financements publics",
+    "dossier": "DLR5L16N47440",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2024-01-18",
+  "groupe": "DEM",
+  "validee": false,
+  "votesDuJour": 5,
+  "programme": [
+   {
+    "titre": "Mise en place et fonctionnement  de la commission d’évaluation de l’aide publique au développement instituée par la loi n° 2021-1031 du 4 août 2021",
+    "dossier": "DLR5L16N47695",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3216",
+    "inverse": false
+   },
+   {
+    "titre": "Renforcer la démocratie locale et le fonctionnement du conseil municipal",
+    "dossier": "DLR5L16N49026",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Généralisation du contrat à durée indéterminée à des fins d’employabilité",
+    "dossier": "DLR5L16N49033",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3218",
+    "inverse": false
+   },
+   {
+    "titre": "Accentuer les efforts pour favoriser l’accès de tous au logement",
+    "dossier": "DLR5L16N49175",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3219",
+    "inverse": false
+   },
+   {
+    "titre": "Assurer une justice patrimoniale au sein de la famille",
+    "dossier": "DLR5L16N49023",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3220",
+    "inverse": false
+   },
+   {
+    "titre": "Pour un soutien pérenne de la filière musicale française",
+    "dossier": "DLR5L16N48962",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2024-02-01",
+  "groupe": "LR",
+  "validee": false,
+  "votesDuJour": 26,
+  "programme": [
+   {
+    "titre": "Proposition de loi encadrant l'intervention des cabinets de conseil privés dans les politiques publiques",
+    "dossier": "DLR5L15N45886",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3332",
+    "inverse": false
+   },
+   {
+    "titre": "Relancer l’organisation des classes de découverte",
+    "dossier": "DLR5L16N48800",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3333",
+    "inverse": false
+   },
+   {
+    "titre": "Pérenniser les jardins d’enfants gérés par une collectivité publique ou bénéficiant de financements publics",
+    "dossier": "DLR5L16N48586",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3334",
+    "inverse": false
+   },
+   {
+    "titre": "Mission flash sur la rédaction du décret n°2017-867 du 9 mai 2017 relatif au répertoire numérique des représentants d'intérêts",
+    "dossier": "DLR5L16N47169",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Faciliter la transformation des bureaux en logements",
+    "dossier": "DLR5L16N49107",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Interdire l’importation et l’exportation des trophées de chasse d’espèces protégées",
+    "dossier": "DLR5L16N48952",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Proposition de loi portant réparation des personnes condamnées pour homosexualité entre 1945 et 1982",
+    "dossier": "DLR5L16N46127",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Protéger la liberté éditoriale des médias sollicitant des aides de l’État",
+    "dossier": "DLR5L16N48485",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2024-02-29",
+  "groupe": "SOC",
+  "validee": false,
+  "votesDuJour": 21,
+  "programme": [
+   {
+    "titre": "Proposition de loi visant à la nationalisation du groupe Électricité de France",
+    "dossier": "DLR5L16N46921",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3373",
+    "inverse": false
+   },
+   {
+    "titre": "Renforcer la protection des mineurs et l’honorabilité dans le sport",
+    "dossier": "DLR5L16N47026",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3374",
+    "inverse": false
+   },
+   {
+    "titre": "Reconnaître la responsabilité de l’État et indemniser les victimes du chlordécone",
+    "dossier": "DLR5L16N49263",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3382",
+    "inverse": false
+   },
+   {
+    "titre": "Réduire et encadrer les frais bancaires sur succession",
+    "dossier": "DLR5L16N49258",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3385",
+    "inverse": false
+   },
+   {
+    "titre": "Proposition de loi visant à lutter contre les pénuries de médicaments et de vaccins",
+    "dossier": "DLR5L16N46114",
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Gel des tarifs des transports publics pendant les jeux Olympiques et Paralympiques 2024",
+    "dossier": "DLR5L16N49264",
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Toucher sa retraite dès le premier jour",
+    "dossier": "DLR5L16N49262",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Louer en toute confiance",
+    "dossier": "DLR5L16N49267",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Face à la précarité alimentaire, des Territoires Zéro Faim",
+    "dossier": "DLR5L16N49266",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Semaine de quatre jours pour les bénévoles",
+    "dossier": "DLR5L16N49265",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Lutte contre les pénuries de médicaments",
+    "dossier": "DLR5L16N49261",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3391",
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2024-03-14",
+  "groupe": "HOR",
+  "validee": false,
+  "votesDuJour": 25,
+  "programme": [
+   {
+    "titre": "Garantir le versement des pensions alimentaires aux enfants majeurs",
+    "dossier": "DLR5L16N49363",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3490",
+    "inverse": false
+   },
+   {
+    "titre": "Réduire l’impact environnemental de l’industrie textile",
+    "dossier": "DLR5L16N49364",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3508",
+    "inverse": false
+   },
+   {
+    "titre": "Renforcer la sécurité des professionnels de santé",
+    "dossier": "DLR5L16N49299",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3512",
+    "inverse": false
+   },
+   {
+    "titre": "proposition de loi organique visant à renforcer l’ancrage territorial des parlementaires",
+    "dossier": null,
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Valoriser la réserve communale de sécurité civile",
+    "dossier": "DLR5L16N49365",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Généraliser les conventions de partenariat entre les cités éducatives et des orthophonistes",
+    "dossier": "DLR5L16N48744",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Flécher l’épargne non centralisée des livrets réglementés vers les entreprises du secteur de la défense nationale",
+    "dossier": "DLR5L16N49300",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2024-04-04",
+  "groupe": "ECOLO",
+  "validee": false,
+  "votesDuJour": 29,
+  "programme": [
+   {
+    "titre": "Protéger la population des risques liés aux substances per- et polyfluoroalkylées (PFAS)",
+    "dossier": "DLR5L16N49455",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3643",
+    "inverse": false
+   },
+   {
+    "titre": "Garantir un revenu digne aux agriculteurs et accompagner la transition agricole",
+    "dossier": "DLR5L16N49457",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3653",
+    "inverse": false
+   },
+   {
+    "titre": "proposition de loi constitutionnelle pour un article 49 respectueux de la représentation nationale",
+    "dossier": null,
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Protéger la liberté éditoriale des médias sollicitant des aides de l’État",
+    "dossier": "DLR5L16N48485",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Instaurer de nouveaux objectifs de programmation énergétique pour répondre concrètement à l'urgence climatique",
+    "dossier": "DLR5L16N49456",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Reconnaître et protéger la santé menstruelle et gynécologique dans le monde du travail",
+    "dossier": "DLR5L16N49458",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Protéger les Français des risques climatiques et financiers associés aux investissements dans les énergies fossiles",
+    "dossier": "DLR5L16N49459",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Dépénalisation de l’accès à la nature",
+    "dossier": "DLR5L16N48858",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ },
+ {
+  "date": "2024-05-30",
+  "groupe": "GDR-NUPES",
+  "validee": false,
+  "votesDuJour": 11,
+  "programme": [
+   {
+    "titre": "Adapter et mutualiser nos politiques publiques au changement climatique, notamment à destination des villes côtières et insulaires",
+    "dossier": "DLR5L16N49004",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3990",
+    "inverse": false
+   },
+   {
+    "titre": "Sous réserve de sa transmission, projet de loi, adopté par le Sénat, de ratification de l’accord de partenariat stratégique entre l’Union européenne et ses États membres, d’une part, et le Canada, d’autre part",
+    "dossier": null,
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Procédure de ratification de l'accord économique et commercial global entre le Canada et l'Union européenne",
+    "dossier": "DLR5L16N49923",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3991",
+    "inverse": false
+   },
+   {
+    "titre": "Indécence du logement social dans les départements et régions d'outre-mer",
+    "dossier": "DLR5L16N49740",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3992",
+    "inverse": false
+   },
+   {
+    "titre": "proposition de loi constitutionnelle constitutionnaliser la sécurité sociale",
+    "dossier": null,
+    "statut": "retire",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Meilleure réussite scolaire des jeunes ultramarins grâce à l'apprentissage des langues régionales",
+    "dossier": "DLR5L16N49799",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V3996",
+    "inverse": false
+   },
+   {
+    "titre": "Prise en charge intégrale des soins liés au traitement du cancer du sein par l'assurance maladie",
+    "dossier": "DLR5L16N49801",
+    "statut": "adopte",
+    "scrutin": "VTANR5L16V4000",
+    "inverse": false
+   },
+   {
+    "titre": "proposition de loi constitutionnelle tendant à la création d’une commission permanente aux collectivités territoriales et aux outre-mer",
+    "dossier": null,
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Réduire la précarité sociale et monétaire des familles monoparentales",
+    "dossier": "DLR5L16N49800",
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "proposition de résolution, en application de l’article 34-1 de la Constitution, portant sur la procédure de ratification du CETA",
+    "dossier": null,
+    "statut": "pas_examine",
+    "scrutin": null,
+    "inverse": false
+   }
+  ]
+ }
+]

@@ -1,0 +1,227 @@
+[
+ {
+  "date": "2017-11-30",
+  "groupe": "DEM",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2017-12-07",
+  "groupe": "UDI-I",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2018-01-18",
+  "groupe": "SOC",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2018-02-01",
+  "groupe": "FI",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2018-03-08",
+  "groupe": "GDR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2018-04-05",
+  "groupe": "LR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2018-05-17",
+  "groupe": "DEM",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2018-06-07",
+  "groupe": "LAREM",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2018-06-21",
+  "groupe": "LR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2018-10-11",
+  "groupe": "LR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2018-11-29",
+  "groupe": "DEM",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2018-12-06",
+  "groupe": "UDI-I",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2019-01-31",
+  "groupe": "SOC",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2019-02-21",
+  "groupe": "FI",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2019-03-07",
+  "groupe": "GDR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2019-04-04",
+  "groupe": "LR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2019-05-09",
+  "groupe": "DEM",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2019-06-20",
+  "groupe": "LR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2019-10-10",
+  "groupe": "LR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2019-11-28",
+  "groupe": "DEM",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2019-12-12",
+  "groupe": "SOC",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2020-01-30",
+  "groupe": "UDI-I",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2020-02-13",
+  "groupe": "LT",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2020-06-04",
+  "groupe": "FI",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2020-06-11",
+  "groupe": "LR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2020-06-18",
+  "groupe": "GDR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2020-06-25",
+  "groupe": "LR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2020-07-16",
+  "groupe": "LAREM",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2020-10-08",
+  "groupe": "EDS",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2020-11-26",
+  "groupe": "AGIR-E",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2020-12-03",
+  "groupe": "LR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2021-01-28",
+  "groupe": "DEM",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2021-02-18",
+  "groupe": "SOC",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2021-03-18",
+  "groupe": "LAREM",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2021-03-25",
+  "groupe": "UDI-I",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2021-05-06",
+  "groupe": "FI",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2021-06-17",
+  "groupe": "GDR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2021-06-24",
+  "groupe": "DEM",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2021-10-07",
+  "groupe": "LR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2021-11-25",
+  "groupe": "AGIR-E",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2021-12-02",
+  "groupe": "GDR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2022-01-13",
+  "groupe": "FI",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2022-01-20",
+  "groupe": "SOC",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2022-02-03",
+  "groupe": "DEM",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2022-02-24",
+  "groupe": "LAREM",
+  "statut": "a_valider"
+ }
+]

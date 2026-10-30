@@ -1,6 +1,6 @@
 # Qui a voté quoi : le projet
 
-Dernière mise à jour : 29 octobre 2026.
+Dernière mise à jour : 30 octobre 2026.
 
 ## Objectif
 
@@ -19,10 +19,10 @@ Principe directeur : **simple et efficace**. Les idées qui ajoutent de la compl
 | Rédaction des résumés et arguments | **Semi-automatique, sans clé d'API** : après chaque récupération des données, un script prépare la liste des textes à rédiger et leurs extraits officiels ; Claude Code rédige les brouillons dans une session ; un humain valide chaque fiche avant publication. Rien n'est publié sans validation manuelle. |
 | Statistiques par groupe | **Pas de classement entre groupes** (« qui fait passer le plus de textes », « qui en voit le plus refusés »). Ces chiffres mesurent surtout la place d'un groupe dans le rapport de force (majorité ou opposition), pas son travail : les textes de l'opposition sont rarement adoptés, un dépôt ne coûte qu'une signature, l'influence par amendements n'est pas mesurée, et les périodes ne sont pas comparables (majorité absolue en 2017-2022, aucune depuis 2022). Les chiffres restent visibles sur la fiche de chaque groupe, **toujours avec leur contexte** (opposition ou majorité, nombre de députés). Pour le message « voter compte », on met plutôt en avant **les votes serrés**, qui montrent que le nombre de sièges change ce qui passe. |
 | Vocabulaire | On parle de **« groupes »** (groupes politiques de l'Assemblée) et non de « partis » : les députés votent par groupe, et un groupe ne correspond pas toujours à un parti (LIOT réunit plusieurs partis, les non-inscrits n'ont pas de groupe). On parle de **« participation »** aux votes et non de « présence » : un député peut être présent sans voter. On parle de **« textes »** : le mot est juste qu'ils soient adoptés, rejetés ou pas examinés. « Loi » ne désigne que les textes adoptés, « mesure » est flou. Le mot « niche » n'apparaît qu'avec son explication (« journée réservée »). |
-| Point ouvert | Les textes adoptés **par 49.3, sans vote**. Le seul vote est alors la motion de censure : il y en a eu 11 liées à un 49.3 depuis 2024, dont le budget 2025. À décider : les afficher comme « vote sur le texte » en expliquant le mécanisme. |
+| Points ouverts | 1. **Les textes votés à main levée** (surtout en 2017-2022) : les afficher avec leur sort mais sans répartition par groupe, et les exclure de Mon bilan ? 2. **Le statut « renvoyé en commission »** (14 textes en 2017-2022) : nouveau statut à afficher, avec le vote sur la motion. 3. Les textes adoptés **par 49.3, sans vote**. Le seul vote est alors la motion de censure : il y en a eu 11 liées à un 49.3 depuis 2024, dont le budget 2025. À décider : les afficher comme « vote sur le texte » en expliquant le mécanisme. |
 | Période | **2017-2026** : les 15ᵉ, 16ᵉ et 17ᵉ législatures, les seules dont l'open data est structuré et complet. |
-| Mise à jour | **Une fois par mois.** |
-| Entrées du site | Trois entrées à égalité : **Les partis**, **Mes sujets** et **Mon bilan**. |
+| Mise à jour | **Une fois par mois, vers le 5 à 10 du mois**, avec `python3 pipeline/mettre_a_jour.py` (détail dans le [README](README.md)). Tout est re-téléchargé et recalculé (environ 20 secondes) ; seul ce qui est nouveau est à valider à la main. |
+| Entrées du site | Trois entrées à égalité : **Les groupes**, **Mes sujets** et **Mon bilan**. |
 | Mon bilan | « Si vous étiez député, qu'auriez-vous voté ? » : **Pour / Contre / Je ne sais pas**, avec le parti caché jusqu'au résultat. |
 | Neutralité | Le site montre les faits, l'utilisateur juge. Les règles sont dans [CHARTE-NEUTRALITE.md](CHARTE-NEUTRALITE.md). |
 | Accessibilité | RGAA 4.1 / WCAG 2.1 AA, à vérifier à chaque évolution. Les règles sont dans [ACCESSIBILITE.md](ACCESSIBILITE.md). |
@@ -64,7 +64,11 @@ Pièges connus des données :
 - le champ `positionMajoritaire` des scrutins est faux dans environ 3 % des cas, et vaut « pour » quand personne n'a voté. **Il faut toujours recalculer les positions à partir du décompte des voix ;**
 - l'open data n'a pas de marqueur « niche » : il faut repérer les journées, puis valider la liste à la main ;
 - les étapes des dossiers ne disent pas si un texte a vraiment été discuté. **Les statuts viennent des comptes rendus de séance** (adopté, rejeté, retiré, commencé sans vote, pas examiné) ;
-- un texte dont l'article unique est supprimé est affiché comme « rejeté », avec la précision sur sa fiche.
+- un texte dont l'article unique est supprimé est affiché comme « rejeté », avec la précision sur sa fiche. En 2022-2024, c'est souvent chaque article qui est supprimé un à un : on retient alors le vote sur le premier article, lui aussi inversé ;
+- d'une législature à l'autre, l'identifiant de l'Assemblée et les sigles des groupes changent (MODEM → DEM, NG → SOC, quatre sigles successifs pour l'UDI) : la chaîne les regroupe ;
+- un texte peut aussi être écarté par une **motion de procédure** : la motion de rejet préalable (ou, pour une proposition de résolution, les conclusions de rejet de la commission) le rejette sans examiner ses articles, la motion de renvoi en commission arrête la discussion. Le vote sur la motion est retenu, inversé. Fréquent en 2017-2022 ;
+- en 2017-2022, beaucoup de textes ont été adoptés ou rejetés **à main levée**, sans scrutin public : le vote de chaque groupe n'existe alors pas dans les données (51 cas sur 295 textes de niches) ;
+- la position officielle des groupes (opposition, minoritaire, majoritaire) est fournie pour 2017-2024, mais pas encore pour 2024-2026 : à saisir à la main pour la 17ᵉ législature.
 
 ## Ampleur estimée (2017-2026)
 
@@ -96,11 +100,12 @@ Coût mensuel ensuite : **1 à 2 $.** Ces chiffres sont à confirmer par un essa
 
 1. ~~Mettre le projet sous Git.~~ Fait. **Avant toute publication**, remplacer l'identité provisoire des commits (`a-definir@example.invalid`) par celle du compte GitHub dédié, et réécrire l'historique en conséquence.
 2. ~~Chaîne de données pour 2024-2026 (phase 1).~~ Première version faite : `pipeline/`, base dans `donnees/base/17/`, rapport de vérification dans `donnees/base/17/rapport.md`.
-3. Valider à la main les 14 niches détectées restantes (`donnees/validation/niches-17.json`) et les points listés dans le rapport.
-4. Étendre la chaîne à 2022-2024 puis 2017-2022.
-5. Tester la maquette sur 2 ou 3 personnes qui ne votent pas.
-6. Phase 2 : brouillons des résumés et arguments avec Claude Code, puis relecture.
-7. Phase 3 : brancher le site sur la base JSON, puis publier.
+3. ~~Commande de mise à jour mensuelle.~~ Faite : `pipeline/mettre_a_jour.py`, qui écrit la liste des nouveautés à vérifier.
+4. ~~Étendre la chaîne à 2022-2024 puis 2017-2022.~~ Fait : bases dans `donnees/base/16/` et `donnees/base/15/`, avec leurs rapports.
+5. Valider à la main les niches détectées (14 pour 2024-2026, 21 pour 2022-2024, 45 pour 2017-2022, dans `donnees/validation/`) et les points listés dans chaque rapport. Les jours attribués au groupe majoritaire (LAREM, RE) sont probablement de faux positifs : la Constitution réserve ces journées à l'opposition et aux groupes minoritaires.
+6. Tester la maquette sur 2 ou 3 personnes qui ne votent pas.
+7. Phase 2 : brouillons des résumés et arguments avec Claude Code, puis relecture.
+8. Phase 3 : brancher le site sur la base JSON, puis publier.
 
 ## Fichiers du projet
 

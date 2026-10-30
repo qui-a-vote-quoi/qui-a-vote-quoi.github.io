@@ -16,16 +16,31 @@ VALIDATION = RACINE / "donnees" / "validation"
 
 OPEN_DATA = "https://data.assemblee-nationale.fr/static/openData/repository"
 SITE_AN = "https://www.assemblee-nationale.fr/dyn/opendata"
-ORGANE_ASSEMBLEE = "PO838901"   # l'Assemblée nationale (17e législature)
+# L'Assemblée nationale a un identifiant différent à chaque législature
+ORGANE_ASSEMBLEE = {"15": "PO717460", "16": "PO791932", "17": "PO838901"}
 ORGANE_SENAT = "PO78718"
 
 # Fichiers de l'open data par législature. La 15e utilise des noms suffixés « _XV ».
+# Le fichier des députés et des groupes est un historique commun à toutes les législatures.
+ACTEURS = "17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip"
 SOURCES = {
     "17": {
         "scrutins": "17/loi/scrutins/Scrutins.json.zip",
         "dossiers": "17/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip",
         "agenda": "17/vp/reunions/Agenda.json.zip",
-        "acteurs": "17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip",
+        "acteurs": ACTEURS,
+    },
+    "16": {
+        "scrutins": "16/loi/scrutins/Scrutins.json.zip",
+        "dossiers": "16/loi/dossiers_legislatifs/Dossiers_Legislatifs.json.zip",
+        "agenda": "16/vp/reunions/Agenda.json.zip",
+        "acteurs": ACTEURS,
+    },
+    "15": {
+        "scrutins": "15/loi/scrutins/Scrutins_XV.json.zip",
+        "dossiers": "15/loi/dossiers_legislatifs/Dossiers_Legislatifs_XV.json.zip",
+        "agenda": "15/vp/reunions/Agenda_XV.json.zip",
+        "acteurs": ACTEURS,
     },
 }
 
@@ -38,7 +53,11 @@ def telecharger(url, destination, essais=3):
     destination.parent.mkdir(parents=True, exist_ok=True)
     if shutil.which("curl"):
         partiel = destination.with_suffix(destination.suffix + ".partiel")
-        subprocess.run(["curl", "-sSfL", "--retry", str(essais), "-A", "qui-a-vote-quoi (open data)", "-o", str(partiel), url], check=True)
+        try:
+            subprocess.run(["curl", "-sSfL", "--retry", str(essais), "-A", "qui-a-vote-quoi (open data)", "-o", str(partiel), url], check=True)
+        except subprocess.CalledProcessError:
+            partiel.unlink(missing_ok=True)
+            raise
         partiel.replace(destination)
         return destination
     for essai in range(essais):

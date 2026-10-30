@@ -6,10 +6,10 @@ Construite le 2026-10-30 à partir de l'open data de l'Assemblée nationale.
 
 - Groupes : 13
 - Niches : 20 (6 validées à la main, 14 à valider)
-- Textes au programme des niches : 175 — pas_examine : 84, adopte : 58, commence : 18, rejete : 9, retire : 6
+- Textes au programme des niches : 175 — pas_examine : 82, adopte : 60, commence : 16, rejete : 9, retire : 8
 - Votes solennels sur des textes : 70 (écartés : déclarations du gouvernement : 4)
-- Textes dans la base : 132
-- Votes enregistrés dans la base : 132
+- Textes dans la base : 134
+- Votes enregistrés dans la base : 135
 
 ## Niches à valider
 
@@ -38,9 +38,10 @@ Dans `donnees/validation/niches-17.json`, passer chaque niche à `valide` ou `re
 - Niche du 2026-02-12 : pas de dossier trouvé pour « proposition de loi constitutionnelle visant à instaurer un référendum d’initiative citoyen »
 - Niche du 2026-02-12 : pas de dossier trouvé pour « proposition de loi constitutionnelle, modifiée par le Sénat, visant à accorder le droit de »
 - Niche du 2026-03-26 : pas de dossier trouvé pour « proposition de loi, modifiée par le Sénat, relative aux missions des professionnels de san »
-- Niche du 2026-06-11 : « Proposition de loi visant à lever dans les territoires d’outre-mer l’interdictio » rejete sans vote public (main levée ?)
-- Niche du 2026-06-11 : « Pour l’égalité d’accès aux soins des ressortissants ultramarins en hexagone » adopte sans vote public (main levée ?)
+- Niche du 2026-06-11 : « Pour l’égalité d’accès aux soins des ressortissants ultramarins en hexagone » adopte sans vote public retrouvé (main levée ?)
 - Niche du 2026-10-08 : pas de dossier trouvé pour « proposition de loi renforçant la responsabilité des locataires et des bailleurs dans le lo »
-- Niche du 2026-10-29 : « Rétablir le droit commun de la prescription acquisitive dans les collectivités r » adopte sans vote public (main levée ?)
+- Niche du 2026-10-29 : « Rétablir le droit commun de la prescription acquisitive dans les collectivités r » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2026-10-29 : pas de dossier trouvé pour « proposition de loi visant l'augmentation des salaires et des pensions »
 - Vote solennel n° 1195 du 2025-04-01 sans dossier relié : « l'ensemble de la proposition de loi organique fixant le statut du procureur de la Républiq »
 - Vote solennel n° 8419 du 2026-07-20 sans dossier relié : « l'ensemble de la proposition de loi visant à doter la France d'une stratégie nationale de  »
+- Compte rendu pas encore publié : CRSANR5L17S2027O1N046 (séance du 2026-10-29). Statuts de ce jour à reprendre à la prochaine mise à jour

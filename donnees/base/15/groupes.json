@@ -1,0 +1,117 @@
+[
+ {
+  "abrev": "FI",
+  "nom": "La France insoumise",
+  "couleur": "#ED302C",
+  "position": "Opposition",
+  "organes": [
+   "PO730958"
+  ],
+  "deputes": 17
+ },
+ {
+  "abrev": "GDR",
+  "nom": "Gauche démocrate et républicaine",
+  "couleur": "#A41914",
+  "position": "Opposition",
+  "organes": [
+   "PO730940"
+  ],
+  "deputes": 15
+ },
+ {
+  "abrev": "SOC",
+  "nom": "Socialistes et apparentés",
+  "couleur": "#D46CA9",
+  "position": "Opposition",
+  "organes": [
+   "PO758835",
+   "PO730946"
+  ],
+  "deputes": 28
+ },
+ {
+  "abrev": "EDS",
+  "nom": "Écologie Démocratie Solidarité",
+  "couleur": "#3A673E",
+  "position": "Minoritaire",
+  "organes": [
+   "PO771789"
+  ]
+ },
+ {
+  "abrev": "LT",
+  "nom": "Libertés et Territoires",
+  "couleur": "#66BF74",
+  "position": "Opposition",
+  "organes": [
+   "PO759900"
+  ],
+  "deputes": 18
+ },
+ {
+  "abrev": "LAREM",
+  "nom": "La République en Marche",
+  "couleur": "#702A82",
+  "position": "Majoritaire",
+  "organes": [
+   "PO730964"
+  ],
+  "deputes": 268
+ },
+ {
+  "abrev": "DEM",
+  "nom": "Mouvement Démocrate (MoDem) et Démocrates apparentés",
+  "couleur": "#F26D22",
+  "position": "Minoritaire",
+  "organes": [
+   "PO774834",
+   "PO730970"
+  ],
+  "deputes": 57
+ },
+ {
+  "abrev": "AGIR-E",
+  "nom": "Agir ensemble",
+  "couleur": "#C7C034",
+  "position": "Minoritaire",
+  "organes": [
+   "PO771923"
+  ],
+  "deputes": 22
+ },
+ {
+  "abrev": "UDI-I",
+  "nom": "UDI et Indépendants",
+  "couleur": "#94B7E1",
+  "position": "Opposition",
+  "organes": [
+   "PO767217",
+   "PO765636",
+   "PO771889",
+   "PO744425",
+   "PO730952"
+  ],
+  "deputes": 19
+ },
+ {
+  "abrev": "LR",
+  "nom": "Les Républicains",
+  "couleur": "#1C2EFA",
+  "position": "Opposition",
+  "organes": [
+   "PO730934"
+  ],
+  "deputes": 101
+ },
+ {
+  "abrev": "NI",
+  "nom": "Non inscrit",
+  "couleur": "#8D949A",
+  "position": null,
+  "organes": [
+   "PO723569"
+  ],
+  "deputes": 23
+ }
+]

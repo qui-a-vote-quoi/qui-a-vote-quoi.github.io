@@ -1981,8 +1981,8 @@
    "promulgation": null,
    "numeroLoi": null,
    "conseilConstitutionnel": null,
-   "derniereEtape": "AN2-DEPOT",
-   "dateDerniereEtape": "2026-06-17"
+   "derniereEtape": "CMP-SAISIE",
+   "dateDerniereEtape": "2026-10-29"
   },
   "resume": null,
   "arguments": null,
@@ -2542,7 +2542,7 @@
    "type": "senat"
   },
   "statut": "rejete",
-  "scrutin": null,
+  "scrutin": "VTANR5L17V7386",
   "inverse": false,
   "suite": {
    "promulgation": null,
@@ -3317,6 +3317,56 @@
   },
   "statut": "adopte",
   "scrutin": null,
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-10-29"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54901",
+  "origine": "niche",
+  "date": "2026-10-29",
+  "titre": "Créer un corps de fonctionnaires de catégorie B pour les accompagnants d’élèves en situation de handicap",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LFI-NFP",
+   "acteur": "PA795228"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V9203",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-DEBATS-SEANCE",
+   "dateDerniereEtape": "2026-10-29"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L17N54898",
+  "origine": "niche",
+  "date": "2026-10-29",
+  "titre": "Créer un parcours de soins intégralement pris en charge par la sécurité sociale pour toutes les victimes de violences sexuelles",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LFI-NFP",
+   "acteur": "PA842187"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L17V9241",
   "inverse": false,
   "suite": {
    "promulgation": null,

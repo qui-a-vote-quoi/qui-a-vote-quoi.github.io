@@ -1,0 +1,113 @@
+[
+ {
+  "abrev": "LFI-NUPES",
+  "nom": "La France insoumise - Nouvelle Union Populaire écologique et sociale",
+  "couleur": "#E42313",
+  "position": "Opposition",
+  "organes": [
+   "PO800490"
+  ],
+  "deputes": 75
+ },
+ {
+  "abrev": "GDR-NUPES",
+  "nom": "Gauche démocrate et républicaine - NUPES",
+  "couleur": "#991414",
+  "position": "Opposition",
+  "organes": [
+   "PO800502"
+  ],
+  "deputes": 22
+ },
+ {
+  "abrev": "ECOLO",
+  "nom": "Écologiste - NUPES",
+  "couleur": "#77AA79",
+  "position": "Opposition",
+  "organes": [
+   "PO800526"
+  ],
+  "deputes": 21
+ },
+ {
+  "abrev": "SOC",
+  "nom": "Socialistes et apparentés",
+  "couleur": "#DF84B5",
+  "position": "Opposition",
+  "organes": [
+   "PO830170",
+   "PO800496"
+  ],
+  "deputes": 31
+ },
+ {
+  "abrev": "LIOT",
+  "nom": "Libertés, Indépendants, Outre-mer et Territoires",
+  "couleur": "#F8D434",
+  "position": "Opposition",
+  "organes": [
+   "PO800532"
+  ],
+  "deputes": 22
+ },
+ {
+  "abrev": "RE",
+  "nom": "Renaissance",
+  "couleur": "#61468F",
+  "position": "Majoritaire",
+  "organes": [
+   "PO800538"
+  ],
+  "deputes": 169
+ },
+ {
+  "abrev": "DEM",
+  "nom": "Démocrate (MoDem et Indépendants)",
+  "couleur": "#CE5215",
+  "position": "Minoritaire",
+  "organes": [
+   "PO800484"
+  ],
+  "deputes": 50
+ },
+ {
+  "abrev": "HOR",
+  "nom": "Horizons et apparentés",
+  "couleur": "#32B3CA",
+  "position": "Minoritaire",
+  "organes": [
+   "PO800514"
+  ],
+  "deputes": 31
+ },
+ {
+  "abrev": "LR",
+  "nom": "Les Républicains",
+  "couleur": "#4565AD",
+  "position": "Opposition",
+  "organes": [
+   "PO800508"
+  ],
+  "deputes": 61
+ },
+ {
+  "abrev": "RN",
+  "nom": "Rassemblement National",
+  "couleur": "#35495E",
+  "position": "Opposition",
+  "organes": [
+   "PO800520"
+  ],
+  "deputes": 88
+ },
+ {
+  "abrev": "NI",
+  "nom": "Non inscrit",
+  "couleur": "#8D949A",
+  "position": null,
+  "organes": [
+   "PO793087"
+  ],
+  "deputes": 7
+ }
+]

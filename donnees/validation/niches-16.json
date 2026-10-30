@@ -1,0 +1,107 @@
+[
+ {
+  "date": "2022-10-06",
+  "groupe": "DEM",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2022-11-24",
+  "groupe": "LFI-NUPES",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2022-12-01",
+  "groupe": "LR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2023-01-12",
+  "groupe": "RN",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2023-01-19",
+  "groupe": "RE",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2023-02-09",
+  "groupe": "SOC",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2023-03-02",
+  "groupe": "HOR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2023-04-06",
+  "groupe": "ECOLO",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2023-05-04",
+  "groupe": "GDR-NUPES",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2023-05-11",
+  "groupe": "RE",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2023-06-08",
+  "groupe": "LIOT",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2023-10-12",
+  "groupe": "RN",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2023-11-23",
+  "groupe": "RE",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2023-11-30",
+  "groupe": "LFI-NUPES",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2023-12-07",
+  "groupe": "LR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2024-01-18",
+  "groupe": "DEM",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2024-02-01",
+  "groupe": "LR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2024-02-29",
+  "groupe": "SOC",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2024-03-14",
+  "groupe": "HOR",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2024-04-04",
+  "groupe": "ECOLO",
+  "statut": "a_valider"
+ },
+ {
+  "date": "2024-05-30",
+  "groupe": "GDR-NUPES",
+  "statut": "a_valider"
+ }
+]

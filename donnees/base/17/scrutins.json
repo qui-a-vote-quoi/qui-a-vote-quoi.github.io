@@ -10087,6 +10087,103 @@
    }
   ]
  },
+ "VTANR5L17V7386": {
+  "numero": 7386,
+  "date": "2026-06-11",
+  "type": "SPO",
+  "titre": "l'article premier de la proposition de loi visant à lever dans les territoires d'outre-mer l'interdiction de recherche, d'exploration et d'exploitation des hydrocarbures (première lecture).",
+  "sort": "rejeté",
+  "pour": 64,
+  "contre": 74,
+  "abst": 1,
+  "seance": "RUANR5L17S2026IDS30683",
+  "groupes": [
+   {
+    "g": "RN",
+    "m": 122,
+    "pour": 38,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "EPR",
+    "m": 91,
+    "pour": 2,
+    "contre": 15,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NFP",
+    "m": 71,
+    "pour": 1,
+    "contre": 29,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 68,
+    "pour": 1,
+    "contre": 10,
+    "abst": 1
+   },
+   {
+    "g": "DR",
+    "m": 48,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOS",
+    "m": 38,
+    "pour": 0,
+    "contre": 17,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 37,
+    "pour": 2,
+    "contre": 3,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 35,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 23,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR",
+    "m": 17,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "UDR",
+    "m": 17,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 10,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
  "VTANR5L17V7397": {
   "numero": 7397,
   "date": "2026-06-11",
@@ -12798,6 +12895,200 @@
     "g": "NI",
     "m": 11,
     "pour": 11,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L17V9203": {
+  "numero": 9203,
+  "date": "2026-10-29",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à créer un corps de fonctionnaires de catégorie B pour les accompagnants d’élèves en situation de handicap (première lecture).",
+  "sort": "adopté",
+  "pour": 166,
+  "contre": 16,
+  "abst": 123,
+  "seance": "RUANR5L17S2027IDS30968",
+  "groupes": [
+   {
+    "g": "RN",
+    "m": 121,
+    "pour": 0,
+    "contre": 1,
+    "abst": 79
+   },
+   {
+    "g": "EPR",
+    "m": 90,
+    "pour": 0,
+    "contre": 6,
+    "abst": 23
+   },
+   {
+    "g": "LFI-NFP",
+    "m": 70,
+    "pour": 68,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 68,
+    "pour": 41,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DR",
+    "m": 47,
+    "pour": 7,
+    "contre": 0,
+    "abst": 3
+   },
+   {
+    "g": "ECOS",
+    "m": 38,
+    "pour": 34,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 37,
+    "pour": 0,
+    "contre": 7,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 35,
+    "pour": 0,
+    "contre": 2,
+    "abst": 8
+   },
+   {
+    "g": "LIOT",
+    "m": 23,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR",
+    "m": 17,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "UDR",
+    "m": 17,
+    "pour": 0,
+    "contre": 0,
+    "abst": 10
+   },
+   {
+    "g": "NI",
+    "m": 11,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L17V9241": {
+  "numero": 9241,
+  "date": "2026-10-29",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à créer un parcours de soins intégralement pris en charge par la sécurité sociale pour toutes les victimes de violences sexuelles (première lecture).",
+  "sort": "adopté",
+  "pour": 152,
+  "contre": 5,
+  "abst": 110,
+  "seance": "RUANR5L17S2027IDS30969",
+  "groupes": [
+   {
+    "g": "RN",
+    "m": 121,
+    "pour": 0,
+    "contre": 0,
+    "abst": 74
+   },
+   {
+    "g": "EPR",
+    "m": 90,
+    "pour": 0,
+    "contre": 1,
+    "abst": 11
+   },
+   {
+    "g": "LFI-NFP",
+    "m": 70,
+    "pour": 68,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 68,
+    "pour": 36,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DR",
+    "m": 47,
+    "pour": 1,
+    "contre": 0,
+    "abst": 6
+   },
+   {
+    "g": "ECOS",
+    "m": 38,
+    "pour": 30,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 37,
+    "pour": 2,
+    "contre": 4,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 35,
+    "pour": 0,
+    "contre": 0,
+    "abst": 9
+   },
+   {
+    "g": "LIOT",
+    "m": 23,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "UDR",
+    "m": 17,
+    "pour": 0,
+    "contre": 0,
+    "abst": 10
+   },
+   {
+    "g": "GDR",
+    "m": 17,
+    "pour": 14,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 11,
+    "pour": 0,
     "contre": 0,
     "abst": 0
    }

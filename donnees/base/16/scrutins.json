@@ -1,0 +1,8552 @@
+{
+ "VTANR5L16V81": {
+  "numero": 81,
+  "date": "2022-07-21",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi portant mesures d'urgence pour la protection du pouvoir d'achat (première lecture).",
+  "sort": "adopté",
+  "pour": 341,
+  "contre": 116,
+  "abst": 21,
+  "seance": "RUANR5L16S2022IDS26212",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 172,
+    "pour": 136,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 78,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 74,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 54,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 48,
+    "pour": 37,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 3,
+    "abst": 17
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 26,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 21,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 18,
+    "abst": 4
+   },
+   {
+    "g": "LIOT",
+    "m": 16,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 9,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V180": {
+  "numero": 180,
+  "date": "2022-07-26",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi de finances rectificative pour 2022 (première lecture).",
+  "sort": "adopté",
+  "pour": 293,
+  "contre": 146,
+  "abst": 16,
+  "seance": "RUANR5L16S2022IDS26216",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 172,
+    "pour": 160,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 74,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 54,
+    "contre": 0,
+    "abst": 6
+   },
+   {
+    "g": "DEM",
+    "m": 48,
+    "pour": 40,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 31,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 28,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 23,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 18,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 16,
+    "pour": 7,
+    "contre": 0,
+    "abst": 8
+   },
+   {
+    "g": "NI",
+    "m": 9,
+    "pour": 4,
+    "contre": 0,
+    "abst": 2
+   }
+  ]
+ },
+ "VTANR5L16V186": {
+  "numero": 186,
+  "date": "2022-08-03",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi portant mesures d'urgence pour la protection du pouvoir d'achat (texte de la commission paritaire).",
+  "sort": "adopté",
+  "pour": 395,
+  "contre": 112,
+  "abst": 36,
+  "seance": "RUANR5L16S2022IDS26237",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 172,
+    "pour": 161,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 87,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 75,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 61,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 48,
+    "pour": 44,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 0,
+    "abst": 29
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 26,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 21,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 16,
+    "abst": 1
+   },
+   {
+    "g": "LIOT",
+    "m": 16,
+    "pour": 10,
+    "contre": 0,
+    "abst": 6
+   },
+   {
+    "g": "NI",
+    "m": 9,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V191": {
+  "numero": 191,
+  "date": "2022-08-04",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi de finances rectificative pour 2022 (texte de la commission mixte paritaire).",
+  "sort": "adopté",
+  "pour": 292,
+  "contre": 120,
+  "abst": 98,
+  "seance": "RUANR5L16S2022IDS26244",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 172,
+    "pour": 163,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 0,
+    "contre": 0,
+    "abst": 85
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 72,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 46,
+    "contre": 0,
+    "abst": 5
+   },
+   {
+    "g": "DEM",
+    "m": 48,
+    "pour": 45,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 21,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 28,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 20,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 7,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 16,
+    "pour": 6,
+    "contre": 0,
+    "abst": 6
+   },
+   {
+    "g": "NI",
+    "m": 9,
+    "pour": 4,
+    "contre": 0,
+    "abst": 2
+   }
+  ]
+ },
+ "VTANR5L16V225": {
+  "numero": 225,
+  "date": "2022-10-06",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à lutter contre les plastiques dangereux pour l'environnement et la santé (première lecture).",
+  "sort": "adopté",
+  "pour": 135,
+  "contre": 2,
+  "abst": 30,
+  "seance": "RUANR5L16S2023IDS26383",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 49,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 0,
+    "contre": 0,
+    "abst": 25
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 17,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 4,
+    "contre": 2,
+    "abst": 5
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 37,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 9,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V228": {
+  "numero": 228,
+  "date": "2022-10-06",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à limiter l'engrillagement des espaces naturels et à protéger la propriété privée (première lecture).",
+  "sort": "adopté",
+  "pour": 90,
+  "contre": 0,
+  "abst": 1,
+  "seance": "RUANR5L16S2023IDS26384",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 28,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 11,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 33,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V233": {
+  "numero": 233,
+  "date": "2022-10-06",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi relative à la charge fiscale de la pension alimentaire (première lecture).",
+  "sort": "adopté",
+  "pour": 45,
+  "contre": 1,
+  "abst": 5,
+  "seance": "RUANR5L16S2023IDS26385",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 0,
+    "contre": 1,
+    "abst": 1
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 26,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 0,
+    "contre": 0,
+    "abst": 3
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 0,
+    "abst": 1
+   }
+  ]
+ },
+ "VTANR5L16V236": {
+  "numero": 236,
+  "date": "2022-10-11",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi portant mesures d'urgence relatives au fonctionnement du marché de travail en vue du plein emploi (première lecture).",
+  "sort": "adopté",
+  "pour": 303,
+  "contre": 249,
+  "abst": 11,
+  "seance": "RUANR5L16S2023IDS26388",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 166,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 0,
+    "contre": 87,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 73,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 58,
+    "contre": 0,
+    "abst": 3
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 47,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 31,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 30,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 23,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 21,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 2,
+    "contre": 12,
+    "abst": 6
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 2,
+    "abst": 2
+   }
+  ]
+ },
+ "VTANR5L16V361": {
+  "numero": 361,
+  "date": "2022-10-25",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi de programmation des finances publiques pour les années 2023 à 2027 (première lecture).",
+  "sort": "rejeté",
+  "pour": 243,
+  "contre": 309,
+  "abst": 5,
+  "seance": "RUANR5L16S2023IDS26460",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 165,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 1,
+    "contre": 83,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 72,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 0,
+    "contre": 58,
+    "abst": 3
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 49,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 30,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 28,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 23,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 21,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 0,
+    "contre": 18,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 4,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V557": {
+  "numero": 557,
+  "date": "2022-11-08",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi de finances rectificative pour 2022 (première lecture).",
+  "sort": "adopté",
+  "pour": 181,
+  "contre": 137,
+  "abst": 42,
+  "seance": "RUANR5L16S2023IDS26555",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 104,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 0,
+    "contre": 52,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 65,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 1,
+    "contre": 0,
+    "abst": 17
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 40,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 0,
+    "abst": 16
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 26,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 10,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 10,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 10,
+    "contre": 0,
+    "abst": 8
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 0,
+    "abst": 1
+   }
+  ]
+ },
+ "VTANR5L16V623": {
+  "numero": 623,
+  "date": "2022-11-22",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi d'orientation et de programmation du ministère de l'intérieur (première lecture).",
+  "sort": "adopté",
+  "pour": 419,
+  "contre": 116,
+  "abst": 35,
+  "seance": "RUANR5L16S2023IDS26540",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 169,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 88,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 71,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 62,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 50,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 0,
+    "abst": 31
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 30,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 23,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 22,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 16,
+    "contre": 0,
+    "abst": 4
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V629": {
+  "numero": 629,
+  "date": "2022-11-24",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi constitutionnelle visant à protéger et à garantir le droit fondamental à l'interruption volontaire de grossesse (première lecture).",
+  "sort": "adopté",
+  "pour": 337,
+  "contre": 32,
+  "abst": 18,
+  "seance": "RUANR5L16S2023IDS26544",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 98,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 38,
+    "contre": 23,
+    "abst": 13
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 71,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 13,
+    "contre": 7,
+    "abst": 2
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 31,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 19,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 20,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 20,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 16,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 10,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 1,
+    "contre": 1,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V652": {
+  "numero": 652,
+  "date": "2022-11-30",
+  "type": "SPS",
+  "titre": "la proposition de résolution affirmant le soutien de l'Assemblée nationale à l'Ukraine et condamnant la guerre menée par la Fédération de Russie (art. 34-1 de la Constitution).",
+  "sort": "adopté",
+  "pour": 303,
+  "contre": 1,
+  "abst": 95,
+  "seance": "RUANR5L16S2023IDS26562",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 130,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 0,
+    "contre": 0,
+    "abst": 67
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 1,
+    "abst": 28
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 43,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 48,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 30,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 25,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V654": {
+  "numero": 654,
+  "date": "2022-12-01",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à calculer la retraite de base des non-salariés agricoles en fonction de leurs seules vingt-cinq meilleures années de revenus (première lecture).",
+  "sort": "adopté",
+  "pour": 238,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2023IDS26563",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 61,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 46,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 21,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 44,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 29,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 19,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V657": {
+  "numero": 657,
+  "date": "2022-12-01",
+  "type": "SPO",
+  "titre": "l'amendement de suppression n° 3 de M. Kerbrat et les amendements identiques suivants à l'article premier de la proposition de loi portant création d'une juridiction spécialisée dans l'expulsion des étrangers délinquants (première lecture).",
+  "sort": "adopté",
+  "pour": 82,
+  "contre": 41,
+  "abst": 0,
+  "seance": "RUANR5L16S2023IDS26564",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 39,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 0,
+    "contre": 19,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 14,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 0,
+    "contre": 22,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 13,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V658": {
+  "numero": 658,
+  "date": "2022-12-01",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi portant création d'une juridiction spécialisée aux violences intrafamiliales (première lecture).",
+  "sort": "adopté",
+  "pour": 41,
+  "contre": 40,
+  "abst": 1,
+  "seance": "RUANR5L16S2023IDS26565",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 0,
+    "contre": 29,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 89,
+    "pour": 13,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 14,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 0,
+    "contre": 6,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 1,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 0,
+    "contre": 5,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V671": {
+  "numero": 671,
+  "date": "2022-12-07",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi d'orientation et de programmation du ministère de l'intérieur (texte de la commission mixte paritaire).",
+  "sort": "adopté",
+  "pour": 365,
+  "contre": 102,
+  "abst": 28,
+  "seance": "RUANR5L16S2023IDS26601",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 151,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 74,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 65,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 54,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 47,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 30,
+    "pour": 0,
+    "contre": 0,
+    "abst": 26
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 23,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 16,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 21,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 13,
+    "contre": 0,
+    "abst": 2
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V823": {
+  "numero": 823,
+  "date": "2023-01-10",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi relatif à l'accélération de la production d'énergies renouvelables (première lecture).",
+  "sort": "adopté",
+  "pour": 286,
+  "contre": 238,
+  "abst": 35,
+  "seance": "RUANR5L16S2023IDS26678",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 166,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 87,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 0,
+    "contre": 70,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 1,
+    "contre": 56,
+    "abst": 4
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 50,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 30,
+    "pour": 28,
+    "contre": 0,
+    "abst": 2
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 23,
+    "contre": 0,
+    "abst": 5
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 0,
+    "abst": 22
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 21,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 18,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 0,
+    "contre": 2,
+    "abst": 1
+   }
+  ]
+ },
+ "VTANR5L16V824": {
+  "numero": 824,
+  "date": "2023-01-12",
+  "type": "SPO",
+  "titre": "l'amendement de suppression n° 1 de M. Guedj et les amendements identiques suivants à l'article premier de la proposition de loi visant à favoriser et inciter les entreprises à augmenter les salaires nets de 10% (première lecture).",
+  "sort": "adopté",
+  "pour": 124,
+  "contre": 85,
+  "abst": 6,
+  "seance": "RUANR5L16S2023IDS26684",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 63,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 84,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 16,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 0,
+    "contre": 0,
+    "abst": 5
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 16,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 30,
+    "pour": 9,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 1,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 0,
+    "contre": 1,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V827": {
+  "numero": 827,
+  "date": "2023-01-12",
+  "type": "SPO",
+  "titre": "l'amendement de suppression n° 1 de Mme Belluco et les amendements identiques suivants à l'article premier de la proposition de loi visant à supprimer les zones à faibles émissions mobilité (première lecture).",
+  "sort": "adopté",
+  "pour": 124,
+  "contre": 94,
+  "abst": 1,
+  "seance": "RUANR5L16S2023IDS26685",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 77,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 85,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 0,
+    "contre": 7,
+    "abst": 1
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 18,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 30,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 14,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 0,
+    "contre": 2,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V829": {
+  "numero": 829,
+  "date": "2023-01-12",
+  "type": "SPO",
+  "titre": "l'amendement de suppression n° 1 de M. Aviragnet et les amendements identiques suivants à l'article unique de la proposition de loi visant à étendre le droit de visite des parlementaires et parlementaires européens élus en France aux établissements sociaux et médico sociaux (première lecture).",
+  "sort": "adopté",
+  "pour": 100,
+  "contre": 90,
+  "abst": 3,
+  "seance": "RUANR5L16S2023IDS26685",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 63,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 87,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 2,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 11,
+    "contre": 1,
+    "abst": 2
+   },
+   {
+    "g": "SOC",
+    "m": 30,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 9,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 0,
+    "contre": 1,
+    "abst": 1
+   }
+  ]
+ },
+ "VTANR5L16V830": {
+  "numero": 830,
+  "date": "2023-01-12",
+  "type": "SPO",
+  "titre": "l'amendement de suppression n° 1 de M. Echaniz et les amendements identiques suivants à l'article unique de la proposition de loi visant à instituer dans les écoles et collèges publics le port d'une tenue uniforme aux couleurs de l'établissement scolaire (première lecture).",
+  "sort": "adopté",
+  "pour": 105,
+  "contre": 91,
+  "abst": 5,
+  "seance": "RUANR5L16S2023IDS26685",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 59,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 1,
+    "contre": 86,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 0,
+    "contre": 3,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 9,
+    "contre": 1,
+    "abst": 4
+   },
+   {
+    "g": "SOC",
+    "m": 30,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 5,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 1,
+    "contre": 1,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V875": {
+  "numero": 875,
+  "date": "2023-01-19",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi portant amélioration de l'accès aux soins par la confiance aux professionnels de santé (première lecture).",
+  "sort": "adopté",
+  "pour": 73,
+  "contre": 0,
+  "abst": 15,
+  "seance": "RUANR5L16S2023IDS26693",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 62,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 0,
+    "abst": 7
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 0,
+    "contre": 0,
+    "abst": 7
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 30,
+    "pour": 0,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V876": {
+  "numero": 876,
+  "date": "2023-01-19",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à ouvrir le tiers financement à l'Etat, à ses établissements publics et aux collectivités territoriales pour favoriser les travaux de rénovation énergétique (première lecture).",
+  "sort": "adopté",
+  "pour": 56,
+  "contre": 0,
+  "abst": 2,
+  "seance": "RUANR5L16S2023IDS26694",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 40,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 7,
+    "contre": 0,
+    "abst": 2
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 30,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V924": {
+  "numero": 924,
+  "date": "2023-02-09",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de résolution tendant à la création d'une commission d'enquête sur le coût de la vie dans les collectivités territoriales régies par les articles 73 et 74 de la Constitution.",
+  "sort": "adopté",
+  "pour": 263,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2023IDS26784",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 71,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 41,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 43,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 13,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 23,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 26,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 15,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 14,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V931": {
+  "numero": 931,
+  "date": "2023-02-09",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à assurer un repas à un euro pour tous les étudiants (première lecture).",
+  "sort": "rejeté",
+  "pour": 183,
+  "contre": 184,
+  "abst": 4,
+  "seance": "RUANR5L16S2023IDS26784",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 0,
+    "contre": 121,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 57,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 67,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 0,
+    "contre": 7,
+    "abst": 4
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 0,
+    "contre": 36,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 28,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 0,
+    "contre": 19,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 16,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 10,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 0,
+    "contre": 1,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V935": {
+  "numero": 935,
+  "date": "2023-02-09",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à protéger le groupe Électricité de France d'un démembrement (première lecture).",
+  "sort": "adopté",
+  "pour": 205,
+  "contre": 1,
+  "abst": 4,
+  "seance": "RUANR5L16S2023IDS26785",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 67,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 59,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 17,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 0,
+    "contre": 1,
+    "abst": 1
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 30,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 0,
+    "contre": 0,
+    "abst": 3
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 13,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V937": {
+  "numero": 937,
+  "date": "2023-02-09",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à mieux protéger et accompagner les enfants victimes et co-victimes de violences intrafamiliales (première lecture).",
+  "sort": "adopté",
+  "pour": 232,
+  "contre": 0,
+  "abst": 1,
+  "seance": "RUANR5L16S2023IDS26786",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 80,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 37,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 26,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 26,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 27,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V938": {
+  "numero": 938,
+  "date": "2023-02-09",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à renforcer l'ordonnance de protection (première lecture).",
+  "sort": "adopté",
+  "pour": 145,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2023IDS26786",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 48,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 15,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 13,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 14,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 27,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 10,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1108": {
+  "numero": 1108,
+  "date": "2023-03-02",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à instaurer une majorité numérique et à lutter contre la haine en ligne (première lecture).",
+  "sort": "adopté",
+  "pour": 82,
+  "contre": 2,
+  "abst": 0,
+  "seance": "RUANR5L16S2023IDS26845",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 18,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 15,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 2,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 7,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 25,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1114": {
+  "numero": 1114,
+  "date": "2023-03-02",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à renforcer la protection des familles d'enfants atteints d'une maladie ou d'un handicap ou victimes d'un accident d'une particulière gravité (première lecture).",
+  "sort": "adopté",
+  "pour": 79,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2023IDS26846",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 14,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 23,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1243": {
+  "numero": 1243,
+  "date": "2023-03-21",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi relatif à l’accélération des procédures liées à la construction de nouvelles installations nucléaires à proximité de sites nucléaires existants et au fonctionnement des installations existantes (première lecture).",
+  "sort": "adopté",
+  "pour": 402,
+  "contre": 130,
+  "abst": 8,
+  "seance": "RUANR5L16S2023IDS26886",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 161,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 81,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 0,
+    "contre": 70,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 59,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 45,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 31,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 29,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 10,
+    "contre": 4,
+    "abst": 4
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 0,
+    "contre": 22,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 14,
+    "contre": 1,
+    "abst": 3
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 3,
+    "contre": 1,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1305": {
+  "numero": 1305,
+  "date": "2023-03-28",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi relatif aux jeux Olympiques et Paralympiques de 2024 et portant diverses autres dispositions (première lecture).",
+  "sort": "adopté",
+  "pour": 400,
+  "contre": 93,
+  "abst": 54,
+  "seance": "RUANR5L16S2023IDS26940",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 167,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 77,
+    "contre": 0,
+    "abst": 2
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 0,
+    "contre": 72,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 59,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 49,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 0,
+    "abst": 31
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 28,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 3,
+    "contre": 0,
+    "abst": 17
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 0,
+    "contre": 20,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 14,
+    "contre": 0,
+    "abst": 4
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 3,
+    "contre": 1,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1361": {
+  "numero": 1361,
+  "date": "2023-04-04",
+  "type": "SPS",
+  "titre": "l'ensemble de la proposition de loi visant à protéger les logements contre l'occupation illicite (deuxième lecture).",
+  "sort": "adopté",
+  "pour": 385,
+  "contre": 147,
+  "abst": 8,
+  "seance": "RUANR5L16S2023IDS26962",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 159,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 84,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 0,
+    "contre": 74,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 58,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 38,
+    "contre": 1,
+    "abst": 2
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 29,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 29,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 1,
+    "contre": 20,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 0,
+    "contre": 22,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 12,
+    "contre": 0,
+    "abst": 5
+   },
+   {
+    "g": "NI",
+    "m": 6,
+    "pour": 4,
+    "contre": 1,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1387": {
+  "numero": 1387,
+  "date": "2023-04-06",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à mieux manger en soutenant les Français face à l'inflation et en favorisant l'accès à une alimentation saine (première lecture).",
+  "sort": "rejeté",
+  "pour": 121,
+  "contre": 138,
+  "abst": 6,
+  "seance": "RUANR5L16S2023IDS26967",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 0,
+    "contre": 92,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 34,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 45,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 0,
+    "contre": 12,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 1,
+    "contre": 27,
+    "abst": 1
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 13,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 0,
+    "contre": 6,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 22,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 1,
+    "contre": 0,
+    "abst": 4
+   },
+   {
+    "g": "NI",
+    "m": 6,
+    "pour": 0,
+    "contre": 1,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1402": {
+  "numero": 1402,
+  "date": "2023-04-06",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à mieux indemniser les dégâts sur les biens immobiliers causés par le retrait-gonflement de l'argile (première lecture).",
+  "sort": "adopté",
+  "pour": 115,
+  "contre": 9,
+  "abst": 53,
+  "seance": "RUANR5L16S2023IDS26967",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 2,
+    "contre": 8,
+    "abst": 35
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 28,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 74,
+    "pour": 28,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 16,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 2,
+    "contre": 1,
+    "abst": 14
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 0,
+    "contre": 0,
+    "abst": 4
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 22,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 6,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1456": {
+  "numero": 1456,
+  "date": "2023-05-04",
+  "type": "SPO",
+  "titre": "la proposition de résolution réaffirmant la nécessité d'une solution à deux États et condamnant l'institutionnalisation par l'État d'Israël d'un régime d'apartheid consécutif à sa politique coloniale (art. 34-1 de la Constitution).",
+  "sort": "rejeté",
+  "pour": 71,
+  "contre": 199,
+  "abst": 6,
+  "seance": "RUANR5L16S2023IDS27022",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 0,
+    "contre": 106,
+    "abst": 1
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 41,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 47,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 0,
+    "contre": 11,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 0,
+    "contre": 27,
+    "abst": 1
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 0,
+    "contre": 11,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 16,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 0,
+    "contre": 1,
+    "abst": 4
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 0,
+    "contre": 1,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1462": {
+  "numero": 1462,
+  "date": "2023-05-04",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi portant abrogation de l'obligation vaccinale contre la covid-19 dans les secteurs médicaux, paramédicaux et d'aide à la personne et visant à la réintégration des professionnels et étudiants suspendus (première lecture).",
+  "sort": "adopté",
+  "pour": 157,
+  "contre": 137,
+  "abst": 2,
+  "seance": "RUANR5L16S2023IDS27022",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 0,
+    "contre": 100,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 44,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 52,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 0,
+    "contre": 25,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 15,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 0,
+    "contre": 11,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 9,
+    "contre": 0,
+    "abst": 2
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 18,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1482": {
+  "numero": 1482,
+  "date": "2023-05-04",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à protéger le groupe Électricité de France d'un démembrement (deuxième lecture).",
+  "sort": "adopté",
+  "pour": 127,
+  "contre": 89,
+  "abst": 1,
+  "seance": "RUANR5L16S2023IDS27024",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 1,
+    "contre": 72,
+    "abst": 1
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 22,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 51,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 0,
+    "contre": 14,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 16,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 0,
+    "contre": 3,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 18,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 20,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1503": {
+  "numero": 1503,
+  "date": "2023-05-11",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à faciliter la mobilité internationale des alternants, pour un « Erasmus de l’apprentissage » (première lecture).",
+  "sort": "adopté",
+  "pour": 65,
+  "contre": 7,
+  "abst": 0,
+  "seance": "RUANR5L16S2023IDS27041",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 41,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 10,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 7,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1504": {
+  "numero": 1504,
+  "date": "2023-05-11",
+  "type": "SPO",
+  "titre": "la proposition de résolution visant à lutter contre les sur-transpositions en matière agricole (art. 34-1 de la Constitution).",
+  "sort": "adopté",
+  "pour": 68,
+  "contre": 21,
+  "abst": 1,
+  "seance": "RUANR5L16S2023IDS27041",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 39,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 16,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 12,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 2,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 7,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1533": {
+  "numero": 1533,
+  "date": "2023-05-16",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi relatif à l'accélération des procédures liées à la construction de nouvelles installations nucléaires à proximité de sites nucléaires existants et au fonctionnement des installations existantes (texte de la commission mixte paritaire).",
+  "sort": "adopté",
+  "pour": 399,
+  "contre": 100,
+  "abst": 39,
+  "seance": "RUANR5L16S2023IDS27059",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 159,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 84,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 72,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 59,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 40,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 0,
+    "abst": 30
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 29,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 23,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 10,
+    "contre": 4,
+    "abst": 4
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 15,
+    "contre": 0,
+    "abst": 5
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1588": {
+  "numero": 1588,
+  "date": "2023-05-17",
+  "type": "SPS",
+  "titre": "l'ensemble de la proposition de loi visant à renforcer la prévention et la lutte contre l'intensification et l'extension du risque incendie (première lecture).",
+  "sort": "adopté",
+  "pour": 197,
+  "contre": 0,
+  "abst": 30,
+  "seance": "RUANR5L16S2023IDS27062",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 85,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 54,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 0,
+    "abst": 30
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 10,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 18,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 9,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 9,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1762": {
+  "numero": 1762,
+  "date": "2023-05-31",
+  "type": "SPS",
+  "titre": "l'ensemble de la proposition de loi maintenant provisoirement un dispositif de plafonnement de revalorisation de la variation annuelle des indices locatifs (première lecture).",
+  "sort": "adopté",
+  "pour": 259,
+  "contre": 93,
+  "abst": 0,
+  "seance": "RUANR5L16S2023IDS27083",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 112,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 79,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 65,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 13,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 33,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 16,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 20,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 6,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 6,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1778": {
+  "numero": 1778,
+  "date": "2023-06-07",
+  "type": "SPS",
+  "titre": "l’ensemble du projet de loi relatif à la programmation militaire pour les années 2024 à 2030 et portant diverses dispositions intéressant la défense (première lecture).",
+  "sort": "adopté",
+  "pour": 408,
+  "contre": 87,
+  "abst": 53,
+  "seance": "RUANR5L16S2023IDS27161",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 162,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 87,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 70,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 61,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 49,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 0,
+    "abst": 31
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 29,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 1,
+    "abst": 20
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 16,
+    "abst": 1
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 16,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1797": {
+  "numero": 1797,
+  "date": "2023-06-08",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à renforcer la continuité territoriale en Outre-Mer (première lecture).",
+  "sort": "adopté",
+  "pour": 178,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2023IDS27179",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 64,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 15,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 16,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 20,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 13,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 20,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V1948": {
+  "numero": 1948,
+  "date": "2023-06-21",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi visant à donner à la douane les moyens de faire face aux nouvelles menaces (première lecture).",
+  "sort": "adopté",
+  "pour": 300,
+  "contre": 0,
+  "abst": 88,
+  "seance": "RUANR5L16S2023IDS27301",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 115,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 74,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 0,
+    "abst": 35
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 23,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 46,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 0,
+    "abst": 20
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 27,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 0,
+    "abst": 16
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 16
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 13,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V2046": {
+  "numero": 2046,
+  "date": "2023-06-27",
+  "type": "SPS",
+  "titre": "l'ensemble de la proposition de loi visant à renforcer l'accompagnement des élus locaux dans la mise en œuvre de la lutte contre l'artificialisation des sols (première lecture).",
+  "sort": "adopté",
+  "pour": 437,
+  "contre": 4,
+  "abst": 94,
+  "seance": "RUANR5L16S2023IDS27359",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 164,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 81,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 0,
+    "abst": 64
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 55,
+    "contre": 2,
+    "abst": 4
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 47,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 30,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 27,
+    "contre": 0,
+    "abst": 2
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 0,
+    "abst": 18
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 17,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 16,
+    "contre": 0,
+    "abst": 4
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 1,
+    "abst": 2
+   }
+  ]
+ },
+ "VTANR5L16V2356": {
+  "numero": 2356,
+  "date": "2023-07-18",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi d'orientation et de programmation du ministère de la justice 2023-2027 (première lecture).",
+  "sort": "adopté",
+  "pour": 388,
+  "contre": 111,
+  "abst": 45,
+  "seance": "RUANR5L16S2023IDS27499",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 163,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 87,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 63,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 52,
+    "contre": 0,
+    "abst": 10
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 49,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 14,
+    "abst": 17
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 29,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 16,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 14,
+    "abst": 6
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 7,
+    "contre": 4,
+    "abst": 10
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 1,
+    "contre": 0,
+    "abst": 2
+   }
+  ]
+ },
+ "VTANR5L16V2357": {
+  "numero": 2357,
+  "date": "2023-07-18",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi organique relatif à l'ouverture, la modernisation et la responsabilité du corps judiciaire (première lecture).",
+  "sort": "adopté",
+  "pour": 439,
+  "contre": 65,
+  "abst": 41,
+  "seance": "RUANR5L16S2023IDS27499",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 163,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 87,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 63,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 62,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 49,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 31,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 29,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 0,
+    "abst": 17
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 2,
+    "abst": 18
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 17,
+    "contre": 0,
+    "abst": 4
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 1,
+    "contre": 0,
+    "abst": 2
+   }
+  ]
+ },
+ "VTANR5L16V2444": {
+  "numero": 2444,
+  "date": "2023-07-20",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi relatif à l'accélération de la reconstruction et de la réfection des bâtiments dégradés ou détruits au cours des violences urbaines survenues du 27 juin au 5 juillet 2023 (première lecture).",
+  "sort": "adopté",
+  "pour": 260,
+  "contre": 87,
+  "abst": 59,
+  "seance": "RUANR5L16S2023IDS27505",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 109,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 84,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 0,
+    "abst": 54
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 24,
+    "contre": 1,
+    "abst": 3
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 40,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 20,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 26,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 14,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 18,
+    "contre": 0,
+    "abst": 2
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 1,
+    "contre": 2,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V2519": {
+  "numero": 2519,
+  "date": "2023-07-21",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi relatif à l'industrie verte (première lecture).",
+  "sort": "adopté",
+  "pour": 217,
+  "contre": 75,
+  "abst": 18,
+  "seance": "RUANR5L16S2023IDS27540",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 171,
+    "pour": 88,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 55,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 70,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 17,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 31,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 0,
+    "abst": 10
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 26,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 5,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 4
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 0,
+    "contre": 0,
+    "abst": 4
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V2717": {
+  "numero": 2717,
+  "date": "2023-10-10",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi pour le plein emploi (première lecture).",
+  "sort": "adopté",
+  "pour": 310,
+  "contre": 251,
+  "abst": 7,
+  "seance": "RUANR5L16S2024IDS27620",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 169,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 88,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 75,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 61,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 49,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 29,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 29,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 23,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 21,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 1,
+    "contre": 13,
+    "abst": 6
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 1,
+    "contre": 2,
+    "abst": 1
+   }
+  ]
+ },
+ "VTANR5L16V2758": {
+  "numero": 2758,
+  "date": "2023-10-12",
+  "type": "SPO",
+  "titre": "l'amendement de suppression n° 5 de M. Echaniz et les amendements identiques suivants à l'article unique de la proposition de loi portant interdiction de l'écriture dite « inclusive » dans les éditions, productions et publications scolaires et universitaires ainsi que dans les actes civils, administratifs et commerciaux (première lecture).",
+  "sort": "adopté",
+  "pour": 127,
+  "contre": 83,
+  "abst": 3,
+  "seance": "RUANR5L16S2024IDS27639",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 69,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 80,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 23,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 10,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 9,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 1,
+    "contre": 1,
+    "abst": 3
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 10,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 1,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V2796": {
+  "numero": 2796,
+  "date": "2023-10-17",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi visant à sécuriser et réguler l'espace numérique (première lecture).",
+  "sort": "adopté",
+  "pour": 360,
+  "contre": 77,
+  "abst": 124,
+  "seance": "RUANR5L16S2024IDS27624",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 167,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 1,
+    "abst": 84
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 75,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 61,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 49,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 31,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 30,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 0,
+    "abst": 16
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 22
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 21,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 1,
+    "contre": 1,
+    "abst": 2
+   }
+  ]
+ },
+ "VTANR5L16V3035": {
+  "numero": 3035,
+  "date": "2023-11-23",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à prolonger en 2024 l'utilisation des titres-restaurant pour les achats de produits alimentaires non directement consommables (première lecture).",
+  "sort": "adopté",
+  "pour": 117,
+  "contre": 1,
+  "abst": 1,
+  "seance": "RUANR5L16S2024IDS27841",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 36,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 17,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 13,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 8,
+    "contre": 1,
+    "abst": 1
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 21,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 9,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 9,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3045": {
+  "numero": 3045,
+  "date": "2023-11-23",
+  "type": "SPS",
+  "titre": "l'ensemble de la proposition de loi portant mesures pour bâtir la société du bien vieillir en France (première lecture).",
+  "sort": "adopté",
+  "pour": 116,
+  "contre": 31,
+  "abst": 0,
+  "seance": "RUANR5L16S2024IDS27842",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 66,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 17,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 29,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 2,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 9,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3081": {
+  "numero": 3081,
+  "date": "2023-11-30",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de résolution tendant à la création d'une commission d'enquête sur la gestion des risques naturels majeurs dans les territoires d'outre-mer.",
+  "sort": "adopté",
+  "pour": 160,
+  "contre": 47,
+  "abst": 14,
+  "seance": "RUANR5L16S2024IDS27865",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 0,
+    "contre": 43,
+    "abst": 8
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 38,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 68,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 6,
+    "contre": 4,
+    "abst": 5
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 13,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 11,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 9,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3101": {
+  "numero": 3101,
+  "date": "2023-11-30",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à lutter contre l'inflation par l'encadrement des marges des industries agroalimentaires, du raffinage et de la grande distribution et établissant un prix d'achat plancher des matières premières agricoles (première lecture).",
+  "sort": "rejeté",
+  "pour": 162,
+  "contre": 168,
+  "abst": 0,
+  "seance": "RUANR5L16S2024IDS27866",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 0,
+    "contre": 107,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 47,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 74,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 0,
+    "contre": 6,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 0,
+    "contre": 37,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 0,
+    "contre": 17,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 15,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 1,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3102": {
+  "numero": 3102,
+  "date": "2023-11-30",
+  "type": "SPO",
+  "titre": "l'amendement de suppression n° 14 de M. Terlier et les amendements identiques suivants à l'article unique de la proposition de loi visant à instaurer un moratoire sur le déploiement des méga-bassines (première lecture).",
+  "sort": "adopté",
+  "pour": 156,
+  "contre": 104,
+  "abst": 0,
+  "seance": "RUANR5L16S2024IDS27866",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 70,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 44,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 75,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 28,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 13,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 10,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 6,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3115": {
+  "numero": 3115,
+  "date": "2023-11-30",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi tendant à la réouverture des accueils physiques dans les services publics (première lecture).",
+  "sort": "adopté",
+  "pour": 122,
+  "contre": 29,
+  "abst": 37,
+  "seance": "RUANR5L16S2024IDS27867",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 1,
+    "contre": 2,
+    "abst": 35
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 21,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 72,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 2,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 0,
+    "contre": 24,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 0,
+    "contre": 3,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 0,
+    "contre": 0,
+    "abst": 1
+   }
+  ]
+ },
+ "VTANR5L16V3183": {
+  "numero": 3183,
+  "date": "2023-12-07",
+  "type": "SPO",
+  "titre": "la proposition de résolution appelant à la dénonciation, par les autorités françaises, de l’accord franco-algérien du 27 décembre 1968 (art. 34-1 de la Constitution).",
+  "sort": "rejeté",
+  "pour": 114,
+  "contre": 151,
+  "abst": 2,
+  "seance": "RUANR5L16S2024IDS27903",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 2,
+    "contre": 61,
+    "abst": 1
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 48,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 39,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 50,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 0,
+    "contre": 26,
+    "abst": 1
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 10,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 6,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 5,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 0,
+    "contre": 4,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3201": {
+  "numero": 3201,
+  "date": "2023-12-07",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à améliorer l'accès aux soins par la territorialisation et la formation (première lecture).",
+  "sort": "adopté",
+  "pour": 68,
+  "contre": 0,
+  "abst": 49,
+  "seance": "RUANR5L16S2024IDS27905",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 1,
+    "contre": 0,
+    "abst": 24
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 19,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 0,
+    "abst": 9
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 29,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 1,
+    "contre": 0,
+    "abst": 16
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3202": {
+  "numero": 3202,
+  "date": "2023-12-07",
+  "type": "SPO",
+  "titre": "la proposition de résolution visant à rendre effectifs les soins palliatifs sur tout le territoire national (art. 34-1 de la Constitution).",
+  "sort": "adopté",
+  "pour": 90,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2024IDS27905",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 17,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 29,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 15,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3213": {
+  "numero": 3213,
+  "date": "2023-12-19",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi pour contrôler l'immigration, améliorer l'intégration (texte de la commission mixte paritaire).",
+  "sort": "adopté",
+  "pour": 349,
+  "contre": 186,
+  "abst": 38,
+  "seance": "RUANR5L16S2024IDS28027",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 131,
+    "contre": 20,
+    "abst": 17
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 88,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 75,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 62,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 30,
+    "contre": 5,
+    "abst": 15
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 31,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 28,
+    "contre": 2,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 23,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 21,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 8,
+    "contre": 8,
+    "abst": 5
+   },
+   {
+    "g": "NI",
+    "m": 4,
+    "pour": 2,
+    "contre": 1,
+    "abst": 1
+   }
+  ]
+ },
+ "VTANR5L16V3216": {
+  "numero": 3216,
+  "date": "2024-01-18",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi relative à la mise en place et au fonctionnement de la commission d’évaluation de l’aide publique au développement instituée par la loi n° 2021-1031 du 4 août 2021 (première lecture).",
+  "sort": "adopté",
+  "pour": 93,
+  "contre": 0,
+  "abst": 11,
+  "seance": "RUANR5L16S2024IDS28004",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 33,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 0,
+    "abst": 10
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 38,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 0,
+    "contre": 0,
+    "abst": 1
+   }
+  ]
+ },
+ "VTANR5L16V3218": {
+  "numero": 3218,
+  "date": "2024-01-18",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à la généralisation du contrat à durée indéterminée à des fins d’employabilité (première lecture).",
+  "sort": "adopté",
+  "pour": 101,
+  "contre": 17,
+  "abst": 11,
+  "seance": "RUANR5L16S2024IDS28004",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 38,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 0,
+    "abst": 11
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 16,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 43,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 9,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 1,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3219": {
+  "numero": 3219,
+  "date": "2024-01-18",
+  "type": "SPO",
+  "titre": "la proposition de résolution appelant à accentuer les efforts pour favoriser l’accès de tous au logement (art. 34-1 de la Constitution).",
+  "sort": "adopté",
+  "pour": 65,
+  "contre": 6,
+  "abst": 20,
+  "seance": "RUANR5L16S2024IDS28005",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 22,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 0,
+    "abst": 13
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 6,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 0,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 35,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 0,
+    "contre": 0,
+    "abst": 5
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3220": {
+  "numero": 3220,
+  "date": "2024-01-18",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à assurer une justice patrimoniale au sein de la famille (première lecture).",
+  "sort": "adopté",
+  "pour": 78,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2024IDS28005",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 22,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 9,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 34,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 29,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 21,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3289": {
+  "numero": 3289,
+  "date": "2024-01-30",
+  "type": "SPS",
+  "titre": "l’ensemble du projet de loi constitutionnelle relatif à la liberté de recourir à l’interruption volontaire de grossesse (première lecture).",
+  "sort": "adopté",
+  "pour": 493,
+  "contre": 30,
+  "abst": 23,
+  "seance": "RUANR5L16S2024IDS28031",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 164,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 46,
+    "contre": 12,
+    "abst": 14
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 75,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 40,
+    "contre": 15,
+    "abst": 4
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 47,
+    "contre": 0,
+    "abst": 2
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 31,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 28,
+    "pour": 26,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 23,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 20,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 19,
+    "contre": 1,
+    "abst": 2
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 2,
+    "contre": 2,
+    "abst": 1
+   }
+  ]
+ },
+ "VTANR5L16V3332": {
+  "numero": 3332,
+  "date": "2024-02-01",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi encadrant l'intervention des cabinets de conseil privés dans les politiques publiques (première lecture).",
+  "sort": "adopté",
+  "pour": 66,
+  "contre": 5,
+  "abst": 17,
+  "seance": "RUANR5L16S2024IDS28036",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 31,
+    "contre": 1,
+    "abst": 2
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 0,
+    "abst": 12
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 3,
+    "contre": 0,
+    "abst": 2
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 9,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 28,
+    "pour": 0,
+    "contre": 4,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 6,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3333": {
+  "numero": 3333,
+  "date": "2024-02-01",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à relancer l'organisation des classes de découverte (première lecture).",
+  "sort": "adopté",
+  "pour": 47,
+  "contre": 0,
+  "abst": 15,
+  "seance": "RUANR5L16S2024IDS28037",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 21,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 0,
+    "abst": 7
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 2,
+    "contre": 0,
+    "abst": 3
+   },
+   {
+    "g": "HOR",
+    "m": 28,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 4,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 4
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3334": {
+  "numero": 3334,
+  "date": "2024-02-01",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à pérenniser les jardins d'enfants gérés par une collectivité publique ou bénéficiant de financements publics (première lecture).",
+  "sort": "adopté",
+  "pour": 38,
+  "contre": 4,
+  "abst": 1,
+  "seance": "RUANR5L16S2024IDS28037",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 170,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 51,
+    "pour": 0,
+    "contre": 4,
+    "abst": 1
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 28,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 23,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 5,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3373": {
+  "numero": 3373,
+  "date": "2024-02-29",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à protéger le groupe Électricité de France d'un démembrement (troisième lecture).",
+  "sort": "adopté",
+  "pour": 293,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2024IDS28085",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 78,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 59,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 52,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 15,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 31,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 17,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 6,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3374": {
+  "numero": 3374,
+  "date": "2024-02-29",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à renforcer le protection des mineurs et l'honorabilité dans le sport (première lecture).",
+  "sort": "adopté",
+  "pour": 207,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2024IDS28085",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 58,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 31,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 27,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 17,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 30,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 10,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 14,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 6,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3382": {
+  "numero": 3382,
+  "date": "2024-02-29",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à reconnaître la responsabilité de l'État et à indemniser les victimes du chlordécone (première lecture).",
+  "sort": "adopté",
+  "pour": 100,
+  "contre": 1,
+  "abst": 80,
+  "seance": "RUANR5L16S2024IDS28086",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 0,
+    "contre": 0,
+    "abst": 53
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 4,
+    "contre": 0,
+    "abst": 7
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 35,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 0,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 0,
+    "contre": 1,
+    "abst": 14
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 31,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 0,
+    "contre": 0,
+    "abst": 5
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 10,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 14,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 6,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3385": {
+  "numero": 3385,
+  "date": "2024-02-29",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à réduire et à encadrer les frais bancaires sur succession (première lecture).",
+  "sort": "adopté",
+  "pour": 112,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2024IDS28086",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 33,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 20,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 9,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 27,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 6,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3391": {
+  "numero": 3391,
+  "date": "2024-02-29",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à lutter contre les pénuries de médicaments (première lecture).",
+  "sort": "adopté",
+  "pour": 110,
+  "contre": 0,
+  "abst": 1,
+  "seance": "RUANR5L16S2024IDS28087",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 39,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 31,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 3,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 6,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3436": {
+  "numero": 3436,
+  "date": "2024-03-06",
+  "type": "SPS",
+  "titre": "l'ensemble de la proposition de loi portant reconnaissance de la Nation et réparation des préjudices subis par les personnes condamnées pour homosexualité entre 1942 et 1982 (première lecture).",
+  "sort": "adopté",
+  "pour": 331,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2024IDS28121",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 88,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 56,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 47,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 33,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 31,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 22,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 10,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 20,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 6,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3490": {
+  "numero": 3490,
+  "date": "2024-03-14",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à garantir le versement des pensions alimentaires aux enfants majeurs (première lecture).",
+  "sort": "adopté",
+  "pour": 102,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2024IDS28143",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 23,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 17,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 26,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 6,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3508": {
+  "numero": 3508,
+  "date": "2024-03-14",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à réduire l'impact environnemental de l'industrie textile (première lecture).",
+  "sort": "adopté",
+  "pour": 146,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2024IDS28144",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 34,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 28,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 20,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 13,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 10,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 26,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 6,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3512": {
+  "numero": 3512,
+  "date": "2024-03-14",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à renforcer la sécurité des professionnels de santé (première lecture).",
+  "sort": "adopté",
+  "pour": 81,
+  "contre": 0,
+  "abst": 8,
+  "seance": "RUANR5L16S2024IDS28144",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 25,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 21,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 0,
+    "abst": 3
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 5,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 3,
+    "contre": 0,
+    "abst": 3
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 23,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 2
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 6,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3546": {
+  "numero": 3546,
+  "date": "2024-03-19",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi relatif à l'organisation de la gouvernance de la sûreté nucléaire et de la radioprotection pour répondre au défi de la relance de la filière nucléaire (première lecture).",
+  "sort": "adopté",
+  "pour": 260,
+  "contre": 259,
+  "abst": 30,
+  "seance": "RUANR5L16S2024IDS28159",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 156,
+    "contre": 4,
+    "abst": 3
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 84,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 74,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 42,
+    "contre": 3,
+    "abst": 12
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 38,
+    "contre": 1,
+    "abst": 8
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 31,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 21,
+    "contre": 0,
+    "abst": 7
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 20,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 0,
+    "contre": 19,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 0,
+    "contre": 21,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 6,
+    "pour": 3,
+    "contre": 2,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3547": {
+  "numero": 3547,
+  "date": "2024-03-19",
+  "type": "SPS",
+  "titre": "l’ensemble du projet de loi organique modifiant la loi organique n° 2010-837 du 23 juillet 2010 relative à l’application du cinquième alinéa de l’article 13 de la Constitution (première lecture).",
+  "sort": "adopté",
+  "pour": 265,
+  "contre": 258,
+  "abst": 25,
+  "seance": "RUANR5L16S2024IDS28159",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 158,
+    "contre": 2,
+    "abst": 2
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 84,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 74,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 62,
+    "pour": 44,
+    "contre": 4,
+    "abst": 9
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 39,
+    "contre": 1,
+    "abst": 7
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 31,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 30,
+    "pour": 21,
+    "contre": 0,
+    "abst": 7
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 20,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 22,
+    "pour": 0,
+    "contre": 19,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 0,
+    "contre": 21,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 6,
+    "pour": 3,
+    "contre": 2,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3643": {
+  "numero": 3643,
+  "date": "2024-04-04",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à protéger la population des risques liés aux per- et polyfluoroalkylées (première lecture).",
+  "sort": "adopté",
+  "pour": 186,
+  "contre": 0,
+  "abst": 27,
+  "seance": "RUANR5L16S2024IDS28205",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 56,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 0,
+    "abst": 22
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 56,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 0,
+    "contre": 0,
+    "abst": 4
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 16,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 14,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 31,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 21,
+    "pour": 20,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 7,
+    "pour": 2,
+    "contre": 0,
+    "abst": 1
+   }
+  ]
+ },
+ "VTANR5L16V3653": {
+  "numero": 3653,
+  "date": "2024-04-04",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant à garantir un revenu digne aux agriculteurs et à accompagner la transition agricole (première lecture).",
+  "sort": "adopté",
+  "pour": 89,
+  "contre": 66,
+  "abst": 13,
+  "seance": "RUANR5L16S2024IDS28206",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 0,
+    "contre": 45,
+    "abst": 1
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 0,
+    "abst": 12
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 42,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 0,
+    "contre": 14,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 14,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 31,
+    "pour": 0,
+    "contre": 6,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 21,
+    "pour": 20,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 7,
+    "pour": 1,
+    "contre": 1,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3662": {
+  "numero": 3662,
+  "date": "2024-04-09",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi relatif à l’organisation de la gouvernance de la sûreté nucléaire et de la radioprotection pour répondre au défi de la relance de la filière nucléaire (texte de la commission paritaire).",
+  "sort": "adopté",
+  "pour": 340,
+  "contre": 173,
+  "abst": 30,
+  "seance": "RUANR5L16S2024IDS28224",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 151,
+    "contre": 2,
+    "abst": 4
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 82,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 73,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 43,
+    "contre": 6,
+    "abst": 11
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 37,
+    "contre": 0,
+    "abst": 7
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 31,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 31,
+    "pour": 23,
+    "contre": 0,
+    "abst": 3
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 22,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 1,
+    "contre": 15,
+    "abst": 5
+   },
+   {
+    "g": "ECOLO",
+    "m": 21,
+    "pour": 0,
+    "contre": 21,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 7,
+    "pour": 3,
+    "contre": 3,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3663": {
+  "numero": 3663,
+  "date": "2024-04-09",
+  "type": "SPS",
+  "titre": "l’ensemble du projet de loi organique modifiant la loi organique n° 2010-837 du 23 juillet 2010 relative à l’application du cinquième alinéa de l’article 13 de la Constitution (texte de la commission paritaire).",
+  "sort": "adopté",
+  "pour": 349,
+  "contre": 172,
+  "abst": 24,
+  "seance": "RUANR5L16S2024IDS28224",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 152,
+    "contre": 2,
+    "abst": 3
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 82,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 72,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 47,
+    "contre": 6,
+    "abst": 8
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 39,
+    "contre": 0,
+    "abst": 5
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 31,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 31,
+    "pour": 25,
+    "contre": 0,
+    "abst": 3
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 22,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 1,
+    "contre": 15,
+    "abst": 5
+   },
+   {
+    "g": "ECOLO",
+    "m": 21,
+    "pour": 0,
+    "contre": 21,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 7,
+    "pour": 3,
+    "contre": 3,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3725": {
+  "numero": 3725,
+  "date": "2024-05-14",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi constitutionnelle portant modification du corps électoral pour les élections au congrès et aux assemblées de province de la Nouvelle-Calédonie (première lecture).",
+  "sort": "adopté",
+  "pour": 351,
+  "contre": 153,
+  "abst": 3,
+  "seance": "RUANR5L16S2024IDS28357",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 146,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 76,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 73,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 53,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 39,
+    "contre": 1,
+    "abst": 2
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 30,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 31,
+    "pour": 30,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 22,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 5,
+    "contre": 9,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 21,
+    "pour": 0,
+    "contre": 18,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 7,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3966": {
+  "numero": 3966,
+  "date": "2024-05-28",
+  "type": "SPS",
+  "titre": "l'ensemble du projet de loi d'orientation pour la souveraineté alimentaire et agricole et le renouvellement des générations en agriculture (première lecture).",
+  "sort": "adopté",
+  "pour": 272,
+  "contre": 232,
+  "abst": 65,
+  "seance": "RUANR5L16S2024IDS28380",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 167,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 0,
+    "contre": 87,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 0,
+    "contre": 72,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 24,
+    "contre": 1,
+    "abst": 36
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 49,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 0,
+    "contre": 31,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 31,
+    "pour": 30,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 0,
+    "contre": 6,
+    "abst": 15
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 1,
+    "contre": 10,
+    "abst": 11
+   },
+   {
+    "g": "ECOLO",
+    "m": 21,
+    "pour": 0,
+    "contre": 21,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 7,
+    "pour": 1,
+    "contre": 4,
+    "abst": 2
+   }
+  ]
+ },
+ "VTANR5L16V3990": {
+  "numero": 3990,
+  "date": "2024-05-30",
+  "type": "SPO",
+  "titre": "la proposition de résolution visant à adapter et mutualiser nos politiques publiques au changement climatique, notamment à destination des villes côtières et insulaires (art. 34-1 de la Constitution).",
+  "sort": "adopté",
+  "pour": 167,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2024IDS28383",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 36,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 18,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 32,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 10,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 20,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 31,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 21,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 21,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 7,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3991": {
+  "numero": 3991,
+  "date": "2024-05-30",
+  "type": "SPO",
+  "titre": "la proposition de résolution portant sur la procédure de ratification de l'accord économique et commercial global entre le Canada et l'Union européenne (art. 34-1 de la Constitution).",
+  "sort": "adopté",
+  "pour": 151,
+  "contre": 4,
+  "abst": 65,
+  "seance": "RUANR5L16S2024IDS28383",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 1,
+    "contre": 1,
+    "abst": 45
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 28,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 45,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 6,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 1,
+    "contre": 1,
+    "abst": 13
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 23,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 31,
+    "pour": 5,
+    "contre": 2,
+    "abst": 6
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 21,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 21,
+    "pour": 15,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 7,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3992": {
+  "numero": 3992,
+  "date": "2024-05-30",
+  "type": "SPO",
+  "titre": "la proposition de résolution tendant à la création d'une commission d'enquête sur les causes de l'insuffisance, de la non-décence et de l'insalubrité du logement soical dans les départements et régions d'outre-mer.",
+  "sort": "adopté",
+  "pour": 81,
+  "contre": 0,
+  "abst": 12,
+  "seance": "RUANR5L16S2024IDS28383",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 1,
+    "contre": 0,
+    "abst": 8
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 10,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 19,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 0,
+    "contre": 0,
+    "abst": 4
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 14,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 31,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 21,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 21,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 7,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V3996": {
+  "numero": 3996,
+  "date": "2024-05-30",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi pour une meilleure réussite scolaire des jeunes ultramarins grâce à l'apprentissage des langues régionales (première lecture).",
+  "sort": "adopté",
+  "pour": 82,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2024IDS28384",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 20,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 10,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 31,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 17,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 3,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 21,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 7,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
+ "VTANR5L16V4000": {
+  "numero": 4000,
+  "date": "2024-05-30",
+  "type": "SPO",
+  "titre": "l'ensemble de la proposition de loi visant la prise en charge intégrale des soins liés au traitement du cancer du sein par l'assurance maladie (première lecture).",
+  "sort": "adopté",
+  "pour": 93,
+  "contre": 0,
+  "abst": 0,
+  "seance": "RUANR5L16S2024IDS28385",
+  "groupes": [
+   {
+    "g": "RE",
+    "m": 169,
+    "pour": 30,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "RN",
+    "m": 88,
+    "pour": 8,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LFI-NUPES",
+    "m": 75,
+    "pour": 11,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 61,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 50,
+    "pour": 6,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 31,
+    "pour": 12,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "HOR",
+    "m": 31,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "GDR-NUPES",
+    "m": 22,
+    "pour": 16,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LIOT",
+    "m": 22,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "ECOLO",
+    "m": 21,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 7,
+    "pour": 0,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ }
+}

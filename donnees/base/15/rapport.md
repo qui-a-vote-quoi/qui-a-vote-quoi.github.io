@@ -1,0 +1,153 @@
+# Base de la 15e législature
+
+Construite le 2026-10-30 à partir de l'open data de l'Assemblée nationale.
+
+## Chiffres
+
+- Groupes : 11
+- Niches : 45 (0 validées à la main, 45 à valider)
+- Textes au programme des niches : 295 — adopte : 102, rejete : 75, pas_examine : 52, commence : 51, renvoye : 14, retire : 1
+- Votes solennels sur des textes : 113 (écartés : déclarations du gouvernement : 11)
+- Textes dans la base : 280
+- Votes enregistrés dans la base : 243
+
+## Niches à valider
+
+Dans `donnees/validation/niches-15.json`, passer chaque niche à `valide` ou `rejete` après vérification.
+
+- 2017-11-30 : DEM
+- 2017-12-07 : UDI-I
+- 2018-01-18 : SOC
+- 2018-02-01 : FI
+- 2018-03-08 : GDR
+- 2018-04-05 : LR
+- 2018-05-17 : DEM
+- 2018-06-07 : LAREM
+- 2018-06-21 : LR
+- 2018-10-11 : LR
+- 2018-11-29 : DEM
+- 2018-12-06 : UDI-I
+- 2019-01-31 : SOC
+- 2019-02-21 : FI
+- 2019-03-07 : GDR
+- 2019-04-04 : LR
+- 2019-05-09 : DEM
+- 2019-06-20 : LR
+- 2019-10-10 : LR
+- 2019-11-28 : DEM
+- 2019-12-12 : SOC
+- 2020-01-30 : UDI-I
+- 2020-02-13 : LT
+- 2020-06-04 : FI
+- 2020-06-11 : LR
+- 2020-06-18 : GDR
+- 2020-06-25 : LR
+- 2020-07-16 : LAREM
+- 2020-10-08 : EDS
+- 2020-11-26 : AGIR-E
+- 2020-12-03 : LR
+- 2021-01-28 : DEM
+- 2021-02-18 : SOC
+- 2021-03-18 : LAREM
+- 2021-03-25 : UDI-I
+- 2021-05-06 : FI
+- 2021-06-17 : GDR
+- 2021-06-24 : DEM
+- 2021-10-07 : LR
+- 2021-11-25 : AGIR-E
+- 2021-12-02 : GDR
+- 2022-01-13 : FI
+- 2022-01-20 : SOC
+- 2022-02-03 : DEM
+- 2022-02-24 : LAREM
+
+## Points à vérifier
+
+- Niche du 2017-11-30 : « Société : reconnaissance de l'engagement associatif » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2018-01-18 : « Sortie de l'indivision successorale en outre-mer » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2018-02-01 : pas de dossier trouvé pour « proposition de loi sur le burn-out visant à faire reconnaître comme maladies professionnel »
+- Niche du 2018-05-17 : « Prestation de compensation du handicap » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2018-05-17 : « Expertise des comités de protection des personnes » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2018-06-07 : « Utilisation du téléphone portable dans les écoles et collèges » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2018-06-21 : « Droits des consommateurs en matière de démarchage téléphonique » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2018-10-11 : « Modèle français du don du sang » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2018-12-06 : « Encadrement du démarchage téléphonique » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2018-12-06 : « Amélioration de la santé visuelle des personnes âgées en perte d'autonomie » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2018-12-06 : pas de dossier trouvé pour « proposition de loi visant à encadrer le démarchage téléphonique et à lutter contre les app »
+- Niche du 2019-02-21 : pas de dossier trouvé pour « proposition de loi visant à protéger la population contre les dangers de la malbouffe »
+- Niche du 2019-02-21 : pas de dossier trouvé pour « proposition de loi visant à instaurer la possibilité de référendums d'initiative citoyenne »
+- Niche du 2019-02-21 : « Qualité nutritionnelle des aliments » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2019-03-07 : pas de dossier trouvé pour « proposition de loi visant à augmenter le salaire minimum interprofessionnel de croissance  »
+- Niche du 2019-04-04 : pas de dossier trouvé pour « proposition de loi constitutionnelle visant à lutter contre la sur-réglementation »
+- Niche du 2019-05-09 : « Activités agricoles et cultures marines en zones littorale et de montagne » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2019-05-09 : « Reconnaissance des proches aidants » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2019-05-09 : « Préenseignes » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2019-05-09 : « Sécurisation de l'actionnariat des entreprises publiques locales » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2019-05-09 : pas de dossier trouvé pour « proposition de loi relative aux pré-enseignes »
+- Niche du 2019-06-20 : pas de dossier trouvé pour « Discussion de la proposition de loi, adoptée par le Sénat, relative à plusieurs articles d »
+- Niche du 2019-11-28 : « Lutte contre le mitage des espaces forestiers en Île-de-France » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2019-11-28 : « Abrogation de lois obsolètes » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2019-11-28 : « Amélioration de la trésorerie des associations » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2019-11-28 : « Réduction du coût du foncier » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2019-11-28 : pas de dossier trouvé pour « la proposition de loi, en deuxième lecture, visant à améliorer la trésorerie des associati »
+- Niche du 2019-11-28 : pas de dossier trouvé pour « proposition de loi  visant à réduire le coût du foncier et à augmenter l'offre de logement »
+- Niche du 2019-12-12 : pas de dossier trouvé pour « projet de loi autorisant l’approbation de l’accord entre le Gouvernement de la République  »
+- Niche du 2019-12-12 : pas de dossier trouvé pour « projet de loi, adopté par le Sénat, relatif à la lutte contre le gaspillage et à l'économi »
+- Niche du 2019-12-12 : « Reconnaissance du crime d'écocide (2) » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2019-12-12 : « Lutte contre la désertification médicale et prévention » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2019-12-12 : pas de dossier trouvé pour « Discussion du projet de loi autorisant l’approbation de l’accord entre le Gouvernement de  »
+- Niche du 2020-01-30 : « Accompagnement des familles après le décès d'un enfant » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2020-01-30 : « Encadrement du démarchage téléphonique » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2020-01-30 : « Accès au marché du travail des personnes atteintes de maladies chroniques » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2020-01-30 : pas de dossier trouvé pour « proposition de loi, modifiée par le Sénat, visant à encadrer le démarchage téléphonique et »
+- Niche du 2020-06-04 : « Plafonnement des frais bancaires » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2020-06-04 : « Champ d’application des arrêtés de catastrophe naturelle et leur financement » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2020-06-11 : « Allègement des cotisations sociales à la charge des entreprises » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2020-06-11 : « Dispositif "zéro charge" pour l'embauche de jeunes de moins de 25 ans » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2020-06-11 : « Taux réduit de TVA pour l'hébergement touristique et la restauration » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2020-06-11 : pas de dossier trouvé pour « proposition de loi visant à exonérer de taxe sur la valeur ajoutée les masques de protecti »
+- Niche du 2020-06-11 : « Annulation des charges des entreprises le temps de la crise » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2020-06-11 : « Covid-19 : subventions aux PME et artisans du tourisme » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2020-06-11 : « Covid-19 : exonération de TVA des masques de protection et des gels hydro-alcool » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2020-06-18 : « Contribution des hauts revenus et patrimoines à l'effort de solidarité » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2020-06-18 : « Garantie salaire-formation au service de la transition de l’économie » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2020-06-25 : pas de dossier trouvé pour « proposition de loi visant à exonérer de taxe sur la valeur ajoutée les masques de protecti »
+- Niche du 2020-07-16 : « Règlement du budget 2019 » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2020-07-16 : « Dette sociale et autonomie (loi organique) » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2020-07-16 : pas de dossier trouvé pour « sur le rapport de la commission mixte paritaire, de la proposition de loi permettant d'off »
+- Niche du 2020-07-16 : « Dette sociale et autonomie » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2020-07-16 : pas de dossier trouvé pour « Discussion »
+- Niche du 2020-10-08 : pas de dossier trouvé pour « proposition de loi visant à renforcer le droit à l’avortement »
+- Niche du 2020-11-26 : pas de dossier trouvé pour « proposition de loi visant à promouvoir la France des accents »
+- Niche du 2020-12-03 : « Exclusion des étrangers en situation irrégulière de la tarification sociale dans » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2020-12-03 : pas de dossier trouvé pour « de la proposition de loi visant à raisonner le développement de l'éolien »
+- Niche du 2020-12-03 : pas de dossier trouvé pour « proposition de loi constitutionnelle, adoptée par le Sénat, visant à garantir la prééminen »
+- Niche du 2020-12-03 : pas de dossier trouvé pour « proposition de loi visant à raisonner le développement de l'éolien »
+- Niche du 2021-01-28 : « Simplifier l'accès des experts forestiers aux données cadastrales » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2021-02-18 : pas de dossier trouvé pour « proposition de loi visant à renforcer le droit à l'avortement »
+- Niche du 2021-02-18 : « Fonds d’indemnisation des victimes de la covid-19 » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2021-02-18 : pas de dossier trouvé pour « proposition de loi constitutionnelle visant à établir un meilleur équilibre entre pouvoirs »
+- Niche du 2021-02-18 : pas de dossier trouvé pour « proposition de loi organique visant à modifier le régime indemnitaire des membres du Conse »
+- Niche du 2021-02-18 : pas de dossier trouvé pour « proposition de loi visant à établir un meilleur équilibre entre pouvoirs constitutionnels »
+- Niche du 2021-02-18 : pas de dossier trouvé pour « proposition de loi visant à modifier le régime indemnitaire des membres du Conseil constit »
+- Niche du 2021-03-18 : « Améliorer le système de santé par la confiance et la simplification » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2021-03-25 : « Lutte fraude à l’identité dans le cadre des mineurs non accompagnés » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2021-05-06 : « Parrainages citoyens pour la candidature à l'élection présidentielle » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2021-05-06 : « Revenu de solidarité active pour les jeunes de 18 à 25 ans » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2021-05-06 : pas de dossier trouvé pour « proposition de loi organique instaurant une procédure de parrainages citoyens pour la cand »
+- Niche du 2021-06-24 : « Amélioration de la trésorerie des associations » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2021-06-24 : « Engagement associatif » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2021-06-24 : pas de dossier trouvé pour « proposition de loi, modifiée par le Sénat, visant à améliorer la trésorerie des associatio »
+- Niche du 2021-10-07 : pas de dossier trouvé pour « proposition de loi visant à raisonner le développement de l'éolien »
+- Niche du 2021-10-07 : « Développement raisonnable de l'éolien » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2021-12-02 : « Financement de la transition écologique » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2022-01-20 : « Réformer la fiscalité des droits de succession et de donation : protéger les cla » rejete sans vote public retrouvé (main levée ?)
+- Niche du 2022-02-03 : « Proposition de loi tendant à abroger des lois obsolètes pour une meilleure lisib » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2022-02-03 : « Mieux allier l'actionnariat salarié et la transmission d'entreprise » adopte sans vote public retrouvé (main levée ?)
+- Niche du 2022-02-03 : « Vote par correspondance » rejete sans vote public retrouvé (main levée ?)
+- Vote solennel n° 1 du 2017-07-04 sans dossier relié : « la declaration de politique generale du Gouvernement de M. Edouard Philippe (application d »
+- Vote solennel n° 53 du 2017-07-24 sans dossier relié : « la motion de rejet préalable, déposée par M. Jean-Luc Mélenchon, du projet de loi pour la  »
+- Vote solennel n° 55 du 2017-07-24 sans dossier relié : « la motion de renvoi en commission, déposée par M. Olivier Faure, du projet de loi pour la  »
+- Auteur non identifié : « Évaluation de l’impact de la loi organique et de la loi du 15 septembre 2017 pou » (DLR5L15N44536)
+- Auteur non identifié : « Application de la loi pour un nouveau pacte ferroviaire » (DLR5L15N37409)
+- Auteur non identifié : « Application de la loi portant création de l'Agence nationale de la cohésion des  » (DLR5L15N39025)

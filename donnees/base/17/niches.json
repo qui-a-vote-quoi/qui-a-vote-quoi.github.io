@@ -463,7 +463,7 @@
    {
     "titre": "Un meilleur encadrement du Pacte Dutreil",
     "dossier": "DLR5L17N51978",
-    "statut": "commence",
+    "statut": "retire",
     "scrutin": null,
     "inverse": false
    },
@@ -811,7 +811,7 @@
    {
     "titre": "Protéger l'eau potable",
     "dossier": "DLR5L17N53425",
-    "statut": "commence",
+    "statut": "retire",
     "scrutin": null,
     "inverse": false
    },
@@ -1103,7 +1103,7 @@
     "titre": "Proposition de loi visant à lever dans les territoires d’outre-mer l’interdiction de recherche, d’exploration et d’exploitation des hydrocarbures",
     "dossier": "DLR5L17N53304",
     "statut": "rejete",
-    "scrutin": null,
+    "scrutin": "VTANR5L17V7386",
     "inverse": false
    },
    {
@@ -1225,7 +1225,7 @@
   "date": "2026-10-29",
   "groupe": "LFI-NFP",
   "validee": false,
-  "votesDuJour": 2,
+  "votesDuJour": 41,
   "programme": [
    {
     "titre": "Rétablir le droit commun de la prescription acquisitive dans les collectivités régies par l’article 73 de la Constitution ainsi qu’à Saint-Martin et Saint-Barthélemy",
@@ -1237,15 +1237,15 @@
    {
     "titre": "Créer un corps de fonctionnaires de catégorie B pour les accompagnants d’élèves en situation de handicap",
     "dossier": "DLR5L17N54901",
-    "statut": "pas_examine",
-    "scrutin": null,
+    "statut": "adopte",
+    "scrutin": "VTANR5L17V9203",
     "inverse": false
    },
    {
     "titre": "Créer un parcours de soins intégralement pris en charge par la sécurité sociale pour toutes les victimes de violences sexuelles",
     "dossier": "DLR5L17N54898",
-    "statut": "pas_examine",
-    "scrutin": null,
+    "statut": "adopte",
+    "scrutin": "VTANR5L17V9241",
     "inverse": false
    },
    {
@@ -1257,14 +1257,14 @@
    },
    {
     "titre": "Protéger durablement les jeunes majeurs de l’aide sociale à l’enfance et de la protection judiciaire de la jeunesse",
-    "dossier": "DLR5L17N54298",
+    "dossier": "DLR5L17N54151",
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
    },
    {
-    "titre": "Augmenter les salaires et des pensions",
-    "dossier": "DLR5L17N54906",
+    "titre": "proposition de loi visant l'augmentation des salaires et des pensions",
+    "dossier": null,
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
