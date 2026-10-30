@@ -530,7 +530,9 @@ function bar(p, c, a, n) {
   const tot = p + c + a + n || 1, w = x => (100 * x / tot).toFixed(1) + "%";
   return `<div class="bar"><i style="width:${w(p)};background:var(--jauge-pour)"></i><i style="width:${w(c)};background:var(--jauge-contre)"></i><i style="width:${w(a)};background:var(--jauge-abst)"></i><i style="width:${w(n)};background:var(--absent)"></i></div>`;
 }
-const legende = `<div class="legend"><span><i class="dot" style="background:var(--jauge-pour)"></i>Pour le texte</span><span><i class="dot" style="background:var(--jauge-contre)"></i>Contre</span><span><i class="dot" style="background:var(--jauge-abst)"></i>Abstention</span><span><i class="dot" style="border:1.5px solid var(--seat-absent);background:none"></i>N'a pas voté</span></div>`;
+// Légende des positions : mêmes libellés (LIB) que partout ailleurs
+const PASTILLE = { soutien: "background:var(--jauge-pour)", opposition: "background:var(--jauge-contre)", abstention: "background:var(--jauge-abst)", absent: "border:1.5px solid var(--seat-absent);background:none" };
+const legende = `<div class="legend">${Object.entries(LIB).map(([k, l]) => `<span><i class="dot" style="${PASTILLE[k]}"></i>${l}</span>`).join("")}</div>`;
 
 // Hémicycle : un point par député, rangés de la gauche vers la droite par groupe,
 // colorés selon leur vote. Disposition classique en rangées concentriques.
