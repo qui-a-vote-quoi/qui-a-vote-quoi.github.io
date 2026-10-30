@@ -69,6 +69,15 @@ footer.pied a { display: inline-block; padding-block: 2px; }
 .filtres .choix-sujets label { display: inline-flex; align-items: center; gap: 8px; font: 600 15px var(--body); text-transform: none; letter-spacing: normal; color: var(--fg); margin: 0; padding: 6px 14px; min-height: 44px; border: var(--bord); border-radius: 999px; background: var(--surface); cursor: pointer; }
 .filtres .choix-sujets label:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
 .choix-sujets input { width: 18px; height: 18px; accent-color: var(--accent); }
+.choix-sujets legend { display: flex; width: 100%; justify-content: space-between; align-items: baseline; gap: 12px; }
+.choix-sujets .nb-sujet { white-space: nowrap; font-weight: 400; color: var(--muted); font-variant-numeric: tabular-nums; }
+/* Sur téléphone, des pastilles plus petites : la liste tient en un écran et demi au lieu de trois */
+@media (max-width: 640px) {
+  .choix-sujets .cases { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .filtres .choix-sujets label { font-size: 14px; line-height: 1.2; padding: 6px 10px; min-height: 40px; gap: 6px; border-radius: var(--rayon-s); }
+  .choix-sujets input { flex: none; }
+  .choix-sujets input { width: 16px; height: 16px; }
+}
 .lien-tout { font-weight: 600; }
 .lien-bouton { font: inherit; color: var(--accent); background: none; border: 0; padding: 4px 0; text-decoration: underline; cursor: pointer; }
 .plus { font: 700 16px var(--body); color: var(--fg); background: var(--surface); border: var(--bord-encre); border-radius: 999px; padding: 10px 20px; min-height: 44px; cursor: pointer; }
@@ -172,6 +181,10 @@ a.chip:hover { border-color: var(--encre); }
 /* Siégez : une carte par texte, puis la révélation du vrai vote */
 .siege { background: var(--surface); border: var(--bord-encre); border-radius: var(--rayon); padding: 22px; box-shadow: var(--ombre); }
 .siege h2 { margin: 0 0 8px; }
+/* Avant la séance : ce qui vous attend reste visible en bas de l'écran pendant qu'on coche */
+#questions:has(.pret) { position: sticky; bottom: 12px; z-index: 4; }
+.siege.pret { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 14px 18px; }
+.siege.pret p { margin: 0; flex: 1 1 160px; font-size: 15px; }
 .seance { padding: 22px; gap: 14px; border: var(--bord-encre); box-shadow: var(--ombre); }
 .seance h2 { margin: 0; font-size: clamp(22px, 3.5vw, 30px); }
 .seance-haut { display: grid; gap: 6px; }
@@ -913,14 +926,14 @@ const views = {
       <div class="bilan">
         <div>
           <form class="filtres" onsubmit="return false">
-            <fieldset class="choix-sujets"><legend>1. Choisissez vos sujets</legend>
-              <div class="cases">${SUJETS.filter(th => BILAN.some(t => t.theme === th)).map((th, i) => `<label><input type="checkbox" name="sujet" value="${th}"${prefBilan().sujets.includes(th) ? " checked" : ""}> ${th}</label>`).join("")}</div>
+            <fieldset class="choix-sujets"><legend><span>1. Choisissez vos sujets</span><button type="button" class="lien-bouton" id="tous-sujets">Tout cocher</button></legend>
+              <div class="cases">${SUJETS.filter(th => BILAN.some(t => t.theme === th)).map((th, i) => `<label><input type="checkbox" name="sujet" value="${th}"${prefBilan().sujets.includes(th) ? " checked" : ""}> <span>${th} <span class="nb-sujet" data-sujet="${th}"></span></span></label>`).join("")}</div>
             </fieldset>
             ${choixPeriode("periode-bilan", prefBilan().leg)}
           </form>
           <p class="seance-sujets" id="seance-sujets"></p>
           <h2 class="sr-only">Les textes à voter</h2>
-          <p class="meta" id="nb-bilan" aria-live="polite"></p>
+          <p class="sr-only" id="nb-bilan" aria-live="polite"></p>
           <div class="list" id="questions"></div>
           <p class="note">Seuls les textes déjà résumés sont proposés. Certains résumés ont été rédigés par IA et pas encore vérifiés par un humain : c'est indiqué. L'abstention n'entre pas dans le calcul des groupes proches de vous.</p>
           <section id="revel"></section>
@@ -963,11 +976,18 @@ function majQuestions() {
   app.classList.remove("en-seance", "en-cours");
   const ts = selectionBilan(), choisis = prefBilan().sujets.length, rep = load();
   const restants = ts.filter(t => !(t.id in rep));
-  $("#nb-bilan").textContent = choisis ? `${pluriel(ts.length, "texte")} sur ces sujets, dont ${restants.length} pas encore voté${restants.length > 1 ? "s" : ""}.` : "";
+  // Combien de textes à voter par sujet, sur la période choisie
+  const aVoter = parPeriode(BILAN, prefBilan().leg).filter(t => !(t.id in rep));
+  document.querySelectorAll(".nb-sujet").forEach(x => { const k = aVoter.filter(t => t.theme === x.dataset.sujet).length; x.textContent = `· ${k}`; x.title = `${pluriel(k, "texte")} à voter`; });
+  const tous = $("#tous-sujets"); if (tous) tous.textContent = document.querySelectorAll("input[name=sujet]:not(:checked)").length ? "Tout cocher" : "Tout décocher";
+  // Durée estimée : environ 1 min 30 pour un texte avec son débat, 40 secondes sans
+  const k = Math.min(TAILLE_SEANCE, restants.length), moy = restants.length ? restants.reduce((a, t) => a + (t.debat ? 1.5 : 0.7), 0) / restants.length : 1;
+  // Annoncé aux lecteurs d'écran à chaque case cochée (le bandeau, lui, est redessiné)
+  $("#nb-bilan").textContent = choisis ? `${pluriel(restants.length, "texte")} à voter, séance d'environ ${Math.max(1, Math.round(k * moy))} minutes.` : "";
   $("#questions").innerHTML = !choisis
     ? `<div class="callout" style="margin-top:0"><b>Pour commencer, cochez un ou plusieurs sujets.</b> Vous siégerez ensuite sur des textes de ces sujets.</div>`
     : restants.length
-      ? `<div class="siege"><h2>Prêt à siéger&nbsp;?</h2><p>Vous allez voter sur ${pluriel(Math.min(TAILLE_SEANCE, restants.length), "texte")}, un par un, comme un député. Après chaque vote, vous découvrez ce qu'ont voté les vrais députés, et qui avait proposé le texte.</p>
+      ? `<div class="siege pret"><p><b>Séance de ${pluriel(k, "texte")}, environ ${Math.max(1, Math.round(k * moy))} min</b><br><span class="meta">${pluriel(restants.length, "texte")} à voter sur ces sujets</span></p>
           <button type="button" class="plus principal" id="sieger">Siéger →</button></div>`
       : `<div class="callout" style="margin-top:0">Vous avez voté sur tous les textes de ces sujets. Cochez d'autres sujets pour continuer.</div>`;
   majBilan();
@@ -1165,6 +1185,12 @@ app.addEventListener("click", e => {
   if (e.target.id === "en-savoir-plus") { seance.details = true; afficherSeance(); $("#details-titre")?.focus(); return; }
   // Revenir au texte d'avant : s'il a été voté, on revoit son résultat ; s'il a été passé, on peut voter
   if (e.target.id === "precedent") { allerA(seance.i - 1); return; }
+  if (e.target.id === "tous-sujets") {
+    const cases = [...app.querySelectorAll("input[name=sujet]")], cocher = cases.some(c => !c.checked);
+    cases.forEach(c => c.checked = cocher);
+    ecrirePref("bilanChoix", { sujets: cocher ? cases.map(c => c.value) : [], leg: $("#periode-bilan").value });
+    majQuestions(); return;
+  }
   if (e.target.id === "changer-sujets") { seance = null; majQuestions(); app.querySelector("input[name=sujet]")?.focus(); return; }
   if (e.target.id === "autre-seance") { seance = null; commencerSeance(); if (!seance.ids.length) { seance = null; majQuestions(); } return; }
   if (e.target.id === "voir-plus") {
