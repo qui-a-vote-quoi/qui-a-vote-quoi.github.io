@@ -51,6 +51,7 @@ footer.pied a { display: inline-block; padding-block: 2px; }
 /* Filtres : une grille de trois colonnes égales ; la recherche et le choix des sujets prennent toute la largeur */
 .filtres { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 24px; background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 18px; }
 .filtres > .champ, .filtres > .choix-sujets { grid-column: 1 / -1; }
+.filtres-vote { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .bilan .filtres { margin-top: 0; }
 .filtres label, .filtres legend { display: block; font: 700 13px var(--body); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; padding: 0; }
 .filtres input[type=search], .filtres select { display: block; width: 100%; height: 46px; font: 16px var(--body); color: var(--fg); background-color: var(--surface); border: var(--bord); border-radius: var(--rayon-s); padding: 0 14px; }
@@ -434,7 +435,7 @@ const PERIODES = {
 const POSITIONS = { Opposition: "groupe d'opposition", Minoritaire: "groupe minoritaire", Majoritaire: "groupe majoritaire" };
 // Niveau de vérification des résumés et des sujets (voir CHARTE-NEUTRALITE.md)
 const NIVEAUX = { ia: "Résumé rédigé par IA, pas encore vérifié par un humain.", relu: "Résumé relu par un humain." };
-const LIB = { soutien: "Pour le texte", opposition: "Contre le texte", abstention: "Abstention", absent: "N'a pas voté" };
+const LIB = { soutien: "Pour", opposition: "Contre", abstention: "Abstention", absent: "N'a pas voté" };
 const $ = s => document.querySelector(s);
 const app = $("#app");
 const fdate = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
@@ -834,8 +835,14 @@ const views = {
       ${niches.length ? `<h2>Ses journées réservées</h2><p class="meta">Les jours où ce groupe a choisi seul les textes discutés (sa « niche »), avec tout son programme.</p>
         <div class="list">${niches.map(n => { const b = bilanNiche(n); return `<a class="card" href="#niche/${n.date}"><b style="font:700 17px var(--display)">${fdate(n.date)}</b><span class="meta">${b.total} textes au programme · ${b.votes} votés · ${b.sansVote} sans vote faute de temps</span></a>`; }).join("")}</div>` : ""}
       <h2>Comment il a voté sur tous les autres textes</h2>
-      <div class="tablewrap"><table><thead><tr><th>Texte</th><th>Proposé par</th><th>Position</th></tr></thead><tbody>
-        ${autres.map(t => { const st = stance(t, t.groupes.find(r => r.g === g)); return `<tr><td><a href="#texte/${t.id}">${t.titre}</a></td><td>${auteurCourt(t)}</td><td class="pos ${st}">${LIB[st]}</td></tr>`; }).join("")}
+      ${(() => {   // filtres : qui a proposé le texte, et ce que ce groupe a voté
+        const auteurs = [...ORDRE, "Gouvernement", "Sénat"].filter(a => autres.some(t => auteurDe(t) === a));
+        const opt = (id, lib, tous, liste) => `<div><label for="${id}">${lib}</label><select id="${id}"><option value="">${tous}</option>${liste.map(([v, l]) => `<option value="${v}">${l}</option>`).join("")}</select></div>`;
+        return `<form class="filtres filtres-vote" onsubmit="return false">${opt("fg-auteur", "Proposé par", "Tous les auteurs", auteurs.map(a => [a, a]))}${opt("fg-vote", "Son vote", "Tous les votes", Object.entries(LIB))}</form>
+          <p class="meta" id="fg-nb" aria-live="polite">${pluriel(autres.length, "texte")}.</p>`;
+      })()}
+      <div class="tablewrap"><table id="votes-groupe"><thead><tr><th>Texte</th><th>Proposé par</th><th>Son vote</th></tr></thead><tbody>
+        ${autres.map(t => { const st = stance(t, t.groupes.find(r => r.g === g)); return `<tr data-auteur="${auteurDe(t)}" data-vote="${st}"><td><a href="#texte/${t.id}">${t.titre}</a></td><td>${auteurCourt(t)}</td><td class="pos ${st}">${LIB[st]}</td></tr>`; }).join("")}
       </tbody></table></div>
       <h2>Avec qui vote-t-il ?</h2>
       <p class="meta">Part des textes du site où les deux groupes ont pris la même position, parmi ceux où les deux ont voté.</p>
@@ -1252,6 +1259,12 @@ app.addEventListener("input", e => {
 app.addEventListener("change", e => {
   const champ = { periode: "leg", "f-sujet": "sujet", "f-auteur": "auteur" }[e.target.id];
   if (champ) { filtre[champ] = e.target.value; nbVisibles = 30; majSujets(); }
+  if (e.target.id === "fg-auteur" || e.target.id === "fg-vote") {
+    const a = $("#fg-auteur").value, v = $("#fg-vote").value;
+    let n = 0;
+    document.querySelectorAll("#votes-groupe tbody tr").forEach(tr => { const ok = (!a || tr.dataset.auteur === a) && (!v || tr.dataset.vote === v); tr.hidden = !ok; n += ok; });
+    $("#fg-nb").textContent = n ? `${pluriel(n, "texte")}.` : "Aucun texte pour ces filtres.";
+  }
   if (e.target.name === "sujet" || e.target.id === "periode-bilan") {
     const f = e.target.form;
     ecrirePref("bilanChoix", { sujets: [...f.querySelectorAll("input[name=sujet]:checked")].map(x => x.value), leg: f.querySelector("#periode-bilan").value });
