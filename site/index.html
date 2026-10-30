@@ -228,6 +228,7 @@ a.chip:hover { border-color: var(--encre); }
 .periodes.version-debat { justify-content: flex-start; margin: 0 0 10px; }
 .v-simple, :root[data-debat="simple"] .avec-simple .v-citation { display: none; }
 :root[data-debat="simple"] .v-simple { display: block; }
+:root[data-debat="simple"] span.v-simple { display: inline; }
 .vivre { display: grid; gap: 10px; }
 .lien-debat, .lien-theme { font-weight: 700; font-size: 14px; text-decoration: none; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; }
 .lien-debat::before { content: "▶ "; font-size: 11px; }
@@ -295,6 +296,9 @@ a.plus { text-decoration: none; display: inline-flex; align-items: center; }
 
 
 /* Fiche texte */
+.cadre-texte { margin-top: 24px; background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 20px 22px; }
+.cadre-texte .clair { margin-top: 0; }
+.cadre-texte > .note { margin-top: 12px; }
 .clair { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px 28px; margin-top: 24px; }
 .clair p { margin: 4px 0 0; font-size: 18px; }
 .duel { display: grid; gap: 8px; }
@@ -951,16 +955,17 @@ const views = {
         : (n => `Proposé par ${t.groupe ? `le groupe ${badge(t.groupe)} ${G(t.groupe).nom}` : t.auteur}${n ? `, mis au programme ${n.groupe === t.groupe ? "par ce groupe" : `par le groupe ${G(n.groupe).nom}`} pendant <a href="#niche/${n.date}">sa journée réservée (niche) du ${fdate(n.date)}</a>` : `, voté le ${fdate(t.date)}`}.`)(NICHES.find(x => x.date === t.date))}</p>
       ${t.titreOfficiel !== t.titre ? `<p class="meta">Titre officiel : ${t.titreOfficiel}</p>` : ""}
       ${verdict(t)}
+      <div class="cadre-texte">
       <div class="clair">
         <div><div class="eyebrow">En clair</div><p>${t.enClair || `Résumé à venir. En attendant : ${ext(urlDossier(t), "le texte et son parcours sur le site de l'Assemblée")}.`}</p></div>
         ${t.concerne ? `<div><div class="eyebrow">Qui est concerné</div><p>${t.concerne}</p></div>` : ""}
       </div>
       ${t.enClair ? `<p class="note">${NIVEAUX[t.niveau] || ""}</p>` : ""}
+      ${mesuresTexte(t)}
+      </div>
       ${t.debat ? (autre => `<h2 id="le-debat" tabindex="-1">${autre ? `Le débat, lors d'un autre examen du texte` : t.debat.consensuel ? "Le débat" : "Pourquoi ce résultat&nbsp;? Le débat"}</h2>
         <p class="meta">${autre ? `Ce débat a eu lieu le ${fdate(t.debat.date)}, lors d'un autre examen de ce texte. Le vote présenté ici date du ${fdate(t.date)}.`
-          : t.debat.consensuel ? "Ce qui a été dit en séance, avant le vote." : "Ce qu'ont dit les deux camps en séance, à égalité, avant le vote."}</p>${repliques(t, { nomme: true })}
-        <p class="note">Extraits exacts du compte rendu (${t.debat.comptesRendus.map(ref => ext(urlCompteRendu(ref, t.leg), `séance du ${fdate(t.debat.date)}`)).join(", ")}). Choix fait par IA, citations vérifiées mot pour mot, pas encore relu par un humain.</p>`)(t.debat.date !== t.date) : ""}
-      ${mesuresTexte(t)}
+          : t.debat.consensuel ? "Ce qui a été dit en séance, avant le vote." : "Ce qu'ont dit les deux camps en séance, à égalité, avant le vote."}</p>${repliques(t, { nomme: true, source: `Extraits exacts du compte rendu (${t.debat.comptesRendus.map(ref => ext(urlCompteRendu(ref, t.leg), `séance du ${fdate(t.debat.date)}`)).join(", ")}). Choix fait par IA, citations vérifiées mot pour mot, pas encore relu par un humain.` })}`)(t.debat.date !== t.date) : ""}
       ${t.arguments ? `<h2>Les arguments des deux camps</h2>${argsGrid(t)}
         <p class="note">Arguments avancés pendant les débats, rapportés sans jugement. Sources : ${t.arguments.sources.map(x => ext(x.url, x.label)).join(", ")}.</p>` : ""}
       <h2>Le vote des députés</h2>
@@ -1310,7 +1315,7 @@ function qui(r, nomme) {
 const urlCompteRendu = (ref, leg) => `https://www.assemblee-nationale.fr/dyn/${leg}/comptes-rendus/seance/${ref}`;
 // Le rôle de chaque réplique est toujours écrit en clair : la position à gauche ou à droite ne suffit pas
 const ROLES_DEBAT = { presentation: "Présente le texte", gouvernement: "Avis du gouvernement", pour: "Pour le texte", contre: "Contre le texte" };
-function repliques(t, { visibles = Infinity, nomme = false } = {}) {
+function repliques(t, { visibles = Infinity, nomme = false, source = "" } = {}) {
   const rs = t.debat.repliques.slice(0, visibles), simples = t.debat.repliques.some(r => r.simple);
   const legende = t.debat.consensuel ? "La présentation du texte et l'avis du gouvernement." : "D'abord la présentation du texte et l'avis du gouvernement, puis un orateur pour et un orateur contre, à tour de rôle.";
   // Un seul composant partout (fiche texte, séance) : un panneau blanc, les répliques sur le fond de la page
@@ -1318,7 +1323,7 @@ function repliques(t, { visibles = Infinity, nomme = false } = {}) {
     <ol class="debat">${rs.map((r, i) => `<li class="replique ${r.role}${r.simple ? " avec-simple" : ""}"${i === rs.length - 1 && !nomme ? ' tabindex="-1" id="derniere-replique"' : ""}>
     <span class="orateur"><span class="role-debat">${ROLES_DEBAT[r.role]}</span>${nomme ? qui(r, true) : ""}</span><q class="v-citation">${r.citation.replace(/([.!?;])(?=[A-ZÀ-ÖØ-Ý«])/g, "$1 ")}</q>${r.simple ? `<p class="simple v-simple">${r.simple}</p>` : ""}</li>`).join("")}</ol>
     ${t.debat.consensuel && rs.length === t.debat.repliques.length ? `<p class="consensus">Aucun orateur ne s'est opposé à ce texte sur le fond.</p>` : ""}
-    ${simples ? `<p class="note v-simple">En mots simples : chaque réplique est reformulée par IA à partir de la citation exacte, pour être comprise sans connaître le vocabulaire de l'Assemblée. Pas encore relu par un humain : en cas de doute, la citation exacte fait foi.</p>` : ""}</div>`;   // le compte rendu colle parfois deux phrases
+    ${(simple => source ? `<p class="note">${source}${simples ? ` <span class="v-simple">${simple}</span>` : ""}</p>` : simples ? `<p class="note v-simple">${simple}</p>` : "")("En mots simples : chaque réplique est reformulée par IA à partir de la citation exacte, pour être comprise sans connaître le vocabulaire de l'Assemblée. Pas encore relu par un humain : en cas de doute, la citation exacte fait foi.")}</div>`;   // le compte rendu colle parfois deux phrases
 }
 // Citations exactes ou en mots simples : un seul choix pour tous les débats, gardé sur l'appareil
 let versionDebat = lirePref("versionDebat", "citations");
