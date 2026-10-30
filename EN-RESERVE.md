@@ -48,3 +48,15 @@ Idée discutée le 30/10/2026 : faire relire les résumés par des citoyens plut
 3. **Afficher la relecture** : « relu par 2 relecteurs de sensibilités différentes », avec la liste publique des relecteurs (pseudonymes) s'ils l'acceptent.
 
 Priorité de relecture : les résumés qui portent une `remarque` dans `donnees/redaction/*.json` (texte officiel coupé, résumé tiré de l'exposé des motifs).
+
+## Votes ordinaires sur des textes entiers (30/10/2026)
+
+Le site montre les votes solennels et les votes des journées réservées. Il manque **474 scrutins publics ordinaires sur l'ensemble d'un texte**, hors niches, de 2017 à 2026 (231 en 15e législature, 137 en 16e, 106 en 17e). Les données sont déjà téléchargées (`donnees/brut/<leg>/scrutins.zip`, type `SPO`) ; `construire.py` les écarte.
+
+- Contenu : 277 propositions de loi, 162 projets de loi du gouvernement, 27 accords internationaux, 8 résolutions.
+- Participation faible : 104 votants en médiane, moins de 100 votants pour la moitié.
+- Risque : noyer les textes qui parlent aux gens, et donner une fausse impression de vote massif.
+
+**Recommandation** : les intégrer aux données, pas en vitrine. Ils comptent dans les fiches groupe, la recherche, « Les textes » et les chiffres de « Qui décide ». Ils restent hors du jeu et des pages de sujet par défaut, avec une option « Voir aussi les votes à faible participation ». Les accords internationaux restent à part. La participation est affichée bien en vue sur chaque carte. Il faudra des résumés IA (environ 400 textes) et leur relecture.
+
+Ne restent impossibles à montrer : les textes adoptés à main levée (aucun vote nominatif) et les textes adoptés avec l'article 49.3 (pas de vote, seulement les motions de censure).

@@ -691,7 +691,7 @@ function quiDecide() {
       <li><b>Le gouvernement choisit la plupart des textes discutés.</b> Il fixe l'ordre du jour de deux semaines de séance sur quatre. Les groupes d'opposition et minoritaires ont une journée par mois.</li>
       <li><b>Sur les ${sol.length} grands votes présentés ici, ${gouv} portaient sur un texte du gouvernement.</b></li>
     </ul>
-    <p class="note">Ces chiffres portent sur les votes de ce site : les votes solennels et les journées réservées. N'y figurent pas encore les autres votes nominatifs sur des textes entiers, ni les textes adoptés sans vote nominatif (à main levée, ou avec l'article 49.3). <a href="#methode">Notre méthode</a></p>
+    <p class="note">Ces chiffres portent sur les votes de ce site : les votes solennels et les journées réservées. N'y figurent pas encore les autres votes nominatifs sur des textes entiers, ni les textes adoptés sans vote nominatif (à main levée, ou avec l'article 49.3). <a href="#methode/ce-qui-manque">Ce que le site montre, et ce qui manque</a></p>
   </section>`;
 }
 const pluriel = (n, mot) => `${n} ${mot}${n > 1 ? "s" : ""}`;
@@ -978,6 +978,14 @@ const views = {
         <li><b>Le Sénat vote aussi</b><span>Le texte devient une loi si les deux l'adoptent, ou si l'Assemblée a le dernier mot.</span></li>
       </ol>
       <p>Le site couvre les grands votes de l'Assemblée (votes solennels) et les journées réservées aux groupes d'opposition et minoritaires, depuis 2017.</p>
+      <h2 id="ce-qui-manque" tabindex="-1">Les votes montrés, et ceux qui manquent</h2>
+      <p>À l'Assemblée, un texte se vote de trois façons :</p>
+      <ul>
+        <li><b>À main levée</b> : c'est la façon habituelle. Le président de séance compte les bras levés ; on ne sait pas qui a voté quoi.</li>
+        <li><b>Par scrutin public ordinaire</b>, quand un groupe ou le gouvernement le demande : les députés présents votent depuis leur siège, et le vote de chacun est publié. Souvent avec peu de monde.</li>
+        <li><b>Par scrutin public solennel</b>, prévu à l'avance pour les textes importants : tous les députés peuvent venir voter.</li>
+      </ul>
+      <p>Le site montre tous les votes solennels, et les votes des journées réservées aux groupes d'opposition et minoritaires. Il ne montre pas encore les autres scrutins ordinaires sur un texte entier : environ 470 depuis 2017, souvent avec moins de 100 votants. Il ne peut pas montrer les textes adoptés à main levée, ni ceux adoptés sans vote avec l'article 49.3 de la Constitution.</p>
       <h2>Les votes</h2>
       <ul>
         <li>Ils viennent directement des ${ext("https://data.assemblee-nationale.fr", "données officielles de l'Assemblée nationale")}, mises à jour une fois par mois. Ils ne sont jamais rédigés ni retouchés.</li>
@@ -1391,9 +1399,9 @@ function surligner(e) {
 ["mouseover", "mouseout", "focusin", "focusout"].forEach(t => app.addEventListener(t, surligner));
 addEventListener("hashchange", () => {
   if (!location.hash.startsWith("#bilan")) seance = null;
-  if (location.hash === "#accueil/qui-decide") {   // lien depuis la page d'un sujet
-    render(); const h = $("#qui-decide"); h.scrollIntoView(); h.focus({ preventScroll: true }); return;
-  }
+  // Liens vers une section d'une page : #accueil/qui-decide, #methode/ce-qui-manque
+  const ancre = { "#accueil/qui-decide": "#qui-decide", "#methode/ce-qui-manque": "#ce-qui-manque" }[location.hash];
+  if (ancre) { render(); const h = $(ancre); h.scrollIntoView(); h.focus({ preventScroll: true }); return; }
   if (location.hash.endsWith("/debat")) {
     render(); const h = $("#le-debat");
     if (h) { h.scrollIntoView(); h.focus({ preventScroll: true }); return; }
