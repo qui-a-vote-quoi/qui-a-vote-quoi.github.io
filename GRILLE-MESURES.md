@@ -40,3 +40,8 @@ Elle remplace l'idée d'un critère de « bienveillance », écartée le 30/10/2
 ## Niveau de vérification
 
 Comme les résumés : la catégorie est d'abord attribuée par IA à partir des articles (niveau « ia », affiché), puis relue par un humain (niveau « relu »). Elle est enregistrée dans `donnees/redaction/<législature>.json`, champs `mesures` (liste de codes) et `mesuresNiveau`.
+
+## À faire évoluer
+
+- **Nationalisations et privatisations** (EDF, ArcelorMittal, autoroutes) : aucune catégorie ne les décrit bien, elles ont été classées `institutions` ou `contrainte_plus`. Une paire `nationalise` / `privatise` serait plus juste ; à ajouter, puis reclasser les textes concernés.
+- **Premier passage** (30/10/2026) : 376 textes classés par IA, 24 non classés faute de texte officiel lisible ou de résumé.

@@ -7,7 +7,11 @@
   "concerne": "Propriétaires de terrains clôturés en milieu naturel ou forestier, chasseurs, collectivités.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L15B4878"
+  "source": "PIONANR5L15B4878",
+  "mesures": [
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L15N45886": {
   "theme": "Institutions et État",
@@ -29,7 +33,17 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B0019",
-  "remarque": "Texte long : extrait partiel, seules les premières mesures (titres I et II) sont couvertes ; l'énergie (titre III) n'est pas résumée."
+  "remarque": "Texte long : extrait partiel, seules les premières mesures (titres I et II) sont couvertes ; l'énergie (titre III) n'est pas résumée.",
+  "mesures": [
+   "aide_plus",
+   "contrainte_plus",
+   "impot_moins"
+  ],
+  "mesuresNiveau": "ia"
+ },
+ "DLR5L16N45943": {
+  "mesures": [],
+  "mesuresNiveau": null
  },
  "DLR5L16N46116": {
   "theme": "Environnement et énergie",
@@ -40,7 +54,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B0205",
-  "remarque": "Extrait coupé : seuls les articles 1 à 4 sont lus."
+  "remarque": "Extrait coupé : seuls les articles 1 à 4 sont lus.",
+  "mesures": [
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46127": {
   "theme": "Société et mémoire",
@@ -51,7 +69,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B1915",
-  "remarque": "Le titre parle de « réparation », mais dans ce texte les articles 2 à 5 sont supprimés : il ne reste qu'une reconnaissance de responsabilité."
+  "remarque": "Le titre parle de « réparation », mais dans ce texte les articles 2 à 5 sont supprimés : il ne reste qu'une reconnaissance de responsabilité.",
+  "mesures": [
+   "symbolique"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46185": {
   "theme": "Impôts et budget",
@@ -62,7 +84,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B0209",
-  "remarque": "Le texte déposé est une proposition de loi ; la version adoptée peut différer."
+  "remarque": "Le texte déposé est une proposition de loi ; la version adoptée peut différer.",
+  "mesures": [
+   "impot_moins"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46187": {
   "theme": "Travail et emploi",
@@ -82,7 +108,15 @@
   "concerne": "Élèves, familles et établissements publics du primaire et du collège.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B0254"
+  "source": "PIONANR5L16B0254",
+  "mesures": [
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
+ },
+ "DLR5L16N46266": {
+  "mesures": [],
+  "mesuresNiveau": null
  },
  "DLR5L16N46269": {
   "theme": "Sécurité",
@@ -93,7 +127,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B0343",
-  "remarque": "Extrait coupé après l'article 7 : seuls les titres I à III (budget, cybercriminalité, accueil des victimes) sont résumés ; la suite du texte n'a pas été lue."
+  "remarque": "Extrait coupé après l'article 7 : seuls les titres I à III (budget, cybercriminalité, accueil des victimes) sont résumés ; la suite du texte n'a pas été lue.",
+  "mesures": [
+   "budget",
+   "sanction_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46275": {
   "theme": "Environnement et énergie",
@@ -103,7 +142,15 @@
   "concerne": "Automobilistes, communes et agglomérations de plus de 150 000 habitants.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B0257"
+  "source": "PIONANR5L16B0257",
+  "mesures": [
+   "contrainte_moins"
+  ],
+  "mesuresNiveau": "ia"
+ },
+ "DLR5L16N46346": {
+  "mesures": [],
+  "mesuresNiveau": null
  },
  "DLR5L16N46412": {
   "theme": "Santé",
@@ -113,7 +160,11 @@
   "concerne": "Toute personne souhaitant recourir à l'IVG ou à la contraception.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B0293"
+  "source": "PIONANR5L16B0293",
+  "mesures": [
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46466": {
   "theme": "Justice",
@@ -123,7 +174,11 @@
   "concerne": "Victimes et auteurs de violences au sein de la famille, tribunaux judiciaires.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B0346"
+  "source": "PIONANR5L16B0346",
+  "mesures": [
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46471": {
   "theme": "Immigration",
@@ -134,7 +189,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B0352",
-  "remarque": "L'exposé cite des attentats et des affaires individuelles : non repris ici. La compensation financière prévue (taxe sur le tabac) n'est pas mentionnée."
+  "remarque": "L'exposé cite des attentats et des affaires individuelles : non repris ici. La compensation financière prévue (taxe sur le tabac) n'est pas mentionnée.",
+  "mesures": [
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46472": {
   "theme": "Retraites",
@@ -145,7 +204,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B0353",
-  "remarque": "L'article 1 fixe un objectif (« la Nation se fixe pour objectif ») renvoyant à un décret, sans calcul chiffré."
+  "remarque": "L'article 1 fixe un objectif (« la Nation se fixe pour objectif ») renvoyant à un décret, sans calcul chiffré.",
+  "mesures": [
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46473": {
   "theme": "Immigration",
@@ -167,7 +230,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B0360",
-  "remarque": "Texte coupé : seuls les articles 1 à 5 sont visibles dans l'extrait ; d'autres articles peuvent exister."
+  "remarque": "Texte coupé : seuls les articles 1 à 5 sont visibles dans l'extrait ; d'autres articles peuvent exister.",
+  "mesures": [
+   "sanction_plus",
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46539": {
   "theme": "Environnement et énergie",
@@ -178,7 +246,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B0443",
-  "remarque": "Gros texte : extrait partiel (début du texte adopté par le Sénat). Résumé limité aux mesures lues."
+  "remarque": "Gros texte : extrait partiel (début du texte adopté par le Sénat). Résumé limité aux mesures lues.",
+  "mesures": [
+   "contrainte_moins",
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46580": {
   "theme": "Défense et international",
@@ -189,7 +262,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PNREANR5L16B0390",
-  "remarque": "Extrait coupé avant le dispositif (article unique) : résumé fait d’après l’exposé des motifs et les premiers visas. L’exposé contient des qualificatifs non repris."
+  "remarque": "Extrait coupé avant le dispositif (article unique) : résumé fait d’après l’exposé des motifs et les premiers visas. L’exposé contient des qualificatifs non repris.",
+  "mesures": [
+   "international"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46617": {
   "theme": "Impôts et budget",
@@ -200,7 +277,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B0393",
-  "remarque": "Texte très long ; résumé établi à partir du sommaire des articles (1 à 10) et de l'exposé général, pas des montants détaillés."
+  "remarque": "Texte très long ; résumé établi à partir du sommaire des articles (1 à 10) et de l'exposé général, pas des montants détaillés.",
+  "mesures": [
+   "budget"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46622": {
   "theme": "Environnement et énergie",
@@ -211,7 +292,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B0762",
-  "remarque": "Extrait coupé : seules les premières dispositions (objectifs, début du titre I) sont lues."
+  "remarque": "Extrait coupé : seules les premières dispositions (objectifs, début du titre I) sont lues.",
+  "mesures": [
+   "contrainte_moins"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46760": {
   "theme": "Travail et emploi",
@@ -221,7 +306,12 @@
   "concerne": "Salariés payés moins de 3 Smic et leurs employeurs.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B0578"
+  "source": "PIONANR5L16B0578",
+  "mesures": [
+   "impot_moins",
+   "impot_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46778": {
   "theme": "Société et mémoire",
@@ -231,7 +321,11 @@
   "concerne": "Résidents et personnels des Ehpad et établissements sociaux ; élus ; journalistes.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B0553"
+  "source": "PIONANR5L16B0553",
+  "mesures": [
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46780": {
   "theme": "Institutions et État",
@@ -251,7 +345,12 @@
   "concerne": "Tous les étudiants qui mangent dans un restaurant universitaire.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B0659"
+  "source": "PIONANR5L16B0659",
+  "mesures": [
+   "aide_plus",
+   "impot_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46864": {
   "theme": "Enfance et famille",
@@ -261,7 +360,11 @@
   "concerne": "Enfants victimes ou témoins de violences familiales, leurs parents, les juges.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B0658"
+  "source": "PIONANR5L16B0658",
+  "mesures": [
+   "sanction_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46868": {
   "theme": "Sécurité sociale",
@@ -272,7 +375,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B0643",
-  "remarque": "Extrait coupé dans l'exposé des motifs : les articles n'ont pas été lus ; résumé fait à partir de la description des articles dans l'exposé."
+  "remarque": "Extrait coupé dans l'exposé des motifs : les articles n'ont pas été lus ; résumé fait à partir de la description des articles dans l'exposé.",
+  "mesures": [
+   "aide_plus",
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46880": {
   "theme": "Logement",
@@ -283,7 +391,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B0958",
-  "remarque": "Extrait coupé : seuls les articles 1 à 3 sont lus. Sujet à confirmer (aménagement du territoire : Logement ou Environnement)."
+  "remarque": "Extrait coupé : seuls les articles 1 à 3 sont lus. Sujet à confirmer (aménagement du territoire : Logement ou Environnement).",
+  "mesures": [
+   "contrainte_moins",
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46890": {
   "theme": "Justice",
@@ -294,7 +407,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B0661",
-  "remarque": "Formulation de l'article 1 à vérifier juridiquement ; le résumé est simplifié."
+  "remarque": "Formulation de l'article 1 à vérifier juridiquement ; le résumé est simplifié.",
+  "mesures": [
+   "contrainte_plus",
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46900": {
   "theme": "Outre-mer",
@@ -304,7 +422,11 @@
   "concerne": "Habitants des départements et régions d'outre-mer ; Assemblée nationale.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PNREANR5L16B0664"
+  "source": "PNREANR5L16B0664",
+  "mesures": [
+   "symbolique"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46918": {
   "theme": "Culture et sport",
@@ -315,7 +437,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B0809",
-  "remarque": "Extrait coupé après le début de l'article 6 : le chapitre III (sécurité) n'est pas détaillé, à compléter par le relecteur à partir du texte intégral. Texte à objets multiples (« diverses autres dispositions »)."
+  "remarque": "Extrait coupé après le début de l'article 6 : le chapitre III (sécurité) n'est pas détaillé, à compléter par le relecteur à partir du texte intégral. Texte à objets multiples (« diverses autres dispositions »).",
+  "mesures": [
+   "contrainte_plus",
+   "contrainte_moins"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N46921": {
   "theme": "Environnement et énergie",
@@ -325,7 +452,11 @@
   "concerne": "Actionnaires d'EDF, État, salariés et clients d'EDF.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B0671"
+  "source": "PIONANR5L16B0671",
+  "mesures": [
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47006": {
   "theme": "Environnement et énergie",
@@ -336,7 +467,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B1071",
-  "remarque": "Texte adopté par le Sénat. Extrait coupé après l’article 10 : mesures suivantes non résumées."
+  "remarque": "Texte adopté par le Sénat. Extrait coupé après l’article 10 : mesures suivantes non résumées.",
+  "mesures": [
+   "contrainte_plus",
+   "impot_moins"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47026": {
   "theme": "Culture et sport",
@@ -346,7 +482,12 @@
   "concerne": "Éducateurs sportifs, fédérations, exploitants d'établissements sportifs, jeunes pratiquants.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B1396"
+  "source": "PIONANR5L16B1396",
+  "mesures": [
+   "contrainte_plus",
+   "sanction_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47035": {
   "theme": "Enfance et famille",
@@ -356,7 +497,12 @@
   "concerne": "Mineurs de moins de 15 ans, parents, entreprises de réseaux sociaux.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B0739"
+  "source": "PIONANR5L16B0739",
+  "mesures": [
+   "contrainte_plus",
+   "sanction_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47037": {
   "theme": "Enfance et famille",
@@ -366,7 +512,12 @@
   "concerne": "Parents salariés ou indépendants d'enfants atteints d'une maladie grave ou d'un handicap.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B0742"
+  "source": "PIONANR5L16B0742",
+  "mesures": [
+   "contrainte_plus",
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47051": {
   "theme": "Culture et sport",
@@ -376,7 +527,15 @@
   "concerne": "Élèves, étudiants, enseignants, administrations, entreprises et particuliers qui rédigent des contrats.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B0777"
+  "source": "PIONANR5L16B0777",
+  "mesures": [
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
+ },
+ "DLR5L16N47118": {
+  "mesures": [],
+  "mesuresNiveau": null
  },
  "DLR5L16N47217": {
   "theme": "Logement",
@@ -386,7 +545,12 @@
   "concerne": "Propriétaires de maisons fissurées par la sécheresse et assureurs.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B0887"
+  "source": "PIONANR5L16B0887",
+  "mesures": [
+   "aide_plus",
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47218": {
   "theme": "Consommation et alimentation",
@@ -397,7 +561,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B0889",
-  "remarque": "Texte qui rassemble plusieurs mesures différentes (aide financière, restauration scolaire, additifs)."
+  "remarque": "Texte qui rassemble plusieurs mesures différentes (aide financière, restauration scolaire, additifs).",
+  "mesures": [
+   "aide_plus",
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47411": {
   "theme": "Santé",
@@ -408,7 +577,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B0991",
-  "remarque": "Texte court (3 articles) ; l'article 3 prévoit une compensation par la taxe sur le tabac."
+  "remarque": "Texte court (3 articles) ; l'article 3 prévoit une compensation par la taxe sur le tabac.",
+  "mesures": [
+   "contrainte_moins"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47509": {
   "theme": "Défense et international",
@@ -419,7 +592,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B1033",
-  "remarque": "Extrait limité à l'exposé des motifs (articles absents) : chiffres tirés de l'exposé, à vérifier dans le texte."
+  "remarque": "Extrait limité à l'exposé des motifs (articles absents) : chiffres tirés de l'exposé, à vérifier dans le texte.",
+  "mesures": [
+   "budget"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47549": {
   "theme": "Défense et international",
@@ -430,7 +607,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PNREANR5L16B1082",
-  "remarque": "Extrait coupé : seul l'exposé des motifs est disponible, pas le dispositif de la résolution. Sujet très sensible : la qualification d'apartheid est celle des auteurs du texte, à relire avec soin."
+  "remarque": "Extrait coupé : seul l'exposé des motifs est disponible, pas le dispositif de la résolution. Sujet très sensible : la qualification d'apartheid est celle des auteurs du texte, à relire avec soin.",
+  "mesures": [
+   "international",
+   "symbolique"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47571": {
   "theme": "Sécurité",
@@ -441,7 +623,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B1301",
-  "remarque": "Extrait limité aux articles 1 et 2 ; le reste du texte n'est pas couvert."
+  "remarque": "Extrait limité aux articles 1 et 2 ; le reste du texte n'est pas couvert.",
+  "mesures": [
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47622": {
   "theme": "Outre-mer",
@@ -452,7 +638,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B1159",
-  "remarque": "Extrait coupé après l'article 1 : le titre II (extension de l'aide) n'est pas lisible."
+  "remarque": "Extrait coupé après l'article 1 : le titre II (extension de l'aide) n'est pas lisible.",
+  "mesures": [
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47695": {
   "theme": "Défense et international",
@@ -462,7 +652,11 @@
   "concerne": "Commission d'évaluation, administration, Cour des comptes et bénéficiaires de l'aide.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B1202"
+  "source": "PIONANR5L16B1202",
+  "mesures": [
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47779": {
   "theme": "Justice",
@@ -473,7 +667,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B1346",
-  "remarque": "Extrait coupé après l'article 3 : les mesures de procédure pénale suivantes ne sont pas résumées. Loi de programmation à plusieurs volets."
+  "remarque": "Extrait coupé après l'article 3 : les mesures de procédure pénale suivantes ne sont pas résumées. Loi de programmation à plusieurs volets.",
+  "mesures": [
+   "budget",
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47780": {
   "theme": "Justice",
@@ -484,7 +683,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B1345",
-  "remarque": "Extrait coupé : les mesures sur la responsabilité des magistrats (titre du texte) ne sont pas visibles ; résumé centré sur le recrutement. Texte adopté par le Sénat."
+  "remarque": "Extrait coupé : les mesures sur la responsabilité des magistrats (titre du texte) ne sont pas visibles ; résumé centré sur le recrutement. Texte adopté par le Sénat.",
+  "mesures": [
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47884": {
   "theme": "Sécurité",
@@ -495,7 +698,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B1514",
-  "remarque": "Projet adopté par le Sénat. Extrait coupé après les premiers articles : les autres volets du texte (« réguler l’espace numérique ») ne sont pas résumés."
+  "remarque": "Projet adopté par le Sénat. Extrait coupé après les premiers articles : les autres volets du texte (« réguler l’espace numérique ») ne sont pas résumés.",
+  "mesures": [
+   "contrainte_plus",
+   "sanction_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47917": {
   "theme": "Entreprises et économie",
@@ -506,7 +714,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B1443",
-  "remarque": "Texte long, extrait coupé après les premiers articles (titre I) ; les autres titres ne sont pas résumés."
+  "remarque": "Texte long, extrait coupé après les premiers articles (titre I) ; les autres titres ne sont pas résumés.",
+  "mesures": [
+   "contrainte_moins",
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N47975": {
   "theme": "Logement",
@@ -516,7 +729,11 @@
   "concerne": "Locataires de logements, petites et moyennes entreprises locataires de locaux commerciaux, propriétaires bailleurs.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B1262"
+  "source": "PIONANR5L16B1262",
+  "mesures": [
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N48140": {
   "theme": "Immigration",
@@ -527,7 +744,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PNREANR5L16B1325",
-  "remarque": "Proposition de résolution : n'a pas de valeur contraignante."
+  "remarque": "Proposition de résolution : n'a pas de valeur contraignante.",
+  "mesures": [
+   "international"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N48163": {
   "theme": "Travail et emploi",
@@ -538,7 +759,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B1528",
-  "remarque": "Extrait coupé après l'article 2 : seul le début du texte (inscription, orientation, contrat d'engagement) est résumé."
+  "remarque": "Extrait coupé après l'article 2 : seul le début du texte (inscription, orientation, contrat d'engagement) est résumé.",
+  "mesures": [
+   "contrainte_plus",
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N48392": {
   "theme": "Logement",
@@ -549,7 +775,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B1533",
-  "remarque": "Texte adopté par le Sénat avant son arrivée à l'Assemblée. Habilitation à légiférer par ordonnance (articles 1 à 3)."
+  "remarque": "Texte adopté par le Sénat avant son arrivée à l'Assemblée. Habilitation à légiférer par ordonnance (articles 1 à 3).",
+  "mesures": [
+   "contrainte_moins",
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N48586": {
   "theme": "Éducation et jeunesse",
@@ -570,7 +801,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PNREANR5L16B1714",
-  "remarque": "Extrait limité à l'exposé des motifs ; l'article n'apparaît pas. Objet déduit de l'exposé et du titre. Résolution sans valeur de loi."
+  "remarque": "Extrait limité à l'exposé des motifs ; l'article n'apparaît pas. Objet déduit de l'exposé et du titre. Résolution sans valeur de loi.",
+  "mesures": [
+   "symbolique"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N48755": {
   "theme": "Environnement et énergie",
@@ -581,7 +816,11 @@
   "arguments": null,
   "niveau": "a_venir",
   "source": "PIONANR5L16B1766",
-  "remarque": "Articles absents de l'extrait : résumé fondé sur le titre et l'exposé des motifs. Durée et périmètre du moratoire à vérifier dans le texte."
+  "remarque": "Articles absents de l'extrait : résumé fondé sur le titre et l'exposé des motifs. Durée et périmètre du moratoire à vérifier dans le texte.",
+  "mesures": [
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N48758": {
   "theme": "Santé",
@@ -592,7 +831,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B1768",
-  "remarque": "Un article prévoit aussi un rapport du Gouvernement sur les étudiants français en médecine à l'étranger."
+  "remarque": "Un article prévoit aussi un rapport du Gouvernement sur les étudiants français en médecine à l'étranger.",
+  "mesures": [
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N48763": {
   "theme": "Institutions et État",
@@ -603,7 +846,11 @@
   "arguments": null,
   "niveau": "a_venir",
   "source": "PIONANR5L16B1773",
-  "remarque": "Extrait limité à l'exposé des motifs, sans les articles : mesures non lisibles, enClair laissé vide."
+  "remarque": "Extrait limité à l'exposé des motifs, sans les articles : mesures non lisibles, enClair laissé vide.",
+  "mesures": [
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N48766": {
   "theme": "Consommation et alimentation",
@@ -614,7 +861,11 @@
   "arguments": null,
   "niveau": "a_venir",
   "source": "PIONANR5L16B1776",
-  "remarque": "Extrait limité à l'exposé des motifs : les articles sont absents. enClair laissé vide faute de lire les mesures ; à compléter depuis le texte complet."
+  "remarque": "Extrait limité à l'exposé des motifs : les articles sont absents. enClair laissé vide faute de lire les mesures ; à compléter depuis le texte complet.",
+  "mesures": [
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N48777": {
   "theme": "Santé",
@@ -625,7 +876,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PNREANR5L16B1782",
-  "remarque": "Proposition de résolution : simple invitation au Gouvernement, sans effet juridique contraignant."
+  "remarque": "Proposition de résolution : simple invitation au Gouvernement, sans effet juridique contraignant.",
+  "mesures": [
+   "symbolique",
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N48800": {
   "theme": "Éducation et jeunesse",
@@ -647,7 +903,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PNREANR5L16B1942",
-  "remarque": "Extrait coupé avant les demandes précises de la résolution ; résumé tiré de l'exposé."
+  "remarque": "Extrait coupé avant les demandes précises de la résolution ; résumé tiré de l'exposé.",
+  "mesures": [
+   "symbolique"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49023": {
   "theme": "Impôts et budget",
@@ -658,7 +918,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B1961",
-  "remarque": "Compensation de la perte de recettes par une taxe sur le tabac."
+  "remarque": "Compensation de la perte de recettes par une taxe sur le tabac.",
+  "mesures": [
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49033": {
   "theme": "Travail et emploi",
@@ -668,7 +932,11 @@
   "concerne": "Chômeurs de longue durée, minima sociaux, personnes handicapées, plus de 50 ans, peu diplômés.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B1972"
+  "source": "PIONANR5L16B1972",
+  "mesures": [
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49095": {
   "theme": "Institutions et État",
@@ -679,7 +947,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B1983",
-  "remarque": "Projet de loi constitutionnelle (révision de la Constitution), un seul article."
+  "remarque": "Projet de loi constitutionnelle (révision de la Constitution), un seul article.",
+  "mesures": [
+   "institutions",
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49123": {
   "theme": "Institutions et État",
@@ -690,7 +963,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B2198",
-  "remarque": "Texte organique court ; les organismes précis des lignes supprimées ne sont pas identifiés dans l'extrait."
+  "remarque": "Texte organique court ; les organismes précis des lignes supprimées ne sont pas identifiés dans l'extrait.",
+  "mesures": [
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49124": {
   "theme": "Environnement et énergie",
@@ -701,7 +978,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PRJLANR5L16B2197",
-  "remarque": "Texte du Sénat ; l'extrait est coupé après l'article 3 : le détail des dispositions suivantes n'a pas été lu."
+  "remarque": "Texte du Sénat ; l'extrait est coupé après l'article 3 : le détail des dispositions suivantes n'a pas été lu.",
+  "mesures": [
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49175": {
   "theme": "Logement",
@@ -711,7 +992,11 @@
   "concerne": "Locataires, propriétaires, primo-accédants, étudiants, bailleurs sociaux, collectivités.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PNREANR5L16B2046"
+  "source": "PNREANR5L16B2046",
+  "mesures": [
+   "symbolique"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49258": {
   "theme": "Consommation et alimentation",
@@ -721,7 +1006,11 @@
   "concerne": "Héritiers de personnes décédées, banques.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B2056"
+  "source": "PIONANR5L16B2056",
+  "mesures": [
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49261": {
   "theme": "Santé",
@@ -731,7 +1020,12 @@
   "concerne": "Laboratoires pharmaceutiques, agence ANSM, patients.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B2062"
+  "source": "PIONANR5L16B2062",
+  "mesures": [
+   "contrainte_plus",
+   "sanction_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49263": {
   "theme": "Outre-mer",
@@ -742,7 +1036,12 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B2061",
-  "remarque": "Extrait réduit à l'exposé des motifs, sans les articles : les mesures précises (montants, procédure) ne sont pas visibles."
+  "remarque": "Extrait réduit à l'exposé des motifs, sans les articles : les mesures précises (montants, procédure) ne sont pas visibles.",
+  "mesures": [
+   "aide_plus",
+   "symbolique"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49299": {
   "theme": "Santé",
@@ -752,7 +1051,11 @@
   "concerne": "Professionnels de santé, personnels des hôpitaux et établissements de santé, employeurs.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B2093"
+  "source": "PIONANR5L16B2093",
+  "mesures": [
+   "sanction_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49363": {
   "theme": "Enfance et famille",
@@ -762,7 +1065,11 @@
   "concerne": "Enfants majeurs et parents séparés, caisses d'allocations familiales.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B2128"
+  "source": "PIONANR5L16B2128",
+  "mesures": [
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49373": {
   "theme": "Outre-mer",
@@ -772,7 +1079,11 @@
   "concerne": "Électeurs de Nouvelle-Calédonie, congrès et assemblées de province.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PRJLANR5L16B2424"
+  "source": "PRJLANR5L16B2424",
+  "mesures": [
+   "institutions"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49457": {
   "theme": "Agriculture",
@@ -783,7 +1094,13 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B2231",
-  "remarque": "Extrait de l'article 3 coupé : la définition exacte des sociétés taxées est à vérifier."
+  "remarque": "Extrait de l'article 3 coupé : la définition exacte des sociétés taxées est à vérifier.",
+  "mesures": [
+   "contrainte_plus",
+   "aide_plus",
+   "impot_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49740": {
   "theme": "Outre-mer",
@@ -794,7 +1111,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PNREANR5L16B2456",
-  "remarque": "Proposition de résolution : n'a pas force de loi."
+  "remarque": "Proposition de résolution : n'a pas force de loi.",
+  "mesures": [
+   "symbolique"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49799": {
   "theme": "Outre-mer",
@@ -804,7 +1125,12 @@
   "concerne": "Élèves, enseignants et écoles des académies d'outre-mer.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B2517"
+  "source": "PIONANR5L16B2517",
+  "mesures": [
+   "contrainte_plus",
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49801": {
   "theme": "Sécurité sociale",
@@ -815,7 +1141,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B2519",
-  "remarque": "Extrait coupé avant les articles ; résumé fondé sur l'exposé des motifs, qui décrit l'article 1. À vérifier avec le texte complet."
+  "remarque": "Extrait coupé avant les articles ; résumé fondé sur l'exposé des motifs, qui décrit l'article 1. À vérifier avec le texte complet.",
+  "mesures": [
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L16N49923": {
   "theme": "Défense et international",
@@ -826,6 +1156,11 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PNREANR5L16B2598",
-  "remarque": "Proposition de résolution : n'a pas de valeur contraignante."
+  "remarque": "Proposition de résolution : n'a pas de valeur contraignante.",
+  "mesures": [
+   "international",
+   "symbolique"
+  ],
+  "mesuresNiveau": "ia"
  }
 }

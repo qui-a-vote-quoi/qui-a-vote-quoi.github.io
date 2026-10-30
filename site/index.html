@@ -60,6 +60,11 @@ footer.pied a { display: inline-block; padding-block: 2px; }
 .carte h3 a:hover { text-decoration: underline; color: var(--accent); }
 .carte-bas { display: flex; align-items: center; gap: 4px 16px; flex-wrap: wrap; font-size: 15px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .serre { color: var(--abst); font-weight: 700; }
+.mesures { margin-top: 20px; display: grid; gap: 6px; }
+.mesures ul { margin: 0; padding-left: 20px; display: grid; gap: 2px; font-size: 18px; }
+.repartition { display: grid; gap: 6px; margin-top: 10px; }
+.repartition div { display: grid; grid-template-columns: 2.5em minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.repartition b { text-align: right; font-variant-numeric: tabular-nums; font-size: 18px; }
 .badge-ia { display: inline-block; vertical-align: 3px; margin-left: 6px; font: 700 12px var(--body); letter-spacing: .04em; color: var(--muted); border: 1px solid var(--trait); border-radius: 4px; padding: 0 5px; cursor: help; } .apropos p, .apropos li { max-width: 70ch; }
 header.top { background: var(--surface); border-bottom: 1px solid var(--line); position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; }
 header.top .wrap { display: flex; align-items: center; gap: 20px; padding-block: 12px; }
@@ -282,7 +287,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   <span id="maj"></span>
 </div></footer>
 
-<script src="donnees.js"></script>
+<script src="donnees.js?v=de85aad11a"></script>
 <script>
 // Groupes de toutes les législatures (GROUPES vient de donnees.js), dans l'ordre de l'hémicycle, de la gauche vers la droite.
 // Un même sigle d'une législature à l'autre désigne le même groupe (SOC, LR, RN…).
@@ -465,6 +470,23 @@ function decisif(t, g) {
 const parDossier = ts => Object.values(ts.reduce((m, t) => { if (!m[t.dossier] || m[t.dossier].date < t.date) m[t.dossier] = t; return m; }, {}))
   .sort((a, b) => b.date.localeCompare(a.date));
 const pluriel = (n, mot) => `${n} ${mot}${n > 1 ? "s" : ""}`;
+// Ce que fait un texte : grille descriptive (GRILLE-MESURES.md). Chaque mécanisme a son contraire ; aucun n'est « bon » ou « mauvais ».
+const MESURES = {
+  aide_plus: "Crée ou étend une aide, un droit ou une prise en charge", aide_moins: "Réduit ou supprime une aide ou un droit",
+  sanction_plus: "Crée ou aggrave une sanction", sanction_moins: "Supprime ou allège une sanction",
+  contrainte_plus: "Crée une obligation, une interdiction ou un contrôle", contrainte_moins: "Lève une obligation, une interdiction ou un contrôle",
+  impot_plus: "Crée ou augmente un impôt, une taxe ou une cotisation", impot_moins: "Supprime ou baisse un impôt, une taxe ou une cotisation",
+  institutions: "Organise l'État, les institutions ou les élections", budget: "Fixe le budget de l'État ou de la Sécurité sociale",
+  international: "Approuve un accord international ou prend position sur l'étranger", symbolique: "Reconnaissance, mémoire ou déclaration sans effet juridique direct",
+};
+const mesuresTexte = t => t.mesures.length ? `<div class="mesures"><div class="eyebrow">Ce que fait ce texte</div><ul>${t.mesures.map(m => `<li>${MESURES[m]}</li>`).join("")}</ul>
+  ${t.mesuresNiveau === "ia" ? `<p class="meta" style="margin:0">Classement attribué par IA à partir des articles, pas encore vérifié par un humain. <a href="#methode">Comment c'est classé</a></p>` : ""}</div>` : "";
+// Répartition des textes d'un groupe par mécanisme (un texte peut en avoir plusieurs), dans l'ordre de la grille
+function repartitionMesures(ts) {
+  const n = {}; ts.forEach(t => t.mesures.forEach(m => n[m] = (n[m] || 0) + 1));
+  const classes = ts.filter(t => t.mesures.length).length;
+  return { classes, lignes: Object.keys(MESURES).filter(m => n[m]).map(m => ({ m, n: n[m] })) };
+}
 const listeTextes = (ts, opts) => `<div class="list">${ts.map(t => carteTexte(t, opts)).join("")}</div>`;
 // Programme d'une niche : chaque ligne est soit un texte avec fiche (id), soit un titre + statut
 const STATUTS = {
@@ -582,6 +604,7 @@ const views = {
         ${t.concerne ? `<div><div class="eyebrow">Qui est concerné</div><p>${t.concerne}</p></div>` : ""}
       </div>
       ${t.enClair ? `<p class="note">${NIVEAUX[t.niveau] || ""}</p>` : ""}
+      ${mesuresTexte(t)}
       ${t.arguments ? `<h2>Les arguments des deux camps</h2>${argsGrid(t)}
         <p class="note">Arguments avancés pendant les débats, rapportés sans jugement. Sources : ${t.arguments.sources.map(x => ext(x.url, x.label)).join(", ")}.</p>` : ""}
       <h2>Le vote des députés</h2>
@@ -650,6 +673,10 @@ const views = {
       <p class="meta">Sans les voix de ce groupe, le résultat aurait été inverse. Plus un groupe a de sièges, plus souvent ses voix décident : c'est le nombre de députés qui compte. <a href="#methode">Comment c'est calculé</a></p>
       <details class="depli"><summary>Adoptés grâce à ses voix « pour » <span>· ${pluriel(aide.length, "texte")}</span></summary>${aide.length ? listeTextes(aide) : `<p class="meta" style="padding:0 16px">Aucun.</p>`}</details>
       <details class="depli"><summary>Rejetés par ses voix « contre » <span>· ${pluriel(bloque.length, "texte")}</span></summary>${bloque.length ? listeTextes(bloque) : `<p class="meta" style="padding:0 16px">Aucun.</p>`}</details>
+      ${(() => { const r = repartitionMesures(sesTextes); return r.classes ? `<h2>3. Ce que font les textes qu'il a proposés</h2>
+        <p class="meta">Le mécanisme utilisé par chacun de ses ${pluriel(r.classes, "texte")} mis au vote et classé, lu dans ses articles. Un texte peut en combiner plusieurs. Le site ne dit pas si c'est bien ou mal : à chacun d'en juger. <a href="#methode">Comment c'est classé</a></p>
+        <div class="repartition">${r.lignes.map(l => `<div><b>${l.n}</b><span>${MESURES[l.m]}</span></div>`).join("")}</div>
+        ${sesTextes.some(t => t.mesuresNiveau === "ia") ? `<p class="note">Classement attribué par IA, pas encore vérifié par un humain.</p>` : ""}` : ""; })()}
       ${niches.length ? `<h2>Ses journées réservées</h2><p class="meta">Les jours où ce groupe a choisi seul les textes discutés (sa « niche »), avec tout son programme.</p>
         <div class="list">${niches.map(n => { const b = bilanNiche(n); return `<a class="card" href="#niche/${n.date}"><b style="font:700 17px var(--display)">${fdate(n.date)}</b><span class="meta">${b.total} textes au programme · ${b.votes} votés · ${b.sansVote} sans vote faute de temps</span></a>`; }).join("")}</div>` : ""}
       <h2>Comment il a voté sur tous les autres textes</h2>
@@ -715,6 +742,8 @@ const views = {
       </ul>
       <h2>Le poids d'un groupe</h2>
       <p>Sur la fiche de chaque groupe, on montre les textes des autres où ses voix ont été décisives : sans elles, le résultat aurait été inverse. Pour un texte adopté, ses voix « pour » étaient décisives si, en les retirant, il n'y avait plus de majorité. Pour un texte rejeté, ses voix « contre » l'étaient si, en les retirant, le texte serait passé. Les abstentions et les absents ne sont pas comptés. Un texte voté en plusieurs lectures compte une fois. Ces chiffres ne servent pas à classer les groupes : ils montrent que le nombre de sièges décide.</p>
+      <h2>Ce que fait un texte</h2>
+      <p>Chaque texte est classé selon le mécanisme qu'il utilise, lu dans ses articles : il crée ou réduit une aide, crée ou allège une sanction, crée ou lève une obligation, augmente ou baisse un impôt, organise les institutions, fixe un budget, approuve un accord international, ou exprime une reconnaissance sans effet juridique. Chaque mécanisme a son contraire, pour voir aussi ce qui se retire ou se simplifie. Ce classement décrit ; il ne juge pas : une même sanction sera vue comme protectrice par les uns, répressive par les autres. La grille complète est ${ext("https://github.com/qui-a-vote-quoi/qui-a-vote-quoi/blob/main/GRILLE-MESURES.md", "publique")}.</p>
       <h2>Les journées réservées (« niches »)</h2>
       <p>Une fois par mois, un groupe d'opposition ou minoritaire choisit seul les textes discutés. Les données officielles ne signalent pas ces journées : elles sont repérées automatiquement, puis vérifiées une à une dans les comptes rendus de séance, avec une citation à l'appui. Chaque journée indique si elle a été vérifiée par IA ou par un humain. Une journée qui n'a pas pu être vérifiée n'est pas publiée.</p>
       <h2>Les résumés « en clair »</h2>

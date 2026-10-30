@@ -11,6 +11,7 @@ Niveaux affichés sur le site :
 Les votes solennels sont tous publiés.
 """
 import datetime
+import hashlib
 import json
 import re
 import sys
@@ -119,6 +120,7 @@ def publier_legislature(leg, redaction, sigles):
                   "lecture": t.get("lecture"), "theme": r.get("theme") or "Autres sujets", "sujetNiveau": r.get("sujetNiveau"),
                   "enClair": r.get("enClair"), "concerne": r.get("concerne"), "arguments": r.get("arguments"),
                   "niveau": r.get("niveau") or "a_venir",
+                  "mesures": r.get("mesures") or [], "mesuresNiveau": r.get("mesuresNiveau"),
                   "inverse": t["inverse"], "loi": bool(t["suite"]["promulgation"]), "etape": etape(t)}
         if a["type"] == "depute":
             # Auteur élu sous une législature précédente : son groupe d'alors, rattaché à celui qui lui a succédé
@@ -170,6 +172,10 @@ def main():
         f.write("// Fichier produit par pipeline/publier.py à partir de l'open data de l'Assemblée nationale. Ne pas modifier à la main.\n")
         for nom, valeur in (("INFOS", infos), ("GROUPES", sigles), ("NICHES", niches), ("TEXTES", textes)):
             f.write(f"window.{nom} = {json.dumps(valeur, ensure_ascii=False, separators=(',', ':'))};\n")
+    # La page charge donnees.js?v=<empreinte> : un navigateur ne garde pas en cache d'anciennes données
+    empreinte = hashlib.sha1((SITE / "donnees.js").read_bytes()).hexdigest()[:10]
+    page = SITE / "index.html"
+    page.write_text(re.sub(r'<script src="donnees\.js[^"]*">', f'<script src="donnees.js?v={empreinte}">', page.read_text(encoding="utf-8")), encoding="utf-8")
     niveaux = {k: sum(1 for t in textes if t["niveau"] == k) for k in ("relu", "ia", "a_venir")}
     print(f"Résumés : {niveaux['relu']} relus, {niveaux['ia']} rédigés par IA, {niveaux['a_venir']} à venir.")
     print(f"Écrit : site/donnees.js ({(SITE / 'donnees.js').stat().st_size // 1000} Ko)")
