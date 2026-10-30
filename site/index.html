@@ -243,10 +243,8 @@ a.chip:hover { border-color: var(--encre); }
 .hero { max-width: 720px; margin: 24px auto 0; text-align: center; }
 .hero h1 { font-size: clamp(32px, 6vw, 56px); }
 .hero .lead { margin-inline: auto; }
-.hero-fait { color: var(--muted); font-weight: 600; }
-.doors.duo { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 820px; margin-inline: auto; }
-.duo .door { padding: 24px; }
-.duo .door b { font-size: 22px; }
+.hero-fait { color: var(--muted); font-weight: 600; margin-top: 18px; }
+.plus.grand { font-size: 19px; padding: 16px 28px; }
 a.plus { text-decoration: none; display: inline-flex; align-items: center; }
 
 
@@ -370,7 +368,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   main { padding-block: 24px 48px; }
   .steps { grid-template-columns: minmax(0, 1fr); gap: 12px; margin-top: 20px; }
   .doors.trio { grid-template-columns: minmax(0, 1fr); gap: 10px; }
-  .doors.duo { grid-template-columns: minmax(0, 1fr); }
   .doors:not(.trio) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .steps li { grid-template-columns: 26px minmax(0, 1fr); }
   .steps li::before { width: 26px; height: 26px; font-size: 13px; }
@@ -669,17 +666,14 @@ function bilanNiche(n) {
 
 const views = {
   accueil() {
-    // L'objectif du site en une phrase, puis deux façons d'y aller : voir ce qu'ils ont voté, ou se mettre à leur place
+    // Une question au lecteur, puis de quoi y répondre lui-même : voir ce qu'ils ont voté, ou se mettre à leur place
     const serres = TEXTES.filter(t => totals(t).ecart <= ECART_SERRE).length;
     return `<section class="hero">
-        <h1>Ce que votent vos députés change votre quotidien</h1>
-        <p class="lead">Loyers, retraites, santé, impôts : voyez qui a proposé quoi, et qui a voté quoi à l'Assemblée depuis 2017. Sans parti pris, à vous de juger.</p>
-        <p class="hero-fait">${serres} votes se sont joués à ${ECART_SERRE} voix près ou moins.</p>
-      </section>
-      <div class="doors duo">
-        <a class="door" href="#sujets"><b>Voir ce qu'ils ont voté</b><span>Tous les textes, par sujet, par groupe ou par mot.</span></a>
-        <a class="door" href="#bilan"><b>Et vous, qu'auriez-vous voté&nbsp;?</b><span>Revivez le débat, votez, et découvrez quels groupes ont voté comme vous.</span></a>
-      </div>`;
+        <h1>Est-ce que voter change vraiment votre quotidien&nbsp;?</h1>
+        <p class="lead">Loyers, retraites, santé, impôts : voyez qui a proposé quoi à l'Assemblée depuis 2017, et qui a voté pour ou contre. ${serres} votes se sont joués à ${ECART_SERRE} voix près ou moins.</p>
+        <p><a class="plus principal grand" href="#sujets">À vous de juger →</a></p>
+        <p class="hero-fait"><a href="#bilan">Ou mettez-vous à leur place : qu'auriez-vous voté&nbsp;?</a></p>
+      </section>`;
   },
   groupes() {
     // Une liste par période, chaque groupe dans l'ordre de l'hémicycle
