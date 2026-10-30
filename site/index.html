@@ -779,7 +779,7 @@ function quiDecide() {
   const part = [["qd-g", "Gouvernement", gouv], ["qd-d", "Groupes de députés", deputes], ["qd-s", "Sénat", senat]].filter(x => x[2]);
   return `<section class="qui-decide" aria-labelledby="qui-decide">
     <h2 id="qui-decide" tabindex="-1">Qui décide de ce qui est voté&nbsp;?</h2>
-    <p class="qd-sous">Votre vote compte, mais il passe par plusieurs étapes.</p>
+    <p class="qd-sous">Surtout le gouvernement. Mais il dépend des députés, et c'est vous qui les élisez.</p>
     <ol class="chaine">
       <li><span class="qd-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v7H4z"/><path d="M8 13V4h8v9"/><path d="M10 8.5l1.5 1.5L14.5 7"/></svg></span><b>Vous</b><span>élisez les 577 députés</span></li>
       <li><span class="qd-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 19h20"/><path d="M3.5 19a8.5 8.5 0 0 1 17 0"/><path d="M8 19a4 4 0 0 1 8 0"/></svg></span><b>Les députés</b><span>peuvent forcer le gouvernement à démissionner en votant une motion de censure. Il doit donc tenir compte de leur avis.</span></li>
