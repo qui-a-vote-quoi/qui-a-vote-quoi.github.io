@@ -248,7 +248,8 @@ a.chip:hover { border-color: var(--encre); }
 .tuiles a { display: grid; gap: 2px; min-height: 64px; height: 100%; align-content: center; padding: 12px 14px; background: var(--surface); border: var(--bord); border-radius: var(--rayon-s); color: var(--fg); text-decoration: none; font: 700 17px var(--display); line-height: 1.2; }
 .tuiles a:hover { border-color: var(--encre); }
 .tuiles span { font: 400 14px var(--body); color: var(--muted); }
-.tuiles li:nth-child(-n+6) a { background: var(--accent-soft); border-color: transparent; }
+.tuiles-titre { margin: 28px 0 0; }
+.tuiles-titre + .tuiles { margin-top: 10px; }
 .barre-jouer { position: sticky; bottom: 12px; z-index: 4; margin-top: 16px; }
 .appel-jeu { margin-top: 28px; }
 .ligne-resume { margin: 0; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
@@ -729,10 +730,11 @@ const views = {
   // Après « À vous de juger » : partir de ce qui compte pour le lecteur. Les sujets du quotidien d'abord.
   juger() {
     const QUOTIDIEN = ["Logement", "Retraites", "Santé", "Impôts et budget", "Travail et emploi", "Éducation et jeunesse"];
-    const sujets = [...QUOTIDIEN, ...SUJETS.filter(th => !QUOTIDIEN.includes(th))].filter(th => TEXTES.some(t => t.theme === th));
+    const tuiles = liste => `<ul class="tuiles">${liste.filter(th => TEXTES.some(t => t.theme === th)).map(th => `<li><a href="#sujet/${encodeURIComponent(th)}">${th}<span>${pluriel(TEXTES.filter(t => t.theme === th).length, "texte")}</span></a></li>`).join("")}</ul>`;
     return `<h1>Qu'est-ce qui compte pour vous&nbsp;?</h1>
       <p class="lead">Choisissez un sujet. Vous verrez les textes votés, ce qu'ils changent, et qui a voté pour ou contre.</p>
-      <ul class="tuiles">${sujets.map(th => `<li><a href="#sujet/${encodeURIComponent(th)}">${th}<span>${pluriel(TEXTES.filter(t => t.theme === th).length, "texte")}</span></a></li>`).join("")}</ul>
+      <h2 class="eyebrow tuiles-titre">Votre quotidien</h2>${tuiles(QUOTIDIEN)}
+      <h2 class="eyebrow tuiles-titre">Les autres sujets</h2>${tuiles(SUJETS.filter(th => !QUOTIDIEN.includes(th)))}
       <p class="hero-fait"><a href="#bilan">Ou mettez-vous à leur place : qu'auriez-vous voté&nbsp;?</a></p>`;
   },
   niche(date) {
