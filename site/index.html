@@ -814,7 +814,7 @@ const views = {
         <h1>Est-ce que voter change vraiment votre quotidien&nbsp;?</h1>
         <p class="lead">Explorez les sujets votés à l'Assemblée depuis 2017 : qui a proposé quoi, et qui a voté pour ou contre. ${serres} votes se sont joués à ${ECART_SERRE} voix près ou moins.</p>
         <p><a class="plus principal grand" href="#juger">À vous de juger →</a></p>
-        <p class="hero-fait"><a href="#bilan">Ou mettez-vous à leur place : qu'auriez-vous voté&nbsp;?</a></p>
+        <p class="hero-fait"><a href="#bilan">Ou votez vous-même, et voyez qui vote comme vous</a></p>
       </section>
       ${quiDecide()}`;
   },
@@ -866,7 +866,7 @@ const views = {
       <h2 class="eyebrow tuiles-titre">Votre quotidien</h2>${tuiles(QUOTIDIEN)}
       <h2 class="eyebrow tuiles-titre">Les autres sujets</h2>${tuiles(SUJETS.filter(th => !QUOTIDIEN.includes(th)))}
       <h2 class="eyebrow tuiles-titre">À travers plusieurs sujets</h2>${tuiles(Object.keys(TRANSVERSAUX))}
-      <p class="hero-fait"><a href="#bilan">Ou mettez-vous à leur place : qu'auriez-vous voté&nbsp;?</a></p>`;
+      <p class="hero-fait"><a href="#bilan">Ou votez vous-même, et voyez qui vote comme vous</a></p>`;
   },
   niche(date) {
     const n = NICHES.find(x => x.date === date), b = bilanNiche(n);
