@@ -26,12 +26,15 @@ def texte_de(element):
 def interventions(chemin, titre, jour, mandats):
     """Les interventions de fond sur ce texte dans un compte rendu : présentation et discussion générale."""
     sortie, dans_le_texte, partie = [], False, None
-    for point in ET.parse(chemin).getroot().find(f"{NS}contenu"):
-        if point.tag != f"{NS}point":
-            continue
-        intitule = re.sub(r"\s*\(suite\)\s*$", "", texte_de(point.find(f"{NS}texte")))
+    points = [p for p in ET.parse(chemin).getroot().find(f"{NS}contenu") if p.tag == f"{NS}point"]
+    intitule_de = lambda p: re.sub(r"\s*\(suite\)\s*$", "", texte_de(p.find(f"{NS}texte")))
+    # Seuls les titres qui ressemblent le plus à celui du texte : un texte voisin au titre proche ne doit pas s'y mêler
+    scores = [proximite(titre, intitule_de(p)) for p in points if p.get("nivpoint") == "1"]
+    seuil = max([0.5] + [x - 0.05 for x in scores])
+    for point in points:
+        intitule = intitule_de(point)
         if point.get("nivpoint") == "1":
-            dans_le_texte = proximite(titre, intitule) >= 0.5
+            dans_le_texte = proximite(titre, intitule) >= seuil
             partie = None
             continue
         if not dans_le_texte:

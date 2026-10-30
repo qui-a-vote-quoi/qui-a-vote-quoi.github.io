@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Qui a voté quoi (version de test)</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="description" content="Pour chaque texte examiné à l'Assemblée nationale : qui l'a proposé, ce qu'il change, et ce que chaque groupe de députés a voté.">
 <!-- Version de test : pas d'indexation par les moteurs de recherche -->
 <meta name="robots" content="noindex, nofollow">
@@ -386,7 +387,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   <span id="maj"></span>
 </div></footer>
 
-<script src="donnees.js?v=05d1159030"></script>
+<script src="donnees.js?v=2fdf2e853e"></script>
 <script>
 // Groupes de toutes les législatures (GROUPES vient de donnees.js), dans l'ordre de l'hémicycle, de la gauche vers la droite.
 // Un même sigle d'une législature à l'autre désigne le même groupe (SOC, LR, RN…).
@@ -550,20 +551,30 @@ const badgeIA = t => t.niveau === "ia"
 const auteurLigne = t => t.groupe
   ? `<a class="auteur" href="#groupe/${t.groupe}"><span class="sr-only">Proposé par </span><i class="dot" style="background:${G(t.groupe).c}"></i>${t.groupe}<span class="sr-only">, ${G(t.groupe).nom}</span></a>`
   : `<span class="auteur"><span class="sr-only">Proposé par </span>${t.auteurCourt}</span>`;
-function ligneTexte(t, { avecAuteur = true } = {}) {
+function ligneTexte(t, { avecAuteur = true, datee = false } = {}) {
   const s = totals(t), serre = s.ecart <= ECART_SERRE;
   return `<li class="ligne">
     <div class="ligne-haut"><h3><a href="#texte/${t.id}">${t.titre}</a>${t.niveau === "relu" ? ` <span class="badge-relu">relu</span>` : ""}</h3>${issueTag(t)}</div>
-    <div class="ligne-bas">${avecAuteur ? auteurLigne(t) : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, 0, 0)}</span>${s.pour} pour · ${s.contre} contre${serre ? `<span class="serre">à ${s.ecart} voix près</span>` : ""}</span>${lecture(t) ? `<span>${lecture(t)}</span>` : ""}${t.debat ? `<a class="lien-debat" href="#texte/${t.id}/debat">Le débat<span class="sr-only"> : ${t.titre.replace(/"/g, "&quot;")}</span></a>` : ""}</div>
+    <div class="ligne-bas">${avecAuteur ? auteurLigne(t) : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, 0, 0)}</span>${s.pour} pour · ${s.contre} contre${serre ? `<span class="serre">à ${s.ecart} voix près</span>` : ""}</span>${lecture(t) ? `<span>${lecture(t)}</span>` : ""}${t.debat ? `<a class="lien-debat" href="#texte/${t.id}/debat">Le débat<span class="sr-only"> : ${t.titre.replace(/"/g, "&quot;")}</span></a>` : ""}${datee ? `<span class="carte-date">${fdateCourte(t.date)}</span>` : ""}</div>
   </li>`;
 }
 const MOIS_LONG = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { month: "long", year: "numeric" });
-// Une liste de textes, regroupés par mois (du plus récent au plus ancien), et la mention IA une seule fois
+// Une liste de textes (du plus récent au plus ancien), et la mention IA une seule fois.
+// Intertitres adaptés à la densité : par mois si la liste est dense, par année sinon ; si même les années ne
+// regroupent presque rien (liste filtrée très clairsemée), pas d'intertitre et la date revient sur chaque carte.
+function regrouper(ts, cle) {
+  const g = [];
+  ts.forEach(t => { const k = cle(t); if (!g.length || g[g.length - 1].k !== k) g.push({ k, d: t.date, ts: [] }); g[g.length - 1].ts.push(t); });
+  return g;
+}
 function listeTextes(ts, opts) {
-  const mois = [];
-  ts.forEach(t => { const m = t.date.slice(0, 7); if (!mois.length || mois[mois.length - 1].m !== m) mois.push({ m, d: t.date, ts: [] }); mois[mois.length - 1].ts.push(t); });
+  const parMois = regrouper(ts, t => t.date.slice(0, 7)), parAn = regrouper(ts, t => t.date.slice(0, 4));
+  const groupes = ts.length >= 2 * parMois.length ? parMois.map(g => ({ ...g, titre: MOIS_LONG(g.d) }))
+    : ts.length >= 2 * parAn.length ? parAn.map(g => ({ ...g, titre: g.k }))
+    : [{ titre: null, ts }];
+  const datee = !groupes[0].titre;
   return `${ts.some(t => t.niveau === "ia") ? `<p class="note-ia">Titres et résumés rédigés par IA, pas encore vérifiés par un humain, sauf mention « relu ».</p>` : ""}
-    <div class="liste-textes">${mois.map(g => `<h3 class="mois">${MOIS_LONG(g.d)}</h3><ul class="lignes">${g.ts.map(t => ligneTexte(t, opts)).join("")}</ul>`).join("")}</div>`;
+    <div class="liste-textes">${groupes.map(g => `${g.titre ? `<h3 class="mois">${g.titre}</h3>` : ""}<ul class="lignes">${g.ts.map(t => ligneTexte(t, { ...opts, datee })).join("")}</ul>`).join("")}</div>`;
 }
 // L'étape du parcours du texte, en mots simples (l'intitulé officiel est sur la fiche)
 const LECTURES = { "texte de la commission mixte paritaire": "accord députés-sénateurs", "texte de la commission paritaire": "accord députés-sénateurs",
