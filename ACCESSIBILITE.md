@@ -29,4 +29,23 @@ Le site s'adresse à tout le monde : il doit rester accessible à chaque évolut
 
 ## Avant une mise en ligne
 
+**Le contrôle automatique**, à lancer après chaque changement visible :
+
+```bash
+cd outils/accessibilite
+npm install && npx playwright install chromium   # la première fois seulement
+npm run verifier
+```
+
+Il ouvre chaque vue du site (accueil, groupes, textes, un sujet, une fiche texte votée plusieurs fois, une fiche avec débat, deux fiches groupe, une niche, À vous de voter, méthode, à propos) en clair et en sombre, sur ordinateur et sur mobile. Il vérifie :
+
+- les règles WCAG 2.1 A et AA testables automatiquement (axe-core) : contrastes, noms des liens et boutons, titres, attributs ARIA, langue… ;
+- les zones cliquables d'au moins 24 px ;
+- un seul h1 par vue, le titre d'onglet, le focus sur le titre au changement de vue ;
+- les liens vers un nouvel onglet signalés ;
+- l'absence de défilement horizontal à 320 px ;
+- l'absence d'erreur JavaScript.
+
+Il liste les problèmes et se termine en erreur s'il en trouve.
+
 Ces vérifications automatiques ne suffisent pas : il faut un test réel avec un lecteur d'écran (VoiceOver, NVDA) et une navigation complète au clavier.

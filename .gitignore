@@ -5,3 +5,6 @@ donnees/brut/
 .DS_Store
 __pycache__/
 *.pyc
+
+# Outils
+node_modules/

@@ -82,7 +82,7 @@ footer.pied a { display: inline-block; padding-block: 2px; }
 /* Liste de textes : le même composant partout (accueil, textes, recherche, fiche groupe) ; une carte par texte, groupées par mois */
 .liste-textes .mois { font: 700 13px var(--body); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 18px 0 8px; }
 .liste-textes .mois:first-child { margin-top: 4px; }
-.lignes { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.lignes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
 .ligne { display: grid; gap: 6px; padding: 13px 18px; background: var(--surface); border: var(--bord); border-radius: var(--rayon); transition: transform .12s, box-shadow .12s, border-color .12s; }
 .ligne:hover { transform: translate(-2px, -2px); border-color: var(--encre); box-shadow: var(--ombre); }
 .ligne-haut { display: flex; justify-content: space-between; align-items: flex-start; gap: 6px 12px; }
