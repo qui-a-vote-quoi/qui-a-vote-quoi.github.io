@@ -54,7 +54,9 @@ footer.pied a { display: inline-block; padding-block: 2px; }
 .lien-tout { font-weight: 600; }
 /* Carte de texte : le même composant partout (accueil, sujets, recherche, fiche groupe) */
 .carte { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 18px; display: grid; gap: 6px; }
-.carte-haut { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.carte-haut { display: flex; justify-content: space-between; align-items: flex-start; gap: 6px 12px; }
+.carte-haut .tag { margin-top: 3px; flex: none; }
+.carte-date { margin-left: auto; font-size: 14px; }
 .carte h3 { font-size: 19px; }
 .carte h3 a { text-decoration: none; color: var(--fg); }
 .carte h3 a:hover { text-decoration: underline; color: var(--accent); }
@@ -290,7 +292,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   <span id="maj"></span>
 </div></footer>
 
-<script src="donnees.js?v=de85aad11a"></script>
+<script src="donnees.js?v=4b1583dcdb"></script>
 <script>
 // Groupes de toutes les législatures (GROUPES vient de donnees.js), dans l'ordre de l'hémicycle, de la gauche vers la droite.
 // Un même sigle d'une législature à l'autre désigne le même groupe (SOC, LR, RN…).
@@ -451,9 +453,8 @@ const badgeIA = t => t.niveau === "ia"
 function carteTexte(t, { avecAuteur = true } = {}) {
   const s = totals(t), serre = s.ecart <= ECART_SERRE;
   return `<article class="carte">
-    <div class="carte-haut"><span class="meta">${fdateCourte(t.date)} · ${t.type === "solennel" ? "Vote solennel" : "Journée réservée"}${lecture(t) ? `, ${lecture(t)}` : ""}</span>${issueTag(t)}</div>
-    <h3><a href="#texte/${t.id}">${t.titre}</a>${badgeIA(t)}</h3>
-    <div class="carte-bas">${avecAuteur ? `<span>Proposé par ${auteurCourt(t)}</span>` : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, 0, 0)}</span>${s.pour} pour · ${s.contre} contre</span>${serre ? `<span class="serre">Vote serré : ${s.ecart} voix d'écart</span>` : ""}</div>
+    <div class="carte-haut"><h3><a href="#texte/${t.id}">${t.titre}</a>${badgeIA(t)}</h3>${issueTag(t)}</div>
+    <div class="carte-bas">${avecAuteur ? `<span>Proposé par ${auteurCourt(t)}</span>` : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, 0, 0)}</span>${s.pour} pour · ${s.contre} contre</span>${serre ? `<span class="serre">Vote serré : ${s.ecart} voix d'écart</span>` : ""}<span class="carte-date">${fdateCourte(t.date)} · ${t.type === "solennel" ? "Vote solennel" : "Journée réservée"}${lecture(t) ? `, ${lecture(t)}` : ""}</span></div>
   </article>`;
 }
 // L'étape du parcours du texte, en mots simples (l'intitulé officiel est sur la fiche)

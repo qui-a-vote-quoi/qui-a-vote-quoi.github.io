@@ -31,6 +31,14 @@ MOIS = "janvier février mars avril mai juin juillet août septembre octobre nov
 STATUTS = {"retire": "retiree", "commence": "commence", "pas_examine": "pas_examine", "renvoye": "renvoye"}
 
 
+def insecables(texte):
+    """Typographie française : espace insécable devant % : ; ? ! » et après «, pour qu'ils ne se retrouvent pas seuls en début de ligne."""
+    if not texte:
+        return texte
+    texte = re.sub(r" ([%:;?!»])", "\u00a0\\1", texte)
+    return re.sub(r"« ", "«\u00a0", texte)
+
+
 def titre_lisible(titre):
     """« Proposition de loi visant à interdire … » → « Interdire … ». Les projets de loi gardent leur titre."""
     t = re.sub(r"^Proposition de (loi|résolution)( organique| constitutionnelle)? (visant à|tendant à|relative à|portant|pour) ", "", titre.strip())
@@ -128,6 +136,8 @@ def publier_legislature(leg, redaction, sigles):
         else:
             entree["auteur"], entree["auteurCourt"] = {"gouvernement": ("le gouvernement", "Gouvernement"),
                                                        "senat": ("des sénateurs", "Sénat")}.get(a["type"], ("un auteur non identifié", "?"))
+        for champ in ("titre", "titreOfficiel", "enClair", "concerne"):
+            entree[champ] = insecables(entree[champ])
         entree.update(vote(scrutins[t["scrutin"]]))
         textes.append(entree)
     ids = {t["id"] for t in textes}
