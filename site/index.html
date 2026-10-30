@@ -303,7 +303,6 @@ a.plus { text-decoration: none; display: inline-flex; align-items: center; }
 .hemi .sous { fill: var(--muted); font: 400 14px var(--body); }
 .hemi.cliquable svg a circle, .legende-groupes a { transition: opacity .15s; }
 .hemi .zone { fill: transparent; }
-.hemi .coupe { stroke: var(--surface); stroke-width: 3; pointer-events: none; }
 .hemi.un-groupe svg a:not(.on) circle, .hemi.un-groupe svg a:not(.on) text { opacity: .2; }
 .periodes { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; }
 .periodes button { font: 700 15px var(--body); padding: 8px 16px; min-height: 44px; border-radius: 999px; border: var(--bord); background: var(--surface); color: var(--fg); cursor: pointer; }
@@ -613,37 +612,39 @@ function hemicycle(blocs, { aria, centre, sous = "", tete = "", pied = "", lien 
   const parRang = rayons.map(r => Math.round(N * r / somme));
   parRang[rangs - 1] += N - parRang.reduce((a, b) => a + b, 0);
   const sieges = [];
-  rayons.forEach((r, i) => { const n = parRang[i]; for (let k = 0; k < n; k++) { const a = Math.PI * (1 - k / (n - 1)); sieges.push({ x: r * Math.cos(a), y: r * Math.sin(a), a }); } });
-  sieges.sort((u, v) => v.a - u.a || v.y - u.y);
+  rayons.forEach((r, i) => { const n = parRang[i]; for (let k = 0; k < n; k++) sieges.push({ r, a: Math.PI * (1 - k / (n - 1)) }); });
+  sieges.sort((u, v) => v.a - u.a || u.r - v.r);
+  // Les sièges sont rangés par angle, donc un groupe occupe une part de l'hémicycle : on resserre un peu les angles
+  // pour laisser un léger espace vide entre deux groupes voisins, sur toutes les rangées
+  const ordre = ORDRE.map(g => blocs.find(x => x.g === g)).filter(b => b && b.lots.some(([, k]) => k > 0));
+  const ecart = .016, serre = (Math.PI - (ordre.length - 1) * ecart) / Math.PI;
   let i = 0, dessin = "";
   const bornes = [];
-  ORDRE.forEach(g => {
-    const b = blocs.find(x => x.g === g); if (!b) return;
-    const debut = i;
+  ordre.forEach((b, rang) => {
+    const g = b.g, debut = i, decale = (ordre.length - 1 - rang) * ecart, angle = j => sieges[j].a * serre + decale;
     let seg = "";
     b.lots.forEach(([attr, k]) => {
-      for (let j = 0; j < k && i < sieges.length; j++, i++) seg += `<circle ${attr} cx="${(sieges[i].x * S).toFixed(1)}" cy="${(-sieges[i].y * S).toFixed(1)}" r="5.2"/>`;
+      for (let j = 0; j < k && i < sieges.length; j++, i++) { const a = angle(i);
+        seg += `<circle ${attr} cx="${(sieges[i].r * Math.cos(a) * S).toFixed(1)}" cy="${(-sieges[i].r * Math.sin(a) * S).toFixed(1)}" r="5.2"/>`; }
     });
     if (i - debut >= 15) {
-      const am = (sieges[debut].a + sieges[i - 1].a) / 2, R = 1.09 * S;
+      const am = (angle(debut) + angle(i - 1)) / 2, R = 1.09 * S;
       const x = R * Math.cos(am), y = -R * Math.sin(am), anc = Math.abs(x) < 30 ? "middle" : x < 0 ? "end" : "start";
       seg += `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" text-anchor="${anc}">${g}</text>`;
     }
     dessin += lien ? `<a href="#groupe/${g}" data-g="${g}" tabindex="-1">${seg}</a>` : seg;
-    if (i > debut) bornes.push({ g, de: sieges[debut].a, a: sieges[i - 1].a });
+    if (i > debut) bornes.push({ g, de: angle(debut), a: angle(i - 1) });
   });
-  // Les sièges sont rangés par angle : la frontière entre deux groupes voisins est un rayon, à mi-chemin entre eux
+  // La frontière entre deux groupes voisins est un rayon, au milieu de l'espace qui les sépare
   const ri = (r0 - .04) * S, re = 1.04 * S, pt = (r, t) => `${(r * Math.cos(t)).toFixed(1)} ${(-r * Math.sin(t)).toFixed(1)}`;
   const frontieres = bornes.slice(1).map((b, k) => (bornes[k].a + b.de) / 2);
-  // Une fine coupure sur chaque frontière, pour voir où finit un groupe
-  const coupes = frontieres.map(t => `<path class="coupe" d="M${pt(ri, t)} L${pt(re, t)}"/>`).join("");
   // Cliquable : sous les points, une part d'anneau par groupe couvre aussi les vides entre eux (le survol ne clignote pas)
   const zones = lien ? bornes.map((b, k) => {
     const A = k ? frontieres[k - 1] : Math.PI, B = k < bornes.length - 1 ? frontieres[k] : 0;
     return `<a href="#groupe/${b.g}" data-g="${b.g}" tabindex="-1"><path class="zone" d="M${pt(re, A)} A${re} ${re} 0 0 1 ${pt(re, B)} L${pt(ri, B)} A${ri} ${ri} 0 0 0 ${pt(ri, A)}Z"/></a>`;
   }).join("") : "";
   return `<div class="hemi${lien ? " cliquable" : ""}">${tete}<svg viewBox="-300 -262 600 280" ${lien ? `aria-hidden="true"` : `role="img" aria-label="${aria}"`}>
-    ${zones}${dessin}${coupes}<text class="centre" x="0" y="${sous ? -24 : -6}" text-anchor="middle">${centre}</text>${sous ? `<text class="sous" x="0" y="-2" text-anchor="middle">${sous}</text>` : ""}</svg>${pied}</div>`;
+    ${zones}${dessin}<text class="centre" x="0" y="${sous ? -24 : -6}" text-anchor="middle">${centre}</text>${sous ? `<text class="sous" x="0" y="-2" text-anchor="middle">${sous}</text>` : ""}</svg>${pied}</div>`;
 }
 // Hémicycle d'un vote : chaque député coloré selon son vote
 function hemicycleVote(t) {
