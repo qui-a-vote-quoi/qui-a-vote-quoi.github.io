@@ -48,6 +48,7 @@ footer.pied a { display: inline-block; padding-block: 2px; }
 /* Filtres : une grille de trois colonnes égales ; la recherche et le choix des sujets prennent toute la largeur */
 .filtres { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 24px; background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 18px; }
 .filtres > .champ, .filtres > .choix-sujets { grid-column: 1 / -1; }
+.bilan .filtres { margin-top: 0; }   /* aligné en haut avec le panneau de résultat */
 .filtres label, .filtres legend { display: block; font: 700 13px var(--body); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; padding: 0; }
 .filtres input[type=search], .filtres select { display: block; width: 100%; height: 46px; font: 16px var(--body); color: var(--fg); background-color: var(--surface); border: var(--bord); border-radius: var(--rayon-s); padding: 0 14px; }
 .recherche input[type=search] { border: var(--bord-encre); border-radius: 999px; box-shadow: var(--ombre); }
