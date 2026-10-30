@@ -441,6 +441,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
 const ORDRE_HEMICYCLE = ["FI", "LFI-NUPES", "LFI-NFP", "GDR-NUPES", "GDR", "ECOLO", "ECOS", "SOC", "EDS", "LT", "LIOT", "LAREM", "RE", "EPR",
   "DEM", "AGIR-E", "HOR", "UDI-I", "LR", "DR", "UDR", "RN", "NI"];
 const ORDRE = ORDRE_HEMICYCLE.filter(g => GROUPES[g]).concat(Object.keys(GROUPES).filter(g => !ORDRE_HEMICYCLE.includes(g)));
+// Les non-inscrits ne forment pas un groupe : chacun vote librement. Ils n'ont donc pas de « position », ne sont ni
+// rangés dans un camp, ni comparés aux groupes ; on montre seulement le détail de leurs voix.
+const GROUPES_VOTE = ORDRE.filter(g => g !== "NI");
 const G = g => GROUPES[g] || { nom: g, c: "#6b707a", t: "#fff", periodes: {} };
 // Les trois périodes couvertes, et ce qu'il faut savoir du rapport de force pour lire les votes
 const PERIODES = {
@@ -611,7 +614,7 @@ function argsGrid(t) {
 // Groupes rangés par position sur un vote, dans l'ordre de l'hémicycle
 function camps(t) {
   return ["soutien", "opposition", "abstention"].map(st => {
-    const gs = ORDRE.filter(g => { const r = t.groupes.find(x => x.g === g); return r && stance(t, r) === st; });
+    const gs = GROUPES_VOTE.filter(g => { const r = t.groupes.find(x => x.g === g); return r && stance(t, r) === st; });
     if (st === "abstention" && !gs.length) return "";
     return `<div class="row camp"><span class="pos ${st}">${LIB[st]}</span>${gs.map(g => chip(g)).join("") || `<span class="meta">aucun groupe</span>`}</div>`;
   }).join("");
@@ -634,7 +637,8 @@ function ligneTexte(t, { avecAuteur = true, datee = false, voteDe = null, avecRe
   return `<li class="ligne">
     <div class="ligne-haut"><h3><a href="#texte/${t.id}">${t.titre}</a>${t.niveau === "relu" ? ` <span class="badge-relu">relu</span>` : ""}</h3>${issueTag(t)}</div>
     ${avecResume && t.enClair ? `<p class="ligne-resume">${t.enClair}</p>` : ""}
-    <div class="ligne-bas">${voteDe ? `<span class="vote-groupe">Son vote : <b class="pos ${st}">${LIB[st]}</b></span>` : ""}${avecAuteur ? auteurLigne(t) : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, s.abst, 0)}</span><span>${s.pour} pour · ${s.contre} contre${s.abst ? ` · ${s.abst}&nbsp;<span aria-hidden="true">abst.</span><span class="sr-only">abstentions</span>` : ""}</span>${serre ? `<span class="serre">à ${s.ecart} voix près</span>` : ""}</span>${lecture(t) ? `<span>${lecture(t)}</span>` : ""}${t.debat ? `<a class="lien-debat" href="#texte/${t.id}/debat">Le débat<span class="sr-only"> : ${t.titre.replace(/"/g, "&quot;")}</span></a>` : ""}${datee ? `<span class="carte-date">${fdateCourte(t.date)}</span>` : ""}</div>
+    <div class="ligne-bas">${voteDe === "NI" ? (() => { const v = votesGroupe(t, t.groupes.find(r => r.g === "NI")); return `<span class="vote-groupe">Non-inscrits : ${v.p} pour · ${v.c} contre · ${v.a} abst. · ${v.n} absents</span>`; })()
+      : voteDe ? `<span class="vote-groupe">Son vote : <b class="pos ${st}">${LIB[st]}</b></span>` : ""}${avecAuteur ? auteurLigne(t) : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, s.abst, 0)}</span><span>${s.pour} pour · ${s.contre} contre${s.abst ? ` · ${s.abst}&nbsp;<span aria-hidden="true">abst.</span><span class="sr-only">abstentions</span>` : ""}</span>${serre ? `<span class="serre">à ${s.ecart} voix près</span>` : ""}</span>${lecture(t) ? `<span>${lecture(t)}</span>` : ""}${t.debat ? `<a class="lien-debat" href="#texte/${t.id}/debat">Le débat<span class="sr-only"> : ${t.titre.replace(/"/g, "&quot;")}</span></a>` : ""}${datee ? `<span class="carte-date">${fdateCourte(t.date)}</span>` : ""}</div>
   </li>`;
 }
 const MOIS_LONG = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { month: "long", year: "numeric" });
@@ -851,7 +855,7 @@ const views = {
       <h2>Groupe par groupe</h2>
       <div class="grp-list">${rows.map(r => {
         const st = stance(t, r), v = votesGroupe(t, r), pres = Math.round(100 * (v.p + v.c + v.a) / r.m);
-        return `<div class="grp">${chip(r.g)}<span class="pos ${st}">${LIB[st]}</span>${bar(v.p, v.c, v.a, v.n)}<span class="pct">${pres} %</span>
+        return `<div class="grp">${chip(r.g)}${r.g === "NI" ? `<span class="pos absent">Chacun vote librement</span>` : `<span class="pos ${st}">${LIB[st]}</span>`}${bar(v.p, v.c, v.a, v.n)}<span class="pct">${pres} %</span>
           <span class="num">${v.p} pour · ${v.c} contre · ${v.a} abst. · ${v.n} n'ont pas voté (participation ${pres} %)</span></div>`;
       }).join("")}</div>
       <p class="note">Position du groupe : le choix le plus fréquent parmi ses députés qui ont voté. Sources sur le site de l'Assemblée nationale : ${ext(urlVote(t.scrutin, t.leg), `vote n° ${t.scrutin}`)}, ${ext(urlDossier(t), "le texte et son parcours")}.</p>
@@ -868,7 +872,8 @@ const views = {
     const lois = sesTextes.filter(t => t.loi).length;
     const aide = parDossier(autres.filter(t => decisif(t, g) === "adopte")), bloque = parDossier(autres.filter(t => decisif(t, g) === "rejete"));
     // accord avec les autres groupes, sur les textes où les deux ont voté
-    const accords = ORDRE.filter(o => o !== g).map(o => {
+    const ni = g === "NI";
+    const accords = ni ? [] : GROUPES_VOTE.filter(o => o !== g).map(o => {
       let same = 0, n = 0;
       TEXTES.forEach(t => {
         const a = t.groupes.find(r => r.g === g), b = t.groupes.find(r => r.g === o);
@@ -892,34 +897,35 @@ const views = {
         })()}
         <div class="stats">
           <div class="stat"><div class="meta">Ses textes mis au vote, adoptés par l'Assemblée</div><span class="big">${adoptes.length} / ${sesTextes.length}</span><div class="meta">dont ${pluriel(lois, "devenu")} loi</div></div>
-          <div class="stat"><div class="meta">Textes des autres adoptés : ses voix ont été décisives</div><span class="big">${aide.length}</span></div>
-          <div class="stat"><div class="meta">Textes des autres rejetés : ses voix ont été décisives</div><span class="big">${bloque.length}</span></div>
+          ${ni ? "" : `<div class="stat"><div class="meta">Textes des autres adoptés : ses voix ont été décisives</div><span class="big">${aide.length}</span></div>
+          <div class="stat"><div class="meta">Textes des autres rejetés : ses voix ont été décisives</div><span class="big">${bloque.length}</span></div>`}
           <div class="stat"><div class="meta">Participation moyenne aux votes</div><span class="big">${presMoy ?? "–"} %</span></div>
         </div>
+        ${ni ? `<p class="contexte">Les non-inscrits ne forment pas un groupe : ce sont des députés qui n'ont rejoint aucun groupe, souvent de bords très différents. Chacun vote librement. Le site ne leur attribue donc pas de position commune et ne les compare pas aux groupes : il montre le détail de leurs voix sur chaque texte.</p>` : ""}
       </div>
       <h2>1. Ce qu'il a proposé</h2>
       ${sesTextes.length ? `<p class="meta">${pluriel(sesTextes.length, "texte")} mis au vote, lors de ses journées réservées ou d'un vote solennel, dont ${adoptes.length} adopté${adoptes.length > 1 ? "s" : ""} par l'Assemblée et ${pluriel(lois, "devenu")} loi. Les textes de ses journées réservées qui n'ont pas pu être votés, faute de temps, sont dans le programme de chaque journée, plus bas.</p>${listeTextes(portes, { avecAuteur: false })}` : `<p class="meta">Aucun texte de ce groupe sur le site pour l'instant.</p>`}
-      <h2>2. Les textes des autres où ses voix ont fait la différence</h2>
+      ${ni ? "" : `<h2>2. Les textes des autres où ses voix ont fait la différence</h2>
       <p class="meta">Sans les voix de ce groupe, le résultat aurait été inverse. Plus un groupe a de sièges, plus souvent ses voix décident : c'est le nombre de députés qui compte. <a href="#methode">Comment c'est calculé</a></p>
       <details class="depli"><summary>Adoptés grâce à ses voix « pour » <span>· ${pluriel(aide.length, "texte")}</span></summary>${aide.length ? listeTextes(aide) : `<p class="meta">Aucun.</p>`}</details>
-      <details class="depli"><summary>Rejetés par ses voix « contre » <span>· ${pluriel(bloque.length, "texte")}</span></summary>${bloque.length ? listeTextes(bloque) : `<p class="meta">Aucun.</p>`}</details>
+      <details class="depli"><summary>Rejetés par ses voix « contre » <span>· ${pluriel(bloque.length, "texte")}</span></summary>${bloque.length ? listeTextes(bloque) : `<p class="meta">Aucun.</p>`}</details>`}
       ${(() => { const r = repartitionMesures(sesTextes); return r.classes ? `<h2>3. Ce que font les textes qu'il a proposés</h2>
         <p class="meta">Le mécanisme utilisé par chacun de ses ${pluriel(r.classes, "texte")} mis au vote et classé, lu dans ses articles. Un texte peut en combiner plusieurs. Le site ne dit pas si c'est bien ou mal : à chacun d'en juger. <a href="#methode">Comment c'est classé</a></p>
         <div class="repartition">${r.lignes.map(l => `<div><b>${l.n}</b><span>${MESURES[l.m]}</span></div>`).join("")}</div>
         ${sesTextes.some(t => t.mesuresNiveau === "ia") ? `<p class="note">Classement attribué par IA, pas encore vérifié par un humain.</p>` : ""}` : ""; })()}
       ${niches.length ? `<h2>Ses journées réservées</h2><p class="meta">Les jours où ce groupe a choisi seul les textes discutés (sa « niche »), avec tout son programme.</p>
         <div class="list">${niches.map(n => { const b = bilanNiche(n); return `<a class="card" href="#niche/${n.date}"><b style="font:700 17px var(--display)">${fdate(n.date)}</b><span class="meta">${b.total} textes au programme · ${b.votes} votés · ${b.sansVote} sans vote faute de temps</span></a>`; }).join("")}</div>` : ""}
-      <h2>Comment il a voté sur tous les autres textes</h2>
+      <h2>${ni ? "Comment les non-inscrits ont voté sur les autres textes" : "Comment il a voté sur tous les autres textes"}</h2>
       ${(() => {   // filtres : qui a proposé le texte, et ce que ce groupe a voté
         const auteurs = [...ORDRE, "Gouvernement", "Sénat"].filter(a => autres.some(t => auteurDe(t) === a));
         const opt = (id, lib, tous, liste) => `<div><label for="${id}">${lib}</label><select id="${id}"><option value="">${tous}</option>${liste.map(([v, l]) => `<option value="${v}">${l}</option>`).join("")}</select></div>`;
-        return `<form class="filtres filtres-vote" onsubmit="return false">${opt("fg-auteur", "Proposé par", "Tous les auteurs", auteurs.map(a => [a, a]))}${opt("fg-vote", "Son vote", "Tous les votes", Object.entries(LIB))}</form>`;
+        return `<form class="filtres filtres-vote" onsubmit="return false">${opt("fg-auteur", "Proposé par", "Tous les auteurs", auteurs.map(a => [a, a]))}${ni ? "" : opt("fg-vote", "Son vote", "Tous les votes", Object.entries(LIB))}</form>`;
       })()}
       <p class="meta" id="fg-nb" aria-live="polite"></p>
       <div id="votes-groupe"></div>
-      <h2>Avec qui vote-t-il ?</h2>
+      ${ni ? "" : `<h2>Avec qui vote-t-il ?</h2>
       <p class="meta">Part des textes du site où les deux groupes ont pris la même position, parmi ceux où les deux ont voté.</p>
-      <div>${accords.map(a => `<div class="score">${chip(a.o)}<div class="bar"><i style="width:${a.pct}%;background:${G(a.o).c}"></i></div><b>${a.pct} %</b></div>`).join("")}</div>`;
+      <div>${accords.map(a => `<div class="score">${chip(a.o)}<div class="bar"><i style="width:${a.pct}%;background:${G(a.o).c}"></i></div><b>${a.pct} %</b></div>`).join("")}</div>`}`;
   },
   apropos() {
     const gh = "https://github.com/qui-a-vote-quoi/qui-a-vote-quoi.github.io";
@@ -1041,7 +1047,7 @@ const views = {
 // Fiche groupe : ses votes sur les textes des autres, avec la même carte que partout, filtrés et par paquets de 30
 let nbVotesGroupe = 30;
 function majVotesGroupe() {
-  const g = decodeURIComponent(location.hash.split("/")[1] || ""), a = $("#fg-auteur").value, v = $("#fg-vote").value;
+  const g = decodeURIComponent(location.hash.split("/")[1] || ""), a = $("#fg-auteur").value, v = $("#fg-vote")?.value;
   const ts = TEXTES.filter(t => t.groupe !== g && t.groupes.some(r => r.g === g)).sort((x, y) => y.date.localeCompare(x.date))
     .filter(t => (!a || auteurDe(t) === a) && (!v || stance(t, t.groupes.find(r => r.g === g)) === v));
   $("#fg-nb").textContent = ts.length ? `${pluriel(ts.length, "texte")}.` : "Aucun texte pour ces filtres.";
@@ -1236,7 +1242,7 @@ function save(r) { try { localStorage.setItem("bilan", JSON.stringify(r)); } cat
 
 function scoresBilan(rep) {
   const answered = BILAN.filter(t => rep[t.id] === 1 || rep[t.id] === -1);
-  const scores = ORDRE.map(g => {
+  const scores = GROUPES_VOTE.map(g => {
     let acc = 0, des = 0, abs = 0;
     answered.forEach(t => {
       const r = t.groupes.find(x => x.g === g); if (!r) return;
