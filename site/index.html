@@ -987,11 +987,11 @@ function majQuestions() {
   const k = Math.min(TAILLE_SEANCE, restants.length), moy = restants.length ? restants.reduce((a, t) => a + (t.debat ? 1.5 : 0.7), 0) / restants.length : 1;
   $("#historique").innerHTML = historique();
   // Annoncé aux lecteurs d'écran à chaque case cochée (le bandeau, lui, est redessiné)
-  $("#nb-bilan").textContent = choisis ? `${pluriel(restants.length, "texte")} à voter, séance d'environ ${Math.max(1, Math.round(k * moy))} minutes.` : "";
+  $("#nb-bilan").textContent = choisis ? `${pluriel(restants.length, "texte")} à voter. Une séance de ${k} textes dure environ ${Math.max(1, Math.round(k * moy))} minutes.` : "";
   $("#questions").innerHTML = !choisis
     ? `<div class="callout" style="margin-top:0"><b>Pour commencer, cochez un ou plusieurs sujets.</b> Vous siégerez ensuite sur des textes de ces sujets.</div>`
     : restants.length
-      ? `<div class="siege pret"><p><b>Séance de ${pluriel(k, "texte")}, environ ${Math.max(1, Math.round(k * moy))} min</b><br><span class="meta">${pluriel(restants.length, "texte")} à voter sur ces sujets</span></p>
+      ? `<div class="siege pret"><p><b>${pluriel(restants.length, "texte")} à voter</b> sur ces sujets<br><span class="meta">${restants.length > k ? `Chaque séance en tire ${k} au hasard` : "Une séance"} : environ ${Math.max(1, Math.round(k * moy))} min</span></p>
           <button type="button" class="plus principal" id="sieger">Siéger →</button></div>`
       : `<div class="callout" style="margin-top:0">Vous avez voté sur tous les textes de ces sujets. Cochez d'autres sujets pour continuer.</div>`;
   majBilan();
