@@ -812,7 +812,7 @@ const views = {
     const serres = new Set(TEXTES.filter(t => totals(t).ecart <= ECART_SERRE).map(t => `${t.leg}|${t.scrutin}`)).size;
     return `<section class="hero">
         <h1>Est-ce que voter change vraiment votre quotidien&nbsp;?</h1>
-        <p class="lead">Loyers, retraites, santé, impôts : voyez qui a proposé quoi à l'Assemblée depuis 2017, et qui a voté pour ou contre. ${serres} votes se sont joués à ${ECART_SERRE} voix près ou moins.</p>
+        <p class="lead">Voyez qui a proposé quoi à l'Assemblée depuis 2017, et qui a voté pour ou contre. ${serres} votes se sont joués à ${ECART_SERRE} voix près ou moins.</p>
         <p><a class="plus principal grand" href="#juger">À vous de juger →</a></p>
         <p class="hero-fait"><a href="#bilan">Ou mettez-vous à leur place : qu'auriez-vous voté&nbsp;?</a></p>
       </section>
