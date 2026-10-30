@@ -51,7 +51,7 @@ footer.pied a { display: inline-block; padding-block: 2px; }
 /* Filtres : une grille de trois colonnes égales ; la recherche et le choix des sujets prennent toute la largeur */
 .filtres { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 24px; background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 18px; }
 .filtres > .champ, .filtres > .choix-sujets { grid-column: 1 / -1; }
-.bilan .filtres { margin-top: 0; }   /* aligné en haut avec le panneau de résultat */
+.bilan .filtres { margin-top: 0; }
 .filtres label, .filtres legend { display: block; font: 700 13px var(--body); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; padding: 0; }
 .filtres input[type=search], .filtres select { display: block; width: 100%; height: 46px; font: 16px var(--body); color: var(--fg); background-color: var(--surface); border: var(--bord); border-radius: var(--rayon-s); padding: 0 14px; }
 .recherche input[type=search] { border: var(--bord-encre); border-radius: 999px; box-shadow: var(--ombre); }
@@ -192,9 +192,8 @@ a.chip:hover { border-color: var(--encre); }
 .seance-sujets { display: none; }
 .en-seance .seance-sujets { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0 0 14px; font-size: 15px; color: var(--muted); }
 /* Séance en cours : une seule colonne, rien d'autre que le texte ; le panneau des groupes revient à la fin */
-.bilan.sans-panel { grid-template-columns: minmax(0, 1fr); }
-.bilan.sans-panel .panel, .en-cours .bilan > div > .note, .en-cours #revel { display: none; }
-.en-cours .bilan { grid-template-columns: minmax(0, 760px); justify-content: center; }
+.en-cours .bilan > div > .note, .en-cours #revel { display: none; }
+.en-seance .bilan { grid-template-columns: minmax(0, 760px); justify-content: center; }
 /* En séance, le titre de la page reste lu par les lecteurs d'écran mais laisse sa place au texte */
 .en-cours h1 { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .en-cours .seance-sujets { flex-wrap: nowrap; justify-content: space-between; font-size: 14px; margin-top: -8px; }
@@ -333,8 +332,8 @@ th { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: v
 .btns button.sel[data-v="-1"] { background: var(--opposition); border-color: var(--opposition); color: #fff; }
 .btns button.sel[data-v="0"] { background: var(--muted); border-color: var(--muted); color: #fff; }
 button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
-.bilan { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 28px; align-items: start; margin-top: 24px; }
-.panel { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 76px); background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 16px; display: grid; gap: 10px; }
+.bilan { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; align-items: start; margin-top: 24px; }
+.resultats { background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 16px; display: grid; gap: 10px; margin-top: 16px; }
 .panel-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
 .panel-head .meta { margin-right: auto; font-variant-numeric: tabular-nums; }
 .panel-top { margin: 0; font-size: 15px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
@@ -347,20 +346,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
 .progress { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
 .progress i { display: block; height: 100%; background: var(--accent); transition: width .2s; }
 .panel-legend { font-size: 13px; gap: 10px; justify-content: flex-start; }
-.panel-toggle { display: none; font: 600 14px var(--body); background: none; border: 0; color: var(--accent); cursor: pointer; padding: 0; }
 
 @media (max-width: 860px) {
   .bilan { grid-template-columns: minmax(0, 1fr); }
-  .panel { position: fixed; top: auto; left: 0; right: 0; bottom: 0; z-index: 6; border-radius: 14px 14px 0 0; max-height: 75vh; overflow: auto;
-    padding: 12px max(16px, env(safe-area-inset-right, 0px)) calc(12px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
-    box-shadow: 0 -6px 24px rgb(0 0 0 / .14); }
-  .panel .panel-scores, .panel .panel-legend { display: none; }
-  .panel.open .panel-scores { display: grid; }
-  .panel.open .panel-legend { display: flex; }
-  .panel-toggle { display: inline-block; }
-  main.has-panel { padding-bottom: 180px; }
-  /* un élément qui reçoit le focus ne doit pas finir caché sous le bandeau de résultat */
-  html:has(main.has-panel) { scroll-padding-bottom: 140px; }
 }
 @media (max-width: 640px) {
   .filtres { grid-template-columns: minmax(0, 1fr); }
@@ -952,7 +940,6 @@ const views = {
           <section id="revel"></section>
           <p class="note">Calcul : part des textes votés où le groupe a voté comme vous. Quand un groupe s'est abstenu, il n'a voté ni comme vous ni contre vous ; un groupe absent n'est pas compté. « Je ne sais pas » n'entre pas dans le calcul. Un groupe n'est classé que s'il a voté sur au moins la moitié des textes que vous avez votés. <a href="#bilan" id="reset">Effacer mes réponses</a></p>
         </div>
-        <aside class="panel" id="panel" aria-label="Les groupes qui ont voté comme vous"></aside>
         <p class="sr-only" id="annonce" aria-live="polite"></p>
       </div>`;
   },
@@ -1009,7 +996,6 @@ function afficherSeance() {
   const n = seance.ids.length, { sujets, leg } = prefBilan();
   app.classList.add("en-seance");
   app.classList.toggle("en-cours", seance.i < n);
-  dispositionBilan();
   $("#seance-sujets").innerHTML = `<span>${seance.tous ? "Tous les sujets" : !sujets.length ? "Tous les sujets" : sujets.length > 3 ? `${sujets.slice(0, 2).join(", ")} et ${sujets.length - 2} autres sujets` : sujets.join(", ")} · ${leg && !seance.tous ? PERIODES[leg].lib : "de 2017 à aujourd'hui"}</span>
     <button type="button" class="lien-bouton" id="changer-sujets">Changer de sujets</button>`;
   const precedent = seance.i > 0 ? `<button type="button" class="lien-bouton" id="precedent">← Texte précédent</button>` : "";
@@ -1018,7 +1004,7 @@ function afficherSeance() {
     $("#nb-bilan").textContent = "";
     $("#questions").innerHTML = `<div class="siege"><h2 tabindex="-1" id="fin-seance">Séance terminée</h2>
       <p>Vous avez voté sur ${pluriel(ts.length, "texte")}${passes ? ` (et passé ${passes})` : ""}. Les députés en ont adopté ${adoptes} et rejeté ${ts.length - adoptes}.${serres ? ` ${serres > 1 ? `${serres} votes se sont joués` : "Un vote s'est joué"} à ${ECART_SERRE} voix près ou moins : quelques sièges ont fait la différence.` : ""}</p>
-      <p>Découvrez maintenant les groupes qui ont voté comme vous, dans le panneau « Ont voté comme vous », et le détail de vos votes plus bas.</p>
+      <section class="resultats" id="fin-resultats" aria-label="Les groupes qui ont voté comme vous"></section>
       <p class="row"><button type="button" class="plus principal" id="autre-seance">Une autre séance →</button>${precedent}</p></div>`;
     return;
   }
@@ -1133,34 +1119,31 @@ function scoresBilan(rep) {
   if (answered.length) scores.sort((a, b) => (b.classe - a.classe) || ((b.pct ?? -1) - (a.pct ?? -1)));
   return { answered, scores, seuil };
 }
-let panelOpen = false;
 // Le panneau des groupes n'apparaît que s'il a quelque chose à dire : pas avant le premier vote, pas pendant la séance
-function dispositionBilan() {
-  const sans = app.classList.contains("en-cours") || !scoresBilan(load()).answered.length;
-  $(".bilan")?.classList.toggle("sans-panel", sans);
-  app.classList.toggle("has-panel", !sans);
+// Les résultats portent sur la séance qui vient de se terminer, pas sur tout l'historique : chaque séance a les siens.
+// Les votes restent gardés sur l'appareil, seulement pour ne pas reproposer un texte déjà voté.
+const seanceFinie = () => !!seance && seance.i >= seance.ids.length;
+function repSeance() {
+  const rep = load();
+  return seanceFinie() ? Object.fromEntries(seance.ids.filter(id => id in rep).map(id => [id, rep[id]])) : {};
 }
 // Met à jour le panneau et les réponses sans redessiner la page : rien ne bouge sous le doigt
 function majBilan() {
-  const rep = load(), { answered, scores } = scoresBilan(rep);
+  const tous = load(), rep = repSeance(), { answered, scores } = scoresBilan(rep);
   document.querySelectorAll(".btns").forEach(bx => bx.querySelectorAll("button").forEach(b => {
-    const on = rep[bx.dataset.id] === +b.dataset.v;
+    const on = tous[bx.dataset.id] === +b.dataset.v;
     b.classList.toggle("sel", on); b.setAttribute("aria-pressed", on);
   }));
-  const selection = selectionBilan(), vus = selection.filter(t => t.id in rep).length, top = answered.length && scores[0].classe && scores[0].pct > 0 ? scores[0] : null;
-  const panel = $("#panel");
-  dispositionBilan();
-  panel.classList.toggle("open", panelOpen);
-  panel.innerHTML = `
-    <div class="panel-head"><span class="eyebrow">Ont voté comme vous</span><span class="meta">${vus} / ${selection.length} textes</span>
-      <button type="button" class="panel-toggle">${panelOpen ? "Réduire" : "Voir le détail"}</button></div>
-    <div class="progress"><i style="width:${(100 * vus / (selection.length || 1)).toFixed(1)}%"></i></div>
+  const top = answered.length && scores[0].classe && scores[0].pct > 0 ? scores[0] : null;
+  const panel = $("#fin-resultats");
+  if (panel) panel.innerHTML = `
+    <div class="panel-head"><h2 class="eyebrow">Ont voté comme vous</h2><span class="meta">sur cette séance</span></div>
     <p class="panel-top">${top ? (() => {
       const ex = scores.filter(s => s.classe && s.pct === top.pct);
       return `<span>${ex.length > 1 ? "Les plus proches de vous, à égalité" : "Le plus proche de vous"} :</span> ${ex.map(s => chip(s.g, false)).join(" ")} <b>${top.pct} %</b>`;
     })() : answered.length ? "Aucun groupe n'a voté comme vous sur ces textes, pour l'instant." : "Votez sur un premier texte : les groupes qui ont voté comme vous s'affichent ici, en direct."}</p>
-    ${answered.length ? `<p class="meta" style="margin:0;font-size:13px">Calculé sur ${answered.length > 1 ? `vos ${answered.length} votes` : "votre vote"}, tous sujets confondus.</p>` : ""}
-    <div class="panel-scores">${scores.map(s => `<div class="pscore${answered.length && !s.classe ? " hors" : ""}">${chip(s.g, false)}${s.n ? bar(s.acc, s.des, s.abs, 0) : bar(0, 0, 0, 1)}<b>${s.n ? s.pct + " %" : "–"}</b><span class="sur">${answered.length ? `sur ${s.n}` : ""}</span></div>`).join("")}</div>
+    ${answered.length ? `<p class="meta" style="margin:0;font-size:13px">Calculé sur ${answered.length > 1 ? `vos ${answered.length} votes` : "votre vote"} de cette séance.</p>` : ""}
+    <div class="panel-scores">${scores.filter(s => s.n).map(s => `<div class="pscore${answered.length && !s.classe ? " hors" : ""}">${chip(s.g, false)}${s.n ? bar(s.acc, s.des, s.abs, 0) : bar(0, 0, 0, 1)}<b>${s.n ? s.pct + " %" : "–"}</b><span class="sur">${answered.length ? `sur ${s.n}` : ""}</span></div>`).join("")}</div>
     ${scores.some(s => answered.length && !s.classe) ? `<p class="meta" style="margin:0;font-size:13px">En grisé : groupes présents sur moins de la moitié des textes que vous avez votés. Ils ne sont pas classés.</p>` : ""}
     <div class="legend panel-legend"><span><i class="dot" style="background:var(--jauge-pour)"></i>A voté comme vous</span><span><i class="dot" style="background:var(--jauge-contre)"></i>A voté autrement</span><span><i class="dot" style="background:var(--jauge-abst)"></i>Abstention</span></div>`;
   const aimes = answered.filter(t => rep[t.id] === 1);
@@ -1177,7 +1160,6 @@ function render() {
   // Titre de l'onglet propre à chaque vue (annoncé par les lecteurs d'écran)
   const h1 = app.querySelector("h1");
   document.title = view === "accueil" || !h1 ? "Qui a voté quoi (version de test)" : `${h1.textContent} – Qui a voté quoi`;
-  app.classList.toggle("has-panel", view === "bilan");
   app.classList.remove("en-seance", "en-cours");
   // #bilan/<id> : une séance qui commence par ce texte, puis des textes au hasard
   if (view === "bilan" && arg && !seance && byId(decodeURIComponent(arg))) {
@@ -1199,12 +1181,11 @@ app.addEventListener("click", e => {
     r[id] = v; save(r); majBilan();
     if (seance && seance.ids[seance.i] === id) { seance.revele = true; afficherSeance(); $("#revelation")?.focus(); }
     // Une phrase courte pour les lecteurs d'écran, plutôt que la relecture de tout le panneau
-    const { answered, scores } = scoresBilan(r), top = answered.length && scores[0].classe && scores[0].pct > 0 ? scores[0] : null;
+    const { answered, scores } = scoresBilan(repSeance()), top = answered.length && scores[0].classe && scores[0].pct > 0 ? scores[0] : null;
     const ex = top ? scores.filter(x => x.classe && x.pct === top.pct).map(x => x.g).join(", ") : "";
     $("#annonce").textContent = `Vote enregistré.` + (top ? ` Plus proches de vous pour l'instant : ${ex}, ${top.pct} %.` : "");
     return;
   }
-  if (e.target.closest(".panel-toggle")) { panelOpen = !panelOpen; majBilan(); return; }
   if (e.target.id === "sieger") { commencerSeance(); return; }
   if (e.target.id === "suivant" || e.target.id === "passer") { allerA(seance.i + 1); return; }
   if (e.target.id === "vers-debat") { seance.etape = "debat"; seance.repl ||= 1; afficherSeance(); $("#titre-debat")?.focus(); return; }
