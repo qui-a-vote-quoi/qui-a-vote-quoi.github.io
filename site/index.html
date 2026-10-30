@@ -357,6 +357,13 @@ a.plus { text-decoration: none; display: inline-flex; align-items: center; }
 .evol-tete { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
 .evol-tete .evol-barres span { text-align: center; }
 .evol li { padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.evol .bar { height: 10px; }
+/* Écran large : les jauges, de largeur fixe, sur la même ligne que le groupe et sa position */
+@media (min-width: 700px) {
+  .evol li, .evol-tete { grid-template-columns: 96px minmax(0, 1fr) auto; }
+  .evol .evol-barres, .evol-tete .evol-barres { grid-column: 3; grid-row: 1; }
+  .evol-barres { grid-auto-columns: 72px; gap: 8px; }
+}
 table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
 .tablewrap { overflow-x: auto; background: var(--surface); border: var(--bord); border-radius: var(--rayon); }
 th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); font-size: 15px; }
