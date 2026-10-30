@@ -52,16 +52,22 @@ footer.pied a { display: inline-block; padding-block: 2px; }
 .choix-sujets label { display: inline-flex; align-items: center; gap: 6px; font-weight: 400; font-size: 15px; margin: 0; padding: 6px 10px; min-height: 44px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); cursor: pointer; }
 .choix-sujets input { width: 18px; height: 18px; accent-color: var(--accent); }
 .lien-tout { font-weight: 600; }
+.lien-bouton { font: inherit; color: var(--accent); background: none; border: 0; padding: 4px 0; text-decoration: underline; cursor: pointer; }
+.plus { font: 600 16px var(--body); color: var(--accent); background: var(--surface); border: 1px solid var(--trait); border-radius: 8px; padding: 10px 18px; min-height: 44px; cursor: pointer; }
 /* Carte de texte : le même composant partout (accueil, sujets, recherche, fiche groupe) */
 .carte { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 18px; display: grid; gap: 6px; }
 .carte-haut { display: flex; justify-content: space-between; align-items: flex-start; gap: 6px 12px; }
 .carte-haut .tag { margin-top: 3px; flex: none; }
 .carte-date { margin-left: auto; font-size: 14px; }
-.carte h3 { font-size: 19px; }
+.carte h3 { font-size: 18px; line-height: 1.3; }
+/* Deux lignes au plus dans une liste (le titre complet reste dans la page et sur la fiche) */
+.carte h3 a { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+.carte h3 { display: flex; align-items: baseline; gap: 6px; }
+.carte h3 .badge-ia { margin-left: 0; flex: none; }
 .carte h3 a { text-decoration: none; color: var(--fg); }
 .carte h3 a:hover { text-decoration: underline; color: var(--accent); }
 .carte-bas { display: flex; align-items: center; gap: 4px 16px; flex-wrap: wrap; font-size: 15px; color: var(--muted); font-variant-numeric: tabular-nums; }
-.serre { color: var(--abst); font-weight: 700; }
+.serre { color: var(--abst); }
 /* Mini-jauge : la proportion pour / contre d'un coup d'œil, à la taille d'un badge (la grande jauge est sur la fiche) */
 .decompte { display: inline-flex; align-items: center; gap: 8px; }
 .minijauge .bar { width: 52px; height: 8px; border-radius: 4px; }
@@ -336,7 +342,10 @@ const SUJETS = [...new Set(TEXTES.map(t => t.theme))].sort((a, b) => a === "Autr
 const choixPeriode = (id, valeur) => `<div><label for="${id}">Période</label><select id="${id}">
   <option value="">De 2017 à aujourd'hui</option>${[...INFOS.legislatures].sort().reverse().map(l => `<option value="${l}"${valeur === l ? " selected" : ""}>${PERIODES[l].lib}</option>`).join("")}</select></div>`;
 // Choix gardés le temps de la visite (et, pour Mon bilan, sur l'appareil)
-let filtre = { q: "", leg: "" };
+let filtre = { q: "", leg: "", sujet: "", auteur: "" }, nbVisibles = 30;
+// Auteur d'un texte, pour le filtre : le sigle du groupe, ou « Gouvernement », « Sénat »
+const auteurDe = t => t.groupe || t.auteurCourt;
+const AUTEURS = [...ORDRE.filter(g => TEXTES.some(t => t.groupe === g)), ...["Gouvernement", "Sénat"].filter(a => TEXTES.some(t => t.auteurCourt === a))];
 function lirePref(cle, defaut) { try { return JSON.parse(localStorage.getItem(cle)) ?? defaut; } catch { return defaut; } }
 function ecrirePref(cle, v) { try { localStorage.setItem(cle, JSON.stringify(v)); } catch {} }
 // Mon bilan : un texte par dossier (son dernier vote), et seulement s'il a déjà un résumé
@@ -454,7 +463,7 @@ function carteTexte(t, { avecAuteur = true } = {}) {
   const s = totals(t), serre = s.ecart <= ECART_SERRE;
   return `<article class="carte">
     <div class="carte-haut"><h3><a href="#texte/${t.id}">${t.titre}</a>${badgeIA(t)}</h3>${issueTag(t)}</div>
-    <div class="carte-bas">${avecAuteur ? `<span>Proposé par ${auteurCourt(t)}</span>` : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, 0, 0)}</span>${s.pour} pour · ${s.contre} contre</span>${serre ? `<span class="serre">Vote serré : ${s.ecart} voix d'écart</span>` : ""}<span class="carte-date">${fdateCourte(t.date)} · ${t.type === "solennel" ? "Vote solennel" : "Journée réservée"}${lecture(t) ? `, ${lecture(t)}` : ""}</span></div>
+    <div class="carte-bas">${avecAuteur ? `<span>Proposé par ${auteurCourt(t)}</span>` : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, 0, 0)}</span>${s.pour} pour · ${s.contre} contre${serre ? `<span class="serre">· à ${s.ecart} voix près</span>` : ""}</span><span class="carte-date">${fdateCourte(t.date)} · ${t.type === "solennel" ? "Vote solennel" : "Journée réservée"}${lecture(t) ? `, ${lecture(t)}` : ""}</span></div>
   </article>`;
 }
 // L'étape du parcours du texte, en mots simples (l'intitulé officiel est sur la fiche)
@@ -530,7 +539,7 @@ const views = {
       </div>
       <h2>Derniers votes</h2>
       ${listeTextes(derniers)}
-      <p><a class="lien-tout" href="#sujets">Tous les textes : par sujet ou par recherche →</a></p>
+      <p><a class="lien-tout" href="#sujets">Tous les textes : par sujet, par auteur ou par recherche →</a></p>
       <h2>Comment une loi est votée</h2>
       <ol class="steps">
         <li><b>Un texte est proposé</b><span>Par des députés, des sénateurs ou le gouvernement.</span></li>
@@ -551,28 +560,20 @@ const views = {
       }).join("")}</div>`).join("")}`;
   },
   sujets() {
+    const options = (liste, valeur, tous) => `<option value="">${tous}</option>` + liste.map(([v, l]) => `<option value="${v}"${valeur === v ? " selected" : ""}>${l}</option>`).join("");
     return `<h1>Mes sujets</h1>
-      <p class="lead">Choisissez ce qui vous concerne, ou cherchez un texte : on vous montre ce qui a été proposé, et qui a voté pour ou contre.</p>
+      <p class="lead">Tous les textes votés, des plus récents aux plus anciens. Filtrez par sujet, par auteur ou par période, ou cherchez un mot : on vous montre ce qui a été proposé, et qui a voté pour ou contre.</p>
       <form class="filtres" role="search" onsubmit="return false">
         <div class="champ"><label for="q">Chercher un texte</label><input id="q" type="search" autocomplete="off" placeholder="Par exemple : retraite, loyer, police" value="${filtre.q.replace(/"/g, "&quot;")}"></div>
+        <div><label for="f-sujet">Sujet</label><select id="f-sujet">${options(SUJETS.map(th => [th, th]), filtre.sujet, "Tous les sujets")}</select></div>
+        <div><label for="f-auteur">Proposé par</label><select id="f-auteur">${options(AUTEURS.map(a => [a, GROUPES[a] ? `${a} – ${G(a).nom}` : a]), filtre.auteur, "Tous les auteurs")}</select></div>
         ${choixPeriode("periode", filtre.leg)}
       </form>
       <p class="meta" id="nb" aria-live="polite"></p>
-      <div id="resultats"></div>
-      <p class="note">Chaque texte est rangé dans un seul sujet.${TEXTES.some(t => t.sujetNiveau !== "relu") ? " Les sujets ont été attribués par IA et ne sont pas encore tous vérifiés par un humain." : ""}</p>`;
+      <div id="resultats"></div>`;
   },
-  sujet(th) {
-    const ts = parPeriode(TEXTES.filter(t => t.theme === th), filtre.leg).sort((a, b) => b.date.localeCompare(a.date));
-    const simu = ["Impôts et budget", "Retraites"].includes(th)
-      ? `<div class="callout"><b>Simulateur ${th === "Impôts et budget" ? "impôts et héritage" : "retraite"} : bientôt.</b> Vous pourrez calculer ce que chaque proposition changerait pour vous.</div>` : "";
-    return `<a class="back" href="#sujets">← Tous les sujets</a>
-      <h1>${th}</h1>
-      <p class="lead">${ts.length} texte${ts.length > 1 ? "s" : ""} sur ce sujet${filtre.leg ? ` (${PERIODES[filtre.leg].lib.toLowerCase()})` : ""}.</p>
-      <form class="filtres" onsubmit="return false">${choixPeriode("periode-sujet", filtre.leg)}</form>
-      ${simu}
-      <h2 class="sr-only">Les textes</h2>
-      <div style="margin-top:20px">${listeTextes(ts)}</div>`;
-  },
+  // Ancienne adresse d'un sujet (#sujet/Santé) : la liste, filtrée sur ce sujet
+  sujet(th) { filtre.sujet = th; nbVisibles = 30; return views.sujets(); },
   niche(date) {
     const n = NICHES.find(x => x.date === date), b = bilanNiche(n);
     return `<a class="back" href="#groupe/${n.groupe}">← ${G(n.groupe).nom}</a>
@@ -794,19 +795,18 @@ const views = {
 };
 // Mes sujets : la grille des sujets, ou les résultats de la recherche, sans redessiner le formulaire (le focus reste dans le champ)
 function majSujets() {
-  const ts = parPeriode(TEXTES, filtre.leg).sort((a, b) => b.date.localeCompare(a.date));
-  if (filtre.q.trim().length >= 2) {
-    const trouves = ts.filter(t => correspond(t, filtre.q.trim()));
-    $("#nb").textContent = trouves.length ? `${trouves.length} texte${trouves.length > 1 ? "s" : ""} trouvé${trouves.length > 1 ? "s" : ""}${trouves.length > 50 ? ", les 50 plus récents affichés" : ""}.` : "Aucun texte trouvé. Essayez un autre mot.";
-    $("#resultats").innerHTML = listeTextes(trouves.slice(0, 50));
-    return;
-  }
-  $("#nb").textContent = `${ts.length} textes${filtre.leg ? ` (${PERIODES[filtre.leg].lib.toLowerCase()})` : ""}, rangés par sujet.`;
-  $("#resultats").innerHTML = `<div class="doors">${SUJETS.filter(th => ts.some(t => t.theme === th)).map(th => {
-      const n = ts.filter(t => t.theme === th).length;
-      return `<a class="door" href="#sujet/${encodeURIComponent(th)}"><b>${th}</b><span>${n} texte${n > 1 ? "s" : ""}</span></a>`;
-    }).join("")}</div>
-    <p class="note">Chaque texte est rangé dans un seul sujet.${TEXTES.some(t => t.sujetNiveau !== "relu") ? " Les sujets ont été attribués par IA et ne sont pas encore tous vérifiés par un humain." : ""}</p>`;
+  const q = filtre.q.trim();
+  const ts = parPeriode(TEXTES, filtre.leg)
+    .filter(t => (!filtre.sujet || t.theme === filtre.sujet) && (!filtre.auteur || auteurDe(t) === filtre.auteur) && (q.length < 2 || correspond(t, q)))
+    .sort((a, b) => b.date.localeCompare(a.date));
+  const actifs = [filtre.sujet, filtre.auteur, filtre.leg, q.length >= 2].some(Boolean);
+  $("#nb").innerHTML = (ts.length ? `${pluriel(ts.length, "texte")}${actifs ? ` correspond${ts.length > 1 ? "ent" : ""} à vos filtres` : ""}.` : "Aucun texte ne correspond. Essayez un autre mot ou un autre filtre.")
+    + (actifs ? ` <button type="button" class="lien-bouton" id="effacer-filtres">Effacer les filtres</button>` : "");
+  const simu = ["Impôts et budget", "Retraites"].includes(filtre.sujet)
+    ? `<div class="callout" style="margin-top:0"><b>Simulateur ${filtre.sujet === "Impôts et budget" ? "impôts et héritage" : "retraite"} : bientôt.</b> Vous pourrez calculer ce que chaque proposition changerait pour vous.</div>` : "";
+  $("#resultats").innerHTML = simu + listeTextes(ts.slice(0, nbVisibles))
+    + (ts.length > nbVisibles ? `<p><button type="button" class="plus" id="voir-plus">Afficher ${Math.min(30, ts.length - nbVisibles)} textes de plus</button> <span class="meta">(${nbVisibles} sur ${ts.length})</span></p>` : "")
+    + `<p class="note">Chaque texte est rangé dans un seul sujet.${TEXTES.some(t => t.sujetNiveau !== "relu") ? " Les sujets ont été attribués par IA et ne sont pas encore tous vérifiés par un humain." : ""}</p>`;
 }
 // Mon bilan : les sujets et la période choisis, gardés sur l'appareil
 const prefBilan = () => lirePref("bilanChoix", { sujets: [], leg: "" });
@@ -892,7 +892,7 @@ function render() {
   document.title = view === "accueil" || !h1 ? "Qui a voté quoi (version de test)" : `${h1.textContent} – Qui a voté quoi`;
   app.classList.toggle("has-panel", view === "bilan");
   if (view === "bilan") majQuestions();
-  if (view === "sujets") majSujets();
+  if (view === "sujets" || view === "sujet") majSujets();
   // Une fiche texte n'appartient à aucune rubrique du menu
   const rubrique = { groupes: "groupes", niche: "groupes", groupe: "groupes", sujets: "sujets", sujet: "sujets", bilan: "bilan" }[view];
   document.querySelectorAll("nav a").forEach(a => a.classList.toggle("on", a.dataset.nav === rubrique));
@@ -912,15 +912,25 @@ app.addEventListener("click", e => {
     return;
   }
   if (e.target.closest(".panel-toggle")) { panelOpen = !panelOpen; majBilan(); return; }
+  if (e.target.id === "voir-plus") {
+    // Les textes ajoutés arrivent sous le bouton : le focus va au premier d'entre eux
+    const avant = nbVisibles; nbVisibles += 30; majSujets();
+    document.querySelectorAll("#resultats .carte h3 a")[avant]?.focus(); return;
+  }
+  if (e.target.id === "effacer-filtres") {
+    filtre = { q: "", leg: "", sujet: "", auteur: "" }; nbVisibles = 30;
+    if (location.hash.startsWith("#sujet/")) { location.hash = "sujets"; return; }
+    render(); $("#q").focus(); return;
+  }
   if (e.target.id === "reset") { e.preventDefault(); save({}); majBilan(); }
 });
 // Formulaires : recherche et période (Mes sujets), sujets et période (Mon bilan)
 app.addEventListener("input", e => {
-  if (e.target.id === "q") { filtre.q = e.target.value; majSujets(); }
+  if (e.target.id === "q") { filtre.q = e.target.value; nbVisibles = 30; majSujets(); }
 });
 app.addEventListener("change", e => {
-  if (e.target.id === "periode") { filtre.leg = e.target.value; majSujets(); }
-  if (e.target.id === "periode-sujet") { filtre.leg = e.target.value; render(); $("#periode-sujet").focus(); }
+  const champ = { periode: "leg", "f-sujet": "sujet", "f-auteur": "auteur" }[e.target.id];
+  if (champ) { filtre[champ] = e.target.value; nbVisibles = 30; majSujets(); }
   if (e.target.name === "sujet" || e.target.id === "periode-bilan") {
     const f = e.target.form;
     ecrirePref("bilanChoix", { sujets: [...f.querySelectorAll("input[name=sujet]:checked")].map(x => x.value), leg: f.querySelector("#periode-bilan").value });
