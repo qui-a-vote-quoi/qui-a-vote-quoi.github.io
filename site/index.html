@@ -1228,7 +1228,7 @@ function afficherSeance() {
       <ol class="etapes" aria-label="Étapes">${ETAPES.map(([k, l], j) => `<li${j === rang ? ' aria-current="step"' : j < rang ? ' class="fait"' : ""}>${l}</li>`).join("")}</ol></div>
     <h2 tabindex="-1" id="q-titre">${t.titre}</h2>
     ${etape === "texte" ? `<p class="seance-resume">${t.enClair}${t.niveau === "ia" ? ` ${badgeIA(t)}` : ""}</p>
-      <div class="seance-suite">${t.debat ? `<button type="button" class="plus principal" id="vers-debat">Écouter le débat →</button><button type="button" class="lien-bouton" id="vers-vote">Passer directement au vote</button>`
+      <div class="seance-suite">${t.debat ? `<button type="button" class="plus principal" id="vers-debat">Suivre le débat →</button><button type="button" class="lien-bouton" id="vers-vote">Passer directement au vote</button>`
         : `<button type="button" class="plus principal" id="vers-vote">Passer au vote →</button>`}</div>` : ""}
     ${etape === "debat" ? `<section class="vivre" aria-labelledby="titre-debat"><h3 class="eyebrow" id="titre-debat" tabindex="-1">Le débat dans l'hémicycle</h3>${repliques(t, { visibles: seance.repl })}
       <div class="seance-suite">${fini ? "" : `<button type="button" class="plus" id="replique-suivante">Réplique suivante ↓</button>
