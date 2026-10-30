@@ -244,6 +244,12 @@ a.chip:hover { border-color: var(--encre); }
 .hero h1 { font-size: clamp(32px, 6vw, 56px); }
 .hero .lead { margin-inline: auto; }
 .hero-fait { color: var(--muted); font-weight: 600; margin-top: 18px; }
+.tuiles { list-style: none; padding: 0; margin: 24px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.tuiles a { display: grid; gap: 2px; min-height: 64px; height: 100%; align-content: center; padding: 12px 14px; background: var(--surface); border: var(--bord); border-radius: var(--rayon-s); color: var(--fg); text-decoration: none; font: 700 17px var(--display); line-height: 1.2; }
+.tuiles a:hover { border-color: var(--encre); }
+.tuiles span { font: 400 14px var(--body); color: var(--muted); }
+.tuiles li:nth-child(-n+6) a { background: var(--accent-soft); border-color: transparent; }
+.ligne-resume { margin: 0; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .plus.grand { font-size: 19px; padding: 16px 28px; }
 a.plus { text-decoration: none; display: inline-flex; align-items: center; }
 
@@ -576,11 +582,13 @@ const badgeIA = t => t.niveau === "ia"
 const auteurLigne = t => t.groupe
   ? `<a class="auteur" href="#groupe/${t.groupe}"><span class="sr-only">Proposé par </span><i class="dot" style="background:${G(t.groupe).c}"></i>${t.groupe}<span class="sr-only">, ${G(t.groupe).nom}</span></a>`
   : `<span class="auteur"><span class="sr-only">Proposé par </span>${t.auteurCourt}</span>`;
-// Options : avecAuteur (pastille de l'auteur), datee (date sur la carte), voteDe (le vote d'un groupe sur ce texte)
-function ligneTexte(t, { avecAuteur = true, datee = false, voteDe = null } = {}) {
+// Options : avecAuteur (pastille de l'auteur), datee (date sur la carte), voteDe (le vote d'un groupe sur ce texte),
+// avecResume (ce que le texte change, quand on a choisi un sujet)
+function ligneTexte(t, { avecAuteur = true, datee = false, voteDe = null, avecResume = false } = {}) {
   const s = totals(t), serre = s.ecart <= ECART_SERRE, st = voteDe && stance(t, t.groupes.find(r => r.g === voteDe));
   return `<li class="ligne">
     <div class="ligne-haut"><h3><a href="#texte/${t.id}">${t.titre}</a>${t.niveau === "relu" ? ` <span class="badge-relu">relu</span>` : ""}</h3>${issueTag(t)}</div>
+    ${avecResume && t.enClair ? `<p class="ligne-resume">${t.enClair}</p>` : ""}
     <div class="ligne-bas">${voteDe ? `<span class="vote-groupe">Son vote : <b class="pos ${st}">${LIB[st]}</b></span>` : ""}${avecAuteur ? auteurLigne(t) : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, s.abst, 0)}</span><span>${s.pour} pour · ${s.contre} contre${s.abst ? ` · ${s.abst}&nbsp;<span aria-hidden="true">abst.</span><span class="sr-only">abstentions</span>` : ""}</span>${serre ? `<span class="serre">à ${s.ecart} voix près</span>` : ""}</span>${lecture(t) ? `<span>${lecture(t)}</span>` : ""}${t.debat ? `<a class="lien-debat" href="#texte/${t.id}/debat">Le débat<span class="sr-only"> : ${t.titre.replace(/"/g, "&quot;")}</span></a>` : ""}${datee ? `<span class="carte-date">${fdateCourte(t.date)}</span>` : ""}</div>
   </li>`;
 }
@@ -671,7 +679,7 @@ const views = {
     return `<section class="hero">
         <h1>Est-ce que voter change vraiment votre quotidien&nbsp;?</h1>
         <p class="lead">Loyers, retraites, santé, impôts : voyez qui a proposé quoi à l'Assemblée depuis 2017, et qui a voté pour ou contre. ${serres} votes se sont joués à ${ECART_SERRE} voix près ou moins.</p>
-        <p><a class="plus principal grand" href="#sujets">À vous de juger →</a></p>
+        <p><a class="plus principal grand" href="#juger">À vous de juger →</a></p>
         <p class="hero-fait"><a href="#bilan">Ou mettez-vous à leur place : qu'auriez-vous voté&nbsp;?</a></p>
       </section>`;
   },
@@ -699,8 +707,31 @@ const views = {
       <p class="meta" id="nb" aria-live="polite"></p>
       <div id="resultats"></div>`;
   },
-  // Ancienne adresse d'un sujet (#sujet/Santé) : la liste, filtrée sur ce sujet
-  sujet(th) { filtre.sujet = th; nbVisibles = 30; return views.sujets(); },
+  // Un sujet choisi (#sujet/Santé) : sa propre page, avec les textes et ce qu'ils changent ; les autres filtres repliés
+  sujet(th) {
+    filtre.sujet = th; nbVisibles = 30;
+    const options = (liste, valeur, tous) => `<option value="">${tous}</option>` + liste.map(([v, l]) => `<option value="${v}"${valeur === v ? " selected" : ""}>${l}</option>`).join("");
+    return `<a class="back" href="#juger">← Changer de sujet</a>
+      <h1>${th}</h1>
+      <p class="lead">Les textes votés depuis 2017 sur ce sujet : ce qu'ils changent, qui les a proposés, et qui a voté pour ou contre.</p>
+      <details class="depli"><summary>Affiner : par auteur, par période ou par mot</summary>
+        <form class="filtres" role="search" onsubmit="return false">
+          <div class="champ"><label for="q">Chercher un texte</label>${champRecherche("q", filtre.q)}</div>
+          <div><label for="f-auteur">Auteur</label><select id="f-auteur">${options(AUTEURS.map(a => [a, GROUPES[a] ? `${a} – ${G(a).nom}` : a]), filtre.auteur, "Tous les auteurs")}</select></div>
+          ${choixPeriode("periode", filtre.leg)}
+        </form></details>
+      <p class="meta" id="nb" aria-live="polite"></p>
+      <div id="resultats"></div>`;
+  },
+  // Après « À vous de juger » : partir de ce qui compte pour le lecteur. Les sujets du quotidien d'abord.
+  juger() {
+    const QUOTIDIEN = ["Logement", "Retraites", "Santé", "Impôts et budget", "Travail et emploi", "Éducation et jeunesse"];
+    const sujets = [...QUOTIDIEN, ...SUJETS.filter(th => !QUOTIDIEN.includes(th))].filter(th => TEXTES.some(t => t.theme === th));
+    return `<h1>Qu'est-ce qui compte pour vous&nbsp;?</h1>
+      <p class="lead">Choisissez un sujet. Vous verrez les textes votés, ce qu'ils changent, et qui a voté pour ou contre.</p>
+      <ul class="tuiles">${sujets.map(th => `<li><a href="#sujet/${encodeURIComponent(th)}">${th}<span>${pluriel(TEXTES.filter(t => t.theme === th).length, "texte")}</span></a></li>`).join("")}</ul>
+      <p class="hero-fait"><a href="#bilan">Ou mettez-vous à leur place : qu'auriez-vous voté&nbsp;?</a></p>`;
+  },
   niche(date) {
     const n = NICHES.find(x => x.date === date), b = bilanNiche(n);
     return `<a class="back" href="#groupe/${n.groupe}">← ${G(n.groupe).nom}</a>
@@ -951,12 +982,13 @@ function majSujets() {
   const ts = parPeriode(TEXTES, filtre.leg)
     .filter(t => (!filtre.sujet || t.theme === filtre.sujet) && (!filtre.auteur || auteurDe(t) === filtre.auteur) && (q.length < 2 || correspond(t, q)))
     .sort((a, b) => b.date.localeCompare(a.date));
-  const actifs = [filtre.sujet, filtre.auteur, filtre.leg, q.length >= 2].some(Boolean);
+  const surSujet = location.hash.startsWith("#sujet/");   // sur la page d'un sujet, le sujet n'est pas un filtre à effacer
+  const actifs = [!surSujet && filtre.sujet, filtre.auteur, filtre.leg, q.length >= 2].some(Boolean);
   $("#nb").innerHTML = (ts.length ? `${pluriel(ts.length, "texte")}${actifs ? ` correspond${ts.length > 1 ? "ent" : ""} à vos filtres` : ""}.` : "Aucun texte ne correspond. Essayez un autre mot ou un autre filtre.")
     + (actifs ? ` <button type="button" class="lien-bouton" id="effacer-filtres">Effacer les filtres</button>` : "");
   const simu = ["Impôts et budget", "Retraites"].includes(filtre.sujet)
     ? `<div class="callout" style="margin-top:0"><b>Simulateur ${filtre.sujet === "Impôts et budget" ? "impôts et héritage" : "retraite"} : bientôt.</b> Vous pourrez calculer ce que chaque proposition changerait pour vous.</div>` : "";
-  $("#resultats").innerHTML = simu + listeTextes(ts.slice(0, nbVisibles))
+  $("#resultats").innerHTML = simu + listeTextes(ts.slice(0, nbVisibles), { avecResume: !!filtre.sujet })
     + (ts.length > nbVisibles ? `<p><button type="button" class="plus" id="voir-plus">Afficher ${Math.min(30, ts.length - nbVisibles)} textes de plus</button> <span class="meta">(${nbVisibles} sur ${ts.length})</span></p>` : "")
     + `<p class="note">Chaque texte est rangé dans un seul sujet.${TEXTES.some(t => t.sujetNiveau !== "relu") ? " Les sujets ont été attribués par IA et ne sont pas encore tous vérifiés par un humain." : ""}</p>`;
 }
@@ -1190,7 +1222,7 @@ function render() {
   if (view === "sujets" || view === "sujet") majSujets();
   if (view === "groupe" && $("#votes-groupe")) { nbVotesGroupe = 30; majVotesGroupe(); }
   // Une fiche texte n'appartient à aucune rubrique du menu
-  const rubrique = { groupes: "groupes", niche: "groupes", groupe: "groupes", sujets: "sujets", sujet: "sujets", bilan: "bilan" }[view];
+  const rubrique = { groupes: "groupes", niche: "groupes", groupe: "groupes", sujets: "sujets", sujet: "sujets", juger: "sujets", bilan: "bilan" }[view];
   document.querySelectorAll("nav a").forEach(a => a.classList.toggle("on", a.dataset.nav === rubrique));
 }
 $("#maj").textContent = `Données de l'Assemblée nationale mises à jour le ${fdate(INFOS.miseAJour)}.`;
@@ -1234,8 +1266,7 @@ app.addEventListener("click", e => {
     document.querySelectorAll("#resultats .ligne h3 a")[avant]?.focus(); return;
   }
   if (e.target.id === "effacer-filtres") {
-    filtre = { q: "", leg: "", sujet: "", auteur: "" }; nbVisibles = 30;
-    if (location.hash.startsWith("#sujet/")) { location.hash = "sujets"; return; }
+    filtre = { q: "", leg: "", sujet: location.hash.startsWith("#sujet/") ? filtre.sujet : "", auteur: "" }; nbVisibles = 30;
     render(); $("#q").focus(); return;
   }
   if (e.target.dataset.revoir) {
