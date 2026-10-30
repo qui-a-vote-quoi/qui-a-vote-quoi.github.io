@@ -51,7 +51,18 @@ footer.pied a { display: inline-block; padding-block: 2px; }
 .choix-sujets .cases { display: flex; flex-wrap: wrap; gap: 8px; }
 .choix-sujets label { display: inline-flex; align-items: center; gap: 6px; font-weight: 400; font-size: 15px; margin: 0; padding: 6px 10px; min-height: 44px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); cursor: pointer; }
 .choix-sujets input { width: 18px; height: 18px; accent-color: var(--accent); }
-.lien-tout { font-weight: 600; } .apropos p, .apropos li { max-width: 70ch; }
+.lien-tout { font-weight: 600; }
+/* Carte de texte : le même composant partout (accueil, sujets, recherche, fiche groupe) */
+.carte { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 18px; display: grid; gap: 10px; }
+.carte-haut { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.carte h3 { font-size: 19px; }
+.carte h3 a { text-decoration: none; color: var(--fg); }
+.carte h3 a:hover { text-decoration: underline; color: var(--accent); }
+.carte-vote { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: center; font-size: 15px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.carte-vote .bar { height: 8px; }
+.carte-bas { display: flex; justify-content: space-between; align-items: center; gap: 6px 12px; flex-wrap: wrap; font-size: 15px; color: var(--muted); }
+.serre { color: var(--abst); font-weight: 700; }
+.badge-ia { display: inline-block; vertical-align: 3px; margin-left: 6px; font: 700 12px var(--body); letter-spacing: .04em; color: var(--muted); border: 1px solid var(--trait); border-radius: 4px; padding: 0 5px; cursor: help; } .apropos p, .apropos li { max-width: 70ch; }
 header.top { background: var(--surface); border-bottom: 1px solid var(--line); position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; }
 header.top .wrap { display: flex; align-items: center; gap: 20px; padding-block: 12px; }
 .logo { font: 700 20px var(--display); text-decoration: none; color: var(--fg); margin-right: auto; white-space: nowrap; }
@@ -251,7 +262,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
 </head>
 <body>
 <a class="skip" href="#contenu" id="skip">Aller au contenu</a>
-<div class="proto"><span class="long">VERSION DE TEST — données réelles de l'Assemblée nationale depuis 2024, résumés en cours de rédaction · </span><span class="court">VERSION DE TEST · </span><a href="#apropos">Donner mon avis</a></div>
+<div class="proto"><span class="long">VERSION DE TEST — données réelles de l'Assemblée nationale depuis 2017, résumés en cours de rédaction · </span><span class="court">VERSION DE TEST · </span><a href="#apropos">Donner mon avis</a></div>
 <header class="top"><div class="wrap">
   <a class="logo" href="#accueil">Qui a <span>voté</span> quoi</a>
   <nav>
@@ -352,7 +363,10 @@ function totals(t) {
 }
 // « C'est une loi » seulement si ce vote l'a adopté : un texte rejeté ici peut devenir une loi plus tard
 // par une autre voie (vote du Sénat, 49.3…), ce que dit alors « Et ensuite »
-const estLoi = t => t.loi && totals(t).adopte;
+// et seulement sur le dernier vote du texte : les lectures précédentes l'ont seulement « adopté »
+const dernierVote = {};
+TEXTES.forEach(t => { if (!dernierVote[t.dossier] || dernierVote[t.dossier] < t.date) dernierVote[t.dossier] = t.date; });
+const estLoi = t => t.loi && totals(t).adopte && dernierVote[t.dossier] === t.date;
 function issueTag(t) {
   if (estLoi(t)) return `<span class="tag loi">§ C'est une loi</span>`;
   return totals(t).adopte ? `<span class="tag ok">✓ Adopté</span>` : `<span class="tag ko">✕ Rejeté</span>`;
@@ -415,14 +429,27 @@ function camps(t) {
     return `<div class="row camp"><span class="pos ${st}">${LIB[st]}</span>${gs.map(g => chip(g)).join("") || `<span class="meta">aucun groupe</span>`}</div>`;
   }).join("");
 }
-function texteCard(t, parti = true) {
-  const s = totals(t);
-  return `<a class="card" href="#texte/${t.id}">
-    <div class="row">${issueTag(t)}<span class="meta">${t.theme} · ${fdate(t.date)}</span></div>
-    <h3>${t.titre}</h3>
-    <div class="row meta">${parti ? `Proposé par ${auteurNom(t)} · ` : ""}${s.pour} députés pour, ${s.contre} contre</div>
-  </a>`;
+// Écart sous lequel un vote est signalé comme serré : quelques sièges suffisent à le faire basculer
+const ECART_SERRE = 30;
+const fdateCourte = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric" });
+const badgeIA = t => t.niveau === "ia"
+  ? `<span class="badge-ia" title="Titre et résumé rédigés par IA, pas encore vérifiés par un humain"><span aria-hidden="true">IA</span><span class="sr-only">(titre et résumé rédigés par IA, non vérifiés)</span></span>` : "";
+// Carte d'un texte. Pas de résumé ni de camps : on repère le texte, son résultat et l'écart ; le détail est sur sa fiche.
+// avecAuteur : false sur la fiche d'un groupe, où l'auteur est déjà connu.
+function carteTexte(t, { avecAuteur = true } = {}) {
+  const s = totals(t), serre = s.ecart <= ECART_SERRE;
+  return `<article class="carte">
+    <div class="carte-haut"><span class="meta">${fdateCourte(t.date)} · ${t.type === "solennel" ? "Vote solennel" : "Journée réservée"}${lecture(t) ? `, ${lecture(t)}` : ""}</span>${issueTag(t)}</div>
+    <h3><a href="#texte/${t.id}">${t.titre}</a>${badgeIA(t)}</h3>
+    <div class="carte-vote"><span aria-hidden="true">${bar(s.pour, s.contre, 0, 0)}</span><span>${s.pour} pour · ${s.contre} contre</span></div>
+    ${avecAuteur || serre ? `<div class="carte-bas">${avecAuteur ? `<span>Proposé par ${auteurCourt(t)}</span>` : "<span></span>"}${serre ? `<span class="serre">Vote serré : ${s.ecart} voix d'écart</span>` : ""}</div>` : ""}
+  </article>`;
 }
+// L'étape du parcours du texte, en mots simples (l'intitulé officiel est sur la fiche)
+const LECTURES = { "texte de la commission mixte paritaire": "accord députés-sénateurs", "texte de la commission paritaire": "accord députés-sénateurs",
+  "article 34-1 de la Constitution": "" };
+const lecture = t => t.lecture in LECTURES ? LECTURES[t.lecture] : t.lecture;
+const listeTextes = (ts, opts) => `<div class="list">${ts.map(t => carteTexte(t, opts)).join("")}</div>`;
 // Programme d'une niche : chaque ligne est soit un texte avec fiche (id), soit un titre + statut
 const STATUTS = {
   loi: ["tag loi", "§ C'est une loi", ""], adoptee: ["tag ok", "✓ Adopté", ""], rejetee: ["tag ko", "✕ Rejeté", ""],
@@ -460,7 +487,7 @@ const views = {
         <a class="door" href="#bilan"><b>Mon bilan</b><span>Votez comme un député${BILAN.length ? ` sur ${BILAN.length} textes` : ""}, voyez quels groupes ont voté comme vous.</span></a>
       </div>
       <h2>Derniers votes</h2>
-      <div class="list">${derniers.map(t => texteCard(t)).join("")}</div>
+      ${listeTextes(derniers)}
       <p><a class="lien-tout" href="#sujets">Tous les textes : par sujet ou par recherche →</a></p>
       <h2>Comment une loi est votée</h2>
       <ol class="steps">
@@ -502,12 +529,7 @@ const views = {
       <form class="filtres" onsubmit="return false">${choixPeriode("periode-sujet", filtre.leg)}</form>
       ${simu}
       <h2 class="sr-only">Les textes</h2>
-      <div class="list" style="margin-top:20px">${ts.map(t => `<div class="card">
-        <div class="row">${issueTag(t)}<span class="meta">Proposé par ${auteurNom(t)} · ${fdate(t.date)}</span></div>
-        <h3><a href="#texte/${t.id}">${t.titre}</a></h3>
-        ${t.enClair ? `<p class="meta" style="margin:0">${t.enClair}</p>` : ""}
-        ${camps(t)}${t.enClair && NIVEAUX[t.niveau] ? `<small class="meta">${NIVEAUX[t.niveau]}</small>` : ""}
-      </div>`).join("")}</div>`;
+      <div style="margin-top:20px">${listeTextes(ts)}</div>`;
   },
   niche(date) {
     const n = NICHES.find(x => x.date === date), b = bilanNiche(n);
@@ -602,7 +624,7 @@ const views = {
           <div class="stat"><div class="meta">Participation moyenne aux votes</div><span class="big">${presMoy ?? "–"} %</span></div>
         </div>
       </div>
-      ${portes.length ? `<h2>Ce que ce groupe a proposé</h2><div class="list">${portes.map(t => texteCard(t, false)).join("")}</div>` : `<p class="lead">Aucun texte de ce groupe sur le site pour l'instant.</p>`}
+      ${portes.length ? `<h2>Ce que ce groupe a proposé</h2>${listeTextes(portes, { avecAuteur: false })}` : `<p class="lead">Aucun texte de ce groupe sur le site pour l'instant.</p>`}
       ${niches.length ? `<h2>Ses journées réservées</h2><p class="meta">Les jours où ce groupe a choisi seul les textes discutés (sa « niche »), avec tout son programme.</p>
         <div class="list">${niches.map(n => { const b = bilanNiche(n); return `<a class="card" href="#niche/${n.date}"><b style="font:700 17px var(--display)">${fdate(n.date)}</b><span class="meta">${b.total} textes au programme · ${b.votes} votés · ${b.sansVote} sans vote faute de temps</span></a>`; }).join("")}</div>` : ""}
       <h2>Comment il a voté sur les autres textes</h2>
@@ -716,7 +738,7 @@ function majSujets() {
   if (filtre.q.trim().length >= 2) {
     const trouves = ts.filter(t => correspond(t, filtre.q.trim()));
     $("#nb").textContent = trouves.length ? `${trouves.length} texte${trouves.length > 1 ? "s" : ""} trouvé${trouves.length > 1 ? "s" : ""}${trouves.length > 50 ? ", les 50 plus récents affichés" : ""}.` : "Aucun texte trouvé. Essayez un autre mot.";
-    $("#resultats").innerHTML = `<div class="list">${trouves.slice(0, 50).map(t => texteCard(t)).join("")}</div>`;
+    $("#resultats").innerHTML = listeTextes(trouves.slice(0, 50));
     return;
   }
   $("#nb").textContent = `${ts.length} textes${filtre.leg ? ` (${PERIODES[filtre.leg].lib.toLowerCase()})` : ""}, rangés par sujet.`;
