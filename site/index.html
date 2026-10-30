@@ -463,7 +463,7 @@ function carteTexte(t, { avecAuteur = true } = {}) {
   const s = totals(t), serre = s.ecart <= ECART_SERRE;
   return `<article class="carte">
     <div class="carte-haut"><h3><a href="#texte/${t.id}">${t.titre}</a>${badgeIA(t)}</h3>${issueTag(t)}</div>
-    <div class="carte-bas">${avecAuteur ? `<span>Proposé par ${auteurCourt(t)}</span>` : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, 0, 0)}</span>${s.pour} pour · ${s.contre} contre${serre ? `<span class="serre">· à ${s.ecart} voix près</span>` : ""}</span><span class="carte-date">${fdateCourte(t.date)} · ${t.type === "solennel" ? "Vote solennel" : "Journée réservée"}${lecture(t) ? `, ${lecture(t)}` : ""}</span></div>
+    <div class="carte-bas">${avecAuteur ? `<span>Par ${auteurCourt(t)}</span>` : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, 0, 0)}</span>${s.pour} pour · ${s.contre} contre${serre ? `<span class="serre">· à ${s.ecart} voix près</span>` : ""}</span><span class="carte-date">${fdateCourte(t.date)} · ${t.type === "solennel" ? "Vote solennel" : "Journée réservée"}${lecture(t) ? `, ${lecture(t)}` : ""}</span></div>
   </article>`;
 }
 // L'étape du parcours du texte, en mots simples (l'intitulé officiel est sur la fiche)
