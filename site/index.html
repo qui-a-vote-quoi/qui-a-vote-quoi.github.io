@@ -150,6 +150,20 @@ a.chip:hover { border-color: var(--encre); }
 .door b { font: 700 19px var(--display); display: flex; justify-content: space-between; gap: 8px; }
 .door b::after { content: "→"; color: var(--corail); }
 .door span { color: var(--muted); font-size: 15px; }
+/* Siégez : une carte par texte, puis la révélation du vrai vote */
+.siege { background: var(--surface); border: var(--bord-encre); border-radius: var(--rayon); padding: 22px; box-shadow: var(--ombre); }
+.siege h2 { margin: 0 0 8px; }
+.seance { padding: 22px; gap: 14px; border: var(--bord-encre); box-shadow: var(--ombre); }
+.seance h2 { margin: 0; font-size: clamp(22px, 3.5vw, 30px); }
+.seance-haut { display: grid; gap: 6px; }
+.seance-resume { font-size: 18px; margin: 0; }
+.revelation { display: grid; gap: 10px; border-top: var(--bord); padding-top: 14px; animation: apparait .35s ease-out; }
+.revelation h3 { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 22px; }
+.revelation p { margin: 0; }
+.revelation .hemi { margin-top: 4px; }
+.principal { background: var(--fg); color: var(--bg); }
+.principal:hover { box-shadow: 3px 3px 0 var(--accent); }
+@keyframes apparait { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 /* Accueil : une question, la recherche, les sujets en pastilles, et l'hémicycle d'un vrai vote serré */
 .hero { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 28px; align-items: center; }
 .hero .lead { margin-bottom: 22px; }
@@ -312,7 +326,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   .logo { flex-basis: 100%; }
   nav { gap: 16px; }
 }
-@media (prefers-reduced-motion: reduce) { .carte, .door, a.card { transition: none; } .carte:hover, .door:hover, a.card:hover { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .revelation { animation: none; } .carte, .door, a.card { transition: none; } .carte:hover, .door:hover, a.card:hover { transform: none; } }
 @media (prefers-reduced-motion: reduce) { .progress i { transition: none; } }
 </style>
 </head>
@@ -831,7 +845,7 @@ const views = {
           <h2 class="sr-only">Les textes à voter</h2>
           <p class="meta" id="nb-bilan" aria-live="polite"></p>
           <div class="list" id="questions"></div>
-          <p class="note">Les textes sont proposés des plus récents aux plus anciens. Certains résumés ont été rédigés par IA et pas encore vérifiés par un humain : c'est indiqué. Seuls les textes déjà résumés sont proposés.</p>
+          <p class="note">Seuls les textes déjà résumés sont proposés. Certains résumés ont été rédigés par IA et pas encore vérifiés par un humain : c'est indiqué. L'abstention n'entre pas dans le calcul des groupes proches de vous.</p>
           <section id="revel"></section>
           <p class="note">Calcul : part des textes votés où le groupe a voté comme vous. Quand un groupe s'est abstenu, il n'a voté ni comme vous ni contre vous ; un groupe absent n'est pas compté. « Je ne sais pas » n'entre pas dans le calcul. Un groupe n'est classé que s'il a voté sur au moins la moitié des textes que vous avez votés. <a href="#bilan" id="reset">Effacer mes réponses</a></p>
         </div>
@@ -861,20 +875,66 @@ function selectionBilan() {
   const { sujets, leg } = prefBilan();
   return parPeriode(BILAN.filter(t => sujets.includes(t.theme)), leg);
 }
+// « Siégez » : une séance de 10 textes tirés au hasard parmi ceux pas encore votés, un à la fois.
+// Après chaque vote, on découvre le vrai vote de l'Assemblée et qui avait proposé le texte. Pas de score de « bonne réponse ».
+const TAILLE_SEANCE = 10;
+let seance = null;   // { ids, i, revele }
+const VOTES = [[1, "Pour"], [-1, "Contre"], [0, "Je m'abstiens"]];
+const libVote = v => ({ 1: "pour", "-1": "contre", 0: "abstention" })[v];
 function majQuestions() {
-  const ts = selectionBilan();
-  $("#nb-bilan").textContent = prefBilan().sujets.length ? `${ts.length} texte${ts.length > 1 ? "s" : ""} à voter.` : "";
-  $("#questions").innerHTML = prefBilan().sujets.length ? ts.map(t => `
-    <div class="q">
-      <span class="eyebrow">${t.theme}</span>
-      <h3>${t.titre}</h3>
-      <p class="meta" style="margin:0">${t.enClair}${t.niveau === "ia" ? ` <small>(résumé rédigé par IA, non vérifié)</small>` : ""}</p>
-      ${t.arguments ? `<details class="args-mini"><summary>Voir les arguments</summary>${argsGrid(t)}</details>` : ""}
-      <div class="btns" data-id="${t.id}" role="group" aria-label="Votre vote : ${t.titre.replace(/"/g, "&quot;")}">
-        ${[[1, "Pour"], [-1, "Contre"], [0, "Je ne sais pas"]].map(([v, l]) => `<button type="button" data-v="${v}">${l}</button>`).join("")}
-      </div>
-    </div>`).join("") : `<div class="callout" style="margin-top:0"><b>Pour commencer, cochez un ou plusieurs sujets.</b> Les textes à voter s'affichent ici.</div>`;
+  if (seance) { afficherSeance(); majBilan(); return; }
+  const ts = selectionBilan(), choisis = prefBilan().sujets.length, rep = load();
+  const restants = ts.filter(t => !(t.id in rep));
+  $("#nb-bilan").textContent = choisis ? `${pluriel(ts.length, "texte")} sur ces sujets, dont ${restants.length} pas encore voté${restants.length > 1 ? "s" : ""}.` : "";
+  $("#questions").innerHTML = !choisis
+    ? `<div class="callout" style="margin-top:0"><b>Pour commencer, cochez un ou plusieurs sujets.</b> Vous siégerez ensuite sur des textes de ces sujets.</div>`
+    : restants.length
+      ? `<div class="siege"><h2>Prêt à siéger&nbsp;?</h2><p>Vous allez voter sur ${pluriel(Math.min(TAILLE_SEANCE, restants.length), "texte")}, un par un, comme un député. Après chaque vote, vous découvrez ce qu'ont voté les vrais députés, et qui avait proposé le texte.</p>
+          <button type="button" class="plus principal" id="sieger">Siéger →</button></div>`
+      : `<div class="callout" style="margin-top:0">Vous avez voté sur tous les textes de ces sujets. Cochez d'autres sujets pour continuer.</div>`;
   majBilan();
+}
+function afficherSeance() {
+  const n = seance.ids.length;
+  if (seance.i >= n) {   // fin de séance : le récit de la journée
+    const ts = seance.ids.map(byId), adoptes = ts.filter(t => totals(t).adopte).length, serres = ts.filter(t => totals(t).ecart <= ECART_SERRE).length;
+    $("#nb-bilan").textContent = "";
+    $("#questions").innerHTML = `<div class="siege"><h2 tabindex="-1" id="fin-seance">Séance terminée</h2>
+      <p>Vous avez siégé sur ${pluriel(n, "texte")}. Les députés en ont adopté ${adoptes} et rejeté ${n - adoptes}.${serres ? ` ${serres > 1 ? `${serres} votes se sont joués` : "Un vote s'est joué"} à ${ECART_SERRE} voix près ou moins : quelques sièges ont fait la différence.` : ""}</p>
+      <p>Les groupes qui ont voté comme vous sont dans le panneau « Ont voté comme vous ». Le détail de vos votes est plus bas.</p>
+      <p class="row"><button type="button" class="plus principal" id="autre-seance">Une autre séance →</button></p></div>`;
+    return;
+  }
+  const t = byId(seance.ids[seance.i]), v = load()[t.id];
+  $("#nb-bilan").textContent = "";
+  $("#questions").innerHTML = `<article class="q seance">
+    <div class="seance-haut"><span class="eyebrow">Texte ${seance.i + 1} sur ${n} · ${t.theme}</span><div class="progress" aria-hidden="true"><i style="width:${(100 * seance.i / n).toFixed(1)}%"></i></div></div>
+    <h2 tabindex="-1" id="q-titre">${t.titre}</h2>
+    <p class="seance-resume">${t.enClair}${t.niveau === "ia" ? ` ${badgeIA(t)}` : ""}</p>
+    ${t.concerne ? `<p class="meta" style="margin:0">Concerne : ${t.concerne}</p>` : ""}
+    ${t.arguments ? `<details class="args-mini"><summary>Voir les arguments</summary>${argsGrid(t)}</details>` : ""}
+    ${!seance.revele ? `<div class="btns" data-id="${t.id}" role="group" aria-label="Votre vote : ${t.titre.replace(/"/g, "&quot;")}">
+        ${VOTES.map(([val, l]) => `<button type="button" data-v="${val}">${l}</button>`).join("")}</div>`
+      : (() => { const s = totals(t), serre = s.ecart <= ECART_SERRE;
+        return `<div class="revelation">
+          <h3 tabindex="-1" id="revelation">${issueTag(t)} Les députés l'ont ${s.adopte ? "adopté" : "rejeté"}</h3>
+          <p>Vous : <b>${libVote(v)}</b>. L'Assemblée : ${s.pour} pour, ${s.contre} contre${serre ? `, <span class="serre">à ${s.ecart} voix près</span>. Quelques sièges ont fait la différence.` : "."}</p>
+          ${hemicycle(t)}
+          <p>Ce texte avait été proposé par ${auteurNom(t)}${t.groupe ? ` ${chip(t.groupe)}` : ""}.</p>
+          <div class="camps">${camps(t)}</div>
+          <p class="row"><button type="button" class="plus principal" id="suivant">${seance.i + 1 < n ? "Texte suivant →" : "Voir ma séance →"}</button><a href="#texte/${t.id}">La fiche du texte</a></p>
+        </div>`; })()}
+  </article>`;
+}
+function melanger(liste) {
+  const l = [...liste];
+  for (let i = l.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [l[i], l[j]] = [l[j], l[i]]; }
+  return l;
+}
+function commencerSeance() {
+  const rep = load();
+  seance = { ids: melanger(selectionBilan().filter(t => !(t.id in rep))).slice(0, TAILLE_SEANCE).map(t => t.id), i: 0, revele: false };
+  majQuestions(); $("#q-titre")?.focus();
 }
 function load() { try { return JSON.parse(localStorage.getItem("bilan") || "{}"); } catch { return {}; } }
 function save(r) { try { localStorage.setItem("bilan", JSON.stringify(r)); } catch {} }
@@ -908,7 +968,7 @@ function majBilan() {
     const on = rep[bx.dataset.id] === +b.dataset.v;
     b.classList.toggle("sel", on); b.setAttribute("aria-pressed", on);
   }));
-  const selection = selectionBilan(), vus = selection.filter(t => t.id in rep).length, top = answered.length && scores[0].classe ? scores[0] : null;
+  const selection = selectionBilan(), vus = selection.filter(t => t.id in rep).length, top = answered.length && scores[0].classe && scores[0].pct > 0 ? scores[0] : null;
   const panel = $("#panel");
   panel.classList.toggle("open", panelOpen);
   panel.innerHTML = `
@@ -918,7 +978,7 @@ function majBilan() {
     <p class="panel-top">${top ? (() => {
       const ex = scores.filter(s => s.classe && s.pct === top.pct);
       return `<span>${ex.length > 1 ? "Les plus proches de vous, à égalité" : "Le plus proche de vous"} :</span> ${ex.map(s => chip(s.g, false)).join(" ")} <b>${top.pct} %</b>`;
-    })() : "Répondez à une première question : votre résultat s'affiche ici, en direct."}</p>
+    })() : answered.length ? "Aucun groupe n'a voté comme vous sur ces textes, pour l'instant." : "Votez sur un premier texte : les groupes qui ont voté comme vous s'affichent ici, en direct."}</p>
     ${answered.length ? `<p class="meta" style="margin:0;font-size:13px">Calculé sur ${answered.length > 1 ? `vos ${answered.length} votes` : "votre vote"}, tous sujets confondus.</p>` : ""}
     <div class="panel-scores">${scores.map(s => `<div class="pscore${answered.length && !s.classe ? " hors" : ""}">${chip(s.g, false)}${s.n ? bar(s.acc, s.des, s.abs, 0) : bar(0, 0, 0, 1)}<b>${s.n ? s.pct + " %" : "–"}</b><span class="sur">${answered.length ? `sur ${s.n}` : ""}</span></div>`).join("")}</div>
     ${scores.some(s => answered.length && !s.classe) ? `<p class="meta" style="margin:0;font-size:13px">En grisé : groupes présents sur moins de la moitié des textes que vous avez votés. Ils ne sont pas classés.</p>` : ""}
@@ -950,15 +1010,18 @@ app.addEventListener("click", e => {
   const b = e.target.closest(".btns button");
   if (b) {
     const r = load(), id = b.parentElement.dataset.id, v = +b.dataset.v;
-    if (r[id] === v) delete r[id]; else r[id] = v;
-    save(r); majBilan();
+    r[id] = v; save(r); majBilan();
+    if (seance && seance.ids[seance.i] === id) { seance.revele = true; afficherSeance(); $("#revelation")?.focus(); }
     // Une phrase courte pour les lecteurs d'écran, plutôt que la relecture de tout le panneau
-    const { answered, scores } = scoresBilan(r), top = answered.length && scores[0].classe ? scores[0] : null;
+    const { answered, scores } = scoresBilan(r), top = answered.length && scores[0].classe && scores[0].pct > 0 ? scores[0] : null;
     const ex = top ? scores.filter(x => x.classe && x.pct === top.pct).map(x => x.g).join(", ") : "";
-    $("#annonce").textContent = `Vote enregistré. ${selectionBilan().filter(t => t.id in r).length} sur ${selectionBilan().length} textes.` + (top ? ` Plus proche de vous : ${ex}, ${top.pct} %.` : "");
+    $("#annonce").textContent = `Vote enregistré.` + (top ? ` Plus proches de vous pour l'instant : ${ex}, ${top.pct} %.` : "");
     return;
   }
   if (e.target.closest(".panel-toggle")) { panelOpen = !panelOpen; majBilan(); return; }
+  if (e.target.id === "sieger") { commencerSeance(); return; }
+  if (e.target.id === "suivant") { seance.i++; seance.revele = false; afficherSeance(); ($("#q-titre") || $("#fin-seance"))?.focus(); return; }
+  if (e.target.id === "autre-seance") { seance = null; commencerSeance(); if (!seance.ids.length) { seance = null; majQuestions(); } return; }
   if (e.target.id === "voir-plus") {
     // Les textes ajoutés arrivent sous le bouton : le focus va au premier d'entre eux
     const avant = nbVisibles; nbVisibles += 30; majSujets();
@@ -981,7 +1044,7 @@ app.addEventListener("change", e => {
   if (e.target.name === "sujet" || e.target.id === "periode-bilan") {
     const f = e.target.form;
     ecrirePref("bilanChoix", { sujets: [...f.querySelectorAll("input[name=sujet]:checked")].map(x => x.value), leg: f.querySelector("#periode-bilan").value });
-    majQuestions();
+    seance = null; majQuestions();
   }
 });
 app.addEventListener("submit", e => {
@@ -991,6 +1054,7 @@ app.addEventListener("submit", e => {
   location.hash = "sujets";
 });
 addEventListener("hashchange", () => {
+  if (!location.hash.startsWith("#bilan")) seance = null;
   render(); scrollTo(0, 0);
   // Annonce la nouvelle vue : le focus va sur son titre principal
   const h1 = app.querySelector("h1");
