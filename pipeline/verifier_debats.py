@@ -57,15 +57,20 @@ def main():
                 gardees.remove([r for r in gardees if r["role"] == trop][-1])
             pour = sum(r["role"] == "pour" for r in gardees)
             contre = sum(r["role"] == "contre" for r in gardees)
-            if not pour:
+            # Texte consensuel : personne ne s'y oppose sur le fond ; on garde la présentation (et le gouvernement), sans camp inventé
+            consensuel = bool(choix.get("consensuel")) and not pour and any(r["role"] == "presentation" for r in gardees)
+            if consensuel:
+                gardees = [r for r in gardees if r["role"] in ("presentation", "gouvernement")]
+            elif not pour:
                 print(f"{dossier} : écarté, plus aucune réplique d'un des deux camps ({len(rejetees)} citation(s) introuvable(s))")
                 redaction.get(dossier, {}).pop("debat", None)
                 continue
             redaction.setdefault(dossier, {})["debat"] = {
                 "date": debat["date"], "comptesRendus": debat["comptesRendus"], "repliques": gardees,
                 "niveau": "ia",   # choisi par IA, citations vérifiées mot pour mot, pas encore relu
+                **({"consensuel": True} if consensuel else {}),
             }
-            print(f"{dossier} : {len(gardees)} répliques gardées" + (f", {len(rejetees)} écartée(s) (citation introuvable)" if rejetees else ""))
+            print(f"{dossier} : {len(gardees)} répliques gardées{' (consensuel)' if consensuel else ''}" + (f", {len(rejetees)} écartée(s) (citation introuvable)" if rejetees else ""))
     ecrire_json(chemin_redaction, dict(sorted(redaction.items())))
 
 

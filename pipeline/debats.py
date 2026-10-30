@@ -11,10 +11,12 @@ import re
 import sys
 import xml.etree.ElementTree as ET
 
-from commun import BASE, BRUT, ecrire_json, lire_json, proximite
+from commun import BASE, BRUT, ORGANE_ASSEMBLEE, actes, ecrire_json, lire_json, lire_zip, proximite
 from construire import NS, charger_groupes_et_mandats, charger_seances, compte_rendu, groupe_a_la_date
 
-PARTIES = ("présentation", "discussion générale")   # le fond du débat ; on laisse de côté articles, amendements, procédure
+# Le fond du débat ; on laisse de côté articles, amendements, procédure. Les explications de vote (avant un vote solennel)
+# disent pourquoi chaque groupe vote pour ou contre.
+PARTIES = ("présentation", "discussion générale", "explications de vote")
 
 
 def texte_de(element):
@@ -54,22 +56,42 @@ def interventions(chemin, titre, jour, mandats):
     return sortie
 
 
+def seances_du_vote(dossier, jour):
+    """Séances de la lecture qui s'achève par ce vote : les deux premières (présentation, discussion générale) et celle du vote."""
+    dec = next((a for a in actes(dossier) if a["codeActe"].endswith("-DEC") and a.get("organeRef") in ORGANE_ASSEMBLEE.values()
+                and (a.get("dateActe") or "")[:10] == jour), None)
+    if not dec:
+        return []
+    code = dec["codeActe"][:-4] + "-SEANCE"
+    seances = sorted({(a["dateActe"][:10], a["reunionRef"]) for a in actes(dossier)
+                      if a["codeActe"] == code and a.get("reunionRef") and (a.get("dateActe") or "")[:10] <= jour})
+    choisies = seances[:2] + [s for s in seances[2:] if s[0] == jour]
+    return [ref for _, ref in choisies]
+
+
 def main():
     if len(sys.argv) < 2:
         sys.exit("Usage : python3 pipeline/debats.py <législature> [DOSSIER ...]")
     leg, voulus = sys.argv[1], set(sys.argv[2:])
     _, mandats = charger_groupes_et_mandats(leg)
     jours = charger_seances(leg)
+    compte_rendu_de = {r["uid"]: r.get("compteRenduRef") for liste in jours.values() for r in liste}
+    dossiers = {}
+    for doc in lire_zip(BRUT / leg / "dossiers.zip", "dossierParlementaire"):
+        dossiers[doc["dossierParlementaire"]["uid"]] = doc["dossierParlementaire"]
     sortie = BRUT / leg / "debats"
     sortie.mkdir(parents=True, exist_ok=True)
     faits, vus = 0, set()
     for t in lire_json(BASE / leg / "textes.json"):   # du plus ancien au plus récent : on garde le premier débat d'un texte
         dossier = t.get("dossier") or t["id"]
-        if dossier in vus or (voulus and dossier not in voulus) or (not voulus and t["origine"] != "niche"):
+        if dossier in vus or (voulus and dossier not in voulus):
             continue
+        if t["origine"] == "niche":
+            refs_seances = [r.get("compteRenduRef") for r in jours.get(t["date"], [])]
+        else:   # vote solennel : les séances de la lecture, souvent plusieurs jours avant le vote
+            refs_seances = [compte_rendu_de.get(u) for u in seances_du_vote(dossiers.get(dossier, {}), t["date"])]
         liste, refs = [], []
-        for r in jours.get(t["date"], []):
-            ref = r.get("compteRenduRef")
+        for ref in refs_seances:
             if not ref:
                 continue
             compte_rendu(leg, ref, t["date"])   # télécharge au besoin

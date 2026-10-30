@@ -115,9 +115,9 @@ h3 { font-size: 19px; }
 .row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .list { display: grid; gap: 12px; }
 .card { background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 16px 18px; text-decoration: none; color: var(--fg); display: grid; gap: 10px; }
-/* Éléments cliquables (carte de texte, porte, carte de journée) : contour encre, soulèvement au survol */
-.carte, .door, a.card { border: var(--bord-encre); transition: transform .12s, box-shadow .12s; }
-.carte:hover, .door:hover, a.card:hover { transform: translate(-2px, -2px); box-shadow: var(--ombre); }
+/* Éléments cliquables (carte de texte, porte, carte de journée) : contour clair ; au survol, contour encre et soulèvement */
+.carte, .door, a.card { border: var(--bord); transition: transform .12s, box-shadow .12s, border-color .12s; }
+.carte:hover, .door:hover, a.card:hover { transform: translate(-2px, -2px); border-color: var(--encre); box-shadow: var(--ombre); }
 
 /* Partis : pastille claire (lien) et badge plein (identité) */
 .chip { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; padding: 2px 10px 2px 8px; min-height: 26px; border-radius: 999px; background: var(--surface); border: var(--bord); color: var(--fg); text-decoration: none; white-space: nowrap; }
@@ -166,6 +166,7 @@ a.chip:hover { border-color: var(--encre); }
 .role-debat { font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: var(--fg); background: var(--line); border-radius: 999px; padding: 2px 9px; }
 .replique.pour .role-debat::before { content: "+ "; } .replique.contre .role-debat::before { content: "− "; }
 .legende-debat { margin: 0 0 8px; }
+.consensus { margin: 10px 0 0; font-weight: 700; background: var(--ok-soft); color: var(--ok-fg); border-radius: var(--rayon-s); padding: 8px 14px; }
 .replique q { quotes: "« " " »"; font-size: 16px; }
 .vivre { display: grid; gap: 10px; }
 .lien-debat { font-weight: 700; font-size: 14px; text-decoration: none; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; }
@@ -688,8 +689,8 @@ const views = {
         ${t.concerne ? `<div><div class="eyebrow">Qui est concerné</div><p>${t.concerne}</p></div>` : ""}
       </div>
       ${t.enClair ? `<p class="note">${NIVEAUX[t.niveau] || ""}</p>` : ""}
-      ${t.debat ? `<h2 id="le-debat" tabindex="-1">Pourquoi ce résultat&nbsp;? Le débat</h2>
-        <p class="meta">Ce qu'ont dit les deux camps en séance, à égalité, avant le vote.</p>${repliques(t, { nomme: true })}
+      ${t.debat ? `<h2 id="le-debat" tabindex="-1">${t.debat.consensuel ? "Le débat" : "Pourquoi ce résultat&nbsp;? Le débat"}</h2>
+        <p class="meta">${t.debat.consensuel ? "Ce qui a été dit en séance, avant le vote." : "Ce qu'ont dit les deux camps en séance, à égalité, avant le vote."}</p>${repliques(t, { nomme: true })}
         <p class="note">Extraits exacts du compte rendu (${t.debat.comptesRendus.map(ref => ext(urlCompteRendu(ref, t.leg), `séance du ${fdate(t.debat.date)}`)).join(", ")}). Choix fait par IA, citations vérifiées mot pour mot, pas encore relu par un humain.</p>` : ""}
       ${mesuresTexte(t)}
       ${t.arguments ? `<h2>Les arguments des deux camps</h2>${argsGrid(t)}
@@ -970,9 +971,11 @@ const urlCompteRendu = (ref, leg) => `https://www.assemblee-nationale.fr/dyn/${l
 const ROLES_DEBAT = { presentation: "Présente le texte", gouvernement: "Avis du gouvernement", pour: "Pour le texte", contre: "Contre le texte" };
 function repliques(t, { visibles = Infinity, nomme = false } = {}) {
   const rs = t.debat.repliques.slice(0, visibles);
-  return `<p class="meta legende-debat">D'abord la présentation du texte et l'avis du gouvernement, puis un orateur pour et un orateur contre, à tour de rôle.</p>
+  const legende = t.debat.consensuel ? "La présentation du texte et l'avis du gouvernement." : "D'abord la présentation du texte et l'avis du gouvernement, puis un orateur pour et un orateur contre, à tour de rôle.";
+  return `<p class="meta legende-debat">${legende}</p>
     <ol class="debat">${rs.map((r, i) => `<li class="replique ${r.role}"${i === rs.length - 1 && !nomme ? ' tabindex="-1" id="derniere-replique"' : ""}>
-    <span class="orateur"><span class="role-debat">${ROLES_DEBAT[r.role]}</span>${nomme ? qui(r, true) : ""}</span><q>${r.citation.replace(/([.!?;])(?=[A-ZÀ-ÖØ-Ý«])/g, "$1 ")}</q></li>`).join("")}</ol>`;   // le compte rendu colle parfois deux phrases
+    <span class="orateur"><span class="role-debat">${ROLES_DEBAT[r.role]}</span>${nomme ? qui(r, true) : ""}</span><q>${r.citation.replace(/([.!?;])(?=[A-ZÀ-ÖØ-Ý«])/g, "$1 ")}</q></li>`).join("")}</ol>
+    ${t.debat.consensuel && rs.length === t.debat.repliques.length ? `<p class="consensus">Aucun orateur ne s'est opposé à ce texte sur le fond.</p>` : ""}`;   // le compte rendu colle parfois deux phrases
 }
 // « Je ne sais pas » : les éléments pour se faire un avis, sans dévoiler l'auteur ni le résultat
 function elementsPourChoisir(t) {
