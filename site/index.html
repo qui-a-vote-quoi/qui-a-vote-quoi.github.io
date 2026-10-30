@@ -582,7 +582,7 @@ function ligneTexte(t, { avecAuteur = true, datee = false } = {}) {
   const s = totals(t), serre = s.ecart <= ECART_SERRE;
   return `<li class="ligne">
     <div class="ligne-haut"><h3><a href="#texte/${t.id}">${t.titre}</a>${t.niveau === "relu" ? ` <span class="badge-relu">relu</span>` : ""}</h3>${issueTag(t)}</div>
-    <div class="ligne-bas">${avecAuteur ? auteurLigne(t) : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, 0, 0)}</span>${s.pour} pour · ${s.contre} contre${serre ? `<span class="serre">à ${s.ecart} voix près</span>` : ""}</span>${lecture(t) ? `<span>${lecture(t)}</span>` : ""}${t.debat ? `<a class="lien-debat" href="#texte/${t.id}/debat">Le débat<span class="sr-only"> : ${t.titre.replace(/"/g, "&quot;")}</span></a>` : ""}${datee ? `<span class="carte-date">${fdateCourte(t.date)}</span>` : ""}</div>
+    <div class="ligne-bas">${avecAuteur ? auteurLigne(t) : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, s.abst, 0)}</span>${s.pour} pour · ${s.contre} contre${s.abst ? ` · ${s.abst} <span aria-hidden="true">abst.</span><span class="sr-only">abstentions</span>` : ""}${serre ? `<span class="serre">à ${s.ecart} voix près</span>` : ""}</span>${lecture(t) ? `<span>${lecture(t)}</span>` : ""}${t.debat ? `<a class="lien-debat" href="#texte/${t.id}/debat">Le débat<span class="sr-only"> : ${t.titre.replace(/"/g, "&quot;")}</span></a>` : ""}${datee ? `<span class="carte-date">${fdateCourte(t.date)}</span>` : ""}</div>
   </li>`;
 }
 const MOIS_LONG = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { month: "long", year: "numeric" });
@@ -819,7 +819,7 @@ const views = {
         </div>
       </div>
       <h2>1. Ce qu'il a proposé</h2>
-      ${sesTextes.length ? `<p class="meta">${pluriel(sesTextes.length, "texte")} mis au vote, dont ${adoptes.length} adopté${adoptes.length > 1 ? "s" : ""} par l'Assemblée et ${pluriel(lois, "devenu")} loi. Les textes de ses journées réservées qui n'ont pas pu être votés, faute de temps, sont dans le programme de chaque journée, plus bas.</p>${listeTextes(portes, { avecAuteur: false })}` : `<p class="meta">Aucun texte de ce groupe sur le site pour l'instant.</p>`}
+      ${sesTextes.length ? `<p class="meta">${pluriel(sesTextes.length, "texte")} mis au vote, lors de ses journées réservées ou d'un vote solennel, dont ${adoptes.length} adopté${adoptes.length > 1 ? "s" : ""} par l'Assemblée et ${pluriel(lois, "devenu")} loi. Les textes de ses journées réservées qui n'ont pas pu être votés, faute de temps, sont dans le programme de chaque journée, plus bas.</p>${listeTextes(portes, { avecAuteur: false })}` : `<p class="meta">Aucun texte de ce groupe sur le site pour l'instant.</p>`}
       <h2>2. Les textes des autres où ses voix ont fait la différence</h2>
       <p class="meta">Sans les voix de ce groupe, le résultat aurait été inverse. Plus un groupe a de sièges, plus souvent ses voix décident : c'est le nombre de députés qui compte. <a href="#methode">Comment c'est calculé</a></p>
       <details class="depli"><summary>Adoptés grâce à ses voix « pour » <span>· ${pluriel(aide.length, "texte")}</span></summary>${aide.length ? listeTextes(aide) : `<p class="meta" style="padding:0 16px">Aucun.</p>`}</details>
