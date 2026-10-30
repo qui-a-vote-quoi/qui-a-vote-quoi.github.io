@@ -276,6 +276,19 @@ a.plus { text-decoration: none; display: inline-flex; align-items: center; }
 .hemi .s-p { fill: var(--jauge-pour); } .hemi .s-c { fill: var(--jauge-contre); } .hemi .s-a { fill: var(--jauge-abst); } .hemi .s-n { fill: none; stroke: var(--seat-absent); stroke-width: 1.4; }
 .hemi text { fill: var(--muted); font: 700 11px var(--body); }
 .hemi .centre { fill: var(--fg); font: 700 22px var(--display); }
+.hemi .sous { fill: var(--muted); font: 400 14px var(--body); }
+.hemi.cliquable svg a circle, .legende-groupes a { transition: opacity .15s; }
+.hemi.un-groupe svg a:not(.on) circle, .hemi.un-groupe svg a:not(.on) text { opacity: .2; }
+.periodes { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; }
+.periodes button { font: 700 15px var(--body); padding: 8px 16px; min-height: 44px; border-radius: 999px; border: var(--bord); background: var(--surface); color: var(--fg); cursor: pointer; }
+.periodes button[aria-pressed="true"] { background: var(--fg); border-color: var(--fg); color: var(--bg); }
+.hemi.cliquable svg { margin-top: 14px; }
+.legende-groupes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 2px 14px; }
+.legende-groupes a { display: grid; grid-template-columns: 10px 64px minmax(0, 1fr) auto; gap: 8px; align-items: center; padding: 8px 10px; border-radius: var(--rayon-s); color: var(--fg); text-decoration: none; font-size: 15px; }
+.legende-groupes span { color: var(--muted); line-height: 1.25; }
+.legende-groupes .nb { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--fg); }
+.legende-groupes a:hover, .legende-groupes a.on { background: var(--bg); }
+.legende-groupes a:hover span:not(.nb), .legende-groupes a.on span:not(.nb) { color: var(--fg); text-decoration: underline; }
 .legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 14px; color: var(--muted); justify-content: center; }
 .legend span { display: inline-flex; align-items: center; gap: 6px; }
 .grp-list { display: grid; background: var(--surface); border: var(--bord); border-radius: var(--rayon); }
@@ -465,7 +478,7 @@ const SUJETS = [...new Set(TEXTES.map(t => t.theme))].sort((a, b) => a === "Autr
 const choixPeriode = (id, valeur) => `<div><label for="${id}">Période</label><select id="${id}">
   <option value="">De 2017 à aujourd'hui</option>${[...INFOS.legislatures].sort().reverse().map(l => `<option value="${l}"${valeur === l ? " selected" : ""}>${PERIODES[l].lib}</option>`).join("")}</select></div>`;
 // Choix gardés le temps de la visite (et, pour À vous de voter, sur l'appareil)
-let filtre = { q: "", leg: "", sujet: "", auteur: "" }, nbVisibles = 30;
+let filtre = { q: "", leg: "", sujet: "", auteur: "" }, nbVisibles = 30, periodeGroupes = [...INFOS.legislatures].sort().pop();
 // Auteur d'un texte, pour le filtre : le sigle du groupe, ou « Gouvernement », « Sénat »
 const auteurDe = t => t.groupe || t.auteurCourt;
 const AUTEURS = [...ORDRE.filter(g => TEXTES.some(t => t.groupe === g)), ...["Gouvernement", "Sénat"].filter(a => TEXTES.some(t => t.auteurCourt === a))];
@@ -534,10 +547,11 @@ function bar(p, c, a, n) {
 const PASTILLE = { soutien: "background:var(--jauge-pour)", opposition: "background:var(--jauge-contre)", abstention: "background:var(--jauge-abst)", absent: "border:1.5px solid var(--seat-absent);background:none" };
 const legende = `<div class="legend">${Object.entries(LIB).map(([k, l]) => `<span><i class="dot" style="${PASTILLE[k]}"></i>${l}</span>`).join("")}</div>`;
 
-// Hémicycle : un point par député, rangés de la gauche vers la droite par groupe,
-// colorés selon leur vote. Disposition classique en rangées concentriques.
-function hemicycle(t) {
-  const N = t.groupes.reduce((s, g) => s + g.m, 0), rangs = 12, r0 = .4, S = 230;
+// Hémicycle : un point par député, rangés de la gauche vers la droite par groupe, en rangées concentriques.
+// blocs : pour chaque groupe, ses points par lots [attributs du cercle, nombre] ; il est placé dans l'ordre de l'hémicycle.
+// lien : chaque groupe mène à sa fiche (la légende sous l'hémicycle reste la version accessible au clavier).
+function hemicycle(blocs, { aria, centre, sous = "", tete = "", pied = "", lien = false }) {
+  const N = blocs.reduce((s, b) => s + b.lots.reduce((n, [, k]) => n + k, 0), 0), rangs = 12, r0 = .4, S = 230;
   const rayons = Array.from({ length: rangs }, (_, i) => r0 + (1 - r0) * i / (rangs - 1));
   const somme = rayons.reduce((a, b) => a + b, 0);
   const parRang = rayons.map(r => Math.round(N * r / somme));
@@ -545,23 +559,41 @@ function hemicycle(t) {
   const sieges = [];
   rayons.forEach((r, i) => { const n = parRang[i]; for (let k = 0; k < n; k++) { const a = Math.PI * (1 - k / (n - 1)); sieges.push({ x: r * Math.cos(a), y: r * Math.sin(a), a }); } });
   sieges.sort((u, v) => v.a - u.a || v.y - u.y);
-  let i = 0, points = "", labels = "";
+  let i = 0, dessin = "";
   ORDRE.forEach(g => {
-    const row = t.groupes.find(r => r.g === g); if (!row) return;
-    const v = votesGroupe(t, row), debut = i;
-    [["s-p", v.p], ["s-a", v.a], ["s-c", v.c], ["s-n", v.n]].forEach(([cl, k]) => {
-      for (let j = 0; j < k && i < sieges.length; j++, i++) points += `<circle class="${cl}" cx="${(sieges[i].x * S).toFixed(1)}" cy="${(-sieges[i].y * S).toFixed(1)}" r="5.2"/>`;
+    const b = blocs.find(x => x.g === g); if (!b) return;
+    const debut = i;
+    let seg = "";
+    b.lots.forEach(([attr, k]) => {
+      for (let j = 0; j < k && i < sieges.length; j++, i++) seg += `<circle ${attr} cx="${(sieges[i].x * S).toFixed(1)}" cy="${(-sieges[i].y * S).toFixed(1)}" r="5.2"/>`;
     });
-    if (row.m >= 15) {
+    if (i - debut >= 15) {
       const am = (sieges[debut].a + sieges[i - 1].a) / 2, R = 1.09 * S;
       const x = R * Math.cos(am), y = -R * Math.sin(am), anc = Math.abs(x) < 30 ? "middle" : x < 0 ? "end" : "start";
-      labels += `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" text-anchor="${anc}">${g}</text>`;
+      seg += `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" text-anchor="${anc}">${g}</text>`;
     }
+    dessin += lien ? `<a href="#groupe/${g}" data-g="${g}" tabindex="-1">${seg}</a>` : seg;
   });
+  return `<div class="hemi${lien ? " cliquable" : ""}">${tete}<svg viewBox="-300 -262 600 280" ${lien ? `aria-hidden="true"` : `role="img" aria-label="${aria}"`}>
+    ${dessin}<text class="centre" x="0" y="${sous ? -24 : -6}" text-anchor="middle">${centre}</text>${sous ? `<text class="sous" x="0" y="-2" text-anchor="middle">${sous}</text>` : ""}</svg>${pied}</div>`;
+}
+// Hémicycle d'un vote : chaque député coloré selon son vote
+function hemicycleVote(t) {
+  const blocs = t.groupes.map(row => { const v = votesGroupe(t, row); return { g: row.g, lots: [[`class="s-p"`, v.p], [`class="s-a"`, v.a], [`class="s-c"`, v.c], [`class="s-n"`, v.n]] }; });
   const s = totals(t);
-  return `<div class="hemi"><svg viewBox="-300 -262 600 280" role="img" aria-label="Hémicycle : ${s.pour} députés pour, ${s.contre} contre, ${s.abst} abstentions, ${s.absents} n'ont pas voté">
-    ${points}${labels}<text class="centre" x="0" y="-6" text-anchor="middle">${s.pour} – ${s.contre}</text></svg>
-    ${legende}<p class="meta" style="text-align:center;margin:6px 0 0">Chaque point est un député.</p></div>`;
+  return hemicycle(blocs, { aria: `Hémicycle : ${s.pour} députés pour, ${s.contre} contre, ${s.abst} abstentions, ${s.absents} n'ont pas voté`, centre: `${s.pour} – ${s.contre}`,
+    pied: `${legende}<p class="meta" style="text-align:center;margin:6px 0 0">Chaque point est un député.</p>` });
+}
+// Hémicycle d'une période : chaque député à la couleur de son groupe
+function hemicycleGroupes(leg) {
+  const gs = ORDRE.filter(g => G(g).periodes[leg]), nb = g => G(g).periodes[leg].deputes, N = gs.reduce((s, g) => s + nb(g), 0);
+  const legendeGroupes = `<ul class="legende-groupes" aria-label="Les groupes, de la gauche vers la droite de l'hémicycle">${gs.map(g =>
+    `<li><a href="#groupe/${g}" data-g="${g}"><i class="dot" style="background:${G(g).c}"></i><b>${g}</b><span>${G(g).nom}</span><span class="nb">${nb(g)}</span></a></li>`).join("")}</ul>`;
+  const periodes = `<div class="periodes" role="group" aria-label="Période">${[...INFOS.legislatures].sort().reverse().map(l =>
+    `<button type="button" data-periode="${l}" aria-pressed="${l === leg}">${PERIODES[l].lib}</button>`).join("")}</div>
+    <p class="contexte meta" style="text-align:center;margin:10px auto 0">${PERIODES[leg].contexte}</p>`;
+  return hemicycle(gs.map(g => ({ g, lots: [[`fill="${G(g).c}"`, nb(g)]] })), { lien: true, centre: N, sous: "députés", tete: periodes,
+    pied: `<p class="meta" style="text-align:center;margin:6px 0 14px">Chaque point est un député, à la couleur de son groupe. Choisissez un groupe pour voir ce qu'il a proposé et voté.</p>${legendeGroupes}` });
 }
 // Les arguments des deux camps (voir CHARTE-NEUTRALITE.md) : même forme des deux côtés, sans couleur de camp
 function argsGrid(t) {
@@ -689,15 +721,10 @@ const views = {
       </section>`;
   },
   groupes() {
-    // Une liste par période, chaque groupe dans l'ordre de l'hémicycle
-    const legs = [...INFOS.legislatures].sort().reverse();
+    // Une période à la fois : son hémicycle, puis la légende de ses groupes
     return `<h1>Les groupes politiques</h1>
-      <p class="lead">À l'Assemblée, les députés s'organisent et votent en groupes. Un groupe correspond souvent à un parti, mais pas toujours : certains réunissent des députés de plusieurs partis, et les non-inscrits n'appartiennent à aucun groupe. Ici de la gauche vers la droite de l'hémicycle.</p>
-      ${legs.map(leg => `<h2>${PERIODES[leg].lib}</h2><div class="list">${ORDRE.filter(g => g !== "NI" && G(g).periodes[leg]).map(g => {
-        const props = TEXTES.filter(t => t.groupe === g && t.leg === leg), adoptes = props.filter(t => totals(t).adopte).length;
-        return `<a class="card" href="#groupe/${g}"><div class="row">${badge(g)}<b style="font:700 19px var(--display)">${G(g).nom}</b></div>
-          <span class="meta">${G(g).periodes[leg].deputes} députés · ${props.length ? `${props.length} texte${props.length > 1 ? "s" : ""} proposé${props.length > 1 ? "s" : ""} sur le site, dont ${adoptes} adopté${adoptes > 1 ? "s" : ""}` : "aucun texte de ce groupe sur le site"}</span></a>`;
-      }).join("")}</div>`).join("")}`;
+      <p class="lead">À l'Assemblée, les députés s'organisent et votent en groupes. Un groupe correspond souvent à un parti, mais pas toujours : certains réunissent des députés de plusieurs partis, et les non-inscrits n'appartiennent à aucun groupe. Chaque groupe est placé comme dans l'hémicycle, de la gauche vers la droite.</p>
+      <div id="hemi-groupes">${hemicycleGroupes(periodeGroupes)}</div>`;
   },
   sujets() {
     const options = (liste, valeur, tous) => `<option value="">${tous}</option>` + liste.map(([v, l]) => `<option value="${v}"${valeur === v ? " selected" : ""}>${l}</option>`).join("");
@@ -791,7 +818,7 @@ const views = {
         <div class="fact"><b>${s.absents}</b><span>députés sur ${s.membres} n'ont pas voté</span></div>
       </div>
       ${VOTE_SUR[t.voteSur] ? `<p class="note">${VOTE_SUR[t.voteSur][1]}</p>` : ""}
-      ${hemicycle(t)}
+      ${hemicycleVote(t)}
       <h2>Groupe par groupe</h2>
       <div class="grp-list">${rows.map(r => {
         const st = stance(t, r), v = votesGroupe(t, r), pres = Math.round(100 * (v.p + v.c + v.a) / r.m);
@@ -1091,7 +1118,7 @@ function afficherSeance() {
         return `<div class="revelation">
           <h3 tabindex="-1" id="revelation">${issueTag(t)} Les députés l'ont ${s.adopte ? "adopté" : "rejeté"}</h3>
           <p>Vous : <b>${libVote(v)}</b>. L'Assemblée : ${s.pour} pour, ${s.contre} contre${serre ? `, <span class="serre">à ${s.ecart} voix près</span>. Quelques sièges ont fait la différence.` : "."}</p>
-          ${hemicycle(t)}
+          ${hemicycleVote(t)}
           <p>Ce texte avait été proposé par ${auteurNom(t)}${t.groupe ? ` ${chip(t.groupe)}` : ""}.</p>
           <div class="camps">${camps(t)}</div>
           ${t.debat ? `<details class="args-mini"><summary>Qui parlait dans le débat</summary>${repliques(t, { nomme: true })}</details>` : ""}
@@ -1264,6 +1291,10 @@ app.addEventListener("click", e => {
     $("#annonce").textContent = `Vote enregistré.` + (top ? ` Plus proches de vous pour l'instant : ${ex}, ${top.pct} %.` : "");
     return;
   }
+  if (e.target.dataset.periode) {
+    periodeGroupes = e.target.dataset.periode; $("#hemi-groupes").innerHTML = hemicycleGroupes(periodeGroupes);
+    $(`[data-periode="${periodeGroupes}"]`).focus(); return;
+  }
   if (e.target.id === "sieger") { commencerSeance(); return; }
   if (e.target.id === "suivant" || e.target.id === "passer") { allerA(seance.i + 1); return; }
   if (e.target.id === "vers-debat") { seance.etape = "debat"; seance.repl ||= 1; afficherSeance(); $("#titre-debat")?.focus(); return; }
@@ -1315,6 +1346,15 @@ app.addEventListener("change", e => {
     seance = null; majQuestions();
   }
 });
+function surligner(e) {
+  const zone = e.target.closest?.(".hemi.cliquable"); if (!zone) return;
+  const g = e.type === "mouseover" || e.type === "focusin" ? e.target.closest("[data-g]")?.dataset.g : null;
+  zone.classList.toggle("un-groupe", !!g);
+  zone.querySelectorAll("[data-g]").forEach(x => x.classList.toggle("on", x.dataset.g === g));
+  const leg = periodeGroupes, n = g ? G(g).periodes[leg].deputes : Object.values(GROUPES).reduce((s, x) => s + (x.periodes[leg]?.deputes || 0), 0);
+  zone.querySelector(".centre").textContent = n; zone.querySelector(".sous").textContent = g ? `députés ${g}` : "députés";
+}
+["mouseover", "mouseout", "focusin", "focusout"].forEach(t => app.addEventListener(t, surligner));
 addEventListener("hashchange", () => {
   if (!location.hash.startsWith("#bilan")) seance = null;
   if (location.hash.endsWith("/debat")) {
