@@ -72,12 +72,12 @@ footer.pied a { display: inline-block; padding-block: 2px; }
 .lien-bouton { font: inherit; color: var(--accent); background: none; border: 0; padding: 4px 0; text-decoration: underline; cursor: pointer; }
 .plus { font: 700 16px var(--body); color: var(--fg); background: var(--surface); border: var(--bord-encre); border-radius: 999px; padding: 10px 20px; min-height: 44px; cursor: pointer; }
 .plus:hover { box-shadow: var(--ombre); }
-/* Liste de textes : le même composant partout (accueil, textes, recherche, fiche groupe) ; une boîte, des filets */
-.liste-textes { background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 4px 18px 8px; }
-.liste-textes .mois { font: 700 13px var(--body); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 14px 0 2px; }
-.lignes { list-style: none; margin: 0; padding: 0; }
-.ligne { display: grid; gap: 4px; padding: 11px 0; border-bottom: 1px solid var(--line); }
-.ligne:last-child { border-bottom: 0; }
+/* Liste de textes : le même composant partout (accueil, textes, recherche, fiche groupe) ; une carte par texte, groupées par mois */
+.liste-textes .mois { font: 700 13px var(--body); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 18px 0 8px; }
+.liste-textes .mois:first-child { margin-top: 4px; }
+.lignes { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.ligne { display: grid; gap: 6px; padding: 13px 18px; background: var(--surface); border: var(--bord); border-radius: var(--rayon); transition: transform .12s, box-shadow .12s, border-color .12s; }
+.ligne:hover { transform: translate(-2px, -2px); border-color: var(--encre); box-shadow: var(--ombre); }
 .ligne-haut { display: flex; justify-content: space-between; align-items: flex-start; gap: 6px 12px; }
 .ligne-haut .tag { flex: none; margin-top: 2px; }
 .ligne h3 { font: 700 17px/1.3 var(--display); }
@@ -363,7 +363,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   .logo { flex-basis: 100%; }
   nav { gap: 16px; }
 }
-@media (prefers-reduced-motion: reduce) { .revelation, .details-choix, .replique { animation: none; } .carte, .door, a.card { transition: none; } .carte:hover, .door:hover, a.card:hover { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .revelation, .details-choix, .replique { animation: none; } .carte, .door, a.card, .ligne { transition: none; } .carte:hover, .door:hover, a.card:hover, .ligne:hover { transform: none; } }
 @media (prefers-reduced-motion: reduce) { .progress i { transition: none; } }
 </style>
 </head>
@@ -544,7 +544,7 @@ const ECART_SERRE = 30;
 const fdateCourte = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric" });
 const badgeIA = t => t.niveau === "ia"
   ? `<span class="badge-ia" title="Titre et résumé rédigés par IA, pas encore vérifiés par un humain"><span aria-hidden="true">IA</span><span class="sr-only">(titre et résumé rédigés par IA, non vérifiés)</span></span>` : "";
-// Ligne d'un texte dans une liste : deux lignes, sans boîte. Le titre (lien) et le résultat ; puis l'auteur, le décompte
+// Carte d'un texte dans une liste : deux lignes. Le titre (lien) et le résultat ; puis l'auteur, le décompte
 // avec sa mini-jauge, l'écart s'il est serré, le lien vers le débat. La date est donnée par l'intertitre du mois ;
 // le type de vote, le résumé et les camps sont sur la fiche. avecAuteur : false sur la fiche d'un groupe.
 const auteurLigne = t => t.groupe
