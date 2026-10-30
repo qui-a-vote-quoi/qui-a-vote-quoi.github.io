@@ -17,6 +17,7 @@
   --bg: #fbf8f3; --surface: #ffffff; --fg: #231a33; --muted: #5c5270; --line: #e4dcec; --encre: #231a33;
   --accent: #5b3fd9; --accent-soft: #ede7ff; --on-accent: #ffffff; --corail: #d9541f;
   --soutien: #1a7f5a; --opposition: #c23b22; --abst: #8a6200; --absent: #9a91ab; --seat-absent: #9a91ab; --trait: #8f85a3;
+  --jauge-pour: #5cbf93; --jauge-contre: #ef8a74; --jauge-abst: #e7c25e;
   --ok-soft: #d8f3e7; --ok-fg: #0f5e42; --ko-soft: #ffe2da; --ko-fg: #9a2a14; --loi-soft: #ede7ff; --serre-soft: #fff0c2; --serre-fg: #6b4300;
   --rayon: 18px; --rayon-s: 12px; --bord: 1.5px solid var(--line); --bord-encre: 1.5px solid var(--encre); --ombre: 3px 3px 0 var(--encre);
   --display: "Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
@@ -26,6 +27,7 @@
   :root { --bg: #16121e; --surface: #201a2b; --fg: #f2edf9; --muted: #b6abc9; --line: #3a314a; --encre: #8f84a6;
     --accent: #ab98ff; --accent-soft: #2c2445; --on-accent: #16121e; --corail: #ff8d68;
     --soutien: #4fc497; --opposition: #ff8a70; --abst: #e2b852; --absent: #7d7392; --seat-absent: #7d7392; --trait: #8f84a6;
+    --jauge-pour: #3f9f78; --jauge-contre: #d9735f; --jauge-abst: #c9a24a;
     --ok-soft: #183a2d; --ok-fg: #9be6c6; --ko-soft: #43211b; --ko-fg: #ffb8a6; --loi-soft: #2c2445; --serre-soft: #3e3214; --serre-fg: #f3d27a;
     color-scheme: dark; }
 }
@@ -215,7 +217,7 @@ a.chip:hover { border-color: var(--encre); }
 .fact span { color: var(--muted); font-size: 15px; }
 .hemi { margin-top: 24px; background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 16px; }
 .hemi svg { display: block; width: 100%; max-width: 620px; height: auto; margin: 0 auto; }
-.hemi .s-p { fill: var(--soutien); } .hemi .s-c { fill: var(--opposition); } .hemi .s-a { fill: var(--abst); } .hemi .s-n { fill: none; stroke: var(--seat-absent); stroke-width: 1.4; }
+.hemi .s-p { fill: var(--jauge-pour); } .hemi .s-c { fill: var(--jauge-contre); } .hemi .s-a { fill: var(--jauge-abst); } .hemi .s-n { fill: none; stroke: var(--seat-absent); stroke-width: 1.4; }
 .hemi text { fill: var(--muted); font: 700 11px var(--body); }
 .hemi .centre { fill: var(--fg); font: 700 22px var(--display); }
 .legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 14px; color: var(--muted); justify-content: center; }
@@ -475,9 +477,9 @@ function verdict(t) {
 }
 function bar(p, c, a, n) {
   const tot = p + c + a + n || 1, w = x => (100 * x / tot).toFixed(1) + "%";
-  return `<div class="bar"><i style="width:${w(p)};background:var(--soutien)"></i><i style="width:${w(c)};background:var(--opposition)"></i><i style="width:${w(a)};background:var(--abst)"></i><i style="width:${w(n)};background:var(--absent)"></i></div>`;
+  return `<div class="bar"><i style="width:${w(p)};background:var(--jauge-pour)"></i><i style="width:${w(c)};background:var(--jauge-contre)"></i><i style="width:${w(a)};background:var(--jauge-abst)"></i><i style="width:${w(n)};background:var(--absent)"></i></div>`;
 }
-const legende = `<div class="legend"><span><i class="dot" style="background:var(--soutien)"></i>Pour le texte</span><span><i class="dot" style="background:var(--opposition)"></i>Contre</span><span><i class="dot" style="background:var(--abst)"></i>Abstention</span><span><i class="dot" style="border:1.5px solid var(--seat-absent);background:none"></i>N'a pas voté</span></div>`;
+const legende = `<div class="legend"><span><i class="dot" style="background:var(--jauge-pour)"></i>Pour le texte</span><span><i class="dot" style="background:var(--jauge-contre)"></i>Contre</span><span><i class="dot" style="background:var(--jauge-abst)"></i>Abstention</span><span><i class="dot" style="border:1.5px solid var(--seat-absent);background:none"></i>N'a pas voté</span></div>`;
 
 // Hémicycle : un point par député, rangés de la gauche vers la droite par groupe,
 // colorés selon leur vote. Disposition classique en rangées concentriques.
@@ -698,7 +700,7 @@ const views = {
       <h2>Le vote des députés</h2>
       <div class="duel">
         <div class="duel-nums"><span class="p">${s.pour}<small>pour</small></span><span class="c">${s.contre}<small>contre</small></span></div>
-        <div class="duel-bar"><i style="width:${(100 * s.pour / exprimes).toFixed(1)}%;background:var(--soutien)"></i><i style="width:${(100 * s.contre / exprimes).toFixed(1)}%;background:var(--opposition)"></i><span class="mid" title="Majorité"></span></div>
+        <div class="duel-bar"><i style="width:${(100 * s.pour / exprimes).toFixed(1)}%;background:var(--jauge-pour)"></i><i style="width:${(100 * s.contre / exprimes).toFixed(1)}%;background:var(--jauge-contre)"></i><span class="mid" title="Majorité"></span></div>
         <span class="meta">Le trait marque la majorité : le texte passe s'il a plus de « pour » que de « contre ». ${s.abst} abstention${s.abst > 1 ? "s" : ""}, qui ne comptent pas.</span>
       </div>
       <div class="facts">
@@ -1044,7 +1046,7 @@ function majBilan() {
     ${answered.length ? `<p class="meta" style="margin:0;font-size:13px">Calculé sur ${answered.length > 1 ? `vos ${answered.length} votes` : "votre vote"}, tous sujets confondus.</p>` : ""}
     <div class="panel-scores">${scores.map(s => `<div class="pscore${answered.length && !s.classe ? " hors" : ""}">${chip(s.g, false)}${s.n ? bar(s.acc, s.des, s.abs, 0) : bar(0, 0, 0, 1)}<b>${s.n ? s.pct + " %" : "–"}</b><span class="sur">${answered.length ? `sur ${s.n}` : ""}</span></div>`).join("")}</div>
     ${scores.some(s => answered.length && !s.classe) ? `<p class="meta" style="margin:0;font-size:13px">En grisé : groupes présents sur moins de la moitié des textes que vous avez votés. Ils ne sont pas classés.</p>` : ""}
-    <div class="legend panel-legend"><span><i class="dot" style="background:var(--soutien)"></i>A voté comme vous</span><span><i class="dot" style="background:var(--opposition)"></i>A voté autrement</span><span><i class="dot" style="background:var(--abst)"></i>Abstention</span></div>`;
+    <div class="legend panel-legend"><span><i class="dot" style="background:var(--jauge-pour)"></i>A voté comme vous</span><span><i class="dot" style="background:var(--jauge-contre)"></i>A voté autrement</span><span><i class="dot" style="background:var(--jauge-abst)"></i>Abstention</span></div>`;
   const aimes = answered.filter(t => rep[t.id] === 1);
   const origine = {}; aimes.forEach(t => { const k = t.groupe || t.auteurCourt; origine[k] = (origine[k] || 0) + 1; });
   $("#revel").innerHTML = answered.length ? `<h2>Qui avait proposé quoi</h2>
