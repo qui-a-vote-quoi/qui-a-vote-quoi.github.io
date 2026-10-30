@@ -258,6 +258,7 @@ a.chip:hover { border-color: var(--encre); }
 .qd-deux { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .qd-groupe { background: var(--bg); border: var(--bord); border-radius: var(--rayon); padding: 18px 20px 22px; }
 .qd-groupe h3 { margin: 0 0 16px; }
+.qd-senat { margin: 18px 0 0; padding-top: 12px; border-top: var(--bord); font-size: 15px; color: var(--muted); }
 .chaine li { position: relative; display: grid; justify-items: center; align-content: start; gap: 4px; color: var(--muted); line-height: 1.35; }
 .qd-ico { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); border: 3px solid var(--bg); margin-bottom: 8px; }
 .chaine b { font: 700 19px/1.2 var(--display); color: var(--fg); }
@@ -780,7 +781,7 @@ function repartitionAuteurs(ts) {
 function quiDecide() {
   const sol = TEXTES.filter(t => t.type === "solennel"), n = a => sol.filter(t => t.auteurCourt === a).length;
   const gouv = n("Gouvernement"), senat = n("Sénat"), deputes = sol.length - gouv - senat;
-  const part = [["qd-g", "Gouvernement", gouv], ["qd-d", "Groupes de députés", deputes], ["qd-s", "Sénat", senat]].filter(x => x[2]);
+  const part = [["qd-g", "Gouvernement", gouv], ["qd-d", "Groupes de députés", deputes], ["qd-s", "Sénateurs", senat]].filter(x => x[2]);
   return `<section class="qui-decide" aria-labelledby="qui-decide">
     <h2 id="qui-decide" tabindex="-1">Qui décide de ce qui est voté&nbsp;?</h2>
     <p class="qd-sous">Surtout le gouvernement, nommé par le président. Mais ce sont les députés qui votent. Et vous élisez les deux.</p>
@@ -794,7 +795,8 @@ function quiDecide() {
         <ol class="chaine">
         <li><span class="qd-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v7H4z"/><path d="M8 13V4h8v9"/><path d="M10 8.5l1.5 1.5L14.5 7"/></svg></span><b>Les législatives</b><span>Vous élisez les 577 députés, en principe tous les cinq ans (plus tôt en cas de dissolution, comme en 2024).</span></li>
         <li><span class="qd-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 19h20"/><path d="M3.5 19a8.5 8.5 0 0 1 17 0"/><path d="M8 19a4 4 0 0 1 8 0"/></svg></span><b>Les députés</b><span>Ils adoptent ou rejettent chaque texte.</span></li>
-        </ol></div>
+        </ol>
+        <p class="qd-senat">Le Sénat vote aussi chaque texte. Mais en cas de désaccord, c'est l'Assemblée qui a le dernier mot&nbsp;: c'est elle que ce site suit.</p></div>
     </div>
     <div class="qd-chiffre">
       <p><strong>${gouv}</strong> des ${sol.length} grands votes de ce site portaient sur un texte du gouvernement.</p>
