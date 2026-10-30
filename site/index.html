@@ -456,7 +456,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   <span id="maj"></span>
 </div></footer>
 
-<script src="donnees.js?v=621e271a7d"></script>
+<script src="donnees.js?v=8128581feb"></script>
 <script>
 // Groupes de toutes les législatures (GROUPES vient de donnees.js), dans l'ordre de l'hémicycle, de la gauche vers la droite.
 // Un même sigle d'une législature à l'autre désigne le même groupe (SOC, LR, RN…).
@@ -542,7 +542,8 @@ function totals(t) {
   let pour = t.pour, contre = t.contre;
   if (t.inverse) [pour, contre] = [contre, pour];
   const membres = t.groupes.reduce((s, g) => s + g.m, 0);
-  const votants = t.pour + t.contre + t.abst;
+  // Absents : membres des groupes moins leurs votants. Les voix que l'open data ne rattache à aucun groupe (groupesIncomplets) n'y entrent pas.
+  const votants = t.groupes.reduce((s, g) => s + g.pour + g.contre + g.abst, 0);
   return { pour, contre, abst: t.abst, membres, absents: membres - votants, adopte: pour > contre, ecart: Math.abs(pour - contre) };
 }
 // « C'est une loi » seulement si ce vote l'a adopté : un texte rejeté ici peut devenir une loi plus tard
@@ -628,7 +629,8 @@ function hemicycleVote(t) {
 }
 // Hémicycle d'une période : chaque député à la couleur de son groupe
 function hemicycleGroupes(leg) {
-  const gs = ORDRE.filter(g => G(g).periodes[leg]), nb = g => G(g).periodes[leg].deputes, N = gs.reduce((s, g) => s + nb(g), 0);
+  // Un groupe dissous en cours de législature (champ « fin », ex. EDS) n'occupe pas de sièges en fin de période
+  const gs = ORDRE.filter(g => G(g).periodes[leg] && !G(g).periodes[leg].fin), nb = g => G(g).periodes[leg].deputes, N = gs.reduce((s, g) => s + nb(g), 0);
   const legendeGroupes = `<ul class="legende-groupes" aria-label="Les groupes, de la gauche vers la droite de l'hémicycle">${gs.map(g =>
     `<li><a href="#groupe/${g}" data-g="${g}"><i class="dot" style="background:${G(g).c}"></i><b>${g}</b><span>${G(g).nom}</span><span class="nb">${nb(g)}</span></a></li>`).join("")}</ul>`;
   const periodes = `<div class="periodes" role="group" aria-label="Période">${[...INFOS.legislatures].sort().reverse().map(l =>
@@ -897,9 +899,10 @@ const views = {
         ${t.concerne ? `<div><div class="eyebrow">Qui est concerné</div><p>${t.concerne}</p></div>` : ""}
       </div>
       ${t.enClair ? `<p class="note">${NIVEAUX[t.niveau] || ""}</p>` : ""}
-      ${t.debat ? `<h2 id="le-debat" tabindex="-1">${t.debat.consensuel ? "Le débat" : "Pourquoi ce résultat&nbsp;? Le débat"}</h2>
-        <p class="meta">${t.debat.consensuel ? "Ce qui a été dit en séance, avant le vote." : "Ce qu'ont dit les deux camps en séance, à égalité, avant le vote."}</p>${repliques(t, { nomme: true })}
-        <p class="note">Extraits exacts du compte rendu (${t.debat.comptesRendus.map(ref => ext(urlCompteRendu(ref, t.leg), `séance du ${fdate(t.debat.date)}`)).join(", ")}). Choix fait par IA, citations vérifiées mot pour mot, pas encore relu par un humain.</p>` : ""}
+      ${t.debat ? (autre => `<h2 id="le-debat" tabindex="-1">${autre ? `Le débat, lors d'un autre examen du texte` : t.debat.consensuel ? "Le débat" : "Pourquoi ce résultat&nbsp;? Le débat"}</h2>
+        <p class="meta">${autre ? `Ce débat a eu lieu le ${fdate(t.debat.date)}, lors d'un autre examen de ce texte. Le vote présenté ici date du ${fdate(t.date)}.`
+          : t.debat.consensuel ? "Ce qui a été dit en séance, avant le vote." : "Ce qu'ont dit les deux camps en séance, à égalité, avant le vote."}</p>${repliques(t, { nomme: true })}
+        <p class="note">Extraits exacts du compte rendu (${t.debat.comptesRendus.map(ref => ext(urlCompteRendu(ref, t.leg), `séance du ${fdate(t.debat.date)}`)).join(", ")}). Choix fait par IA, citations vérifiées mot pour mot, pas encore relu par un humain.</p>`)(t.debat.date !== t.date) : ""}
       ${mesuresTexte(t)}
       ${t.arguments ? `<h2>Les arguments des deux camps</h2>${argsGrid(t)}
         <p class="note">Arguments avancés pendant les débats, rapportés sans jugement. Sources : ${t.arguments.sources.map(x => ext(x.url, x.label)).join(", ")}.</p>` : ""}
@@ -916,6 +919,7 @@ const views = {
       ${VOTE_SUR[t.voteSur] ? `<p class="note">${VOTE_SUR[t.voteSur][1]}</p>` : ""}
       ${hemicycleVote(t)}
       <h2>Groupe par groupe</h2>
+      ${t.groupesIncomplets ? (x => `<p class="note">Les données officielles de l'Assemblée ne détaillent pas le vote du groupe ${x.groupes.join(", ")} sur ce scrutin : ${x.voixNonVentilees.pour} voix pour, ${x.voixNonVentilees.contre} contre et ${x.voixNonVentilees.abst} abstentions ne sont rattachées à aucun groupe. Elles comptent dans le résultat, pas dans le détail ci-dessous.</p>`)(t.groupesIncomplets) : ""}
       <div class="grp-list">${rows.map(r => {
         const st = stance(t, r), v = votesGroupe(t, r), pres = Math.round(100 * (v.p + v.c + v.a) / r.m);
         return `<div class="grp">${chip(r.g)}${r.g === "NI" ? `<span class="pos absent">Chacun vote librement</span>` : `<span class="pos ${st}">${LIB[st]}</span>`}${bar(v.p, v.c, v.a, v.n)}<span class="pct">${pres} %</span>
@@ -1458,7 +1462,7 @@ function surligner(e) {
   const g = e.type === "mouseover" || e.type === "focusin" ? e.target.closest("[data-g]")?.dataset.g : null;
   zone.classList.toggle("un-groupe", !!g);
   zone.querySelectorAll("[data-g]").forEach(x => x.classList.toggle("on", x.dataset.g === g));
-  const leg = periodeGroupes, n = g ? G(g).periodes[leg].deputes : Object.values(GROUPES).reduce((s, x) => s + (x.periodes[leg]?.deputes || 0), 0);
+  const leg = periodeGroupes, n = g ? G(g).periodes[leg].deputes : Object.values(GROUPES).reduce((s, x) => s + (x.periodes[leg] && !x.periodes[leg].fin ? x.periodes[leg].deputes : 0), 0);
   zone.querySelector(".centre").textContent = n; zone.querySelector(".sous").textContent = g ? `députés ${g}` : "députés";
 }
 ["mouseover", "mouseout", "focusin", "focusout"].forEach(t => app.addEventListener(t, surligner));

@@ -26,7 +26,7 @@ import sys
 import xml.etree.ElementTree as ET
 
 from commun import (BASE, BRUT, ORGANE_ASSEMBLEE, ORGANE_SENAT, SITE_AN, VALIDATION, actes, ecrire_json,
-                    en_liste, lire_json, lire_zip, normaliser, proximite, telecharger)
+                    en_liste, lire_json, lire_zip, mots, normaliser, proximite, telecharger)
 
 # Ordre de l'hémicycle, de la gauche vers la droite (l'open data ne le fournit pas)
 ORDRE_HEMICYCLE = {
@@ -94,15 +94,41 @@ def charger_scrutins(legislature, organes):
         scrutins[s["uid"]] = {"numero": int(s["numero"]), "date": s["dateScrutin"], "type": s["typeVote"]["codeTypeVote"],
                               "titre": s["titre"], "sort": s["sort"]["code"], "pour": int(d["pour"]), "contre": int(d["contre"]),
                               "abst": int(d["abstentions"]), "seance": s.get("seanceRef"), "groupes": groupes}
+        # L'open data omet parfois la ligne d'un groupe (le MoDem dans une douzaine de votes de mai-juillet 2020) :
+        # on ne l'invente pas, on signale les groupes absents et les voix qui ne sont attribuées à aucun groupe
+        presents = {g["organeRef"] for g in en_liste(s["ventilationVotes"]["organe"]["groupes"]["groupe"])}
+        manquants = sorted({o["abrev"] for uid, o in organes.items() if uid not in presents and o["debut"][:10] <= s["dateScrutin"]
+                            and (not o["fin"] or o["fin"][:10] >= s["dateScrutin"])} - {g["g"] for g in groupes})
+        ecart = {k: scrutins[s["uid"]][k] - sum(g[k] for g in groupes) for k in ("pour", "contre", "abst")}
+        if manquants:
+            scrutins[s["uid"]]["groupesManquants"] = manquants
+            scrutins[s["uid"]]["voixNonVentilees"] = ecart
+        # Le dossier cité par le vote lui-même (renseigné depuis 2024 seulement)
+        ref = ((s.get("objet") or {}).get("dossierLegislatif") or {}).get("dossierRef")
+        if ref:
+            scrutins[s["uid"]]["dossierRef"] = ref
     return scrutins
 
 
 def charger_dossiers(legislature):
+    """Les dossiers de la législature. Un dossier qui se poursuit sous la législature suivante figure aussi dans ses
+    fichiers, dans une version plus à jour (promulgation, lectures suivantes, votes corrigés) : c'est celle qu'on garde."""
     dossiers = {}
     for doc in lire_zip(BRUT / legislature / "dossiers.zip", "dossierParlementaire"):
         d = doc["dossierParlementaire"]
         dossiers[d["uid"]] = d
+    for autre in sorted(ORGANE_ASSEMBLEE, key=int):
+        if int(autre) <= int(legislature) or not (BRUT / autre / "dossiers.zip").exists():
+            continue
+        for doc in lire_zip(BRUT / autre / "dossiers.zip", "dossierParlementaire"):
+            d = doc["dossierParlementaire"]
+            if d["uid"] in dossiers and derniere_date(d) >= derniere_date(dossiers[d["uid"]]):
+                dossiers[d["uid"]] = d
     return dossiers
+
+
+def derniere_date(dossier):
+    return max((a["dateActe"] for a in actes(dossier) if a.get("dateActe")), default="")
 
 
 def charger_seances(legislature):
@@ -164,10 +190,86 @@ def decisions_assemblee(dossier):
     """Décisions de l'Assemblée sur ce texte : date, résultat, votes associés."""
     res = []
     for a in actes(dossier):
-        if a["codeActe"].endswith("DEBATS-DEC") and a.get("organeRef") in ORGANE_ASSEMBLEE.values() and a.get("dateActe"):
+        if a["codeActe"].endswith(("DEBATS-DEC", "DEBATS-AN-DEC")) and a.get("organeRef") in ORGANE_ASSEMBLEE.values() and a.get("dateActe"):
             res.append({"date": a["dateActe"][:10], "statut": (a.get("statutConclusion") or {}).get("libelle", ""),
                         "votes": en_liste((a.get("voteRefs") or {}).get("voteRef"))})
     return res
+
+
+def variantes_titre(titre):
+    """En 2017-2022, les titres commencent souvent par un thème (« Société : … ») absent de l'intitulé des votes."""
+    return list(dict.fromkeys([titre, re.sub(r"^[^:]{3,40} : ", "", titre)]))
+
+
+def correspondance(dossier, scrutin):
+    """Proximité entre le titre d'un dossier et l'intitulé d'un vote (0 à 1). Une loi organique et la loi ordinaire qui
+    l'accompagne portent souvent le même titre : un vote sur l'une ne correspond pas à l'autre."""
+    if ("organique" in dossier["procedureParlementaire"]["libelle"].lower()) != ("loi organique" in scrutin["titre"]):
+        return 0.0
+    return max(proximite(t, titre_vise(scrutin["titre"])) for t in variantes_titre(dossier["titreDossier"]["titre"].replace("\r", " ")))
+
+
+def debattus_par_jour(dossiers):
+    """Pour chaque jour : les dossiers discutés ou votés en séance à l'Assemblée."""
+    jours = collections.defaultdict(set)
+    for uid, d in dossiers.items():
+        for a in actes(d):
+            if a.get("organeRef") in ORGANE_ASSEMBLEE.values() and a.get("dateActe") and "DEBATS" in a["codeActe"]:
+                jours[a["dateActe"][:10]].add(uid)
+    return jours
+
+
+def votes_des_dossiers(dossiers, scrutins, debattus, a_verifier):
+    """Le dossier de chaque vote cité par une décision de l'Assemblée.
+
+    L'open data se trompe parfois de vote (un amendement d'un autre texte, le vote du texte voisin). Un vote cité n'est
+    retenu que s'il porte sur ce texte : le dossier indiqué par le vote lui-même quand il y en a un ; sinon un intitulé
+    proche du titre du dossier, ou, pour un texte renommé, un vote du jour de la décision qu'aucun autre texte discuté
+    ce jour-là ne revendique. Un vote cité par deux dossiers n'est rattaché à aucun (à vérifier)."""
+    liens = collections.defaultdict(set)
+    for uid, d in dossiers.items():
+        for dec in decisions_assemblee(d):
+            for v in dec["votes"]:
+                s = scrutins.get(v)
+                if not s:
+                    continue
+                if s.get("dossierRef"):
+                    ok = s["dossierRef"] == uid
+                elif correspondance(d, s) >= 0.5:
+                    ok = True
+                else:
+                    ok = s["date"] == dec["date"] and not any(correspondance(dossiers[o], s) >= 0.75 for o in debattus[s["date"]] if o != uid)
+                if ok:
+                    liens[v].add(uid)
+                else:
+                    a_verifier.append(f"Vote n° {s['numero']} du {s['date']} cité par le dossier {uid} (décision du {dec['date']}) "
+                                      f"mais portant sur un autre objet, écarté : « {s['titre'][:90]} »")
+    resultat = {}
+    for v, uids in liens.items():
+        if len(uids) == 1:
+            resultat[v] = next(iter(uids))
+        else:
+            a_verifier.append(f"Vote n° {scrutins[v]['numero']} du {scrutins[v]['date']} cité par plusieurs dossiers ({', '.join(sorted(uids))}) : rattaché à aucun")
+            resultat[v] = None
+    return resultat
+
+
+EX_AEQUO = []   # rapprochements par le titre abandonnés faute de pouvoir départager deux candidats
+
+
+def meilleur(candidats, quoi, seuil=0.75, scrutins=None):
+    """Le candidat au meilleur score (≥ seuil). Deux candidats à égalité : aucun, plutôt que de choisir au hasard.
+    Exception : deux votes du même jour au même intitulé sont le même vote recommencé ; le dernier compte."""
+    candidats = sorted((c for c in candidats if c[0] >= seuil), key=lambda c: c[0], reverse=True)
+    if not candidats:
+        return None
+    ex_aequo = [c[1] for c in candidats if c[0] == candidats[0][0]]
+    if scrutins and len({frozenset(mots(scrutins[v]["titre"])) for v in ex_aequo}) == 1:
+        return max(ex_aequo, key=lambda v: scrutins[v]["numero"])
+    if len(ex_aequo) > 1:
+        EX_AEQUO.append(f"{quoi} : candidats à égalité ({', '.join(str(c[1]) for c in candidats if c[0] == candidats[0][0])}), aucun retenu")
+        return None
+    return candidats[0][1]
 
 
 # ---------------------------------------------------------------- comptes rendus
@@ -247,16 +349,18 @@ def points_du_jour(seances):
     return points
 
 
-def relier_dossier(point, dossiers_ppl):
-    """Retrouve le dossier d'un point de l'ordre du jour qui n'en cite pas (comparaison des titres)."""
+def relier_dossier(point, dossiers_ppl, jour, debattus):
+    """Retrouve le dossier d'un point de l'ordre du jour qui n'en cite pas (comparaison des titres).
+
+    Seuls comptent les dossiers déjà déposés ce jour-là (un texte redéposé plus tard porte souvent le même titre).
+    À score égal, un dossier discuté en séance ce jour-là l'emporte, puis celui dont le titre recouvre le mieux l'intitulé
+    (un titre très court ressemble à tout) ; s'il reste une égalité, aucun n'est retenu."""
     if point["dossier"]:
-        return point["dossier"], 1.0
-    meilleur, score = None, 0.0
-    for uid, titre in dossiers_ppl:
-        s = proximite(point["objet"], titre)
-        if s > score:
-            meilleur, score = uid, s
-    return (meilleur, score) if score >= 0.75 else (None, score)
+        return point["dossier"]
+    objet = mots(point["objet"])
+    candidats = [((proximite(point["objet"], titre), uid in debattus[jour], len(objet & mots(titre)) / (len(objet | mots(titre)) or 1)), uid)
+                 for uid, titre, depot in dossiers_ppl if depot <= jour]
+    return meilleur([c for c in candidats if c[0][0] >= 0.75], f"Niche du {jour} : dossier de « {point['objet'][:60]} »", seuil=(0.75,))
 
 
 def detecter_niches(jours, dossiers, mandats):
@@ -291,8 +395,7 @@ def vote_final_du_jour(titre, scrutins, jour):
     """Le vote sur l'ensemble d'un texte ce jour-là, quand la décision ne le cite pas."""
     candidats = [(proximite(titre, titre_vise(s["titre"])), uid) for uid, s in scrutins.items()
                  if s["date"] == jour and s["titre"].startswith(("l'ensemble", "l’ensemble", "l'article unique", "la proposition de résolution"))]
-    candidats = [c for c in candidats if c[0] >= 0.75]
-    return max(candidats)[1] if candidats else None
+    return meilleur(candidats, f"Vote sur l'ensemble du {jour} pour « {titre[:60]} »", scrutins=scrutins)
 
 
 def vote_de_suppression(titre, scrutins, jour, articles=("article unique", "article premier")):
@@ -300,8 +403,7 @@ def vote_de_suppression(titre, scrutins, jour, articles=("article unique", "arti
     candidats = [(proximite(titre, titre_vise(s["titre"])), uid) for uid, s in scrutins.items()
                  if s["date"] == jour and s["titre"].startswith(("l'amendement de suppression", "l’amendement de suppression"))
                  and any(a in s["titre"] for a in articles) and s["sort"] == "adopté"]
-    candidats = [c for c in candidats if c[0] >= 0.75]
-    return max(candidats)[1] if candidats else None
+    return meilleur(candidats, f"Vote de suppression du {jour} pour « {titre[:60]} »", scrutins=scrutins)
 
 
 # Votes qui rejettent un texte sans examiner ses articles. Pour une proposition de résolution (commission d'enquête),
@@ -313,26 +415,24 @@ def vote_premier_article(titre, scrutins, jour):
     """Le vote rejetant l'article premier d'un texte (le texte est alors vidé de son contenu principal)."""
     candidats = [(proximite(titre, s["titre"]), uid) for uid, s in scrutins.items()
                  if s["date"] == jour and s["titre"].startswith(("l'article premier", "l’article premier")) and s["sort"] == "rejeté"]
-    candidats = [c for c in candidats if c[0] >= 0.75]
-    return max(candidats)[1] if candidats else None
+    return meilleur(candidats, f"Vote sur l'article premier du {jour} pour « {titre[:60]} »", scrutins=scrutins)
 
 
 def vote_de_motion(titre, scrutins, jour, motion):
     """Une motion de procédure adoptée sur ce texte : « la motion de rejet préalable » ou « la motion de renvoi en commission »."""
     candidats = [(proximite(titre, s["titre"].split(" de la proposition de ", 1)[-1]), uid) for uid, s in scrutins.items()
                  if s["date"] == jour and s["titre"].startswith(motion) and s["sort"] == "adopté"]
-    candidats = [c for c in candidats if c[0] >= 0.75]
-    return max(candidats)[1] if candidats else None
+    return meilleur(candidats, f"Motion du {jour} pour « {titre[:60]} »", scrutins=scrutins)
 
 
-def statut_point(point, dossier_uid, dossiers, scrutins, segments, jour):
+def statut_point(point, dossier_uid, dossiers, scrutins, segments, jour, vote_vers_dossier, debattus):
     """Statut d'un texte au programme d'une niche, d'après les décisions, les votes et le compte rendu."""
     d = dossiers.get(dossier_uid) if dossier_uid else None
     titre = d["titreDossier"]["titre"].replace("\r", " ") if d else point["objet"]
     resultat = {"titre": titre, "dossier": dossier_uid, "scrutin": None, "inverse": False}
     # En 2017-2022, les titres commencent souvent par un thème (« Société : … ») absent de l'intitulé des votes :
     # on cherche avec le titre complet, puis sans ce préfixe
-    variantes = list(dict.fromkeys([titre, re.sub(r"^[^:]{3,40} : ", "", titre)]))
+    variantes = variantes_titre(titre)
 
     def chercher(fonction, *args):
         return next((v for t in variantes for v in [fonction(t, scrutins, jour, *args)] if v), None)
@@ -343,7 +443,8 @@ def statut_point(point, dossier_uid, dossiers, scrutins, segments, jour):
             if dec["date"] == jour:
                 # « modifiée » : adoptée en deuxième lecture avec des changements
                 resultat["statut"] = "adopte" if dec["statut"].startswith(("adopt", "modifi")) else "rejete" if dec["statut"].startswith("rejet") else dec["statut"]
-                resultat["scrutin"] = next((v for v in dec["votes"] if v in scrutins), None) or chercher(vote_final_du_jour)
+                # Le vote cité par la décision, s'il porte bien sur ce texte (voir votes_des_dossiers)
+                resultat["scrutin"] = next((v for v in dec["votes"] if vote_vers_dossier.get(v) == dossier_uid), None) or chercher(vote_final_du_jour)
                 # Rejeté sans vote sur l'ensemble : par une motion de procédure, ou parce que ses articles ont été supprimés
                 # un à un (vote inversé : « pour » la suppression = contre le texte)
                 if resultat["statut"] == "rejete" and not resultat["scrutin"]:
@@ -352,13 +453,16 @@ def statut_point(point, dossier_uid, dossiers, scrutins, segments, jour):
                     if not resultat["scrutin"]:   # premier article rejeté : vote dans le même sens que le texte
                         resultat["scrutin"] = chercher(vote_premier_article)
                 return resultat
+    # Les étapes 2 et 3 cherchent un vote par son intitulé : pas pour un dossier que l'Assemblée n'a pas discuté ce
+    # jour-là (le même texte existe souvent sous deux dossiers, celui du Sénat et celui de l'Assemblée)
+    hors_seance = d and dossier_uid not in debattus[jour]
     # 2. Une motion de rejet préalable adoptée, ou un article unique supprimé : le texte est rejeté (le vote est inversé)
-    vote = chercher(vote_de_motion, REJET) or chercher(vote_de_suppression, ("article unique",))
+    vote = not hors_seance and (chercher(vote_de_motion, REJET) or chercher(vote_de_suppression, ("article unique",)))
     if vote:
         resultat.update(statut="rejete", scrutin=vote, inverse=True)
         return resultat
     # 3. Une motion de renvoi en commission adoptée : la discussion s'arrête, le texte retourne en commission
-    vote = chercher(vote_de_motion, "la motion de renvoi en commission")
+    vote = not hors_seance and chercher(vote_de_motion, "la motion de renvoi en commission")
     if vote:
         resultat.update(statut="renvoye", scrutin=vote, inverse=True)
         return resultat
@@ -393,15 +497,20 @@ def main():
     dossiers = charger_dossiers(leg)
     print("Chargement de l'ordre du jour…", flush=True)
     jours = charger_seances(leg)
-    dossiers_ppl = [(uid, d["titreDossier"]["titre"]) for uid, d in dossiers.items()
-                    if not d["procedureParlementaire"]["libelle"].lower().startswith("projet")]
-    utilises, textes, a_verifier = set(), {}, []
+    # Les propositions de loi (y compris organiques et constitutionnelles : « Projet ou proposition de loi … ») et de
+    # résolution ; pas les projets du gouvernement, ni les rapports et missions d'information, qui portent le même titre
+    dossiers_ppl = [(uid, d["titreDossier"]["titre"], premier_depot(d)) for uid, d in dossiers.items()
+                    if d["procedureParlementaire"]["libelle"].lower().startswith(("proposition", "résolution", "projet ou proposition", "commission d'enquête"))]
+    titres_tous = [d["titreDossier"]["titre"] for d in dossiers.values()]   # rapports compris : noms possibles d'une ligne
+    utilises, textes = set(), {}
 
     class ListeSansDoublon(list):
         def append(self, x):
             if x not in self:
                 super().append(x)
     a_verifier = ListeSansDoublon()
+    debattus = debattus_par_jour(dossiers)
+    vote_vers_dossier = votes_des_dossiers(dossiers, scrutins, debattus, a_verifier)
 
     # Groupes
     groupes = {}
@@ -417,6 +526,11 @@ def main():
     for r in dernier_vote["groupes"]:
         if r["g"] in groupes:
             groupes[r["g"]]["deputes"] = r["m"]
+    # Groupe dissous en cours de législature (EDS, 2020) : ses sièges à son dernier vote, et la date de ce vote
+    for vote in sorted(scrutins.values(), key=lambda s: (s["date"], s["numero"]), reverse=True):
+        for r in vote["groupes"]:
+            if r["g"] in groupes and "deputes" not in groupes[r["g"]]:
+                groupes[r["g"]].update(deputes=r["m"], fin=vote["date"])
     liste_groupes = sorted(groupes.values(), key=lambda g: ORDRE_HEMICYCLE[leg].index(g["abrev"]) if g["abrev"] in ORDRE_HEMICYCLE[leg] else 99)
 
     # Niches : détection, puis validation manuelle
@@ -428,7 +542,7 @@ def main():
         validation.setdefault(c["date"], {"date": c["date"], "groupe": c["groupe"], "statut": "a_valider"})
     ecrire_json(chemin_validation, sorted(validation.values(), key=lambda v: v["date"]))
 
-    niches = []
+    niches, textes_niche = [], []
     for v in sorted(validation.values(), key=lambda v: v["date"]):
         if v["statut"] == "rejete":
             continue
@@ -437,47 +551,72 @@ def main():
         segments = segments_du_jour(leg, jours.get(jour, []))
         programme = []
         for p in points_du_jour(jours.get(jour, [])):
-            uid, score = relier_dossier(p, dossiers_ppl)
+            uid = relier_dossier(p, dossiers_ppl, jour, debattus)
             if not uid:
                 a_verifier.append(f"Niche du {jour} : pas de dossier trouvé pour « {p['objet'][:90]} »")
-            ligne = statut_point(p, uid, dossiers, scrutins, segments, jour)
+            ligne = statut_point(p, uid, dossiers, scrutins, segments, jour, vote_vers_dossier, debattus)
+            # Les autres noms de la ligne (intitulé de l'ordre du jour, titres des dossiers ressemblants) : les corrections
+            # de donnees/validation désignent une ligne par le titre qu'elle avait lors de la vérification
+            ligne["alias"] = [t for t in titres_tous if not p["dossier"] and proximite(p["objet"], t) >= 0.75]
+            ligne["objet"] = p["objet"]
+            # Un même texte peut figurer deux fois à l'ordre du jour (avec ou sans référence, ou sous deux dossiers) :
+            # on garde une seule ligne, avec le statut le plus avancé
+            doublon = next((x for x in programme if (uid and x["dossier"] == uid) or proximite(x["titre"], ligne["titre"]) >= 0.9), None)
+            # Un vote rattaché par l'open data à un autre texte, ou déjà retenu pour un autre texte : pas pour celui-ci
+            autre = ligne["scrutin"] and (vote_vers_dossier.get(ligne["scrutin"], uid) != uid
+                                         or any(l["scrutin"] == ligne["scrutin"] for l in programme if l is not doublon)
+                                         or any(t["scrutin"] == ligne["scrutin"] and t["dossier"] != uid for t in textes_niche))
+            if autre:
+                a_verifier.append(f"Niche du {jour} : le vote n° {scrutins[ligne['scrutin']]['numero']} retrouvé pour « {ligne['titre'][:60]} » "
+                                  f"porte sur un autre texte, écarté")
+                ligne.update(scrutin=None, inverse=False)
             if ligne["scrutin"]:
                 utilises.add(ligne["scrutin"])
             if ligne["statut"] in ("adopte", "rejete") and uid:
                 d = dossiers[uid]
-                textes[uid] = {"id": uid, "origine": "niche", "date": jour, "titre": ligne["titre"],
-                               "procedure": d["procedureParlementaire"]["libelle"], "auteur": auteur(d, mandats, jour),
-                               "statut": ligne["statut"], "scrutin": ligne["scrutin"], "inverse": ligne["inverse"],
-                               "suite": suite_donnee(d), "resume": None, "arguments": None, "relu": False}
+                textes_niche[:] = [t for t in textes_niche if not (t["dossier"] == uid and t["date"] == jour)]
+                textes_niche.append({"id": uid, "dossier": uid, "origine": "niche", "date": jour, "titre": ligne["titre"],
+                                     "procedure": d["procedureParlementaire"]["libelle"], "auteur": auteur(d, mandats, jour),
+                                     "statut": ligne["statut"], "scrutin": ligne["scrutin"], "inverse": ligne["inverse"],
+                                     "suite": suite_donnee(d), "resume": None, "arguments": None, "relu": False})
                 if not ligne["scrutin"]:
                     a_verifier.append(f"Niche du {jour} : « {ligne['titre'][:80]} » {ligne['statut']} sans vote public retrouvé (main levée ?)")
-            # Un même texte peut figurer deux fois à l'ordre du jour (avec ou sans référence, ou sous deux dossiers) :
-            # on garde une seule ligne, avec le statut le plus avancé
-            doublon = next((x for x in programme if (uid and x["dossier"] == uid) or proximite(x["titre"], ligne["titre"]) >= 0.9), None)
             if doublon:
-                if RANG_STATUT.get(ligne["statut"], 0) > RANG_STATUT.get(doublon["statut"], 0):
+                # La ligne au statut le plus avancé ; à statut égal, celle qui a un dossier
+                rang, rang_doublon = RANG_STATUT.get(ligne["statut"], 0), RANG_STATUT.get(doublon["statut"], 0)
+                if rang > rang_doublon or (rang == rang_doublon and ligne["dossier"] and not doublon["dossier"]):
                     doublon.update({k: ligne[k] for k in ("titre", "dossier", "statut", "scrutin", "inverse")})
                 continue
-            programme.append({k: ligne[k] for k in ("titre", "dossier", "statut", "scrutin", "inverse")})
-        # Corrections faites lors de la vérification (donnees/validation) : statut rectifié, ou ligne qui n'appartient pas à la niche
+            programme.append({k: ligne[k] for k in ("titre", "dossier", "statut", "scrutin", "inverse", "alias", "objet")})
+        # Corrections faites lors de la vérification (donnees/validation) : statut rectifié, ou ligne qui n'appartient pas à la niche.
+        # La ligne est retrouvée par son titre, sinon par l'un de ses autres noms (début, puis partie du titre)
         for c in v.get("corrections", []):
-            cible = next((l for l in programme if normaliser(l["titre"]).startswith(normaliser(c["titre"]))), None)
+            titre_c = normaliser(c["titre"])
+            cible = (next((l for l in programme if normaliser(l["titre"]).startswith(titre_c)), None)
+                     or next((l for l in programme if titre_c in normaliser(l["titre"])), None)
+                     or next((l for l in programme if any(normaliser(a).startswith(titre_c) for a in l["alias"] + [l["objet"]])), None)
+                     or next((l for l in programme if titre_c in normaliser(l["objet"])), None))
             if not cible:
                 a_verifier.append(f"Niche du {jour} : correction sans ligne correspondante « {c['titre'][:60]} »")
             elif c.get("exclure"):
                 programme.remove(cible)
             else:
                 cible.update(statut=c["statut"], corrige=True)
+        for l in programme:
+            del l["alias"], l["objet"]
         nb_votes = sum(1 for s in scrutins.values() if s["date"] == jour)
         niches.append({"date": jour, "groupe": v["groupe"], "validee": v["statut"] == "valide", "votesDuJour": nb_votes, "programme": programme})
 
+    # Un même dossier voté dans plusieurs niches de la législature (lectures successives) : la plus récente garde
+    # l'identifiant « dossier », les précédentes deviennent « dossier@date »
+    for t in textes_niche:
+        if any(x["dossier"] == t["dossier"] and x["date"] > t["date"] for x in textes_niche):
+            t["id"] = f"{t['dossier']}@{t['date']}"
+        textes[t["id"]] = t
+
     # Votes solennels
     print("Votes solennels…", flush=True)
-    vote_vers_dossier = {}
-    for uid, d in dossiers.items():
-        for dec in decisions_assemblee(d):
-            for v in dec["votes"]:
-                vote_vers_dossier[v] = uid
+    votes_des_niches = {t["scrutin"] for t in textes.values() if t["scrutin"]} | {l["scrutin"] for n in niches for l in n["programme"] if l["scrutin"]}
     nb_solennels, ignores = 0, collections.Counter()
     for vuid, s in sorted(scrutins.items(), key=lambda x: x[1]["numero"]):
         if s["type"] != "SPS":
@@ -486,24 +625,36 @@ def main():
             ignores["déclarations du gouvernement"] += 1
             continue
         nb_solennels += 1
-        uid = vote_vers_dossier.get(vuid)
-        if not uid:   # secours : le dossier dont le titre correspond le mieux à l'intitulé du vote, déposé avant le vote
-            vise = titre_vise(s["titre"])
-            score, uid = max(((proximite(vise, d["titreDossier"]["titre"]), u) for u, d in dossiers.items()
-                              if premier_depot(d) <= s["date"]), default=(0, None))
-            uid = uid if score >= 0.75 else None
+        if vuid in votes_des_niches:   # vote solennel pendant une niche : le texte est déjà publié avec sa niche
+            ignores["déjà dans une niche"] += 1
+            continue
+        if vuid in vote_vers_dossier:
+            uid = vote_vers_dossier[vuid]
+        else:   # secours : parmi les dossiers discutés en séance ce jour-là, celui dont le titre correspond le mieux
+            uid = meilleur([(correspondance(dossiers[u], s), u) for u in debattus[s["date"]] if premier_depot(dossiers[u]) <= s["date"]],
+                           f"Vote solennel n° {s['numero']} du {s['date']} : dossier")
         if not uid:
             a_verifier.append(f"Vote solennel n° {s['numero']} du {s['date']} sans dossier relié : « {s['titre'][:90]} »")
             continue
         d = dossiers[uid]
         cle = f"{uid}@{s['date']}"   # un même texte peut avoir plusieurs votes solennels (lectures successives)
+        # Vote sur une motion de procédure (rejet préalable, renvoi en commission) ou sur des conclusions de rejet :
+        # voter pour, c'est voter contre le texte ; le sens est inversé, comme pour les niches
+        inverse = s["titre"].startswith(REJET + ("la motion de renvoi en commission",))
+        adopte = (s["sort"] == "adopté") != inverse
+        if cle in textes:   # deux votes solennels le même jour sur le même texte : le dernier, sauf s'il porte sur une motion
+            if inverse and not textes[cle]["inverse"]:
+                continue
+            utilises.discard(textes[cle]["scrutin"])
         textes[cle] = {"id": cle, "dossier": uid, "origine": "solennel", "date": s["date"], "titre": d["titreDossier"]["titre"].replace("\r", " "),
                        "lecture": s["titre"][s["titre"].rfind("(") + 1:].rstrip(").") if "(" in s["titre"] else None,
                        "procedure": d["procedureParlementaire"]["libelle"], "auteur": auteur(d, mandats, s["date"]),
-                       "statut": "adopte" if s["sort"] == "adopté" else "rejete", "scrutin": vuid, "inverse": False,
+                       "statut": "adopte" if adopte else "rejete", "scrutin": vuid, "inverse": inverse,
                        "suite": suite_donnee(d), "resume": None, "arguments": None, "relu": False}
         utilises.add(vuid)
 
+    for x in EX_AEQUO:
+        a_verifier.append(x)
     for ref in CR_ABSENTS:
         a_verifier.append(f"Compte rendu pas encore publié : {ref}. Statuts de ce jour à reprendre à la prochaine mise à jour")
     for t in textes.values():

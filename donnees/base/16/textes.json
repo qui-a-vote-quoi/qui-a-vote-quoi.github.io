@@ -101,6 +101,7 @@
  },
  {
   "id": "DLR5L16N46116",
+  "dossier": "DLR5L16N46116",
   "origine": "niche",
   "date": "2022-10-06",
   "titre": "Lutte contre les plastiques dangereux pour l’environnement et la santé",
@@ -126,6 +127,7 @@
  },
  {
   "id": "DLR5L15N43849",
+  "dossier": "DLR5L15N43849",
   "origine": "niche",
   "date": "2022-10-06",
   "titre": "Limiter l'engrillagement des espaces naturels et protéger la propriété privée",
@@ -149,6 +151,7 @@
  },
  {
   "id": "DLR5L16N46187",
+  "dossier": "DLR5L16N46187",
   "origine": "niche",
   "date": "2022-10-06",
   "titre": "Lutte contre les abus et les fraudes au compte personnel de formation",
@@ -174,6 +177,7 @@
  },
  {
   "id": "DLR5L16N46185",
+  "dossier": "DLR5L16N46185",
   "origine": "niche",
   "date": "2022-10-06",
   "titre": "Charge fiscale de la pension alimentaire",
@@ -299,6 +303,7 @@
  },
  {
   "id": "DLR5L16N46412",
+  "dossier": "DLR5L16N46412",
   "origine": "niche",
   "date": "2022-11-24",
   "titre": "Protéger et garantir le droit fondamental à l’interruption volontaire de grossesse et à la contraception",
@@ -351,6 +356,7 @@
  },
  {
   "id": "DLR5L16N46472",
+  "dossier": "DLR5L16N46472",
   "origine": "niche",
   "date": "2022-12-01",
   "titre": "Calculer la retraite de base des non-salariés agricoles en fonction de leurs seules vingt-cinq meilleures années de revenus",
@@ -376,6 +382,7 @@
  },
  {
   "id": "DLR5L16N46473",
+  "dossier": "DLR5L16N46473",
   "origine": "niche",
   "date": "2022-12-01",
   "titre": "Assouplir les conditions d’expulsion des étrangers constituant une menace grave pour l’ordre public",
@@ -401,6 +408,7 @@
  },
  {
   "id": "DLR5L16N46471",
+  "dossier": "DLR5L16N46471",
   "origine": "niche",
   "date": "2022-12-01",
   "titre": "Création d’une juridiction spécialisée dans l'expulsion des étrangers délinquants",
@@ -426,6 +434,7 @@
  },
  {
   "id": "DLR5L16N46466",
+  "dossier": "DLR5L16N46466",
   "origine": "niche",
   "date": "2022-12-01",
   "titre": "Création d’une juridiction spécialisée aux violences intrafamiliales",
@@ -501,6 +510,7 @@
  },
  {
   "id": "DLR5L16N46760",
+  "dossier": "DLR5L16N46760",
   "origine": "niche",
   "date": "2023-01-12",
   "titre": "Favoriser et inciter les entreprises à augmenter les salaires nets de 10 %",
@@ -526,6 +536,7 @@
  },
  {
   "id": "DLR5L16N46275",
+  "dossier": "DLR5L16N46275",
   "origine": "niche",
   "date": "2023-01-12",
   "titre": "Suppression des zones à faibles émissions mobilité",
@@ -551,6 +562,7 @@
  },
  {
   "id": "DLR5L16N46778",
+  "dossier": "DLR5L16N46778",
   "origine": "niche",
   "date": "2023-01-12",
   "titre": "Etendre le droit de visite des parlementaires et parlementaires européens élus en France aux établissements sociaux et médico sociaux",
@@ -576,6 +588,7 @@
  },
  {
   "id": "DLR5L16N46249",
+  "dossier": "DLR5L16N46249",
   "origine": "niche",
   "date": "2023-01-12",
   "titre": "Instituer dans les écoles et collèges publics le port d’une tenue uniforme aux couleurs de l’établissement scolaire",
@@ -601,6 +614,7 @@
  },
  {
   "id": "DLR5L16N46780",
+  "dossier": "DLR5L16N46780",
   "origine": "niche",
   "date": "2023-01-12",
   "titre": "Revivifier la représentation politique",
@@ -626,6 +640,7 @@
  },
  {
   "id": "DLR5L16N46900",
+  "dossier": "DLR5L16N46900",
   "origine": "niche",
   "date": "2023-02-09",
   "titre": "Le coût de la vie dans les départements et régions d’Outre-mer",
@@ -651,6 +666,7 @@
  },
  {
   "id": "DLR5L16N46858",
+  "dossier": "DLR5L16N46858",
   "origine": "niche",
   "date": "2023-02-09",
   "titre": "Assurer un repas à 1 euro pour tous les étudiants",
@@ -675,7 +691,34 @@
   "relu": false
  },
  {
+  "id": "DLR5L16N46921@2023-02-09",
+  "dossier": "DLR5L16N46921",
+  "origine": "niche",
+  "date": "2023-02-09",
+  "titre": "Proposition de loi visant à la nationalisation du groupe Électricité de France",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "SOC",
+   "acteur": "PA793624"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L16V935",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2024-04-11",
+   "numeroLoi": "2024-330",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2024-04-11"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
   "id": "DLR5L16N46864",
+  "dossier": "DLR5L16N46864",
   "origine": "niche",
   "date": "2023-02-09",
   "titre": "Mieux protéger et accompagner les enfants victimes et co-victimes de violences intrafamiliales",
@@ -701,6 +744,7 @@
  },
  {
   "id": "DLR5L16N46890",
+  "dossier": "DLR5L16N46890",
   "origine": "niche",
   "date": "2023-02-09",
   "titre": "Renforcer l’ordonnance de protection",
@@ -726,6 +770,7 @@
  },
  {
   "id": "DLR5L16N47035",
+  "dossier": "DLR5L16N47035",
   "origine": "niche",
   "date": "2023-03-02",
   "titre": "Instaurer une majorité numérique et à lutter contre la haine en ligne",
@@ -751,6 +796,7 @@
  },
  {
   "id": "DLR5L16N47037",
+  "dossier": "DLR5L16N47037",
   "origine": "niche",
   "date": "2023-03-02",
   "titre": "Renforcer la protection des familles d’enfants touchés par une affection de longue durée",
@@ -852,7 +898,34 @@
   "relu": false
  },
  {
+  "id": "DLR5L16N47217",
+  "dossier": "DLR5L16N47217",
+  "origine": "niche",
+  "date": "2023-04-06",
+  "titre": "Mieux indemniser les dégâts sur les biens immobiliers causés par le retrait-gonflement de l’argile",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "ECOLO",
+   "acteur": "PA795076"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L16V1402",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN2-DEPOT",
+   "dateDerniereEtape": "2024-07-23"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
   "id": "DLR5L16N47218",
+  "dossier": "DLR5L16N47218",
   "origine": "niche",
   "date": "2023-04-06",
   "titre": "Mieux manger en soutenant les Français face à l'inflation et en favorisant l'accès à une alimentation saine",
@@ -877,32 +950,8 @@
   "relu": false
  },
  {
-  "id": "DLR5L16N47217",
-  "origine": "niche",
-  "date": "2023-04-06",
-  "titre": "Mieux indemniser les dégâts sur les biens immobiliers causés par le retrait-gonflement de l’argile",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "ECOLO",
-   "acteur": "PA795076"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L16V1402",
-  "inverse": false,
-  "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "SN1-DEBATS-DEC",
-   "dateDerniereEtape": "2024-05-30"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
   "id": "DLR5L16N47549",
+  "dossier": "DLR5L16N47549",
   "origine": "niche",
   "date": "2023-05-04",
   "titre": "Nécessité d’une solution à deux États et condamnation de l’institutionnalisation par l’État d’Israël d’un régime d’apartheid consécutif à sa politique coloniale",
@@ -927,7 +976,34 @@
   "relu": false
  },
  {
+  "id": "DLR5L16N46921@2023-05-04",
+  "dossier": "DLR5L16N46921",
+  "origine": "niche",
+  "date": "2023-05-04",
+  "titre": "Proposition de loi visant à la nationalisation du groupe Électricité de France",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "SOC",
+   "acteur": "PA793624"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L16V1482",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2024-04-11",
+   "numeroLoi": "2024-330",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2024-04-11"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
   "id": "DLR5L16N47411",
+  "dossier": "DLR5L16N47411",
   "origine": "niche",
   "date": "2023-05-04",
   "titre": "Abrogation de l'obligation vaccinale contre la covid-19 dans les secteurs médicaux, paramédicaux et d'aide à la personne et visant à la réintégration des professionnels et étudiants suspendus",
@@ -1046,8 +1122,8 @@
    "promulgation": "2023-08-01",
    "numeroLoi": "2023-703",
    "conseilConstitutionnel": "Partiellement conforme",
-   "derniereEtape": "PROM-PUB",
-   "dateDerniereEtape": "2023-08-01"
+   "derniereEtape": "AN-APPLI-RAPPORT",
+   "dateDerniereEtape": "2025-09-30"
   },
   "resume": null,
   "arguments": null,
@@ -1055,6 +1131,7 @@
  },
  {
   "id": "DLR5L16N47622",
+  "dossier": "DLR5L16N47622",
   "origine": "niche",
   "date": "2023-06-08",
   "titre": "Renforcer le principe de la continuité territoriale en Outre-Mer",
@@ -1255,6 +1332,7 @@
  },
  {
   "id": "DLR5L16N47051",
+  "dossier": "DLR5L16N47051",
   "origine": "niche",
   "date": "2023-10-12",
   "titre": "Interdiction de l’écriture dite « inclusive » dans les éditions, productions et publications scolaires et universitaires ainsi que dans les actes civils, administratifs et commerciaux",
@@ -1332,6 +1410,7 @@
  },
  {
   "id": "DLR5L16N48718",
+  "dossier": "DLR5L16N48718",
   "origine": "niche",
   "date": "2023-11-30",
   "titre": "Création d’une commission d’enquête sur la gestion par l’État des risques naturels majeurs dans les territoires transocéaniques de France, dits d’Outre-mer",
@@ -1356,32 +1435,8 @@
   "relu": false
  },
  {
-  "id": "DLR5L16N48766",
-  "origine": "niche",
-  "date": "2023-11-30",
-  "titre": "Lutter contre l’inflation par l’encadrement des marges des industries agroalimentaires, du raffinage et de la grande distribution et établissant un prix d’achat plancher des matières premières agricoles",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "LFI-NUPES",
-   "acteur": "PA793444"
-  },
-  "statut": "rejete",
-  "scrutin": "VTANR5L16V3101",
-  "inverse": false,
-  "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "AN1-COM-FOND-REUNION",
-   "dateDerniereEtape": "2023-11-30"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
   "id": "DLR5L16N48755",
+  "dossier": "DLR5L16N48755",
   "origine": "niche",
   "date": "2023-11-30",
   "titre": "Instaurer un moratoire sur le déploiement des méga-bassines",
@@ -1407,6 +1462,7 @@
  },
  {
   "id": "DLR5L16N48763",
+  "dossier": "DLR5L16N48763",
   "origine": "niche",
   "date": "2023-11-30",
   "titre": "Réouverture des accueils physiques dans les services publics",
@@ -1431,7 +1487,34 @@
   "relu": false
  },
  {
+  "id": "DLR5L16N48766",
+  "dossier": "DLR5L16N48766",
+  "origine": "niche",
+  "date": "2023-11-30",
+  "titre": "Lutter contre l’inflation par l’encadrement des marges des industries agroalimentaires, du raffinage et de la grande distribution et établissant un prix d’achat plancher des matières premières agricoles",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "LFI-NUPES",
+   "acteur": "PA793444"
+  },
+  "statut": "rejete",
+  "scrutin": "VTANR5L16V3101",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN1-COM-FOND-REUNION",
+   "dateDerniereEtape": "2023-11-30"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
   "id": "DLR5L16N48140",
+  "dossier": "DLR5L16N48140",
   "origine": "niche",
   "date": "2023-12-07",
   "titre": "Dénonciation, par les autorités françaises, de l’accord franco-algérien du 27 décembre 1968",
@@ -1457,6 +1540,7 @@
  },
  {
   "id": "DLR5L16N48758",
+  "dossier": "DLR5L16N48758",
   "origine": "niche",
   "date": "2023-12-07",
   "titre": "Améliorer l'accès aux soins par la territorialisation et la formation",
@@ -1470,11 +1554,11 @@
   "scrutin": "VTANR5L16V3201",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
+   "promulgation": "2025-06-27",
+   "numeroLoi": "2025-580",
    "conseilConstitutionnel": null,
-   "derniereEtape": "SN1-DEPOT",
-   "dateDerniereEtape": "2023-12-08"
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-06-27"
   },
   "resume": null,
   "arguments": null,
@@ -1482,6 +1566,7 @@
  },
  {
   "id": "DLR5L16N48777",
+  "dossier": "DLR5L16N48777",
   "origine": "niche",
   "date": "2023-12-07",
   "titre": "Rendre effectifs les soins palliatifs sur tout le territoire national",
@@ -1531,7 +1616,34 @@
   "relu": false
  },
  {
+  "id": "DLR5L16N49175",
+  "dossier": "DLR5L16N49175",
+  "origine": "niche",
+  "date": "2024-01-18",
+  "titre": "Accentuer les efforts pour favoriser l’accès de tous au logement",
+  "procedure": "Résolution Article 34-1",
+  "auteur": {
+   "type": "depute",
+   "groupe": "DEM",
+   "acteur": "PA720728"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L16V3219",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
+   "dateDerniereEtape": "2024-01-18"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
   "id": "DLR5L16N47695",
+  "dossier": "DLR5L16N47695",
   "origine": "niche",
   "date": "2024-01-18",
   "titre": "Mise en place et fonctionnement  de la commission d’évaluation de l’aide publique au développement instituée par la loi n° 2021-1031 du 4 août 2021",
@@ -1557,6 +1669,7 @@
  },
  {
   "id": "DLR5L16N49033",
+  "dossier": "DLR5L16N49033",
   "origine": "niche",
   "date": "2024-01-18",
   "titre": "Généralisation du contrat à durée indéterminée à des fins d’employabilité",
@@ -1570,36 +1683,11 @@
   "scrutin": "VTANR5L16V3218",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
+   "promulgation": "2024-11-15",
+   "numeroLoi": "2024-1027",
    "conseilConstitutionnel": null,
-   "derniereEtape": "AN1-DEBATS-SEANCE",
-   "dateDerniereEtape": "2024-01-18"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
-  "id": "DLR5L16N49175",
-  "origine": "niche",
-  "date": "2024-01-18",
-  "titre": "Accentuer les efforts pour favoriser l’accès de tous au logement",
-  "procedure": "Résolution Article 34-1",
-  "auteur": {
-   "type": "depute",
-   "groupe": "DEM",
-   "acteur": "PA720728"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L16V3219",
-  "inverse": false,
-  "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
-   "dateDerniereEtape": "2024-01-18"
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2024-11-15"
   },
   "resume": null,
   "arguments": null,
@@ -1607,6 +1695,7 @@
  },
  {
   "id": "DLR5L16N49023",
+  "dossier": "DLR5L16N49023",
   "origine": "niche",
   "date": "2024-01-18",
   "titre": "Assurer une justice patrimoniale au sein de la famille",
@@ -1656,30 +1745,8 @@
   "relu": false
  },
  {
-  "id": "DLR5L15N45886",
-  "origine": "niche",
-  "date": "2024-02-01",
-  "titre": "Proposition de loi encadrant l'intervention des cabinets de conseil privés dans les politiques publiques",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "senat"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L16V3332",
-  "inverse": false,
-  "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "AN2-DEPOT",
-   "dateDerniereEtape": "2024-05-29"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
   "id": "DLR5L16N48800",
+  "dossier": "DLR5L16N48800",
   "origine": "niche",
   "date": "2024-02-01",
   "titre": "Relancer l’organisation des classes de découverte",
@@ -1704,7 +1771,32 @@
   "relu": false
  },
  {
+  "id": "DLR5L15N45886",
+  "dossier": "DLR5L15N45886",
+  "origine": "niche",
+  "date": "2024-02-01",
+  "titre": "Proposition de loi encadrant l'intervention des cabinets de conseil privés dans les politiques publiques",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "senat"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L16V3332",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "AN2-DEPOT",
+   "dateDerniereEtape": "2024-07-23"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
   "id": "DLR5L16N48586",
+  "dossier": "DLR5L16N48586",
   "origine": "niche",
   "date": "2024-02-01",
   "titre": "Pérenniser les jardins d’enfants gérés par une collectivité publique ou bénéficiant de financements publics",
@@ -1730,6 +1822,7 @@
  },
  {
   "id": "DLR5L16N46921",
+  "dossier": "DLR5L16N46921",
   "origine": "niche",
   "date": "2024-02-29",
   "titre": "Proposition de loi visant à la nationalisation du groupe Électricité de France",
@@ -1755,6 +1848,7 @@
  },
  {
   "id": "DLR5L16N47026",
+  "dossier": "DLR5L16N47026",
   "origine": "niche",
   "date": "2024-02-29",
   "titre": "Renforcer la protection des mineurs et l’honorabilité dans le sport",
@@ -1777,32 +1871,8 @@
   "relu": false
  },
  {
-  "id": "DLR5L16N49263",
-  "origine": "niche",
-  "date": "2024-02-29",
-  "titre": "Reconnaître la responsabilité de l’État et indemniser les victimes du chlordécone",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "SOC",
-   "acteur": "PA795762"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L16V3382",
-  "inverse": false,
-  "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "SN1-DEPOT",
-   "dateDerniereEtape": "2024-03-01"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
   "id": "DLR5L16N49258",
+  "dossier": "DLR5L16N49258",
   "origine": "niche",
   "date": "2024-02-29",
   "titre": "Réduire et encadrer les frais bancaires sur succession",
@@ -1816,11 +1886,11 @@
   "scrutin": "VTANR5L16V3385",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
+   "promulgation": "2025-05-13",
+   "numeroLoi": "2025-415",
    "conseilConstitutionnel": null,
-   "derniereEtape": "AN2-DEPOT",
-   "dateDerniereEtape": "2024-05-16"
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-05-13"
   },
   "resume": null,
   "arguments": null,
@@ -1828,6 +1898,7 @@
  },
  {
   "id": "DLR5L16N49261",
+  "dossier": "DLR5L16N49261",
   "origine": "niche",
   "date": "2024-02-29",
   "titre": "Lutte contre les pénuries de médicaments",
@@ -1852,6 +1923,32 @@
   "relu": false
  },
  {
+  "id": "DLR5L16N49263",
+  "dossier": "DLR5L16N49263",
+  "origine": "niche",
+  "date": "2024-02-29",
+  "titre": "Reconnaître la responsabilité de l’État et indemniser les victimes du chlordécone",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "SOC",
+   "acteur": "PA795762"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L16V3382",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-06-12",
+   "numeroLoi": "2026-491",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-06-12"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
   "id": "DLR5L16N46127@2024-03-06",
   "dossier": "DLR5L16N46127",
   "origine": "solennel",
@@ -1869,8 +1966,8 @@
    "promulgation": null,
    "numeroLoi": null,
    "conseilConstitutionnel": null,
-   "derniereEtape": "SN2-DEPOT",
-   "dateDerniereEtape": "2024-03-07"
+   "derniereEtape": "CMP-DEC",
+   "dateDerniereEtape": "2026-01-16"
   },
   "resume": null,
   "arguments": null,
@@ -1878,6 +1975,7 @@
  },
  {
   "id": "DLR5L16N49363",
+  "dossier": "DLR5L16N49363",
   "origine": "niche",
   "date": "2024-03-14",
   "titre": "Garantir le versement des pensions alimentaires aux enfants majeurs",
@@ -1902,32 +2000,8 @@
   "relu": false
  },
  {
-  "id": "DLR5L16N49364",
-  "origine": "niche",
-  "date": "2024-03-14",
-  "titre": "Réduire l’impact environnemental de l’industrie textile",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "HOR",
-   "acteur": "PA795026"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L16V3508",
-  "inverse": false,
-  "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "AN1-DEBATS-SEANCE",
-   "dateDerniereEtape": "2024-03-14"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
   "id": "DLR5L16N49299",
+  "dossier": "DLR5L16N49299",
   "origine": "niche",
   "date": "2024-03-14",
   "titre": "Renforcer la sécurité des professionnels de santé",
@@ -1941,11 +2015,37 @@
   "scrutin": "VTANR5L16V3512",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
+   "promulgation": "2025-07-09",
+   "numeroLoi": "2025-623",
    "conseilConstitutionnel": null,
-   "derniereEtape": "AN1-DEBATS-SEANCE",
-   "dateDerniereEtape": "2024-03-14"
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-07-09"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L16N49364",
+  "dossier": "DLR5L16N49364",
+  "origine": "niche",
+  "date": "2024-03-14",
+  "titre": "Réduire l’impact environnemental de l’industrie textile",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "HOR",
+   "acteur": "PA795026"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L16V3508",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2026-07-08",
+   "numeroLoi": "2026-602",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2026-07-08"
   },
   "resume": null,
   "arguments": null,
@@ -2002,32 +2102,8 @@
   "relu": false
  },
  {
-  "id": "DLR5L16N49455",
-  "origine": "niche",
-  "date": "2024-04-04",
-  "titre": "Protéger la population des risques liés aux substances per- et polyfluoroalkylées (PFAS)",
-  "procedure": "Proposition de loi ordinaire",
-  "auteur": {
-   "type": "depute",
-   "groupe": "ECOLO",
-   "acteur": "PA793948"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L16V3643",
-  "inverse": false,
-  "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "SN1-DEBATS-DEC",
-   "dateDerniereEtape": "2024-05-30"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
   "id": "DLR5L16N49457",
+  "dossier": "DLR5L16N49457",
   "origine": "niche",
   "date": "2024-04-04",
   "titre": "Garantir un revenu digne aux agriculteurs et accompagner la transition agricole",
@@ -2046,6 +2122,32 @@
    "conseilConstitutionnel": null,
    "derniereEtape": "SN1-DEPOT",
    "dateDerniereEtape": "2024-04-05"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
+  "id": "DLR5L16N49455",
+  "dossier": "DLR5L16N49455",
+  "origine": "niche",
+  "date": "2024-04-04",
+  "titre": "Protéger la population des risques liés aux substances per- et polyfluoroalkylées (PFAS)",
+  "procedure": "Proposition de loi ordinaire",
+  "auteur": {
+   "type": "depute",
+   "groupe": "ECOLO",
+   "acteur": "PA793948"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L16V3643",
+  "inverse": false,
+  "suite": {
+   "promulgation": "2025-02-27",
+   "numeroLoi": "2025-188",
+   "conseilConstitutionnel": null,
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-02-27"
   },
   "resume": null,
   "arguments": null,
@@ -2141,36 +2243,11 @@
   "scrutin": "VTANR5L16V3966",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "SN1-DEPOT",
-   "dateDerniereEtape": "2024-05-29"
-  },
-  "resume": null,
-  "arguments": null,
-  "relu": false
- },
- {
-  "id": "DLR5L16N49004",
-  "origine": "niche",
-  "date": "2024-05-30",
-  "titre": "Adapter et mutualiser nos politiques publiques au changement climatique, notamment à destination des villes côtières et insulaires",
-  "procedure": "Résolution Article 34-1",
-  "auteur": {
-   "type": "depute",
-   "groupe": "GDR-NUPES",
-   "acteur": "PA795820"
-  },
-  "statut": "adopte",
-  "scrutin": "VTANR5L16V3990",
-  "inverse": false,
-  "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
-   "conseilConstitutionnel": null,
-   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
-   "dateDerniereEtape": "2024-05-30"
+   "promulgation": "2025-03-24",
+   "numeroLoi": "2025-268",
+   "conseilConstitutionnel": "Partiellement conforme",
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-03-24"
   },
   "resume": null,
   "arguments": null,
@@ -2178,6 +2255,7 @@
  },
  {
   "id": "DLR5L16N49923",
+  "dossier": "DLR5L16N49923",
   "origine": "niche",
   "date": "2024-05-30",
   "titre": "Procédure de ratification de l'accord économique et commercial global entre le Canada et l'Union européenne",
@@ -2202,18 +2280,19 @@
   "relu": false
  },
  {
-  "id": "DLR5L16N49740",
+  "id": "DLR5L16N49004",
+  "dossier": "DLR5L16N49004",
   "origine": "niche",
   "date": "2024-05-30",
-  "titre": "Indécence du logement social dans les départements et régions d'outre-mer",
-  "procedure": "Résolution",
+  "titre": "Adapter et mutualiser nos politiques publiques au changement climatique, notamment à destination des villes côtières et insulaires",
+  "procedure": "Résolution Article 34-1",
   "auteur": {
    "type": "depute",
    "groupe": "GDR-NUPES",
-   "acteur": "PA774962"
+   "acteur": "PA795820"
   },
   "statut": "adopte",
-  "scrutin": "VTANR5L16V3992",
+  "scrutin": "VTANR5L16V3990",
   "inverse": false,
   "suite": {
    "promulgation": null,
@@ -2228,6 +2307,7 @@
  },
  {
   "id": "DLR5L16N49799",
+  "dossier": "DLR5L16N49799",
   "origine": "niche",
   "date": "2024-05-30",
   "titre": "Meilleure réussite scolaire des jeunes ultramarins grâce à l'apprentissage des langues régionales",
@@ -2252,7 +2332,34 @@
   "relu": false
  },
  {
+  "id": "DLR5L16N49740",
+  "dossier": "DLR5L16N49740",
+  "origine": "niche",
+  "date": "2024-05-30",
+  "titre": "Indécence du logement social dans les départements et régions d'outre-mer",
+  "procedure": "Résolution",
+  "auteur": {
+   "type": "depute",
+   "groupe": "GDR-NUPES",
+   "acteur": "PA774962"
+  },
+  "statut": "adopte",
+  "scrutin": "VTANR5L16V3992",
+  "inverse": false,
+  "suite": {
+   "promulgation": null,
+   "numeroLoi": null,
+   "conseilConstitutionnel": null,
+   "derniereEtape": "ANLUNI-DEBATS-SEANCE",
+   "dateDerniereEtape": "2024-05-30"
+  },
+  "resume": null,
+  "arguments": null,
+  "relu": false
+ },
+ {
   "id": "DLR5L16N49801",
+  "dossier": "DLR5L16N49801",
   "origine": "niche",
   "date": "2024-05-30",
   "titre": "Prise en charge intégrale des soins liés au traitement du cancer du sein par l'assurance maladie",
@@ -2266,11 +2373,11 @@
   "scrutin": "VTANR5L16V4000",
   "inverse": false,
   "suite": {
-   "promulgation": null,
-   "numeroLoi": null,
+   "promulgation": "2025-02-05",
+   "numeroLoi": "2025-106",
    "conseilConstitutionnel": null,
-   "derniereEtape": "SN1-DEPOT",
-   "dateDerniereEtape": "2024-05-31"
+   "derniereEtape": "PROM-PUB",
+   "dateDerniereEtape": "2025-02-05"
   },
   "resume": null,
   "arguments": null,

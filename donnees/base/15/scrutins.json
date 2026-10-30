@@ -68,75 +68,6 @@
    }
   ]
  },
- "VTANR5L15V54": {
-  "numero": 54,
-  "date": "2017-07-24",
-  "type": "SPS",
-  "titre": "la motion de rejet préalable, déposée par M. Jean-Luc Mélenchon, du projet de loi organique pour la confiance dans la vie publique (première lecture).",
-  "sort": "rejeté",
-  "pour": 25,
-  "contre": 201,
-  "abst": 7,
-  "seance": "RUANR5L15S2017IDS20625",
-  "groupes": [
-   {
-    "g": "LAREM",
-    "m": 313,
-    "pour": 0,
-    "contre": 139,
-    "abst": 0
-   },
-   {
-    "g": "LR",
-    "m": 100,
-    "pour": 2,
-    "contre": 25,
-    "abst": 1
-   },
-   {
-    "g": "DEM",
-    "m": 47,
-    "pour": 0,
-    "contre": 23,
-    "abst": 0
-   },
-   {
-    "g": "UDI-I",
-    "m": 35,
-    "pour": 0,
-    "contre": 5,
-    "abst": 0
-   },
-   {
-    "g": "SOC",
-    "m": 31,
-    "pour": 1,
-    "contre": 8,
-    "abst": 0
-   },
-   {
-    "g": "NI",
-    "m": 18,
-    "pour": 0,
-    "contre": 1,
-    "abst": 6
-   },
-   {
-    "g": "FI",
-    "m": 17,
-    "pour": 14,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "GDR",
-    "m": 16,
-    "pour": 8,
-    "contre": 0,
-    "abst": 0
-   }
-  ]
- },
  "VTANR5L15V56": {
   "numero": 56,
   "date": "2017-07-24",
@@ -203,75 +134,6 @@
     "pour": 8,
     "contre": 0,
     "abst": 0
-   }
-  ]
- },
- "VTANR5L15V103": {
-  "numero": 103,
-  "date": "2017-07-28",
-  "type": "SPS",
-  "titre": "l'ensemble du projet de loi pour la confiance dans la vie publique (première lecture).",
-  "sort": "adopté",
-  "pour": 319,
-  "contre": 4,
-  "abst": 49,
-  "seance": "RUANR5L15S2017IDS20663",
-  "groupes": [
-   {
-    "g": "LAREM",
-    "m": 314,
-    "pour": 211,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "LR",
-    "m": 100,
-    "pour": 36,
-    "contre": 4,
-    "abst": 11
-   },
-   {
-    "g": "DEM",
-    "m": 47,
-    "pour": 32,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "UDI-I",
-    "m": 35,
-    "pour": 24,
-    "contre": 0,
-    "abst": 2
-   },
-   {
-    "g": "SOC",
-    "m": 31,
-    "pour": 16,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "NI",
-    "m": 17,
-    "pour": 0,
-    "contre": 0,
-    "abst": 7
-   },
-   {
-    "g": "FI",
-    "m": 17,
-    "pour": 0,
-    "contre": 0,
-    "abst": 17
-   },
-   {
-    "g": "GDR",
-    "m": 16,
-    "pour": 0,
-    "contre": 0,
-    "abst": 12
    }
   ]
  },
@@ -410,75 +272,6 @@
     "pour": 0,
     "contre": 16,
     "abst": 0
-   }
-  ]
- },
- "VTANR5L15V107": {
-  "numero": 107,
-  "date": "2017-08-03",
-  "type": "SPS",
-  "titre": "l'ensemble du projet de loi pour la confiance dans la vie politique (texte de la commission mixte paritaire).",
-  "sort": "adopté",
-  "pour": 383,
-  "contre": 3,
-  "abst": 48,
-  "seance": "RUANR5L15S2017IDS20657",
-  "groupes": [
-   {
-    "g": "LAREM",
-    "m": 314,
-    "pour": 264,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "LR",
-    "m": 100,
-    "pour": 43,
-    "contre": 2,
-    "abst": 7
-   },
-   {
-    "g": "DEM",
-    "m": 47,
-    "pour": 42,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "UDI-I",
-    "m": 35,
-    "pour": 24,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "SOC",
-    "m": 31,
-    "pour": 10,
-    "contre": 1,
-    "abst": 0
-   },
-   {
-    "g": "NI",
-    "m": 17,
-    "pour": 0,
-    "contre": 0,
-    "abst": 11
-   },
-   {
-    "g": "FI",
-    "m": 17,
-    "pour": 0,
-    "contre": 0,
-    "abst": 16
-   },
-   {
-    "g": "GDR",
-    "m": 16,
-    "pour": 0,
-    "contre": 0,
-    "abst": 14
    }
   ]
  },
@@ -9851,7 +9644,15 @@
     "contre": 0,
     "abst": 1
    }
-  ]
+  ],
+  "groupesManquants": [
+   "DEM"
+  ],
+  "voixNonVentilees": {
+   "pour": 46,
+   "contre": 0,
+   "abst": 0
+  }
  },
  "VTANR5L15V2745": {
   "numero": 2745,
@@ -10377,7 +10178,15 @@
     "contre": 6,
     "abst": 1
    }
-  ]
+  ],
+  "groupesManquants": [
+   "DEM"
+  ],
+  "voixNonVentilees": {
+   "pour": 0,
+   "contre": 46,
+   "abst": 0
+  }
  },
  "VTANR5L15V2752": {
   "numero": 2752,
@@ -10460,7 +10269,15 @@
     "contre": 5,
     "abst": 5
    }
-  ]
+  ],
+  "groupesManquants": [
+   "DEM"
+  ],
+  "voixNonVentilees": {
+   "pour": 0,
+   "contre": 46,
+   "abst": 0
+  }
  },
  "VTANR5L15V2753": {
   "numero": 2753,
@@ -11002,96 +10819,6 @@
    }
   ]
  },
- "VTANR5L15V2759": {
-  "numero": 2759,
-  "date": "2020-06-18",
-  "type": "SPS",
-  "titre": "l'ensemble de la proposition de loi visant à assurer la revalorisation des pensions de retraite agricoles en France continentale et dans les outre-mer (deuxième lecture).",
-  "sort": "adopté",
-  "pour": 571,
-  "contre": 0,
-  "abst": 2,
-  "seance": "RUANR5L15S2020IDS22868",
-  "groupes": [
-   {
-    "g": "LAREM",
-    "m": 281,
-    "pour": 280,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "LR",
-    "m": 103,
-    "pour": 103,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "DEM",
-    "m": 46,
-    "pour": 46,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "SOC",
-    "m": 29,
-    "pour": 29,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "LT",
-    "m": 18,
-    "pour": 17,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "UDI-I",
-    "m": 18,
-    "pour": 18,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "FI",
-    "m": 17,
-    "pour": 17,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "EDS",
-    "m": 17,
-    "pour": 17,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "AGIR-E",
-    "m": 17,
-    "pour": 17,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "GDR",
-    "m": 16,
-    "pour": 16,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "NI",
-    "m": 15,
-    "pour": 11,
-    "contre": 0,
-    "abst": 2
-   }
-  ]
- },
  "VTANR5L15V2760": {
   "numero": 2760,
   "date": "2020-06-18",
@@ -11263,7 +10990,15 @@
     "contre": 4,
     "abst": 9
    }
-  ]
+  ],
+  "groupesManquants": [
+   "DEM"
+  ],
+  "voixNonVentilees": {
+   "pour": 0,
+   "contre": 46,
+   "abst": 0
+  }
  },
  "VTANR5L15V2762": {
   "numero": 2762,
@@ -11346,7 +11081,15 @@
     "contre": 0,
     "abst": 3
    }
-  ]
+  ],
+  "groupesManquants": [
+   "DEM"
+  ],
+  "voixNonVentilees": {
+   "pour": 0,
+   "contre": 46,
+   "abst": 0
+  }
  },
  "VTANR5L15V2766": {
   "numero": 2766,
@@ -11429,7 +11172,15 @@
     "contre": 0,
     "abst": 0
    }
-  ]
+  ],
+  "groupesManquants": [
+   "DEM"
+  ],
+  "voixNonVentilees": {
+   "pour": 0,
+   "contre": 3,
+   "abst": 0
+  }
  },
  "VTANR5L15V2767": {
   "numero": 2767,
@@ -11510,96 +11261,6 @@
     "m": 16,
     "pour": 0,
     "contre": 1,
-    "abst": 0
-   },
-   {
-    "g": "NI",
-    "m": 12,
-    "pour": 1,
-    "contre": 0,
-    "abst": 0
-   }
-  ]
- },
- "VTANR5L15V2769": {
-  "numero": 2769,
-  "date": "2020-06-25",
-  "type": "SPO",
-  "titre": "l'ensemble de la proposition de loi pour une éthique de l'urgence (première lecture).",
-  "sort": "adopté",
-  "pour": 47,
-  "contre": 0,
-  "abst": 0,
-  "seance": "RUANR5L15S2020IDS22863",
-  "groupes": [
-   {
-    "g": "LAREM",
-    "m": 281,
-    "pour": 21,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "LR",
-    "m": 104,
-    "pour": 12,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "DEM",
-    "m": 46,
-    "pour": 5,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "SOC",
-    "m": 28,
-    "pour": 1,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "UDI-I",
-    "m": 19,
-    "pour": 2,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "LT",
-    "m": 18,
-    "pour": 1,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "FI",
-    "m": 17,
-    "pour": 1,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "EDS",
-    "m": 17,
-    "pour": 1,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "AGIR-E",
-    "m": 17,
-    "pour": 2,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "GDR",
-    "m": 16,
-    "pour": 0,
-    "contre": 0,
     "abst": 0
    },
    {
@@ -11782,7 +11443,15 @@
     "contre": 2,
     "abst": 6
    }
-  ]
+  ],
+  "groupesManquants": [
+   "DEM"
+  ],
+  "voixNonVentilees": {
+   "pour": 46,
+   "contre": 0,
+   "abst": 0
+  }
  },
  "VTANR5L15V2940": {
   "numero": 2940,
@@ -14378,6 +14047,89 @@
    }
   ]
  },
+ "VTANR5L15V3508": {
+  "numero": 3508,
+  "date": "2021-03-25",
+  "type": "SPO",
+  "titre": "la proposition de résolution relative à l'ajout du nom de l'ancien Président de la République, Valéry Giscard d'Estaing, à celui de l'établissement public des musées d'Orsay et de l'Orangerie (art. 34-1 de la Constitution).",
+  "sort": "adopté",
+  "pour": 91,
+  "contre": 0,
+  "abst": 1,
+  "seance": "RUANR5L15S2021IDS23997",
+  "groupes": [
+   {
+    "g": "LAREM",
+    "m": 269,
+    "pour": 48,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LR",
+    "m": 104,
+    "pour": 7,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "DEM",
+    "m": 58,
+    "pour": 9,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "SOC",
+    "m": 29,
+    "pour": 4,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "NI",
+    "m": 23,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "AGIR-E",
+    "m": 21,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "LT",
+    "m": 18,
+    "pour": 2,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "UDI-I",
+    "m": 18,
+    "pour": 17,
+    "contre": 0,
+    "abst": 0
+   },
+   {
+    "g": "FI",
+    "m": 17,
+    "pour": 0,
+    "contre": 0,
+    "abst": 1
+   },
+   {
+    "g": "GDR",
+    "m": 16,
+    "pour": 1,
+    "contre": 0,
+    "abst": 0
+   }
+  ]
+ },
  "VTANR5L15V3509": {
   "numero": 3509,
   "date": "2021-03-25",
@@ -14617,89 +14369,6 @@
     "pour": 1,
     "contre": 12,
     "abst": 0
-   },
-   {
-    "g": "GDR",
-    "m": 16,
-    "pour": 6,
-    "contre": 0,
-    "abst": 0
-   }
-  ]
- },
- "VTANR5L15V3640": {
-  "numero": 3640,
-  "date": "2021-04-13",
-  "type": "SPO",
-  "titre": "l'amendement n° 6225 de M. Fugit après l'article 46 du projet de loi portant lutte contre le dérèglement climatique et renforcement de la résilience face à ses effets (première lecture).",
-  "sort": "adopté",
-  "pour": 91,
-  "contre": 10,
-  "abst": 11,
-  "seance": "RUANR5L15S2021IDS24113",
-  "groupes": [
-   {
-    "g": "LAREM",
-    "m": 269,
-    "pour": 64,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "LR",
-    "m": 104,
-    "pour": 2,
-    "contre": 10,
-    "abst": 5
-   },
-   {
-    "g": "DEM",
-    "m": 58,
-    "pour": 11,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "SOC",
-    "m": 29,
-    "pour": 4,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "NI",
-    "m": 23,
-    "pour": 1,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "AGIR-E",
-    "m": 21,
-    "pour": 3,
-    "contre": 0,
-    "abst": 0
-   },
-   {
-    "g": "LT",
-    "m": 18,
-    "pour": 0,
-    "contre": 0,
-    "abst": 3
-   },
-   {
-    "g": "UDI-I",
-    "m": 18,
-    "pour": 0,
-    "contre": 0,
-    "abst": 1
-   },
-   {
-    "g": "FI",
-    "m": 17,
-    "pour": 0,
-    "contre": 0,
-    "abst": 2
    },
    {
     "g": "GDR",

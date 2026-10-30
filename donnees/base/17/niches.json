@@ -63,8 +63,8 @@
   "votesDuJour": 32,
   "programme": [
    {
-    "titre": "Refuser la ratification de l'accord commercial entre l'Union européenne et le Mercosur",
-    "dossier": "DLR5L17N50581",
+    "titre": "Sous réserve de sa recevabilité, proposition de résolution, au titre de l'article 34-1 de la Constitution, invitant le Gouvernement de la République française à refuser la ratification de l'accord commercial entre l'Union européenne et le Mercosur",
+    "dossier": null,
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -77,8 +77,8 @@
     "inverse": false
    },
    {
-    "titre": "La définition pénale du viol",
-    "dossier": "DLR5L17N51298",
+    "titre": "Intégrer la notion de consentement dans la définition pénale des infractions d’agression sexuelle et de viol",
+    "dossier": "DLR5L17N50621",
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -290,8 +290,8 @@
     "inverse": false
    },
    {
-    "titre": "Protéger durablement la qualité de l'eau potable",
-    "dossier": "DLR5L17N50764",
+    "titre": "proposition de loi visant à protéger durablement la qualité de l'eau potable",
+    "dossier": null,
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -546,8 +546,8 @@
     "inverse": false
    },
    {
-    "titre": "portant plusieurs mesures de justice pour limiter les frais bancaires",
-    "dossier": "DLR5L17N54249",
+    "titre": "Plusieurs mesures de justice pour limiter les frais bancaires",
+    "dossier": "DLR5L17N51982",
     "statut": "commence",
     "scrutin": null,
     "inverse": false
@@ -575,8 +575,8 @@
   "votesDuJour": 38,
   "programme": [
    {
-    "titre": "Dénoncer les accords franco-algériens du 27 décembre 1968",
-    "dossier": "DLR5L17N52719",
+    "titre": "proposition de résolution (article 34-1 de la Constitution) visant à dénoncer les accords franco-algériens du 27 décembre 1968 et du 16 décembre 2013",
+    "dossier": null,
     "statut": "retire",
     "scrutin": null,
     "inverse": false
@@ -660,8 +660,8 @@
     "inverse": true
    },
    {
-    "titre": "portant plusieurs mesures de justice pour limiter les frais bancaires",
-    "dossier": "DLR5L17N54249",
+    "titre": "Plusieurs mesures de justice pour limiter les frais bancaires",
+    "dossier": "DLR5L17N51982",
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -674,8 +674,8 @@
     "inverse": false
    },
    {
-    "titre": "Proposition de loi visant à garantir la gratuité des parkings des hôpitaux publics pour les patients, les proches aidants, les visiteurs et les personnels sur leur temps de travail",
-    "dossier": "DLR5L17N54080",
+    "titre": "Gratuité des parkings d'hôpitaux publics",
+    "dossier": "DLR5L17N52776",
     "statut": "commence",
     "scrutin": null,
     "inverse": false
@@ -837,8 +837,8 @@
     "inverse": false
    },
    {
-    "titre": "proposition de loi constitutionnelle portant création d'un Défenseur de la laïcité et définition de ce principe",
-    "dossier": null,
+    "titre": "Création d'un Défenseur de la laïcité et définition de ce principe",
+    "dossier": "DLR5L17N53012",
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -986,15 +986,15 @@
     "inverse": false
    },
    {
-    "titre": "Reconnaître l'éducation au dehors et en contact avec la nature et réaffirmer la place de la transition écologique à l'école",
-    "dossier": "DLR5L17N52392",
+    "titre": "proposition de loi visant à reconnaître l'éducation au dehors et en contact avec la nature et à réaffirmer la place de la transition écologique à l'école",
+    "dossier": null,
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
    },
    {
-    "titre": "proposition de loi constitutionnelle, modifiée par le Sénat, visant à accorder le droit de vote et d'éligibilité aux élections municipales aux étrangers non ressortissants de l'Union européenne résidant en France",
-    "dossier": null,
+    "titre": "Droit de vote et éligibilité des étrangers aux élections",
+    "dossier": "DLR5L11N19503",
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -1314,8 +1314,8 @@
     "inverse": false
    },
    {
-    "titre": "Prévenir les occupations sans droit ni titre en encadrant la souscription des contrats essentiels",
-    "dossier": "DLR5L17N54311",
+    "titre": "proposition de loi pour prévenir les occupations sans droit ni titre en encadrant la souscription des contrats essentiels",
+    "dossier": null,
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -1335,15 +1335,15 @@
     "inverse": false
    },
    {
-    "titre": "Assurer l’autonomie stratégique de la France pour la production décarbonée d’engrais azotés",
-    "dossier": "DLR5L17N54312",
+    "titre": "proposition de loi permettant d’assurer l’autonomie stratégique de la France pour la production décarbonée d’engrais azotés",
+    "dossier": null,
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
    },
    {
-    "titre": "Renforcer la souveraineté alimentaire par le développement des circuits de proximité dans la restauration collective publique",
-    "dossier": "DLR5L17N54308",
+    "titre": "proposition de loi visant à renforcer la souveraineté alimentaire par le développement des circuits de proximité dans la restauration collective publique",
+    "dossier": null,
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -1420,8 +1420,8 @@
     "inverse": false
    },
    {
-    "titre": "Étendre le statut et les conditions d’attribution de la mention « Mort pour le service de la Nation »",
-    "dossier": "DLR5L17N51435",
+    "titre": "proposition de loi pour étendre le statut et les conditions d’attribution de la mention « Mort pour le service de la Nation »",
+    "dossier": null,
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -1456,16 +1456,16 @@
     "inverse": false
    },
    {
-    "titre": "Défiscaliser les pensions alimentaires perçues et lutter contre la précarité des familles monoparentales",
-    "dossier": "DLR5L17N52970",
+    "titre": "proposition de loi pour défiscaliser les pensions alimentaires perçues et lutter contre la précarité des familles monoparentales",
+    "dossier": null,
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
    },
    {
     "titre": "Protéger durablement les jeunes majeurs de l’aide sociale à l’enfance et de la protection judiciaire de la jeunesse",
-    "dossier": "DLR5L17N54151",
-    "statut": "pas_examine",
+    "dossier": "DLR5L17N54298",
+    "statut": "commence",
     "scrutin": null,
     "inverse": false
    },

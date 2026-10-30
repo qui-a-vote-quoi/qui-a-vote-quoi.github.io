@@ -1,6 +1,7 @@
 """Prépare les données du site à partir de la base et des textes rédigés à la main.
 
-Usage : python3 pipeline/publier.py [15 16 17]   (par défaut, les trois législatures)
+Usage : python3 pipeline/publier.py [15 16 17] [--sans-page]   (par défaut, les trois législatures ;
+--sans-page : ne pas reporter l'empreinte de donnees.js dans site/index.html)
 
 Lit donnees/base/<législature>/, donnees/validation/niches-<législature>.json et donnees/redaction/*.json
 (sujet, titre clair, résumé, arguments de chaque texte), et écrit site/donnees.js.
@@ -80,8 +81,12 @@ def etape(t):
 
 
 def vote(scrutin):
-    return {"scrutin": scrutin["numero"], "date": scrutin["date"], "pour": scrutin["pour"], "contre": scrutin["contre"],
-            "abst": scrutin["abst"], "groupes": scrutin["groupes"], "voteSur": vote_sur(scrutin)}
+    v = {"scrutin": scrutin["numero"], "date": scrutin["date"], "pour": scrutin["pour"], "contre": scrutin["contre"],
+         "abst": scrutin["abst"], "groupes": scrutin["groupes"], "voteSur": vote_sur(scrutin)}
+    if scrutin.get("groupesManquants"):
+        # L'open data omet la ligne de ces groupes : leurs voix comptent dans le total, mais ne sont attribuées à aucun groupe
+        v["groupesIncomplets"] = {"groupes": scrutin["groupesManquants"], "voixNonVentilees": scrutin["voixNonVentilees"]}
+    return v
 
 
 def luminance(couleur):
@@ -107,22 +112,29 @@ def groupes(legs):
             entree = resultat.setdefault(g["abrev"], {"periodes": {}})
             entree.update(nom=g["nom"], c=couleur, t=couleur_texte(couleur))
             entree["periodes"][leg] = {"deputes": g["deputes"], "position": g.get("position")}
+            if g.get("fin"):   # groupe dissous avant la fin de la législature : sièges à son dernier vote, et date de fin
+                entree["periodes"][leg]["fin"] = g["fin"]
     return resultat
 
 
-def publier_legislature(leg, redaction, sigles):
+def publier_legislature(leg, redaction, sigles, ids_pris):
     validation = {v["date"]: v["statut"] for v in lire_json(VALIDATION / f"niches-{leg}.json", [])}
     niches = [n for n in lire_json(BASE / leg / "niches.json") if validation.get(n["date"]) in NICHES_PUBLIEES]
     dates_niches = {n["date"] for n in niches}
     scrutins = lire_json(BASE / leg / "scrutins.json")
-    textes = []
+    textes, ids_niche = [], {}
     for t in lire_json(BASE / leg / "textes.json"):
         if not t["scrutin"] or (t["origine"] == "niche" and t["date"] not in dates_niches):
             continue
         dossier = t.get("dossier") or t["id"]
         r = redaction.get(dossier, {})
         a = t["auteur"]
-        entree = {"id": t["id"], "type": t["origine"], "dossier": dossier, "leg": leg,
+        # Un même dossier peut être voté dans les niches de deux législatures : la seconde est « dossier@date »
+        id_ = t["id"] if t["id"] not in ids_pris else f"{dossier}@{t['date']}"
+        ids_pris.add(id_)
+        if t["origine"] == "niche":
+            ids_niche[(dossier, t["date"])] = id_
+        entree = {"id": id_, "type": t["origine"], "dossier": dossier, "leg": leg,
                   "legDossier": re.search(r"L(\d+)N", dossier).group(1),
                   "date": t["date"], "titre": r.get("titreClair") or titre_lisible(t["titre"]), "titreOfficiel": t["titre"],
                   "lecture": t.get("lecture"), "theme": r.get("theme") or "Autres sujets", "sujetNiveau": r.get("sujetNiveau"),
@@ -141,14 +153,13 @@ def publier_legislature(leg, redaction, sigles):
             entree[champ] = insecables(entree[champ])
         entree.update(vote(scrutins[t["scrutin"]]))
         textes.append(entree)
-    ids = {t["id"] for t in textes}
 
     sortie_niches = []
     for n in niches:
         programme = []
         for l in n["programme"]:
-            if l["dossier"] in ids and l["statut"] in ("adopte", "rejete"):
-                programme.append({"id": l["dossier"]})
+            if (l["dossier"], n["date"]) in ids_niche and l["statut"] in ("adopte", "rejete"):
+                programme.append({"id": ids_niche[(l["dossier"], n["date"])]})
                 continue
             ligne = {"titre": titre_lisible(l["titre"]), "dossier": l["dossier"]}
             if l["statut"] in ("adopte", "rejete"):
@@ -165,14 +176,15 @@ def publier_legislature(leg, redaction, sigles):
 
 
 def main():
-    legs = sys.argv[1:] or ["15", "16", "17"]
+    # --sans-page : ne pas mettre à jour l'empreinte de donnees.js dans site/index.html
+    legs = [a for a in sys.argv[1:] if not a.startswith("--")] or ["15", "16", "17"]
     redaction = {}
     for fichier in sorted((RACINE / "donnees" / "redaction").glob("*.json")):
         redaction.update(lire_json(fichier))
     sigles = groupes(legs)
-    niches, textes = [], []
-    for leg in legs:
-        n, t = publier_legislature(leg, redaction, {g for g, x in sigles.items() if leg in x["periodes"]})
+    niches, textes, ids_pris = [], [], set()
+    for leg in sorted(legs):
+        n, t = publier_legislature(leg, redaction, {g for g, x in sigles.items() if leg in x["periodes"]}, ids_pris)
         niches += n
         textes += t
         print(f"{leg}e législature : {len(n)} niches publiées, {len(t)} textes.")
@@ -186,7 +198,8 @@ def main():
     # La page charge donnees.js?v=<empreinte> : un navigateur ne garde pas en cache d'anciennes données
     empreinte = hashlib.sha1((SITE / "donnees.js").read_bytes()).hexdigest()[:10]
     page = SITE / "index.html"
-    page.write_text(re.sub(r'<script src="donnees\.js[^"]*">', f'<script src="donnees.js?v={empreinte}">', page.read_text(encoding="utf-8")), encoding="utf-8")
+    if "--sans-page" not in sys.argv:
+        page.write_text(re.sub(r'<script src="donnees\.js[^"]*">', f'<script src="donnees.js?v={empreinte}">', page.read_text(encoding="utf-8")), encoding="utf-8")
     niveaux = {k: sum(1 for t in textes if t["niveau"] == k) for k in ("relu", "ia", "a_venir")}
     print(f"Résumés : {niveaux['relu']} relus, {niveaux['ia']} rédigés par IA, {niveaux['a_venir']} à venir.")
     print(f"Écrit : site/donnees.js ({(SITE / 'donnees.js').stat().st_size // 1000} Ko)")

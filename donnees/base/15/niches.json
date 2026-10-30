@@ -13,8 +13,8 @@
     "inverse": true
    },
    {
-    "titre": "Maintien des compétences \"eau\" et \"assainissement\" pour les communautés de communes et d'agglomération",
-    "dossier": "DLR5L15N35891",
+    "titre": "Suite de la discussion de la proposition de loi, adoptée par le Sénat, pour le maintien des compétences « eau » et « assainissement » dans les compétences optionnelles des communautés de communes et des communautés d'agglomération",
+    "dossier": "DLR5L14N35595",
     "statut": "renvoye",
     "scrutin": "VTANR5L15V144",
     "inverse": true
@@ -72,8 +72,8 @@
     "inverse": true
    },
    {
-    "titre": "Agence nationale de la cohésion des territoires",
-    "dossier": "DLR5L15N36915",
+    "titre": "Agence nationale pour la cohésion des territoires",
+    "dossier": "DLR5L15N36038",
     "statut": "renvoye",
     "scrutin": null,
     "inverse": false,
@@ -123,13 +123,6 @@
     "inverse": false
    },
    {
-    "titre": "Lutter contre la désertification médicale",
-    "dossier": "DLR5L15N44325",
-    "statut": "renvoye",
-    "scrutin": "VTANR5L15V358",
-    "inverse": true
-   },
-   {
     "titre": "proposition de loi, modifiée par le Sénat, relative aux modalités de dépôt de candidature aux élections",
     "dossier": "DLR5L14N34301",
     "statut": "commence",
@@ -152,15 +145,15 @@
     "inverse": false
    },
    {
-    "titre": "Droit à l'eau",
-    "dossier": "DLR5L15N40711",
+    "titre": "Accès à l'eau, droit inaliénable",
+    "dossier": "DLR5L15N36226",
     "statut": "rejete",
     "scrutin": "VTANR5L15V382",
     "inverse": true
    },
    {
-    "titre": "Récépissé dans le cadre d'un contrôle d'identité",
-    "dossier": "DLR5L15N40261",
+    "titre": "Mise en place d'un récépissé dans le cadre d'un contrôle d'identité",
+    "dossier": "DLR5L15N36231",
     "statut": "rejete",
     "scrutin": "VTANR5L15V383",
     "inverse": true
@@ -252,8 +245,8 @@
     "inverse": true
    },
    {
-    "titre": "Accueil des gens du voyage et installations illicites",
-    "dossier": "DLR5L15N36111",
+    "titre": "Accueil des gens du voyage et lutte contre les installations illicites",
+    "dossier": "DLR5L15N36109",
     "statut": "commence",
     "scrutin": null,
     "inverse": false
@@ -354,8 +347,8 @@
     "inverse": true
    },
    {
-    "titre": "Accueil des gens du voyage et installations illicites",
-    "dossier": "DLR5L15N36111",
+    "titre": "Accueil des gens du voyage et lutte contre les installations illicites",
+    "dossier": "DLR5L15N36109",
     "statut": "adopte",
     "scrutin": null,
     "inverse": false,
@@ -520,8 +513,8 @@
     "inverse": false
    },
    {
-    "titre": "Fonds d’indemnisation des victimes de la covid-19",
-    "dossier": "DLR5L15N41244",
+    "titre": "proposition de loi, adoptée par le Sénat, portant création d'un fonds d'indemnisation des victimes des produits phytopharmaceutiques",
+    "dossier": "DLR5L14N36252",
     "statut": "commence",
     "scrutin": null,
     "inverse": false
@@ -533,13 +526,6 @@
     "scrutin": null,
     "inverse": false,
     "corrige": true
-   },
-   {
-    "titre": "proposition de loi, adoptée par le Sénat, portant création d'un fonds d'indemnisation des victimes des produits phytopharmaceutiques",
-    "dossier": "DLR5L14N36252",
-    "statut": "commence",
-    "scrutin": null,
-    "inverse": false
    }
   ]
  },
@@ -630,13 +616,6 @@
     "inverse": false
    },
    {
-    "titre": "Impôt de solidarité écologique sur la fortune",
-    "dossier": "DLR5L15N37209",
-    "statut": "rejete",
-    "scrutin": "VTANR5L15V1716",
-    "inverse": true
-   },
-   {
     "titre": "proposition de loi visant à augmenter le salaire minimum interprofessionnel de croissance et les salaires en accompagnant les très petites entreprises et les petites et moyennes entreprises",
     "dossier": null,
     "statut": "pas_examine",
@@ -646,9 +625,9 @@
    {
     "titre": "Base de calcul de l'allocation aux adultes handicapés",
     "dossier": "DLR5L15N36912",
-    "statut": "rejete",
-    "scrutin": "VTANR5L15V1718",
-    "inverse": true
+    "statut": "commence",
+    "scrutin": null,
+    "inverse": false
    }
   ]
  },
@@ -680,8 +659,8 @@
     "inverse": true
    },
    {
-    "titre": "proposition de loi constitutionnelle visant à lutter contre la sur-réglementation",
-    "dossier": null,
+    "titre": "Sur-réglementation",
+    "dossier": "DLR5L15N35856",
     "statut": "rejete",
     "scrutin": null,
     "inverse": false,
@@ -866,13 +845,6 @@
     "dossier": "DLR5L15N37698",
     "statut": "adopte",
     "scrutin": "VTANR5L15V2336",
-    "inverse": false
-   },
-   {
-    "titre": "la proposition de loi, en deuxième lecture, visant à améliorer la trésorerie des associations",
-    "dossier": null,
-    "statut": "commence",
-    "scrutin": null,
     "inverse": false
    }
   ]
@@ -1183,9 +1155,9 @@
     "inverse": false
    },
    {
-    "titre": "Covid-19 : subventions aux PME et artisans du tourisme",
-    "dossier": "DLR5L15N39735",
-    "statut": "rejete",
+    "titre": "Subventions aux PME, aux petites et moyennes industries et aux artisans fragilisés par la crise du Covid-19",
+    "dossier": "DLR5L15N39327",
+    "statut": "commence",
     "scrutin": null,
     "inverse": false
    },
@@ -1199,6 +1171,13 @@
    {
     "titre": "Annulation des charges des entreprises le temps de la crise",
     "dossier": "DLR5L15N39751",
+    "statut": "rejete",
+    "scrutin": null,
+    "inverse": false
+   },
+   {
+    "titre": "Covid-19 : subventions aux PME et artisans du tourisme",
+    "dossier": "DLR5L15N39735",
     "statut": "rejete",
     "scrutin": null,
     "inverse": false
@@ -1260,13 +1239,6 @@
     "statut": "rejete",
     "scrutin": "VTANR5L15V2762",
     "inverse": false
-   },
-   {
-    "titre": "Etablissements d'hébergement pour personnes âgées dépendantes (EHPAD)",
-    "dossier": "DLR5L15N36463",
-    "statut": "pas_examine",
-    "scrutin": null,
-    "inverse": false
    }
   ]
  },
@@ -1294,7 +1266,7 @@
     "titre": "Versement de la prime de naissance avant la naissance",
     "dossier": "DLR5L15N36771",
     "statut": "adopte",
-    "scrutin": "VTANR5L15V2769",
+    "scrutin": null,
     "inverse": false
    },
    {
@@ -1320,8 +1292,8 @@
   "votesDuJour": 9,
   "programme": [
    {
-    "titre": "Publicité et transition écologique",
-    "dossier": "DLR5L15N40304",
+    "titre": "Publicité au service de la transition écologique et de la sobriété",
+    "dossier": "DLR5L15N40148",
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -1334,8 +1306,8 @@
     "inverse": false
    },
    {
-    "titre": "Droit de vote dès seize ans",
-    "dossier": "DLR5L15N40384",
+    "titre": "proposition de loi instaurant le vote dès seize ans et l'inscription automatique sur les listes électorales",
+    "dossier": null,
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -1362,8 +1334,8 @@
     "inverse": false
    },
    {
-    "titre": "Loi d'urgence",
-    "dossier": "DLR5L15N39209",
+    "titre": "Moratoire sur l’implantation d'entrepôts logistiques par les opérateurs du commerce en ligne",
+    "dossier": "DLR5L15N39823",
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -1534,7 +1506,7 @@
    },
    {
     "titre": "Interdiction progressive des additifs nitrés dans les produits de charcuterie",
-    "dossier": "DLR5L15N44511",
+    "dossier": "DLR5L15N41110",
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -1632,15 +1604,15 @@
     "inverse": false
    },
    {
-    "titre": "proposition de loi constitutionnelle visant à établir un meilleur équilibre entre pouvoirs constitutionnels",
-    "dossier": null,
+    "titre": "Meilleur équilibre entre pouvoirs constitutionnels",
+    "dossier": "DLR5L15N40793",
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
    },
    {
-    "titre": "proposition de loi organique visant à modifier le régime indemnitaire des membres du Conseil constitutionnel",
-    "dossier": null,
+    "titre": "Régime indemnitaire des membres du Conseil constitutionnel",
+    "dossier": "DLR5L15N41246",
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -1671,7 +1643,7 @@
     "titre": "Musées d’Orsay et de l’Orangerie",
     "dossier": "DLR5L15N41064",
     "statut": "adopte",
-    "scrutin": "VTANR5L15V3640",
+    "scrutin": "VTANR5L15V3508",
     "inverse": false
    },
    {
@@ -1682,8 +1654,8 @@
     "inverse": false
    },
    {
-    "titre": "Contrôles d'identité des passagers des transports collectifs routiers",
-    "dossier": "DLR5L15N37473",
+    "titre": "Contrôles d'identité",
+    "dossier": "DLR5L15N41629",
     "statut": "retire",
     "scrutin": null,
     "inverse": false,
@@ -1747,8 +1719,8 @@
     "inverse": false
    },
    {
-    "titre": "proposition de loi organique limitant le recours aux dispositions fiscales de portée rétroactive",
-    "dossier": null,
+    "titre": "Limitation des dispositions fiscales de portée rétroactive",
+    "dossier": "DLR5L15N36115",
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -1761,8 +1733,8 @@
     "inverse": false
    },
    {
-    "titre": "Reconnaissance du vote blanc",
-    "dossier": "DLR5L15N38457",
+    "titre": "proposition de loi constitutionnelle relative à la reconnaissance du vote blanc pour l’élection présidentielle",
+    "dossier": null,
     "statut": "pas_examine",
     "scrutin": null,
     "inverse": false
@@ -1875,8 +1847,8 @@
     "inverse": false
    },
    {
-    "titre": "Proposition de loi pour des mesures d'urgence pour les intermittents de l'emploi",
-    "dossier": "DLR5L15N42367",
+    "titre": "Proposition de loi pour des mesures d’urgence en faveur des intermittents de l’emploi",
+    "dossier": "DLR5L15N42335",
     "statut": "commence",
     "scrutin": null,
     "inverse": false
@@ -2366,8 +2338,8 @@
     "inverse": false
    },
    {
-    "titre": "Reconnaissance du vote blanc",
-    "dossier": "DLR5L15N38457",
+    "titre": "Reconnaissance du vote blanc pour l’élection présidentielle",
+    "dossier": "DLR5L15N41732",
     "statut": "commence",
     "scrutin": null,
     "inverse": false
