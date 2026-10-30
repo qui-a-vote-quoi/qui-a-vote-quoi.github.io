@@ -192,7 +192,9 @@ a.chip:hover { border-color: var(--encre); }
 .seance-sujets { display: none; }
 .en-seance .seance-sujets { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0 0 14px; font-size: 15px; color: var(--muted); }
 /* Séance en cours : une seule colonne, rien d'autre que le texte ; le panneau des groupes revient à la fin */
-.en-cours .bilan > div > .note, .en-cours #revel { display: none; }
+.en-cours .bilan > div > .note, .en-cours #revel, .en-seance #historique { display: none; }
+.historique { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+.historique li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; }
 .en-seance .bilan { grid-template-columns: minmax(0, 760px); justify-content: center; }
 /* En séance, le titre de la page reste lu par les lecteurs d'écran mais laisse sa place au texte */
 .en-cours h1 { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -936,9 +938,10 @@ const views = {
           <h2 class="sr-only">Les textes à voter</h2>
           <p class="sr-only" id="nb-bilan" aria-live="polite"></p>
           <div class="list" id="questions"></div>
+          <div id="historique"></div>
           <p class="note">Seuls les textes déjà résumés sont proposés. Certains résumés ont été rédigés par IA et pas encore vérifiés par un humain : c'est indiqué. L'abstention n'entre pas dans le calcul des groupes proches de vous.</p>
           <section id="revel"></section>
-          <p class="note">Calcul : part des textes votés où le groupe a voté comme vous. Quand un groupe s'est abstenu, il n'a voté ni comme vous ni contre vous ; un groupe absent n'est pas compté. « Je ne sais pas » n'entre pas dans le calcul. Un groupe n'est classé que s'il a voté sur au moins la moitié des textes que vous avez votés. <a href="#bilan" id="reset">Effacer mes réponses</a></p>
+          <p class="note">Calcul : part des textes votés où le groupe a voté comme vous. Quand un groupe s'est abstenu, il n'a voté ni comme vous ni contre vous ; un groupe absent n'est pas compté. « Je ne sais pas » n'entre pas dans le calcul. Un groupe n'est classé que s'il a voté sur au moins la moitié des textes que vous avez votés. <a href="#bilan" id="reset">Effacer mes réponses et mes séances</a></p>
         </div>
         <p class="sr-only" id="annonce" aria-live="polite"></p>
       </div>`;
@@ -982,6 +985,7 @@ function majQuestions() {
   const tous = $("#tous-sujets"); if (tous) tous.textContent = document.querySelectorAll("input[name=sujet]:not(:checked)").length ? "Tout cocher" : "Tout décocher";
   // Durée estimée : environ 1 min 30 pour un texte avec son débat, 40 secondes sans
   const k = Math.min(TAILLE_SEANCE, restants.length), moy = restants.length ? restants.reduce((a, t) => a + (t.debat ? 1.5 : 0.7), 0) / restants.length : 1;
+  $("#historique").innerHTML = historique();
   // Annoncé aux lecteurs d'écran à chaque case cochée (le bandeau, lui, est redessiné)
   $("#nb-bilan").textContent = choisis ? `${pluriel(restants.length, "texte")} à voter, séance d'environ ${Math.max(1, Math.round(k * moy))} minutes.` : "";
   $("#questions").innerHTML = !choisis
@@ -1000,12 +1004,12 @@ function afficherSeance() {
     <button type="button" class="lien-bouton" id="changer-sujets">Changer de sujets</button>`;
   const precedent = seance.i > 0 ? `<button type="button" class="lien-bouton" id="precedent">← Texte précédent</button>` : "";
   if (seance.i >= n) {   // fin de séance : le récit de la journée
-    const rep = load(), ts = seance.ids.filter(id => id in rep).map(byId), passes = n - ts.length, adoptes = ts.filter(t => totals(t).adopte).length, serres = ts.filter(t => totals(t).ecart <= ECART_SERRE).length;
+    const rep = seance.votes || load(), ts = seance.ids.filter(id => id in rep).map(byId), passes = n - ts.length, adoptes = ts.filter(t => totals(t).adopte).length, serres = ts.filter(t => totals(t).ecart <= ECART_SERRE).length;
     $("#nb-bilan").textContent = "";
-    $("#questions").innerHTML = `<div class="siege"><h2 tabindex="-1" id="fin-seance">Séance terminée</h2>
+    $("#questions").innerHTML = `<div class="siege"><h2 tabindex="-1" id="fin-seance">${seance.archive ? `Votre séance du ${fdateCourte(seance.archive)}` : "Séance terminée"}</h2>
       <p>Vous avez voté sur ${pluriel(ts.length, "texte")}${passes ? ` (et passé ${passes})` : ""}. Les députés en ont adopté ${adoptes} et rejeté ${ts.length - adoptes}.${serres ? ` ${serres > 1 ? `${serres} votes se sont joués` : "Un vote s'est joué"} à ${ECART_SERRE} voix près ou moins : quelques sièges ont fait la différence.` : ""}</p>
       <section class="resultats" id="fin-resultats" aria-label="Les groupes qui ont voté comme vous"></section>
-      <p class="row"><button type="button" class="plus principal" id="autre-seance">Une autre séance →</button>${precedent}</p></div>`;
+      <p class="row"><button type="button" class="plus principal" id="autre-seance">Une autre séance →</button>${seance.archive ? "" : precedent}</p></div>`;
     return;
   }
   const t = byId(seance.ids[seance.i]), v = load()[t.id];
@@ -1089,9 +1093,27 @@ function commencerSeance() {
   allerA(0);
 }
 // Aller à un texte de la séance : il commence par sa présentation ; un texte déjà voté montre son résultat.
+// Historique : les 10 dernières séances terminées, sur l'appareil seulement (jetable, effacé avec les réponses)
+const lireSeances = () => lirePref("seances", []);
+function enregistrerSeance() {
+  const rep = load(), votes = Object.fromEntries(seance.ids.filter(id => id in rep).map(id => [id, rep[id]]));
+  if (seance.archive || seance.enregistree || !Object.keys(votes).length) return;
+  seance.enregistree = true;
+  ecrirePref("seances", [{ date: new Date().toISOString().slice(0, 10), ids: seance.ids, votes }, ...lireSeances()].slice(0, 10));
+}
+function historique() {
+  const ss = lireSeances();
+  if (!ss.length) return "";
+  return `<details class="args-mini"><summary>Vos séances précédentes (${ss.length})</summary><ul class="historique">${ss.map((x, k) => {
+    const { answered, scores } = scoresBilan(x.votes), top = answered.length && scores[0].classe && scores[0].pct > 0 ? scores[0] : null;
+    return `<li><span>${fdateCourte(x.date)} · ${pluriel(Object.keys(x.votes).length, "vote")}${top ? ` · plus proche : ${top.g} (${top.pct} %)` : ""}</span>
+      <button type="button" class="lien-bouton" data-revoir="${k}">Revoir</button></li>`;
+  }).join("")}</ul></details>`;
+}
 function allerA(i) {
   const t = byId(seance.ids[i]);
   Object.assign(seance, { i, revele: !!t && t.id in load(), etape: "texte", details: false, repl: 0 });
+  if (i >= seance.ids.length) enregistrerSeance();
   majQuestions();
   ($("#revelation") || $("#q-titre") || $("#fin-seance"))?.focus();
 }
@@ -1124,7 +1146,7 @@ function scoresBilan(rep) {
 // Les votes restent gardés sur l'appareil, seulement pour ne pas reproposer un texte déjà voté.
 const seanceFinie = () => !!seance && seance.i >= seance.ids.length;
 function repSeance() {
-  const rep = load();
+  const rep = seance?.votes || load();
   return seanceFinie() ? Object.fromEntries(seance.ids.filter(id => id in rep).map(id => [id, rep[id]])) : {};
 }
 // Met à jour le panneau et les réponses sans redessiner la page : rien ne bouge sous le doigt
@@ -1213,7 +1235,12 @@ app.addEventListener("click", e => {
     if (location.hash.startsWith("#sujet/")) { location.hash = "sujets"; return; }
     render(); $("#q").focus(); return;
   }
-  if (e.target.id === "reset") { e.preventDefault(); save({}); majBilan(); }
+  if (e.target.dataset.revoir) {
+    const x = lireSeances()[+e.target.dataset.revoir];
+    seance = { ids: x.ids, votes: x.votes, archive: x.date, i: x.ids.length };
+    majQuestions(); $("#fin-seance")?.focus(); return;
+  }
+  if (e.target.id === "reset") { e.preventDefault(); save({}); ecrirePref("seances", []); seance = null; majQuestions(); }
 });
 // Formulaires : filtres (Les textes), sujets et période (À vous de voter)
 app.addEventListener("input", e => {
