@@ -347,8 +347,16 @@ a.plus { text-decoration: none; display: inline-flex; align-items: center; }
 .parcours li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; padding: 10px 14px; background: var(--surface); border: var(--bord); border-radius: var(--rayon-s); font-variant-numeric: tabular-nums; }
 .parcours li[aria-current] { border-color: var(--fg); }
 .parcours .tag { margin-left: auto; }
-.parcours .carte-date, .table-parcours .carte-date { margin-left: 0; color: var(--muted); }
-.table-parcours td, .table-parcours th[scope=row] { vertical-align: top; white-space: nowrap; }
+.parcours .carte-date { margin-left: 0; color: var(--muted); }
+/* Une ligne par groupe : son sigle, puis ce qui a changé (mouvements) ou ses positions et une jauge par lecture (evol) */
+.mouvements, .evol { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 10px; }
+.mouvements li, .evol li, .evol-tete { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 4px 12px; align-items: center; }
+.mouvements .chip, .evol .chip { justify-self: start; }
+.evol .evol-barres { grid-column: 2; }
+.evol-barres { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 6px; }
+.evol-tete { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.evol-tete .evol-barres span { text-align: center; }
+.evol li { padding-bottom: 10px; border-bottom: 1px solid var(--line); }
 table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
 .tablewrap { overflow-x: auto; background: var(--surface); border: var(--bord); border-radius: var(--rayon); }
 th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); font-size: 15px; }
@@ -627,21 +635,27 @@ function parcoursTexte(t) {
   const mouvements = gs.map(g => { const a = vote(premier, g), b = vote(dernier, g);
       return a && b && { g, a, b, d: Math.abs(b.p - a.p) + Math.abs(b.c - a.c) }; })
     .filter(m => m && m.d >= 4).sort((x, y) => y.d - x.d).slice(0, 4);
-  const ecart = x => `${x.adopte ? "+" : "−"}${x.ecart}`;
+  const ecart = x => `${x.adopte ? "+" : "−"}${x.ecart}`, moisCourt = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { month: "short", year: "2-digit" });
+  // « 7 « pour » de moins, 5 « contre » de plus » : seulement ce qui a changé, toujours dans le même ordre
+  const ecartVoix = (n, mot) => n ? `${Math.abs(n)} « ${mot} » de ${n > 0 ? "plus" : "moins"}` : "";
   return `<h2>Le parcours du texte</h2>
     <p class="meta">Avant d'être définitivement adopté ou rejeté, un texte fait des allers-retours entre l'Assemblée et le Sénat, qui peuvent le modifier. Les députés l'ont voté ${vs.length} fois. Le résumé ci-dessus porte sur le texte dans son ensemble, pas sur chaque version.</p>
     <ol class="parcours">${vs.map(v => { const x = totals(v);
       return `<li${v === t ? ' aria-current="page"' : ""}><span class="carte-date">${fdateCourte(v.date)}</span>
         <span>${v === t ? `<b>${lecture(v) || "vote"}</b> <span class="meta">(ce vote)</span>` : `<a href="#texte/${v.id}">${lecture(v) || "vote"}</a>`}</span>
         <span class="decompte">${x.pour} pour · ${x.contre} contre</span>${issueTag(v)}</li>`; }).join("")}</ol>
-    <p>Écart entre « pour » et « contre » : <b>${ecart(s1)}</b> voix ${lecture(premier) ? `en ${lecture(premier)}` : "au premier vote"}, <b>${ecart(s2)}</b> ${lecture(dernier) ? `en ${lecture(dernier)}` : "au dernier vote"}.${mouvements.length
-      ? ` Les groupes dont les voix ont le plus bougé : ${mouvements.map(m => `${chip(m.g)} ${m.a.p} → ${m.b.p} pour, ${m.a.c} → ${m.b.c} contre`).join(" ; ")}.` : ""}</p>
-    <div class="tablewrap" tabindex="0" role="region" aria-label="Vote de chaque groupe à chaque lecture"><table class="table-parcours">
-      <thead><tr><th scope="col">Groupe</th>${vs.map(v => `<th scope="col">${lecture(v) || "vote"}<br><span class="carte-date">${fdateCourte(v.date)}</span></th>`).join("")}</tr></thead>
-      <tbody>${gs.map(g => `<tr><th scope="row">${chip(g)}</th>${vs.map(v => { const x = vote(v, g); if (!x) return `<td class="meta">—</td>`;
-        const st = stance(v, v.groupes.find(r => r.g === g));
-        return `<td><span class="pos ${st}">${LIB[st]}</span><br><span class="meta">${x.p} pour · ${x.c} contre · ${x.a}&nbsp;abst.</span></td>`; }).join("")}</tr>`).join("")}</tbody>
-    </table></div>
+    <p>Entre le premier vote (${fdateCourte(premier.date)}) et le dernier (${fdateCourte(dernier.date)}), l'écart entre « pour » et « contre » est passé de <b>${ecart(s1)}</b> à <b>${ecart(s2)}</b> voix.${mouvements.length ? " Les groupes dont les voix ont le plus bougé :" : ""}</p>
+    ${mouvements.length ? `<ul class="mouvements">${mouvements.map(m => `<li>${chip(m.g)}<span>${[ecartVoix(m.b.p - m.a.p, "pour"), ecartVoix(m.b.c - m.a.c, "contre")].filter(Boolean).join(", ")}</span></li>`).join("")}</ul>` : ""}
+    <h3 class="eyebrow" style="margin:20px 0 8px">Le vote de chaque groupe, lecture après lecture</h3>
+    <div class="evol-tete" aria-hidden="true"><span></span><span class="evol-barres">${vs.map(v => `<span>${moisCourt(v.date)}</span>`).join("")}</span></div>
+    <ul class="evol">${gs.map(g => {
+      // Ses positions successives, sans répéter une position inchangée : « Pour », « Pour → Contre »
+      const pos = vs.map(v => { const r = v.groupes.find(x => x.g === g); return r && stance(v, r); }).filter(Boolean).filter((p, k, a) => p !== a[k - 1]);
+      return `<li>${chip(g)}<span class="evol-pos">${pos.length > 1 ? pos.map(p => `<span class="pos ${p}">${LIB[p]}</span>`).join(" → ") : `<span class="pos ${pos[0]}">${LIB[pos[0]]}</span> à chaque lecture`}</span>
+        <span class="evol-barres">${vs.map(v => { const x = vote(v, g); if (!x) return `<span><span class="sr-only">${lecture(v) || "vote"} : groupe absent</span></span>`;
+          const detail = `${lecture(v) || "vote"} (${fdateCourte(v.date)}) : ${x.p} pour, ${x.c} contre, ${x.a} abstentions, ${x.n} n'ont pas voté`;
+          return `<span title="${detail}"><span class="sr-only">${detail}</span>${bar(x.p, x.c, x.a, x.n)}</span>`; }).join("")}</span></li>`; }).join("")}</ul>
+    ${legende}
     <p class="note">Position du groupe : le choix le plus fréquent parmi ses députés qui ont voté. Les non-inscrits n'ont pas de position commune.</p>`;
 }
 // Les arguments des deux camps (voir CHARTE-NEUTRALITE.md) : même forme des deux côtés, sans couleur de camp
