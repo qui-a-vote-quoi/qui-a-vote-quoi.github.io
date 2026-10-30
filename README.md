@@ -50,4 +50,9 @@ En été (fin de la session ordinaire en juin), il y a peu ou pas de séances : 
 
 ## Source des données
 
-Open data de l'Assemblée nationale : https://data.assemblee-nationale.fr (licence ouverte Etalab).
+Open data de l'Assemblée nationale : https://data.assemblee-nationale.fr (Licence Ouverte Etalab).
+
+## Licences
+
+- **Le code** (chaîne de traitement, site) : [AGPL-3.0](LICENSE). Toute version modifiée mise en ligne doit publier son code : une copie du site ne peut pas changer discrètement les calculs ou la présentation des votes.
+- **Les données et les textes** (base JSON, résumés, arguments) : [Licence Ouverte 2.0](LICENCE-DONNEES.md), la licence des données de l'Assemblée. Réutilisation libre, en citant la source.
