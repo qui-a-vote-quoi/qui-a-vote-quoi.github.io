@@ -364,14 +364,18 @@
  },
  "DLR5L17N50434": {
   "theme": "Logement",
-  "titreClair": null,
-  "enClair": null,
-  "concerne": null,
-  "arguments": null,
-  "niveau": "a_venir",
   "sujetNiveau": "ia",
-  "mesures": [],
-  "mesuresNiveau": null,
+  "titreClair": "Supprimer l'interdiction de louer les logements mal classés au DPE",
+  "enClair": "D'après les débats en séance, l'article unique supprimerait le calendrier fixé par la loi « climat et résilience » de 2021, qui interdit progressivement de louer les logements les moins bien classés au diagnostic de performance énergétique (DPE) : G, puis F et E, à partir de 2025.",
+  "concerne": "Propriétaires bailleurs et locataires de logements classés E, F ou G.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PIONANR5L17B0278",
+  "remarque": "Seule la page de garde du texte déposé est disponible : résumé établi d'après le compte rendu de la séance du 31/10/2024 (présentation de la ministre et du rapporteur), à vérifier sur le texte.",
+  "mesures": [
+   "contrainte_moins"
+  ],
+  "mesuresNiveau": "ia",
   "debat": {
    "date": "2024-10-31",
    "comptesRendus": [
@@ -3476,15 +3480,17 @@
  "DLR5L17N52087": {
   "theme": "Institutions et État",
   "sujetNiveau": "ia",
-  "titreClair": null,
-  "enClair": null,
-  "concerne": null,
+  "titreClair": "Supprimer l'exécution provisoire des peines d'inéligibilité",
+  "enClair": "D'après les débats en séance, l'article unique empêcherait le juge pénal d'appliquer immédiatement une peine d'inéligibilité (exécution provisoire) : la peine ne prendrait effet qu'une fois la condamnation définitive. Aujourd'hui, l'exécution provisoire rend une personne inéligible dès le jugement de première instance et entraîne la perte de ses mandats locaux.",
+  "concerne": "Élus et candidats condamnés à une peine d'inéligibilité.",
   "arguments": null,
-  "niveau": "a_venir",
+  "niveau": "ia",
   "source": "PIONANR5L17B1415",
-  "remarque": "L’extrait ne contient que la page de garde : aucun article ni exposé, résumé impossible.",
-  "mesures": [],
-  "mesuresNiveau": null,
+  "remarque": "Seule la page de garde du texte déposé est disponible : résumé établi d'après le compte rendu de la séance du 26/06/2025 (présentation de la rapporteure et du ministre), à vérifier sur le texte.",
+  "mesures": [
+   "sanction_moins"
+  ],
+  "mesuresNiveau": "ia",
   "debat": {
    "date": "2025-06-26",
    "comptesRendus": [

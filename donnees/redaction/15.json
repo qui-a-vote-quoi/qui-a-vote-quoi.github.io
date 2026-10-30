@@ -220,8 +220,21 @@
   }
  },
  "DLR5L15N35895": {
-  "mesures": [],
-  "mesuresNiveau": null
+  "theme": "Agriculture",
+  "sujetNiveau": "ia",
+  "titreClair": "Alléger normes, contrôles et fiscalité des exploitations agricoles",
+  "enClair": "Prévoit d'abroger deux normes agricoles pour toute nouvelle norme, de limiter les contrôles des exploitations à un par an avec préavis de 15 jours, d'imposer 20 % puis 40 % de produits durables dans les cantines (2020, 2022) et de présumer abusif un prix de vente inférieur aux références de l'Observatoire des prix. Il baisse aussi les droits sur les transmissions de parts de groupements agricoles.",
+  "concerne": "Agriculteurs, transformateurs, distributeurs et cantines.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PIONANR5L15B0150",
+  "remarque": "Texte déposé de 22 articles, résumé dans ses principales mesures.",
+  "mesures": [
+   "contrainte_moins",
+   "impot_moins",
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L15N35929": {
   "theme": "Environnement et énergie",
@@ -1922,8 +1935,19 @@
   "remarque": "Le texte semble inclure des ajouts postérieurs au dépôt ('nouveau')."
  },
  "DLR5L15N36915": {
-  "mesures": [],
-  "mesuresNiveau": null,
+  "theme": "Institutions et État",
+  "sujetNiveau": "ia",
+  "titreClair": "Créer l'Agence nationale de la cohésion des territoires",
+  "enClair": "Prévoit de créer un établissement public de l'État chargé d'aider les collectivités à mener leurs projets, en priorité dans les territoires en difficulté démographique, économique ou d'accès aux services publics. L'agence reprendrait le plan France très haut débit, la rénovation des espaces commerciaux et une partie des agents du Commissariat général à l'égalité des territoires et de l'Agence du numérique ; le préfet en serait le délégué dans chaque département.",
+  "concerne": "Collectivités territoriales, en particulier rurales et en difficulté, et agents des organismes regroupés.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PIONANR5L15B1393",
+  "remarque": "Texte adopté par le Sénat en première lecture ; le vote porte sur la nouvelle lecture, dont le texte peut différer.",
+  "mesures": [
+   "institutions"
+  ],
+  "mesuresNiveau": "ia",
   "debat": {
    "date": "2019-05-21",
    "comptesRendus": [
@@ -2798,13 +2822,13 @@
  "DLR5L15N37170": {
   "theme": "Impôts et budget",
   "sujetNiveau": "ia",
-  "titreClair": null,
-  "enClair": null,
-  "concerne": null,
+  "titreClair": "Rétablir l'ISF et ajouter des tranches à l'impôt sur le revenu",
+  "enClair": "Prévoit de rétablir l'impôt de solidarité sur la fortune tel qu'il existait avant 2018, dû au-delà de 1,3 million d'euros de patrimoine, à la place de l'impôt sur la fortune immobilière. Le barème de l'impôt sur le revenu passerait de 5 à 9 tranches, avec des taux de 8 % à 50 % au-delà de 156 243 euros par part.",
+  "concerne": "Ménages au patrimoine supérieur à 1,3 million d'euros et contribuables à l'impôt sur le revenu.",
   "arguments": null,
-  "niveau": "a_venir",
+  "niveau": "ia",
   "source": "PIONANR5L15B1609",
-  "remarque": "Extrait limité à l'exposé des motifs, articles absents : détails (taux, tranches) non vérifiés. Résumé fondé sur le titre.",
+  "remarque": "Texte déposé lu en entier.",
   "mesures": [
    "impot_plus"
   ],
@@ -4011,8 +4035,21 @@
   "mesuresNiveau": "ia"
  },
  "DLR5L15N37659": {
-  "mesures": [],
-  "mesuresNiveau": null,
+  "theme": "Institutions et État",
+  "sujetNiveau": "ia",
+  "titreClair": "Réorganiser les intercommunalités et renforcer les droits des maires",
+  "enClair": "Prévoit un pacte de gouvernance facultatif entre chaque intercommunalité et ses communes, des pouvoirs de police accrus pour le maire, dont une amende administrative jusqu'à 500 €, et de nouveaux droits pour les élus : remboursement des frais de garde, compensé par l'État sous 3 500 habitants, hausse des plafonds d'indemnités des petites communes et assurance de protection juridique obligatoire.",
+  "concerne": "Maires, élus municipaux et intercommunaux, communes et intercommunalités.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PRJLANR5L15B2357",
+  "remarque": "Texte adopté par le Sénat, d'environ 120 articles, résumé dans ses grandes lignes ; le vote porte sur le texte de l'Assemblée, qui peut différer.",
+  "mesures": [
+   "institutions",
+   "aide_plus",
+   "sanction_plus"
+  ],
+  "mesuresNiveau": "ia",
   "debat": {
    "date": "2019-11-26",
    "comptesRendus": [
@@ -4954,13 +4991,13 @@
  "DLR5L15N37919": {
   "theme": "Justice",
   "sujetNiveau": "ia",
-  "titreClair": null,
-  "enClair": null,
-  "concerne": null,
+  "titreClair": "Ratifier le code de la justice pénale des mineurs",
+  "enClair": "Ratifie l'ordonnance du 11 septembre 2019 qui remplace l'ordonnance de 1945 par un code de 277 articles. Prévoit une présomption de non-discernement avant 13 ans, la suppression de l'instruction devant le juge des enfants, un jugement sur la culpabilité dans un délai de 10 jours à 3 mois, puis une sanction 6 à 9 mois plus tard après une période de mise à l'épreuve éducative.",
+  "concerne": "Mineurs poursuivis pénalement, victimes, juges des enfants et services éducatifs.",
   "arguments": null,
-  "niveau": "a_venir",
+  "niveau": "ia",
   "source": "PRJLANR5L15B2367",
-  "remarque": "Article unique de ratification : le contenu du code n'est pas décrit dans l'extrait ; résumé fondé sur le titre et l'article.",
+  "remarque": "Le texte déposé ne compte qu'un article de ratification : le contenu du code est tiré de l'exposé des motifs ; le vote porte sur le texte de la commission mixte paritaire, qui a pu le modifier.",
   "mesures": [
    "institutions"
   ],
@@ -8128,8 +8165,19 @@
   }
  },
  "DLR5L15N40131": {
-  "mesures": [],
-  "mesuresNiveau": null
+  "theme": "Consommation et alimentation",
+  "sujetNiveau": "ia",
+  "titreClair": "Afficher un diagnostic de cybersécurité sur les grandes plateformes",
+  "enClair": "Prévoit que les plateformes en ligne dépassant des seuils fixés par décret, notamment de nombre de connexions, affichent un diagnostic de la sécurisation des données qu'elles hébergent, présenté avec un code couleur et sur la page de connexion. Les critères seraient fixés par arrêté après avis de la CNIL ; un manquement exposerait à l'amende administrative déjà prévue par le code de la consommation.",
+  "concerne": "Grandes plateformes numériques et leurs utilisateurs.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PIONANR5L15B3473",
+  "remarque": "Texte adopté par le Sénat ; le vote porte sur le texte de la commission de l'Assemblée, qui peut différer.",
+  "mesures": [
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia"
  },
  "DLR5L15N40198": {
   "theme": "Environnement et énergie",
@@ -8380,8 +8428,19 @@
   }
  },
  "DLR5L15N40429": {
-  "mesures": [],
-  "mesuresNiveau": null,
+  "theme": "Santé",
+  "sujetNiveau": "ia",
+  "titreClair": "Conditionner les partenariats médicaux étrangers au respect de l'éthique du don d'organes",
+  "enClair": "Prévoit que les hôpitaux et centres de recherche français ne puissent signer de convention avec un établissement non européen, en transplantation d'organes ou en recherche sur le corps humain, qu'après vérification du respect des principes éthiques français (consentement, gratuité du don), notamment par le Comité consultatif national d'éthique. Sans garanties auditables, la signature serait interdite ; l'Agence de la biomédecine surveillerait l'exécution des accords.",
+  "concerne": "Hôpitaux, centres de recherche et universités ayant des partenaires hors d'Europe.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PIONANR5L15B3316",
+  "remarque": "Texte déposé ; le vote porte sur le texte de la commission, qui peut différer.",
+  "mesures": [
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia",
   "debat": {
    "date": "2022-02-04",
    "comptesRendus": [
@@ -8528,8 +8587,19 @@
   "remarque": "Extrait coupé avant les articles : résumé fait à partir de l'exposé des motifs, sans les taux et seuils précis."
  },
  "DLR5L15N40619": {
-  "mesures": [],
-  "mesuresNiveau": null,
+  "theme": "Santé",
+  "sujetNiveau": "ia",
+  "titreClair": "Créer une plateforme de suivi et rembourser à 100 % le covid long",
+  "enClair": "Prévoit une plateforme gratuite (site internet, application) où les patients pourraient se signaler comme souffrant ou ayant souffert de symptômes post-covid. Les malades du covid persistant seraient suivis par leur médecin traitant selon un protocole ou dans des unités de soins post-covid à l'hôpital, mises en place avec l'aide des agences régionales de santé. Analyses et soins seraient pris en charge à 100 % par l'assurance maladie et les complémentaires.",
+  "concerne": "Personnes atteintes de symptômes durables après le covid-19, médecins, hôpitaux et complémentaires santé.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PIONANR5L15B3413",
+  "remarque": "Extrait : texte déposé ; le vote porte sur le texte de la commission, qui peut différer.",
+  "mesures": [
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia",
   "debat": {
    "date": "2021-11-26",
    "comptesRendus": [
@@ -11691,8 +11761,19 @@
   }
  },
  "DLR5L15N43705": {
-  "mesures": [],
-  "mesuresNiveau": null,
+  "theme": "Outre-mer",
+  "sujetNiveau": "ia",
+  "titreClair": "Revoir les droits des fonctionnaires et militaires originaires d'outre-mer",
+  "enClair": "Prévoit de geler l'extinction progressive de l'indemnité temporaire de retraite versée outre-mer et de fixer huit critères du lien avec un territoire ultramarin, trois suffisant à le prouver. Les militaires ultramarins affectés en métropole recevraient une indemnité d'installation de neuf mois de solde (douze pour la Guyane) et la prise en charge d'un voyage de congé bonifié.",
+  "concerne": "Fonctionnaires et militaires originaires d'outre-mer ou y servant, et retraités concernés.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PIONANR5L15B4554",
+  "remarque": "Texte déposé ; le vote porte sur le texte de la commission, qui peut différer.",
+  "mesures": [
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia",
   "debat": {
    "date": "2021-11-26",
    "comptesRendus": [
@@ -12364,8 +12445,20 @@
   }
  },
  "DLR5L15N44067": {
-  "mesures": [],
-  "mesuresNiveau": null,
+  "theme": "Défense et international",
+  "sujetNiveau": "ia",
+  "titreClair": "Reconnaître le génocide des Kurdes d'Irak",
+  "enClair": "Résolution, sans force de loi, par laquelle l'Assemblée reconnaîtrait les violences commises par les autorités irakiennes contre les Kurdes d'Irak (dont les opérations Anfal et le bombardement chimique de Halabja en 1988) comme crimes contre l'humanité et génocide. Elle inviterait le Gouvernement à les reconnaître et les condamner à son tour, et à œuvrer auprès de l'Irak pour la réparation des préjudices des victimes et de leurs ayants droit.",
+  "concerne": "Kurdes d'Irak et leurs descendants ; relations de la France avec l'Irak.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PNREANR5L15B4622",
+  "remarque": null,
+  "mesures": [
+   "international",
+   "symbolique"
+  ],
+  "mesuresNiveau": "ia",
   "debat": {
    "date": "2021-11-26",
    "comptesRendus": [
@@ -13306,8 +13399,20 @@
   }
  },
  "DLR5L15N44507": {
-  "mesures": [],
-  "mesuresNiveau": null,
+  "theme": "Environnement et énergie",
+  "sujetNiveau": "ia",
+  "titreClair": "Interdire le plastique issu du pétrole d'ici 2030 et créer une agence",
+  "enClair": "Prévoit d'interdire à partir du 1er janvier 2030 la fabrication et la vente de plastiques fabriqués à partir de pétrole, avec un calendrier d'interdiction progressive fixé par décret et une stratégie nationale « zéro plastique pétrole » à définir avant 2023. Crée une Agence nationale du plastique, établissement public chargé d'expertise, d'accompagnement et d'aides financières, et prévoit des états généraux sur les emballages.",
+  "concerne": "Industriels et distributeurs de plastiques et d'emballages, consommateurs, collectivités.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PIONANR5L15B4827",
+  "remarque": "Texte déposé ; le vote porte sur le texte de la commission, qui peut différer.",
+  "mesures": [
+   "contrainte_plus",
+   "institutions"
+  ],
+  "mesuresNiveau": "ia",
   "debat": {
    "date": "2022-02-04",
    "comptesRendus": [
@@ -13414,8 +13519,20 @@
   }
  },
  "DLR5L15N44558": {
-  "mesures": [],
-  "mesuresNiveau": null,
+  "theme": "Consommation et alimentation",
+  "sujetNiveau": "ia",
+  "titreClair": "Plafonner les frais bancaires et faciliter l'ouverture d'un compte",
+  "enClair": "Prévoit de plafonner les frais d'incident bancaire à 40 € par mois, 300 € par an et 4 € par opération (10 €, 75 € et 1 € pour les clients en situation de fragilité financière), ainsi que les frais de rejet de chèque (15 ou 25 €, 4 ou 6 € pour les clients fragiles). Une victime de violences conjugales titulaire d'un compte joint aurait droit à un compte individuel dans la banque de son choix.",
+  "concerne": "Clients des banques, en particulier les personnes en difficulté financière, et établissements de crédit.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PIONANR5L15B4852",
+  "remarque": "Texte déposé, lu jusqu'à l'article 3 (la copie locale s'arrête là) ; le vote porte sur le texte de la commission, qui peut différer.",
+  "mesures": [
+   "contrainte_plus",
+   "aide_plus"
+  ],
+  "mesuresNiveau": "ia",
   "debat": {
    "date": "2022-02-04",
    "comptesRendus": [
@@ -13508,8 +13625,20 @@
   "remarque": "Extrait coupé après l'article 2."
  },
  "DLR5L15N44666": {
-  "mesures": [],
-  "mesuresNiveau": null,
+  "theme": "Immigration",
+  "sujetNiveau": "ia",
+  "titreClair": "Accorder l'asile à Julian Assange et aux lanceurs d'alerte étrangers",
+  "enClair": "Résolution, sans force de loi, invitant le Gouvernement à accorder l'asile politique à Julian Assange et à faciliter l'accès des lanceurs d'alerte étrangers au statut de réfugié, notamment par une demande d'asile ou de visa humanitaire déposée depuis un consulat et un examen à distance par l'OFPRA. Elle l'invite aussi à porter ce sujet au Conseil de l'Europe et pendant la présidence française de l'Union européenne en 2022.",
+  "concerne": "Julian Assange et les lanceurs d'alerte étrangers demandant protection à la France.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PNREANR5L15B4867",
+  "remarque": null,
+  "mesures": [
+   "symbolique",
+   "international"
+  ],
+  "mesuresNiveau": "ia",
   "debat": {
    "date": "2022-02-04",
    "comptesRendus": [

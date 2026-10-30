@@ -121,8 +121,19 @@
   }
  },
  "DLR5L16N45943": {
-  "mesures": [],
-  "mesuresNiveau": null,
+  "theme": "Impôts et budget",
+  "sujetNiveau": "ia",
+  "titreClair": "Rectifier le budget de l'État pour 2022 face à l'inflation",
+  "enClair": "Prévoit 44,2 milliards d'euros de dépenses supplémentaires au budget général de l'État pour 2022 et un déficit budgétaire porté à 168,5 milliards. Financerait notamment la hausse de 3,5 % du point d'indice des fonctionnaires, le bouclier tarifaire sur l'électricité et le gaz et la remise sur les carburants, et supprimerait la contribution à l'audiovisuel public (redevance télé).",
+  "concerne": "Contribuables, ménages, agents publics et entreprises.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PRJLANR5L16B0017",
+  "remarque": "Source : projet de loi déposé ; les votes du 26/07/2022 (première lecture) et du 04/08/2022 (texte de la commission mixte paritaire) portent sur des textes modifiés, dont les montants peuvent différer.",
+  "mesures": [
+   "budget"
+  ],
+  "mesuresNiveau": "ia",
   "debat": {
    "date": "2022-07-26",
    "comptesRendus": [
@@ -493,8 +504,20 @@
   }
  },
  "DLR5L16N46266": {
-  "mesures": [],
-  "mesuresNiveau": null,
+  "theme": "Travail et emploi",
+  "sujetNiveau": "ia",
+  "titreClair": "Prolonger par décret les règles de l'assurance chômage jusqu'à fin 2023",
+  "enClair": "Prévoit que le gouvernement fixe par décret, après concertation avec les syndicats et le patronat, les règles de l'assurance chômage à partir du 1er novembre 2022 et au plus tard jusqu'au 31 décembre 2023, et prolonge jusqu'au 31 août 2024 le bonus-malus sur les cotisations des employeurs selon leurs fins de contrat. Modifie aussi les électeurs au comité social et économique et la validation des acquis de l'expérience.",
+  "concerne": "Demandeurs d'emploi, salariés et employeurs.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PRJLANR5L16B0219",
+  "remarque": "Extrait : projet de loi déposé ; le vote du 11/10/2022 porte sur le texte modifié en commission et en séance, qui peut différer.",
+  "mesures": [
+   "institutions",
+   "contrainte_plus"
+  ],
+  "mesuresNiveau": "ia",
   "debat": {
    "date": "2022-10-11",
    "comptesRendus": [
@@ -735,8 +758,19 @@
   }
  },
  "DLR5L16N46346": {
-  "mesures": [],
-  "mesuresNiveau": null,
+  "theme": "Impôts et budget",
+  "sujetNiveau": "ia",
+  "titreClair": "Programmer les finances publiques de 2023 à 2027",
+  "enClair": "Prévoit une trajectoire ramenant le déficit public de 5,0 % du PIB en 2022 à 2,9 % en 2027, avec une dette autour de 111 % du PIB et une dépense publique passant de 57,6 % à 53,8 % du PIB. Plafonne les crédits des ministères de 2023 à 2025 et encadre la hausse des dépenses de fonctionnement des grandes collectivités locales.",
+  "concerne": "État, Sécurité sociale et collectivités locales.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PRJLANR5L16B0272",
+  "remarque": "Extrait : projet de loi déposé ; le vote du 25/10/2022 porte sur le texte issu de la commission, qui peut différer.",
+  "mesures": [
+   "budget"
+  ],
+  "mesuresNiveau": "ia",
   "debat": {
    "date": "2022-10-25",
    "comptesRendus": [
@@ -2497,8 +2531,21 @@
   }
  },
  "DLR5L16N47118": {
-  "mesures": [],
-  "mesuresNiveau": null,
+  "theme": "Immigration",
+  "sujetNiveau": "ia",
+  "titreClair": "Réformer le séjour, l'intégration et l'expulsion des étrangers",
+  "enClair": "Prévoit un titre de séjour à titre exceptionnel pour les étrangers sans papiers ayant travaillé au moins 12 mois dans un métier en pénurie, l'interdiction de placer des mineurs en rétention, un contrat d'engagement à respecter les principes de la République pour obtenir un titre de séjour, des conditions plus strictes pour le regroupement familial, le titre « étranger malade » et certaines prestations sociales, et des expulsions facilitées pour des étrangers condamnés.",
+  "concerne": "Étrangers vivant en France ou souhaitant s'y installer, leurs employeurs et l'administration.",
+  "arguments": null,
+  "niveau": "ia",
+  "source": "PRJLANR5L16B1855",
+  "remarque": "Source lue : texte adopté par le Sénat ; le vote du 19/12/2023 porte sur le texte de la commission mixte paritaire (n° 2008), absent des sources locales et recoupé avec la présentation du rapporteur en séance (aide médicale de l'État retirée, dispositions sur la nationalité en grande partie supprimées) : détail des mesures à vérifier.",
+  "mesures": [
+   "contrainte_plus",
+   "aide_moins",
+   "sanction_plus"
+  ],
+  "mesuresNiveau": "ia",
   "debat": {
    "date": "2023-12-19",
    "comptesRendus": [
@@ -3747,13 +3794,13 @@
  "DLR5L16N48755": {
   "theme": "Environnement et énergie",
   "sujetNiveau": "ia",
-  "titreClair": null,
-  "enClair": null,
-  "concerne": null,
+  "titreClair": "Suspendre pendant dix ans les autorisations de méga-bassines",
+  "enClair": "Prévoit un moratoire de dix ans, à compter de la promulgation de la loi, sur la délivrance des autorisations de construire des méga-bassines, ces grandes retenues d'eau soumises au régime « loi sur l'eau » du code de l'environnement. Le moratoire s'appliquerait aussi aux projets en cours d'instruction, dans l'attente d'une réforme législative.",
+  "concerne": "Agriculteurs irrigants, porteurs de projets de retenues d'eau et services de l'État.",
   "arguments": null,
-  "niveau": "a_venir",
+  "niveau": "ia",
   "source": "PIONANR5L16B1766",
-  "remarque": "Articles absents de l'extrait : résumé fondé sur le titre et l'exposé des motifs. Durée et périmètre du moratoire à vérifier dans le texte.",
+  "remarque": "L'article unique ne définit pas ce qu'est une « méga-bassine » ; texte déposé, le texte examiné en séance peut différer.",
   "mesures": [
    "contrainte_plus"
   ],
@@ -3876,14 +3923,15 @@
  "DLR5L16N48763": {
   "theme": "Institutions et État",
   "sujetNiveau": "ia",
-  "titreClair": null,
-  "enClair": null,
-  "concerne": null,
+  "titreClair": "Garantir un accueil physique dans les services publics",
+  "enClair": "Prévoit que nul ne peut être obligé de faire ses démarches administratives en ligne : l'administration devrait maintenir plusieurs modes d'accès, permettre à chaque étape un traitement par courrier et garantir à tout usager le droit d'être reçu par une personne dans ses sites d'accueil, y compris lorsqu'un service en ligne existe.",
+  "concerne": "Usagers des services publics et administrations.",
   "arguments": null,
-  "niveau": "a_venir",
+  "niveau": "ia",
   "source": "PIONANR5L16B1773",
-  "remarque": "Extrait limité à l'exposé des motifs, sans les articles : mesures non lisibles, enClair laissé vide.",
+  "remarque": "Texte déposé ; le texte examiné en séance peut différer.",
   "mesures": [
+   "aide_plus",
    "contrainte_plus"
   ],
   "mesuresNiveau": "ia",
@@ -3961,13 +4009,13 @@
  "DLR5L16N48766": {
   "theme": "Consommation et alimentation",
   "sujetNiveau": "ia",
-  "titreClair": null,
-  "enClair": null,
-  "concerne": null,
+  "titreClair": "Plafonner les marges de l'agroalimentaire, du raffinage et de la grande distribution",
+  "enClair": "Prévoit, pendant un an à partir du 1er janvier 2024, un plafond fixé par l'État au rapport entre coûts d'achat et prix de vente : 1,74 pour les industriels de l'alimentaire, 1,63 pour le raffinage, 1,26 pour la grande distribution, plafond aussi appliqué si leur bénéfice dépasse de 20 % la moyenne des trois années précédentes. Instaure un prix plancher annuel d'achat des produits agricoles, négocié par filière.",
+  "concerne": "Industriels de l'agroalimentaire, raffineurs, grande distribution, agriculteurs et consommateurs.",
   "arguments": null,
-  "niveau": "a_venir",
+  "niveau": "ia",
   "source": "PIONANR5L16B1776",
-  "remarque": "Extrait limité à l'exposé des motifs : les articles sont absents. enClair laissé vide faute de lire les mesures ; à compléter depuis le texte complet.",
+  "remarque": "Texte déposé ; le texte examiné en séance peut différer.",
   "mesures": [
    "contrainte_plus"
   ],
