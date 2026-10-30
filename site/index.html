@@ -60,6 +60,9 @@ footer.pied a { display: inline-block; padding-block: 2px; }
 .carte h3 a:hover { text-decoration: underline; color: var(--accent); }
 .carte-bas { display: flex; align-items: center; gap: 4px 16px; flex-wrap: wrap; font-size: 15px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .serre { color: var(--abst); font-weight: 700; }
+/* Mini-jauge : la proportion pour / contre d'un coup d'œil, à la taille d'un badge (la grande jauge est sur la fiche) */
+.decompte { display: inline-flex; align-items: center; gap: 8px; }
+.minijauge .bar { width: 52px; height: 8px; border-radius: 4px; }
 .mesures { margin-top: 20px; display: grid; gap: 6px; }
 .mesures ul { margin: 0; padding-left: 20px; display: grid; gap: 2px; font-size: 18px; }
 .repartition { display: grid; gap: 6px; margin-top: 10px; }
@@ -442,7 +445,7 @@ const ECART_SERRE = 30;
 const fdateCourte = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric" });
 const badgeIA = t => t.niveau === "ia"
   ? `<span class="badge-ia" title="Titre et résumé rédigés par IA, pas encore vérifiés par un humain"><span aria-hidden="true">IA</span><span class="sr-only">(titre et résumé rédigés par IA, non vérifiés)</span></span>` : "";
-// Carte d'un texte, en trois lignes. Pas de résumé, de camps ni de jauge : on repère le texte, son résultat et l'écart ;
+// Carte d'un texte, en trois lignes. Pas de résumé ni de camps, une mini-jauge : on repère le texte, son résultat et l'écart ;
 // le détail (hémicycle, groupe par groupe) est sur sa fiche.
 // avecAuteur : false sur la fiche d'un groupe, où l'auteur est déjà connu.
 function carteTexte(t, { avecAuteur = true } = {}) {
@@ -450,7 +453,7 @@ function carteTexte(t, { avecAuteur = true } = {}) {
   return `<article class="carte">
     <div class="carte-haut"><span class="meta">${fdateCourte(t.date)} · ${t.type === "solennel" ? "Vote solennel" : "Journée réservée"}${lecture(t) ? `, ${lecture(t)}` : ""}</span>${issueTag(t)}</div>
     <h3><a href="#texte/${t.id}">${t.titre}</a>${badgeIA(t)}</h3>
-    <div class="carte-bas">${avecAuteur ? `<span>Proposé par ${auteurCourt(t)}</span>` : ""}<span>${s.pour} pour · ${s.contre} contre</span>${serre ? `<span class="serre">Vote serré : ${s.ecart} voix d'écart</span>` : ""}</div>
+    <div class="carte-bas">${avecAuteur ? `<span>Proposé par ${auteurCourt(t)}</span>` : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, 0, 0)}</span>${s.pour} pour · ${s.contre} contre</span>${serre ? `<span class="serre">Vote serré : ${s.ecart} voix d'écart</span>` : ""}</div>
   </article>`;
 }
 // L'étape du parcours du texte, en mots simples (l'intitulé officiel est sur la fiche)
