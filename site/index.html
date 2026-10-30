@@ -397,7 +397,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
 <footer class="pied"><div class="wrap">
   <a href="#methode">Notre méthode</a>
   <a href="#apropos">À propos, mentions légales et confidentialité</a>
-  <a href="https://github.com/qui-a-vote-quoi/qui-a-vote-quoi" target="_blank" rel="noopener">Code source et données<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
+  <a href="https://github.com/qui-a-vote-quoi/qui-a-vote-quoi.github.io" target="_blank" rel="noopener">Code source et données<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
   <span id="maj"></span>
 </div></footer>
 
@@ -830,7 +830,7 @@ const views = {
       <div>${accords.map(a => `<div class="score">${chip(a.o)}<div class="bar"><i style="width:${a.pct}%;background:${G(a.o).c}"></i></div><b>${a.pct} %</b></div>`).join("")}</div>`;
   },
   apropos() {
-    const gh = "https://github.com/qui-a-vote-quoi/qui-a-vote-quoi";
+    const gh = "https://github.com/qui-a-vote-quoi/qui-a-vote-quoi.github.io";
     return `<div class="apropos"><h1>À propos</h1>
       <p class="lead">Qui a voté quoi montre, pour chaque texte examiné à l'Assemblée nationale, qui l'a proposé, ce qu'il change et ce que chaque groupe de députés a voté. Le site ne juge pas : à vous de vous faire votre avis.</p>
       <h2>Version de test</h2>
@@ -864,7 +864,7 @@ const views = {
       </ul></div>`;
   },
   methode() {
-    const gh = "https://github.com/qui-a-vote-quoi/qui-a-vote-quoi";
+    const gh = "https://github.com/qui-a-vote-quoi/qui-a-vote-quoi.github.io";
     return `<div class="apropos"><h1>Notre méthode</h1>
       <p class="lead">Le site montre des faits et laisse chacun juger. Il ne dit jamais si un texte, un vote ou un groupe est bon ou mauvais. Voici comment il est fait.</p>
       <h2>Ce que le site ne fait pas</h2>
@@ -885,7 +885,7 @@ const views = {
       <h2>Le poids d'un groupe</h2>
       <p>Sur la fiche de chaque groupe, on montre les textes des autres où ses voix ont été décisives : sans elles, le résultat aurait été inverse. Pour un texte adopté, ses voix « pour » étaient décisives si, en les retirant, il n'y avait plus de majorité. Pour un texte rejeté, ses voix « contre » l'étaient si, en les retirant, le texte serait passé. Les abstentions et les absents ne sont pas comptés. Un texte voté en plusieurs lectures compte une fois. Ces chiffres ne servent pas à classer les groupes : ils montrent que le nombre de sièges décide.</p>
       <h2>Ce que fait un texte</h2>
-      <p>Chaque texte est classé selon le mécanisme qu'il utilise, lu dans ses articles : il crée ou réduit une aide, crée ou allège une sanction, crée ou lève une obligation, augmente ou baisse un impôt, organise les institutions, fixe un budget, approuve un accord international, ou exprime une reconnaissance sans effet juridique. Chaque mécanisme a son contraire, pour voir aussi ce qui se retire ou se simplifie. Ce classement décrit ; il ne juge pas : une même sanction sera vue comme protectrice par les uns, répressive par les autres. La grille complète est ${ext("https://github.com/qui-a-vote-quoi/qui-a-vote-quoi/blob/main/GRILLE-MESURES.md", "publique")}.</p>
+      <p>Chaque texte est classé selon le mécanisme qu'il utilise, lu dans ses articles : il crée ou réduit une aide, crée ou allège une sanction, crée ou lève une obligation, augmente ou baisse un impôt, organise les institutions, fixe un budget, approuve un accord international, ou exprime une reconnaissance sans effet juridique. Chaque mécanisme a son contraire, pour voir aussi ce qui se retire ou se simplifie. Ce classement décrit ; il ne juge pas : une même sanction sera vue comme protectrice par les uns, répressive par les autres. La grille complète est ${ext("https://github.com/qui-a-vote-quoi/qui-a-vote-quoi.github.io/blob/main/GRILLE-MESURES.md", "publique")}.</p>
       <h2>Les journées réservées (« niches »)</h2>
       <p>Une fois par mois, un groupe d'opposition ou minoritaire choisit seul les textes discutés. Les données officielles ne signalent pas ces journées : elles sont repérées automatiquement, puis vérifiées une à une dans les comptes rendus de séance, avec une citation à l'appui. Chaque journée indique si elle a été vérifiée par IA ou par un humain. Une journée qui n'a pas pu être vérifiée n'est pas publiée.</p>
       <h2>Les résumés « en clair »</h2>
