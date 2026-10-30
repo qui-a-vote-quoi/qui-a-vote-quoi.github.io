@@ -72,6 +72,17 @@ for (const ctx of CONTEXTES) {
     if (!/ – Qui a voté quoi$/.test(s.titre) && vue) signaler(ou, "titre d'onglet", `« ${s.titre} »`);
     if (s.onglet.length) signaler(ou, "nouvel onglet signalé", `liens sans « nouvel onglet » : ${s.onglet.join(", ")}`);
   }
+  // Le débat « En mots simples » (choix gardé sur l'appareil)
+  await page.evaluate(() => localStorage.setItem("versionDebat", JSON.stringify("simple")));
+  const debat = await page.evaluate(() => TEXTES.find(t => t.debat?.repliques.some(r => r.simple))?.id);
+  await page.goto(`${BASE}#texte/${debat}/debat`);
+  await page.reload();   // le choix est lu au chargement de la page
+  await page.waitForTimeout(150);
+  for (const v of (await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"]).include("body").analyze()).violations)
+    signaler(`débat en mots simples (${ctx.nom})`, `${v.id} (${v.impact})`, `${v.help} — ${v.nodes.length} élément(s), ex. ${v.nodes[0].target.join(" ")}`);
+  if (!(await page.evaluate(() => !!document.querySelector(".replique .simple")?.offsetParent)))
+    signaler(`débat en mots simples (${ctx.nom})`, "mots simples", "la version simple n'est pas affichée");
+  await page.evaluate(() => localStorage.removeItem("versionDebat"));
   // Focus sur le titre au changement de vue (navigation interne)
   await page.goto(BASE);
   await page.evaluate(() => { location.hash = "#groupes"; });

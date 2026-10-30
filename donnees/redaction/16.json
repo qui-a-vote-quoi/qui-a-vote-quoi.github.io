@@ -26,7 +26,8 @@
       "nom": "M. Richard Ramos",
       "qualite": "rapporteur",
       "groupe": "DEM"
-     }
+     },
+     "simple": "Les clôtures empêchent les animaux sauvages de passer, ce qui coupe les chemins naturels qu'ils suivent. Les animaux ne peuvent pas les franchir. Certains s'y blessent gravement ou s'y coincent les pattes, avant de souffrir longtemps jusqu'à leur mort."
     },
     {
      "role": "gouvernement",
@@ -36,7 +37,8 @@
       "nom": "Mme Bérangère Couillard",
       "qualite": "secrétaire d’État",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Il n'est plus acceptable de laisser les clôtures se multiplier dans la région de la Sologne, ni de risquer qu'elles s'étendent. Elles viennent parfois de pratiques uniquement liées à la chasse, ou de la protection de la propriété privée. Dans tous les cas, ces pratiques doivent être encadrées."
     }
    ],
    "niveau": "ia",
@@ -84,7 +86,8 @@
       "nom": "M. Thibault Bazin (LR)",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Plusieurs mesures du projet de loi vont dans le bon sens. Il protège les consommateurs et augmente les retraites. Il baisse les cotisations des travailleurs à leur compte, l'argent prélevé pour payer retraites, santé, chômage. Il développe la prime de partage de la valeur et l'intéressement, des sommes versées aux salariés."
     },
     {
      "role": "contre",
@@ -94,7 +97,8 @@
       "nom": "M. Pierre Dharréville (GDR-NUPES)",
       "qualite": null,
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "C'est un projet de loi pour faire bonne figure, qui fait semblant, et qui contient aussi des « germes toxiques ». Ce texte montre qu'il n'y a pas de volonté de changer de cap, c'est-à-dire de politique. On veut continuer à freiner la hausse des salaires de l'immense majorité des salariés."
     },
     {
      "role": "pour",
@@ -104,7 +108,8 @@
       "nom": "Mme Béatrice Descamps (LIOT)",
       "qualite": null,
       "groupe": "LIOT"
-     }
+     },
+     "simple": "Les aides versées par l'État et les retraites augmenteront de 4 %. Ce n'est pas rien, même si cette hausse reste plus faible que celle des prix."
     },
     {
      "role": "contre",
@@ -114,7 +119,8 @@
       "nom": "Mme Sandrine Rousseau",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Nous voulions une loi ambitieuse pour protéger le pouvoir d'achat, ce qu'on peut s'acheter avec ce qu'on gagne. Je le répète : nous avons des « miettes », très peu. Nous voulions un changement écologique ; nous avons du dioxyde de carbone, un gaz qui pollue."
     }
    ],
    "niveau": "ia"
@@ -149,7 +155,8 @@
       "nom": "M. Gabriel Attal",
       "qualite": "ministre délégué",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Cet effort massif de 44 milliards d'euros a trois parties. D'abord, de l'argent pour protéger le pouvoir d'achat des Français, ce qu'on peut acheter avec ce qu'on gagne. Ensuite, de l'argent pour préparer l'avenir. Enfin, de l'argent pour tenir nos engagements de paiement et payer le coût plus lourd de la dette."
     },
     {
      "role": "gouvernement",
@@ -159,7 +166,8 @@
       "nom": "M. Bruno Le Maire",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Aucune taxe, un prélèvement payé à l'État, n'a jamais amélioré la vie des Français. Ils ont besoin d'argent dans leurs poches, pas dans celles de l'État !"
     },
     {
      "role": "pour",
@@ -169,7 +177,8 @@
       "nom": "M. Jean-Paul Mattei",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Chaque année, le budget est modifié en cours d'année. Mais avec ce texte, nous devons aussi accompagner l'ensemble de mesures voulu par le Président, le gouvernement et la majorité. Elles visent à protéger le pouvoir d'achat, ce qu'on peut acheter avec ce qu'on gagne, face au retour de la hausse des prix."
     },
     {
      "role": "contre",
@@ -179,7 +188,8 @@
       "nom": "M. Éric Coquerel",
       "qualite": "président de la commission des finances",
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "L'urgence et le sérieux consisteraient plutôt à décider quelles sommes consacrer aux investissements nécessaires, c'est-à-dire aux grosses dépenses pour l'avenir. Ces sommes serviraient à un vrai changement de direction, écologique et social."
     },
     {
      "role": "pour",
@@ -189,7 +199,8 @@
       "nom": "Mme Lise Magnier",
       "qualite": null,
       "groupe": "HOR"
-     }
+     },
+     "simple": "Nous qui veillons à la bonne utilisation de l'argent public, nous savons que les aides données à tout le monde sont les plus injustes. En revanche, il faut remplacer peu à peu la remise sur les carburants par une aide pour le carburant qui vise les travailleurs."
     },
     {
      "role": "contre",
@@ -199,7 +210,8 @@
       "nom": "Mme Christine Pires Beaune",
       "qualite": null,
       "groupe": "SOC"
-     }
+     },
+     "simple": "Vous diminuez l'argent qui rentre dans les caisses de l'État. Vous creusez inutilement le déficit (dépenser plus que ce qui rentre) et la dette (l'argent emprunté, pas encore remboursé). 12 milliards d'euros de plus sont prévus dans ce budget pour payer les intérêts des emprunts : c'est « vertigineux » !"
     }
    ],
    "niveau": "ia"
@@ -233,7 +245,8 @@
       "nom": "M. Jimmy Pahun",
       "qualite": "rapporteur",
       "groupe": "DEM"
-     }
+     },
+     "simple": "Le premier article de ce texte a été réécrit en commission, un petit groupe de députés qui étudie le texte avant le vote de tous. Il veut interdire en 2025 les plastiques non recyclés. Cela renforce l'objectif de la loi Agec : atteindre 100 % de plastiques recyclés à cette même date."
     },
     {
      "role": "gouvernement",
@@ -243,7 +256,8 @@
       "nom": "Mme Bérangère Couillard",
       "qualite": "secrétaire d’État",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Cette règle nous permet aujourd'hui d'avoir une position ambitieuse. Elle envoie un signal clair aux entreprises qui fabriquent du plastique. Soit on recycle les emballages plastiques, soit on les interdit à partir de 2025."
     }
    ],
    "niveau": "ia",
@@ -278,7 +292,8 @@
       "nom": "M. Hervé Saulignac",
       "qualite": "rapporteur",
       "groupe": "SOC"
-     }
+     },
+     "simple": "C'est donc à la nation, c'est-à-dire à tout le pays, de reconnaître le tort causé. Ce tort vient de l'application du code pénal, le livre des lois sur les infractions, en vigueur entre 1942 et 1982."
     },
     {
      "role": "gouvernement",
@@ -288,7 +303,8 @@
       "nom": "M. Éric Dupond-Moretti",
       "qualite": "garde des sceaux, ministre de la justice",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Il est grand temps de poursuivre et d'achever ce qui a été commencé, et de dire, au nom de la République française : pardon, pardon."
     }
    ],
    "niveau": "ia",
@@ -323,7 +339,8 @@
       "nom": "M. Pascal Lecamp",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Ce texte de loi porte sur un sujet unique et essentiel : l'intérêt de l'enfant quand ses parents se séparent."
     },
     {
      "role": "gouvernement",
@@ -333,7 +350,8 @@
       "nom": "Mme Olivia Grégoire",
       "qualite": "ministre déléguée chargée des petites et moyennes entreprises, du commerce, de l’artisanat et du tourisme",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Sans détailler les raisons qui poussent les couples à se séparer, il faut savoir ceci. Les foyers où les parents sont séparés risquent davantage d'être en grande difficulté d'argent. 41 % des enfants qui vivent avec un seul parent sont pauvres, contre 21 % de l'ensemble des enfants."
     },
     {
      "role": "pour",
@@ -343,7 +361,8 @@
       "nom": "M. Philippe Brun",
       "qualite": null,
       "groupe": "SOC"
-     }
+     },
+     "simple": "Aujourd'hui, 97 % des pensions alimentaires sont versées du père à la mère. Payer des impôts sur ces pensions est une injustice que la société comprend mal. Elle demande très largement qu'on y mette fin."
     },
     {
      "role": "contre",
@@ -353,7 +372,8 @@
       "nom": "M. Denis Masséglia",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Déduire la pension alimentaire du revenu de référence du foyer, celui qui sert à calculer les aides, créerait une inégalité jamais vue. Il serait incompréhensible que des parents seuls reçoivent un chèque énergie, une aide pour payer l'énergie, plus élevé s'ils touchent une pension alimentaire que s'ils n'en touchent pas."
     },
     {
      "role": "pour",
@@ -363,7 +383,8 @@
       "nom": "Mme Soumya Bourouaha",
       "qualite": null,
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "Ce texte change un système qui favorise le parent chez qui l'enfant ne vit pas et désavantage celui qui s'en occupe chaque jour. Tel qu'il est aujourd'hui, le système d'impôt sur les pensions renforce les inégalités entre les hommes et les femmes."
     },
     {
      "role": "contre",
@@ -373,7 +394,8 @@
       "nom": "M. Michel Castellani",
       "qualite": null,
       "groupe": "LIOT"
-     }
+     },
+     "simple": "Nous rappelons toutefois que le législateur doit agir avec prudence. Le législateur, ce sont les députés et les sénateurs qui votent les lois. Il doit en discuter avant de changer brutalement les règles qui font payer moins d'impôts à certains. Or cette proposition de loi semble avoir été écrite dans l'urgence."
     }
    ],
    "niveau": "ia"
@@ -403,7 +425,8 @@
       "nom": "M. Bruno Fuchs",
       "qualite": "rapporteur",
       "groupe": "DEM"
-     }
+     },
+     "simple": "Le premier article interdit de démarcher, c'est-à-dire de contacter pour vendre, les personnes qui ont un compte de formation (CPF), par téléphone, SMS, e-mail ou réseau social. Cela vaut quand le but est de récupérer leurs données, par exemple le montant inscrit sur leur compte."
     },
     {
      "role": "gouvernement",
@@ -413,7 +436,8 @@
       "nom": "Mme Carole Grandjean",
       "qualite": "ministre déléguée",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Il était temps d'agir et de faire cesser ces dérives autour du CPF, le compte personnel de formation. Ce sont les messages non désirés et les « hameçonnages », des messages-pièges pour récupérer des informations. Notre responsabilité est de protéger le CPF de nos concitoyens."
     }
    ],
    "niveau": "ia",
@@ -447,7 +471,8 @@
       "nom": "M. Roger Chudeau",
       "qualite": "rapporteur",
       "groupe": "RN"
-     }
+     },
+     "simple": "Ce texte n'a qu'un seul article. Il veut mettre en place une tenue uniforme propre à chaque école ou collège, obligatoire pour tous les écoliers et tous les collégiens de l'école publique."
     },
     {
      "role": "gouvernement",
@@ -457,7 +482,8 @@
       "nom": "M. Franck Riester",
       "qualite": "ministre délégué",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Selon les circonstances, porter une tenue uniforme peut aider. Elle permet de rassembler autour d'une école. Elle limite aussi les comparaisons entre élèves, qui peuvent leur faire du tort."
     },
     {
      "role": "pour",
@@ -467,7 +493,8 @@
       "nom": "M. Julien Odoul",
       "qualite": null,
       "groupe": "RN"
-     }
+     },
+     "simple": "À l'école, les vêtements provoquent souvent de la jalousie et des compétitions entre élèves. Cela peut mener à des tensions, des violences ou du harcèlement. Oui, une tenue uniforme aux couleurs de l'école ou du collège mettrait fin à cette course aux marques coûteuses, source de tensions, de divisions et d'inégalités sociales."
     },
     {
      "role": "contre",
@@ -477,7 +504,8 @@
       "nom": "M. Paul Vannier",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "En Martinique, l'uniforme n'est pas obligatoire pour tous, mais il est imposé dans un tiers des écoles, collèges et lycées. Un polo ou un t-shirt portant le blason, l'emblème de l'établissement, coûte entre 10 et 20 euros. C'est cinq à dix fois plus cher que les mêmes vêtements chez Kiabi, un magasin."
     },
     {
      "role": "pour",
@@ -487,7 +515,8 @@
       "nom": "M. Roger Chudeau",
       "qualite": "rapporteur",
       "groupe": "RN"
-     }
+     },
+     "simple": "Avec ce texte, c'est fini : plus de rivalités ni de disputes sur les marques de vêtements ou de chaussures. Plus de petits rackets, c'est-à-dire de vols par la force. Fini aussi les tentatives d'imposer des tenues religieuses dans les collèges publics."
     },
     {
      "role": "contre",
@@ -497,7 +526,8 @@
       "nom": "M. Paul Vannier",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Ce texte « anti-pauvres » veut mettre en scène l'écart de rang entre les établissements des milieux modestes et ceux des milieux aisés. Il propose un uniforme différent d'une école à l'autre, ce qui encourage à voir chaque établissement comme une marque."
     }
    ],
    "niveau": "ia"
@@ -532,7 +562,8 @@
       "nom": "M. Olivier Dussopt",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Nous voulons prolonger jusqu'au 31 décembre 2023 les règles de l'assurance chômage, l'aide aux chômeurs. Cela laisse à la réforme de 2019 le temps de produire ses effets. Nous voulons aussi prolonger jusqu'au 31 août 2024 le bonus-malus, qui fait varier la somme que paient les employeurs selon leurs fins de contrat."
     },
     {
      "role": "gouvernement",
@@ -542,7 +573,8 @@
       "nom": "M. Olivier Dussopt",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Quand il y a beaucoup d'offres d'emploi, on peut encourager les personnes qui travaillent ou cherchent un emploi à en retrouver un plus vite. Ce n'est pas les montrer du doigt ni les culpabiliser. Ce n'est pas non plus dire que certains abusent du système d'aides."
     },
     {
      "role": "pour",
@@ -552,7 +584,8 @@
       "nom": "M. Marc Ferracci",
       "qualite": "rapporteur",
       "groupe": "RE"
-     }
+     },
+     "simple": "En France, un chômeur reçoit une aide pendant vingt-quatre mois. C'est l'une des durées les plus longues des pays de l'OCDE, une organisation de pays. On ne peut pas le contester. Parmi nos voisins européens, seuls l'Espagne, l'Italie et les Pays-Bas ont une durée équivalente."
     },
     {
      "role": "contre",
@@ -562,7 +595,8 @@
       "nom": "Mme Farida Amrani",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Les chômeurs sont montrés du doigt et traités comme des boucs émissaires : on leur fait porter la faute. Pourtant, plus de six chômeurs sur dix ne reçoivent pas d'aide. Et 40 % d'entre eux vivent sous le seuil de pauvreté, le niveau de revenu en dessous duquel on est pauvre."
     },
     {
      "role": "pour",
@@ -572,7 +606,8 @@
       "nom": "Mme Astrid Panosyan-Bouvet",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Les études montrent que changer la durée de l'aide, ou sa façon de la calculer, a des effets positifs sur le retour à l'emploi. Il paraît donc pertinent de faire varier cette durée pour continuer à combattre le chômage. Des centaines de milliers d'offres d'emploi restent sans personne pour les occuper."
     },
     {
      "role": "contre",
@@ -582,7 +617,8 @@
       "nom": "M. Yannick Monnet",
       "qualite": null,
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "Vous ne tenez pas compte des négociations entre syndicats et employeurs prévues par le code du travail, le livre des lois sur le travail. Vous décidez seuls, par une règle du gouvernement sans vote des députés. Vous fixez les conditions d'accès à l'assurance chômage, la durée de l'aide et son montant."
     }
    ],
    "niveau": "ia"
@@ -618,7 +654,8 @@
       "nom": "M. Florent Boudié",
       "qualite": "rapporteur de la commission des lois constitutionnelles, de la législation et de l’administration générale de la République",
       "groupe": "RE"
-     }
+     },
+     "simple": "Son ambition est très simple : fixer la direction à suivre sur plusieurs années et assurer une continuité pour toutes les missions du ministère de l'Intérieur. La première de ces missions est d'assurer l'avenir de nos forces de l'ordre et de nos services de secours."
     },
     {
      "role": "gouvernement",
@@ -628,7 +665,8 @@
       "nom": "M. Gérald Darmanin",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Cette hausse des salaires, la plus forte jamais vue, a été validée par tous les syndicats du ministère de l'Intérieur, les organisations qui défendent les salariés. Ils représentent des policiers ou des gendarmes. Pour la première fois, ils ont signé l'accord sur la gestion du personnel."
     },
     {
      "role": "pour",
@@ -638,7 +676,8 @@
       "nom": "M. Philippe Pradal",
       "qualite": null,
       "groupe": "HOR"
-     }
+     },
+     "simple": "Quinze milliards d'euros sur cinq ans, c'est ambitieux et inédit. C'est surtout nécessaire pour assurer la sécurité de nos concitoyens au quotidien. C'est aussi nécessaire pour améliorer et faciliter la vie des agents du ministère de l'Intérieur et rendre leur travail plus efficace."
     },
     {
      "role": "contre",
@@ -648,7 +687,8 @@
       "nom": "Mme Elsa Faucillon",
       "qualite": null,
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "Nous le disons sans détour. Selon nous, ces choix n'amélioreront ni la sécurité de nos concitoyens, ni la confiance entre les forces de l'ordre et la population."
     },
     {
      "role": "pour",
@@ -658,7 +698,8 @@
       "nom": "Mme Marie Lebec",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Avec ce projet de loi, nous voulons faire face aux grands changements que connaissent les forces de l'ordre pour maintenir l'ordre. Nous voulons aussi lutter contre la criminalité, qui se développe dans de nouveaux domaines."
     },
     {
      "role": "contre",
@@ -668,7 +709,8 @@
       "nom": "Mme Élisa Martin",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Nous allons donc mobiliser des moyens énormes, mais pour quelle police ? Cette question ne devrait-elle pas être notre point de départ ? Nous voulons une police proche des habitants, qui calme les tensions, avec des policiers qui restent longtemps dans leur secteur."
     }
    ],
    "niveau": "ia"
@@ -701,7 +743,8 @@
       "nom": "M. Pierre Meurin",
       "qualite": "rapporteur de la commission du développement durable et de l’aménagement du territoire",
       "groupe": "RN"
-     }
+     },
+     "simple": "Ce texte veut mettre fin aux zones à faibles émissions, où la circulation est limitée. Il les juge « séparatistes » et de « ségrégation sociale ». Selon lui, elles excluent des millions de Français des grandes villes et en font des « bannis », des « sous-citoyens » dans leur propre pays."
     },
     {
      "role": "gouvernement",
@@ -711,7 +754,8 @@
       "nom": "M. Christophe Béchu",
       "qualite": "ministre de la transition écologique et de la cohésion des territoires",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Santé publique France, une agence de santé, a chiffré les décès de la seule année 2021. Elle compte 40 000 décès liés aux particules fines et 7 000 liés aux oxydes d'azote. Ce sont deux polluants de l'air."
     },
     {
      "role": "pour",
@@ -721,7 +765,8 @@
       "nom": "M. Emmanuel Blairy",
       "qualite": null,
       "groupe": "RN"
-     }
+     },
+     "simple": "42 % des Français n'ont pas l'argent pour acheter un véhicule peu polluant, malgré les aides du gouvernement. Ils continueront donc à utiliser leur voiture malgré l'interdiction de rouler dans les zones à faibles émissions. Ils risquent un coût supplémentaire et des sanctions."
     },
     {
      "role": "contre",
@@ -731,7 +776,8 @@
       "nom": "Mme Christine Arrighi",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "C'est donc aujourd'hui un grand enjeu de santé publique, c'est-à-dire de santé de toute la population. Les zones à faibles émissions aident à réduire les effets de la pollution de l'air sur la santé. L'État s'engage ainsi pour une politique de protection de l'environnement."
     },
     {
      "role": "pour",
@@ -741,7 +787,8 @@
       "nom": "M. Sylvain Carrière",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Telles qu'elles sont, les zones à faibles émissions ne sont qu'une vaste opération pour faire sentir chacun coupable. Cette opération touche des personnes qui n'ont pas les moyens de changer de véhicule."
     },
     {
      "role": "contre",
@@ -751,7 +798,8 @@
       "nom": "M. Jean-Luc Fugit",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Rappelons d'abord que le dioxyde d'azote, un gaz, et les particules fines sont les deux principaux polluants de l'air. Ils causent de nombreuses maladies respiratoires et plus de 40 000 morts trop tôt par an en France. C'est d'après une étude de Santé publique France, faite avec une méthode scientifique vérifiée."
     }
    ],
    "niveau": "ia"
@@ -786,7 +834,8 @@
       "nom": "M. Bruno Le Maire",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Notre priorité est de protéger les Français contre l'inflation, la hausse générale des prix, qui crée du trouble et de l'inquiétude. Ils subissent la forte hausse des prix de l'énergie et, maintenant, de l'alimentation."
     },
     {
      "role": "gouvernement",
@@ -796,7 +845,8 @@
       "nom": "M. Bruno Le Maire",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "C'est l'objectif le plus ambitieux fixé depuis vingt ans pour les finances de l'État et ses dépenses. C'est responsable et raisonnable. Comme je viens de le démontrer, c'est parfaitement compatible avec la protection des Français et de nos industries face à la hausse des prix."
     },
     {
      "role": "pour",
@@ -806,7 +856,8 @@
       "nom": "M. Jean-René Cazeneuve",
       "qualite": "rapporteur général",
       "groupe": "RE"
-     }
+     },
+     "simple": "Le budget 2023 est responsable et vise avant tout à protéger les Français. Ses mesures servent tous les Français. Elles servent aussi le plein emploi, c'est-à-dire du travail pour tous, une transition écologique réussie et une plus grande indépendance de notre pays."
     },
     {
      "role": "contre",
@@ -816,7 +867,8 @@
       "nom": "M. Éric Coquerel",
       "qualite": "président de la commission des finances, de l’économie générale et du contrôle budgétaire",
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Le premier texte dont nous discutons est la loi de programmation, un plan qui doit fixer l'évolution des finances publiques pour les cinq ans à venir. J'y vois d'emblée trois problèmes majeurs. Premièrement, ce plan repose sur des prévisions irréalistes : nos discussions sont déjà dépassées et sans conséquence."
     }
    ],
    "niveau": "ia"
@@ -849,7 +901,8 @@
       "nom": "Mme Mathilde Panot",
       "qualite": "rapporteure",
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Inscrire dans la Constitution, la loi la plus importante du pays, le droit à la contraception et à l'avortement, c'est écarter la peur. Cette peur nous saisit quand, ailleurs, les droits des femmes sont attaqués. C'est aussi donner une base à notre vigilance, pour nous protéger des retournements imprévisibles de l'histoire."
     },
     {
      "role": "gouvernement",
@@ -859,7 +912,8 @@
       "nom": "M. Éric Dupond-Moretti",
       "qualite": "garde des sceaux",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Je soutiendrai les propositions qui se concentrent sur l'IVG, l'avortement. En effet, on ne peut pas modifier la Constitution en laissant de côté l'une des deux assemblées : les députés ou le Sénat."
     },
     {
      "role": "pour",
@@ -869,7 +923,8 @@
       "nom": "Mme Marie-Noëlle Battistel",
       "qualite": null,
       "groupe": "SOC"
-     }
+     },
+     "simple": "En France, personne ne remet aujourd'hui l'avortement en cause. C'est précisément la raison pour laquelle le droit à l'IVG doit être inscrit dans la Constitution dès maintenant."
     },
     {
      "role": "contre",
@@ -879,7 +934,8 @@
       "nom": "Mme Josiane Corneloup",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Le droit à l'IVG est solide parce qu'il figure dans notre droit depuis 1975. Il est durable parce que le Conseil constitutionnel, les juges qui vérifient que les lois respectent la Constitution, l'a toujours jugé conforme. Par quatre fois, il s'est prononcé en sa faveur : en 1975, 2001, 2014 et 2016."
     },
     {
      "role": "pour",
@@ -889,7 +945,8 @@
       "nom": "Mme Elsa Faucillon",
       "qualite": null,
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "D'abord, tout simplement, parce que nous considérons que c'est un droit fondamental, un droit essentiel, qui doit être reconnu comme tel. « Nos corps, nos choix » : c'est ce que nous voulons affirmer en l'inscrivant dans la Constitution."
     },
     {
      "role": "contre",
@@ -899,7 +956,8 @@
       "nom": "Mme Josiane Corneloup",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Aux États-Unis, en juin dernier, la Cour suprême, le plus haut tribunal du pays, a annulé la décision qui garantissait aux Américaines le droit d'avorter. Ce n'est pas une raison pour avoir le même débat en France juste après."
     }
    ],
    "niveau": "ia"
@@ -933,7 +991,8 @@
       "nom": "M. Aurélien Pradié",
       "qualite": "rapporteur",
       "groupe": "LR"
-     }
+     },
+     "simple": "Nous n'avancerons pas davantage sans un tribunal spécialisé. Il réunirait les pouvoirs du juge civil, qui règle les conflits entre personnes, et du juge pénal, qui juge les infractions. Il nous faut des juges spécialement formés, qui ne s'occupent que de ces violences, et qui agiront vite et fort."
     },
     {
      "role": "gouvernement",
@@ -943,7 +1002,8 @@
       "nom": "Mme Isabelle Rome",
       "qualite": "ministre déléguée",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Tel qu'il est écrit, le texte que vous proposez n'aurait pas les effets qu'on espère et éloignerait les victimes de la justice."
     },
     {
      "role": "pour",
@@ -953,7 +1013,8 @@
       "nom": "M. Julien Dive",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Pour comprendre ces violences et les traiter, il faut une justice spécialement formée. Elle aidera à redonner aux victimes confiance dans la justice."
     },
     {
      "role": "contre",
@@ -963,7 +1024,8 @@
       "nom": "Mme Aude Luquet",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Nous en doutons, car cette justice éloignerait géographiquement le tribunal et les juges spécialisés, et elle compliquerait l'échange des informations."
     },
     {
      "role": "pour",
@@ -973,7 +1035,8 @@
       "nom": "Mme Isabelle Santiago",
       "qualite": null,
       "groupe": "SOC"
-     }
+     },
+     "simple": "Pendant que je parle, 102 femmes ont été tuées sauvagement depuis le début de l'année. Quand le rapporteur, le député chargé de présenter le texte, a déposé la proposition de loi le 18 octobre, il y en avait 79 ! L'urgence est évidente."
     },
     {
      "role": "contre",
@@ -983,7 +1046,8 @@
       "nom": "M. Éric Dupond-Moretti",
       "qualite": "garde des sceaux",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Votre proposition créerait un niveau de plus dans l'organisation des tribunaux. Cela compliquerait encore l'action de la justice et la rendrait incompréhensible pour les victimes comme pour tous ceux qui travaillent avec les tribunaux."
     }
    ],
    "niveau": "ia"
@@ -1018,7 +1082,8 @@
       "nom": "M. Éric Ciotti",
       "qualite": "rapporteur",
       "groupe": "LR"
-     }
+     },
+     "simple": "Nous avons besoin, plus que jamais, d'un tribunal spécialisé pour traiter efficacement ces recours, des demandes de contester une décision. Cette proposition de loi veut créer la Cour de sûreté de la République. Elle serait spécialisée dans les conflits portés devant un juge sur les décisions d'expulsion pour raison d'ordre public."
     },
     {
      "role": "gouvernement",
@@ -1028,7 +1093,8 @@
       "nom": "M. Éric Dupond-Moretti",
       "qualite": "garde des sceaux",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Ce choix me semble contraire à l'objectif d'efficacité de cette proposition de loi. L'efficacité demande au contraire de rapprocher le jugement de l'auteur de la décision contestée, en général le préfet, et de la personne concernée. Le préfet est le représentant de l'État dans le département."
     },
     {
      "role": "pour",
@@ -1038,7 +1104,8 @@
       "nom": "M. Olivier Marleix",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "25 % des détenus dans nos prisons sont des étrangers, et la moitié de la délinquance (les infractions) à Paris est commise par des étrangers. Pourtant, seule une centaine d'étrangers délinquants sont expulsés chaque année, contre 5 000 dans les années soixante-dix."
     },
     {
      "role": "contre",
@@ -1048,7 +1115,8 @@
       "nom": "Mme Anne Bergantz",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Il y a aussi des principes fondamentaux à respecter. Ce sont le droit de se défendre devant un juge et la possibilité de faire appel, c'est-à-dire de demander un nouveau jugement. Or il nous semble que ces principes ne seraient plus garantis si ce texte était adopté."
     },
     {
      "role": "pour",
@@ -1058,7 +1126,8 @@
       "nom": "M. Olivier Marleix",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Voyez la différence entre notre voisin, qui applique directement ses décisions d'expulsion, et la France, qui en reste à trois niveaux de tribunaux. C'est un système d'une complexité absurde, « kafkaïen », dont vous vous faites pourtant le défenseur."
     },
     {
      "role": "contre",
@@ -1068,7 +1137,8 @@
       "nom": "Mme Marietta Karamanli",
       "qualite": null,
       "groupe": "SOC"
-     }
+     },
+     "simple": "Ceux qui s'interrogent depuis des années sur les décisions d'expulsion savent bien une chose. Les difficultés pour les appliquer viennent à la fois du contexte et des relations de la France avec les pays d'origine des personnes concernées."
     }
    ],
    "niveau": "ia"
@@ -1102,7 +1172,8 @@
       "nom": "M. Julien Dive",
       "qualite": "rapporteur",
       "groupe": "LR"
-     }
+     },
+     "simple": "En écartant les mauvaises années du calcul, la réforme permettrait de mettre fin à la double peine des agriculteurs. Ils subissent une baisse de revenu tout de suite, puis une baisse de la retraite ensuite."
     },
     {
      "role": "gouvernement",
@@ -1112,7 +1183,8 @@
       "nom": "M. Olivier Dussopt",
       "qualite": "ministre du travail, du plein emploi et de l’insertion",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Sur ce sujet, les attentes sont fortes et justifiées. Après avoir consacré leur carrière à nourrir le pays, les agriculteurs retraités doivent pouvoir vivre dans la dignité. C'est pourquoi j'ai inclus les retraites agricoles dans les discussions que je mène actuellement sur la réforme des retraites."
     },
     {
      "role": "pour",
@@ -1122,7 +1194,8 @@
       "nom": "Mme Marie Pochon",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Les agriculteurs sont désormais les derniers dont la retraite est calculée sur toute la carrière, toute leur vie de travail, bonnes et mauvaises années ensemble. Cela n'a aucun sens, quand on sait que pour les salariés elle est calculée sur les vingt-cinq meilleures années."
     },
     {
      "role": "contre",
@@ -1132,7 +1205,8 @@
       "nom": "M. Nicolas Turquois",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Jusqu'en 1990, les revenus des agriculteurs servant à calculer leurs cotisations étaient des montants fixes. Les cotisations, c'est l'argent prélevé pour la retraite et la santé. Ces montants dépendaient du nombre d'hectares et d'animaux. Par souci d'égalité avec les autres citoyens, comment retenir ces montants fixes comme revenus pour les vingt-cinq meilleures années ?"
     },
     {
      "role": "pour",
@@ -1142,7 +1216,8 @@
       "nom": "Mme Isabelle Valentin",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Fin 2020, un agriculteur qui avait travaillé toute sa vie et rempli toutes les conditions pour sa retraite ne touchait qu'une retraite de 880 euros. Cette somme est inférieure au minimum vieillesse, la somme minimale garantie aux personnes âgées."
     },
     {
      "role": "contre",
@@ -1152,7 +1227,8 @@
       "nom": "M. Nicolas Turquois",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Si l'on a 30 points de retraite pour l'année 2010, était-ce pour un revenu de 16 000 ou de 8 000 euros ? Les points servent à calculer la retraite versée chaque mois. Comment retrouver les vingt-cinq meilleures années dans ces conditions ?"
     }
    ],
    "niveau": "ia"
@@ -1182,7 +1258,8 @@
       "nom": "M. Mansour Kamardine",
       "qualite": "rapporteur de la commission des lois constitutionnelles, de la législation et de l’administration générale de la République",
       "groupe": "LR"
-     }
+     },
+     "simple": "La proposition de loi que nous examinons veut permettre d'expulser plus de groupes d'étrangers. Ce sont ceux qui menacent gravement l'ordre public, c'est-à-dire la sécurité et la tranquillité de tous."
     },
     {
      "role": "gouvernement",
@@ -1192,7 +1269,8 @@
       "nom": "Mme Dominique Faure",
       "qualite": "ministre déléguée",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Dans trop de cas, la règle actuelle est trop rigide. Le juge ne peut pas se prononcer sur l'expulsion d'étrangers dont la condamnation est définitive pour des faits très graves. Ces expulsions ne peuvent donc pas être appliquées. Nous pensons toutefois qu'il faut traiter cette question de l'expulsion dans son ensemble."
     },
     {
      "role": "pour",
@@ -1202,7 +1280,8 @@
       "nom": "M. Éric Pauget",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "La meilleure mesure n'est pas celle qui est décidée, mais celle qui est réellement appliquée. Respecter cette règle simple doit redevenir l'un des principes essentiels de notre politique sur l'immigration."
     },
     {
      "role": "contre",
@@ -1212,7 +1291,8 @@
       "nom": "Mme Mathilde Desjonquères",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "D'abord, supprimer des protections contre l'expulsion pour certains groupes semble présenter des risques juridiques : aller contre la loi. En cause : l'article 8 de la Convention européenne des droits de l'homme. Il interdit d'expulser un étranger quand cela porte une atteinte excessive au respect de sa vie privée et familiale."
     },
     {
      "role": "pour",
@@ -1222,7 +1302,8 @@
       "nom": "M. Mansour Kamardine",
       "qualite": "rapporteur",
       "groupe": "LR"
-     }
+     },
+     "simple": "Aujourd'hui, notre loi protège de l'expulsion un criminel, à cause de ses liens avec sa famille. Ce criminel frapperait sa femme tous les jours et agresserait sexuellement ses propres enfants !"
     },
     {
      "role": "contre",
@@ -1232,7 +1313,8 @@
       "nom": "M. Aurélien Taché",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Vouloir expulser des étrangers qui ont le droit d'être en France et y vivent depuis plus de vingt ans reviendrait à remettre totalement en cause les droits humains. La démocratie française est fondée sur ces droits."
     }
    ],
    "niveau": "ia"
@@ -1268,7 +1350,8 @@
       "nom": "M. Guillaume Kasbarian",
       "qualite": "rapporteur",
       "groupe": "RE"
-     }
+     },
+     "simple": "Il restait pourtant plusieurs problèmes à régler. Les peines n'étaient pas clairement classées selon leur gravité. Certains cas de squat, c'est-à-dire d'occupation d'un logement sans droit, n'étaient définis par aucune loi. Les situations de location n'étaient pas couvertes par ce qui avait déjà été fait."
     },
     {
      "role": "gouvernement",
@@ -1278,7 +1361,8 @@
       "nom": "M. Olivier Klein",
       "qualite": "ministre délégué",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Il assure un juste équilibre entre le droit à la propriété, le droit de posséder un bien, et le droit au logement. Ce sont deux droits essentiels qu'il ne faut pas opposer."
     },
     {
      "role": "pour",
@@ -1288,7 +1372,8 @@
       "nom": "M. Paul Midy",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Cette loi veut protéger les petits propriétaires contre les squatteurs, ceux qui occupent un logement sans droit et utilisent les failles de la loi pour s'en emparer. Elle ne veut pas compliquer encore la vie des petits locataires honnêtes qui traversent une période difficile et passagère."
     },
     {
      "role": "contre",
@@ -1298,7 +1383,8 @@
       "nom": "M. Stéphane Peu (GDR-NUPES)",
       "qualite": null,
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "Loin d'apporter des réponses à cette situation, vous proposez un texte. Il prétend lutter contre le squat, mais il vise en réalité les personnes qui ont du mal à payer leur loyer."
     },
     {
      "role": "pour",
@@ -1308,7 +1394,8 @@
       "nom": "Mme Annie Genevard",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Ce texte veut protéger plus efficacement les propriétaires. Il triple la peine prévue pour le squat d'un domicile. Il rend plus sûres les relations entre propriétaires et locataires. Il réduit les délais des conflits portés devant un juge."
     },
     {
      "role": "contre",
@@ -1318,7 +1405,8 @@
       "nom": "Mme Danielle Simonnet",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Vous allez condamner à la rue et à la prison des milliers de personnes mal logées ou qui n'ont pas payé leur loyer. Votre proposition de loi viole des droits fondamentaux, écrit le président de la Commission nationale consultative des droits de l'homme. Il cite la liberté d'association, d'expression, de la presse, et même le droit de grève."
     }
    ],
    "niveau": "ia"
@@ -1354,7 +1442,8 @@
       "nom": "M. Pierre Cazeneuve",
       "qualite": "rapporteur pour avis",
       "groupe": "RE"
-     }
+     },
+     "simple": "Le but du projet de loi est d'augmenter massivement et tout de suite notre production d'énergies renouvelables. Je suis un grand défenseur de l'énergie nucléaire. Mais je suis aussi persuadé que la bonne réponse vient d'une analyse scientifique et fondée sur la raison."
     },
     {
      "role": "gouvernement",
@@ -1364,7 +1453,8 @@
       "nom": "Mme Agnès Pannier-Runacher",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Accélérer les procédures de l'administration sans rien abandonner de nos exigences pour l'environnement, c'est-à-dire de nos règles de protection. Faire preuve de bon sens et installer des énergies renouvelables, surtout le solaire, sur des terrains déjà construits ou abîmés."
     },
     {
      "role": "pour",
@@ -1374,7 +1464,8 @@
       "nom": "M. Guillaume Kasbarian",
       "qualite": "président de la commission des affaires économiques",
       "groupe": "RE"
-     }
+     },
+     "simple": "Il faut produire plus d'électricité pour sortir vite des énergies fossiles, comme le pétrole et le gaz, qui émettent beaucoup de CO2. Il en faut aussi pour renforcer l'indépendance de la France, importer moins et offrir à ceux qui investissent des perspectives stables pour faire revenir des usines."
     },
     {
      "role": "contre",
@@ -1384,7 +1475,8 @@
       "nom": "M. Jean-Philippe Tanguy",
       "qualite": null,
       "groupe": "RN"
-     }
+     },
+     "simple": "Vous pouvez développer encore plus les énergies intermittentes, celles qui ne produisent pas tout le temps. Mais jamais, vraiment jamais, elles ne permettront de se passer des énergies fossiles. Au contraire : plus vous les développerez, plus vous nous lierez aux énergies fossiles, au gaz en particulier."
     },
     {
      "role": "pour",
@@ -1394,7 +1486,8 @@
       "nom": "Mme Laurence Maillart-Méhaignerie",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Nos procédures d'installation durent deux fois plus longtemps que chez nos voisins européens. En France, il faut cinq ans pour construire un parc de panneaux solaires, qui ne demande que quelques mois de travaux. Il faut sept ans pour un parc d'éoliennes, et dix ans pour un parc d'éoliennes en mer."
     },
     {
      "role": "contre",
@@ -1404,7 +1497,8 @@
       "nom": "M. Jean-Louis Bricout",
       "qualite": null,
       "groupe": "LIOT"
-     }
+     },
+     "simple": "Nous demandons simplement que les élus et la population des territoires aient la parole. Nous voulons dire oui quand c'est nécessaire, mais aussi pouvoir dire non. Nous voulons des moyens légaux, que l'on peut faire valoir devant un juge, pour refuser quand c'est nécessaire."
     }
    ],
    "niveau": "ia"
@@ -1438,7 +1532,8 @@
       "nom": "M. Pieyre-Alexandre Anglade",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Ce vote affirmera, de façon symbolique, sans effet direct, le soutien de toute la nation française au peuple ukrainien. Ce sera aussi un message au Kremlin, le pouvoir russe. Nous soutenons toujours les livraisons d'armes et les sanctions, des mesures de punition, contre la Russie. Nous demandons au gouvernement de les poursuivre."
     },
     {
      "role": "gouvernement",
@@ -1448,7 +1543,8 @@
       "nom": "Mme Chrysoula Zacharopoulou",
       "qualite": "secrétaire d’État chargée du développement, de la francophonie et des partenariats internationaux",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Ce texte exprime une position, sans force de loi. Il porte sur un sujet de la plus grande importance pour la France, pour l'avenir de l'Europe et pour la stabilité du monde. Je réaffirme devant vous le soutien total et constant de la France à l'Ukraine."
     },
     {
      "role": "pour",
@@ -1458,7 +1554,8 @@
       "nom": "M. Benjamin Haddad",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Avec ce texte, nous rappelons des vérités simples. Le 24 février, l'Ukraine a été victime d'une attaque de la Russie qu'on ne peut pas justifier, et qui est contraire au droit."
     },
     {
      "role": "contre",
@@ -1468,7 +1565,8 @@
       "nom": "Mme Laurence Robert-Dehault",
       "qualite": null,
       "groupe": "RN"
-     }
+     },
+     "simple": "Vous demandez toujours plus de sanctions sans dire lesquelles. Or certaines sanctions fonctionnent et affaiblissent le régime russe, notamment son économie tournée vers la guerre. D'autres, au contraire, le renforcent et l'enrichissent, au détriment des Français."
     },
     {
      "role": "pour",
@@ -1478,7 +1576,8 @@
       "nom": "Mme Nathalie Serre",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Ce vote reste bien sûr symbolique, mais il permet à l'Assemblée nationale de marquer une nouvelle fois son soutien à l'Ukraine. Je rappelle aussi que notre objectif, le seul qui compte au fond, est que cette guerre cesse."
     },
     {
      "role": "contre",
@@ -1488,7 +1587,8 @@
       "nom": "M. Aurélien Saintoul",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Pourquoi se contenter d'un texte si limité et sans nouveauté ? Ne voyez-vous aucune difficulté dans les choix faits depuis le 24 février ? N'avez-vous aucun doute, alors que leurs conséquences pèsent si durement sur notre situation économique et sociale ?"
     }
    ],
    "niveau": "ia"
@@ -1523,7 +1623,8 @@
       "nom": "M. Jean-René Cazeneuve",
       "qualite": "rapporteur général",
       "groupe": "RE"
-     }
+     },
+     "simple": "Nous avons fait un double choix responsable : réduire notre déficit, certes légèrement, et renforcer notre soutien aux Français au plus fort de la crise. Le déficit, c'est quand on dépense plus que ce qui rentre."
     },
     {
      "role": "gouvernement",
@@ -1533,7 +1634,8 @@
       "nom": "M. Gabriel Attal",
       "qualite": "ministre délégué",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Je rappelle le principe de ce texte : accompagner nos concitoyens avec des mesures en plus. Il s'agit de faire face à la hausse des prix de l'énergie."
     },
     {
      "role": "pour",
@@ -1543,7 +1645,8 @@
       "nom": "Mme Perrine Goulet (Dem)",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Ce texte, qui corrige le budget, accompagne nos concitoyens. Il accompagne l'enseignement supérieur, pour que les étudiants puissent étudier à l'université. Il accompagne l'armée, pour ses dépenses de missions à l'étranger et pour la guerre en Ukraine. Il accompagne aussi l'agriculture dans les crises qu'elle traverse."
     },
     {
      "role": "contre",
@@ -1553,7 +1656,8 @@
       "nom": "M. Nicolas Sansu",
       "qualite": null,
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "Mais la multiplication des chèques n'empêche pas de constater deux choses. Premièrement, vous êtes incapables de lutter contre la spéculation sur l'énergie, c'est-à-dire les paris sur les prix pour gagner de l'argent. Cela se passe dans le marché européen libéralisé, ouvert à la concurrence."
     },
     {
      "role": "pour",
@@ -1563,7 +1667,8 @@
       "nom": "M. Mathieu Lefèvre",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Nous continuerons donc à être sérieux sur les dépenses. C'est ce qui nous permet aujourd'hui de verser des chèques énergie et de soutenir nos universités."
     },
     {
      "role": "contre",
@@ -1573,7 +1678,8 @@
       "nom": "Mme Eva Sas",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "C'est aussi une occasion manquée. Le versement mobilité, une contribution payée par les entreprises, aurait pu financer le fonctionnement et le développement des transports en commun. Concrètement, vous ne cherchez pas à empêcher la hausse des tarifs pour les usagers, ceux qui prennent les transports."
     }
    ],
    "niveau": "ia"
@@ -1608,7 +1714,8 @@
       "nom": "Mme Agnès Pannier-Runacher",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Notre objectif est de nous préparer à l'avance et d'être prêts si nous décidions d'avancer dans le nouveau programme nucléaire français. Cette décision viendrait après les discussions avec les personnes concernées, les débats publics et les débats au Parlement qui sont nécessaires."
     },
     {
      "role": "gouvernement",
@@ -1618,7 +1725,8 @@
       "nom": "Mme Agnès Pannier-Runacher",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Au-delà de son aspect technique, ce texte reflète aussi notre projet politique pour le secteur du nucléaire. C'est une grande aventure scientifique, industrielle et humaine. Elle rassemblera des femmes et des hommes, des industries et des compétences au service d'un grand projet national."
     },
     {
      "role": "pour",
@@ -1628,7 +1736,8 @@
       "nom": "M. Xavier Albertini",
       "qualite": null,
       "groupe": "HOR"
-     }
+     },
+     "simple": "Certains travaux à côté, qui ne concernent jamais directement la partie nucléaire, pourront commencer plus tôt. Il s'agit de dégager et aplanir le terrain, d'installer des stations pour pomper l'eau et des bâtiments pour traiter les eaux rejetées. On gagnera ainsi jusqu'à deux ans dans la construction d'un réacteur."
     },
     {
      "role": "contre",
@@ -1638,7 +1747,8 @@
       "nom": "Mme Julie Laernoes",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Tous les scientifiques le répètent : nous avons sept ans pour agir. Les nouveaux réacteurs éventuels ne verront pas le jour avant 2037, au plus tôt. Vous cachez votre inaction pour le climat derrière une solution soi-disant magique, qui n'est qu'un « mirage », une illusion !"
     },
     {
      "role": "pour",
@@ -1648,7 +1758,8 @@
       "nom": "M. Stéphane Travert",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Nous examinons un texte important, qui permettra d'accélérer les procédures de construction de nouvelles centrales. Le secteur du nucléaire est un secteur d'excellence qui, depuis de nombreuses années, a subi la méfiance des responsables politiques et a été mal considéré."
     },
     {
      "role": "contre",
@@ -1658,7 +1769,8 @@
       "nom": "Mme Anna Pic",
       "qualite": null,
       "groupe": "SOC"
-     }
+     },
+     "simple": "D'autre part, ils ont une fâcheuse tendance à décider d'avance du débat sur les grands choix du pays en matière d'énergie. Pourtant, le projet de loi de programmation sur l'énergie et le climat doit être examiné dans quelques mois."
     }
    ],
    "niveau": "ia"
@@ -1692,7 +1804,8 @@
       "nom": "M. Christophe Bentz",
       "qualite": "rapporteur",
       "groupe": "RN"
-     }
+     },
+     "simple": "Notre mesure, qui vise tous les salaires jusqu'à trois fois le Smic, le salaire minimum, profitera donc à près de 90 % des salariés."
     },
     {
      "role": "gouvernement",
@@ -1702,7 +1815,8 @@
       "nom": "M. Olivier Dussopt",
       "qualite": "ministre du travail, du plein emploi et de l’insertion",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Ce texte supprime les cotisations (l'argent prélevé sur les salaires) des entreprises qui augmentent d'au moins 10 % tous les salaires jusqu'à trois fois le Smic. Le Smic est le salaire minimum. Le petit groupe de députés qui l'a étudié l'a très largement rejeté. Le gouvernement n'est pas d'accord et demande aux députés de le rejeter."
     },
     {
      "role": "pour",
@@ -1712,7 +1826,8 @@
       "nom": "M. Jean-Philippe Tanguy",
       "qualite": null,
       "groupe": "RN"
-     }
+     },
+     "simple": "Nous voulons que tous les salaires d'une même entreprise augmentent pour une fois en même temps et au même niveau, par solidarité. Cela vaut pour un salarié, un employé, un cadre, un chef d'équipe ou une profession intermédiaire. Tous contribuent de la même façon à la dignité et à la richesse communes."
     },
     {
      "role": "contre",
@@ -1722,7 +1837,8 @@
       "nom": "Mme Josiane Corneloup",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "En réalité, cette mesure provoquera surtout un effet d'aubaine : des entreprises recevront un avantage sans rien changer. L'exemption de cotisations, l'argent prélevé sur les salaires, profitera seulement à celles qui avaient déjà prévu une telle hausse des salaires ou qui ont les moyens de la faire."
     },
     {
      "role": "pour",
@@ -1732,7 +1848,8 @@
       "nom": "M. Jean-Philippe Tanguy",
       "qualite": null,
       "groupe": "RN"
-     }
+     },
+     "simple": "Ceux qui gagnent 4 000 euros font tourner le pays et y participent autant que ceux qui gagnent le Smic. Ils font des efforts et des sacrifices, et ils financent la protection sociale : santé, retraites, familles."
     },
     {
      "role": "contre",
@@ -1742,7 +1859,8 @@
       "nom": "M. Philippe Vigier",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "À l'heure où nous ouvrons un débat sur les retraites et où nous cherchons à faire 16 milliards d'euros d'économies, vous proposez d'ajouter 16 milliards de dépenses !"
     }
    ],
    "niveau": "ia"
@@ -1775,7 +1893,8 @@
       "nom": "Mme Laure Lavalette",
       "qualite": "rapporteure",
       "groupe": "RN"
-     }
+     },
+     "simple": "Le regard extérieur, bienveillant, discret – j'insiste – et informé des députés et des sénateurs peut permettre de briser le silence. Les laisser constater les problèmes dans les établissements d'accueil, comme les maisons de retraite, ne pourra que rassurer nos concitoyens inquiets pour leurs proches fragiles. Ils retrouveront confiance."
     },
     {
      "role": "gouvernement",
@@ -1785,7 +1904,8 @@
       "nom": "M. Jean-Christophe Combe",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Oui, contrôler des lieux qui accueillent des personnes fragiles est un vrai métier. Pour être efficaces, ces contrôles demandent des conditions que les députés, les sénateurs et les journalistes n'ont pas."
     },
     {
      "role": "pour",
@@ -1795,7 +1915,8 @@
       "nom": "M. Lionel Tivoli",
       "qualite": null,
       "groupe": "RN"
-     }
+     },
+     "simple": "Pourtant, permettre aux députés et aux sénateurs d'alerter sur la situation dans ces établissements, c'est choisir une vie meilleure pour nos compatriotes fragiles et vulnérables."
     },
     {
      "role": "contre",
@@ -1805,7 +1926,8 @@
       "nom": "Mme Josiane Corneloup",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Il est trompeur de penser que le droit de visite des députés et des sénateurs permettrait de découvrir ces agissements. Les contrôles doivent être faits par des personnes autorisées et formées."
     }
    ],
    "niveau": "ia"
@@ -1835,7 +1957,8 @@
       "nom": "M. Bruno Bilde",
       "qualite": "rapporteur de la commission des lois constitutionnelles, de la législation et de l’administration générale de la République",
       "groupe": "RN"
-     }
+     },
+     "simple": "Contrairement à de nombreuses réformes dans ce domaine, il n'est pas nécessaire de changer la Constitution pour changer la façon d'élire les députés. La Constitution est la loi la plus importante du pays. Il ne faut pas non plus passer par une loi organique, une loi qui précise la Constitution."
     },
     {
      "role": "gouvernement",
@@ -1845,7 +1968,8 @@
       "nom": "Mme Dominique Faure",
       "qualite": "ministre déléguée",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Je suis convaincue que le débat sur la proportionnelle (sièges répartis selon les voix de chaque liste) mérite d'être ouvert, comme celui sur la bonne santé de la représentation politique. Mais je suis certaine qu'il doit l'être plus largement et plus sérieusement. Le gouvernement est donc contre cette proposition de loi."
     },
     {
      "role": "pour",
@@ -1855,7 +1979,8 @@
       "nom": "Mme Béatrice Roullaud",
       "qualite": null,
       "groupe": "RN"
-     }
+     },
+     "simple": "Le système proportionnel, où chaque liste obtient des élus selon ses voix, représente mieux les électeurs : il est beaucoup plus juste et plus démocratique. Si les citoyens étaient sûrs que leurs candidats, c'est-à-dire leurs idées, étaient représentés, ils se sentiraient concernés par l'élection."
     },
     {
      "role": "contre",
@@ -1865,7 +1990,8 @@
       "nom": "M. Johnny Hajjar",
       "qualite": null,
       "groupe": "SOC"
-     }
+     },
+     "simple": "D'abord, l'élection par listes à la proportionnelle a un défaut majeur. Elle favorise les idées des partis politiques, au détriment de la relation directe et personnelle avec l'électrice et l'électeur. Elle éloigne donc les députés du peuple."
     },
     {
      "role": "pour",
@@ -1875,7 +2001,8 @@
       "nom": "M. Bruno Bilde",
       "qualite": "rapporteur",
       "groupe": "RN"
-     }
+     },
+     "simple": "Le scrutin majoritaire, où gagne le candidat qui a le plus de voix, nuit à la diversité des opinions et à notre démocratie. Ce scrutin renforce le poids de la majorité. Pourtant, la Constitution donne déjà au gouvernement de grands moyens pour s'imposer à l'Assemblée, même sans majorité absolue."
     },
     {
      "role": "contre",
@@ -1885,7 +2012,8 @@
       "nom": "M. Xavier Breton",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "C'est logique, c'est mathématique : les partis vont placer en tête de liste des candidats des zones les plus peuplées et les plus urbaines. Au final, seules les villes seront représentées. Les campagnes seront écrasées."
     }
    ],
    "niveau": "ia"
@@ -1934,7 +2062,8 @@
       "nom": "Mme Isabelle Santiago",
       "qualite": "rapporteure",
       "groupe": "SOC"
-     }
+     },
+     "simple": "L'objectif du premier article est de protéger l'enfant pendant la procédure pénale. Dans un premier temps, cette protection passe par la suspension automatique et provisoire de l'autorité parentale, c'est-à-dire des droits du parent sur son enfant. Le droit de visite et d'hébergement est aussi suspendu pendant les poursuites en justice."
     },
     {
      "role": "gouvernement",
@@ -1944,7 +2073,8 @@
       "nom": "M. Éric Dupond-Moretti",
       "qualite": "garde des sceaux",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "La version retenue par la commission, un petit groupe de députés, est donc adaptée à bien des égards. Je souhaite que nous gardions cet équilibre. Il garantit l'efficacité de cette avancée pour protéger les enfants, et le respect de la Constitution."
     }
    ],
    "niveau": "ia",
@@ -1981,7 +2111,8 @@
       "nom": "Mme Annie Vidal",
       "qualite": "rapporteure de la commission des affaires sociales",
       "groupe": "RE"
-     }
+     },
+     "simple": "Ce texte n'épuisera certes pas le sujet du grand âge, la vieillesse. Mais il aborde des sujets qui touchent toute la société et propose de faire sans attendre ce qui peut être fait."
     },
     {
      "role": "gouvernement",
@@ -1991,7 +2122,8 @@
       "nom": "M. Jean-Christophe Combe",
       "qualite": "ministre",
       "groupe": null
-     }
+     },
+     "simple": "Que veulent les Français ? Vieillir chez eux. C'est pourquoi nous donnons la priorité à la prévention, c'est-à-dire à agir avant que les problèmes arrivent. Ils pourront ainsi rester le plus longtemps possible chez eux en étant autonomes."
     },
     {
      "role": "pour",
@@ -2001,7 +2133,8 @@
       "nom": "M. Cyrille Isaac-Sibille",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Notre responsabilité de députés et de sénateurs est de répondre sans attendre aux conséquences du vieillissement de notre population. Il ne faut pas remettre cela à demain, mais le faire aujourd'hui."
     },
     {
      "role": "contre",
@@ -2011,7 +2144,8 @@
       "nom": "M. Laurent Panifous",
       "qualite": null,
       "groupe": "LIOT"
-     }
+     },
+     "simple": "On peut réorganiser cent fois les établissements et les services, leur donner un nouveau nom, créer des commissions. On peut changer le responsable. Cela ne servira à rien : c'est de la « cosmétique », des changements de surface."
     },
     {
      "role": "pour",
@@ -2021,7 +2155,8 @@
       "nom": "M. Freddy Sertin",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Face au vieillissement de sa population, la France doit avoir des lois et des règles à la hauteur de ce qui est en jeu. Cela vaut pour les établissements spécialisés et pour le maintien à domicile, c'est-à-dire rester vivre chez soi."
     },
     {
      "role": "contre",
@@ -2031,7 +2166,8 @@
       "nom": "Mme Véronique Besse",
       "qualite": null,
       "groupe": "NI"
-     }
+     },
+     "simple": "Ce texte ne contient aucun progrès important, rien qui puisse rassurer celles et ceux qui travaillent auprès de nos aînés."
     }
    ],
    "niveau": "ia"
@@ -2082,7 +2218,8 @@
       "nom": "Mme Cécile Untermaier",
       "qualite": "rapporteure de la commission des lois constitutionnelles, de la législation et de l’administration générale de la République",
       "groupe": "SOC"
-     }
+     },
+     "simple": "Nous constatons, et les journaux en parlent, que les violences au sein de la famille restent aussi nombreuses. Les meurtres de femmes, appelés féminicides, continuent. Les agressions sexuelles et les tentatives de meurtre de femmes augmentent fortement."
     },
     {
      "role": "gouvernement",
@@ -2092,7 +2229,8 @@
       "nom": "M. Éric Dupond-Moretti",
       "qualite": "garde des sceaux, ministre de la justice",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "La lutte contre les violences faites aux femmes est un combat permanent, de tous les instants. Il nous concerne tous et nous oblige tous. Cela va du voisin au collègue de bureau, du policier au juge, du gendarme à l'avocat, du député au ministre."
     }
    ],
    "niveau": "ia",
@@ -2126,7 +2264,8 @@
       "nom": "M. Johnny Hajjar",
       "qualite": "rapporteur de la commission des affaires économiques",
       "groupe": "SOC"
-     }
+     },
+     "simple": "La création de cette commission d'enquête, un groupe de députés qui enquête sur un sujet, est indispensable et urgente. Vous le savez, la lutte contre la vie chère, c'est-à-dire les prix élevés, en outre-mer est un défi majeur pour nos peuples et nos territoires. L'outre-mer, ce sont les territoires français hors d'Europe."
     }
    ],
    "niveau": "ia",
@@ -2163,7 +2302,8 @@
       "nom": "M. Guillaume Vuilletet",
       "qualite": "rapporteur",
       "groupe": "RE"
-     }
+     },
+     "simple": "Les articles confiés à la commission des lois, un petit groupe de députés, visent d'abord à garantir la sécurité des Jeux. Ils améliorent notamment les conditions d'usage de la vidéoprotection, c'est-à-dire les caméras de surveillance."
     },
     {
      "role": "gouvernement",
@@ -2173,7 +2313,8 @@
       "nom": "Mme Amélie Oudéa-Castéra",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Le traitement des images par un algorithme, un programme informatique, est une expérimentation, un essai. Je souligne que cet essai est très précisément limité dans le temps et dans l'espace. Il est aussi limité dans ses buts et sa façon de fonctionner."
     },
     {
      "role": "pour",
@@ -2183,7 +2324,8 @@
       "nom": "M. Thomas Rudigoz",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Le projet de loi s'assure aussi qu'il n'y ait pas de traitement biométrique, qui identifie les gens par leur corps. Il écarte la reconnaissance faciale, c'est-à-dire reconnaître les gens à leur visage. Je tiens à le rappeler. Ce dispositif, une mesure mise en place pour essayer, prendra fin le 31 décembre 2024."
     },
     {
      "role": "contre",
@@ -2193,7 +2335,8 @@
       "nom": "Mme Sandra Regol",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Il s'agit d'une forme de « traque » biométrique généralisée, c'est-à-dire de suivi des gens d'après leur corps. Elle repose sur l'analyse en temps réel des points qui composent les corps, les gestes et les expressions. Aucun moyen technique n'existe pour exclure les visages, malgré la promesse faite dans ce texte."
     },
     {
      "role": "pour",
@@ -2203,7 +2346,8 @@
       "nom": "M. Philippe Pradal",
       "qualite": null,
       "groupe": "HOR"
-     }
+     },
+     "simple": "L'organisation des Jeux olympiques et paralympiques en France doit donc être exemplaire. C'est dans ce but que ce texte propose des adaptations dans de nombreux domaines."
     },
     {
      "role": "contre",
@@ -2213,7 +2357,8 @@
       "nom": "M. Jordan Guitton",
       "qualite": null,
       "groupe": "RN"
-     }
+     },
+     "simple": "Oui à l'expérimentation, un essai limité dans le temps, mais seulement pour sécuriser les Jeux olympiques de 2024. Si vous voulez prolonger ce dispositif, cette mesure mise en place, au-delà, présentez-nous un projet de loi. Mais ne vous servez pas des Jeux olympiques comme prétexte !"
     }
    ],
    "niveau": "ia"
@@ -2246,7 +2391,8 @@
       "nom": "M. Philippe Brun",
       "qualite": "rapporteur de la commission des finances, de l’économie générale et du contrôle budgétaire",
       "groupe": "SOC"
-     }
+     },
+     "simple": "À quatre reprises, le Parlement s'est prononcé, de façon cohérente, pour deux grands objectifs. D'abord, l'Assemblée et le Sénat, les deux assemblées qui votent les lois, ont affirmé leur vive opposition à tout projet de découpage du groupe EDF en morceaux."
     },
     {
      "role": "gouvernement",
@@ -2256,7 +2402,8 @@
       "nom": "M. Roland Lescure",
       "qualite": "ministre délégué",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Le but est d'inscrire dans la durée la relation entre l'État, qui détient des parts d'EDF, et EDF. Ce serait par un accord de dix ans, mis à jour tous les trois ans. Il permettrait de planifier l'activité de notre électricien national."
     }
    ],
    "niveau": "ia",
@@ -2293,7 +2440,8 @@
       "nom": "M. Guillaume Kasbarian",
       "qualite": "président de la commission des affaires économiques",
       "groupe": "RE"
-     }
+     },
+     "simple": "Nous examinons une proposition de loi qui répond à un besoin urgent : la protection de notre forêt face aux grands incendies, de très grande ampleur. Ils risquent de se développer dans les années à venir."
     },
     {
      "role": "gouvernement",
@@ -2303,7 +2451,8 @@
       "nom": "Mme Dominique Faure",
       "qualite": "ministre déléguée",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Il s'agit de montrer que nous sommes capables, ensemble, d'avancer pour nous adapter au changement climatique."
     }
    ],
    "niveau": "ia",
@@ -2338,7 +2487,8 @@
       "nom": "Mme Claudia Rouaux",
       "qualite": "rapporteure",
       "groupe": "SOC"
-     }
+     },
+     "simple": "Plus de deux ans après la mise en place de ce service, plusieurs fédérations sportives, les organisations qui gèrent un sport, ont encore un retard important. De plus, le contrôle d'honorabilité, qui vérifie le casier judiciaire des encadrants, a des défauts. Il faut corriger ces difficultés : c'est l'objet de cette proposition de loi."
     },
     {
      "role": "gouvernement",
@@ -2348,7 +2498,8 @@
       "nom": "Mme Marie Lebec",
       "qualite": "ministre déléguée",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Notre repère est un principe très clair, qui nous guide chaque jour : la tolérance zéro, c'est-à-dire ne rien laisser passer. En l'appliquant, nous avons beaucoup renforcé nos moyens d'action ces trois dernières années."
     }
    ],
    "niveau": "ia",
@@ -2383,7 +2534,8 @@
       "nom": "M. Laurent Marcangeli",
       "qualite": "rapporteur de la commission des affaires culturelles et de l’éducation",
       "groupe": "HOR"
-     }
+     },
+     "simple": "Dès mon élection en juin 2022, j'ai estimé qu'il était essentiel d'examiner les relations entre les jeunes et les réseaux sociaux. Ce sujet est devenu impossible à ignorer, et même inquiétant, ces dernières années. Ma proposition de loi veut s'en saisir avec modestie, certes, mais avec ambition."
     },
     {
      "role": "gouvernement",
@@ -2393,7 +2545,8 @@
       "nom": "Mme Charlotte Caubel",
       "qualite": "secrétaire d’État",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Quand 1 million d'enfants sont victimes de harcèlement en ligne chaque année, s'inscrire sur un réseau social n'est pas un acte sans importance. Quand des milliers de jeunes voient leurs images intimes diffusées pour se venger, s'inscrire sur un réseau social n'est pas un acte sans importance."
     }
    ],
    "niveau": "ia",
@@ -2429,7 +2582,8 @@
       "nom": "M. Paul Christophe",
       "qualite": "rapporteur de la commission des affaires sociales",
       "groupe": "HOR"
-     }
+     },
+     "simple": "Précisons d'abord que cette proposition de loi ne prétend pas répondre à toutes les difficultés des familles d'enfants atteints d'une maladie, d'un handicap ou victimes d'un accident grave. Elle veut améliorer leur vie quotidienne par des mesures de protection et de simplification."
     },
     {
      "role": "gouvernement",
@@ -2439,7 +2593,8 @@
       "nom": "M. Jean-Christophe Combe",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "De même, nous sommes tout à fait favorables à l'article 3 de la proposition de loi. Jusqu'à présent, pour renouveler exceptionnellement l'allocation de présence parentale, il fallait un nouveau certificat du médecin. Il fallait aussi un avis clair du service de contrôle médical."
     }
    ],
    "niveau": "ia",
@@ -2474,7 +2629,8 @@
       "nom": "M. Hervé de Lépinau",
       "qualite": "rapporteur",
       "groupe": "RN"
-     }
+     },
+     "simple": "La langue est d'abord un ensemble de signes, comme les mots, partagé par ceux qui la parlent : un outil pour communiquer. Elle ne transmet pas, en elle-même, une façon particulière de voir le monde."
     },
     {
      "role": "gouvernement",
@@ -2484,7 +2640,8 @@
       "nom": "M. Stanislas Guerini",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Je suis contre le texte, mais pas parce que je suis pour l'écriture inclusive, qui montre les femmes dans les mots. Je suis pour la féminisation des emplois (des noms féminins pour les métiers), notamment dans le secteur public. Je veux que la langue française en tienne compte et grandisse avec nous."
     },
     {
      "role": "pour",
@@ -2494,7 +2651,8 @@
       "nom": "Mme Catherine Jaouen",
       "qualite": null,
       "groupe": "RN"
-     }
+     },
+     "simple": "Utilisée de façon désordonnée, comme c'est le cas aujourd'hui, l'écriture inclusive provoque une insécurité juridique, c'est-à-dire un doute sur le sens des textes. Déformer certains mots rend forcément possibles plusieurs interprétations des clauses, les règles écrites, d'un contrat."
     },
     {
      "role": "contre",
@@ -2504,7 +2662,8 @@
       "nom": "M. Inaki Echaniz",
       "qualite": null,
       "groupe": "SOC"
-     }
+     },
+     "simple": "Une étude de 2017 de l'institut Harris Interactive le montre. Les formulations inclusives ou épicènes valent pour les deux genres. Elles font venir à l'esprit jusqu'à deux fois plus de noms de femmes que les formulations qui rendent les femmes invisibles."
     },
     {
      "role": "pour",
@@ -2514,7 +2673,8 @@
       "nom": "M. Hervé de Lépinau",
       "qualite": "rapporteur",
       "groupe": "RN"
-     }
+     },
+     "simple": "Il faut en outre restreindre l'usage de l'écriture inclusive dans les universités publiques. Elle gêne autant les étudiants qui ont des difficultés avec le langage que les écoliers."
     },
     {
      "role": "contre",
@@ -2524,7 +2684,8 @@
       "nom": "Mme Sarah Legrain",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Vous auriez appris une chose. Ce qui rend le français si difficile à apprendre, ce n'est pas tant l'écriture inclusive que l'écart entre l'orthographe et la prononciation."
     }
    ],
    "niveau": "ia"
@@ -2560,7 +2721,8 @@
       "nom": "M. Florent Boudié",
       "qualite": "rapporteur",
       "groupe": "RE"
-     }
+     },
+     "simple": "Nous avons adopté une règle pour que les étrangers sans papiers qui travaillent dans un métier où il manque du monde puissent rester en France. Pour la première fois sous la Ve République, le régime actuel de la France, la loi permettra de donner des papiers à ces travailleurs."
     },
     {
      "role": "gouvernement",
@@ -2570,7 +2732,8 @@
       "nom": "M. Gérald Darmanin",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Un texte imparfait, certes, mais qui mérite d'être adopté. Il protège les Français et donne des papiers aux travailleurs sans papiers. Il interdit de retenir des mineurs dans les centres de rétention, où l'on garde des étrangers avant leur expulsion, et il simplifie le droit."
     },
     {
      "role": "pour",
@@ -2580,7 +2743,8 @@
       "nom": "M. Philippe Pradal",
       "qualite": null,
       "groupe": "HOR"
-     }
+     },
+     "simple": "Les Français attendent de la politique qu'elle retrouve une action efficace de l'État, qu'elle retrouve de la puissance et le contrôle des arrivées de personnes sur le territoire."
     },
     {
      "role": "contre",
@@ -2590,7 +2754,8 @@
       "nom": "M. Benjamin Lucas",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Vous avez cédé sur tout. Vous limitez le regroupement familial, c'est-à-dire la venue de la famille d'un étranger. Vous remettez dans le droit français la préférence nationale pour les prestations sociales, c'est-à-dire la priorité aux Français."
     },
     {
      "role": "pour",
@@ -2600,7 +2765,8 @@
       "nom": "M. Philippe Pradal",
       "qualite": null,
       "groupe": "HOR"
-     }
+     },
+     "simple": "Le travail est une condition indispensable de l'intégration, c'est-à-dire de la place de chacun dans la société. Il est la contribution nécessaire de chacun à la société française. Il s'agit d'envoyer un message clair : sans travail ni acceptation des valeurs de la République, l'intégration ne peut pas avoir lieu."
     },
     {
      "role": "contre",
@@ -2610,7 +2776,8 @@
       "nom": "M. Benjamin Lucas",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Pour la première fois dans l'histoire de la Ve République, vous avez porté atteinte au droit du sol : le droit de devenir français parce qu'on est né en France. C'est un « crime indélébile », impossible à effacer, contre la devise de la République."
     }
    ],
    "niveau": "ia"
@@ -2644,7 +2811,8 @@
       "nom": "Mme Sandrine Rousseau",
       "qualite": "rapporteure",
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Premièrement, dès que l'état de catastrophe naturelle de sécheresse est constaté, on suppose que les dégâts sont dus au RGA. Le RGA, c'est le retrait et le gonflement de l'argile du sol."
     },
     {
      "role": "gouvernement",
@@ -2654,7 +2822,8 @@
       "nom": "M. Jean-Noël Barrot",
       "qualite": "ministre délégué",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Il vaut mieux fixer par décret, plutôt que dans la loi, des critères, c'est-à-dire des conditions, qui évoluent avec les phénomènes naturels. Un décret est une règle écrite par le gouvernement sans vote des députés."
     },
     {
      "role": "pour",
@@ -2664,7 +2833,8 @@
       "nom": "M. Michel Castellani",
       "qualite": null,
       "groupe": "LIOT"
-     }
+     },
+     "simple": "Nous constatons deux choses. Les propriétaires sont mal indemnisés, c'est-à-dire mal remboursés de leurs dégâts. Et le système ne peut pas durer à moyen terme, dans les années qui viennent. Nous ne pouvons donc pas ne pas agir."
     },
     {
      "role": "contre",
@@ -2674,7 +2844,8 @@
       "nom": "M. Luc Geismar",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Cette présomption, c'est-à-dire cette cause supposée d'avance, est contraire aux principes du code civil, la loi qui règle les relations entre les personnes. Elle nie que les dégâts de l'argile ont plusieurs causes et pourrait créer un déséquilibre dans le système."
     },
     {
      "role": "pour",
@@ -2684,7 +2855,8 @@
       "nom": "M. Pierre Vatin",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Dans l'intérêt de tous, il faut voter la proposition de loi. Ainsi, les Français exposés à ces risques seront remboursés à la mesure du dommage subi à cause du changement climatique."
     },
     {
      "role": "contre",
@@ -2694,7 +2866,8 @@
       "nom": "M. Jean-Noël Barrot",
       "qualite": "ministre délégué",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Il faut être clair : le coût en plus de la proposition de loi pour le système serait répercuté directement sur les primes. Les primes, ce sont les sommes que paient les gens pour leur contrat d'assurance."
     }
    ],
    "niveau": "ia"
@@ -2729,7 +2902,8 @@
       "nom": "Mme Francesca Pasquini",
       "qualite": "rapporteure de la commission des affaires économiques",
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "J'ai la profonde conviction que personne ne se serait opposé à la mise en place d'une aide pour se nourrir destinée aux plus fragiles. Personne ne se serait opposé non plus à une solution permettant de mieux manger à la cantine."
     },
     {
      "role": "gouvernement",
@@ -2739,7 +2913,8 @@
       "nom": "M. Jean-Christophe Combe",
       "qualite": "ministre des solidarités, de l’autonomie et des personnes handicapées",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Premièrement, les solutions adaptées à chaque situation sont bien plus efficaces que les mesures générales, pensées pour des moyennes qui, sur le terrain, n'existent pas."
     },
     {
      "role": "pour",
@@ -2749,7 +2924,8 @@
       "nom": "M. Emmanuel Fernandes",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Nous pouvons répondre à l'urgence pour la santé et agir pour l'intérêt général. Inscrivons dans la loi l'interdiction de fabriquer et de vendre des viandes avec des additifs nitrés (des produits ajoutés). L'Anses, une agence de santé, a confirmé qu'ils augmentaient le risque de cancer du gros intestin."
     },
     {
      "role": "contre",
@@ -2759,7 +2935,8 @@
       "nom": "Mme Anne-Laure Blin",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Tout d'abord, les aides sont très souvent réservées aux plus modestes et ne profitent presque jamais aux classes moyennes. Les seuils, les limites qui décident qui a droit aux aides, sont décidés sans vraie raison et très contestables. Cela crée une vraie injustice pour les Français."
     },
     {
      "role": "pour",
@@ -2769,7 +2946,8 @@
       "nom": "M. Michel Castellani",
       "qualite": null,
       "groupe": "LIOT"
-     }
+     },
+     "simple": "En 2021, entre 3,2 et 3,5 millions de personnes ont dû recourir à l'aide alimentaire. C'est trois fois plus qu'il y a dix ans."
     },
     {
      "role": "contre",
@@ -2779,7 +2957,8 @@
       "nom": "Mme Stéphanie Galzy",
       "qualite": null,
       "groupe": "RN"
-     }
+     },
+     "simple": "Avec la hausse des prix et la crise économique que nous traversons, nous ne pouvons pas voter ce texte. Il donne seulement quelques dizaines d'euros de plus pour l'année à une petite catégorie de Français."
     }
    ],
    "niveau": "ia"
@@ -2813,7 +2992,8 @@
       "nom": "M. Jean-Victor Castor",
       "qualite": "rapporteur de la commission des affaires sociales",
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "Reste que la loi de 2021 est inchangée et que son application pose problème. Elle pose problème d'abord par les personnes auxquelles elle s'applique, ce qui la rend incohérente, sans logique."
     },
     {
      "role": "gouvernement",
@@ -2823,7 +3003,8 @@
       "nom": "M. François Braun",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "On supprimerait purement et simplement une règle de bon sens, indispensable pour notre système de santé, qui protège les soignants comme les personnes fragiles. On supprimerait le principe même d'une obligation de vaccination possible si les circonstances l'exigent."
     },
     {
      "role": "pour",
@@ -2833,7 +3014,8 @@
       "nom": "M. Olivier Serva",
       "qualite": null,
       "groupe": "LIOT"
-     }
+     },
+     "simple": "Nous connaissons mieux le virus, ses variants, c'est-à-dire ses nouvelles formes, et les effets imparfaits de la vaccination sur ces derniers. Nous avons besoin de faire mieux que ce qui a été fait dans l'urgence, au plus fort de la crise."
     },
     {
      "role": "contre",
@@ -2843,7 +3025,8 @@
       "nom": "M. Jean-François Rousset",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "En tant que médecin, je ne peux pas finir mon intervention sans un rappel. La Haute Autorité de santé, un organisme public, a estimé que la vaccination des professionnels de santé contre la covid-19 restait « fortement recommandée »."
     },
     {
      "role": "pour",
@@ -2853,7 +3036,8 @@
       "nom": "M. Jean-Philippe Nilor",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Dans ces conditions, la loi du 5 août 2021 a été appliquée sans discernement, sans tenir compte des cas. Elle a plongé des milliers de professionnels et leurs familles dans de graves difficultés d'argent. Cela arrive alors que tous les établissements de santé sont délibérément abîmés depuis des décennies."
     },
     {
      "role": "contre",
@@ -2863,7 +3047,8 @@
       "nom": "M. Philippe Vigier",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Nous avons vacciné contre le covid pour protéger les personnes malades, notamment celles qui ont une maladie du cœur ou du diabète. Elles sont malheureusement plus souvent victimes du covid que d'autres, en particulier quand elles sont soignantes."
     }
    ],
    "niveau": "ia"
@@ -2898,7 +3083,8 @@
       "nom": "M. Sébastien Lecornu",
       "qualite": "ministre des armées",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Ce texte veut traduire une conviction simple, la seule qui compte. Les dangers qui pèsent sur la nation n'ont jamais été aussi variés et changeants depuis la fin de la guerre froide, la longue rivalité entre l'Est et l'Ouest."
     },
     {
      "role": "gouvernement",
@@ -2908,7 +3094,8 @@
       "nom": "M. Sébastien Lecornu",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Les hausses de budget d'une année sur l'autre tiennent compte de ce que nos dépenses publiques peuvent supporter. Qui pourrait le contester ? Mais elles dépendent aussi de l'argent dont nos armées ont besoin pour leurs équipements, et de la capacité de nos entreprises à les fabriquer."
     },
     {
      "role": "pour",
@@ -2918,7 +3105,8 @@
       "nom": "Mme Anne Genetet",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Le Président de la République a donc décidé un budget de 413 milliards d'euros pour ce nouveau projet de loi de programmation militaire. C'est un plan de dépenses sur plusieurs années. C'est 40 % de plus que le précédent. Entre 2017 et 2030, le budget annuel des armées aura plus que doublé."
     },
     {
      "role": "contre",
@@ -2928,7 +3116,8 @@
       "nom": "Mme Martine Etienne (LFI-NUPES)",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Le gouvernement fait de grandes annonces avec de soi-disant hausses de budget, mais les hausses les plus importantes n'auront lieu qu'après 2027. Cela implique de repousser à plus tard de nombreux projets."
     },
     {
      "role": "pour",
@@ -2938,7 +3127,8 @@
       "nom": "M. Jean-Michel Jacques",
       "qualite": "rapporteur de la commission de la défense nationale et des forces armées",
       "groupe": "RE"
-     }
+     },
+     "simple": "Aujourd'hui, l'enjeu est que la France ait son indépendance garantie pour analyser, décider et agir. Il est aussi qu'elle conserve son statut de « puissance d'équilibre » et de « nation cadre »."
     },
     {
      "role": "contre",
@@ -2948,7 +3138,8 @@
       "nom": "M. Tematai Le Gayic",
       "qualite": null,
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "La politique d'amélioration des conditions de travail des militaires est une bonne idée, mais nous restons persuadés que plus d'argent aurait pu y être consacré. Par exemple, 25 % seulement des bâtiments de l'armée sont considérés comme en bon état."
     }
    ],
    "niveau": "ia"
@@ -2983,7 +3174,8 @@
       "nom": "M. Jean-Paul Lecoq",
       "qualite": null,
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "Cette proposition de résolution, un texte sans force de loi, réaffirme donc son ferme soutien à une solution au conflit entre Israël et les Palestiniens. Cette solution repose sur la coexistence de deux États, sur la base des frontières de 1967, celles qui existaient cette année-là."
     },
     {
      "role": "pour",
@@ -2993,7 +3185,8 @@
       "nom": "M. Aymeric Caron",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Appeler au boycott, c'est-à-dire refuser d'acheter des produits, est une arme classique d'influence, qui relève de la liberté d'expression. La Cour européenne des droits de l'homme, un tribunal européen, l'a d'ailleurs reconnu. Pourquoi pourrait-on appeler au boycott de produits américains, français, chinois, et pas israéliens ?"
     },
     {
      "role": "contre",
@@ -3003,7 +3196,8 @@
       "nom": "M. Frédéric Zgainski",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Cette résolution ne rapprochera pas les deux parties d'une solution à deux États, une solution que nous soutenons. C'est un conflit sur un territoire, à la fois politique et religieux. Il doit trouver une solution pacifique, issue d'une négociation sincère, honnête, qui respecte le droit des peuples à décider d'eux-mêmes."
     },
     {
      "role": "pour",
@@ -3013,7 +3207,8 @@
       "nom": "M. Benjamin Saint-Huile",
       "qualite": null,
       "groupe": "LIOT"
-     }
+     },
+     "simple": "Le mot « apartheid », un système de séparation entre groupes de personnes, est repris au niveau international par la convention de 1973 ; il y est défini. Il n'est donc pas tabou : on a le droit d'en parler. Il faut pouvoir en discuter. Les faits sont constatés."
     },
     {
      "role": "contre",
@@ -3023,7 +3218,8 @@
       "nom": "Mme Hélène Laporte",
       "qualite": null,
       "groupe": "RN"
-     }
+     },
+     "simple": "Cette proposition de résolution est faussée dans sa logique. Elle veut faire jouer à la France un rôle inverse de celui qu'elle doit continuer de tenir dans ce conflit. Ce rôle est celui d'un médiateur, qui aide deux camps à s'entendre et peut les ramener à la table des négociations."
     }
    ],
    "niveau": "ia"
@@ -3058,7 +3254,8 @@
       "nom": "Mme Nadia Hai",
       "qualite": "rapporteure de la commission des finances, de l’économie générale et du contrôle budgétaire",
       "groupe": "RE"
-     }
+     },
+     "simple": "Avant le 13 septembre 2023, il faut absolument rénover le droit de visite des douaniers, leur pouvoir de contrôler marchandises, véhicules et personnes. C'est l'expression la plus évidente de leurs pouvoirs. Mais le Conseil constitutionnel, les juges qui vérifient les lois, l'a déclaré contraire à la Constitution dans sa rédaction actuelle."
     },
     {
      "role": "gouvernement",
@@ -3068,7 +3265,8 @@
       "nom": "M. Gabriel Attal",
       "qualite": "ministre délégué chargé des comptes publics",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Le texte que nous examinons est très attendu par les 17 000 agents des douanes. Il est essentiel pour leur permettre de lutter plus efficacement contre les trafics, c'est-à-dire les ventes illégales, et de mieux contrôler nos frontières. Il permettra donc de mieux protéger les Français."
     }
    ],
    "niveau": "ia",
@@ -3117,7 +3315,8 @@
       "nom": "Mme Maud Gatel",
       "qualite": "rapporteure",
       "groupe": "DEM"
-     }
+     },
+     "simple": "La commission serait composée de quatre députés ou sénateurs et de dix personnes choisies pour leurs compétences. Elle évaluerait les stratégies et les projets d'aide publique au développement, l'aide de la France aux pays en développement. Elle le ferait à tous les stades, de leur conception à leur mise en œuvre."
     },
     {
      "role": "gouvernement",
@@ -3127,7 +3326,8 @@
       "nom": "Mme Marie Lebec",
       "qualite": "ministre déléguée",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Nous souhaitons que cette proposition de loi, portée par des députés de partis différents, débloque l'application d'une mesure importante de la loi du 4 août 2021. Comme nous l'avons dit plusieurs fois, nous acceptons que cette commission d'évaluation soit installée au ministère de l'Europe et des affaires étrangères."
     }
    ],
    "niveau": "ia",
@@ -3164,7 +3364,8 @@
       "nom": "M. Jean Terlier",
       "qualite": "rapporteur",
       "groupe": "RE"
-     }
+     },
+     "simple": "Objectifs : réduire les délais, au pénal comme au civil. Simplifier et moderniser les procédures, notamment grâce au numérique. Donner plus de valeur à tous les métiers de la justice : meilleure gestion des carrières, de la formation et des changements de poste. Trouver des solutions au manque de place dans les prisons."
     },
     {
      "role": "gouvernement",
@@ -3174,7 +3375,8 @@
       "nom": "M. Éric Dupond-Moretti",
       "qualite": "garde des sceaux",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Il faut un geste fort et un élan sans précédent. Ensemble, nous devons donner à la justice les moyens dont elle a besoin pour sa mission essentielle : maintenir la paix civile."
     },
     {
      "role": "pour",
@@ -3184,7 +3386,8 @@
       "nom": "Mme Naïma Moutchou",
       "qualite": null,
       "groupe": "HOR"
-     }
+     },
+     "simple": "Je me réjouis que ces projets de loi donnent de nouveaux moyens à la justice. Le budget est historique : près de 11 milliards d'euros d'ici quatre ans, soit 60 % de plus entre 2017 et 2027. C'est du jamais vu."
     },
     {
      "role": "contre",
@@ -3194,7 +3397,8 @@
       "nom": "M. Jean-Félix Acquaviva (LIOT)",
       "qualite": null,
       "groupe": "LIOT"
-     }
+     },
+     "simple": "Opposition à l'article 3 du projet de loi. Il autorise l'activation à distance des appareils électroniques, sans que leur propriétaire le sache, pour repérer où ils se trouvent et capter des images et des sons. Cette mesure nous fait franchir une nouvelle étape dangereuse."
     },
     {
      "role": "pour",
@@ -3204,7 +3408,8 @@
       "nom": "Mme Caroline Abadie",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Cette loi permettra de recruter 10 000 personnes de plus. Il y aura 1 500 greffiers, qui aident les juges, près de 1 700 attachés de justice, des surveillants de prison et des conseillers de probation. Il y aura 1 500 magistrats, des juges, plus que le nombre recruté ces vingt dernières années."
     },
     {
      "role": "contre",
@@ -3214,7 +3419,8 @@
       "nom": "Mme Andrée Taurinya",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Vos réponses, qui reproduisent des méthodes inefficaces et dépassées, ne montrent aucune audace. Ces textes ne vont pas dans le bon sens."
     }
    ],
    "niveau": "ia"
@@ -3249,7 +3455,8 @@
       "nom": "M. Jean Terlier",
       "qualite": "rapporteur",
       "groupe": "RE"
-     }
+     },
+     "simple": "Objectifs : réduire les délais, au pénal comme au civil. Simplifier et moderniser les procédures, notamment grâce au numérique. Donner plus de valeur à tous les métiers de la justice : meilleure gestion des carrières, de la formation et des changements de poste. Trouver des solutions au manque de place dans les prisons."
     },
     {
      "role": "gouvernement",
@@ -3259,7 +3466,8 @@
       "nom": "M. Éric Dupond-Moretti",
       "qualite": "garde des sceaux",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Il faut un geste fort et un élan sans précédent. Ensemble, nous devons donner à la justice les moyens dont elle a besoin pour sa mission essentielle : maintenir la paix civile."
     },
     {
      "role": "pour",
@@ -3269,7 +3477,8 @@
       "nom": "Mme Naïma Moutchou",
       "qualite": null,
       "groupe": "HOR"
-     }
+     },
+     "simple": "Je me réjouis que ces projets de loi donnent de nouveaux moyens à la justice. Le budget est historique : près de 11 milliards d'euros d'ici quatre ans, soit 60 % de plus entre 2017 et 2027."
     },
     {
      "role": "contre",
@@ -3279,7 +3488,8 @@
       "nom": "M. Philippe Schreck",
       "qualite": null,
       "groupe": "RN"
-     }
+     },
+     "simple": "Ce projet de loi s'inscrit dans la continuité de politiques qui ont abouti à une justice lente et mal comprise. Cette justice ne contribue plus à garantir la paix sociale, le calme dans la société, et ne décourage pas les infractions."
     },
     {
      "role": "pour",
@@ -3289,7 +3499,8 @@
       "nom": "Mme Caroline Abadie",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Cette loi permettra de recruter 10 000 personnes de plus. Il y aura 1 500 greffiers, qui aident les juges, près de 1 700 attachés de justice, des surveillants de prison et des conseillers de probation. Il y aura 1 500 magistrats, des juges, plus que le nombre recruté ces vingt dernières années."
     },
     {
      "role": "contre",
@@ -3299,7 +3510,8 @@
       "nom": "M. Jean-Félix Acquaviva",
       "qualite": null,
       "groupe": "LIOT"
-     }
+     },
+     "simple": "L'activation à distance des appareils électroniques nous fait franchir une nouvelle étape dangereuse. Le Conseil d'État, qui conseille le gouvernement, souligne une « atteinte importante » à la vie privée. Il en dit autant des fouilles de domicile de nuit et des consultations médicales par écran pendant la garde à vue, quand la police retient quelqu'un."
     }
    ],
    "niveau": "ia"
@@ -3335,7 +3547,8 @@
       "nom": "Mme Mireille Clapot",
       "qualite": "rapporteure de la commission spéciale",
       "groupe": "RE"
-     }
+     },
+     "simple": "Nous commençons l'examen d'un projet de loi qui contient de nombreuses avancées pour nos concitoyens. Je me réjouis que nous prenions au sérieux la protection des mineurs, les moins de 18 ans, en ligne. Nous prenons aussi au sérieux la lutte contre les arnaques et contre la désinformation, les fausses informations, qui mine notre société."
     },
     {
      "role": "gouvernement",
@@ -3345,7 +3558,8 @@
       "nom": "M. Jean-Noël Barrot",
       "qualite": "ministre délégué chargé du numérique",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "L'insécurité que nos concitoyens rencontrent sur internet affaiblit leur confiance dans le passage de la société au numérique, c'est-à-dire à internet et aux outils informatiques. Tous les Français sont concernés par les désordres de toutes sortes qui s'accumulent dans l'espace numérique."
     },
     {
      "role": "pour",
@@ -3355,7 +3569,8 @@
       "nom": "Mme Marie Guévenoux (RE)",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "La première urgence était de mettre fin au scandale que constitue l'exposition trop importante des mineurs au contenu pornographique. Dans les deux mois suivant la publication officielle de la loi, un cadre de règles s'imposera aux sites et aux applications pour contrôler réellement l'âge de leurs utilisateurs."
     },
     {
      "role": "contre",
@@ -3365,7 +3580,8 @@
       "nom": "M. Jean-Claude Raux",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Cependant, sur de nombreux points, le gouvernement a continué dans la même direction. Il va vers une société de surveillance et vers le « tout-marché », c'est-à-dire tout confier au marché. Nous ne pouvons pas l'accepter."
     },
     {
      "role": "pour",
@@ -3375,7 +3591,8 @@
       "nom": "M. Victor Habert-Dassault (LR)",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Ce texte représente une avancée, car il combat les excès de l'industrie pornographique et protège davantage les mineurs."
     },
     {
      "role": "contre",
@@ -3385,7 +3602,8 @@
       "nom": "Mme Soumya Bourouaha",
       "qualite": null,
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "Nous sommes d'accord avec plusieurs mesures, notamment sur la pornographie. Mais le texte n'est pas assez équilibré. Il évite de passer par le juge judiciaire. Il tente de supprimer l'anonymat, la possibilité de ne pas dire qui on est."
     }
    ],
    "niveau": "ia"
@@ -3434,7 +3652,8 @@
       "nom": "M. Thomas Cazenave",
       "qualite": "rapporteur",
       "groupe": "RE"
-     }
+     },
+     "simple": "C'est pourquoi je vous présente une proposition de loi. Elle est déposée par les trois groupes de députés qui soutiennent le gouvernement et adoptée par la commission des affaires économiques. Elle veut prolonger la limite de hausse des indices qui servent à calculer les loyers, pour les entreprises et les familles."
     },
     {
      "role": "gouvernement",
@@ -3444,7 +3663,8 @@
       "nom": "M. Olivier Klein",
       "qualite": "ministre délégué chargé de la ville et du logement",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Vous avez adopté l'été dernier une limite sur la hausse de l'IRL, l'indice qui fait augmenter les loyers. Elle dure un an. Grâce à elle, nous avons limité l'effet de la hausse des prix sur les loyers. Ainsi, les dépenses de logement et les aides pour payer le loyer sont prévisibles et sous contrôle."
     },
     {
      "role": "pour",
@@ -3454,7 +3674,8 @@
       "nom": "M. Mohamed Laqhila",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Le texte soumis ce soir s'inscrit dans la volonté de protéger les familles françaises. Il protège aussi nos très petites, petites et moyennes entreprises, nos commerçants et nos artisans."
     },
     {
      "role": "contre",
@@ -3464,7 +3685,8 @@
       "nom": "M. William Martinet",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Dans la crise que nous traversons, les locataires ont déjà fait beaucoup de sacrifices. C'est maintenant au tour des propriétaires qui louent de faire un petit effort. Nous leur demandons simplement une « année blanche » : non pas sans revenu, mais sans hausse des loyers."
     },
     {
      "role": "pour",
@@ -3474,7 +3696,8 @@
       "nom": "Mme Annaïg Le Meur",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Limiter à 3,5 % la hausse des indices qui servent à calculer les loyers est une mesure d'équilibre et de protection. Nous agissons pour tous."
     },
     {
      "role": "contre",
@@ -3484,7 +3707,8 @@
       "nom": "M. Thibault Bazin",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Votre limite sur la hausse de l'IRL protège efficacement les locataires à première vue. Mais elle ignore la hausse des prix que subissent aussi les propriétaires qui louent, particuliers comme organismes de logements à loyer modéré, petits ou gros."
     }
    ],
    "niveau": "ia"
@@ -3518,7 +3742,8 @@
       "nom": "Mme Michèle Tabarot",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Avec la proposition de résolution qui ouvre cette séance, nous invitons le gouvernement à dénoncer l'accord franco-algérien de 1968 sur l'immigration, l'arrivée d'étrangers en France. Dénoncer un accord, c'est y mettre fin. Cette résolution est un texte sans force de loi."
     },
     {
      "role": "pour",
@@ -3528,7 +3753,8 @@
       "nom": "Mme Stéphanie Kochert",
       "qualite": null,
       "groupe": "HOR"
-     }
+     },
+     "simple": "La France a seize accords avec des pays avec lesquels elle partage une histoire, notamment coloniale, c'est-à-dire des pays qu'elle a autrefois dirigés. À côté d'eux, l'accord de 1968 est beaucoup plus favorable aux Algériens que les règles générales."
     },
     {
      "role": "contre",
@@ -3538,7 +3764,8 @@
       "nom": "M. Frédéric Petit",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Enfin, dénoncer l'accord du 27 décembre 1968 aurait évidemment l'effet inverse de celui voulu. Nous risquerions de revenir à la situation de 1962. Les accords de Schengen, que vous avez cités, s'appliqueraient alors. Ils sont, dans bien des domaines, plus avantageux que l'accord de 1968."
     },
     {
      "role": "pour",
@@ -3548,7 +3775,8 @@
       "nom": "Mme Michèle Tabarot",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Le contexte n'est évidemment plus le même depuis que cette exception aux règles générales existe. D'abord, sur le plan économique, nous sommes très loin de la forte croissance de l'économie de la fin des années 1960. Le besoin de travailleurs n'est plus le même."
     },
     {
      "role": "contre",
@@ -3558,7 +3786,8 @@
       "nom": "Mme Fatiha Keloua Hachi",
       "qualite": null,
       "groupe": "SOC"
-     }
+     },
+     "simple": "La France a pourtant largement montré qu'elle gardait la maîtrise d'une immigration algérienne légale et stable. Elle l'a fait grâce à une politique de visas, les autorisations d'entrer en France, très stricte."
     }
    ],
    "niveau": "ia"
@@ -3594,7 +3823,8 @@
       "nom": "M. Paul Christophe",
       "qualite": "rapporteur de la commission des affaires sociales",
       "groupe": "HOR"
-     }
+     },
+     "simple": "J'ai l'honneur de vous présenter une réforme équilibrée et ambitieuse. Elle veut notamment renforcer l'accompagnement des demandeurs d'emploi et des bénéficiaires du RSA, une aide d'argent pour les personnes sans ressources suffisantes. Pour cela, elle transforme les organismes publics qui aident à trouver un emploi."
     },
     {
      "role": "gouvernement",
@@ -3604,7 +3834,8 @@
       "nom": "M. Olivier Dussopt",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "D'abord, toutes les personnes qui cherchent un emploi seront inscrites à France Travail, l'organisme public qui aide à trouver un emploi. Cela inclut celles qui touchent le RSA et les jeunes accompagnés par les missions locales. C'est le meilleur moyen de garantir un accompagnement à chacun et d'éviter que le suivi s'interrompe."
     },
     {
      "role": "pour",
@@ -3614,7 +3845,8 @@
       "nom": "Mme Nicole Dubré-Chirat",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "L'objectif est d'aider les personnes à accéder à l'autonomie, c'est-à-dire à se débrouiller seules, et à la dignité par le travail. Il est aussi d'aider les entreprises à recruter, alors que beaucoup ont du mal à trouver des personnes pour leurs postes."
     },
     {
      "role": "contre",
@@ -3624,7 +3856,8 @@
       "nom": "M. Arthur Delaporte",
       "qualite": null,
       "groupe": "SOC"
-     }
+     },
+     "simple": "607 euros par mois au maximum, c'est trop peu pour garder « légèrement la tête hors de l'eau », c'est-à-dire pour tenir à peine. C'est trop peu pour échapper à la très grande pauvreté. C'est trop peu pour survivre dignement."
     }
    ],
    "niveau": "ia"
@@ -3660,7 +3893,8 @@
       "nom": "M. Christophe Béchu",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Il faut cependant aller plus loin pour faciliter la reconstruction, c'est-à-dire reconstruire plus facilement. C'est l'objet des trois articles du projet de loi. Ils autorisent le gouvernement à prendre les mesures nécessaires par ordonnance : des règles qu'il écrit à la place des députés, avec leur accord."
     },
     {
      "role": "gouvernement",
@@ -3670,7 +3904,8 @@
       "nom": "M. Christophe Béchu",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Le gouvernement veut que les mesures du projet de loi s'appliquent dès que possible. Pour cela, il faut demander l'avis du Conseil d'État, qui conseille le gouvernement. Il faut aussi combler les quelques manques du texte, en discutant avec les associations qui regroupent des élus."
     }
    ],
    "niveau": "ia",
@@ -3700,7 +3935,8 @@
       "nom": "Mme Isabelle Rauch",
       "qualite": "présidente de la commission des affaires culturelles et de l’éducation",
       "groupe": "HOR"
-     }
+     },
+     "simple": "Cette proposition de loi veut rendre permanente l'exception dont bénéficient les jardins d'enfants : ils peuvent accueillir des enfants de 3 à 6 ans pour leur scolarité obligatoire. Elle ne garde que ceux qui sont gérés ou financés par une commune, un département ou une région."
     },
     {
      "role": "gouvernement",
@@ -3710,7 +3946,8 @@
       "nom": "Mme Marie Lebec",
       "qualite": "ministre déléguée chargée des relations avec le Parlement",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Permettez-moi d'abord d'évoquer l'obligation d'aller à l'école dès 3 ans. C'est une mesure forte, prise sous un précédent gouvernement par les députés qui le soutenaient. Nous en sommes particulièrement fiers : elle est fondamentale pour montrer que l'école maternelle, la première école, est importante pour apprendre."
     }
    ],
    "niveau": "ia",
@@ -3745,7 +3982,8 @@
       "nom": "M. Jean-Philippe Nilor",
       "qualite": "rapporteur",
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Il est crucial d'analyser nos forces et nos faiblesses face à ces risques naturels, et de réfléchir à la manière de les prévoir. Le but est de réduire la fragilité de ces territoires, par une politique de « mitigation », c'est-à-dire de réduction des dégâts. Même la France d'Europe pourrait en profiter."
     },
     {
      "role": "pour",
@@ -3755,7 +3993,8 @@
       "nom": "M. Philippe Gosselin",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Les moyens consacrés aux secours en outre-mer ne sont pas à la hauteur des défis d'aujourd'hui et de demain. À cause du changement climatique, certains événements naturels se reproduiront plus souvent et plus fortement dans les prochaines années."
     },
     {
      "role": "contre",
@@ -3765,7 +4004,8 @@
       "nom": "M. Bruno Millienne",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Pourquoi s'obstiner à demander une commission d'enquête, un groupe de députés qui enquête ? Une mission d'information, un autre groupe de députés qui étudie un sujet, pourrait très bien remplir les objectifs. Nous pourrions tous nous entendre sur ces objectifs, dans l'intérêt de nos compatriotes d'outre-mer."
     },
     {
      "role": "pour",
@@ -3775,7 +4015,8 @@
       "nom": "M. Marcellin Nadeau",
       "qualite": null,
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "En Martinique, pourtant très exposée aux risques naturels, seuls 5 des 255 châteaux d'eau, les grands réservoirs qui distribuent l'eau, sont aux normes parasismiques. Ces normes servent à résister aux tremblements de terre."
     },
     {
      "role": "contre",
@@ -3785,7 +4026,8 @@
       "nom": "M. Anthony Brosse",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "La loi « 3DS », adoptée en février 2022, a aidé les territoires d'outre-mer à mieux résister à ces risques. Ces risques comptent beaucoup pour les quelque 2,8 millions de Français qui y vivent."
     }
    ],
    "niveau": "ia"
@@ -3819,7 +4061,8 @@
       "nom": "Mme Clémence Guetté",
       "qualite": "rapporteure",
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "En conséquence, la quantité d'eau qui se renouvelle a déjà diminué de 14 %. Elle devrait encore diminuer de 30 à 40 % d'ici 2050. Les limites imposées sur l'usage de l'eau, y compris pour l'agriculture, sont de plus en plus longues et fréquentes."
     },
     {
      "role": "gouvernement",
@@ -3829,7 +4072,8 @@
       "nom": "M. Franck Riester",
       "qualite": "ministre délégué chargé des relations avec le Parlement",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Faire croire que stocker l'eau sert à développer l'irrigation sans contrôle, comme en Espagne, est un contresens, une erreur complète, par rapport à la stratégie du gouvernement. L'irrigation, c'est l'arrosage des cultures."
     },
     {
      "role": "pour",
@@ -3839,7 +4083,8 @@
       "nom": "Mme Chantal Jourdan",
       "qualite": null,
       "groupe": "SOC"
-     }
+     },
+     "simple": "Les scientifiques alertent : il s'agit d'éviter une « maladaptation », une mauvaise façon de s'adapter. Les méga-bassines couvrent 8 hectares en moyenne, et jusqu'à 18 hectares : elles ont un impact sur le milieu naturel. Pomper directement dans les nappes phréatiques, l'eau stockée sous terre, n'est pas sans conséquences."
     },
     {
      "role": "contre",
@@ -3849,7 +4094,8 @@
       "nom": "M. Raphaël Schellenberger",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Les retenues de substitution, de grandes réserves d'eau, assurent un stockage stratégique, c'est-à-dire essentiel. C'est une solution pratique pour garantir assez d'irrigation en été, et donc la stabilité économique des exploitations agricoles."
     },
     {
      "role": "pour",
@@ -3859,7 +4105,8 @@
       "nom": "Mme Delphine Batho",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Le manque d'eau est l'une des urgences écologiques les plus vitales pour la France, et cela depuis longtemps. Deux tiers des zones humides, des terrains naturellement gorgés d'eau, ont été détruits en quarante ans."
     },
     {
      "role": "contre",
@@ -3869,7 +4116,8 @@
       "nom": "Mme Anne-Cécile Violland",
       "qualite": null,
       "groupe": "HOR"
-     }
+     },
+     "simple": "En revanche, la multiplication des périodes de sécheresse obligera à stocker l'eau plus en amont, c'est-à-dire plus haut, notamment en montagne. Là, les stocks diminuent trop vite. C'est pourquoi ces réserves peuvent être une des solutions pour arroser les cultures en période de sécheresse ou abreuver les animaux d'élevage dans les pâturages de montagne."
     }
    ],
    "niveau": "ia"
@@ -3903,7 +4151,8 @@
       "nom": "M. Yannick Neuder",
       "qualite": "rapporteur",
       "groupe": "LR"
-     }
+     },
+     "simple": "Ce soir, nous avons l'occasion d'aller plus loin avec ce texte, qui veut former plus de médecins, en fonction des besoins du territoire."
     },
     {
      "role": "gouvernement",
@@ -3913,7 +4162,8 @@
       "nom": "Mme Agnès Firmin Le Bodo",
       "qualite": "ministre déléguée chargée de l’organisation territoriale et des professions de santé",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Le budget de la Sécurité sociale pour 2024, adopté définitivement, contient des mesures fortes pour donner envie de travailler à l'hôpital et faciliter l'accès aux soins. Les négociations avec les médecins libéraux, ceux qui travaillent à leur compte, battent leur plein."
     }
    ],
    "niveau": "ia",
@@ -3950,7 +4200,8 @@
       "nom": "Mme Danièle Obono",
       "qualite": "rapporteure",
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "En revanche, le passage des services publics au numérique, c'est-à-dire sur internet, peut poser problème. C'est le cas quand il s'inscrit dans une politique de baisse du budget et s'accompagne du recul des lieux d'accueil. Une part non négligeable de la population perd alors l'accès à ses droits."
     },
     {
      "role": "gouvernement",
@@ -3960,7 +4211,8 @@
       "nom": "Mme Sabrina Agresti-Roubache",
       "qualite": "secrétaire d’État",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Téléphone, sites internet, applications : autant de façons de faire ses démarches administratives. Il faut les proposer à chacun, sans en exclure une au profit d'une autre. Il faut aussi porter une attention particulière aux guichets physiques, où l'on est reçu en personne, pour aider ceux qui en ont le plus besoin."
     },
     {
      "role": "pour",
@@ -3970,7 +4222,8 @@
       "nom": "M. Aurélien Saintoul",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Certes, en moyenne, 80 % des usagers, ceux qui utilisent ces services, y arrivent. Mais les services publics s'adressent à tous. Nous ne pouvons pas exclure de la citoyenneté, c'est-à-dire de la vie de citoyen, ni de la société 20 % de la population."
     },
     {
      "role": "contre",
@@ -3980,7 +4233,8 @@
       "nom": "Mme Mathilde Desjonquères",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Renoncer au numérique serait un net retour en arrière pour la grande majorité des Français, qui préfèrent le numérique pour faire leurs démarches administratives."
     },
     {
      "role": "pour",
@@ -3990,7 +4244,8 @@
       "nom": "M. Mickaël Bouloux",
       "qualite": null,
       "groupe": "SOC"
-     }
+     },
+     "simple": "Ce n'est pas tant le passage des démarches administratives en ligne qui pose problème, car il faut suivre la modernisation. C'est plutôt la fermeture des guichets de proximité et le fait que de nombreuses personnes restent « sur le quai », c'est-à-dire sont laissées de côté."
     },
     {
      "role": "contre",
@@ -4000,7 +4255,8 @@
       "nom": "M. Raphaël Schellenberger",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Le numérique est d'abord un avantage pour le service public. Il a amélioré l'efficacité du service rendu aux Français, en créant notamment un accès permanent, à toute heure, pour une bonne partie des usagers."
     }
    ],
    "niveau": "ia"
@@ -4034,7 +4290,8 @@
       "nom": "M. Manuel Bompard",
       "qualite": "rapporteur",
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Nous proposons quatre mesures concrètes pour faire baisser tout de suite le prix des produits alimentaires et du carburant. Elles protègent aussi les agriculteurs, eux aussi victimes de la « cupidité », l'envie de gagner toujours plus d'argent, de quelques acteurs économiques."
     },
     {
      "role": "gouvernement",
@@ -4044,7 +4301,8 @@
       "nom": "Mme Olivia Grégoire",
       "qualite": "ministre déléguée",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "C'est en agissant sur ces paramètres qu'on combat les marges abusives, des gains trop élevés sur chaque vente. Il faut s'assurer que la concurrence joue pleinement son rôle, c'est-à-dire que les entreprises rivalisent entre elles. Il ne peut pas y avoir de marges abusives s'il y a de la concurrence."
     },
     {
      "role": "pour",
@@ -4054,7 +4312,8 @@
       "nom": "Mme Aurélie Trouvé",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Il y a en vérité plusieurs façons de lutter contre l'inflation, c'est-à-dire la hausse des prix, mais vous n'en utilisez aucune. Nous vous en proposons donc une, la plus efficace : s'attaquer aux marges des grands groupes pour les modérer."
     },
     {
      "role": "contre",
@@ -4064,7 +4323,8 @@
       "nom": "Mme Olivia Grégoire",
       "qualite": "ministre déléguée",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Vous proposez des interdictions fondées sur des indicateurs français, des chiffres de référence ; les entreprises étrangères, vous le savez, pourraient très facilement y échapper."
     },
     {
      "role": "pour",
@@ -4074,7 +4334,8 @@
       "nom": "M. Manuel Bompard",
       "qualite": "rapporteur",
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "La quatrième mesure veut renforcer les pouvoirs de l'Observatoire de la formation des prix et des marges des produits alimentaires. Il doit avoir de vrais moyens d'enquête et de sanction. Ainsi, tout sera clair, transparent, sur les prix et sur les marges faites par les acteurs de la chaîne alimentaire."
     },
     {
      "role": "contre",
@@ -4084,7 +4345,8 @@
       "nom": "Mme Olivia Grégoire",
       "qualite": "ministre déléguée",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "On ne peut pas s'attaquer aux grandes multinationales, des entreprises présentes dans plusieurs pays, sans une précaution. Il faut s'assurer qu'une restriction ou une interdiction ne produira pas des effets pires que le mal qu'on veut combattre."
     }
    ],
    "niveau": "ia"
@@ -4119,7 +4381,8 @@
       "nom": "M. Patrick Hetzel",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Nous vous demandons donc d'adopter cette proposition de résolution. Elle veut rendre enfin réel, partout dans le pays, le droit aux soins palliatifs. Ces soins soulagent la douleur des personnes gravement malades. Ce droit est prévu par la loi du 2 février 2016."
     },
     {
      "role": "gouvernement",
@@ -4129,7 +4392,8 @@
       "nom": "Mme Agnès Firmin Le Bodo",
       "qualite": "ministre déléguée",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Notre ambition partagée est bien sûr de rendre réels les soins palliatifs pour tous ceux qui en ont besoin dans le pays. Je partage pleinement la conviction qu'il faut améliorer l'égalité d'accès en informant tout le monde. C'est l'un des repères qui guident mon action depuis mon arrivée à ce poste."
     }
    ],
    "niveau": "ia",
@@ -4161,7 +4425,8 @@
       "nom": "Mme Émilie Bonnivard",
       "qualite": "rapporteure",
       "groupe": "LR"
-     }
+     },
+     "simple": "L'article 2 reconnaît financièrement, avec de l'argent, l'engagement des professeurs. Il est essentiel : il crée un système pour payer une somme aux enseignants du premier degré, c'est-à-dire de l'école primaire. Ils préparent, organisent des voyages scolaires et y participent."
     },
     {
      "role": "gouvernement",
@@ -4171,7 +4436,8 @@
       "nom": "Mme Amélie Oudéa-Castéra",
       "qualite": "ministre de l’éducation nationale, de la jeunesse, des sports et des Jeux olympiques et paralympiques",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Ces séjours scolaires, les classes de découverte, sont au cœur de la mission de l'école. À côté des savoirs acquis en classe et dans les cours de sport, ils permettent à nos élèves de découvrir encore plus de choses sur le monde."
     }
    ],
    "niveau": "ia",
@@ -4206,7 +4472,8 @@
       "nom": "M. Marcellin Nadeau",
       "qualite": null,
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "Je parle avec gravité. Au moment où je vous parle, des atolls de Polynésie, des îles très basses du Pacifique, sont en grand danger d'être recouverts par la mer. Leur population craint de devoir partir."
     },
     {
      "role": "gouvernement",
@@ -4216,7 +4483,8 @@
       "nom": "M. Franck Riester",
       "qualite": "ministre délégué",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Les recommandations de votre proposition de résolution sont en partie déjà réalisées ou sont en train de l'être. L'État aide à payer les compétences techniques locales avec la mission Adaptation et les aides du fonds Vert."
     }
    ],
    "niveau": "ia",
@@ -4251,7 +4519,8 @@
       "nom": "Mme Perrine Goulet",
       "qualite": "rapporteure de la commission des lois constitutionnelles, de la législation et de l’administration générale de la République",
       "groupe": "DEM"
-     }
+     },
+     "simple": "Cette proposition de loi a trois articles. Elle veut mieux protéger les conjoints quand un couple se sépare."
     },
     {
      "role": "gouvernement",
@@ -4261,7 +4530,8 @@
       "nom": "M. Éric Dupond-Moretti",
       "qualite": "garde des sceaux",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Il est temps de corriger cette situation très injuste, car le crime ne doit pas rapporter."
     }
    ],
    "niveau": "ia",
@@ -4295,7 +4565,8 @@
       "nom": "M. Nicolas Turquois",
       "qualite": "rapporteur",
       "groupe": "DEM"
-     }
+     },
+     "simple": "Pour le bilan, aucune donnée n'est remontée par le système où les employeurs déclarent leurs salariés. C'est pourquoi nous proposons de prolonger l'essai de ce contrat, pas de le rendre définitif. Pour agir de façon responsable, il faut des données rassemblées et vérifiées."
     },
     {
      "role": "gouvernement",
@@ -4305,7 +4576,8 @@
       "nom": "Mme Catherine Vautrin",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Il s'agit de répondre au besoin urgent de retrouver un emploi, en aidant à s'insérer dans le monde du travail. Deux choses le permettent : la formation que peut suivre la personne qui signe ce contrat, et l'expérience qu'elle pourra acquérir."
     },
     {
      "role": "pour",
@@ -4315,7 +4587,8 @@
       "nom": "Mme Emmanuelle Ménard",
       "qualite": null,
       "groupe": "NI"
-     }
+     },
+     "simple": "Ces entreprises auront la garantie d'avoir le même salarié pendant toute la mission, déjà formé à leur environnement. Enfin, celles qui n'ont pas les moyens d'embaucher directement pourront tout de même employer du personnel extérieur et fidèle. Cela réduit le manque de salariés qualifiés."
     },
     {
      "role": "contre",
@@ -4325,7 +4598,8 @@
       "nom": "M. Hadrien Clouet",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Ce contrat est signé avec une entreprise qui vous envoie travailler dans d'autres entreprises. C'est son intérêt, et son piège. Le salarié qui le signe n'a pas accès aux avantages du comité social et économique, l'instance qui représente les salariés."
     },
     {
      "role": "pour",
@@ -4335,7 +4609,8 @@
       "nom": "M. Paul-André Colombani",
       "qualite": null,
       "groupe": "LIOT"
-     }
+     },
+     "simple": "Nous sommes d'accord avec l'idée de ce contrat, qui s'inscrit dans la lutte contre les temps partiels subis, c'est-à-dire que les salariés n'ont pas choisis."
     },
     {
      "role": "contre",
@@ -4345,7 +4620,8 @@
       "nom": "Mme Marie-Charlotte Garin",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Cet essai n'a pas été évalué, et les syndicats, qui défendent les salariés, ont exprimé des doutes quand ils ont été entendus. Nous nous sommes donc opposés, en commission (le petit groupe de députés qui étudie le texte), à inscrire ce contrat pour toujours dans la loi."
     }
    ],
    "niveau": "ia"
@@ -4381,7 +4657,8 @@
       "nom": "M. Éric Dupond-Moretti",
       "qualite": "garde des sceaux",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Ce projet de loi change la Constitution, le texte qui fixe les règles de base du pays. Il s'agit de donner à la liberté de recourir à l'IVG, l'interruption volontaire de grossesse, une vraie protection. Elle doit rester assez souple pour que les députés et les sénateurs puissent continuer leur travail."
     },
     {
      "role": "pour",
@@ -4391,7 +4668,8 @@
       "nom": "M. Guillaume Gouffier Valente",
       "qualite": "rapporteur",
       "groupe": "RE"
-     }
+     },
+     "simple": "Ne croyons pas que la France soit totalement à l'abri de ce risque. C'est justement parce que ce droit est encore solide en France qu'il faut le protéger. Je le redis : on ne prend pas d'assurance quand la maison est déjà en feu."
     },
     {
      "role": "contre",
@@ -4401,7 +4679,8 @@
       "nom": "Mme Pascale Bordes",
       "qualite": null,
       "groupe": "RN"
-     }
+     },
+     "simple": "Enfin, la phrase choisie est « la liberté garantie à la femme d'avoir recours à une IVG » (interruption volontaire de grossesse). Elle pourrait conduire à reconnaître un accès sans aucune condition, par exemple bien après la limite fixée aujourd'hui par la loi."
     },
     {
      "role": "pour",
@@ -4411,7 +4690,8 @@
       "nom": "Mme Sarah Tanzilli",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Mais c'est quand on a une majorité pour le faire qu'il faut inscrire une liberté dans la Constitution, notre loi la plus importante. Après, il est trop tard ! Et deuxièmement, c'est une erreur de croire que la menace est nulle."
     },
     {
      "role": "contre",
@@ -4421,7 +4701,8 @@
       "nom": "Mme Pascale Bordes",
       "qualite": null,
       "groupe": "RN"
-     }
+     },
+     "simple": "Cette nouvelle liberté, celle de recourir à l'IVG, risque aussi, et c'est essentiel, d'entrer en conflit avec d'autres libertés protégées par la Constitution. Je pense par exemple à la liberté de conscience, celle de croire ce que l'on veut. Elle est garantie par l'article 10 de la Déclaration des droits de l'homme et du citoyen de 1789."
     }
    ],
    "niveau": "ia"
@@ -4457,7 +4738,8 @@
       "nom": "M. Roland Lescure",
       "qualite": "ministre délégué",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Nous nous réunissons pour débattre de deux sujets principaux. Le premier : créer un seul organisme chargé de la sécurité nucléaire et de la protection contre les rayonnements. Le second : adapter aux projets nucléaires les règles des achats publics, c'est-à-dire des achats de l'État."
     },
     {
      "role": "gouvernement",
@@ -4467,7 +4749,8 @@
       "nom": "M. Roland Lescure",
       "qualite": "ministre délégué",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Mais nous voulons aller plus loin, pour avoir une organisation plus puissante, plus efficace, plus indépendante et plus transparente. Grâce à cette nouvelle entité, nous nous donnons les moyens de faire face à un défi sans précédent pour l'industrie et l'énergie."
     },
     {
      "role": "pour",
@@ -4477,7 +4760,8 @@
       "nom": "M. Anthony Brosse",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "En revanche, c'est à nous de définir comment ce futur organisme sera dirigé, les règles pour son personnel et ses missions. Il faut qu'il fonctionne sans blocage, soit cohérent, compétent et attire des personnes, comme l'a relevé un organisme du Parlement chargé des questions scientifiques."
     },
     {
      "role": "contre",
@@ -4487,7 +4771,8 @@
       "nom": "Mme Julie Laernoes",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "La qualité du système actuel vient du dialogue technique entre les deux organisations et avec EDF, l'entreprise qui exploite les centrales, sous le regard des citoyens. C'est la garantie d'une meilleure analyse, de la neutralité et de la transparence des décisions de sécurité. On va donc casser quelque chose qui marche."
     },
     {
      "role": "pour",
@@ -4497,7 +4782,8 @@
       "nom": "M. Anthony Brosse",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Pour les achats publics, des simplifications sont prévues aux articles 16 à 18. Elles permettront à ceux qui travaillent dans le nucléaire de faire exception à certaines règles qui encadrent ces achats."
     },
     {
      "role": "contre",
@@ -4507,7 +4793,8 @@
       "nom": "M. Sébastien Jumel",
       "qualite": null,
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "Casser notre système de sécurité nucléaire en pleine relance du secteur nucléaire, alors que la charge de travail des personnels n'a jamais été aussi lourde. Et les difficultés de recrutement pèsent comme jamais sur toute l'industrie de l'énergie."
     }
    ],
    "niveau": "ia"
@@ -4556,7 +4843,8 @@
       "nom": "M. Jean-Paul Mattei",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Il est urgent de faciliter la location de logements par des propriétaires privés. Il faut aussi adopter toutes les mesures, par la loi, les impôts et les règlements, qui encourageront les locations de longue durée."
     },
     {
      "role": "gouvernement",
@@ -4566,7 +4854,8 @@
       "nom": "Mme Marie Lebec",
       "qualite": "ministre déléguée",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Le texte que nous examinons correspond tout à fait à notre façon de voir l'ensemble du sujet du logement et de l'habitat en France."
     },
     {
      "role": "pour",
@@ -4576,7 +4865,8 @@
       "nom": "M. Dominique Da Silva",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Les vraies causes de fond sont le manque de terrains à construire et leur prix élevé, et le manque de logements abordables depuis trop longtemps. Ce texte indique les moyens essentiels pour que tous nos concitoyens puissent accéder à un logement."
     },
     {
      "role": "contre",
@@ -4586,7 +4876,8 @@
       "nom": "M. Inaki Echaniz",
       "qualite": null,
       "groupe": "SOC"
-     }
+     },
+     "simple": "Le choix de ce type de texte, qui invite seulement le gouvernement à agir, et son contenu ne correspondent pas du tout aux besoins. Nous n'avons pas besoin d'une déclaration d'intention, mais de mesures de loi concrètes, qui fonctionnent."
     },
     {
      "role": "pour",
@@ -4596,7 +4887,8 @@
       "nom": "M. François Jolivet",
       "qualite": null,
       "groupe": "HOR"
-     }
+     },
+     "simple": "Premièrement, il faut rapprocher l'action des pouvoirs publics, l'État et les collectivités, des gens, pour que leurs politiques soient plus efficaces et plus proches du terrain."
     },
     {
      "role": "contre",
@@ -4606,7 +4898,8 @@
       "nom": "Mme Sophia Chikirou",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "C'est évident : il faut agir sur la demande de logements et construire des logements sociaux, à loyer réduit. Nous devons porter à 30 % le minimum de logements sociaux dans les zones tendues, où il y a plus de demandes que de logements."
     }
    ],
    "niveau": "ia"
@@ -4639,7 +4932,8 @@
       "nom": "Mme Christine Pires Beaune",
       "qualite": "rapporteure",
       "groupe": "SOC"
-     }
+     },
+     "simple": "Les frais bancaires seront toujours gratuits dans trois situations, dont celles-ci. Un compte qui contient moins de 5 000 euros. Un compte dont le titulaire (la personne à qui il appartient) était mineur à son décès, quel que soit le montant."
     },
     {
      "role": "gouvernement",
@@ -4649,7 +4943,8 @@
       "nom": "Mme Olivia Grégoire",
       "qualite": "ministre déléguée chargée des entreprises, du tourisme et de la consommation",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Nous nous réunissons pour examiner une proposition de loi sur les frais bancaires après un décès, née d'un travail collectif. C'est un sujet grave, pour vous, pour moi et pour tous les Français."
     }
    ],
    "niveau": "ia",
@@ -4684,7 +4979,8 @@
       "nom": "Mme Valérie Rabault",
       "qualite": "rapporteure",
       "groupe": "SOC"
-     }
+     },
+     "simple": "Pour finir, pour être efficace, nous devrons permettre à l'ANSM, l'agence qui surveille les médicaments, de devenir une véritable « tour de contrôle ». Elle devra savoir à tout moment ce qu'il y a en stock en France."
     },
     {
      "role": "gouvernement",
@@ -4694,7 +4990,8 @@
       "nom": "M. Frédéric Valletoux",
       "qualite": "ministre délégué chargé de la santé et de la prévention",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Voici le constat : les tensions sur l'approvisionnement, c'est-à-dire la difficulté à avoir assez de médicaments, sont devenues courantes en France comme dans le reste du monde. Elles s'aggravent depuis plusieurs années."
     }
    ],
    "niveau": "ia",
@@ -4731,7 +5028,8 @@
       "nom": "M. Elie Califer",
       "qualite": "rapporteur",
       "groupe": "SOC"
-     }
+     },
+     "simple": "Car les députés et les sénateurs, qui votent les lois, avaient imposé une règle à l'État par des lois de 1949 et 1972. Il ne devait autoriser la vente que de produits sans danger pour la santé publique, les utilisateurs, les cultures et les animaux."
     },
     {
      "role": "gouvernement",
@@ -4741,7 +5039,8 @@
       "nom": "Mme Marie Guévenoux",
       "qualite": "ministre déléguée chargée des outre-mer",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Comme chacun ici, je mesure les attentes justifiées et les fortes émotions que provoque le chlordécone, un pesticide. Lutter contre ses effets est un sujet important pour l'environnement, la santé, l'agriculture, l'économie et la société aux Antilles, des territoires français d'outre-mer."
     }
    ],
    "niveau": "ia",
@@ -4775,7 +5074,8 @@
       "nom": "M. Philippe Pradal",
       "qualite": "rapporteur de la commission des lois constitutionnelles, de la législation et de l’administration générale de la République",
       "groupe": "HOR"
-     }
+     },
+     "simple": "Il n'est pas acceptable que ceux qui nous soignent soient menacés dans leur travail. Nous devons tout faire pour rendre les métiers de la santé plus attirants et leur redonner du sens, alors qu'il manque de soignants."
     },
     {
      "role": "gouvernement",
@@ -4785,7 +5085,8 @@
       "nom": "M. Frédéric Valletoux",
       "qualite": "ministre délégué chargé de la santé et de la prévention",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Toute violence, physique ou verbale, doit être punie. Comme le prévoit le code pénal, on tient compte de la situation dans laquelle elle a eu lieu pour décider de la sanction. Agresser un soignant dans son travail n'est pas acceptable."
     },
     {
      "role": "pour",
@@ -4795,7 +5096,8 @@
       "nom": "M. Didier Martin",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Nous devons aux soignants une très grande fermeté envers ceux qui les agressent. Nous voulons dire très clairement aux victimes que nous voulons les protéger."
     },
     {
      "role": "contre",
@@ -4805,7 +5107,8 @@
       "nom": "M. Charles Fournier",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Face à ces violences, la tentation est forte de punir plus durement. On voudrait contenir les violences en augmentant les peines, c'est-à-dire les sanctions, comme le propose ce texte de loi. Mais les soignants seraient-ils mieux protégés ?"
     },
     {
      "role": "pour",
@@ -4815,7 +5118,8 @@
       "nom": "M. Michel Castellani",
       "qualite": null,
       "groupe": "LIOT"
-     }
+     },
+     "simple": "Plus de 23 500 soignants victimes, cela fait plus de 60 victimes par jour ; c'est écrasant ! J'ajoute que ces insultes et ces petites agressions de tous les jours peuvent vite mener à des situations bien pires."
     },
     {
      "role": "contre",
@@ -4825,7 +5129,8 @@
       "nom": "M. Gérard Leseul",
       "qualite": null,
       "groupe": "SOC"
-     }
+     },
+     "simple": "Cette proposition de loi ne nous semble pas vraiment à la hauteur de ce qui est en jeu. Pour traiter le sujet à fond, on aurait pu proposer un vrai programme de mesures planifiées pour améliorer les conditions de travail des soignants."
     }
    ],
    "niveau": "ia"
@@ -4858,7 +5163,8 @@
       "nom": "M. Vincent Thiébaut",
       "qualite": "rapporteur",
       "groupe": "HOR"
-     }
+     },
+     "simple": "Grâce aux réformes qui se sont succédé depuis, ce taux est maintenant proche de 25 %. C'est une amélioration que personne ne peut nier, mais ce n'est pas suffisant."
     },
     {
      "role": "gouvernement",
@@ -4868,7 +5174,8 @@
       "nom": "Mme Sarah El Haïry",
       "qualite": "ministre déléguée",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Le gouvernement soutient l'objectif d'aider les jeunes à ce moment important où ils quittent la maison de leurs parents et peuvent se retrouver en difficulté."
     }
    ],
    "niveau": "ia",
@@ -4890,7 +5197,8 @@
       "nom": "Mme Anne-Cécile Violland",
       "qualite": "rapporteure de la commission du développement durable et de l’aménagement du territoire",
       "groupe": "HOR"
-     }
+     },
+     "simple": "L'urgence est là. Les activités humaines bouleversent l'environnement à un rythme et sur une échelle jamais vus depuis des milliers, voire des centaines de milliers d'années. Leurs effets sont de plus en plus destructeurs, présents partout et, en partie, impossibles à réparer."
     },
     {
      "role": "gouvernement",
@@ -4900,7 +5208,8 @@
       "nom": "M. Christophe Béchu",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "L'article 2 traite du « signal-prix », c'est-à-dire de l'idée que le prix envoie un message. Nous croyons que le prix est un bon moyen d'orienter le comportement des consommateurs et de pousser ceux qui polluent à assumer leurs responsabilités."
     }
    ],
    "niveau": "ia",
@@ -4935,7 +5244,8 @@
       "nom": "M. Gérald Darmanin",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Nous devons donc corriger ce décalage en cherchant l'accord le plus large possible. Ceux qui refusent l'indépendance du territoire proposaient d'exiger entre trois et cinq ans de résidence : j'ai refusé. À la demande du Président de la République, j'ai suggéré dix ans."
     },
     {
      "role": "gouvernement",
@@ -4945,7 +5255,8 @@
       "nom": "M. Gérald Darmanin",
       "qualite": null,
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Je ne connais aucun autre pays démocratique qui interdise à des citoyens, dont personne ne conteste la nationalité, de voter aux élections locales avant dix ans. Si vous adoptez ce projet de loi qui change la Constitution, aucun pays au monde ne limitera autant le droit de vote."
     },
     {
      "role": "pour",
@@ -4955,7 +5266,8 @@
       "nom": "M. Sylvain Maillard",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Avec ce changement de la Constitution, nous permettons à plus de 20 000 de nos concitoyens de Nouvelle-Calédonie de voter enfin. Cette avancée pour la démocratie est incontestable et nécessaire."
     },
     {
      "role": "contre",
@@ -4965,7 +5277,8 @@
       "nom": "Mme Mathilde Panot",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Votre projet de loi qui change la Constitution est une « bombe » contre la paix entre les habitants de la Nouvelle-Calédonie. Cette paix dure depuis des dizaines d'années grâce aux accords de Matignon-Oudinot puis de Nouméa. Notre responsabilité devant l'histoire est de préserver cette paix précieuse et fragile."
     },
     {
      "role": "pour",
@@ -4975,7 +5288,8 @@
       "nom": "M. Philippe Gosselin",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "On ne peut pas exclure du vote, pour toujours ou trop longtemps, un cinquième de ceux qui ont le droit de voter ! On ne peut pas exclure plus longtemps du vote au moins 12 500 personnes nées sur le territoire !"
     },
     {
      "role": "contre",
@@ -4985,7 +5299,8 @@
       "nom": "M. Olivier Serva (LIOT)",
       "qualite": null,
       "groupe": "LIOT"
-     }
+     },
+     "simple": "Le Congrès de la Nouvelle-Calédonie, l'assemblée du territoire, demande au Gouvernement de retirer le texte par un vote d'aujourd'hui. Pourtant, vous semblez avoir choisi d'aller jusqu'au bout sans rien céder. Vous jouez avec un feu déjà vif. Le risque que tout s'enflamme nous guette."
     }
    ],
    "niveau": "ia"
@@ -5021,7 +5336,8 @@
       "nom": "Mme Marie Pochon",
       "qualite": "rapporteure",
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Nous avons tous condamné ici le partage insuffisant de la richesse produite. Nous avons condamné aussi un système choquant. Quelques industriels peuvent doubler leurs bénéfices en un an. Pourtant, un Français sur cinq ne mange pas à sa faim et 18 % des agriculteurs vivent sous le seuil de pauvreté."
     },
     {
      "role": "gouvernement",
@@ -5031,7 +5347,8 @@
       "nom": "Mme Agnès Pannier-Runacher",
       "qualite": "ministre déléguée",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Un prix minimal ne s'appliquerait, par définition, qu'aux seuls produits français. Il pourrait donc favoriser les produits venus de l'étranger, au détriment des produits français. Loin d'augmenter le revenu des agriculteurs, cela diminuerait leur rémunération."
     },
     {
      "role": "pour",
@@ -5041,7 +5358,8 @@
       "nom": "Mme Sandra Regol",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Il est indispensable de bien payer les agriculteurs, car ils étaient environ 5 millions dans les années 1960 et sont moins de 400 000 aujourd'hui. Ils ont ainsi subi le plus grand « plan social » de France, c'est-à-dire la plus grande suppression d'emplois."
     },
     {
      "role": "contre",
@@ -5051,7 +5369,8 @@
       "nom": "M. Pierre Cordier",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Néanmoins, ce texte ne répond pas de façon satisfaisante à la crise que vivent les agriculteurs. Pire, il profite du moment pour défendre des propositions qui ont l'effet inverse de celui voulu. Elles nuisent aux agriculteurs et à la capacité de notre pays à se nourrir lui-même."
     },
     {
      "role": "pour",
@@ -5061,7 +5380,8 @@
       "nom": "Mme Aurélie Trouvé",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Nous proposons des prix de base, renégociés régulièrement et adaptés à chaque territoire selon ses particularités. Il est vrai que protéger les produits aux frontières, c'est-à-dire à l'entrée du pays, est nécessaire."
     },
     {
      "role": "contre",
@@ -5071,7 +5391,8 @@
       "nom": "Mme Anne-Laure Babault",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "La raison est simple. Les secteurs agricoles et de l'alimentation sont si complexes qu'un prix unique par produit de base pourrait faire disparaître des parties entières de notre agriculture."
     }
    ],
    "niveau": "ia"
@@ -5093,7 +5414,8 @@
       "nom": "M. Marc Fesneau",
       "qualite": "ministre de l’agriculture et de la souveraineté alimentaire",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Ce projet de loi a une double ambition. D'abord, donner une direction claire et lisible aux agriculteurs. Ensuite, adapter les politiques de l'État pour l'agriculture, afin de relever deux défis immenses et nouveaux pour la capacité de notre pays à se nourrir lui-même."
     },
     {
      "role": "gouvernement",
@@ -5103,7 +5425,8 @@
       "nom": "M. Marc Fesneau",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Car simplifier les règles, c'est faire confiance. C'est donc montrer de la reconnaissance et de la compréhension. C'est aussi permettre aux agriculteurs de ne pas être noyés sous des tas de règles parfois contradictoires. Ils peuvent ainsi se concentrer sur leur mission essentielle : produire pour nous nourrir."
     },
     {
      "role": "pour",
@@ -5113,7 +5436,8 @@
       "nom": "Mme Nicole Le Peih",
       "qualite": "rapporteure",
       "groupe": "RE"
-     }
+     },
+     "simple": "Soutenir l'agriculture est bien notre priorité. Le premier article du texte reconnaît que l'agriculture est plus que jamais un enjeu national, et demande que tout le pays s'engage pleinement. Nous plaçons ainsi l'agriculture et la pêche au rang d'« intérêt général majeur », c'est-à-dire très important pour tout le pays."
     },
     {
      "role": "contre",
@@ -5123,7 +5447,8 @@
       "nom": "Mme Aurélie Trouvé",
       "qualite": null,
       "groupe": "LFI-NUPES"
-     }
+     },
+     "simple": "Avec votre projet de loi, vous faites encore pire. Vous faites passer pour une simplification des démarches administratives ce qui revient en fait à démolir les règles de protection de l'environnement."
     },
     {
      "role": "pour",
@@ -5133,7 +5458,8 @@
       "nom": "M. Pascal Lavergne",
       "qualite": "rapporteur",
       "groupe": "RE"
-     }
+     },
+     "simple": "Nous voulons donner à suffisamment de jeunes une formation sur la culture, les sols et le climat. C'est pour relever le défi du remplacement des agriculteurs d'une génération par ceux de la suivante. Et cette formation est prévue dans le texte."
     },
     {
      "role": "contre",
@@ -5143,7 +5469,8 @@
       "nom": "M. David Taupiac",
       "qualite": null,
       "groupe": "LIOT"
-     }
+     },
+     "simple": "Nous avons été déçus. Il n'y a rien sur le revenu des agriculteurs, ce qu'ils demandent en premier. C'est pourtant une question vitale pour que le métier d'agriculteur attire."
     }
    ],
    "niveau": "ia"
@@ -5177,7 +5504,8 @@
       "nom": "Mme Karine Lebon",
       "qualite": "rapporteure de la commission des affaires économiques",
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "Aujourd'hui, je voudrais donner la parole, avec modestie, à toutes ces femmes et à tous ces enfants. Ils subissent les graves manques de la politique du logement social, les logements à loyer réduit, dans nos territoires d'outre-mer."
     },
     {
      "role": "contre",
@@ -5187,7 +5515,8 @@
       "nom": "M. Pierre-Henri Dumont",
       "qualite": null,
       "groupe": "LR"
-     }
+     },
+     "simple": "Concentrer cette commission d'enquête, un groupe de députés qui enquête, sur l'outre-mer, c'est voir le sujet de façon trop étroite. Le logement social indécent n'est pas un problème réservé à ces territoires : c'est un « fléau », un grand malheur, qui touche tout le pays."
     },
     {
      "role": "pour",
@@ -5197,7 +5526,8 @@
       "nom": "M. Philippe Naillet",
       "qualite": null,
       "groupe": "SOC"
-     }
+     },
+     "simple": "Nous subissons une double peine, c'est-à-dire deux difficultés. D'abord, il n'y a plus de logements disponibles, j'y reviendrai. Ensuite, quand on en trouve un, il risque d'être insalubre (mauvais pour la santé), en mauvais état, voire indécent."
     }
    ],
    "niveau": "ia"
@@ -5231,7 +5561,8 @@
       "nom": "M. Steve Chailloux",
       "qualite": "rapporteur de la commission des affaires culturelles et de l’éducation",
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "Je me tiens devant vous pour défendre un texte de loi essentiel pour la réussite à l'école des jeunes d'outre-mer. Ce texte veut renforcer l'apprentissage des langues régionales, les langues propres à chaque territoire, dans les établissements scolaires d'outre-mer."
     },
     {
      "role": "gouvernement",
@@ -5241,7 +5572,8 @@
       "nom": "Mme Nicole Belloubet",
       "qualite": "ministre",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Nous sommes convaincus que les langues de France, c'est-à-dire parlées sur notre territoire, sont un atout important. Elles le sont pour notre héritage culturel et pour mieux maîtriser les connaissances de base."
     }
    ],
    "niveau": "ia",
@@ -5277,7 +5609,8 @@
       "nom": "M. Fabien Roussel",
       "qualite": "rapporteur de la commission des affaires sociales",
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "Le cancer du sein blesse profondément les femmes : dans leur corps, leur vie intime, leur féminité. Il les blesse dans tous leurs rapports avec la société, dans leur couple comme dans leur vie professionnelle. Une femme sur huit affronte cette épreuve au cours de sa vie."
     },
     {
      "role": "gouvernement",
@@ -5287,7 +5620,8 @@
       "nom": "M. Frédéric Valletoux",
       "qualite": "ministre délégué",
       "groupe": "GOUVERNEMENT"
-     }
+     },
+     "simple": "Je ne nie pas qu'il faut agir pour les malades du cancer du sein, mais ce texte créerait une inégalité évidente."
     },
     {
      "role": "pour",
@@ -5297,7 +5631,8 @@
       "nom": "Mme Sandrine Rousseau",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Au total, une femme sur huit développe un cancer du sein au cours de sa vie. Or la part non remboursée des dépenses liées à cette maladie est beaucoup trop élevée. Elle est de 1 300 à 2 500 euros en moyenne, selon l'association Ligue nationale contre le cancer."
     },
     {
      "role": "contre",
@@ -5307,7 +5642,8 @@
       "nom": "M. Nicolas Turquois",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Le problème est bien posé, mais vous y répondez en prévoyant une exception aux règles habituelles. Or beaucoup d'autres maladies ont des conséquences lourdes et durables : nous ne pouvons pas faire de différence entre elles."
     }
    ],
    "niveau": "ia"
@@ -5342,7 +5678,8 @@
       "nom": "M. André Chassaigne",
       "qualite": null,
       "groupe": "GDR-NUPES"
-     }
+     },
+     "simple": "Le gouvernement ne peut pas continuer à éviter le débat démocratique. C'est le sens de la proposition de résolution, un texte sans force de loi, que nous soumettons au vote aujourd'hui. Elle vous invite, chers collègues, à reconnaître qu'il faut poursuivre le débat au Parlement sur l'accord de commerce avec le Canada."
     },
     {
      "role": "pour",
@@ -5352,7 +5689,8 @@
       "nom": "M. Stéphane Lenormand",
       "qualite": null,
       "groupe": "LIOT"
-     }
+     },
+     "simple": "Voter cette résolution ne veut pas dire qu'on se méfie du Canada, pays allié et ami. C'est un vote pour dire qu'on n'a pas confiance dans le gouvernement, qui veut se passer de l'avis du Parlement malgré l'importance du sujet."
     },
     {
      "role": "contre",
@@ -5362,7 +5700,8 @@
       "nom": "M. Christopher Weissberg",
       "qualite": null,
       "groupe": "RE"
-     }
+     },
+     "simple": "Vous prétendez que le Ceta, l'accord de commerce entre l'Union européenne et le Canada, a des effets négatifs sur notre agriculture. Pourtant, il a permis aux producteurs de vin de Bordeaux ou du Languedoc d'augmenter de 55 % leurs ventes au Canada."
     },
     {
      "role": "pour",
@@ -5372,7 +5711,8 @@
       "nom": "Mme Marie Pochon",
       "qualite": null,
       "groupe": "ECOLO"
-     }
+     },
+     "simple": "Comme nous le répétons depuis des années, il est temps de passer du libre-échange, le commerce sans limites entre pays, au « juste échange ». Il faut aussi protéger nos droits sociaux et nos protections pour l'environnement."
     },
     {
      "role": "contre",
@@ -5382,7 +5722,8 @@
       "nom": "M. Jean-Louis Bourlanges",
       "qualite": null,
       "groupe": "DEM"
-     }
+     },
+     "simple": "Ce n'est sûrement pas le cas du Canada, si proche de nous à tant d'égards. Un accord signé à deux, avec le Canada, c'est mieux, bien mieux, que la « loi de la jungle » du commerce sans accord."
     }
    ],
    "niveau": "ia"

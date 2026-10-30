@@ -58,3 +58,14 @@ Pour comprendre un vote, on peut revivre un résumé du vrai débat en séance, 
 - **Même couleur pour les deux camps** ; seul le côté change.
 - **Texte consensuel** : quand aucun orateur ne s'y oppose sur le fond, on ne fabrique pas de camp opposé. Le débat n'est pas affiché (à terme : la présentation et la mention du consensus).
 - Le choix des répliques est fait par IA, puis relu par un humain ; le niveau est affiché.
+
+### En mots simples
+
+Les citations exactes sont parfois difficiles à comprendre sans connaître le vocabulaire de l'Assemblée. Un interrupteur au-dessus de chaque débat (« Citations exactes » / « En mots simples ») affiche à la place une version simple de chaque réplique. Les citations exactes restent l'affichage par défaut ; le choix du lecteur est gardé sur son appareil.
+
+- **Une reformulation, pas une citation** : elle est présentée comme telle, la citation exacte reste à un clic et fait foi.
+- **Fidèle avant d'être simple** : rien d'ajouté (fait, chiffre, personne, mesure), même degré de certitude, mêmes exemples et conditions, même ordre de cause à effet, aucun mot de jugement. Un mot chargé employé par l'orateur reste entre guillemets, comme étant le sien.
+- **Mêmes règles qu'aux citations** : aucun nom de personne ni de groupe, même soin pour les deux camps.
+- **Écrite par IA en trois passes**, méthode choisie après des tests à l'aveugle : un agent rédige, un deuxième lit comme un élève de 4e sans voir la citation et note ce qui le bloque, un troisième corrige ces points en repartant de la citation. Un glossaire fixe donne une seule explication neutre pour chaque mot difficile. Consignes : `pipeline/consignes/`.
+- **Contrôlée par script** (`pipeline/vulgariser.py`) : une version qui nomme quelqu'un, reprend le rôle déjà affiché, ajoute « je pense que » ou dépasse 80 mots est écartée, et la réplique reste en citation exacte.
+- **Pas relue par un humain** : c'est écrit sous chaque débat en mots simples.

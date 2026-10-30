@@ -25,6 +25,7 @@ Principe directeur : **simple et efficace**. Les idées qui ajoutent de la compl
 | Entrées du site | Trois entrées à égalité : **Les groupes**, **Les textes** (tous les textes, filtrables par sujet, auteur, période ou mot ; « Mes sujets » jusqu'au 30/10/2026) et **À vous de voter** (« Mon bilan » jusqu'au 30/10/2026). |
 | Mon bilan | « Si vous étiez député, qu'auriez-vous voté ? » : **Pour / Contre / Je ne sais pas**, avec le parti caché jusqu'au résultat. |
 | Neutralité | Le site montre les faits, l'utilisateur juge. Les règles sont dans [CHARTE-NEUTRALITE.md](CHARTE-NEUTRALITE.md). |
+| Débats « en mots simples » | Retour d'un lecteur adolescent (30/10/2026) : les citations des débats sont utiles mais parfois dures à comprendre. Un **interrupteur au-dessus de chaque débat**, « Citations exactes » (par défaut) / « En mots simples », gardé comme préférence sur l'appareil, pas dans un menu. Versions écrites par IA en trois passes (rédiger, lire comme un élève de 4e, corriger), méthode retenue après trois tours de tests à l'aveugle ; contrôlées par script, **pas relues par un humain**, ce qui est affiché. C'est aussi ce qui justifie l'IA dans ce projet porté par une seule personne : un très grand jeu de données, et un vrai besoin de vulgarisation. |
 | Accessibilité | RGAA 4.1 / WCAG 2.1 AA, à vérifier à chaque évolution. Les règles sont dans [ACCESSIBILITE.md](ACCESSIBILITE.md). |
 | Architecture | **Site 100 % statique, sans serveur** (voir plus bas). |
 

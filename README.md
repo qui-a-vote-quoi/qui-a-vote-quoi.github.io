@@ -44,6 +44,8 @@ Pour rédiger les brouillons de résumés, `python3 pipeline/extraits.py 17` pr�
 
 Pour « Vivre le débat » : `python3 pipeline/debats.py 17` extrait des comptes rendus la présentation et la discussion générale de chaque texte (orateur, qualité, groupe, texte exact). Les répliques choisies par IA sont ensuite contrôlées et enregistrées par `python3 pipeline/verifier_debats.py 17 <fichier de répliques>` : citation mot pour mot, aucun nom avant le vote, autant de répliques de chaque camp.
 
+Pour « En mots simples » (une version simple de chaque réplique, voir CHARTE-NEUTRALITE.md) : `python3 pipeline/vulgariser.py preparer <dossier>` découpe en lots les débats dont une réplique n'a pas encore de version simple ; des agents IA appliquent les trois passes de `pipeline/consignes/mots-simples.md` (rédiger, lire comme un élève de 4e, corriger) ; `python3 pipeline/vulgariser.py verifier <fichiers>` contrôle les versions et les enregistre. Quand les répliques d'un débat changent, `verifier_debats.py` garde la version simple des citations inchangées.
+
 Pour voir le site en local : `python3 -m http.server 8738 --directory site`, puis http://localhost:8738.
 
 Le site est publié sur GitHub Pages par `.github/workflows/site.yml` à chaque modification de `site/` poussée sur `main`.

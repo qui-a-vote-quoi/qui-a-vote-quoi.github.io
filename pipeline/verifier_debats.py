@@ -18,7 +18,7 @@ ROLES = ("presentation", "gouvernement", "pour", "contre")
 # Anonymat avant le vote : une citation qui nomme une personne, un parti ou un groupe est écartée
 NOMS_INTERDITS = re.compile(
     r"\b(?:M\.|Mme|Monsieur|Madame)\s+[A-ZÉÈ][\w’'-]+|insoumis|Rassemblement national|\bRN\b|macronist|Renaissance|Ensemble pour la République|"
-    r"Les Républicains|Droite républicaine|socialistes?\b|écologistes?\b|communistes?\b|Horizons|MoDem|Démocrates|LIOT|UDR|\bLFI\b|NUPES|"
+    r"Les Républicains|Droite républicaine|socialistes?\b|écologistes?\b|communistes?\b|Horizons|MoDem|Démocrates|\bLIOT\b|\bUDR\b|\bLFI\b|NUPES|"
     r"Nouveau Front populaire|ciottistes?|lepénistes?", re.I)
 
 
@@ -39,6 +39,7 @@ def main():
                 print(f"{dossier} : pas de répliques ({choix.get('remarque') or 'débat introuvable'})")
                 continue
             gardees, rejetees = [], []
+            simples = {normal(r["citation"]): r["simple"] for r in (redaction.get(dossier, {}).get("debat") or {}).get("repliques", []) if r.get("simple")}
             for r in choix["repliques"]:
                 n = r.get("n")
                 ok = r.get("role") in ROLES and isinstance(n, int) and 0 <= n < len(debat["interventions"])
@@ -49,6 +50,8 @@ def main():
                 if ok and normal(r["citation"]) and normal(r["citation"]) in normal(inter["texte"]):
                     gardees.append({"role": r["role"], "citation": r["citation"].strip(), "partie": inter["partie"],
                                     "orateur": {"nom": inter["nom"], "qualite": inter["qualite"], "groupe": inter["groupe"]}})
+                    if normal(r["citation"]) in simples:   # même citation qu'avant : sa version en mots simples reste valable
+                        gardees[-1]["simple"] = simples[normal(r["citation"])]
                 else:
                     rejetees.append(r.get("citation", "")[:60])
             # Une citation écartée d'un côté : on retire la dernière réplique de l'autre côté, pour garder l'égalité

@@ -221,6 +221,11 @@ a.chip:hover { border-color: var(--encre); }
 .legende-debat { margin: 0 0 8px; }
 .consensus { margin: 10px 0 0; font-weight: 700; background: var(--ok-soft); color: var(--ok-fg); border-radius: var(--rayon-s); padding: 8px 14px; }
 .replique q { quotes: "« " " »"; font-size: 16px; }
+/* « En mots simples » : les deux versions sont dans la page, le choix (gardé sur l'appareil) décide laquelle se voit */
+.replique .simple { margin: 0; font-size: 16px; }
+.periodes.version-debat { justify-content: flex-start; margin: 0 0 10px; }
+.v-simple, :root[data-debat="simple"] .avec-simple .v-citation { display: none; }
+:root[data-debat="simple"] .v-simple { display: block; }
 .vivre { display: grid; gap: 10px; }
 .lien-debat { font-weight: 700; font-size: 14px; text-decoration: none; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; }
 .lien-debat::before { content: "▶ "; font-size: 11px; }
@@ -456,7 +461,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   <span id="maj"></span>
 </div></footer>
 
-<script src="donnees.js?v=93ab4e781d"></script>
+<script src="donnees.js?v=60fcc772ac"></script>
 <script>
 // Groupes de toutes les législatures (GROUPES vient de donnees.js), dans l'ordre de l'hémicycle, de la gauche vers la droite.
 // Un même sigle d'une législature à l'autre désigne le même groupe (SOC, LR, RN…).
@@ -1252,13 +1257,19 @@ const urlCompteRendu = (ref, leg) => `https://www.assemblee-nationale.fr/dyn/${l
 // Le rôle de chaque réplique est toujours écrit en clair : la position à gauche ou à droite ne suffit pas
 const ROLES_DEBAT = { presentation: "Présente le texte", gouvernement: "Avis du gouvernement", pour: "Pour le texte", contre: "Contre le texte" };
 function repliques(t, { visibles = Infinity, nomme = false } = {}) {
-  const rs = t.debat.repliques.slice(0, visibles);
+  const rs = t.debat.repliques.slice(0, visibles), simples = t.debat.repliques.some(r => r.simple);
   const legende = t.debat.consensuel ? "La présentation du texte et l'avis du gouvernement." : "D'abord la présentation du texte et l'avis du gouvernement, puis un orateur pour et un orateur contre, à tour de rôle.";
-  return `<p class="meta legende-debat">${legende}</p>
-    <ol class="debat">${rs.map((r, i) => `<li class="replique ${r.role}"${i === rs.length - 1 && !nomme ? ' tabindex="-1" id="derniere-replique"' : ""}>
-    <span class="orateur"><span class="role-debat">${ROLES_DEBAT[r.role]}</span>${nomme ? qui(r, true) : ""}</span><q>${r.citation.replace(/([.!?;])(?=[A-ZÀ-ÖØ-Ý«])/g, "$1 ")}</q></li>`).join("")}</ol>
-    ${t.debat.consensuel && rs.length === t.debat.repliques.length ? `<p class="consensus">Aucun orateur ne s'est opposé à ce texte sur le fond.</p>` : ""}`;   // le compte rendu colle parfois deux phrases
+  return `${simples ? choixVersion() : ""}<p class="meta legende-debat">${legende}</p>
+    <ol class="debat">${rs.map((r, i) => `<li class="replique ${r.role}${r.simple ? " avec-simple" : ""}"${i === rs.length - 1 && !nomme ? ' tabindex="-1" id="derniere-replique"' : ""}>
+    <span class="orateur"><span class="role-debat">${ROLES_DEBAT[r.role]}</span>${nomme ? qui(r, true) : ""}</span><q class="v-citation">${r.citation.replace(/([.!?;])(?=[A-ZÀ-ÖØ-Ý«])/g, "$1 ")}</q>${r.simple ? `<p class="simple v-simple">${r.simple}</p>` : ""}</li>`).join("")}</ol>
+    ${t.debat.consensuel && rs.length === t.debat.repliques.length ? `<p class="consensus">Aucun orateur ne s'est opposé à ce texte sur le fond.</p>` : ""}
+    ${simples ? `<p class="note v-simple">En mots simples : chaque réplique est reformulée par IA à partir de la citation exacte, pour être comprise sans connaître le vocabulaire de l'Assemblée. Pas encore relu par un humain : en cas de doute, la citation exacte fait foi.</p>` : ""}`;   // le compte rendu colle parfois deux phrases
 }
+// Citations exactes ou en mots simples : un seul choix pour tous les débats, gardé sur l'appareil
+let versionDebat = lirePref("versionDebat", "citations");
+document.documentElement.dataset.debat = versionDebat;
+const choixVersion = () => `<div class="periodes version-debat" role="group" aria-label="Version du débat">${[["citations", "Citations exactes"], ["simple", "En mots simples"]].map(([v, lib]) =>
+  `<button type="button" data-version="${v}" aria-pressed="${v === versionDebat}">${lib}</button>`).join("")}</div>`;
 // « Je ne sais pas » : les éléments pour se faire un avis, sans dévoiler l'auteur ni le résultat
 function elementsPourChoisir(t) {
   return `<section class="details-choix" aria-labelledby="details-titre"><h3 tabindex="-1" id="details-titre">Pour vous aider à choisir</h3>
@@ -1413,6 +1424,12 @@ app.addEventListener("click", e => {
   if (e.target.dataset.periode) {
     periodeGroupes = e.target.dataset.periode; $("#hemi-groupes").innerHTML = hemicycleGroupes(periodeGroupes);
     $(`[data-periode="${periodeGroupes}"]`).focus(); return;
+  }
+  if (e.target.dataset.version) {
+    versionDebat = document.documentElement.dataset.debat = e.target.dataset.version; ecrirePref("versionDebat", versionDebat);
+    app.querySelectorAll("[data-version]").forEach(b => b.setAttribute("aria-pressed", b.dataset.version === versionDebat));
+    $("#annonce").textContent = versionDebat === "simple" ? "Débat affiché en mots simples." : "Débat affiché en citations exactes.";
+    return;
   }
   if (e.target.id === "sieger") { commencerSeance(); return; }
   if (e.target.id === "suivant" || e.target.id === "passer") { allerA(seance.i + 1); return; }
