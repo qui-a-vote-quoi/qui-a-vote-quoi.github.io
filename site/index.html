@@ -249,10 +249,19 @@ a.chip:hover { border-color: var(--encre); }
 .tuiles-titre + .tuiles { margin-top: 10px; }
 .barre-jouer { position: sticky; bottom: 12px; z-index: 4; margin-top: 16px; }
 .appel-jeu { margin-top: 28px; }
-.qui-decide { max-width: 720px; margin: 56px auto 0; padding-top: 28px; border-top: var(--bord); }
-.qui-decide h2 { font-size: 22px; }
-.qui-decide ul { padding-left: 20px; display: grid; gap: 8px; color: var(--muted); }
-.qui-decide b { color: var(--fg); }
+.qui-decide { max-width: 880px; margin: 64px auto 0; }
+.qui-decide h2 { font-size: 24px; text-align: center; margin-bottom: 20px; }
+.chaine { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; counter-reset: etape; }
+.chaine li { position: relative; background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 18px; display: grid; gap: 6px; align-content: start; color: var(--muted); }
+.chaine li + li::before { content: "→"; content: "→" / ""; position: absolute; left: -24px; top: 50%; transform: translateY(-50%); color: var(--trait); font-weight: 700; }
+.chaine b { font: 700 18px/1.2 var(--display); color: var(--fg); }
+.chaine .chiffre { margin-top: 6px; padding-top: 10px; border-top: var(--bord); color: var(--fg); }
+.chaine .chiffre strong { display: block; font: 800 32px/1 var(--display); color: var(--accent); }
+.qui-decide .note { text-align: center; margin: 16px auto 0; }
+@media (max-width: 700px) {
+  .chaine { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .chaine li + li::before { content: "↓"; content: "↓" / ""; left: 50%; top: -22px; transform: translateX(-50%); }
+}
 .ligne-resume { margin: 0; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .plus.grand { font-size: 19px; padding: 16px 28px; }
 a.plus { text-decoration: none; display: inline-flex; align-items: center; }
@@ -751,14 +760,16 @@ function repartitionAuteurs(ts) {
 // « Qui décide de ce qui est voté ? » : le lien entre le vote des citoyens et les textes discutés. Des faits, sans jugement.
 function quiDecide() {
   const sol = TEXTES.filter(t => t.type === "solennel"), gouv = sol.filter(t => t.auteurCourt === "Gouvernement").length;
+  // Pourquoi le vote compte : de l'élection des députés au choix des textes votés
   return `<section class="qui-decide" aria-labelledby="qui-decide">
     <h2 id="qui-decide" tabindex="-1">Qui décide de ce qui est voté&nbsp;?</h2>
-    <ul>
-      <li><b>Vous élisez les députés.</b> Le gouvernement doit pouvoir compter sur eux : l'Assemblée peut le renverser.</li>
-      <li><b>Le gouvernement choisit la plupart des textes discutés.</b> Il fixe l'ordre du jour de deux semaines de séance sur quatre. Les groupes d'opposition et minoritaires ont une journée par mois.</li>
-      <li><b>Sur les ${sol.length} grands votes présentés ici, ${gouv} portaient sur un texte du gouvernement.</b></li>
-    </ul>
-    <p class="note">Ces chiffres portent sur les votes de ce site : les votes solennels et les journées réservées. N'y figurent pas encore les autres votes nominatifs sur des textes entiers, ni les textes adoptés sans vote nominatif (à main levée, ou avec l'article 49.3). <a href="#methode/ce-qui-manque">Ce que le site montre, et ce qui manque</a></p>
+    <ol class="chaine">
+      <li><b>Vous élisez les députés</b> Ils votent les lois.</li>
+      <li><b>Les députés tiennent le gouvernement</b> Il ne reste en place que s'ils ne le renversent pas.</li>
+      <li><b>Le gouvernement choisit la plupart des textes</b> Il fixe l'ordre du jour la moitié du temps. L'opposition a une journée par mois.
+        <span class="chiffre"><strong>${gouv} sur ${sol.length}</strong> grands votes de ce site portaient sur un texte du gouvernement</span></li>
+    </ol>
+    <p class="note">Les autres votes et les textes adoptés sans vote nominatif (à main levée, 49.3) ne sont pas encore comptés. <a href="#methode/ce-qui-manque">Ce qui manque</a></p>
   </section>`;
 }
 const pluriel = (n, mot) => `${n} ${mot}${n > 1 ? "s" : ""}`;
