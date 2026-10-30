@@ -300,7 +300,10 @@ a.plus { text-decoration: none; display: inline-flex; align-items: center; }
 .depli > summary { cursor: pointer; padding: 12px 16px; min-height: 44px; font-weight: 700; color: var(--accent); }
 .depli > summary span { font-weight: 400; color: var(--muted); }
 .depli[open] > summary { border-bottom: 1px solid var(--line); }
-.depli > .list, .depli > .tablewrap { padding: 12px; border: 0; }
+/* Le contenu déplié garde la même marge intérieure que le titre */
+.depli > :not(summary) { margin-inline: 16px; }
+.depli[open] { padding-bottom: 16px; }
+.depli > .tablewrap { border: 0; }
 .stat { background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 14px 16px; }
 .stat .meta { font-size: 14px; }
 .big { font: 700 30px var(--display); }
@@ -822,8 +825,8 @@ const views = {
       ${sesTextes.length ? `<p class="meta">${pluriel(sesTextes.length, "texte")} mis au vote, lors de ses journées réservées ou d'un vote solennel, dont ${adoptes.length} adopté${adoptes.length > 1 ? "s" : ""} par l'Assemblée et ${pluriel(lois, "devenu")} loi. Les textes de ses journées réservées qui n'ont pas pu être votés, faute de temps, sont dans le programme de chaque journée, plus bas.</p>${listeTextes(portes, { avecAuteur: false })}` : `<p class="meta">Aucun texte de ce groupe sur le site pour l'instant.</p>`}
       <h2>2. Les textes des autres où ses voix ont fait la différence</h2>
       <p class="meta">Sans les voix de ce groupe, le résultat aurait été inverse. Plus un groupe a de sièges, plus souvent ses voix décident : c'est le nombre de députés qui compte. <a href="#methode">Comment c'est calculé</a></p>
-      <details class="depli"><summary>Adoptés grâce à ses voix « pour » <span>· ${pluriel(aide.length, "texte")}</span></summary>${aide.length ? listeTextes(aide) : `<p class="meta" style="padding:0 16px">Aucun.</p>`}</details>
-      <details class="depli"><summary>Rejetés par ses voix « contre » <span>· ${pluriel(bloque.length, "texte")}</span></summary>${bloque.length ? listeTextes(bloque) : `<p class="meta" style="padding:0 16px">Aucun.</p>`}</details>
+      <details class="depli"><summary>Adoptés grâce à ses voix « pour » <span>· ${pluriel(aide.length, "texte")}</span></summary>${aide.length ? listeTextes(aide) : `<p class="meta">Aucun.</p>`}</details>
+      <details class="depli"><summary>Rejetés par ses voix « contre » <span>· ${pluriel(bloque.length, "texte")}</span></summary>${bloque.length ? listeTextes(bloque) : `<p class="meta">Aucun.</p>`}</details>
       ${(() => { const r = repartitionMesures(sesTextes); return r.classes ? `<h2>3. Ce que font les textes qu'il a proposés</h2>
         <p class="meta">Le mécanisme utilisé par chacun de ses ${pluriel(r.classes, "texte")} mis au vote et classé, lu dans ses articles. Un texte peut en combiner plusieurs. Le site ne dit pas si c'est bien ou mal : à chacun d'en juger. <a href="#methode">Comment c'est classé</a></p>
         <div class="repartition">${r.lignes.map(l => `<div><b>${l.n}</b><span>${MESURES[l.m]}</span></div>`).join("")}</div>
