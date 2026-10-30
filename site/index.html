@@ -343,6 +343,12 @@ a.plus { text-decoration: none; display: inline-flex; align-items: center; }
 .prog li.sans-fiche .prog-txt > span { color: var(--muted); }
 .prog small { display: block; font: 400 14px var(--body); color: var(--muted); margin-top: 2px; }
 .tag.na { background: var(--line); color: var(--fg); font-weight: 600; }
+.parcours { list-style: none; margin: 0 0 12px; padding: 0; display: grid; gap: 6px; }
+.parcours li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; padding: 10px 14px; background: var(--surface); border: var(--bord); border-radius: var(--rayon-s); font-variant-numeric: tabular-nums; }
+.parcours li[aria-current] { border-color: var(--fg); }
+.parcours .tag { margin-left: auto; }
+.parcours .carte-date, .table-parcours .carte-date { margin-left: 0; color: var(--muted); }
+.table-parcours td, .table-parcours th[scope=row] { vertical-align: top; white-space: nowrap; }
 table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
 .tablewrap { overflow-x: auto; background: var(--surface); border: var(--bord); border-radius: var(--rayon); }
 th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); font-size: 15px; }
@@ -528,6 +534,10 @@ function totals(t) {
 const dernierVote = {};
 TEXTES.forEach(t => { if (!dernierVote[t.dossier] || dernierVote[t.dossier] < t.date) dernierVote[t.dossier] = t.date; });
 const estLoi = t => t.loi && totals(t).adopte && dernierVote[t.dossier] === t.date;
+// Tous les votes d'un même texte (ses lectures), du premier au dernier
+const VOTES_DOSSIER = {};
+TEXTES.forEach(t => (VOTES_DOSSIER[t.dossier] ||= []).push(t));
+Object.values(VOTES_DOSSIER).forEach(vs => vs.sort((a, b) => a.date.localeCompare(b.date)));
 function issueTag(t) {
   if (estLoi(t)) return `<span class="tag loi">§ C'est une loi</span>`;
   return totals(t).adopte ? `<span class="tag ok">✓ Adopté</span>` : `<span class="tag ko">✕ Rejeté</span>`;
@@ -606,6 +616,33 @@ function hemicycleGroupes(leg) {
   return hemicycle(gs.map(g => ({ g, lots: [[`fill="${G(g).c}"`, nb(g)]] })), { lien: true, centre: N, sous: "députés", tete: periodes,
     pied: `<p class="meta" style="text-align:center;margin:6px 0 14px">Chaque point est un député, à la couleur de son groupe. Choisissez un groupe pour voir ce qu'il a proposé et voté.</p>${legendeGroupes}` });
 }
+// Le parcours d'un texte voté plusieurs fois : chaque lecture, puis le vote de chaque groupe à chaque lecture.
+// Des chiffres, sans commentaire : on montre seulement où les voix ont le plus bougé.
+function parcoursTexte(t) {
+  const vs = VOTES_DOSSIER[t.dossier]; if (vs.length < 2) return "";
+  const premier = vs[0], dernier = vs[vs.length - 1], s1 = totals(premier), s2 = totals(dernier);
+  const gs = GROUPES_VOTE.filter(g => vs.some(v => v.groupes.some(r => r.g === g)));
+  const vote = (v, g) => { const r = v.groupes.find(x => x.g === g); return r && votesGroupe(v, r); };
+  const mouvements = gs.map(g => { const a = vote(premier, g), b = vote(dernier, g);
+      return a && b && { g, a, b, d: Math.abs(b.p - a.p) + Math.abs(b.c - a.c) }; })
+    .filter(m => m && m.d >= 4).sort((x, y) => y.d - x.d).slice(0, 4);
+  const ecart = x => `${x.adopte ? "+" : "−"}${x.ecart}`;
+  return `<h2>Le parcours du texte</h2>
+    <p class="meta">Avant d'être définitivement adopté ou rejeté, un texte fait des allers-retours entre l'Assemblée et le Sénat, qui peuvent le modifier. Les députés l'ont voté ${vs.length} fois. Le résumé ci-dessus porte sur le texte dans son ensemble, pas sur chaque version.</p>
+    <ol class="parcours">${vs.map(v => { const x = totals(v);
+      return `<li${v === t ? ' aria-current="page"' : ""}><span class="carte-date">${fdateCourte(v.date)}</span>
+        <span>${v === t ? `<b>${lecture(v) || "vote"}</b> <span class="meta">(ce vote)</span>` : `<a href="#texte/${v.id}">${lecture(v) || "vote"}</a>`}</span>
+        <span class="decompte">${x.pour} pour · ${x.contre} contre</span>${issueTag(v)}</li>`; }).join("")}</ol>
+    <p>Écart entre « pour » et « contre » : <b>${ecart(s1)}</b> voix ${lecture(premier) ? `en ${lecture(premier)}` : "au premier vote"}, <b>${ecart(s2)}</b> ${lecture(dernier) ? `en ${lecture(dernier)}` : "au dernier vote"}.${mouvements.length
+      ? ` Les groupes dont les voix ont le plus bougé : ${mouvements.map(m => `${chip(m.g)} ${m.a.p} → ${m.b.p} pour, ${m.a.c} → ${m.b.c} contre`).join(" ; ")}.` : ""}</p>
+    <div class="tablewrap" tabindex="0" role="region" aria-label="Vote de chaque groupe à chaque lecture"><table class="table-parcours">
+      <thead><tr><th scope="col">Groupe</th>${vs.map(v => `<th scope="col">${lecture(v) || "vote"}<br><span class="carte-date">${fdateCourte(v.date)}</span></th>`).join("")}</tr></thead>
+      <tbody>${gs.map(g => `<tr><th scope="row">${chip(g)}</th>${vs.map(v => { const x = vote(v, g); if (!x) return `<td class="meta">—</td>`;
+        const st = stance(v, v.groupes.find(r => r.g === g));
+        return `<td><span class="pos ${st}">${LIB[st]}</span><br><span class="meta">${x.p} pour · ${x.c} contre · ${x.a}&nbsp;abst.</span></td>`; }).join("")}</tr>`).join("")}</tbody>
+    </table></div>
+    <p class="note">Position du groupe : le choix le plus fréquent parmi ses députés qui ont voté. Les non-inscrits n'ont pas de position commune.</p>`;
+}
 // Les arguments des deux camps (voir CHARTE-NEUTRALITE.md) : même forme des deux côtés, sans couleur de camp
 function argsGrid(t) {
   const col = (titre, liste) => `<div class="arg"><div class="eyebrow">${titre}</div><ul>${liste.map(a => `<li>${a}</li>`).join("")}</ul></div>`;
@@ -638,7 +675,7 @@ function ligneTexte(t, { avecAuteur = true, datee = false, voteDe = null, avecRe
     <div class="ligne-haut"><h3><a href="#texte/${t.id}">${t.titre}</a>${t.niveau === "relu" ? ` <span class="badge-relu">relu</span>` : ""}</h3>${issueTag(t)}</div>
     ${avecResume && t.enClair ? `<p class="ligne-resume">${t.enClair}</p>` : ""}
     <div class="ligne-bas">${voteDe === "NI" ? (() => { const v = votesGroupe(t, t.groupes.find(r => r.g === "NI")); return `<span class="vote-groupe">Non-inscrits : ${v.p} pour · ${v.c} contre · ${v.a} abst. · ${v.n} absents</span>`; })()
-      : voteDe ? `<span class="vote-groupe">Son vote : <b class="pos ${st}">${LIB[st]}</b></span>` : ""}${avecAuteur ? auteurLigne(t) : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, s.abst, 0)}</span><span>${s.pour} pour · ${s.contre} contre${s.abst ? ` · ${s.abst}&nbsp;<span aria-hidden="true">abst.</span><span class="sr-only">abstentions</span>` : ""}</span>${serre ? `<span class="serre">à ${s.ecart} voix près</span>` : ""}</span>${lecture(t) ? `<span>${lecture(t)}</span>` : ""}${t.debat ? `<a class="lien-debat" href="#texte/${t.id}/debat">Le débat<span class="sr-only"> : ${t.titre.replace(/"/g, "&quot;")}</span></a>` : ""}${datee ? `<span class="carte-date">${fdateCourte(t.date)}</span>` : ""}</div>
+      : voteDe ? `<span class="vote-groupe">Son vote : <b class="pos ${st}">${LIB[st]}</b></span>` : ""}${avecAuteur ? auteurLigne(t) : ""}<span class="decompte"><span class="minijauge" aria-hidden="true">${bar(s.pour, s.contre, s.abst, 0)}</span><span>${s.pour} pour · ${s.contre} contre${s.abst ? ` · ${s.abst}&nbsp;<span aria-hidden="true">abst.</span><span class="sr-only">abstentions</span>` : ""}</span>${serre ? `<span class="serre">à ${s.ecart} voix près</span>` : ""}</span>${lecture(t) ? `<span>${lecture(t)}</span>` : ""}${VOTES_DOSSIER[t.dossier].length > 1 ? `<span>voté ${VOTES_DOSSIER[t.dossier].length} fois</span>` : ""}${t.debat ? `<a class="lien-debat" href="#texte/${t.id}/debat">Le débat<span class="sr-only"> : ${t.titre.replace(/"/g, "&quot;")}</span></a>` : ""}${datee ? `<span class="carte-date">${fdateCourte(t.date)}</span>` : ""}</div>
   </li>`;
 }
 const MOIS_LONG = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { month: "long", year: "numeric" });
@@ -859,6 +896,7 @@ const views = {
           <span class="num">${v.p} pour · ${v.c} contre · ${v.a} abst. · ${v.n} n'ont pas voté (participation ${pres} %)</span></div>`;
       }).join("")}</div>
       <p class="note">Position du groupe : le choix le plus fréquent parmi ses députés qui ont voté. Sources sur le site de l'Assemblée nationale : ${ext(urlVote(t.scrutin, t.leg), `vote n° ${t.scrutin}`)}, ${ext(urlDossier(t), "le texte et son parcours")}.</p>
+      ${parcoursTexte(t)}
       ${appelJeu(t.theme)}`;
   },
   groupe(g) {
@@ -1057,9 +1095,9 @@ function majVotesGroupe() {
 // Les textes : la liste filtrée, sans redessiner le formulaire (le focus reste dans le champ)
 function majSujets() {
   const q = filtre.q.trim();
-  const ts = parPeriode(TEXTES, filtre.leg)
-    .filter(t => (!filtre.sujet || t.theme === filtre.sujet) && (!filtre.auteur || auteurDe(t) === filtre.auteur) && (q.length < 2 || correspond(t, q)))
-    .sort((a, b) => b.date.localeCompare(a.date));
+  // Une carte par texte : son dernier vote (ses lectures précédentes sont sur sa fiche)
+  const ts = parDossier(parPeriode(TEXTES, filtre.leg)
+    .filter(t => (!filtre.sujet || t.theme === filtre.sujet) && (!filtre.auteur || auteurDe(t) === filtre.auteur) && (q.length < 2 || correspond(t, q))));
   const surSujet = location.hash.startsWith("#sujet/");   // sur la page d'un sujet, le sujet n'est pas un filtre à effacer
   const actifs = [!surSujet && filtre.sujet, filtre.auteur, filtre.leg, q.length >= 2].some(Boolean);
   $("#nb").innerHTML = (ts.length ? `${pluriel(ts.length, "texte")}${actifs ? ` correspond${ts.length > 1 ? "ent" : ""} à vos filtres` : ""}.` : "Aucun texte ne correspond. Essayez un autre mot ou un autre filtre.")
