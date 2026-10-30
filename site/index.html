@@ -249,18 +249,19 @@ a.chip:hover { border-color: var(--encre); }
 .tuiles-titre + .tuiles { margin-top: 10px; }
 .barre-jouer { position: sticky; bottom: 12px; z-index: 4; margin-top: 16px; }
 .appel-jeu { margin-top: 28px; }
-.qui-decide { max-width: 1000px; margin: 72px auto 0; text-align: center; }
+/* Une bande pleine largeur, d'une autre couleur : une section à part, après la question de l'accueil */
+.qui-decide { max-width: 1000px; margin: 80px auto -64px; padding: 56px 0 64px; text-align: center; background: var(--surface); box-shadow: 0 0 0 100vmax var(--surface); clip-path: inset(0 -100vmax); border-top: var(--bord); }
 .qui-decide h2 { font-size: 26px; margin-bottom: 6px; }
 .qd-sous { color: var(--muted); margin: 0 0 28px; font-size: 18px; }
 .chaine { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; position: relative; }
 .chaine::before { content: ""; position: absolute; top: 31px; left: 25%; right: 25%; border-top: 2px dashed var(--trait); }
 .qd-deux { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-.qd-groupe { background: var(--surface); border: var(--bord); border-radius: var(--rayon); padding: 18px 20px 22px; }
+.qd-groupe { background: var(--bg); border: var(--bord); border-radius: var(--rayon); padding: 18px 20px 22px; }
 .qd-groupe h3 { margin: 0 0 16px; }
 .chaine li { position: relative; display: grid; justify-items: center; align-content: start; gap: 4px; color: var(--muted); line-height: 1.35; }
-.qd-ico { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); border: 3px solid var(--surface); margin-bottom: 8px; }
+.qd-ico { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); border: 3px solid var(--bg); margin-bottom: 8px; }
 .chaine b { font: 700 19px/1.2 var(--display); color: var(--fg); }
-.qd-chiffre { margin-top: 36px; background: var(--surface); border: var(--bord-encre); border-radius: var(--rayon); box-shadow: var(--ombre); padding: 22px 24px; text-align: left; }
+.qd-chiffre { margin-top: 36px; background: var(--bg); border: var(--bord-encre); border-radius: var(--rayon); box-shadow: var(--ombre); padding: 22px 24px; text-align: left; }
 .qd-chiffre p { margin: 0 0 14px; font-size: 18px; }
 .qd-chiffre strong { font: 800 44px/1 var(--display); color: var(--accent); margin-right: 6px; vertical-align: -4px; }
 .qd-barre { display: flex; gap: 3px; height: 14px; }
