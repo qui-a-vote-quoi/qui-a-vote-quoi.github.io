@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Qui a voté quoi (version de test)</title>
+<title>Qui a voté quoi</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="description" content="Pour chaque texte examiné à l'Assemblée nationale : qui l'a proposé, ce qu'il change, et ce que chaque groupe de députés a voté.">
 <!-- Version de test : pas d'indexation par les moteurs de recherche -->
@@ -41,9 +41,6 @@ main:focus, h1:focus { outline: none; }
 body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.5 var(--body); }
 a { color: var(--accent); }
 .wrap { max-width: 960px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
-.proto { background: var(--accent-soft); color: var(--fg); text-align: center; font-size: 13px; font-weight: 600; padding: 5px 16px; }
-.proto .court { display: none; }
-.proto a { color: var(--accent); font-weight: 700; }
 footer.pied { border-top: var(--bord); background: var(--bg); }
 footer.pied .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; padding-block: 20px; font-size: 15px; color: var(--muted); }
 footer.pied a { display: inline-block; padding-block: 2px; }
@@ -381,7 +378,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
 @media (max-width: 640px) {
   .filtres { grid-template-columns: minmax(0, 1fr); }
   body { font-size: 16px; }
-  .proto .long { display: none; } .proto .court { display: inline; }
   /* Sur téléphone, le menu passe sous le nom du site, séparé par un trait, en trois cases égales */
   header.top .wrap { flex-wrap: wrap; gap: 8px; padding-block: 8px 10px; }
   .logo { font-size: 17px; flex-basis: 100%; }
@@ -422,7 +418,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
 </head>
 <body>
 <a class="skip" href="#contenu" id="skip">Aller au contenu</a>
-<div class="proto"><span class="long">VERSION DE TEST — données réelles de l'Assemblée nationale depuis 2017, résumés en cours de rédaction · </span><span class="court">VERSION DE TEST · </span><a href="#apropos">Donner mon avis</a></div>
 <header class="top"><div class="wrap">
   <a class="logo" href="#accueil"><svg width="30" height="17" viewBox="0 0 30 17" aria-hidden="true"><path d="M3 15a12 12 0 0 1 24 0" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round"/><path d="M9 15a6 6 0 0 1 12 0" fill="none" stroke="var(--corail)" stroke-width="3.2" stroke-linecap="round"/></svg>Qui a voté quoi</a>
   <nav>
@@ -1305,7 +1300,7 @@ function render() {
   app.innerHTML = fn(decodeURIComponent(arg || ""));
   // Titre de l'onglet propre à chaque vue (annoncé par les lecteurs d'écran)
   const h1 = app.querySelector("h1");
-  document.title = view === "accueil" || !h1 ? "Qui a voté quoi (version de test)" : `${h1.textContent} – Qui a voté quoi`;
+  document.title = view === "accueil" || !h1 ? "Qui a voté quoi" : `${h1.textContent} – Qui a voté quoi`;
   app.classList.remove("en-seance", "en-cours");
   // #bilan/<id> : une séance qui commence par ce texte, puis des textes au hasard
   if (view === "bilan" && arg && !seance && byId(decodeURIComponent(arg))) {
