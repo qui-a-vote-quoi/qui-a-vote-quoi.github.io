@@ -240,18 +240,14 @@ a.chip:hover { border-color: var(--encre); }
 .principal:hover { box-shadow: 3px 3px 0 var(--accent); }
 @keyframes apparait { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 /* Accueil : une promesse, le bouton du jeu, la recherche, et un vote serré en exemple */
-.hero { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 28px; align-items: center; }
-.hero .lead { margin-bottom: 22px; }
-.hero-recherche input[type=search] { display: block; width: 100%; height: 54px; font: 18px var(--body); color: var(--fg); background: var(--surface); }
-.hero-recherche input[type=search]:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.hero { max-width: 720px; margin: 24px auto 0; text-align: center; }
+.hero h1 { font-size: clamp(32px, 6vw, 56px); }
+.hero .lead { margin-inline: auto; }
+.hero-fait { color: var(--muted); font-weight: 600; }
+.doors.duo { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 820px; margin-inline: auto; }
+.duo .door { padding: 24px; }
+.duo .door b { font-size: 22px; }
 a.plus { text-decoration: none; display: inline-flex; align-items: center; }
-.plus.grand { font-size: 18px; padding: 14px 24px; }
-.hero-recherche { margin-top: 20px; }
-.hero-recherche label { display: block; font-weight: 600; margin-bottom: 6px; color: var(--muted); }
-.exemple { background: var(--surface); border: var(--bord-encre); border-radius: var(--rayon); box-shadow: var(--ombre); padding: 22px; display: grid; gap: 10px; justify-items: start; }
-.exemple h2 { margin: 0; font-size: 22px; }
-.exemple p { margin: 0; }
-.exemple-ecart b { color: var(--corail); }
 
 
 /* Fiche texte */
@@ -374,7 +370,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   main { padding-block: 24px 48px; }
   .steps { grid-template-columns: minmax(0, 1fr); gap: 12px; margin-top: 20px; }
   .doors.trio { grid-template-columns: minmax(0, 1fr); gap: 10px; }
-  .hero { grid-template-columns: minmax(0, 1fr); }
+  .doors.duo { grid-template-columns: minmax(0, 1fr); }
   .doors:not(.trio) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .steps li { grid-template-columns: 26px minmax(0, 1fr); }
   .steps li::before { width: 26px; height: 26px; font-size: 13px; }
@@ -673,28 +669,16 @@ function bilanNiche(n) {
 
 const views = {
   accueil() {
-    // Un exemple pour donner envie : le dernier vote serré parmi les textes du jeu. On ne dévoile ni l'auteur ni le résultat.
-    const ex = BILAN.find(t => totals(t).ecart > 0 && totals(t).ecart <= ECART_SERRE);
+    // L'objectif du site en une phrase, puis deux façons d'y aller : voir ce qu'ils ont voté, ou se mettre à leur place
+    const serres = TEXTES.filter(t => totals(t).ecart <= ECART_SERRE).length;
     return `<section class="hero">
-        <div>
-          <h1>Qu'ont voté vos députés&nbsp;?</h1>
-          <p class="lead">${TEXTES.length} votes de l'Assemblée depuis 2017, expliqués simplement. Votez, puis découvrez quels groupes ont voté comme vous. Et vous, qu'auriez-vous voté à leur place&nbsp;?</p>
-          <p><a class="plus principal grand" href="#bilan">Essayer : à vous de voter →</a></p>
-          <form id="cherche-accueil" role="search" class="hero-recherche"><label for="q-accueil">Ou cherchez un texte</label>${champRecherche("q-accueil")}</form>
-        </div>
-        ${ex ? `<article class="exemple" aria-labelledby="exemple-titre">
-          <span class="eyebrow">Un vote serré · ${fdate(ex.date)}</span>
-          <h2 id="exemple-titre">${ex.titre}</h2>
-          <p>${ex.enClair}</p>
-          <p class="exemple-ecart">Il s'est joué à <b>${totals(ex).ecart} voix près</b>.</p>
-          <a class="plus principal" href="#bilan/${encodeURIComponent(ex.id)}">Qu'auriez-vous voté&nbsp;?</a>
-        </article>` : ""}
+        <h1>Ce que votent vos députés change votre quotidien</h1>
+        <p class="lead">Loyers, retraites, santé, impôts : voyez qui a proposé quoi, et qui a voté quoi à l'Assemblée depuis 2017. Sans parti pris, à vous de juger.</p>
+        <p class="hero-fait">${serres} votes se sont joués à ${ECART_SERRE} voix près ou moins.</p>
       </section>
-      <h2 class="sr-only">Trois façons d'explorer</h2>
-      <div class="doors trio">
-        <a class="door" href="#groupes"><b>Qu'a voté chaque groupe&nbsp;?</b><span>Ce que chaque groupe a proposé, et quand ses voix ont fait la différence.</span></a>
-        <a class="door" href="#sujets"><b>Qu'a-t-on voté sur ma retraite, mon loyer…&nbsp;?</b><span>Tous les textes, par sujet, par auteur ou par mot.</span></a>
-        <a class="door" href="#bilan"><b>Et vous, qu'auriez-vous voté&nbsp;?</b><span>Revivez le débat, votez, et découvrez qui pense comme vous.</span></a>
+      <div class="doors duo">
+        <a class="door" href="#sujets"><b>Voir ce qu'ils ont voté</b><span>Tous les textes, par sujet, par groupe ou par mot.</span></a>
+        <a class="door" href="#bilan"><b>Et vous, qu'auriez-vous voté&nbsp;?</b><span>Revivez le débat, votez, et découvrez quels groupes ont voté comme vous.</span></a>
       </div>`;
   },
   groupes() {
@@ -1280,12 +1264,6 @@ app.addEventListener("change", e => {
     ecrirePref("bilanChoix", { sujets: [...f.querySelectorAll("input[name=sujet]:checked")].map(x => x.value), leg: f.querySelector("#periode-bilan").value });
     seance = null; majQuestions();
   }
-});
-app.addEventListener("submit", e => {
-  if (e.target.id !== "cherche-accueil") return;
-  e.preventDefault();
-  filtre = { q: $("#q-accueil").value, leg: "", sujet: "", auteur: "" }; nbVisibles = 30;
-  location.hash = "sujets";
 });
 addEventListener("hashchange", () => {
   if (!location.hash.startsWith("#bilan")) seance = null;
