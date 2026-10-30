@@ -98,7 +98,7 @@ Coût mensuel ensuite : **1 à 2 $.** Ces chiffres sont à confirmer par un essa
 
 ## Prochaines étapes
 
-1. ~~Mettre le projet sous Git.~~ Fait. **Avant toute publication**, remplacer l'identité provisoire des commits (`a-definir@example.invalid`) par celle du compte GitHub dédié, et réécrire l'historique en conséquence.
+1. ~~Mettre le projet sous Git.~~ Fait. Organisation GitHub `qui-a-vote-quoi` créée (appartenance du propriétaire masquée). Les commits portent l'identité neutre « Qui a voté quoi <contact@qui-a-vote-quoi.invalid> », reliée à aucun compte.
 2. ~~Chaîne de données pour 2024-2026 (phase 1).~~ Première version faite : `pipeline/`, base dans `donnees/base/17/`, rapport de vérification dans `donnees/base/17/rapport.md`.
 3. ~~Commande de mise à jour mensuelle.~~ Faite : `pipeline/mettre_a_jour.py`, qui écrit la liste des nouveautés à vérifier.
 4. ~~Étendre la chaîne à 2022-2024 puis 2017-2022.~~ Fait : bases dans `donnees/base/16/` et `donnees/base/15/`, avec leurs rapports.
