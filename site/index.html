@@ -42,14 +42,24 @@ footer.pied { border-top: 1px solid var(--line); background: var(--surface); }
 footer.pied .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; padding-block: 20px; font-size: 15px; color: var(--muted); }
 footer.pied a { display: inline-block; padding-block: 2px; }
 .apropos h2 { font-size: 21px; }
-.filtres { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: end; margin-top: 24px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
-.filtres label, .filtres legend { display: block; font-weight: 600; font-size: 15px; margin-bottom: 4px; }
-.filtres input[type=search], .filtres select { font: 16px var(--body); min-height: 44px; padding: 8px 10px; border: 1px solid var(--trait); border-radius: 8px; background: var(--surface); color: var(--fg); }
-.filtres input[type=search] { width: min(100%, 26rem); }
-.filtres .champ { flex: 1 1 14rem; } .filtres .champ input { width: 100%; }
-.choix-sujets { border: 0; padding: 0; margin: 0; width: 100%; }
+/* Filtres : une grille de trois colonnes égales ; la recherche et le choix des sujets prennent toute la largeur */
+.filtres { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 24px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.filtres > .champ, .filtres > .choix-sujets { grid-column: 1 / -1; }
+.filtres label, .filtres legend { display: block; font: 700 13px var(--body); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; padding: 0; }
+.filtres input[type=search], .filtres select { display: block; width: 100%; height: 44px; font: 16px var(--body); color: var(--fg); background-color: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 0 12px; }
+.filtres input[type=search]:hover, .filtres select:hover { border-color: var(--trait); }
+.filtres input[type=search]:focus-visible, .filtres select:focus-visible { outline: 3px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+/* Listes déroulantes au même style que le champ, avec un chevron dessiné en CSS (suit le thème clair ou sombre) */
+.filtres select { appearance: none; -webkit-appearance: none; padding-right: 36px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; cursor: pointer;
+  background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%), linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position: calc(100% - 19px) 19px, calc(100% - 14px) 19px; background-size: 5px 5px; background-repeat: no-repeat; }
+.recherche { position: relative; }
+.recherche svg { position: absolute; left: 13px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+.filtres .recherche input { padding-left: 40px; }
+.choix-sujets { border: 0; padding: 0; margin: 0; min-width: 0; }
 .choix-sujets .cases { display: flex; flex-wrap: wrap; gap: 8px; }
-.choix-sujets label { display: inline-flex; align-items: center; gap: 6px; font-weight: 400; font-size: 15px; margin: 0; padding: 6px 10px; min-height: 44px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); cursor: pointer; }
+.filtres .choix-sujets label { display: inline-flex; align-items: center; gap: 8px; font: 400 15px var(--body); text-transform: none; letter-spacing: normal; color: var(--fg); margin: 0; padding: 6px 12px; min-height: 44px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); cursor: pointer; }
+.filtres .choix-sujets label:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
 .choix-sujets input { width: 18px; height: 18px; accent-color: var(--accent); }
 .lien-tout { font-weight: 600; }
 .lien-bouton { font: inherit; color: var(--accent); background: none; border: 0; padding: 4px 0; text-decoration: underline; cursor: pointer; }
@@ -242,6 +252,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   html:has(main.has-panel) { scroll-padding-bottom: 140px; }
 }
 @media (max-width: 640px) {
+  .filtres { grid-template-columns: minmax(0, 1fr); }
   body { font-size: 16px; }
   .proto .long { display: none; } .proto .court { display: inline; }
   header.top .wrap { gap: 12px; padding-block: 10px; }
@@ -270,8 +281,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
 /* Très petits écrans : le menu passe sous le nom du site plutôt que de déborder */
 @media (max-width: 420px) {
   .doors:not(.trio) { grid-template-columns: minmax(0, 1fr); }
-  .filtres > div { flex: 1 1 100%; }
-  .filtres select { width: 100%; }
+
   header.top .wrap { flex-wrap: wrap; row-gap: 2px; }
   .logo { flex-basis: 100%; }
   nav { gap: 16px; }
@@ -564,9 +574,9 @@ const views = {
     return `<h1>Les textes</h1>
       <p class="lead">Tous les textes votés, des plus récents aux plus anciens. Filtrez par sujet, par auteur ou par période, ou cherchez un mot : on vous montre ce qui a été proposé, et qui a voté pour ou contre.</p>
       <form class="filtres" role="search" onsubmit="return false">
-        <div class="champ"><label for="q">Chercher un texte</label><input id="q" type="search" autocomplete="off" placeholder="Par exemple : retraite, loyer, police" value="${filtre.q.replace(/"/g, "&quot;")}"></div>
+        <div class="champ"><label for="q">Chercher un texte</label><div class="recherche"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" autocomplete="off" placeholder="Retraite, loyer, police…" value="${filtre.q.replace(/"/g, "&quot;")}"></div></div>
         <div><label for="f-sujet">Sujet</label><select id="f-sujet">${options(SUJETS.map(th => [th, th]), filtre.sujet, "Tous les sujets")}</select></div>
-        <div><label for="f-auteur">Proposé par</label><select id="f-auteur">${options(AUTEURS.map(a => [a, GROUPES[a] ? `${a} – ${G(a).nom}` : a]), filtre.auteur, "Tous les auteurs")}</select></div>
+        <div><label for="f-auteur">Auteur</label><select id="f-auteur">${options(AUTEURS.map(a => [a, GROUPES[a] ? `${a} – ${G(a).nom}` : a]), filtre.auteur, "Tous les auteurs")}</select></div>
         ${choixPeriode("periode", filtre.leg)}
       </form>
       <p class="meta" id="nb" aria-live="polite"></p>
