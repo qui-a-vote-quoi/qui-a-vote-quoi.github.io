@@ -159,7 +159,12 @@ a.card:hover, .door:hover { border-color: var(--accent); }
 /* Fiche parti */
 .party-head { --pc: var(--accent); background: color-mix(in srgb, var(--pc) 13%, var(--surface)); border: 1px solid color-mix(in srgb, var(--pc) 30%, var(--line)); border-radius: 14px; padding: 24px; display: grid; gap: 16px; }
 .contexte { margin: 0; max-width: 70ch; }
-.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; }
+.depli { margin-top: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.depli > summary { cursor: pointer; padding: 12px 16px; min-height: 44px; font-weight: 700; color: var(--accent); }
+.depli > summary span { font-weight: 400; color: var(--muted); }
+.depli[open] > summary { border-bottom: 1px solid var(--line); }
+.depli > .list, .depli > .tablewrap { padding: 12px; border: 0; }
 .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
 .stat .meta { font-size: 14px; }
 .big { font: 700 30px var(--display); }
@@ -449,6 +454,19 @@ function carteTexte(t, { avecAuteur = true } = {}) {
 const LECTURES = { "texte de la commission mixte paritaire": "accord députés-sénateurs", "texte de la commission paritaire": "accord députés-sénateurs",
   "article 34-1 de la Constitution": "" };
 const lecture = t => t.lecture in LECTURES ? LECTURES[t.lecture] : t.lecture;
+// Vote décisif : sans les voix de ce groupe, le résultat aurait été inverse.
+// Adopté : sans ses « pour », il n'y aurait plus eu de majorité. Rejeté : sans ses « contre », le texte serait passé.
+// Les abstentions et les absents ne comptent pas (le résultat se joue entre « pour » et « contre »).
+function decisif(t, g) {
+  const r = t.groupes.find(x => x.g === g); if (!r) return null;
+  const v = votesGroupe(t, r), s = totals(t);
+  if (s.adopte) return v.p && s.pour - v.p <= s.contre ? "adopte" : null;
+  return v.c && s.pour > s.contre - v.c ? "rejete" : null;
+}
+// Un texte par dossier (son dernier vote retenu) : un texte voté en plusieurs lectures ne compte qu'une fois
+const parDossier = ts => Object.values(ts.reduce((m, t) => { if (!m[t.dossier] || m[t.dossier].date < t.date) m[t.dossier] = t; return m; }, {}))
+  .sort((a, b) => b.date.localeCompare(a.date));
+const pluriel = (n, mot) => `${n} ${mot}${n > 1 ? "s" : ""}`;
 const listeTextes = (ts, opts) => `<div class="list">${ts.map(t => carteTexte(t, opts)).join("")}</div>`;
 // Programme d'une niche : chaque ligne est soit un texte avec fiche (id), soit un titre + statut
 const STATUTS = {
@@ -594,7 +612,10 @@ const views = {
     const autres = TEXTES.filter(t => t.groupe !== g && t.groupes.some(r => r.g === g)).sort((a, b) => b.date.localeCompare(a.date));
     const pres = TEXTES.map(t => t.groupes.find(r => r.g === g)).filter(Boolean);
     const presMoy = pres.length ? Math.round(100 * pres.reduce((s, r) => s + (r.pour + r.contre + r.abst) / r.m, 0) / pres.length) : null;
-    const reussis = portes.filter(t => totals(t).adopte).length;
+    // Son poids dans l'hémicycle, en deux temps : ses propres textes, puis les textes des autres où ses voix ont décidé
+    const sesTextes = parDossier(portes), adoptes = sesTextes.filter(t => portes.some(x => x.dossier === t.dossier && totals(x).adopte));
+    const lois = sesTextes.filter(t => t.loi).length;
+    const aide = parDossier(autres.filter(t => decisif(t, g) === "adopte")), bloque = parDossier(autres.filter(t => decisif(t, g) === "rejete"));
     // accord avec les autres groupes, sur les textes où les deux ont voté
     const accords = ORDRE.filter(o => o !== g).map(o => {
       let same = 0, n = 0;
@@ -619,15 +640,21 @@ const views = {
             + `<p class="contexte">Les textes mis au programme pendant les journées réservées (niches), qui reviennent aux groupes d'opposition et minoritaires, sont rarement adoptés.</p>`;
         })()}
         <div class="stats">
-          <div class="stat"><div class="meta">Textes proposés (sur le site)</div><span class="big">${portes.length}</span></div>
-          <div class="stat"><div class="meta">Adoptés par l'Assemblée</div><span class="big">${reussis} / ${portes.length}</span></div>
+          <div class="stat"><div class="meta">Ses textes mis au vote, adoptés par l'Assemblée</div><span class="big">${adoptes.length} / ${sesTextes.length}</span><div class="meta">dont ${pluriel(lois, "devenu")} loi</div></div>
+          <div class="stat"><div class="meta">Textes des autres adoptés : ses voix ont été décisives</div><span class="big">${aide.length}</span></div>
+          <div class="stat"><div class="meta">Textes des autres rejetés : ses voix ont été décisives</div><span class="big">${bloque.length}</span></div>
           <div class="stat"><div class="meta">Participation moyenne aux votes</div><span class="big">${presMoy ?? "–"} %</span></div>
         </div>
       </div>
-      ${portes.length ? `<h2>Ce que ce groupe a proposé</h2>${listeTextes(portes, { avecAuteur: false })}` : `<p class="lead">Aucun texte de ce groupe sur le site pour l'instant.</p>`}
+      <h2>1. Ce qu'il a proposé</h2>
+      ${sesTextes.length ? `<p class="meta">${pluriel(sesTextes.length, "texte")} mis au vote, dont ${adoptes.length} adopté${adoptes.length > 1 ? "s" : ""} par l'Assemblée et ${pluriel(lois, "devenu")} loi. Les textes de ses journées réservées qui n'ont pas pu être votés, faute de temps, sont dans le programme de chaque journée, plus bas.</p>${listeTextes(portes, { avecAuteur: false })}` : `<p class="meta">Aucun texte de ce groupe sur le site pour l'instant.</p>`}
+      <h2>2. Les textes des autres où ses voix ont fait la différence</h2>
+      <p class="meta">Sans les voix de ce groupe, le résultat aurait été inverse. Plus un groupe a de sièges, plus souvent ses voix décident : c'est le nombre de députés qui compte. <a href="#methode">Comment c'est calculé</a></p>
+      <details class="depli"><summary>Adoptés grâce à ses voix « pour » <span>· ${pluriel(aide.length, "texte")}</span></summary>${aide.length ? listeTextes(aide) : `<p class="meta" style="padding:0 16px">Aucun.</p>`}</details>
+      <details class="depli"><summary>Rejetés par ses voix « contre » <span>· ${pluriel(bloque.length, "texte")}</span></summary>${bloque.length ? listeTextes(bloque) : `<p class="meta" style="padding:0 16px">Aucun.</p>`}</details>
       ${niches.length ? `<h2>Ses journées réservées</h2><p class="meta">Les jours où ce groupe a choisi seul les textes discutés (sa « niche »), avec tout son programme.</p>
         <div class="list">${niches.map(n => { const b = bilanNiche(n); return `<a class="card" href="#niche/${n.date}"><b style="font:700 17px var(--display)">${fdate(n.date)}</b><span class="meta">${b.total} textes au programme · ${b.votes} votés · ${b.sansVote} sans vote faute de temps</span></a>`; }).join("")}</div>` : ""}
-      <h2>Comment il a voté sur les autres textes</h2>
+      <h2>Comment il a voté sur tous les autres textes</h2>
       <div class="tablewrap"><table><thead><tr><th>Texte</th><th>Proposé par</th><th>Position</th></tr></thead><tbody>
         ${autres.map(t => { const st = stance(t, t.groupes.find(r => r.g === g)); return `<tr><td><a href="#texte/${t.id}">${t.titre}</a></td><td>${auteurCourt(t)}</td><td class="pos ${st}">${LIB[st]}</td></tr>`; }).join("")}
       </tbody></table></div>
@@ -688,6 +715,8 @@ const views = {
         <li>Les groupes sont toujours présentés dans l'ordre de l'hémicycle, de la gauche vers la droite, avec la même mise en forme pour tous.</li>
         <li>Chaque fiche renvoie au vote officiel sur le site de l'Assemblée : chacun peut vérifier.</li>
       </ul>
+      <h2>Le poids d'un groupe</h2>
+      <p>Sur la fiche de chaque groupe, on montre les textes des autres où ses voix ont été décisives : sans elles, le résultat aurait été inverse. Pour un texte adopté, ses voix « pour » étaient décisives si, en les retirant, il n'y avait plus de majorité. Pour un texte rejeté, ses voix « contre » l'étaient si, en les retirant, le texte serait passé. Les abstentions et les absents ne sont pas comptés. Un texte voté en plusieurs lectures compte une fois. Ces chiffres ne servent pas à classer les groupes : ils montrent que le nombre de sièges décide.</p>
       <h2>Les journées réservées (« niches »)</h2>
       <p>Une fois par mois, un groupe d'opposition ou minoritaire choisit seul les textes discutés. Les données officielles ne signalent pas ces journées : elles sont repérées automatiquement, puis vérifiées une à une dans les comptes rendus de séance, avec une citation à l'appui. Chaque journée indique si elle a été vérifiée par IA ou par un humain. Une journée qui n'a pas pu être vérifiée n'est pas publiée.</p>
       <h2>Les résumés « en clair »</h2>
