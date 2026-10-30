@@ -69,11 +69,130 @@
    "contrainte_plus",
    "impot_moins"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2022-07-21",
+   "comptesRendus": [
+    "CRSANR5L16S2022E1N015"
+   ],
+   "repliques": [
+    {
+     "role": "pour",
+     "citation": "Plusieurs mesures prévues par le projet de loi vont dans le bon sens : protection des consommateurs, revalorisation de retraites, baisse des cotisations pour les travailleurs indépendants, développement de la prime de partage de la valeur et de l’intéressement",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "M. Thibault Bazin (LR)",
+      "qualite": null,
+      "groupe": "LR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "C’est un projet de loi d’affichage, qui fait semblant, et qui comporte aussi des germes toxiques. Ce que nous dit ce texte, c’est que vous ne voulez pas changer de cap : vous voulez continuer à jouer la modération salariale pour l’immense majorité",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "M. Pierre Dharréville (GDR-NUPES)",
+      "qualite": null,
+      "groupe": "GDR-NUPES"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Les prestations sociales et les retraites seront revalorisées de 4 % et ce n’est pas rien, même si ce taux reste inférieur à celui de l’inflation.",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "Mme Béatrice Descamps (LIOT)",
+      "qualite": null,
+      "groupe": "LIOT"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Nous voulions une loi de protection du pouvoir d’achat ambitieuse, nous avons, je le répète, des miettes. Nous voulions une transformation écologique, nous avons du dioxyde de carbone.",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "Mme Sandrine Rousseau",
+      "qualite": null,
+      "groupe": "ECOLO"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N45943": {
   "mesures": [],
-  "mesuresNiveau": null
+  "mesuresNiveau": null,
+  "debat": {
+   "date": "2022-07-26",
+   "comptesRendus": [
+    "CRSANR5L16S2022E1N016",
+    "CRSANR5L16S2022E1N024"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Cet effort massif de 44 milliards d’euros se décompose en trois blocs : des crédits budgétaires pour protéger aujourd’hui le pouvoir d’achat des Français ; des crédits budgétaires pour continuer de préparer l’avenir ; des crédits budgétaires, enfin, pour honorer nos engagements financiers et financer l’alourdissement de la charge de la dette.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Gabriel Attal",
+      "qualite": "ministre délégué",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Aucune taxe n’a jamais amélioré la vie de nos compatriotes. Ils ont besoin d’argent dans leurs poches, pas dans celles de l’État !",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Bruno Le Maire",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Mais au-delà de l’ajustement budgétaire traditionnellement opéré chaque année, nous devons accompagner, avec ce PLFR, le paquet de mesures que le Président de la République, le Gouvernement et la majorité ont souhaité adopter pour protéger le pouvoir d’achat des Français face au retour de l’inflation.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Jean-Paul Mattei",
+      "qualite": null,
+      "groupe": "DEM"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "L’urgence et le sérieux consisteraient plutôt à déterminer les sommes à mobiliser pour les investissements nécessaires à une véritable bifurcation écologique et sociale",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Éric Coquerel",
+      "qualite": "président de la commission des finances",
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "En tant que garants de la bonne utilisation des deniers publics, nous le savons bien : les aides globales sont les plus injustes. En revanche, il est nécessaire de remplacer progressivement cette mesure par une indemnité carburant qui cible les travailleurs.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Lise Magnier",
+      "qualite": null,
+      "groupe": "HOR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "En fait, en diminuant les ressources de l’État, vous creusez inutilement le déficit public et la dette : 12 milliards d’euros supplémentaires sont inscrits dans ce budget pour faire face aux intérêts d’emprunt, c’est vertigineux !",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Christine Pires Beaune",
+      "qualite": null,
+      "groupe": "SOC"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N46116": {
   "theme": "Environnement et énergie",
@@ -88,7 +207,37 @@
   "mesures": [
    "contrainte_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2022-10-06",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N007"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "L’article 1er de la proposition de loi, réécrit en commission, vise à interdire les plastiques non recyclés en 2025. Ce faisant, il renforce l’objectif fixé par la loi Agec visant à atteindre 100 % de plastiques recyclés à cette même date.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Jimmy Pahun",
+      "qualite": "rapporteur",
+      "groupe": "DEM"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Cela nous permet aujourd’hui d’avoir une position ambitieuse et d’envoyer ce signal clair aux filières de production de plastiques : soit on recycle les emballages plastiques, soit on les interdit à partir de 2025.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Bérangère Couillard",
+      "qualite": "secrétaire d’État",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N46127": {
   "theme": "Société et mémoire",
@@ -103,7 +252,37 @@
   "mesures": [
    "symbolique"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2024-03-06",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N138"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "C’est donc à la nation – ce qui est très différent – de reconnaître le préjudice causé par l’application du code pénal en vigueur entre 1942 et 1982.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Hervé Saulignac",
+      "qualite": "rapporteur",
+      "groupe": "SOC"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Il est grand temps de poursuivre et d’achever cette œuvre et de dire, au nom de la République française, pardon, pardon",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Éric Dupond-Moretti",
+      "qualite": "garde des sceaux, ministre de la justice",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N46185": {
   "theme": "Impôts et budget",
@@ -118,7 +297,76 @@
   "mesures": [
    "impot_moins"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2022-10-06",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N009"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Cette proposition de loi porte sur un sujet unique et essentiel, l’intérêt de l’enfant en cas de séparation des parents.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Pascal Lecamp",
+      "qualite": null,
+      "groupe": "DEM"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Or, sans vouloir entrer dans le détail des raisons qui poussent les couples à se séparer, il faut savoir que ces foyers sont exposés à un risque accru de précarité : 41 % des enfants qui vivent avec un seul parent sont pauvres, contre 21 % de l’ensemble des enfants.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Olivia Grégoire",
+      "qualite": "ministre déléguée chargée des petites et moyennes entreprises, du commerce, de l’artisanat et du tourisme",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Aujourd’hui, 97 % des pensions sont versées du père à la mère et leur fiscalisation est une injustice incomprise du corps social qui demande, de façon écrasante, sa suppression.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Philippe Brun",
+      "qualite": null,
+      "groupe": "SOC"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Plus généralement, déduire la pension alimentaire du revenu fiscal de référence créerait une rupture d’égalité inédite. Ainsi, il serait incompréhensible que des parents isolés perçoivent un chèque énergie d’un montant supérieur s’ils perçoivent une pension alimentaire et inférieur s’ils n’en perçoivent pas.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Denis Masséglia",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "en revenant sur un système qui favorise le parent n’ayant pas la garde de l’enfant et désavantage celui qui en assure l’entretien chaque jour. Tel qu’il se présente aujourd’hui, le système de fiscalisation renforce les inégalités entre les hommes et les femmes.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Soumya Bourouaha",
+      "qualite": null,
+      "groupe": "GDR-NUPES"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Cependant, nous tenons à rappeler que le législateur doit intervenir avec prudence et après concertation avant de bouleverser les avantages fiscaux prévus par la loi. Or cette proposition de loi semble avoir été rédigée dans l’urgence.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Michel Castellani",
+      "qualite": null,
+      "groupe": "LIOT"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N46187": {
   "theme": "Travail et emploi",
@@ -128,7 +376,38 @@
   "concerne": "Titulaires d'un compte personnel de formation, organismes de formation, administrations de contrôle.",
   "arguments": null,
   "niveau": "ia",
-  "source": "PIONANR5L16B0212"
+  "source": "PIONANR5L16B0212",
+  "debat": {
+   "date": "2022-10-06",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N008",
+    "CRSANR5L16S2023O1N009"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "L’article 1er prohibe tout démarchage ou prospection commerciale des titulaires d’un CPF par téléphone, SMS, courrier électronique ou sur un réseau social, dès lors que cette action aurait pour objet soit de collecter leurs données à caractère personnel, par exemple le montant des droits inscrits sur leur compte",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Bruno Fuchs",
+      "qualite": "rapporteur",
+      "groupe": "DEM"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Il était temps d’agir et de faire cesser ces dérives, spams et autres hameçonnages autour du CPF. Notre responsabilité est de protéger le CPF de nos concitoyens.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Carole Grandjean",
+      "qualite": "ministre déléguée",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N46249": {
   "theme": "Éducation et jeunesse",
@@ -142,11 +421,149 @@
   "mesures": [
    "contrainte_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-01-12",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N114"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Son article unique vise à instaurer une tenue uniforme d’établissement, obligatoire pour tous les écoliers et tous les collégiens de l’enseignement public.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Roger Chudeau",
+      "qualite": "rapporteur",
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Selon les circonstances, le port d’une tenue uniforme peut contribuer à atteindre cet objectif, parce qu’il permet de fédérer autour d’une école et de limiter les comparaisons entre élèves, potentiellement préjudiciables.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Franck Riester",
+      "qualite": "ministre délégué",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Dans la vie scolaire, les tenues vestimentaires provoquent souvent jalousies et rivalités et peuvent conduire à des tensions, voire à des violences ou à du harcèlement. Oui, le port d’une tenue uniforme aux couleurs de l’établissement permet de faire cesser cette course aux marques coûteuses, génératrice de tensions, de divisions et d’inégalités sociales.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Julien Odoul",
+      "qualite": null,
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "En Martinique, où l’uniforme n’est pas obligatoire, mais où il est imposé dans un tiers des écoles, collèges et lycées, le prix des polos ou des t-shirts portant le blason de l’établissement varie entre 10 et 20 euros. C’est cinq à dix fois plus cher que le prix des mêmes habits chez Kiabi.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Paul Vannier",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Finies, les rivalités, les guéguerres de marques de vêtements ou de chaussures ; finis, les petits rackets ; finies aussi, les tentatives d’imposer des tenues de facture religieuse dans les collèges publics.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Roger Chudeau",
+      "qualite": "rapporteur",
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Ce texte anti-pauvres vise à mettre en scène la hiérarchie entre établissements populaires et huppés. En proposant l’instauration d’un uniforme d’établissement différent d’une école à une autre, il promeut une logique de marque",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Paul Vannier",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N46266": {
   "mesures": [],
-  "mesuresNiveau": null
+  "mesuresNiveau": null,
+  "debat": {
+   "date": "2022-10-11",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N002"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "nous souhaitons prolonger les règles jusqu’au 31 décembre 2023 pour laisser le temps à la réforme de 2019 de déployer tous ses effets. Nous souhaitons également prolonger le système de bonus-malus jusqu’au 31 août 2024.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Olivier Dussopt",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "inciter les actifs à retrouver un emploi plus rapidement quand de nombreuses opportunités existent, ce n’est pas jeter l’opprobre sur eux, ce n’est pas les culpabiliser, ni alléguer que certains profitent du système",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Olivier Dussopt",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "La durée d’indemnisation de vingt-quatre mois en vigueur en France est l’une des plus longues des pays de l’Organisation de coopération et de développement économiques (OCDE). C’est un fait incontestable. À titre de comparaison, parmi nos voisins européens, seuls l’Espagne, l’Italie et les Pays-Bas proposent une durée d’indemnisation équivalente.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Marc Ferracci",
+      "qualite": "rapporteur",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Les chômeurs sont pointés du doigt, stigmatisés, érigés en boucs émissaires. Pourtant, plus de six chômeurs sur dix ne sont pas indemnisés, et 40 % d’entre eux vivent sous le seuil de pauvreté.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Farida Amrani",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Les études démontrent qu’une adaptation de la durée d’indemnisation ou du taux de conversion a des effets positifs sur le retour à l’emploi. De fait, il paraît pertinent de recourir à un principe de modulation pour continuer de combattre le chômage, quand des centaines de milliers d’offres d’emploi ne sont pas pourvues.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Astrid Panosyan-Bouvet",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "En d’autres termes, vous passez outre les négociations paritaires prévues par le code du travail pour définir autoritairement, par décret, ce que seront demain les conditions d’accès à l’assurance chômage, la durée d’indemnisation et le montant de l’allocation perçue.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Yannick Monnet",
+      "qualite": null,
+      "groupe": "GDR-NUPES"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N46269": {
   "theme": "Sécurité",
@@ -162,7 +579,77 @@
    "budget",
    "sanction_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2022-11-22",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N051",
+    "CRSANR5L16S2023O1N052"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Son ambition est très simple : affirmer une trajectoire et construire une continuité pour toutes les missions du ministère de l’intérieur, la première étant d’assurer l’avenir de nos forces de l’ordre et de nos forces de sécurité civile",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Florent Boudié",
+      "qualite": "rapporteur de la commission des lois constitutionnelles, de la législation et de l’administration générale de la République",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Cette augmentation de rémunération sans précédent a été validée par toutes les organisations syndicales du ministère de l’intérieur, qu’elles représentent des policiers ou des gendarmes. Pour la première fois dans l’histoire du ministère, elles ont signé le protocole d’engagement en matière de ressources humaines",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Gérald Darmanin",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Quinze milliards d’euros sur cinq ans, c’est ambitieux, c’est inédit. C’est surtout nécessaire pour assurer au quotidien la sécurité de nos concitoyens, mais aussi pour améliorer et faciliter le quotidien des agents du ministère de l’intérieur et rendre leur travail plus efficace, au service de nos concitoyens.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Philippe Pradal",
+      "qualite": null,
+      "groupe": "HOR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Or nous le disons sans détour : selon nous, ces orientations ne permettront d’améliorer ni la sûreté de nos concitoyens ni le lien de confiance entre les forces de l’ordre et la population.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Elsa Faucillon",
+      "qualite": null,
+      "groupe": "GDR-NUPES"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Par ce projet de loi, chers collègues, nous entendons faire face aux profondes mutations auxquelles nos forces de l’ordre sont confrontées dans le domaine du maintien de l’ordre, mais aussi dans celui de la lutte contre la criminalité, qui se développe sur de nouveaux terrains.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Marie Lebec",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Nous allons donc mobiliser des moyens colossaux, mais pour quelle police ? Cela ne devrait-il pas être le point de départ de notre réflexion ? Nous voulons une police de proximité, au milieu des habitants, apaisante, disposant d’effectifs fidélisés, enracinés dans leur secteur",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Élisa Martin",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N46275": {
   "theme": "Environnement et énergie",
@@ -176,11 +663,130 @@
   "mesures": [
    "contrainte_moins"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-01-12",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N113"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "entend mettre fin à un dispositif séparatiste, de ségrégation sociale, qui conduit à exclure des millions de Français des grandes métropoles, à en faire des bannis des villes, c’est-à-dire des sous-citoyens dans leur propre pays.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Pierre Meurin",
+      "qualite": "rapporteur de la commission du développement durable et de l’aménagement du territoire",
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Santé publique France a chiffré, pour la seule année 2021, à 40 000 le nombre de décès liés aux particules fines et à 7 000 les morts liées aux oxydes d’azote.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Christophe Béchu",
+      "qualite": "ministre de la transition écologique et de la cohésion des territoires",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Ne disposant pas du budget nécessaire pour acheter un véhicule propre, malgré les aides gouvernementales, 42 % des Français continueront d’utiliser leur voiture malgré l’interdiction de rouler dans les ZFE-m, s’exposant de fait à une charge financière supplémentaire et à des sanctions.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Emmanuel Blairy",
+      "qualite": null,
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Il y a donc aujourd’hui un enjeu majeur de santé publique. Les zones à faibles émissions contribuent à la réduction des conséquences sanitaires de la pollution de l’air et traduisent un engagement de l’État en faveur d’une politique environnementale.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Christine Arrighi",
+      "qualite": null,
+      "groupe": "ECOLO"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "En l’état, les ZFE ne sont qu’une vaste opération de culpabilisation individuelle pour des personnes qui n’ont pas les moyens de changer de véhicule.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Sylvain Carrière",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Rappelons tout d’abord que le dioxyde d’azote et les particules fines sont les deux principaux polluants de l’air, qu’ils sont responsables de nombreuses maladies respiratoires et de plus de 40 000 décès prématurés par an en France, d’après une étude de Santé publique France réalisée selon une méthodologie scientifique confirmée.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Jean-Luc Fugit",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N46346": {
   "mesures": [],
-  "mesuresNiveau": null
+  "mesuresNiveau": null,
+  "debat": {
+   "date": "2022-10-25",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N010",
+    "CRSANR5L16S2023O1N011"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "notre priorité est de protéger nos compatriotes contre une inflation qui sème le trouble et l’inquiétude, alors qu’ils sont confrontés non seulement à la flambée des prix de l’énergie mais aussi, désormais, à celle des prix alimentaires.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Bruno Le Maire",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "C’est l’objectif le plus ambitieux qui ait été fixé en matière de finances et de dépenses publiques depuis deux décennies ; c’est responsable, c’est raisonnable et, comme je viens de le démontrer, c’est parfaitement compatible avec la protection de nos compatriotes et de nos industries face à l’inflation.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Bruno Le Maire",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Le PLF pour 2023, en plus d’être un projet de budget responsable, vise avant tout à protéger les Français. Les dispositions qui nous sont soumises sont au service de tous les Français, mais également du plein emploi, d’une transition écologique réussie et d’une plus grande souveraineté pour notre pays.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Jean-René Cazeneuve",
+      "qualite": "rapporteur général",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Le premier texte dont nous discutons aujourd’hui, la loi de programmation, est censé fixer la trajectoire de nos finances publiques pour les cinq ans à venir. J’y vois d’emblée trois problèmes majeurs. Premièrement, cette trajectoire repose sur des projections irréalistes au point de rendre nos discussions déjà dépassées et inconséquentes.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Éric Coquerel",
+      "qualite": "président de la commission des finances, de l’économie générale et du contrôle budgétaire",
+      "groupe": "LFI-NUPES"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N46412": {
   "theme": "Santé",
@@ -194,7 +800,76 @@
   "mesures": [
    "aide_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2022-11-24",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N067"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Introduire le droit à la contraception et à l’avortement dans la Constitution, c’est conjurer l’effroi qui nous saisit lorsque, ailleurs, les droits des femmes font l’objet de coups de boutoir. Il s’agit de donner un socle à notre vigilance, afin de parer aux basculements imprévisibles dont seule l’histoire humaine a le secret.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Mathilde Panot",
+      "qualite": "rapporteure",
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "je soutiendrai les propositions qui se concentrent sur l’IVG, car la Constitution ne peut se modifier si on laisse de côté l’une des deux chambres",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Éric Dupond-Moretti",
+      "qualite": "garde des sceaux",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "L’absence actuelle de remise en cause de l’avortement dans notre pays constitue précisément la raison pour laquelle le droit à l’IVG doit être constitutionnalisé dès maintenant.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Marie-Noëlle Battistel",
+      "qualite": null,
+      "groupe": "SOC"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Solide, parce que l’IVG figure dans notre droit depuis 1975 ; durable, parce que le Conseil constitutionnel l’a toujours jugée conforme à la Constitution. Par quatre fois, il s’est prononcé en sa faveur : en 1975, en 2001, en 2014 et en 2016.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Josiane Corneloup",
+      "qualite": null,
+      "groupe": "LR"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "D’abord, tout simplement, parce que nous considérons qu’il s’agit là d’un droit fondamental, et qui doit être consacré comme tel. Nos corps, nos choix : voilà ce que nous voulons affirmer avec cette constitutionnalisation.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Elsa Faucillon",
+      "qualite": null,
+      "groupe": "GDR-NUPES"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Ce n’est pas parce qu’aux États-Unis, en juin dernier, la Cour suprême a révoqué l’arrêt qui garantissait le droit des Américaines à avorter, qu’en France nous devons avoir le même débat dans la foulée.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Josiane Corneloup",
+      "qualite": null,
+      "groupe": "LR"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N46466": {
   "theme": "Justice",
@@ -543,7 +1218,77 @@
    "sanction_plus",
    "contrainte_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-04-04",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N196",
+    "CRSANR5L16S2023O1N202"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Il restait pourtant plusieurs défis à relever : la hiérarchie des peines n’était pas claire ; certains cas de squat échappaient à toute définition légale ; les situations locatives n’étaient pas couvertes par les précédentes avancées.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Guillaume Kasbarian",
+      "qualite": "rapporteur",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Il assure la juste conciliation entre le droit à la propriété et le droit au logement, deux droits essentiels qu’il ne faut pas opposer.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Olivier Klein",
+      "qualite": "ministre délégué",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "tend à protéger les petits propriétaires contre les squatteurs qui utilisent les failles de notre droit pour s’approprier le bien d’autrui. Elle ne vise pas à compliquer encore la vie des petits locataires en galère passagère, quand ils sont de bonne foi.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Paul Midy",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Or, loin d’apporter des réponses à cette situation, vous proposez un texte qui, sous prétexte de lutter contre le squat, vise en réalité les personnes qui rencontrent des difficultés pour payer leur loyer.",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "M. Stéphane Peu (GDR-NUPES)",
+      "qualite": null,
+      "groupe": "GDR-NUPES"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "qui vise à protéger plus efficacement les propriétaires, grâce au triplement de la peine prévue pour le squat du domicile, à sécuriser les rapports locatifs, à réduire les délais contentieux",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Annie Genevard",
+      "qualite": null,
+      "groupe": "LR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Vous allez condamner à la rue et à la prison des milliers de mal-logés et de locataires en impayés de loyer. Votre proposition de loi viole au passage nombre de droits fondamentaux comme l’écrit le président de la CNCDH : liberté d’association, liberté d’expression, liberté de la presse et même droit de grève",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Danielle Simonnet",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N46539": {
   "theme": "Environnement et énergie",
@@ -559,7 +1304,77 @@
    "contrainte_moins",
    "contrainte_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-01-10",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N082",
+    "CRSANR5L16S2023O1N109"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Tel est l’objet du projet de loi : intensifier massivement et immédiatement notre production d’énergies renouvelables. Si je suis un grand défenseur de l’atome, je suis aussi persuadé que la bonne réponse réside dans une lecture scientifique et rationnelle de la situation.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Pierre Cazeneuve",
+      "qualite": "rapporteur pour avis",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "accélérer les procédures administratives sans rien renier de nos exigences environnementales ; faire preuve de bon sens et déployer les énergies renouvelables, particulièrement le photovoltaïque, en libérant du foncier artificialisé ou dégradé ;",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Agnès Pannier-Runacher",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "il faut produire plus d’électricité pour sortir rapidement des énergies fossiles qui émettent beaucoup de CO2 ; il faut produire plus d’électricité pour consolider la souveraineté française, importer moins et donner des perspectives stables de réindustrialisation aux investisseurs.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Guillaume Kasbarian",
+      "qualite": "président de la commission des affaires économiques",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Vous pouvez développer plus encore les énergies intermittentes, jamais – ô combien jamais – elles ne permettront de rompre avec les énergies fossiles. Au contraire : plus vous développerez les énergies intermittentes, plus vous nous lierez aux énergies fossiles – au gaz, en particulier",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Jean-Philippe Tanguy",
+      "qualite": null,
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "En effet, nos procédures d’installation sont deux fois plus longues que celles de nos voisins européens : en France, elles durent cinq ans pour construire un parc solaire ne nécessitant que quelques mois de travaux, sept ans pour un parc éolien, et dix ans pour un parc éolien en mer.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Laurence Maillart-Méhaignerie",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Nous demandons simplement que les élus et la population des territoires aient la parole. Nous voulons dire oui quand c’est nécessaire et pouvoir également dire non : nous voulons disposer de moyens opposables juridiquement pour pouvoir refuser quand c’est nécessaire.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Jean-Louis Bricout",
+      "qualite": null,
+      "groupe": "LIOT"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N46580": {
   "theme": "Défense et international",
@@ -574,7 +1389,76 @@
   "mesures": [
    "international"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2022-11-30",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N076"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "il affirmera, de façon symbolique, la solidarité de toute la nation française avec le peuple ukrainien. Il sera aussi un message envoyé au Kremlin pour lui dire que nous soutenons toujours les livraisons d’armes et les sanctions contre Moscou et que nous demandons au Gouvernement de les poursuivre.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Pieyre-Alexandre Anglade",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "La proposition de résolution dont nous débattons aujourd’hui porte sur un enjeu crucial pour la France, pour l’avenir du continent européen et pour la stabilité du monde. Je réaffirme devant vous le soutien indéfectible de la France à l’Ukraine.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Chrysoula Zacharopoulou",
+      "qualite": "secrétaire d’État chargée du développement, de la francophonie et des partenariats internationaux",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "À travers cette proposition de résolution, nous rappelons des vérités simples. Le 24 février, l’Ukraine a été victime d’une agression injustifiable et illégale de la part de la Russie.",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "M. Benjamin Haddad",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Vous réclamez toujours plus de sanctions sans préciser lesquelles. Or, si certaines sanctions fonctionnent et affaiblissent le régime russe – notamment son économie de guerre –, d’autres, au contraire, le renforcent et l’enrichissent au détriment des Français.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Laurence Robert-Dehault",
+      "qualite": null,
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Ce vote reste bien entendu symbolique, mais il permet à l’Assemblée nationale de marquer une nouvelle fois son soutien à l’Ukraine. Je souhaite par ailleurs rappeler que notre objectif, le seul qui vaille au fond, est que cette guerre cesse.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Nathalie Serre",
+      "qualite": null,
+      "groupe": "LR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Pourquoi se contenter d’un propos si étroit et sans nouveauté ? Ne voyez-vous donc aucune difficulté due aux choix qui ont été faits depuis le 24 février ? N’avez-vous donc aucun doute quand leurs conséquences pèsent si durement sur notre propre situation économique et sociale ?",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Aurélien Saintoul",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N46617": {
   "theme": "Impôts et budget",
@@ -589,7 +1473,77 @@
   "mesures": [
    "budget"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2022-11-08",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N047",
+    "CRSANR5L16S2023O1N050"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "nous avons fait un double choix responsable : réduire notre déficit – certes légèrement – et renforcer notre soutien aux Français, au plus fort de la crise.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Jean-René Cazeneuve",
+      "qualite": "rapporteur général",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Je tiens à rappeler le principe de ce texte : accompagner nos concitoyens avec des mesures supplémentaires pour faire face à l’inflation des prix de l’énergie.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Gabriel Attal",
+      "qualite": "ministre délégué",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Ce PLFR accompagne nos concitoyens : il accompagne l’enseignement supérieur pour permettre aux étudiants d’étudier dans les universités ; il accompagne l’armée pour faire face à nos dépenses d’opérations extérieures et à la guerre en Ukraine, il accompagne le secteur agricole dans les crises qu’il traverse.",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "Mme Perrine Goulet (Dem)",
+      "qualite": null,
+      "groupe": "DEM"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Mais la multiplication des chèques n’empêche pas deux constats. Premièrement, vous êtes incapables de lutter contre la spéculation sur l’énergie dans le cadre du marché européen libéralisé",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "M. Nicolas Sansu",
+      "qualite": null,
+      "groupe": "GDR-NUPES"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Nous continuerons donc à faire preuve de sérieux s’agissant des dépenses, car c’est ce qui nous permet aujourd’hui de signer des chèques énergie, de soutenir nos universités",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "M. Mathieu Lefèvre",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "C’est aussi une occasion manquée de faire financer par le versement mobilité des entreprises le fonctionnement et le développement des transports collectifs. Concrètement, vous ne cherchez pas à empêcher l’augmentation des tarifs pour les usagers",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "Mme Eva Sas",
+      "qualite": null,
+      "groupe": "ECOLO"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N46622": {
   "theme": "Environnement et énergie",
@@ -604,7 +1558,77 @@
   "mesures": [
    "contrainte_moins"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-03-21",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N173",
+    "CRSANR5L16S2023O1N184"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "notre objectif est d’anticiper et d’être prêts si, après les concertations, les débats publics et les débats parlementaires qui s’imposent, nous décidions d’avancer dans l’application du nouveau programme nucléaire français.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Agnès Pannier-Runacher",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Au-delà de son caractère technique, ce texte reflète aussi notre ambition politique pour la filière du nucléaire : en l’occurrence celle d’une grande aventure scientifique, industrielle et humaine, qui rassemblera des hommes et des femmes, des industries et des savoir-faire au service d’un projet national stratégique.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Agnès Pannier-Runacher",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Certains travaux annexes, qui ne concernent jamais directement l’îlot nucléaire – le défrichement, le terrassement, l’installation de stations de pompage et de bâtiments de traitement des effluents –, pourront débuter en amont, permettant ainsi de gagner jusqu’à deux ans dans la construction d’un nouveau réacteur.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Xavier Albertini",
+      "qualite": null,
+      "groupe": "HOR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Tous les scientifiques le martèlent : nous avons sept ans pour agir, alors que les éventuels nouveaux réacteurs ne verront pas le jour avant 2037, au plus tôt. Vous masquez votre inaction climatique derrière une solution prétendument magique, qui n’est qu’un mirage !",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Julie Laernoes",
+      "qualite": null,
+      "groupe": "ECOLO"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Nous sommes ici pour examiner un texte important qui permettra d’accélérer les procédures liées à la construction de nouvelles centrales. La filière nucléaire est une filière d’excellence qui, depuis de nombreuses années, a connu la défiance politique, a été déconsidérée",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Stéphane Travert",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "D’autre part, ils ont une fâcheuse tendance à préempter le débat relatif aux grandes orientations énergétiques du pays, alors que le projet de loi de programmation sur l’énergie et le climat doit être examiné dans quelques mois.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Anna Pic",
+      "qualite": null,
+      "groupe": "SOC"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N46760": {
   "theme": "Travail et emploi",
@@ -860,7 +1884,38 @@
   "mesures": [
    "sanction_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-02-09",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N139",
+    "CRSANR5L16S2023O1N140"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "L’objectif de l’article 1er est de protéger l’enfant pendant la procédure pénale. Cette protection passe dans un premier temps par la suspension provisoire de plein droit de l’exercice de l’autorité parentale et du droit de visite et d’hébergement pendant les poursuites",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Isabelle Santiago",
+      "qualite": "rapporteure",
+      "groupe": "SOC"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "La rédaction retenue par la commission est donc opportune à bien des égards. Je souhaite que nous maintenions cet équilibre afin de garantir l’efficacité et la constitutionnalité de cette nouvelle avancée importante dans la protection des enfants.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Éric Dupond-Moretti",
+      "qualite": "garde des sceaux",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N46868": {
   "theme": "Sécurité sociale",
@@ -876,7 +1931,77 @@
    "aide_plus",
    "contrainte_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-11-23",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N211",
+    "CRSANR5L16S2024O1N061"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Il n’épuisera certes pas le sujet du grand âge, mais il aborde des sujets sociétaux et propose de faire ce qui peut être fait sans plus attendre.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Annie Vidal",
+      "qualite": "rapporteure de la commission des affaires sociales",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Que veulent les Français ? Vieillir à domicile. C’est pourquoi nous donnons la priorité à la prévention, afin qu’ils puissent rester le plus longtemps chez eux en étant autonomes.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Jean-Christophe Combe",
+      "qualite": "ministre",
+      "groupe": null
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Notre responsabilité de parlementaires est de donner sans attendre des réponses aux conséquences du vieillissement de notre population. Il ne faut pas remettre cela à demain, mais le faire aujourd’hui.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Cyrille Isaac-Sibille",
+      "qualite": null,
+      "groupe": "DEM"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "On peut réorganiser cent fois les établissements et services, leur donner un nouveau nom, créer des commissions, changer le pilote : cela ne servira à rien, c’est de la cosmétique.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Laurent Panifous",
+      "qualite": null,
+      "groupe": "LIOT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Face au vieillissement de sa population, la France doit disposer d’un arsenal juridique et réglementaire à la hauteur des enjeux, qu’il s’agisse des structures spécialisées ou du maintien à domicile.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Freddy Sertin",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Il ne contient aucune avancée significative, rien qui puisse rassurer celles et ceux qui travaillent auprès de nos aînés.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Véronique Besse",
+      "qualite": null,
+      "groupe": "NI"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N46880": {
   "theme": "Logement",
@@ -908,7 +2033,37 @@
    "contrainte_plus",
    "aide_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-02-09",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N140"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Nous constatons, la presse s’en fait l’écho, que le nombre de violences intrafamiliales est toujours aussi important : les féminicides perdurent ; les agressions sexuelles et les tentatives de féminicide sont en forte augmentation.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Cécile Untermaier",
+      "qualite": "rapporteure de la commission des lois constitutionnelles, de la législation et de l’administration générale de la République",
+      "groupe": "SOC"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "La lutte contre les violences faites aux femmes est un combat de tous les instants qui nous concerne tous et qui nous oblige tous, du voisin au collègue de bureau, du policier au magistrat, du gendarme à l’avocat, du parlementaire au ministre.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Éric Dupond-Moretti",
+      "qualite": "garde des sceaux, ministre de la justice",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N46900": {
   "theme": "Outre-mer",
@@ -922,7 +2077,27 @@
   "mesures": [
    "symbolique"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-02-09",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N138"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "La création de cette commission d’enquête est impérieuse et urgente. Vous le savez, la lutte contre la vie chère en outre-mer est un défi majeur pour nos peuples et nos territoires.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Johnny Hajjar",
+      "qualite": "rapporteur de la commission des affaires économiques",
+      "groupe": "SOC"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N46918": {
   "theme": "Culture et sport",
@@ -938,7 +2113,77 @@
    "contrainte_plus",
    "contrainte_moins"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-03-28",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N183",
+    "CRSANR5L16S2023O1N194"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Les articles délégués à notre commission des lois visent, en premier lieu, à garantir la sécurité des Jeux, en améliorant notamment les conditions dans lesquelles nous pouvons avoir recours à la vidéoprotection,",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Guillaume Vuilletet",
+      "qualite": "rapporteur",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "S’agissant du traitement par algorithme des images, je tiens à souligner que l’expérimentation est très précisément limitée dans le temps et dans l’espace, ainsi que dans ses finalités et modalités.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Amélie Oudéa-Castéra",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Le projet de loi s’assure également qu’il n’y ait pas de traitement biométrique et écarte la reconnaissance faciale – je tiens à le rappeler. Ce dispositif expérimental prendra fin le 31 décembre 2024",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Thomas Rudigoz",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Il s’agit d’une forme de traque biométrique généralisée, reposant sur une analyse en temps réel des points qui composent les corps, les gestes et les expressions, sans aucun moyen technique pour exclure les visages, malgré la promesse faite dans ce texte.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Sandra Regol",
+      "qualite": null,
+      "groupe": "ECOLO"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "L’organisation des Jeux olympiques et paralympiques en France se doit donc d’être exemplaire. C’est dans ce but que ce texte propose des adaptations dans de nombreux domaines",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Philippe Pradal",
+      "qualite": null,
+      "groupe": "HOR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "oui à l’expérimentation, mais seulement afin de sécuriser les JO de 2024. Si vous entendez prolonger ce dispositif au-delà, présentez-nous un projet loi, mais ne vous servez pas des JO comme prétexte !",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Jordan Guitton",
+      "qualite": null,
+      "groupe": "RN"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N46921": {
   "theme": "Environnement et énergie",
@@ -952,7 +2197,37 @@
   "mesures": [
    "institutions"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2024-02-29",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N131"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "À quatre reprises, le Parlement s’est prononcé, de façon cohérente, en faveur de deux objectifs majeurs. D’abord, l’Assemblée et le Sénat ont affirmé leur vive opposition à tout projet de démantèlement du groupe EDF",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Philippe Brun",
+      "qualite": "rapporteur de la commission des finances, de l’économie générale et du contrôle budgétaire",
+      "groupe": "SOC"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Il s’agit d’inscrire dans la durée la relation entre l’État actionnaire et EDF, par la conclusion d’un accord d’une durée de dix ans, actualisé tous les trois ans, de façon à inscrire dans la durée la planification de l’activité de notre électricien national.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Roland Lescure",
+      "qualite": "ministre délégué",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N47006": {
   "theme": "Environnement et énergie",
@@ -968,7 +2243,38 @@
    "contrainte_plus",
    "impot_moins"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-05-17",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N232",
+    "CRSANR5L16S2023O1N237"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Nous examinons une proposition de loi qui constitue une réponse nécessaire à un besoin urgent : la protection de notre forêt face aux grands incendies, qui menacent de se développer dans les années à venir.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Guillaume Kasbarian",
+      "qualite": "président de la commission des affaires économiques",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Il s’agit de leur montrer que nous sommes capables, ensemble, d’avancer pour nous adapter au changement climatique.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Dominique Faure",
+      "qualite": "ministre déléguée",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N47026": {
   "theme": "Culture et sport",
@@ -983,7 +2289,37 @@
    "contrainte_plus",
    "sanction_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2024-02-29",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N131"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Plus de deux ans après le déploiement de ce service, plusieurs fédérations accusent encore un retard significatif. En outre, le mécanisme du contrôle d’honorabilité lui-même comporte des failles. Il importe de remédier à ces difficultés ; tel est l’objet de la présente proposition de loi.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Claudia Rouaux",
+      "qualite": "rapporteure",
+      "groupe": "SOC"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Nous avons pour boussole un principe très clair qui nous guide chaque jour : la tolérance zéro. C’est en l’appliquant que, ces trois dernières années, nous avons considérablement renforcé notre arsenal.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Marie Lebec",
+      "qualite": "ministre déléguée",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N47035": {
   "theme": "Enfance et famille",
@@ -998,7 +2334,37 @@
    "contrainte_plus",
    "sanction_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-03-02",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N164"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Dès mon élection en juin 2022, j’ai considéré qu’il était primordial de me pencher sur les relations entre les jeunes et les réseaux sociaux, sujet devenu incontournable et même préoccupant, ces dernières années. L’enjeu est d’importance et ma proposition de loi vise à s’en saisir avec humilité, certes, mais non sans ambition.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Laurent Marcangeli",
+      "qualite": "rapporteur de la commission des affaires culturelles et de l’éducation",
+      "groupe": "HOR"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Lorsque 1 million d’enfants sont victimes de cyberharcèlement chaque année, s’inscrire sur un réseau social n’est pas un acte anodin. Lorsque des milliers de jeunes gens sont victimes de revenge porn, s’inscrire sur un réseau social n’est pas un acte anodin.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Charlotte Caubel",
+      "qualite": "secrétaire d’État",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N47037": {
   "theme": "Enfance et famille",
@@ -1013,7 +2379,38 @@
    "contrainte_plus",
    "aide_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-03-02",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N164",
+    "CRSANR5L16S2023O1N165"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Précisons tout d’abord que cette proposition de loi ne prétend pas répondre à toutes les difficultés auxquelles sont confrontées les familles d’enfants atteints d’une maladie, d’un handicap ou victimes d’un accident grave mais qu’elle entend améliorer leur vie quotidienne grâce à des mesures de protection et de simplification.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Paul Christophe",
+      "qualite": "rapporteur de la commission des affaires sociales",
+      "groupe": "HOR"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "De même, nous sommes pleinement favorables à l’article 3 de la proposition de loi. Le renouvellement exceptionnel de l’AJPP était jusqu’à présent conditionné non seulement à un nouveau certificat médical, mais aussi à un avis explicite du service de contrôle médical.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Jean-Christophe Combe",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N47051": {
   "theme": "Culture et sport",
@@ -1027,11 +2424,150 @@
   "mesures": [
    "contrainte_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-10-12",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N017",
+    "CRSANR5L16S2024O1N018"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "La langue est avant tout un système de signes partagé par un ensemble de locuteurs, un outil de communication. Elle ne véhicule pas, en elle-même, une vision particulière du monde.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Hervé de Lépinau",
+      "qualite": "rapporteur",
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Ne vous y trompez pas : si je suis contre le texte, ce n’est pas parce que je suis pour l’écriture inclusive, mais parce que je suis pour la féminisation des emplois, notamment dans le secteur public, pour que la langue française en tienne compte et grandisse avec nous",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Stanislas Guerini",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Utilisée de manière anarchique, comme c’est actuellement le cas, l’écriture inclusive provoque une insécurité juridique et judiciaire. La déformation de certains mots entraîne forcément une possibilité d’interprétation des clauses d’un contrat",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Catherine Jaouen",
+      "qualite": null,
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "une étude réalisée en 2017 par l’institut Harris Interactive montre que les formulations inclusives ou épicènes suscitent jusqu’à deux fois plus de noms de femmes dans les représentations spontanées que les formulations invisibilisant les femmes.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Inaki Echaniz",
+      "qualite": null,
+      "groupe": "SOC"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Il est en outre nécessaire de restreindre l’usage de l’écriture inclusive au sein du service public universitaire, car elle n’est pas moins pénalisante pour les étudiants présentant des troubles du langage que pour les écoliers.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Hervé de Lépinau",
+      "qualite": "rapporteur",
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Vous auriez appris que ce n’est pas tant l’écriture inclusive que la non-correspondance entre orthographe et phonologie qui rend la langue française si difficile à apprendre",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Sarah Legrain",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N47118": {
   "mesures": [],
-  "mesuresNiveau": null
+  "mesuresNiveau": null,
+  "debat": {
+   "date": "2023-12-19",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N089"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Nous avons adopté un dispositif d’accès au séjour pour les étrangers en situation irrégulière exerçant une activité dans un métier en tension. À l’issue de ce texte, il y aura donc, pour la première fois sous la Ve République, un dispositif légal de régularisation dans les métiers en tension.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Florent Boudié",
+      "qualite": "rapporteur",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "un texte certes imparfait, mais qui mérite d’être adopté afin d’assurer la protection des Français, la régularisation des travailleurs sans papiers, l’interdiction de la rétention des mineurs dans les CRA et la simplification du droit.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Gérald Darmanin",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "les Français attendent de la politique qu’elle renoue avec l’action efficace de l’État, qu’elle retrouve puissance et maîtrise des flux sur le territoire.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Philippe Pradal",
+      "qualite": null,
+      "groupe": "HOR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Vous avez cédé sur tout, restreignant le regroupement familial, réintroduisant dans le droit français la préférence nationale pour les prestations sociales",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Benjamin Lucas",
+      "qualite": null,
+      "groupe": "ECOLO"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Le travail est une condition incontournable de l’intégration, la contribution nécessaire de chacun à la société française. Il s’agit finalement d’envoyer un message clair : sans travail ni adhésion aux valeurs de la République, l’intégration ne peut avoir lieu.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Philippe Pradal",
+      "qualite": null,
+      "groupe": "HOR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Pour la première fois de l’histoire de la Ve République – crime indélébile à l’encontre de la devise républicaine –, vous avez porté atteinte au droit du sol.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Benjamin Lucas",
+      "qualite": null,
+      "groupe": "ECOLO"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N47217": {
   "theme": "Logement",
@@ -1299,7 +2835,77 @@
   "mesures": [
    "budget"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-06-07",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N238",
+    "CRSANR5L16S2023O1N259"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Il cherche à traduire une conviction simple, la seule qui vaille : les menaces qui pèsent sur la nation n’ont jamais été aussi diverses et protéiformes que depuis la fin de la guerre froide.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Sébastien Lecornu",
+      "qualite": "ministre des armées",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "les marches annuelles d’augmentation répondent certes à la soutenabilité de nos dépenses publiques – qui pourrait le contester ? – mais qu’elles sont aussi définies en fonction du besoin capacitaire physique en crédits de paiement exprimé par nos armées, et en fonction de la capacité de nos industriels à produire ces équipements.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Sébastien Lecornu",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Le Président de la République a donc arbitré en faveur d’un budget de 413 milliards d’euros à ce nouveau projet de loi de programmation, soit une augmentation de 40 % par rapport à la précédente LPM. Entre 2017 et 2030, le budget annuel des armées aura donc plus que doublé.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Anne Genetet",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Le Gouvernement crée un effet d’annonce grâce à de prétendues augmentations budgétaires, mais les hausses les plus importantes n’auront lieu qu’après 2027, ce qui implique le report de nombreux projets.",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "Mme Martine Etienne (LFI-NUPES)",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Aujourd’hui, l’enjeu est que la France voie son autonomie d’analyse, de décision et d’action garantie et qu’elle conserve son statut de puissance d’équilibre et de nation cadre.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Jean-Michel Jacques",
+      "qualite": "rapporteur de la commission de la défense nationale et des forces armées",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "la politique d’amélioration des conditions de travail des militaires est une bonne idée, mais nous restons persuadés que plus de moyens auraient pu y être consacrés. En effet, pour ne prendre qu’un exemple, 25 % seulement du parc immobilier de l’armée est considéré comme étant en bon état.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Tematai Le Gayic",
+      "qualite": null,
+      "groupe": "GDR-NUPES"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N47549": {
   "theme": "Défense et international",
@@ -1389,7 +2995,38 @@
   "mesures": [
    "contrainte_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-06-21",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N276",
+    "CRSANR5L16S2023O1N281"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "avant le 13 septembre 2023, il est impératif de rénover l’emblématique droit de visite des douaniers : expression la plus évidente de leurs prérogatives, ce dispositif a cependant été déclaré inconstitutionnel, dans sa rédaction actuelle, par le Conseil constitutionnel.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Nadia Hai",
+      "qualite": "rapporteure de la commission des finances, de l’économie générale et du contrôle budgétaire",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Le texte que nous examinons aujourd’hui est particulièrement attendu par les 17 000 agents des douanes, dans la mesure où il est essentiel pour leur permettre de lutter plus efficacement contre les trafics, de mieux contrôler nos frontières, donc de mieux protéger les Français.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Gabriel Attal",
+      "qualite": "ministre délégué chargé des comptes publics",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N47622": {
   "theme": "Outre-mer",
@@ -1464,7 +3101,77 @@
    "budget",
    "institutions"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-07-18",
+   "comptesRendus": [
+    "CRSANR5L16S2023E1N001",
+    "CRSANR5L16S2023E1N020"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "réduire les délais, au pénal comme au civil ; simplifier et moderniser les procédures, en s’appuyant notamment sur le numérique et les nouvelles technologies ; revaloriser tous les métiers de la justice par une meilleure gestion des carrières, de la formation et de la mobilité ; apporter des solutions à la surpopulation carcérale ;",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Jean Terlier",
+      "qualite": "rapporteur",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Ils ont besoin que, dans un geste fort, dans un élan sans précédent, nous donnions collectivement à la justice les moyens nécessaires à l’accomplissement de son impérieuse mission : maintenir la paix civile.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Éric Dupond-Moretti",
+      "qualite": "garde des sceaux",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Je me réjouis donc que ces projets de loi viennent offrir de nouveaux moyens pour la justice, avec un budget historique porté à près de 11 milliards d’euros d’ici quatre ans, soit une hausse de 60 % entre 2017 et 2027. C’est du jamais vu.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Naïma Moutchou",
+      "qualite": null,
+      "groupe": "HOR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "son opposition à l’article 3 du projet de loi d’orientation et de programmation, qui autorise l’activation à distance des appareils électroniques, à l’insu du propriétaire, aux fins de géolocalisation et de captation d’images et de sons. Cette mesure nous fait franchir un nouveau cap dangereux",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "M. Jean-Félix Acquaviva (LIOT)",
+      "qualite": null,
+      "groupe": "LIOT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Cette loi entérinera le recrutement de 10 000 emplois supplémentaires dont 1 500 greffiers, près de 1 700 attachés de justice, des surveillants pénitentiaires et conseillers de probation, et bien sûr 1 500 magistrats, plus que le nombre recruté ces vingt dernières années.",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "Mme Caroline Abadie",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "vos réponses, qui consistent à reproduire des schémas inefficaces et dépassés, ne témoignent d’aucune audace. Ces textes ne vont pas dans le bon sens.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Andrée Taurinya",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N47780": {
   "theme": "Justice",
@@ -1479,7 +3186,77 @@
   "mesures": [
    "institutions"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-07-18",
+   "comptesRendus": [
+    "CRSANR5L16S2023E1N001",
+    "CRSANR5L16S2023E1N020"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "réduire les délais, au pénal comme au civil ; simplifier et moderniser les procédures, en s’appuyant notamment sur le numérique et les nouvelles technologies ; revaloriser tous les métiers de la justice par une meilleure gestion des carrières, de la formation et de la mobilité",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Jean Terlier",
+      "qualite": "rapporteur",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Ils ont besoin que, dans un geste fort, dans un élan sans précédent, nous donnions collectivement à la justice les moyens nécessaires à l’accomplissement de son impérieuse mission : maintenir la paix civile.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Éric Dupond-Moretti",
+      "qualite": "garde des sceaux",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Je me réjouis donc que ces projets de loi viennent offrir de nouveaux moyens pour la justice, avec un budget historique porté à près de 11 milliards d’euros d’ici quatre ans, soit une hausse de 60 % entre 2017 et 2027.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Naïma Moutchou",
+      "qualite": null,
+      "groupe": "HOR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Ce projet de loi s’inscrit dans la continuité des politiques qui ont abouti à une justice lente, incomprise, qui ne contribue plus à garantir la paix sociale et qui n’est pas dissuasive.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Philippe Schreck",
+      "qualite": null,
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Cette loi entérinera le recrutement de 10 000 emplois supplémentaires dont 1 500 greffiers, près de 1 700 attachés de justice, des surveillants pénitentiaires et conseillers de probation, et bien sûr 1 500 magistrats, plus que le nombre recruté ces vingt dernières années.",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "Mme Caroline Abadie",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "L’activation à distance nous fait franchir un nouveau cap dangereux ; nous en débattrons. Le Conseil d’État lui-même souligne une « atteinte importante » au droit à la vie privée, tout comme l’extension du recours aux perquisitions de nuit ou encore le recours à la télémédecine en garde à vue.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Jean-Félix Acquaviva",
+      "qualite": null,
+      "groupe": "LIOT"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N47884": {
   "theme": "Sécurité",
@@ -1495,7 +3272,77 @@
    "contrainte_plus",
    "sanction_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-10-17",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N005",
+    "CRSANR5L16S2024O1N021"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Nous entamons l’examen d’un projet de loi qui contient de nombreuses avancées pour nos concitoyens. Je me réjouis de constater que nous prenons à bras-le-corps la protection des mineurs en ligne, la lutte contre les arnaques et contre la désinformation qui mine notre société.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Mireille Clapot",
+      "qualite": "rapporteure de la commission spéciale",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "L’insécurité que rencontrent nos concitoyens sur internet sape leur confiance dans la transition numérique. Tous les Français sont concernés par les désordres en tous genres qui s’accumulent dans l’espace numérique",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Jean-Noël Barrot",
+      "qualite": "ministre délégué chargé du numérique",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "La première urgence était de mettre un terme au scandale que constitue la surexposition des mineurs au contenu pornographique, en nous dotant, dans les deux mois suivant la promulgation de la loi, d’un référentiel auquel devront se soumettre les plateformes afin de contrôler réellement l’âge de leurs utilisateurs.",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "Mme Marie Guévenoux (RE)",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Cependant, sur de nombreux points, le Gouvernement a maintenu le cap vers une société de surveillance et le tout-marché que nous ne pouvons accepter.",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "M. Jean-Claude Raux",
+      "qualite": null,
+      "groupe": "ECOLO"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Et il représente une avancée, en ce qu’il combat les dérives de l’industrie pornographique et protège davantage les mineurs.",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "M. Victor Habert-Dassault (LR)",
+      "qualite": null,
+      "groupe": "LR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Si nous sommes d’accord avec plusieurs mesures, notamment en matière de pornographie, le texte n’est pas suffisamment équilibré – contournement du juge judiciaire, tentative de supprimer l’anonymat",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "Mme Soumya Bourouaha",
+      "qualite": null,
+      "groupe": "GDR-NUPES"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N47917": {
   "theme": "Entreprises et économie",
@@ -1525,7 +3372,76 @@
   "mesures": [
    "contrainte_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-05-31",
+   "comptesRendus": [
+    "CRSANR5L16S2023O1N254"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "C’est pourquoi je vous présente aujourd’hui une proposition de loi, déposée par les trois groupes de la majorité et adoptée par la commission des affaires économiques, dont l’objet est de prolonger le plafonnement de la variation des indices locatifs pour les entreprises et les ménages.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Thomas Cazenave",
+      "qualite": "rapporteur",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Grâce au plafonnement de la variation de l’IRL sur une durée d’un an, que vous avez adopté l’été dernier, nous avons été en mesure de limiter l’impact de la forte inflation sur les hausses de loyer et de rendre prévisibles et à un taux maîtrisé les dépenses de logement et les aides au logement.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Olivier Klein",
+      "qualite": "ministre délégué chargé de la ville et du logement",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Le texte qui nous est soumis ce soir s’inscrit dans la volonté de protéger les familles françaises, mais aussi nos TPE-PME, nos commerçants et nos artisans.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Mohamed Laqhila",
+      "qualite": null,
+      "groupe": "DEM"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Dans la crise que nous traversons, les locataires ont déjà fait beaucoup de sacrifices. C’est maintenant au tour des propriétaires bailleurs de faire un petit effort. Nous leur demandons simplement une année blanche, non pas sans revenu, mais sans augmentation des loyers.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. William Martinet",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Le plafonnement à 3,5 % de la hausse des indices est une mesure d’équilibre et de protection. Nous agissons pour tous.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Annaïg Le Meur",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "En effet, si votre plafonnement de la variation de l’IRL permet à première vue de protéger efficacement les locataires, il fait fi de l’inflation que subissent aussi de leur côté les bailleurs – privés comme sociaux, petits ou gros.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Thibault Bazin",
+      "qualite": null,
+      "groupe": "LR"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N48140": {
   "theme": "Immigration",
@@ -1615,7 +3531,57 @@
    "contrainte_plus",
    "institutions"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-10-10",
+   "comptesRendus": [
+    "CRSANR5L16S2023E2N001",
+    "CRSANR5L16S2024O1N012"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "j’ai l’honneur de vous présenter une réforme équilibrée et ambitieuse qui vise notamment à intensifier l’accompagnement des demandeurs d’emploi et des bénéficiaires du revenu de solidarité active grâce à une transformation du service public de l’emploi.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Paul Christophe",
+      "qualite": "rapporteur de la commission des affaires sociales",
+      "groupe": "HOR"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Tout d’abord, l’ensemble des personnes à la recherche d’un emploi, notamment les allocataires du RSA et les jeunes accompagnés par les missions locales, seront inscrites auprès de l’opérateur France Travail : c’est le meilleur moyen de garantir un accompagnement à chacun et d’éviter les ruptures de parcours.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Olivier Dussopt",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "L’objectif est d’aider les personnes à accéder à l’autonomie et à la dignité par le travail, et d’aider les entreprises à recruter, dans un contexte où nombre d’entre elles peinent à pourvoir leurs postes.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Nicole Dubré-Chirat",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "607 euros par mois au maximum, c’est trop peu pour maintenir légèrement la tête hors de l’eau, trop peu pour échapper à la très grande pauvreté, trop peu pour survivre dignement.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Arthur Delaporte",
+      "qualite": null,
+      "groupe": "SOC"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N48392": {
   "theme": "Logement",
@@ -1631,7 +3597,38 @@
    "contrainte_moins",
    "aide_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-07-20",
+   "comptesRendus": [
+    "CRSANR5L16S2023E1N024",
+    "CRSANR5L16S2023E1N025"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Il est cependant impératif d’aller plus loin pour faciliter la reconstruction. Tel est l’objet des trois articles du projet de loi, qui autorisent le Gouvernement à prendre, par voie d’ordonnance, les mesures nécessaires.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Christophe Béchu",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Si, en outre, l’ambition du Gouvernement est que les mesures du projet de loi entrent en vigueur dès que possible, le Conseil d’État devra tout d’abord être saisi et les quelques trous qui subsistent dans la raquette devront être comblés en concertation avec les associations d’élus.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Christophe Béchu",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N48586": {
   "theme": "Éducation et jeunesse",
@@ -1686,7 +3683,66 @@
   "mesures": [
    "symbolique"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-11-30",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N068"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Il est crucial d’analyser nos forces et faiblesses face à ces risques et de réfléchir collectivement et objectivement à la manière de les anticiper, si l’on veut à terme réduire la vulnérabilité de ces territoires dans le cadre d’une véritable politique de mitigation, dont même l’Hexagone pourrait bénéficier à terme.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Jean-Philippe Nilor",
+      "qualite": "rapporteur",
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Les moyens consacrés à la sécurité civile en outre-mer ne sont pas à la hauteur des défis présents et à venir. En raison du changement climatique, certains événements naturels se reproduiront à une fréquence plus élevée et avec plus d’intensité dans les prochaines années.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Philippe Gosselin",
+      "qualite": null,
+      "groupe": "LR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Pourquoi ainsi s’obstiner à demander une commission d’enquête alors qu’une mission d’information pourrait très bien remplir les objectifs sur lesquels nous pourrions tous nous entendre, dans l’intérêt de nos compatriotes ultramarins ?",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Bruno Millienne",
+      "qualite": null,
+      "groupe": "DEM"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Or, en Martinique, pourtant très exposée aux risques naturels, sur 255 châteaux d’eau, seuls 5 sont aux normes parasismiques.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Marcellin Nadeau",
+      "qualite": null,
+      "groupe": "GDR-NUPES"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "La loi « 3DS », adoptée en février 2022, a favorisé la résilience des territoires ultramarins face à ces enjeux prégnants pour les quelque 2,8 millions de nos compatriotes qui y résident.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Anthony Brosse",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N48755": {
   "theme": "Environnement et énergie",
@@ -1701,7 +3757,76 @@
   "mesures": [
    "contrainte_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-11-30",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N069"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "En conséquence, la ressource en eau renouvelable a déjà diminué de 14 % ; elle devrait encore décliner de 30 à 40 % d’ici 2050. Les restrictions d’usage – y compris agricole – sont de plus en plus longues et fréquentes.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Clémence Guetté",
+      "qualite": "rapporteure",
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Faire croire que le recours à des ouvrages de stockage viserait à développer l’irrigation de manière débridée – comme ce qui a pu être observé en Espagne –, est un contresens eu égard à la stratégie du Gouvernement.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Franck Riester",
+      "qualite": "ministre délégué chargé des relations avec le Parlement",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Les scientifiques alertent : il s’agit d’éviter une maladaptation. Les mégabassines couvrent 8 hectares en moyenne, et jusqu’à 18 hectares : elles ont un impact sur le milieu naturel. Le fait de pomper à même les nappes phréatiques n’est pas sans conséquences",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Chantal Jourdan",
+      "qualite": null,
+      "groupe": "SOC"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "les retenues de substitution, qui assurent un stockage stratégique, constituent une solution pragmatique si nous voulons garantir une irrigation suffisante en été et donc la stabilité économique des exploitations.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Raphaël Schellenberger",
+      "qualite": null,
+      "groupe": "LR"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "le manque d’eau est l’une des urgences écologiques les plus vitales à laquelle la France est confrontée, et cela depuis longtemps : deux tiers des zones humides détruites en quarante ans",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Delphine Batho",
+      "qualite": null,
+      "groupe": "ECOLO"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "En revanche, la multiplication des périodes de sécheresse nécessitera de la stocker plus en amont, notamment en zone montagneuse où les stockages diminuent trop rapidement. C’est pourquoi ces réserves peuvent être une des solutions pour irriguer les cultures en période de sécheresse ou alimenter les bétails en alpage",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Anne-Cécile Violland",
+      "qualite": null,
+      "groupe": "HOR"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N48758": {
   "theme": "Santé",
@@ -1716,7 +3841,37 @@
   "mesures": [
    "institutions"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-12-07",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N080"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Ce soir, nous avons l’occasion d’aller plus loin avec ce texte, qui vise la formation d’un plus grand nombre de médecins, en cohérence avec les besoins du territoire.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Yannick Neuder",
+      "qualite": "rapporteur",
+      "groupe": "LR"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Le budget de la sécurité sociale pour 2024, adopté définitivement, comporte des mesures fortes pour améliorer l’attractivité hospitalière et l’accès aux soins. Les négociations conventionnelles avec les médecins libéraux battent leur plein",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Agnès Firmin Le Bodo",
+      "qualite": "ministre déléguée chargée de l’organisation territoriale et des professions de santé",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N48763": {
   "theme": "Institutions et État",
@@ -1731,7 +3886,77 @@
   "mesures": [
    "contrainte_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-11-30",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N069",
+    "CRSANR5L16S2024O1N070"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "En revanche, lorsqu’elle s’inscrit dans une politique de restriction budgétaire et s’accompagne du recul des implantations territoriales, la numérisation des services publics conduit à des ruptures d’accès aux droits pour une part non négligeable de la population",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Danièle Obono",
+      "qualite": "rapporteure",
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Téléphone, sites internet, applications smartphone, autant de manières d’accomplir ses démarches administratives qu’il faut proposer à l’usager sans exclure l’un au profit de l’autre, tout en portant une attention particulière aux guichets physiques pour aider ceux qui en ont le plus besoin.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Sabrina Agresti-Roubache",
+      "qualite": "secrétaire d’État",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Certes, bon an mal an, 80 % des usagers s’en sortent, mais les services publics s’adressent à tous : nous ne pouvons pas exclure de la citoyenneté ni de la société 20 % de la population.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Aurélien Saintoul",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "le renoncement au numérique constituerait un net retour en arrière pour la grande majorité des Français qui privilégient le canal numérique pour accomplir leurs démarches administratives.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Mathilde Desjonquères",
+      "qualite": null,
+      "groupe": "DEM"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "ce n’est pas tant la dématérialisation des démarches administratives qui pose problème – il faut en effet suivre le train de la modernisation –, mais plutôt la fermeture des guichets de proximité et le fait que de nombreuses personnes restent sur le quai.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Mickaël Bouloux",
+      "qualite": null,
+      "groupe": "SOC"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "le numérique est d’abord un atout pour le service public. Il a permis d’améliorer l’efficacité du service rendu aux Français, en créant notamment une logique d’accès permanent pour une bonne partie des administrés.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Raphaël Schellenberger",
+      "qualite": null,
+      "groupe": "LR"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N48766": {
   "theme": "Consommation et alimentation",
@@ -1746,7 +3971,76 @@
   "mesures": [
    "contrainte_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-11-30",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N068"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "nous proposons quatre mesures concrètes pour faire baisser immédiatement le prix des produits alimentaires et du carburant, tout en protégeant les agriculteurs également victimes de la cupidité de quelques acteurs économiques.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Manuel Bompard",
+      "qualite": "rapporteur",
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Et c’est en agissant sur ces paramètres, en s’assurant que la concurrence joue pleinement son rôle, que l’on combat les marges abusives. En effet, il ne peut pas y avoir de marges abusives s’il y a de la concurrence.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Olivia Grégoire",
+      "qualite": "ministre déléguée",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Il y a plusieurs façons, en vérité, de lutter contre l’inflation, mais vous n’en utilisez aucune. Alors, nous vous en proposons une, la plus efficace : celle qui consiste à s’attaquer aux marges des grands groupes pour les tempérer.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Aurélie Trouvé",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Vous proposez des interdictions sur la base des indicateurs français ; les entreprises étrangères, vous le savez, pourraient très facilement s’en affranchir.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Olivia Grégoire",
+      "qualite": "ministre déléguée",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "La quatrième mesure vise à renforcer les pouvoirs de l’Observatoire de formation des prix et des marges des produits alimentaires. Celui-ci doit disposer de véritables moyens d’enquête et de sanction pour garantir une véritable transparence sur la formation des prix et sur les marges réalisées par les différents acteurs de la chaîne alimentaire.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Manuel Bompard",
+      "qualite": "rapporteur",
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "On ne peut pas s’attaquer aux grandes multinationales sans s’assurer qu’une restriction ou une interdiction ne conduira pas à des effets pires que le mal que l’on souhaite combattre.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Olivia Grégoire",
+      "qualite": "ministre déléguée",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N48777": {
   "theme": "Santé",
@@ -1762,7 +4056,37 @@
    "symbolique",
    "aide_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2023-12-07",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N080"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Aussi vous demandons-nous, chers collègues, de bien vouloir adopter cette proposition de résolution qui vise à rendre enfin effectif ce droit aux soins palliatifs sur tout le territoire national, comme le prévoit la loi du 2 février 2016.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Patrick Hetzel",
+      "qualite": null,
+      "groupe": "LR"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Notre ambition partagée est, bien sûr, de rendre effective la prise en charge palliative pour tous ceux qui en ont besoin sur le territoire national. Je partage pleinement la conviction qu’il nous faut améliorer l’équité d’accès en assurant l’information de tous : c’est l’un des fils conducteurs de mon action depuis ma prise de fonction.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Agnès Firmin Le Bodo",
+      "qualite": "ministre déléguée",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N48800": {
   "theme": "Éducation et jeunesse",
@@ -1773,7 +4097,38 @@
   "arguments": null,
   "niveau": "ia",
   "source": "PIONANR5L16B1794",
-  "remarque": "Extrait coupé : articles absents, résumé établi d'après la description des articles 1 et 2 dans l'exposé des motifs. Montants à vérifier."
+  "remarque": "Extrait coupé : articles absents, résumé établi d'après la description des articles 1 et 2 dans l'exposé des motifs. Montants à vérifier.",
+  "debat": {
+   "date": "2024-02-01",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N114",
+    "CRSANR5L16S2024O1N115"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "L’article 2 valorise l’engagement des professeurs au moyen d’une reconnaissance financière. Il est essentiel car il instaure un mécanisme d’indemnisation des enseignants du premier degré qui préparent, organisent des voyages scolaires et y participent.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Émilie Bonnivard",
+      "qualite": "rapporteure",
+      "groupe": "LR"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Ces dernières sont au cœur même de la mission de l’école : elles permettent en effet à nos élèves, aux côtés des savoirs acquis dans les salles de classe et dans les cours de sport, d’élargir encore leurs horizons.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Amélie Oudéa-Castéra",
+      "qualite": "ministre de l’éducation nationale, de la jeunesse, des sports et des Jeux olympiques et paralympiques",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N49004": {
   "theme": "Environnement et énergie",
@@ -1788,7 +4143,37 @@
   "mesures": [
    "symbolique"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2024-05-30",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N218"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Avec gravité, en effet, car au moment où je vous parle, des atolls de Polynésie sont en grand danger de submersion et leur population est inquiète de devoir migrer.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Marcellin Nadeau",
+      "qualite": null,
+      "groupe": "GDR-NUPES"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Les recommandations de votre proposition de résolution sont en partie satisfaites ou en passe de l’être. L’État accompagne financièrement l’ingénierie locale avec la mission Adaptation et les aides du fonds Vert.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Franck Riester",
+      "qualite": "ministre délégué",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N49023": {
   "theme": "Impôts et budget",
@@ -1932,7 +4317,67 @@
    "institutions",
    "aide_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2024-01-30",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N103",
+    "CRSANR5L16S2024O1N109"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Il s’agit, par le présent projet de loi constitutionnelle, d’accorder à cette liberté une véritable protection constitutionnelle, laquelle doit être suffisamment souple pour permettre au législateur de continuer son œuvre en la matière",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Éric Dupond-Moretti",
+      "qualite": "garde des sceaux",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Ne croyons donc pas que la France est complètement imperméable à ce risque. C’est précisément parce que ce droit est encore solidement ancré en France qu’il faut le protéger : je le redis à cette tribune, on ne prend pas une assurance quand la maison brûle.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Guillaume Gouffier Valente",
+      "qualite": "rapporteur",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Enfin, la formulation retenue – « la liberté garantie à la femme d’avoir recours à une IVG » – pourrait conduire à consacrer un accès sans condition à l’IVG, par exemple bien au-delà de la limite légale en vigueur.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Pascale Bordes",
+      "qualite": null,
+      "groupe": "RN"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Mais c’est lorsqu’on a une majorité pour le faire qu’il convient d’inscrire une liberté dans notre loi fondamentale. Après, il est trop tard !En second lieu, c’est une erreur que de considérer que la menace est nulle.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Sarah Tanzilli",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Cette nouvelle liberté risque par ailleurs – et c’est fondamental – d’entrer en conflit avec d’autres libertés garanties par le bloc de constitutionnalité. Je pense par exemple à la liberté de conscience garantie par l’article 10 de la Déclaration des droits de l’homme et du citoyen de 1789.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Pascale Bordes",
+      "qualite": null,
+      "groupe": "RN"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N49123": {
   "theme": "Institutions et État",
@@ -1947,7 +4392,78 @@
   "mesures": [
    "institutions"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2024-03-19",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N141",
+    "CRSANR5L16S2024O1N142",
+    "CRSANR5L16S2024O1N154"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Nous sommes réunis pour débattre de deux sujets principaux : la création d’une autorité unique de sûreté nucléaire et de radioprotection, et l’adaptation des règles de la commande publique aux projets nucléaires.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Roland Lescure",
+      "qualite": "ministre délégué",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Mais nous voulons aller plus loin pour disposer d’une organisation qui soit plus puissante, plus efficace, plus indépendante et plus transparente.Grâce à cette nouvelle entité, nous nous donnons les moyens de faire face à un défi industriel et énergétique sans précédent.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Roland Lescure",
+      "qualite": "ministre délégué",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "En revanche, il nous appartient de définir les modalités d’organisation de la gouvernance, les règles relatives aux personnels et les missions de la future autorité, compte tenu des enjeux de fluidité, de cohérence, d’expertise et d’attractivité qui sont apparus ces dernières années, comme l’a relevé l’Opecst.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Anthony Brosse",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Ce qui fait sa qualité, c’est le dialogue technique entre les deux organisations et avec l’exploitant EDF, sous l’œil de la société civile. C’est la garantie d’une meilleure analyse des enjeux, de la neutralité et de la transparence des décisions en matière de sûreté.On va donc casser quelque chose qui marche.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Julie Laernoes",
+      "qualite": null,
+      "groupe": "ECOLO"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "En matière de commande publique, les simplifications prévues aux articles 16 à 18 permettront aux acteurs de la filière nucléaire de déroger à certaines règles des marchés publics.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Anthony Brosse",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Casser notre modèle de sûreté en pleine relance de la filière nucléaire, alors que la charge de travail est inédite pour les personnels et que les défis de recrutement font peser sur toute l’industrie de l’énergie une pression sans précédent.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Sébastien Jumel",
+      "qualite": null,
+      "groupe": "GDR-NUPES"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N49124": {
   "theme": "Environnement et énergie",
@@ -2311,6 +4827,38 @@
    "consensuel": true
   }
  },
+ "DLR5L16N49364": {
+  "debat": {
+   "date": "2024-03-14",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N148"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "L’urgence est là. Les activités humaines bouleversent l’environnement à un rythme et avec une ampleur sans précédent depuis des millénaires, voire des centaines de milliers d’années, entraînant des impacts toujours plus ravageurs, généralisés et désormais pour partie irréversibles.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Anne-Cécile Violland",
+      "qualite": "rapporteure de la commission du développement durable et de l’aménagement du territoire",
+      "groupe": "HOR"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "L’article 2 traite du signal-prix. Nous croyons que le prix est un bon signal pour orienter le comportement des consommateurs et responsabiliser les pollueurs.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Christophe Béchu",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
+ },
  "DLR5L16N49373": {
   "theme": "Outre-mer",
   "sujetNiveau": "ia",
@@ -2323,7 +4871,77 @@
   "mesures": [
    "institutions"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2024-05-14",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N188",
+    "CRSANR5L16S2024O1N192"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Nous devons donc corriger cette distorsion de la manière la plus consensuelle possible. Les non-indépendantistes proposaient de retenir des durées de domiciliation comprises entre trois et cinq ans : je l’ai refusé. À la demande du Président de la République, j’ai suggéré de retenir une période de dix ans.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Gérald Darmanin",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Je ne connais pas d’autres exemples dans le monde de pays démocratiques qui interdisent à leurs citoyens, dont la nationalité n’est pas contestée, de voter à des élections locales avant dix ans. Si vous adoptez le projet de loi constitutionnelle, aucun pays au monde ne restreindra autant le suffrage.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Gérald Darmanin",
+      "qualite": null,
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Avec cette révision de la Constitution, nous permettons à plus de 20 000 de nos concitoyens de Nouvelle-Calédonie d’exercer enfin leur droit de vote. Cette avancée démocratique indéniable est nécessaire.",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "M. Sylvain Maillard",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Votre projet de loi constitutionnelle est une bombe contre la paix civile en Nouvelle-Calédonie, qui perdure depuis des décennies grâce aux accords de Matignon-Oudinot puis de Nouméa. Notre responsabilité historique est de préserver cette paix précieuse et fragile.",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "Mme Mathilde Panot",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "On ne peut exclure définitivement ou pendant un temps trop long un cinquième du corps électoral ! On ne peut exclure plus longtemps du vote 12 500 personnes – au moins – nées sur le territoire !",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "M. Philippe Gosselin",
+      "qualite": null,
+      "groupe": "LR"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Alors même que le Congrès de la Nouvelle-Calédonie, par une résolution votée ce jour, demande au Gouvernement de retirer le texte, vous semblez avoir opté pour le jusqu’au-boutisme. Vous jouez avec un feu déjà bien vif. Le risque d’embrasement nous guette.",
+     "partie": "explications de vote",
+     "orateur": {
+      "nom": "M. Olivier Serva (LIOT)",
+      "qualite": null,
+      "groupe": "LIOT"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N49457": {
   "theme": "Agriculture",
@@ -2340,7 +4958,148 @@
    "aide_plus",
    "impot_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2024-04-04",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N169"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Nous avons tous condamné ici l’insuffisant partage de la valeur et l’indécence d’un système qui permet à quelques industriels de doubler leurs profits en un an tout en laissant un Français sur cinq ne pas manger à sa faim et 18 % des agriculteurs vivre sous le seuil de pauvreté.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Marie Pochon",
+      "qualite": "rapporteure",
+      "groupe": "ECOLO"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Ainsi, l’instauration d’un prix minimal qui, par définition, ne s’appliquerait qu’aux seules productions nationales pourrait favoriser les produits importés au détriment des produits français. Loin d’augmenter le revenu des agriculteurs, cela diminuerait leur rémunération.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Agnès Pannier-Runacher",
+      "qualite": "ministre déléguée",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Il est en effet indispensable de payer correctement les agriculteurs, car si ces derniers étaient environ 5 millions dans les années 1960, ils sont moins de 400 000 désormais. Ils ont ainsi subi le plus grand plan social de France",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Sandra Regol",
+      "qualite": null,
+      "groupe": "ECOLO"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Néanmoins, ce texte n’apporte pas une réponse satisfaisante à la crise agricole que nous traversons. Pire, il profite du moment politique pour défendre des propositions contre-productives pour nos agriculteurs et pour la souveraineté agricole de notre pays.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Pierre Cordier",
+      "qualite": null,
+      "groupe": "LR"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Nous proposons des prix socles, régulièrement renégociés, déclinés dans les territoires selon leurs spécificités.La protection aux frontières est certes nécessaire.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Aurélie Trouvé",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "La raison est simple : les filières agricoles et agroalimentaires sont tellement complexes que l’instauration d’un prix unique par matière première pourrait évincer des pans entiers de notre économie agricole.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Anne-Laure Babault",
+      "qualite": null,
+      "groupe": "DEM"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
+ },
+ "DLR5L16N49726": {
+  "debat": {
+   "date": "2024-05-28",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N193",
+    "CRSANR5L16S2024O1N214"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "poursuit une double ambition : d’abord, fixer un cap clair et lisible aux agriculteurs ; ensuite, adapter nos politiques publiques agricoles, afin de relever deux défis immenses et émergents pour notre souveraineté alimentaire.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Marc Fesneau",
+      "qualite": "ministre de l’agriculture et de la souveraineté alimentaire",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Car simplifier, c’est faire confiance. C’est donc témoigner d’une forme de reconnaissance et de compréhension. C’est aussi permettre aux agriculteurs de ne pas s’embourber dans des amas de règles parfois contradictoires, et ainsi de se concentrer sur leur mission essentielle : produire, pour nous nourrir.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Marc Fesneau",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Soutenir l’agriculture est bien notre priorité. C’est ce que soutient l’article 1er du texte, en reconnaissant que l’agriculture représente plus que jamais un enjeu national, et en réclamant l’engagement total de la nation. Nous hissons ainsi l’agriculture et la pêche au rang d’intérêt général majeur.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Nicole Le Peih",
+      "qualite": "rapporteure",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Par votre projet de loi, vous faites encore pire, en faisant passer pour de la simplification administrative ce qui relève en fait du torpillage du droit de l’environnement.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Aurélie Trouvé",
+      "qualite": null,
+      "groupe": "LFI-NUPES"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "La formation aux enjeux agronomiques et pédoclimatiques, nous voulons la donner à suffisamment de jeunes pour relever le défi du renouvellement des générations – et c’est dans le texte.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Pascal Lavergne",
+      "qualite": "rapporteur",
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Nous avons été déçus. Rien sur le revenu des agriculteurs, leur première revendication, question pourtant vitale pour garantir l’attractivité d’un métier.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. David Taupiac",
+      "qualite": null,
+      "groupe": "LIOT"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N49740": {
   "theme": "Outre-mer",
@@ -2355,7 +5114,46 @@
   "mesures": [
    "symbolique"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2024-05-30",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N218"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "j’aimerais aujourd’hui donner la parole, en toute humilité, à toutes ces femmes, à tous ces enfants, qui font les frais des graves manquements de la politique du logement social dans nos territoires ultramarins.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "Mme Karine Lebon",
+      "qualite": "rapporteure de la commission des affaires économiques",
+      "groupe": "GDR-NUPES"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "focaliser cette commission d’enquête sur les départements et régions d’outre-mer relève d’une approche trop restrictive. En effet, l’indécence du logement social n’est pas un problème réservé à ces seuls territoires. Il s’agit, au contraire, d’un fléau d’ampleur nationale",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Pierre-Henri Dumont",
+      "qualite": null,
+      "groupe": "LR"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Nous subissons la double peine parce que non seulement il n’y a plus de logements disponibles – j’y reviendrai – mais lorsqu’on en trouve un, le risque est qu’il soit insalubre, délabré voire indécent.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Philippe Naillet",
+      "qualite": null,
+      "groupe": "SOC"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N49799": {
   "theme": "Outre-mer",
@@ -2370,7 +5168,37 @@
    "contrainte_plus",
    "aide_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2024-05-30",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N219"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Je me tiens devant vous aujourd’hui pour défendre une proposition de loi essentielle pour la réussite scolaire des jeunes ultramarins. Ce texte vise à renforcer l’apprentissage des langues régionales dans les établissements scolaires des académies d’outre-mer.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Steve Chailloux",
+      "qualite": "rapporteur de la commission des affaires culturelles et de l’éducation",
+      "groupe": "GDR-NUPES"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Nous sommes persuadés que les langues de France constituent un atout important pour notre patrimoine et notre capacité à acquérir une meilleure maîtrise des savoirs fondamentaux.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Nicole Belloubet",
+      "qualite": "ministre",
+      "groupe": "GOUVERNEMENT"
+     }
+    }
+   ],
+   "niveau": "ia",
+   "consensuel": true
+  }
  },
  "DLR5L16N49801": {
   "theme": "Sécurité sociale",
@@ -2385,7 +5213,57 @@
   "mesures": [
    "aide_plus"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2024-05-30",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N219",
+    "CRSANR5L16S2024O1N220"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "Le cancer du sein meurtrit profondément les femmes ; il les atteint dans leur chair, dans leur intimité, dans leur féminité, dans tous les rapports qu’elles ont avec la société, dans leur couple comme dans leur vie professionnelle. Une femme sur huit affronte l’épreuve au cours de sa vie.",
+     "partie": "présentation",
+     "orateur": {
+      "nom": "M. Fabien Roussel",
+      "qualite": "rapporteur de la commission des affaires sociales",
+      "groupe": "GDR-NUPES"
+     }
+    },
+    {
+     "role": "gouvernement",
+     "citation": "Je ne nie pas la nécessité d’agir en faveur des malades du cancer du sein, mais la proposition de loi créerait une inégalité flagrante",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Frédéric Valletoux",
+      "qualite": "ministre délégué",
+      "groupe": "GOUVERNEMENT"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Au total, une femme sur huit développe un tel cancer au cours de sa vie. Or le reste à charge des dépenses liées à cette maladie est bien trop important – 1 300 à 2 500 euros en moyenne, d’après la Ligue nationale contre le cancer.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Sandrine Rousseau",
+      "qualite": null,
+      "groupe": "ECOLO"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Si le problème est justement posé, vous y répondez en proposant un traitement dérogatoire. Or nombre d’autres affections ont des conséquences lourdes et durables : nous ne pouvons faire de différence entre elles.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Nicolas Turquois",
+      "qualite": null,
+      "groupe": "DEM"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  },
  "DLR5L16N49923": {
   "theme": "Défense et international",
@@ -2401,6 +5279,65 @@
    "international",
    "symbolique"
   ],
-  "mesuresNiveau": "ia"
+  "mesuresNiveau": "ia",
+  "debat": {
+   "date": "2024-05-30",
+   "comptesRendus": [
+    "CRSANR5L16S2024O1N218"
+   ],
+   "repliques": [
+    {
+     "role": "presentation",
+     "citation": "le Gouvernement ne peut continuer à s’affranchir du débat démocratique. C’est le sens de la proposition de résolution que nous soumettons au vote aujourd’hui. Elle vous invite, chers collègues, à reconnaître la nécessité de poursuivre le débat parlementaire.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. André Chassaigne",
+      "qualite": null,
+      "groupe": "GDR-NUPES"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Voter cette résolution n’est nullement un signe de défiance envers le Canada, qui est un pays allié et ami. C’est un vote de méfiance envers le Gouvernement, qui entend se passer de l’avis du Parlement malgré l’importance du sujet.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Stéphane Lenormand",
+      "qualite": null,
+      "groupe": "LIOT"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Vous prétendez que le Ceta a des conséquences négatives sur notre agriculture, alors même qu’il a permis aux viticulteurs de Bordeaux ou du Languedoc d’augmenter de 55 % leurs exportations vers le Canada.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Christopher Weissberg",
+      "qualite": null,
+      "groupe": "RE"
+     }
+    },
+    {
+     "role": "pour",
+     "citation": "Comme nous le répétons depuis des années, il est temps de passer du libre-échange au juste échange et de protéger nos acquis sociaux et écologiques.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "Mme Marie Pochon",
+      "qualite": null,
+      "groupe": "ECOLO"
+     }
+    },
+    {
+     "role": "contre",
+     "citation": "Ce n’est assurément pas le cas du Canada, si proche de nous à tant d’égards. Un accord bilatéral avec le Canada, c’est mieux, bien mieux, que la loi de la jungle du commerce de droit commun.",
+     "partie": "discussion générale",
+     "orateur": {
+      "nom": "M. Jean-Louis Bourlanges",
+      "qualite": null,
+      "groupe": "DEM"
+     }
+    }
+   ],
+   "niveau": "ia"
+  }
  }
 }
