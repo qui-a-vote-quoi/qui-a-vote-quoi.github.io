@@ -518,7 +518,7 @@ const NIVEAUX = { ia: "Résumé rédigé par IA, pas encore vérifié par un hum
 const LIB = { soutien: "Pour", opposition: "Contre", abstention: "Abstention", divise: "Divisé", absent: "N'a pas voté" };
 const $ = s => document.querySelector(s);
 const app = $("#app");
-const fdate = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
+const fdate = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" }).replace(/^1 /, "1er ");
 const chip = (g, lien = true) => lien
   ? `<a class="chip" href="#groupe/${g}" title="${G(g).nom}" aria-label="${g}, ${G(g).nom}"><i class="dot" style="background:${G(g).c}"></i>${g}</a>`
   : `<span class="chip"><i class="dot" style="background:${G(g).c}"></i>${g}</span>`;
@@ -730,7 +730,7 @@ function camps(t) {
 }
 // Écart sous lequel un vote est signalé comme serré : quelques sièges suffisent à le faire basculer
 const ECART_SERRE = 30;
-const fdateCourte = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric" });
+const fdateCourte = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric" }).replace(/^1 /, "1er ");
 const badgeIA = t => t.niveau === "ia"
   ? `<span class="badge-ia" title="Titre et résumé rédigés par IA, pas encore vérifiés par un humain"><span aria-hidden="true">IA</span><span class="sr-only">(titre et résumé rédigés par IA, non vérifiés)</span></span>` : "";
 // Carte d'un texte dans une liste : deux lignes. Le titre (lien) et le résultat ; puis l'auteur, le décompte
