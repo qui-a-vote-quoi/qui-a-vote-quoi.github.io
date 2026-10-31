@@ -15,7 +15,11 @@
   "debat": {
    "date": "2022-10-06",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N008"
+    {
+     "ref": "CRSANR5L16S2023O1N008",
+     "date": "2022-10-06",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -75,7 +79,11 @@
   "debat": {
    "date": "2022-07-21",
    "comptesRendus": [
-    "CRSANR5L16S2022E1N015"
+    {
+     "ref": "CRSANR5L16S2022E1N015",
+     "date": "2022-07-21",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -143,8 +151,16 @@
   "debat": {
    "date": "2022-07-26",
    "comptesRendus": [
-    "CRSANR5L16S2022E1N016",
-    "CRSANR5L16S2022E1N024"
+    {
+     "ref": "CRSANR5L16S2022E1N016",
+     "date": "2022-07-22",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2022E1N024",
+     "date": "2022-07-26",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -234,7 +250,11 @@
   "debat": {
    "date": "2022-10-06",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N007"
+    {
+     "ref": "CRSANR5L16S2023O1N007",
+     "date": "2022-10-06",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -281,7 +301,11 @@
   "debat": {
    "date": "2024-03-06",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N138"
+    {
+     "ref": "CRSANR5L16S2024O1N138",
+     "date": "2024-03-06",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -328,7 +352,11 @@
   "debat": {
    "date": "2022-10-06",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N009"
+    {
+     "ref": "CRSANR5L16S2023O1N009",
+     "date": "2022-10-06",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -413,8 +441,16 @@
   "debat": {
    "date": "2022-10-06",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N008",
-    "CRSANR5L16S2023O1N009"
+    {
+     "ref": "CRSANR5L16S2023O1N008",
+     "date": "2022-10-06",
+     "numJour": 2
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N009",
+     "date": "2022-10-06",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -460,7 +496,11 @@
   "debat": {
    "date": "2023-01-12",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N114"
+    {
+     "ref": "CRSANR5L16S2023O1N114",
+     "date": "2023-01-12",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -551,7 +591,11 @@
   "debat": {
    "date": "2022-10-11",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N002"
+    {
+     "ref": "CRSANR5L16S2023O1N002",
+     "date": "2022-10-03",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -642,8 +686,16 @@
   "debat": {
    "date": "2022-11-22",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N051",
-    "CRSANR5L16S2023O1N052"
+    {
+     "ref": "CRSANR5L16S2023O1N051",
+     "date": "2022-11-14",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N052",
+     "date": "2022-11-14",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -732,7 +784,11 @@
   "debat": {
    "date": "2023-01-12",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N113"
+    {
+     "ref": "CRSANR5L16S2023O1N113",
+     "date": "2023-01-12",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -822,8 +878,16 @@
   "debat": {
    "date": "2022-10-25",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N010",
-    "CRSANR5L16S2023O1N011"
+    {
+     "ref": "CRSANR5L16S2023O1N010",
+     "date": "2022-10-10",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N011",
+     "date": "2022-10-10",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -890,7 +954,11 @@
   "debat": {
    "date": "2022-11-24",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N067"
+    {
+     "ref": "CRSANR5L16S2023O1N067",
+     "date": "2022-11-24",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -979,8 +1047,16 @@
   "debat": {
    "date": "2022-12-01",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N078",
-    "CRSANR5L16S2023O1N079"
+    {
+     "ref": "CRSANR5L16S2023O1N078",
+     "date": "2022-12-01",
+     "numJour": 2
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N079",
+     "date": "2022-12-01",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -1070,8 +1146,16 @@
   "debat": {
    "date": "2022-12-01",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N078",
-    "CRSANR5L16S2023O1N079"
+    {
+     "ref": "CRSANR5L16S2023O1N078",
+     "date": "2022-12-01",
+     "numJour": 2
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N079",
+     "date": "2022-12-01",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -1161,7 +1245,11 @@
   "debat": {
    "date": "2022-12-01",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N077"
+    {
+     "ref": "CRSANR5L16S2023O1N077",
+     "date": "2022-12-01",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -1247,7 +1335,11 @@
   "debat": {
    "date": "2022-12-01",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N077"
+    {
+     "ref": "CRSANR5L16S2023O1N077",
+     "date": "2022-12-01",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -1338,8 +1430,16 @@
   "debat": {
    "date": "2023-04-04",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N196",
-    "CRSANR5L16S2023O1N202"
+    {
+     "ref": "CRSANR5L16S2023O1N196",
+     "date": "2023-03-29",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N202",
+     "date": "2023-04-04",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -1430,8 +1530,16 @@
   "debat": {
    "date": "2023-01-10",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N082",
-    "CRSANR5L16S2023O1N109"
+    {
+     "ref": "CRSANR5L16S2023O1N082",
+     "date": "2022-12-05",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N109",
+     "date": "2023-01-10",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -1521,7 +1629,11 @@
   "debat": {
    "date": "2022-11-30",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N076"
+    {
+     "ref": "CRSANR5L16S2023O1N076",
+     "date": "2022-11-30",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -1611,8 +1723,16 @@
   "debat": {
    "date": "2022-11-08",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N047",
-    "CRSANR5L16S2023O1N050"
+    {
+     "ref": "CRSANR5L16S2023O1N047",
+     "date": "2022-11-07",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N050",
+     "date": "2022-11-08",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -1702,8 +1822,16 @@
   "debat": {
    "date": "2023-03-21",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N173",
-    "CRSANR5L16S2023O1N184"
+    {
+     "ref": "CRSANR5L16S2023O1N173",
+     "date": "2023-03-13",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N184",
+     "date": "2023-03-21",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -1793,7 +1921,11 @@
   "debat": {
    "date": "2023-01-12",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N113"
+    {
+     "ref": "CRSANR5L16S2023O1N113",
+     "date": "2023-01-12",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -1882,7 +2014,11 @@
   "debat": {
    "date": "2023-01-12",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N114"
+    {
+     "ref": "CRSANR5L16S2023O1N114",
+     "date": "2023-01-12",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -1945,8 +2081,16 @@
   "debat": {
    "date": "2023-01-12",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N114",
-    "CRSANR5L16S2023O1N115"
+    {
+     "ref": "CRSANR5L16S2023O1N114",
+     "date": "2023-01-12",
+     "numJour": 2
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N115",
+     "date": "2023-01-12",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -2050,8 +2194,16 @@
   "debat": {
    "date": "2023-02-09",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N139",
-    "CRSANR5L16S2023O1N140"
+    {
+     "ref": "CRSANR5L16S2023O1N139",
+     "date": "2023-02-09",
+     "numJour": 2
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N140",
+     "date": "2023-02-09",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -2099,8 +2251,16 @@
   "debat": {
    "date": "2023-11-23",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N211",
-    "CRSANR5L16S2024O1N061"
+    {
+     "ref": "CRSANR5L16S2023O1N211",
+     "date": "2023-04-11",
+     "numJour": 3
+    },
+    {
+     "ref": "CRSANR5L16S2024O1N061",
+     "date": "2023-11-23",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -2207,7 +2367,11 @@
   "debat": {
    "date": "2023-02-09",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N140"
+    {
+     "ref": "CRSANR5L16S2023O1N140",
+     "date": "2023-02-09",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -2253,7 +2417,11 @@
   "debat": {
    "date": "2023-02-09",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N138"
+    {
+     "ref": "CRSANR5L16S2023O1N138",
+     "date": "2023-02-09",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -2290,8 +2458,16 @@
   "debat": {
    "date": "2023-03-28",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N183",
-    "CRSANR5L16S2023O1N194"
+    {
+     "ref": "CRSANR5L16S2023O1N183",
+     "date": "2023-03-20",
+     "numJour": 2
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N194",
+     "date": "2023-03-28",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -2380,7 +2556,11 @@
   "debat": {
    "date": "2024-02-29",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N131"
+    {
+     "ref": "CRSANR5L16S2024O1N131",
+     "date": "2024-02-29",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -2428,8 +2608,16 @@
   "debat": {
    "date": "2023-05-17",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N232",
-    "CRSANR5L16S2023O1N237"
+    {
+     "ref": "CRSANR5L16S2023O1N232",
+     "date": "2023-05-15",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N237",
+     "date": "2023-05-17",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -2476,7 +2664,11 @@
   "debat": {
    "date": "2024-02-29",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N131"
+    {
+     "ref": "CRSANR5L16S2024O1N131",
+     "date": "2024-02-29",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -2523,7 +2715,11 @@
   "debat": {
    "date": "2023-03-02",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N164"
+    {
+     "ref": "CRSANR5L16S2023O1N164",
+     "date": "2023-03-02",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -2570,8 +2766,16 @@
   "debat": {
    "date": "2023-03-02",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N164",
-    "CRSANR5L16S2023O1N165"
+    {
+     "ref": "CRSANR5L16S2023O1N164",
+     "date": "2023-03-02",
+     "numJour": 2
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N165",
+     "date": "2023-03-02",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -2617,8 +2821,16 @@
   "debat": {
    "date": "2023-10-12",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N017",
-    "CRSANR5L16S2024O1N018"
+    {
+     "ref": "CRSANR5L16S2024O1N017",
+     "date": "2023-10-12",
+     "numJour": 2
+    },
+    {
+     "ref": "CRSANR5L16S2024O1N018",
+     "date": "2023-10-12",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -2710,7 +2922,11 @@
   "debat": {
    "date": "2023-12-19",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N089"
+    {
+     "ref": "CRSANR5L16S2024O1N089",
+     "date": "2023-12-19",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -2800,7 +3016,11 @@
   "debat": {
    "date": "2023-04-06",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N207"
+    {
+     "ref": "CRSANR5L16S2023O1N207",
+     "date": "2023-04-06",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -2891,7 +3111,11 @@
   "debat": {
    "date": "2023-04-06",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N206"
+    {
+     "ref": "CRSANR5L16S2023O1N206",
+     "date": "2023-04-06",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -2981,7 +3205,11 @@
   "debat": {
    "date": "2023-05-04",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N222"
+    {
+     "ref": "CRSANR5L16S2023O1N222",
+     "date": "2023-05-04",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -3071,8 +3299,16 @@
   "debat": {
    "date": "2023-06-07",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N238",
-    "CRSANR5L16S2023O1N259"
+    {
+     "ref": "CRSANR5L16S2023O1N238",
+     "date": "2023-05-22",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N259",
+     "date": "2023-06-07",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -3163,7 +3399,11 @@
   "debat": {
    "date": "2023-05-04",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N222"
+    {
+     "ref": "CRSANR5L16S2023O1N222",
+     "date": "2023-05-04",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -3242,8 +3482,16 @@
   "debat": {
    "date": "2023-06-21",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N276",
-    "CRSANR5L16S2023O1N281"
+    {
+     "ref": "CRSANR5L16S2023O1N276",
+     "date": "2023-06-19",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2023O1N281",
+     "date": "2023-06-21",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -3304,7 +3552,11 @@
   "debat": {
    "date": "2024-01-18",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N096"
+    {
+     "ref": "CRSANR5L16S2024O1N096",
+     "date": "2024-01-18",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -3352,8 +3604,16 @@
   "debat": {
    "date": "2023-07-18",
    "comptesRendus": [
-    "CRSANR5L16S2023E1N001",
-    "CRSANR5L16S2023E1N020"
+    {
+     "ref": "CRSANR5L16S2023E1N001",
+     "date": "2023-07-03",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2023E1N020",
+     "date": "2023-07-18",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -3443,8 +3703,16 @@
   "debat": {
    "date": "2023-07-18",
    "comptesRendus": [
-    "CRSANR5L16S2023E1N001",
-    "CRSANR5L16S2023E1N020"
+    {
+     "ref": "CRSANR5L16S2023E1N001",
+     "date": "2023-07-03",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2023E1N020",
+     "date": "2023-07-18",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -3535,8 +3803,16 @@
   "debat": {
    "date": "2023-10-17",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N005",
-    "CRSANR5L16S2024O1N021"
+    {
+     "ref": "CRSANR5L16S2024O1N005",
+     "date": "2023-10-04",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2024O1N021",
+     "date": "2023-10-17",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -3641,7 +3917,11 @@
   "debat": {
    "date": "2023-05-31",
    "comptesRendus": [
-    "CRSANR5L16S2023O1N254"
+    {
+     "ref": "CRSANR5L16S2023O1N254",
+     "date": "2023-05-31",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -3731,7 +4011,11 @@
   "debat": {
    "date": "2023-12-07",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N078"
+    {
+     "ref": "CRSANR5L16S2024O1N078",
+     "date": "2023-12-07",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -3811,8 +4095,16 @@
   "debat": {
    "date": "2023-10-10",
    "comptesRendus": [
-    "CRSANR5L16S2023E2N001",
-    "CRSANR5L16S2024O1N012"
+    {
+     "ref": "CRSANR5L16S2023E2N001",
+     "date": "2023-09-25",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2024O1N012",
+     "date": "2023-10-10",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -3881,8 +4173,16 @@
   "debat": {
    "date": "2023-07-20",
    "comptesRendus": [
-    "CRSANR5L16S2023E1N024",
-    "CRSANR5L16S2023E1N025"
+    {
+     "ref": "CRSANR5L16S2023E1N024",
+     "date": "2023-07-20",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2023E1N025",
+     "date": "2023-07-20",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -3924,7 +4224,11 @@
   "debat": {
    "date": "2024-02-01",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N115"
+    {
+     "ref": "CRSANR5L16S2024O1N115",
+     "date": "2024-02-01",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -3971,7 +4275,11 @@
   "debat": {
    "date": "2023-11-30",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N068"
+    {
+     "ref": "CRSANR5L16S2024O1N068",
+     "date": "2023-11-30",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -4050,7 +4358,11 @@
   "debat": {
    "date": "2023-11-30",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N069"
+    {
+     "ref": "CRSANR5L16S2024O1N069",
+     "date": "2023-11-30",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -4140,7 +4452,11 @@
   "debat": {
    "date": "2023-12-07",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N080"
+    {
+     "ref": "CRSANR5L16S2024O1N080",
+     "date": "2023-12-07",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -4188,8 +4504,16 @@
   "debat": {
    "date": "2023-11-30",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N069",
-    "CRSANR5L16S2024O1N070"
+    {
+     "ref": "CRSANR5L16S2024O1N069",
+     "date": "2023-11-30",
+     "numJour": 2
+    },
+    {
+     "ref": "CRSANR5L16S2024O1N070",
+     "date": "2023-11-30",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -4279,7 +4603,11 @@
   "debat": {
    "date": "2023-11-30",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N068"
+    {
+     "ref": "CRSANR5L16S2024O1N068",
+     "date": "2023-11-30",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -4370,7 +4698,11 @@
   "debat": {
    "date": "2023-12-07",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N080"
+    {
+     "ref": "CRSANR5L16S2024O1N080",
+     "date": "2023-12-07",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -4413,8 +4745,16 @@
   "debat": {
    "date": "2024-02-01",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N114",
-    "CRSANR5L16S2024O1N115"
+    {
+     "ref": "CRSANR5L16S2024O1N114",
+     "date": "2024-02-01",
+     "numJour": 2
+    },
+    {
+     "ref": "CRSANR5L16S2024O1N115",
+     "date": "2024-02-01",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -4461,7 +4801,11 @@
   "debat": {
    "date": "2024-05-30",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N218"
+    {
+     "ref": "CRSANR5L16S2024O1N218",
+     "date": "2024-05-30",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -4508,7 +4852,11 @@
   "debat": {
    "date": "2024-01-18",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N097"
+    {
+     "ref": "CRSANR5L16S2024O1N097",
+     "date": "2024-01-18",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -4554,7 +4902,11 @@
   "debat": {
    "date": "2024-01-18",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N096"
+    {
+     "ref": "CRSANR5L16S2024O1N096",
+     "date": "2024-01-18",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -4645,8 +4997,16 @@
   "debat": {
    "date": "2024-01-30",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N103",
-    "CRSANR5L16S2024O1N109"
+    {
+     "ref": "CRSANR5L16S2024O1N103",
+     "date": "2024-01-24",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2024O1N109",
+     "date": "2024-01-30",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -4725,9 +5085,21 @@
   "debat": {
    "date": "2024-03-19",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N141",
-    "CRSANR5L16S2024O1N142",
-    "CRSANR5L16S2024O1N154"
+    {
+     "ref": "CRSANR5L16S2024O1N141",
+     "date": "2024-03-11",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2024O1N142",
+     "date": "2024-03-11",
+     "numJour": 2
+    },
+    {
+     "ref": "CRSANR5L16S2024O1N154",
+     "date": "2024-03-19",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -4831,8 +5203,16 @@
   "debat": {
    "date": "2024-01-18",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N096",
-    "CRSANR5L16S2024O1N097"
+    {
+     "ref": "CRSANR5L16S2024O1N096",
+     "date": "2024-01-18",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2024O1N097",
+     "date": "2024-01-18",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -4921,7 +5301,11 @@
   "debat": {
    "date": "2024-02-29",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N132"
+    {
+     "ref": "CRSANR5L16S2024O1N132",
+     "date": "2024-02-29",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -4968,7 +5352,11 @@
   "debat": {
    "date": "2024-02-29",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N133"
+    {
+     "ref": "CRSANR5L16S2024O1N133",
+     "date": "2024-02-29",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -5016,8 +5404,16 @@
   "debat": {
    "date": "2024-02-29",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N131",
-    "CRSANR5L16S2024O1N132"
+    {
+     "ref": "CRSANR5L16S2024O1N131",
+     "date": "2024-02-29",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2024O1N132",
+     "date": "2024-02-29",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -5063,7 +5459,11 @@
   "debat": {
    "date": "2024-03-14",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N149"
+    {
+     "ref": "CRSANR5L16S2024O1N149",
+     "date": "2024-03-14",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -5152,7 +5552,11 @@
   "debat": {
    "date": "2024-03-14",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N148"
+    {
+     "ref": "CRSANR5L16S2024O1N148",
+     "date": "2024-03-14",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -5186,7 +5590,11 @@
   "debat": {
    "date": "2024-03-14",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N148"
+    {
+     "ref": "CRSANR5L16S2024O1N148",
+     "date": "2024-03-14",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -5232,8 +5640,16 @@
   "debat": {
    "date": "2024-05-14",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N188",
-    "CRSANR5L16S2024O1N192"
+    {
+     "ref": "CRSANR5L16S2024O1N188",
+     "date": "2024-05-13",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2024O1N192",
+     "date": "2024-05-14",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -5325,7 +5741,11 @@
   "debat": {
    "date": "2024-04-04",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N169"
+    {
+     "ref": "CRSANR5L16S2024O1N169",
+     "date": "2024-04-04",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -5402,8 +5822,16 @@
   "debat": {
    "date": "2024-05-28",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N193",
-    "CRSANR5L16S2024O1N214"
+    {
+     "ref": "CRSANR5L16S2024O1N193",
+     "date": "2024-05-15",
+     "numJour": 1
+    },
+    {
+     "ref": "CRSANR5L16S2024O1N214",
+     "date": "2024-05-28",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -5493,7 +5921,11 @@
   "debat": {
    "date": "2024-05-30",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N218"
+    {
+     "ref": "CRSANR5L16S2024O1N218",
+     "date": "2024-05-30",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {
@@ -5550,7 +5982,11 @@
   "debat": {
    "date": "2024-05-30",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N219"
+    {
+     "ref": "CRSANR5L16S2024O1N219",
+     "date": "2024-05-30",
+     "numJour": 2
+    }
    ],
    "repliques": [
     {
@@ -5597,8 +6033,16 @@
   "debat": {
    "date": "2024-05-30",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N219",
-    "CRSANR5L16S2024O1N220"
+    {
+     "ref": "CRSANR5L16S2024O1N219",
+     "date": "2024-05-30",
+     "numJour": 2
+    },
+    {
+     "ref": "CRSANR5L16S2024O1N220",
+     "date": "2024-05-30",
+     "numJour": 3
+    }
    ],
    "repliques": [
     {
@@ -5667,7 +6111,11 @@
   "debat": {
    "date": "2024-05-30",
    "comptesRendus": [
-    "CRSANR5L16S2024O1N218"
+    {
+     "ref": "CRSANR5L16S2024O1N218",
+     "date": "2024-05-30",
+     "numJour": 1
+    }
    ],
    "repliques": [
     {

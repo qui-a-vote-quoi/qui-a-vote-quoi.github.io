@@ -495,7 +495,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outlin
   <span id="maj"></span>
 </div></footer>
 
-<script src="donnees.js?v=aaf916c201"></script>
+<script src="donnees.js?v=6fa8262ca4"></script>
 <script>
 // Groupes de toutes les législatures (GROUPES vient de donnees.js), dans l'ordre de l'hémicycle, de la gauche vers la droite.
 // Un même sigle d'une législature à l'autre désigne le même groupe (SOC, LR, RN…).
@@ -965,7 +965,7 @@ const views = {
       </div>
       ${t.debat ? (autre => `<h2 id="le-debat" tabindex="-1">${autre ? `Le débat, lors d'un autre examen du texte` : t.debat.consensuel ? "Le débat" : "Pourquoi ce résultat&nbsp;? Le débat"}</h2>
         <p class="meta">${autre ? `Ce débat a eu lieu le ${fdate(t.debat.date)}, lors d'un autre examen de ce texte. Le vote présenté ici date du ${fdate(t.date)}.`
-          : t.debat.consensuel ? "Ce qui a été dit en séance, avant le vote." : "Ce qu'ont dit les deux camps en séance, à égalité, avant le vote."}</p>${repliques(t, { nomme: true, source: `Extraits exacts du compte rendu (${t.debat.comptesRendus.map(ref => ext(urlCompteRendu(ref, t.leg), `séance du ${fdate(t.debat.date)}`)).join(", ")}). Choix fait par IA, citations vérifiées mot pour mot, pas encore relu par un humain.` })}`)(t.debat.date !== t.date) : ""}
+          : t.debat.consensuel ? "Ce qui a été dit en séance, avant le vote." : "Ce qu'ont dit les deux camps en séance, à égalité, avant le vote."}</p>${repliques(t, { nomme: true, source: `Extraits exacts ${t.debat.comptesRendus.length > 1 ? "des comptes rendus" : "du compte rendu"} (${seances(t)}). Choix fait par IA, citations vérifiées mot pour mot, pas encore relu par un humain.` })}`)(t.debat.date !== t.date) : ""}
       ${t.arguments ? `<h2>Les arguments des deux camps</h2>${argsGrid(t)}
         <p class="note">Arguments avancés pendant les débats, rapportés sans jugement. Sources : ${t.arguments.sources.map(x => ext(x.url, x.label)).join(", ")}.</p>` : ""}
       <h2>Le vote des députés</h2>
@@ -1313,6 +1313,9 @@ function qui(r, nomme) {
     contre: feminin(o) ? "Une députée opposée au texte" : "Un député opposé au texte" }[r.role];
 }
 const urlCompteRendu = (ref, leg) => `https://www.assemblee-nationale.fr/dyn/${leg}/comptes-rendus/seance/${ref}`;
+// Liens vers les comptes rendus d'un débat : « séance du 30 juin 2026 », ou « 1re séance du… » quand le jour en compte plusieurs
+const seances = t => t.debat.comptesRendus.map(c => ext(urlCompteRendu(c.ref, t.leg),
+  `${t.debat.comptesRendus.filter(x => x.date === c.date).length > 1 ? (c.numJour === 1 ? "1re" : `${c.numJour}e`) + " " : ""}séance du ${fdate(c.date)}`)).join(", ");
 // Le rôle de chaque réplique est toujours écrit en clair : la position à gauche ou à droite ne suffit pas
 const ROLES_DEBAT = { presentation: "Présente le texte", gouvernement: "Avis du gouvernement", pour: "Pour le texte", contre: "Contre le texte" };
 function repliques(t, { visibles = Infinity, nomme = false, source = "" } = {}) {

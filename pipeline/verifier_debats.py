@@ -26,6 +26,13 @@ def normal(texte):
     return re.sub(r"\s+", " ", texte.replace("’", "'").replace(" ", " ")).strip()
 
 
+def seance(leg, ref):
+    """Un compte rendu, avec la date et le numéro de sa séance dans la journée (« 2e séance du 13 octobre »)."""
+    xml = (BRUT / leg / "comptes-rendus" / f"{ref}.xml").read_text(encoding="utf-8")
+    date = re.search(r"<dateSeance>(\d{4})(\d{2})(\d{2})", xml).groups()
+    return {"ref": ref, "date": "-".join(date), "numJour": int(re.search(r"<numSeanceJour>(\d*)", xml).group(1) or 1)}   # « Unique » : seule séance du jour
+
+
 def main():
     if len(sys.argv) < 3:
         sys.exit("Usage : python3 pipeline/verifier_debats.py <législature> FICHIER_REPLIQUES.json [...]")
@@ -69,7 +76,7 @@ def main():
                 redaction.get(dossier, {}).pop("debat", None)
                 continue
             redaction.setdefault(dossier, {})["debat"] = {
-                "date": debat["date"], "comptesRendus": debat["comptesRendus"], "repliques": gardees,
+                "date": debat["date"], "comptesRendus": [seance(leg, ref) for ref in debat["comptesRendus"]], "repliques": gardees,
                 "niveau": "ia",   # choisi par IA, citations vérifiées mot pour mot, pas encore relu
                 **({"consensuel": True} if consensuel else {}),
             }
