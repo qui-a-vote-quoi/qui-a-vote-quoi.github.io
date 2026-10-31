@@ -963,8 +963,8 @@ const views = {
       ${t.enClair ? `<p class="note">${NIVEAUX[t.niveau] || ""}</p>` : ""}
       ${mesuresTexte(t)}
       </div>
-      ${t.debat ? (autre => `<h2 id="le-debat" tabindex="-1">${autre ? `Le débat, lors d'un autre examen du texte` : t.debat.consensuel ? "Le débat" : "Pourquoi ce résultat&nbsp;? Le débat"}</h2>
-        <p class="meta">${autre ? `Ce débat a eu lieu le ${fdate(t.debat.date)}, lors d'un autre examen de ce texte. Le vote présenté ici date du ${fdate(t.date)}.`
+      ${t.debat ? (autre => `<h2 id="le-debat" tabindex="-1">${autre ? `Le débat, avant un autre vote sur ce texte` : t.debat.consensuel ? "Le débat" : "Pourquoi ce résultat&nbsp;? Le débat"}</h2>
+        <p class="meta">${autre ? `Ces extraits précèdent le vote du ${fdate(t.debat.date)} sur ce texte. Le vote présenté ici date du ${fdate(t.date)}.`
           : t.debat.consensuel ? "Ce qui a été dit en séance, avant le vote." : "Ce qu'ont dit les deux camps en séance, à égalité, avant le vote."}</p>${repliques(t, { nomme: true, source: `Extraits exacts ${t.debat.comptesRendus.length > 1 ? "des comptes rendus" : "du compte rendu"} (${seances(t)}). Choix fait par IA, citations vérifiées mot pour mot, pas encore relu par un humain.` })}`)(t.debat.date !== t.date) : ""}
       ${t.arguments ? `<h2>Les arguments des deux camps</h2>${argsGrid(t)}
         <p class="note">Arguments avancés pendant les débats, rapportés sans jugement. Sources : ${t.arguments.sources.map(x => ext(x.url, x.label)).join(", ")}.</p>` : ""}
