@@ -1224,7 +1224,7 @@ function appelJeu(th, { collant = false } = {}) {
 // « Siégez » : une séance de 10 textes tirés au hasard parmi ceux pas encore votés, un à la fois.
 // Après chaque vote, on découvre le vrai vote de l'Assemblée et qui avait proposé le texte. Pas de score de « bonne réponse ».
 const TAILLE_SEANCE = 10;
-let seance = null;   // { ids, i, revele, details }
+let seance = null;   // { ids, i, revele, details } ; reste en mémoire quand on visite le reste du site : on la reprend en revenant
 const VOTES = [[1, "Pour"], [-1, "Contre"], [0, "Je m'abstiens"]];
 const libVote = v => ({ 1: "pour", "-1": "contre", 0: "abstention" })[v];
 function majQuestions() {
@@ -1560,7 +1560,6 @@ addEventListener("hashchange", () => {
     else pile.push({ hash: ici.hash, titre: page(ici.hash) === "accueil" ? "Accueil" : app.querySelector("h1")?.textContent || "Retour" });
     ici = { hash: location.hash };
   }
-  if (!location.hash.startsWith("#bilan")) seance = null;
   // Liens vers une section d'une page : #accueil/qui-decide, #methode/ce-qui-manque
   const ancre = { "#accueil/qui-decide": "#qui-decide", "#methode/ce-qui-manque": "#ce-qui-manque", "#methode/sujets": "#sujets" }[location.hash];
   if (ancre) { render(); const h = $(ancre); h.scrollIntoView(); h.focus({ preventScroll: true }); return; }
