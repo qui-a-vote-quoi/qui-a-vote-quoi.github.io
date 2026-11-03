@@ -83,3 +83,12 @@ Deux audits (calculs du site, données contre l'open data) ont été faits et le
 - **Moteurs de recherche** : le site reste exclu (`noindex, nofollow`). À lever le jour où on veut qu'on le trouve.
 - **Relecture humaine** : aucun résumé n'est relu ; tous sont rédigés par IA et signalés comme tels. Une vingtaine sont encore « à venir ».
 - **Lecteur d'écran** : les contrôles d'accessibilité n'ont pas été complétés par un test avec un vrai lecteur d'écran.
+
+## Débats « en mots simples » : ce qui reste (03/11/2026)
+
+- **Tester avec de vrais lecteurs**, à commencer par l'adolescent à l'origine de l'idée. La clarté n'a été notée que par des IA jouant un lecteur de 14 ans (3,64/5 avec les trois passes, contre 3,17 avec une seule, sur 7 débats).
+- **La fidélité n'a été notée que sur l'échantillon** (4,57/5 sur 7 débats). Les 359 débats sont contrôlés par script (noms, longueur, opinion ajoutée, correspondance avec la citation), mais pas sur le sens : des erreurs peuvent rester. La mention « pas encore relu par un humain » est affichée.
+- **107 versions signalées mais publiées** : un mot du glossaire sans son explication, ou une phrase de plus de 30 mots. La liste se retrouve avec `python3 pipeline/vulgariser.py verifier`.
+- **5 répliques sans version simple** (écartées pour « je pense que » ajouté), restées en citation exacte. `python3 pipeline/vulgariser.py preparer` les reprend.
+- **Mise à jour mensuelle** : `pipeline/mettre_a_jour.py` ne lance pas les trois passes. À faire à la main pour chaque nouveau débat (voir `pipeline/consignes/mots-simples.md`), sinon il reste en citation exacte, sans interrupteur.
+- **Filtre d'anonymat** (`NOMS_INTERDITS`) : le mot courant « horizons » est encore confondu avec le parti Horizons, et « renaissance » avec Renaissance. Une citation ou une version qui les emploie est écartée à tort.
