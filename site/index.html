@@ -1217,16 +1217,20 @@ function estimation(restants) {
 function appelJeu(th, { collant = false } = {}) {
   const rep = load(), restants = BILAN.filter(t => dansSujet(t, th) && !(t.id in rep));
   if (!restants.length) return "";
-  const { k, min } = estimation(restants);
-  return `<div class="${collant ? "barre-jouer" : "appel-jeu"}"><div class="siege pret"><p><b>Et vous, qu'auriez-vous voté&nbsp;?</b><br><span class="meta">${pluriel(k, "texte")} sur ce sujet, environ ${min} min</span></p>
-    <a class="plus principal" href="#jouer/${encodeURIComponent(th)}">À vous de jouer →</a></div></div>`;
+  const { k, min } = estimation(restants), lien = `#jouer/${encodeURIComponent(th)}`;
+  return `<div class="${collant ? "barre-jouer" : "appel-jeu"}"><div class="siege pret">${seanceEnCours()
+    ? `<p><b>Une séance est en cours</b> (texte ${seance.i + 1} sur ${seance.ids.length})<br><a class="meta" href="${lien}">Ou commencer une séance sur ce sujet</a></p>
+    <a class="plus principal" href="#bilan">Reprendre ma séance →</a>`
+    : `<p><b>Et vous, qu'auriez-vous voté&nbsp;?</b><br><span class="meta">${pluriel(k, "texte")} sur ce sujet, environ ${min} min</span></p>
+    <a class="plus principal" href="${lien}">À vous de jouer →</a>`}</div></div>`;
 }
 // « Siégez » : une séance de 10 textes tirés au hasard parmi ceux pas encore votés, un à la fois.
 // Après chaque vote, on découvre le vrai vote de l'Assemblée et qui avait proposé le texte. Pas de score de « bonne réponse ».
 const TAILLE_SEANCE = 10;
 // La séance en cours est gardée sur l'appareil : on la reprend en revenant, même après avoir rechargé la page ou fermé l'onglet
 let seance = (s => s?.ids.every(byId) ? s : null)(lirePref("seanceEnCours", null));   // { ids, i, revele, details }
-const garderSeance = () => ecrirePref("seanceEnCours", seance && !seance.archive && seance.i < seance.ids.length ? seance : null);
+const seanceEnCours = () => seance && !seance.archive && seance.i < seance.ids.length;
+const garderSeance = () => ecrirePref("seanceEnCours", seanceEnCours() ? seance : null);
 const VOTES = [[1, "Pour"], [-1, "Contre"], [0, "Je m'abstiens"]];
 const libVote = v => ({ 1: "pour", "-1": "contre", 0: "abstention" })[v];
 function majQuestions() {
