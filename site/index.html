@@ -1224,11 +1224,14 @@ function appelJeu(th, { collant = false } = {}) {
 // « Siégez » : une séance de 10 textes tirés au hasard parmi ceux pas encore votés, un à la fois.
 // Après chaque vote, on découvre le vrai vote de l'Assemblée et qui avait proposé le texte. Pas de score de « bonne réponse ».
 const TAILLE_SEANCE = 10;
-let seance = null;   // { ids, i, revele, details } ; reste en mémoire quand on visite le reste du site : on la reprend en revenant
+// La séance en cours est gardée sur l'appareil : on la reprend en revenant, même après avoir rechargé la page ou fermé l'onglet
+let seance = (s => s?.ids.every(byId) ? s : null)(lirePref("seanceEnCours", null));   // { ids, i, revele, details }
+const garderSeance = () => ecrirePref("seanceEnCours", seance && !seance.archive && seance.i < seance.ids.length ? seance : null);
 const VOTES = [[1, "Pour"], [-1, "Contre"], [0, "Je m'abstiens"]];
 const libVote = v => ({ 1: "pour", "-1": "contre", 0: "abstention" })[v];
 function majQuestions() {
   if (seance) { afficherSeance(); majBilan(); return; }
+  garderSeance();
   app.classList.remove("en-seance", "en-cours");
   const ts = selectionBilan(), choisis = prefBilan().sujets.length, rep = load();
   const restants = ts.filter(t => !(t.id in rep));
@@ -1249,6 +1252,7 @@ function majQuestions() {
   majBilan();
 }
 function afficherSeance() {
+  garderSeance();
   const n = seance.ids.length, { sujets, leg } = prefBilan();
   app.classList.add("en-seance");
   app.classList.toggle("en-cours", seance.i < n);
@@ -1458,8 +1462,8 @@ function render() {
   const h1 = app.querySelector("h1");
   document.title = view === "accueil" || !h1 ? "Qui a voté quoi" : `${h1.textContent} – Qui a voté quoi`;
   app.classList.remove("en-seance", "en-cours");
-  // #bilan/<id> : une séance qui commence par ce texte, puis des textes au hasard
-  if (view === "bilan" && arg && !seance && byId(decodeURIComponent(arg))) {
+  // #bilan/<id> : une séance qui commence par ce texte, puis des textes au hasard (sauf si la séance en cours le contient déjà)
+  if (view === "bilan" && arg && !seance?.ids.includes(decodeURIComponent(arg)) && byId(decodeURIComponent(arg))) {
     const id = decodeURIComponent(arg), rep = load();
     seance = { tous: true, ids: [id, ...melanger(BILAN.filter(t => t.id !== id && !(t.id in rep))).slice(0, TAILLE_SEANCE - 1).map(t => t.id)] };
     allerA(0);
@@ -1499,7 +1503,7 @@ app.addEventListener("click", e => {
   if (e.target.id === "vers-debat") { seance.etape = "debat"; seance.repl ||= 1; afficherSeance(); $("#titre-debat")?.focus(); return; }
   if (e.target.id === "vers-vote") { seance.etape = "vote"; afficherSeance(); $("#titre-scrutin")?.focus(); return; }
   if (e.target.id === "replique-suivante") { seance.repl++; afficherSeance(); $("#derniere-replique")?.focus(); return; }
-  if (e.target.id === "tout-le-debat") { seance.repl = Infinity; afficherSeance(); $("#derniere-replique")?.focus(); return; }
+  if (e.target.id === "tout-le-debat") { seance.repl = byId(seance.ids[seance.i]).debat.repliques.length; afficherSeance(); $("#derniere-replique")?.focus(); return; }
   if (e.target.id === "en-savoir-plus") { seance.details = true; afficherSeance(); $("#details-titre")?.focus(); return; }
   // Revenir au texte d'avant : s'il a été voté, on revoit son résultat ; s'il a été passé, on peut voter
   if (e.target.id === "precedent") { allerA(seance.i - 1); return; }
