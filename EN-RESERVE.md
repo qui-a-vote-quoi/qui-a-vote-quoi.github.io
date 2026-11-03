@@ -76,3 +76,10 @@ Deux audits (calculs du site, données contre l'open data) ont été faits et le
 **Questions de méthode** :
 - **Le jeu et les changements de sigle** : un même courant change de sigle d'une législature à l'autre (FI, LFI-NUPES, LFI-NFP ; LAREM, RE, EPR ; GDR, GDR-NUPES ; ECOLO, ECOS). Dans une séance qui mélange les périodes, ces groupes sont rarement classés (seuil de la moitié des textes), contrairement aux sigles stables (SOC, DEM, LR). Pistes : regrouper par « famille » avec une règle écrite et neutre, ou limiter une séance à une législature, ou baisser le seuil.
 - **Votes ou textes** : « 146 grands votes sur 211 portaient sur un texte du gouvernement » correspond à 109 textes sur 167 (un texte peut être voté en plusieurs lectures). Choisir l'unité la plus juste pour « Qui décide » et l'écrire partout pareil.
+
+## Avant une ouverture plus large (03/11/2026)
+
+- **Formulaire d'avis** : il n'existe pas encore (`AVIS_URL` vide), et le lien « Donner mon avis » a disparu avec le bandeau de test. C'est le prérequis de la relecture citoyenne, et le moyen pour les testeurs de répondre.
+- **Moteurs de recherche** : le site reste exclu (`noindex, nofollow`). À lever le jour où on veut qu'on le trouve.
+- **Relecture humaine** : aucun résumé n'est relu ; tous sont rédigés par IA et signalés comme tels. Une vingtaine sont encore « à venir ».
+- **Lecteur d'écran** : les contrôles d'accessibilité n'ont pas été complétés par un test avec un vrai lecteur d'écran.
